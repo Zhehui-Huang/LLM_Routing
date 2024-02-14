@@ -1,36 +1,31 @@
+from scipy.spatial.distance import euclidean
 from itertools import permutations
 
-# Coordinates of places
-places = {'Place 1': (9, 4), 'Place 2': (4, 6), 'Place 3': (4, 4), 'Place 4': (3, 4), 'Place 5': (4, 8)}
+# Define places
+places = {'P1': (9, 4), 'P2': (4, 6), 'P3': (4, 4), 'P4': (3, 4), 'P5': (4, 8)}
 
-# Distance function
-def distance(a, b):
-    return ((a[0] - b[0])**2 + (a[1] - b[1])**2)**0.5
+# Calculate all permutations of the places except the starting point
+perms = permutations([place for place in places if place != 'P1'])
 
-# All permutations of the places without the starting point
-perms = permutations([place for place in places if place != 'Place 1'])
+# Function to calculate total distance of a given tour
+def calculate_distance(tour):
+    total_distance = 0
+    current_position = 'P1'
+    for place in tour:
+        total_distance += euclidean(places[current_position], places[place])
+        current_position = place
+    total_distance += euclidean(places[current_position], places['P1'])  # Return to start
+    return total_distance
 
-# Initialize minimum distance to a high value
+# Find the tour with the shortest distance
 min_distance = float('inf')
-min_path = []
-
-# Check each permutation for total distance
+optimal_tour = None
 for perm in perms:
-    # Start with distance from Place 1 to the first place in the permutation
-    path_distance = distance(places['Place 1'], places[perm[0]])
-    
-    # Add the distances for the rest of the path
-    for i in range(len(perm)-1):
-        path_distance += distance(places[perm[i]], places[perm[i+1]])
-    
-    # Add the distance to return to Place 1
-    path_distance += distance(places[perm[-1]], places['Place 1'])
-    
-    # If this path is shorter, update min_distance and min_path
-    if path_distance < min_distance:
-        min_distance = path_distance
-        min_path = ['Place 1'] + list(perm) + ['Place 1']
+    current_distance = calculate_distance(perm)
+    if current_distance < min_distance:
+        min_distance = current_distance
+        optimal_tour = perm
 
-# Output
-print('Tour:', ' -> '.join(min_path))
-print('Cost:', min_distance)
+# Print the optimal tour and its cost
+print("Tour:", ['P1'] + list(optimal_tour) + ['P1'])
+print(f"Cost: {min_distance}")
