@@ -1,0 +1,29 @@
+### Environment information: There are several places of interest on the plane. 
+['Place 1: (9, 4)',
+ 'Place 2: (4, 6)',
+ 'Place 3: (4, 4)',
+ 'Place 4: (3, 4)',
+ 'Place 5: (4, 8)',
+ 'Place 6: (4, 3)',
+ 'Place 7: (7, 5)',
+ 'Place 8: (5, 0)',
+ 'Place 9: (1, 5)',
+ 'Place 10: (9, 3)',
+ 'Place 11: (0, 5)',
+ 'Place 12: (0, 1)',
+ 'Place 13: (2, 4)',
+ 'Place 14: (2, 0)',
+ 'Place 15: (3, 2)',
+ 'Place 16: (0, 7)',
+ 'Place 17: (5, 9)',
+ 'Place 18: (0, 2)',
+ 'Place 19: (7, 2)',
+ 'Place 20: (9, 2)',
+ 'Place 21: (3, 3)',
+ 'Place 22: (2, 3)',
+ 'Place 23: (4, 1)',
+ 'Place 24: (2, 9)',
+ 'Place 25: (1, 4)'].
+ We have a robot starts at Place 1.
+ The robot can travel between any two places and the travel cost is the distance between two places. ###
+ ### Task: please find the shortest path for the robot to visit all the places and return to start place. ###

@@ -52,8 +52,17 @@ def solve_problem(task_descriptions, env_and_task):
             print('Please clarify the task descriptions.')
             clarifications_from_user = input("")
             clarifications_from_user_prex = "### Following are clarifications of tasks from user."
+
+            clarification_questions = ""
+            if gpt_consistent_bool is False:
+                clarification_questions += f"### Clarification questions from GPT 4: {consistent_check_content} ###"
+            if gemini_consistent_bool is False:
+                clarification_questions += f"### Clarification questions from Gemini: {gemini_consistent_check_content} ###"
+
             consistent_check_content_modified = f"{clarifications_from_user_prex} {clarifications_from_user} ###"
-            task_descriptions = f"{env_and_task} {consistent_check_content_modified} {nltd_to_math_requirements} {gpt_prompt_tips}"
+            task_descriptions = (f"{env_and_task} {clarification_questions} {consistent_check_content_modified} "
+                                 f"{nltd_to_math_requirements} {gpt_prompt_tips}")
+            print('Modified Task descriptions: ', task_descriptions, sep='\n')
             continue
         else:
             consistent_check_bool = True
@@ -72,7 +81,7 @@ def solve_problem(task_descriptions, env_and_task):
 
 
 def main():
-    env_and_task = read_file(file_path="task/simple/1.txt")
+    env_and_task = read_file(file_path="task/simple/5.txt")
 
     task_descriptions = f"{env_and_task} {nltd_to_math_requirements} {gpt_prompt_tips}"
 

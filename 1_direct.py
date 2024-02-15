@@ -28,7 +28,7 @@ def solve_problem(task_descriptions):
 
 
 def main():
-    env_and_task = read_file(file_path="task/simple/1.txt")
+    env_and_task = read_file(file_path="task/middle/2.txt")
 
     task_descriptions = f"{env_and_task} {direct_solution_requirements} {gpt_prompt_tips}"
 

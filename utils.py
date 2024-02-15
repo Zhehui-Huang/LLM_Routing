@@ -1,4 +1,5 @@
 import subprocess
+import time
 
 direct_solution_requirements = (
     "### Solution requirements: please solve the problem with Python code. "
@@ -6,7 +7,8 @@ direct_solution_requirements = (
     "If there is a solution, please only output Python code without any analysis. In the Python code, you must "
     "1. Print tour of each robot (template: Place <text> -> Place <text>) "
     "2. Print cost (template: Cost: <text>). "
-    "3. Python code to visualize the tour, and mark each movement with an arrow. ###"
+    "3. Python code to visualize the tour of all robots in one plot. You should put cost in the top-right corner of "
+    "the plot. and mark each movement with an arrow. ###"
 )
 
 nltd_to_math_requirements = (
@@ -81,7 +83,7 @@ def math_to_solution(client, gpt_model, task_descriptions, math_content_modify, 
         "If there is a solution, please only output Python code without any analysis. In the Python code, you must "
         "1. Print tour of each robot (template: Place <text> -> Place <text>) "
         "2. Print cost (template: Cost: <text>). "
-        "3. Python code to visualize the tour, and mark each movement with an arrow. ###"
+        "3. Python code to visualize the tour of all robots in one plot, and mark each movement with an arrow. ###"
     )
 
     problem_solving_questions = f"{pre_problem_solving_questions} {prompt_tips}"
@@ -130,6 +132,7 @@ def consistent_check(client, gpt_model, task_descriptions, env_and_task, math_co
 
 
 def extract_execute_code(problem_solving_content, python_file_path):
+    start_time = time.time()
     # Extra python code from problem_solving_content
     start_marker = "```python"  # Starting marker of Python code
     end_marker = "```"  # Ending marker of Python code
@@ -147,5 +150,9 @@ def extract_execute_code(problem_solving_content, python_file_path):
     print("external_solutions.stdout:   ", external_solutions.stdout, sep="\n")
     # In case of errors
     print("external_solutions.stderr:   ", external_solutions.stderr, sep="\n")
+
+    end_time = time.time()
+    total_time = end_time - start_time
+    print(f"Total running time: {total_time} seconds")
 
     return external_solutions

@@ -9,6 +9,7 @@ from utils import extract_execute_code, nltd_to_math, consistent_check, read_fil
 client = OpenAI()
 gpt_model = "gpt-4-0125-preview"
 python_file_path = 'tmp/4_refine_extracted_code.py'
+vis_file_path = 'tmp/vis_5_external_tools_extracted_code.py'
 
 # Gemini
 GOOGLE_API_KEY = "AIzaSyBruy7vdcDDCHfIrNxgiYkBhAl7g2ajXGA"
@@ -53,8 +54,17 @@ def solve_problem(task_descriptions, env_and_task):
             print('Please clarify the task descriptions.')
             clarifications_from_user = input("")
             clarifications_from_user_prex = "### Following are clarifications of tasks from user."
+
+            clarification_questions = ""
+            if gpt_consistent_bool is False:
+                clarification_questions += f"### Clarification questions from GPT 4: {consistent_check_content} ###"
+            if gemini_consistent_bool is False:
+                clarification_questions += f"### Clarification questions from Gemini: {gemini_consistent_check_content} ###"
+
             consistent_check_content_modified = f"{clarifications_from_user_prex} {clarifications_from_user} ###"
-            task_descriptions = f"{env_and_task} {consistent_check_content_modified} {nltd_to_math_requirements} {gpt_prompt_tips}"
+            task_descriptions = (f"{env_and_task} {clarification_questions} {consistent_check_content_modified} "
+                                 f"{nltd_to_math_requirements} {gpt_prompt_tips}")
+            print('Modified Task descriptions: ', task_descriptions, sep='\n')
             continue
         else:
             consistent_check_bool = True
@@ -67,12 +77,12 @@ def solve_problem(task_descriptions, env_and_task):
     # 3. Math to solution
     pre_problem_solving_questions = (
         "### Solution requirements: Please use Python code to solve the above mathematical problem. "
-        "You must consider all constrains regardless of complexity. "
+        "Even if the task requires optimal solution, as long as you think it is too compute intensive, "
+        "you can provide a feasible solution with a heuristic solver. "
         "If there is no solution, only print ***no solution***. "
         "If there is a solution, please only output Python code without any analysis. In the Python code, you must "
         "1. Print tour of each robot (template: Place <text> -> Place <text>) "
-        "2. Print cost (template: Cost: <text>). "
-        "3. Python code to visualize the tour, and mark each movement with an arrow. ###"
+        "2. Print cost (template: Cost: <text>). ###"
     )
 
     problem_solving_questions = f"{pre_problem_solving_questions} {gpt_prompt_tips}"
@@ -95,8 +105,6 @@ def solve_problem(task_descriptions, env_and_task):
         solution_content = solution_reply.choices[0].message.content
         print('Solutions: ', solution_content, sep='\n')
         print('====================================================================================================')
-        if "no solution" in solution_content:
-            break
 
         # Attempt to solve
         external_solutions = extract_execute_code(problem_solving_content=solution_content,
@@ -106,7 +114,8 @@ def solve_problem(task_descriptions, env_and_task):
         cost_match = re.search(r'cost.*?([\d.]+)', external_solutions.stdout, re.IGNORECASE)
         cost_value = float(cost_match.group(1)) if cost_match else None
         if cost_value is None:
-            raise ValueError("The cost value is not found.")
+            print("No cost value found in the solution.")
+            break
 
         cost_value_list.append(cost_value)
 
@@ -118,23 +127,50 @@ def solve_problem(task_descriptions, env_and_task):
             break
 
         # From assistant
-        tmp_assistent_message = {"role": "assistant", "content": solution_content}
+        tmp_assistent_message = {"role": "assistant", "content": f"{solution_content} {external_solutions.stdout}"}
         init_messages.append(tmp_assistent_message)
         # From refine
         tmp_refine_message = {
             "role": "user",
-            "content": f"Please provide a better solution, which has the cost better than {cost_value}. "
-                       f"If you can not provide one, you MUST only output ***no solution***"}
+            "content": f"Please provide a better solution with Python code."}
         init_messages.append(tmp_refine_message)
 
     # 4. Solve the problem
     print('Final solution!')
-    extract_execute_code(problem_solving_content=final_solution_content, python_file_path=python_file_path)
+    external_solutions = extract_execute_code(problem_solving_content=final_solution_content,
+                                              python_file_path=python_file_path)
+
+    # Visualize solution
+    tmp_refine_input = ("### Task: please visualize the solution with Python code. You should mark each movement with "
+                        "an arrow. You should put cost in the top-right corner of the plot. You MUST ONLY output the "
+                        "Python code. ###")
+    visualize_refine_input = f"### Here is the solution {external_solutions.stdout} ### {tmp_refine_input}"
+    print("visualize_refine_input: ", visualize_refine_input, sep="\n")
+
+    vis_messages = [
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": f"{env_and_task} {visualize_refine_input} {gpt_prompt_tips}"},
+    ]
+
+    visualize_solution_reply = client.chat.completions.create(
+        model=gpt_model,
+        messages=vis_messages,
+        stream=False,
+    )
+
+    visualize_content = visualize_solution_reply.choices[0].message.content
+    print('visualize_content: ', visualize_content)
+    print('====================================================================================================')
+
+    # 4. Vis the problem
+    vis_external_solutions = extract_execute_code(problem_solving_content=visualize_content,
+                                                  python_file_path=vis_file_path)
+
     print('End!')
 
 
 def main():
-    env_and_task = read_file(file_path="task/simple/1.txt")
+    env_and_task = read_file(file_path="task/middle/1.txt")
 
     task_descriptions = f"{env_and_task} {nltd_to_math_requirements} {gpt_prompt_tips}"
 
