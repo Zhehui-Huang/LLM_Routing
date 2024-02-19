@@ -8,7 +8,8 @@ direct_solution_requirements = (
     "### Solution requirements: please solve the problem with Python code. "
     "If there is no solution, only print ***no solution***. "
     "If there is a solution, please only output Python code without any analysis. In the Python code, you must "
-    "1. Print the tour or path of each robot (template: Robot <rid>: Place <pid 1> -> Place <pid 2> ... -> Place <pid n>) "
+    "1. Print the tour or path of each robot (template: Robot <rid>: Place <pid 1> -> Place <pid 2> ... -> Place <pid "
+    "n>)"
     "2. Print cost of each robot (template: Cost: <text>). "
     "3. Print the final cost that the task asked (template: Final cost: <text>). ###"
 )
@@ -268,7 +269,7 @@ def read_all_files(root_directory):
 
 
 def reflect_solution(ori_python_file_path, reply_content, env_and_task, math_content_modify, sol_given_parts, client,
-                     gpt_model, reflect_num=2, question_for_answer=None, gpt_prompt_tips=None):
+                     gpt_model, reflect_num=2, question_for_answer=None):
     find_solution_flag = False
 
     q_meet_req_messages = [
@@ -295,9 +296,6 @@ def reflect_solution(ori_python_file_path, reply_content, env_and_task, math_con
                 "If the solution is valid, you must only output: <**Yes**> "
                 "If the solution is *NOT* valid, you must only output: <**No**> ###"
             )
-                # "1. Output <**No**> "
-                # "2. Analyze why the solution is not valid. "
-                # f"3. Provide a correct solution with python code. {sol_given_parts} ###")
 
             q_meet_req = f"{math_content_modify} {exec_res} {question_for_answer}"
         else:

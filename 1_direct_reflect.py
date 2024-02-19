@@ -35,7 +35,7 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
     find_solution_flag = reflect_solution(
         ori_python_file_path=python_file_path, reply_content=reply_content, env_and_task=env_and_task,
         math_content_modify=None, sol_given_parts=sol_given_parts, client=client, gpt_model=gpt_model,
-        question_for_answer=question_for_answer, gpt_prompt_tips=gpt_prompt_tips)
+        question_for_answer=question_for_answer)
 
     if find_solution_flag is False:
         print(f'Can not find the solution!')
