@@ -1,0 +1,26 @@
+###
+There are several places of interest on the plane.
+['Place 1: (9, 4)',
+ 'Place 2: (4, 6)',
+ 'Place 3: (4, 4)',
+ 'Place 4: (3, 4)',
+ 'Place 5: (4, 8)',
+ 'Place 6: (4, 3)',
+].
+All robots start and end at Place 1.
+Each robot can travel between any two distinct places, but can not travel from its current place to the same place.
+The travel cost is determined by the Euclidean distance between two locations.
+Each robot only has one tour.
+Each place can be visited by any robot only once, except the starting location.
+Every robot has a velocity of 1 unit per minute and is limited to one tour.
+###
+###
+Task: I have three robots visit all places cooperatively.
+Following places must be visited within a specific time window.
+The time window for Place 2 is [2, 10]
+The time window for Place 3 is [5, 10]
+The time window for Place 4 is [6, 12]
+The time window for Place 5 is [6, 16]
+The time window for Place 6 is [7, 18]
+Your goal is to provide a solution which makes the maximum distance traveled by any robot is minimized.
+###

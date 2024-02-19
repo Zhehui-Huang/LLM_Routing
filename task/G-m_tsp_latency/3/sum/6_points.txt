@@ -1,0 +1,20 @@
+###
+There are several places of interest on the plane.
+['Place 1: (9, 4)',
+ 'Place 2: (4, 6)',
+ 'Place 3: (4, 4)',
+ 'Place 4: (3, 4)',
+ 'Place 5: (4, 8)',
+ 'Place 6: (4, 3)',
+].
+All robots start at Place 1.
+Robots can travel directly between any two distinct places, excluding self-visits.
+The cost of travel is defined by the Euclidean distance between locations.
+Every robot has a velocity of 1 unit per minute and is limited to one tour.
+###
+###
+Task: I have three robots visit all places cooperatively.
+The primary goal is to assign routes to three robots such that they cooperatively cover all places of interest,
+with a particular focus on minimizing the sum the latency time of all places.
+Latency time is defined as the time gap before first visiting the place.
+###

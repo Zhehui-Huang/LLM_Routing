@@ -16,7 +16,7 @@ GOOGLE_API_KEY = "AIzaSyBruy7vdcDDCHfIrNxgiYkBhAl7g2ajXGA"
 genai.configure(api_key=GOOGLE_API_KEY)
 
 consistent_check_count = 2
-refine_count = 5
+refine_count = 3
 
 
 def solve_problem(task_descriptions, env_and_task):
@@ -170,7 +170,7 @@ def solve_problem(task_descriptions, env_and_task):
 
 
 def main():
-    env_and_task = read_file(file_path="task/middle/1.txt")
+    env_and_task = read_file(file_path="task/middle/6.txt")
 
     task_descriptions = f"{env_and_task} {nltd_to_math_requirements} {gpt_prompt_tips}"
 

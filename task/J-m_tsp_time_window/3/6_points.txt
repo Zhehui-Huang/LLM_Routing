@@ -1,0 +1,31 @@
+###
+There are several places of interest on the plane.
+['Place 1: (9, 4)',
+ 'Place 2: (4, 6)',
+ 'Place 3: (4, 4)',
+ 'Place 4: (3, 4)',
+ 'Place 5: (4, 8)',
+ 'Place 6: (4, 3)',
+].
+The depot of all robots is Place 1.
+Each robot can travel between any two distinct places, but can not travel from its current place to the same place.
+The travel cost is determined by the Euclidean distance between two locations.
+There are five customers who need to be served.
+Each customer has a time window [a, b] defining the earliest and latest service start time.
+Each customer has a start location and a destination location.
+
+Customer 1: time window [7, 10], start location Place 2, destination location Place 3.
+Customer 2: time window [6, 8], start location Place 4, destination location Place 5.
+Customer 3: time window [10, 18], start location Place 6, destination location Place 5.
+Customer 4: time window [5, 15], start location Place 6, destination location Place 2.
+Customer 5: time window [2, 12], start location Place 3, destination location Place 1.
+
+Each customer is visited exactly once by exactly one vehicle.
+Each robot only has one tour.
+Each robot can only serve one customer at a time.
+For each robot, waiting time is allowed.
+###
+###
+Task: I have three robots to serve customers cooperatively.
+The solution should aim to minimize the total distance traveled by all robots.
+###

@@ -1,0 +1,32 @@
+###
+There are several places of interest on the plane.
+The coordinates of these places are as follows:
+['Place 1: (9, 4)',
+ 'Place 2: (4, 6)',
+ 'Place 3: (4, 4)',
+ 'Place 4: (3, 4)',
+ 'Place 5: (4, 8)',
+ 'Place 6: (4, 3)',
+].
+The distance between any two places is the NOT based on Euclidean distance.
+The default distance between any two places is 3 units, except for specific connections with different costs as follows:
+
+The distance between Place 1 and Place 2 is 1 unit.
+The distance between Place 2 and Place 3 is 1 unit.
+The distance between Place 3 and Place 4 is 1 unit.
+The distance between Place 4 and Place 5 is 1 unit.
+The distance between Place 5 and Place 6 is 1 unit.
+The distance between Place 2 and Place 4 is 1 unit.
+The distance between Place 3 and Place 5 is 1 unit.
+The distance between Place 1 and Place 6 is 2 units.
+
+All robots start and end at Place 1.
+Each robot can travel between any two distinct places, but can not travel from its current place to the same place.
+Each robot only has one tour.
+###
+###
+Task: I have three robots visit the places cooperatively.
+All robots start and end at Place 1.
+Robots will visit places as long as the shortest distance between the place and the start place is less than or equal to 2.
+The objective is to find an optimal solution where the longest tour length among all robots is minimized.
+###

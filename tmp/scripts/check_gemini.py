@@ -12,7 +12,7 @@ from utils import extract_execute_code
 GOOGLE_API_KEY = "AIzaSyBruy7vdcDDCHfIrNxgiYkBhAl7g2ajXGA"
 genai.configure(api_key=GOOGLE_API_KEY)
 
-python_file_path = '../tmp/check_gemini.py'
+python_file_path = '../check_gemini.py'
 
 
 def solve_problem(task_descriptions, prompt_tips):

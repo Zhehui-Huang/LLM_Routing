@@ -2,29 +2,31 @@ import sys
 import os
 
 from openai import OpenAI
-from utils import (extract_execute_code, nltd_to_math, math_to_solution, read_file, gpt_prompt_tips,
-                   nltd_to_math_requirements, read_all_files, save_evaluation)
+from utils import (nltd_to_math, math_to_solution, read_file, gpt_prompt_tips, nltd_to_math_requirements,
+                   read_all_files, reflect_solution)
 
 from task_specify_sol_req import sol_req
 
 client = OpenAI()
 gpt_model = "gpt-4-0125-preview"
-sol_path = 'solution/2_direct_math'
+sol_path = 'solution/2_direct_math_reflect'
 
 
 def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_parts):
     # 1. Translate natural language task descriptions (NLTD) to mathematical formulations.
     math_content_modify = nltd_to_math(client=client, gpt_model=gpt_model, task_descriptions=task_descriptions)
     # 2. Math to solution
-    solution_content = math_to_solution(client=client, gpt_model=gpt_model, task_descriptions=task_descriptions,
-                                        math_content_modify=math_content_modify, prompt_tips=gpt_prompt_tips,
-                                        sol_given_parts=sol_given_parts)
+    reply_content = math_to_solution(client=client, gpt_model=gpt_model, task_descriptions=task_descriptions,
+                                     math_content_modify=math_content_modify, prompt_tips=gpt_prompt_tips,
+                                     sol_given_parts=sol_given_parts)
 
-    # 3. Solve the problem
-    external_solutions, total_time = extract_execute_code(problem_solving_content=solution_content,
-                                                          python_file_path=python_file_path)
-    # 4. Save the evaluation
-    save_evaluation(python_file_path=python_file_path, external_solutions=external_solutions, total_time=total_time)
+    find_solution_flag = reflect_solution(
+        ori_python_file_path=python_file_path, reply_content=reply_content, env_and_task=env_and_task,
+        math_content_modify=math_content_modify, sol_given_parts=sol_given_parts, client=client, gpt_model=gpt_model)
+
+    if find_solution_flag is False:
+        print(f'Can not find the solution!')
+
     print('End!')
 
 
