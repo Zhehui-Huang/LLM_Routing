@@ -9,7 +9,7 @@ from task_specify_sol_req import sol_req
 
 client = OpenAI()
 gpt_model = "gpt-4-0125-preview"
-sol_path = 'solution/2_direct_math_reflect'
+sol_path = 'solution/2_math_reflect'
 
 
 def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_parts):
@@ -31,7 +31,7 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
 
 
 def main():
-    text_files_loc = read_all_files(root_directory='task')
+    text_files_loc = read_all_files(root_directory='task_v2')
     print('file number:', len(text_files_loc), sep='\n')
     for file_path in text_files_loc:
         for tid in range(3):

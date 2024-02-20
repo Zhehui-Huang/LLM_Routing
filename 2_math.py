@@ -29,7 +29,7 @@ def solve_problem(task_descriptions, python_file_path, sol_given_parts):
 
 
 def main():
-    text_files_loc = read_all_files(root_directory='task')
+    text_files_loc = read_all_files(root_directory='task_v2')
     print('file number:', len(text_files_loc), sep='\n')
     for file_path in text_files_loc:
         for tid in range(3):

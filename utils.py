@@ -102,8 +102,8 @@ def consistent_check(client, gpt_model, task_descriptions, env_and_task, math_co
                      consistent_check_prex=None):
     if consistent_check_prex is None:
         consistent_check_prex = (
-            "### Question: are following natural language task descriptions and mathematical problem convey the "
-            "same meaning?"
+            "### Question: are following natural language task descriptions and mathematical problem deliver the "
+            "same thing? Do not be too strict. As long as you think there is no ambiguities, you can say yes. "
             "If your answer is yes, please **MUST** only output following: <***yes***>. "
             "If your answer is no, you **MUST** output two things. 1. output: <***no***>. 2. clarifications questions "
             "to users **MUST** only related to natural language task descriptions. You **should not** ask questions "
@@ -420,17 +420,17 @@ def refine(refine_count, client, gpt_model, init_messages, python_file_path, sol
                 stream=False,
             )
             tmp_refine_ans_content = tmp_refine_ans_reply.choices[0].message.content
-            if '**Yes**' in tmp_refine_ans_content:
+            if 'Yes' in tmp_refine_ans_content:
+                print(f'The current solution is better than the previous one! {tmp_refine_ans_content}')
                 pre_external_solutions = copy.deepcopy(external_solutions)
 
                 # Update final solution
                 final_external_solutions = copy.deepcopy(external_solutions)
                 final_total_time = total_time
                 continue
-            elif '**No**' in tmp_refine_ans_content:
-                continue
             else:
-                raise ValueError("The answer is not Yes or No.")
+                print(f'The current solution is not better than the previous one! {tmp_refine_ans_content}')
+                continue
 
     return final_external_solutions, final_total_time
 

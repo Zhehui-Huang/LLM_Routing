@@ -7,7 +7,7 @@ from openai import OpenAI
 
 from task_specify_sol_req import sol_req
 from utils import (extract_execute_code, read_file, nltd_to_math_requirements, gpt_prompt_tips, read_all_files,
-                   total_consistent_check, save_evaluation)
+                   total_consistent_check, save_evaluation, nltd_to_math)
 
 # OpenAI
 client = OpenAI()
@@ -18,30 +18,20 @@ GOOGLE_API_KEY = "AIzaSyBruy7vdcDDCHfIrNxgiYkBhAl7g2ajXGA"
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Solution path
-sol_path = 'solution/5_external_tools'
+sol_path = 'solution/5_external_tools_no_consistent_check'
 
 consistent_check_count = 2
 refine_count = 3
 
 
 def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_parts):
-    # Init Gemini
-    gemini_model = genai.GenerativeModel('gemini-pro')
-    gemini_chat = gemini_model.start_chat(history=[])
-
-    # Consistent check
-    consistent_check_bool, math_content_modify = total_consistent_check(
-        consistent_check_count=consistent_check_count, client=client, gpt_model=gpt_model,
-        task_descriptions=task_descriptions, env_and_task=env_and_task, gemini_chat=gemini_chat)
-
-    if consistent_check_bool is False:
-        print('Fail in consistent check.')
-        return
+    math_content_modify = nltd_to_math(client=client, gpt_model=gpt_model, task_descriptions=task_descriptions)
 
     # Ask recommended solvers
     tmp_recommend_solver = (
-        f"Please provide the solver that can best solve the following mathematical problem, "
-        f"and which you are most proficient with. You must only output the solver name. {math_content_modify}. "
+        f"Please provide a tool (such as Gurobi, OR-Tools, etc.) that can best solve the following mathematical "
+        f"problem,"
+        f"and which you are most proficient with. You must only output the tool name. {math_content_modify}. "
     )
     ask_recommend_solver_messages = [
         {"role": "system", "content": f"You are a helpful assistant. {gpt_prompt_tips}"},
@@ -53,18 +43,19 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
         stream=False,
     )
     recommend_solver_content = recommend_solver_reply.choices[0].message.content
+    print('recommend_solver_content:', recommend_solver_content, sep='\n')
 
     # 3. Math to solution
-    recommend_external_tools_content = f"### Here is the recommended external solver: {recommend_solver_content} ###"
     problem_solving_questions = (
-        "Please use Python code with the following recommended external solvers to solve the above mathematical "
+        f"You must use Python code and {recommend_solver_content} to solve the above mathematical "
         f"problem. You must consider all constrains regardless of complexity. {sol_given_parts}"
     )
+    print('problem_solving_questions:', problem_solving_questions, sep='\n')
 
     init_messages = [
         {"role": "system", "content": f"You are a helpful assistant. {gpt_prompt_tips}"},
         {"role": "user", "content": task_descriptions},
-        {"role": "assistant", "content": f"{math_content_modify} {recommend_external_tools_content}"},
+        {"role": "assistant", "content": math_content_modify},
         {"role": "user", "content": problem_solving_questions}
     ]
 
@@ -92,7 +83,8 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
 
         # From user
         tmp_user_content = (
-            f"Please provide a better solution with Python code. If previous solution has errors, "
+            f"Please provide a better solution with Python code and {recommend_solver_content}. "
+            f"If previous solution has errors, "
             f"please fix all errors. You must consider all constrains regardless of complexity. {sol_given_parts}"
         )
         tmp_user_message = {"role": "user", "content": tmp_user_content}
@@ -114,6 +106,7 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
                 f"### Solution requirements: {sol_given_parts} ### "
                 f"### Previous solution: {pre_external_solutions.stdout} {pre_external_solutions.stderr} ### "
                 f"### Current solution: {external_solutions.stdout} {external_solutions.stderr} ### ")
+            print('tmp_refine_question:', tmp_refine_question, sep='\n')
 
             tmp_refine_messages = [
                 {"role": "system", "content": f"You are a helpful assistant. {gpt_prompt_tips}"},
@@ -144,7 +137,7 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
 
 
 def main():
-    text_files_loc = read_all_files(root_directory='task')
+    text_files_loc = read_all_files(root_directory='task_v2')
     print('file number:', len(text_files_loc), sep='\n')
     for file_path in text_files_loc:
         for tid in range(3):
