@@ -1,3 +1,4 @@
+import copy
 import subprocess
 import time
 import os
@@ -362,6 +363,77 @@ def reflect_solution(ori_python_file_path, reply_content, env_and_task, math_con
                                                f"\n {find_no_sol} \n {q_meet_req_content} \n")
 
     return find_solution_flag
+
+
+def refine(refine_count, client, gpt_model, init_messages, python_file_path, sol_given_parts, math_content_modify):
+    pre_external_solutions = None
+    final_external_solutions = None
+    final_total_time = None
+    for count in range(refine_count):
+        solution_reply = client.chat.completions.create(
+            model=gpt_model,
+            messages=init_messages,
+            stream=False,
+        )
+        solution_content = solution_reply.choices[0].message.content
+        external_solutions, total_time = extract_execute_code(
+            problem_solving_content=solution_content, python_file_path=python_file_path)
+
+        # From assistant
+        tmp_assistant_content = (
+            f"### Solution: {solution_content} ### "
+            f"### Execution results: {external_solutions.stdout} {external_solutions.stderr} ###"
+        )
+        tmp_assistant_message = {"role": "assistant", "content": tmp_assistant_content}
+        init_messages.append(tmp_assistant_message)
+        print('Solutions: ', tmp_assistant_content, sep='\n')
+
+        # From user
+        tmp_user_content = f"Please provide a better solution with Python code. {sol_given_parts}"
+        tmp_user_message = {
+            "role": "user", "content": tmp_user_content}
+        init_messages.append(tmp_user_message)
+        print('User: ', tmp_user_content, sep='\n')
+
+        if count == 0:
+            pre_external_solutions = copy.deepcopy(external_solutions)
+
+            # Update final solution
+            final_external_solutions = copy.deepcopy(external_solutions)
+            final_total_time = total_time
+        else:
+            tmp_refine_question = (
+                f"Question: Based on the mathematical problem and solution requirements below, "
+                f"is the current solution better than the previous one? "
+                f"!!! You MUST ONLY EXACTLY OUTPUT <**Yes**> or <**No**> !!! "
+                f"### Mathematical problem: {math_content_modify} ### "
+                f"### Solution requirements: {sol_given_parts} ### "
+                f"### Previous solution: {pre_external_solutions.stdout} ### "
+                f"### Current solution: {external_solutions.stdout} ### ")
+
+            tmp_refine_messages = [
+                {"role": "system", "content": f"You are a helpful assistant. {gpt_prompt_tips}"},
+                {"role": "user", "content": tmp_refine_question},
+            ]
+            tmp_refine_ans_reply = client.chat.completions.create(
+                model=gpt_model,
+                messages=tmp_refine_messages,
+                stream=False,
+            )
+            tmp_refine_ans_content = tmp_refine_ans_reply.choices[0].message.content
+            if '**Yes**' in tmp_refine_ans_content:
+                pre_external_solutions = copy.deepcopy(external_solutions)
+
+                # Update final solution
+                final_external_solutions = copy.deepcopy(external_solutions)
+                final_total_time = total_time
+                continue
+            elif '**No**' in tmp_refine_ans_content:
+                continue
+            else:
+                raise ValueError("The answer is not Yes or No.")
+
+    return final_external_solutions, final_total_time
 
 
 def main():

@@ -12,7 +12,7 @@ gpt_model = "gpt-4-0125-preview"
 sol_path = 'solution/2_direct_math'
 
 
-def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_parts):
+def solve_problem(task_descriptions, python_file_path, sol_given_parts):
     # 1. Translate natural language task descriptions (NLTD) to mathematical formulations.
     math_content_modify = nltd_to_math(client=client, gpt_model=gpt_model, task_descriptions=task_descriptions)
     # 2. Math to solution
@@ -53,7 +53,7 @@ def main():
             task_descriptions = f"{env_and_task} {nltd_to_math_requirements}"
 
             solve_problem(task_descriptions=task_descriptions, python_file_path=python_file_path,
-                          env_and_task=env_and_task, sol_given_parts=sol_given_parts)
+                          sol_given_parts=sol_given_parts)
 
 
 if __name__ == '__main__':
