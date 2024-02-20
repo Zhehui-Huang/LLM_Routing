@@ -1,112 +1,76 @@
+import copy
+import os
 import sys
-from openai import OpenAI
+
 import google.generativeai as genai
-import re
-from utils import extract_execute_code, nltd_to_math, consistent_check, read_file, nltd_to_math_requirements, \
-    gpt_prompt_tips, gemini_prompt_tips
+from openai import OpenAI
+
+from task_specify_sol_req import sol_req
+from utils import (extract_execute_code, read_file, nltd_to_math_requirements, gpt_prompt_tips, read_all_files,
+                   total_consistent_check, save_evaluation)
 
 # OpenAI
 client = OpenAI()
 gpt_model = "gpt-4-0125-preview"
-python_file_path = 'tmp/5_external_tools_extracted_code.py'
-vis_file_path = 'tmp/vis_5_external_tools_extracted_code.py'
 
 # Gemini
 GOOGLE_API_KEY = "AIzaSyBruy7vdcDDCHfIrNxgiYkBhAl7g2ajXGA"
 genai.configure(api_key=GOOGLE_API_KEY)
 
+# Solution path
+sol_path = 'solution/5_external_tools'
+
 consistent_check_count = 2
-refine_count = 5
+refine_count = 3
 
 
-def solve_problem(task_descriptions, env_and_task):
+def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_parts):
     # Init Gemini
     gemini_model = genai.GenerativeModel('gemini-pro')
     gemini_chat = gemini_model.start_chat(history=[])
 
-    consistent_check_bool = False
-
-    for check_id in range(consistent_check_count):
-        print(f"Check count: {check_id + 1}")
-        # 1. Translate natural language task descriptions (NLTD) to mathematical formulations.
-        math_content_modify = nltd_to_math(client=client, gpt_model=gpt_model, task_descriptions=task_descriptions)
-
-        # 2. Combine (NLTD + Mathematical formulation) to check consistent
-        # # GPT 4
-        consistent_check_prex = (
-            "### Question: are following natural language task descriptions and mathematical formulations convey the "
-            "same meaning?"
-            "If your answer is yes, please **MUST** output two things. 1. output: <***yes***>. "
-            "2. output: the name of the best recommend solver to solve the problem. "
-            "If your answer is no, you **MUST** output two things. 1. output: <***no***>. 2. clarifications questions "
-            "to users **MUST** only related to natural language task descriptions. You **should not** ask questions "
-            "related to mathematical formulations ###")
-
-        consistent_check_content, consistent_check_input = consistent_check(
-            client=client, gpt_model=gpt_model, task_descriptions=task_descriptions, env_and_task=env_and_task,
-            math_content_modify=math_content_modify, consistent_check_prex=consistent_check_prex)
-
-        # # Gemini
-        gemini_consistent_check_reply = gemini_chat.send_message(f"{consistent_check_input} {gemini_prompt_tips}")
-        gemini_consistent_check_content = gemini_consistent_check_reply.text
-
-        print('GPT4 consistent check:    ', consistent_check_content, sep='\n')
-        print('====================================================================================================')
-        print('Gemini consistent check:    ', gemini_consistent_check_content, sep='\n')
-        print('====================================================================================================')
-
-        gpt_consistent_bool = "***yes***" in consistent_check_content
-        gemini_consistent_bool = "***yes***" in gemini_consistent_check_content
-        all_consistent_bool = gpt_consistent_bool and gemini_consistent_bool
-
-        if all_consistent_bool is False:
-            print('Please clarify the task descriptions.')
-            clarifications_from_user = input("")
-            clarifications_from_user_prex = "### Following are clarifications of tasks from user."
-
-            clarification_questions = ""
-            if gpt_consistent_bool is False:
-                clarification_questions += f"### Clarification questions from GPT 4: {consistent_check_content} ###"
-            if gemini_consistent_bool is False:
-                clarification_questions += f"### Clarification questions from Gemini: {gemini_consistent_check_content} ###"
-
-            consistent_check_content_modified = f"{clarifications_from_user_prex} {clarifications_from_user} ###"
-            task_descriptions = (f"{env_and_task} {clarification_questions} {consistent_check_content_modified} "
-                                 f"{nltd_to_math_requirements} {gpt_prompt_tips}")
-            print('Modified Task descriptions: ', task_descriptions, sep='\n')
-            continue
-        else:
-            consistent_check_bool = True
-            break
+    # Consistent check
+    consistent_check_bool, math_content_modify = total_consistent_check(
+        consistent_check_count=consistent_check_count, client=client, gpt_model=gpt_model,
+        task_descriptions=task_descriptions, env_and_task=env_and_task, gemini_chat=gemini_chat)
 
     if consistent_check_bool is False:
         print('Fail in consistent check.')
         return
 
+    # Ask recommended solvers
+    tmp_recommend_solver = (
+        f"Please provide the solver that can best solve the following mathematical problem, "
+        f"and which you are most proficient with. You must only output the solver name. {math_content_modify}. "
+    )
+    ask_recommend_solver_messages = [
+        {"role": "system", "content": f"You are a helpful assistant. {gpt_prompt_tips}"},
+        {"role": "user", "content": tmp_recommend_solver},
+    ]
+    recommend_solver_reply = client.chat.completions.create(
+        model=gpt_model,
+        messages=ask_recommend_solver_messages,
+        stream=False,
+    )
+    recommend_solver_content = recommend_solver_reply.choices[0].message.content
+
     # 3. Math to solution
-    recommend_external_tools_content = f"### Here is the recommended external solver: {consistent_check_content} ###"
-    pre_problem_solving_questions = (
-        "### Solution requirements: Please use Python code with the recommended external solvers to solve the above "
-        "mathematical problem. "
-        "You must consider all constrains regardless of complexity. "
-        "If there is no solution, only print ***no solution***. "
-        "If there is a solution, please only output Python code without any analysis. In the Python code, you must "
-        "1. Print tour of each robot (template: Place <text> -> Place <text>) "
-        "2. Print cost (template: Cost: <text>). "
-        "3. Python code to visualize the tour, and mark each movement with an arrow. ###"
+    recommend_external_tools_content = f"### Here is the recommended external solver: {recommend_solver_content} ###"
+    problem_solving_questions = (
+        "Please use Python code with the following recommended external solvers to solve the above mathematical "
+        f"problem. You must consider all constrains regardless of complexity. {sol_given_parts}"
     )
 
-    problem_solving_questions = f"{pre_problem_solving_questions} {gpt_prompt_tips}"
-
     init_messages = [
-        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "system", "content": f"You are a helpful assistant. {gpt_prompt_tips}"},
         {"role": "user", "content": task_descriptions},
         {"role": "assistant", "content": f"{math_content_modify} {recommend_external_tools_content}"},
         {"role": "user", "content": problem_solving_questions}
     ]
 
-    cost_value_list = []
-    final_solution_content = None
+    pre_external_solutions = None
+    final_external_solutions = None
+    final_total_time = None
     for count in range(refine_count):
         solution_reply = client.chat.completions.create(
             model=gpt_model,
@@ -114,63 +78,97 @@ def solve_problem(task_descriptions, env_and_task):
             stream=False,
         )
         solution_content = solution_reply.choices[0].message.content
-        print('Solutions: ', solution_content, sep='\n')
-        print('====================================================================================================')
-        if "no solution" in solution_content:
-            break
-
-        # Attempt to solve
-        external_solutions = extract_execute_code(problem_solving_content=solution_content,
-                                                  python_file_path=python_file_path)
-
-        # Regular expression to find a floating point number after "cost"
-        cost_match = re.search(r'cost.*?([\d.]+)', external_solutions.stdout, re.IGNORECASE)
-        cost_value = float(cost_match.group(1)) if cost_match else None
-        if cost_value is None:
-            if "Traceback" in external_solutions.stderr or "SyntaxError" in external_solutions.stderr:
-                # From assistant
-                tmp_assistent_message = {"role": "assistant", "content": solution_content}
-                init_messages.append(tmp_assistent_message)
-                # From refine
-                external_solutions_content = (
-                    f"### Following are the errors given your provided Python code. "
-                    f"{external_solutions.stderr} ### {gpt_prompt_tips}")
-                init_messages.append({"role": "user", "content": external_solutions_content})
-                continue
-            else:
-                raise ValueError("The cost value is not found.")
-
-        cost_value_list.append(cost_value)
-
-        final_solution_content = solution_content
-
-        more_than_two = any(cost_value_list.count(x) >= 2 for x in set(cost_value_list))
-        if more_than_two:
-            print(f"The final best cost is: {cost_value}")
-            break
+        external_solutions, total_time = extract_execute_code(
+            problem_solving_content=solution_content, python_file_path=python_file_path)
 
         # From assistant
-        tmp_assistent_message = {"role": "assistant", "content": solution_content}
-        init_messages.append(tmp_assistent_message)
-        # From refine
-        tmp_refine_message = {
-            "role": "user",
-            "content": f"Please provide a better solution, which has the cost better than {cost_value}. "
-                       f"If you can not provide one, you MUST only output ***no solution***"}
-        init_messages.append(tmp_refine_message)
+        tmp_assistant_content = (
+            f"### Solution: {solution_content} ### "
+            f"### Execution results: {external_solutions.stdout} {external_solutions.stderr} ###"
+        )
+        tmp_assistant_message = {"role": "assistant", "content": tmp_assistant_content}
+        init_messages.append(tmp_assistant_message)
+        print('Solutions: ', tmp_assistant_content, sep='\n')
 
-    # 4. Solve the problem
-    print('Final solution!')
-    extract_execute_code(problem_solving_content=final_solution_content, python_file_path=python_file_path)
+        # From user
+        tmp_user_content = (
+            f"Please provide a better solution with Python code. If previous solution has errors, "
+            f"please fix all errors. You must consider all constrains regardless of complexity. {sol_given_parts}"
+        )
+        tmp_user_message = {"role": "user", "content": tmp_user_content}
+        init_messages.append(tmp_user_message)
+        print('User: ', tmp_user_content, sep='\n')
+
+        if count == 0:
+            pre_external_solutions = copy.deepcopy(external_solutions)
+
+            # Update final solution
+            final_external_solutions = copy.deepcopy(external_solutions)
+            final_total_time = total_time
+        else:
+            tmp_refine_question = (
+                f"Question: Based on the mathematical problem and solution requirements below, "
+                f"is the current solution better than the previous one? "
+                f"!!! You MUST ONLY EXACTLY OUTPUT <**Yes**> or <**No**> !!! "
+                f"### Mathematical problem: {math_content_modify} ### "
+                f"### Solution requirements: {sol_given_parts} ### "
+                f"### Previous solution: {pre_external_solutions.stdout} {pre_external_solutions.stderr} ### "
+                f"### Current solution: {external_solutions.stdout} {external_solutions.stderr} ### ")
+
+            tmp_refine_messages = [
+                {"role": "system", "content": f"You are a helpful assistant. {gpt_prompt_tips}"},
+                {"role": "user", "content": tmp_refine_question},
+            ]
+            tmp_refine_ans_reply = client.chat.completions.create(
+                model=gpt_model,
+                messages=tmp_refine_messages,
+                stream=False,
+            )
+            tmp_refine_ans_content = tmp_refine_ans_reply.choices[0].message.content
+            if '**Yes**' in tmp_refine_ans_content:
+                pre_external_solutions = copy.deepcopy(external_solutions)
+
+                # Update final solution
+                final_external_solutions = copy.deepcopy(external_solutions)
+                final_total_time = total_time
+                continue
+            elif '**No**' in tmp_refine_ans_content:
+                continue
+            else:
+                raise ValueError("The answer is not Yes or No.")
+
+    # Save evaluation
+    save_evaluation(python_file_path=python_file_path, external_solutions=final_external_solutions,
+                    total_time=final_total_time)
     print('End!')
 
 
 def main():
-    env_and_task = read_file(file_path="task/simple/5.txt")
+    text_files_loc = read_all_files(root_directory='task')
+    print('file number:', len(text_files_loc), sep='\n')
+    for file_path in text_files_loc:
+        for tid in range(3):
+            env_and_task = read_file(file_path=file_path)
+            python_file_path = sol_path + file_path[4:-4] + f'_{tid}' + '.py'
+            directory = os.path.dirname(python_file_path)
+            if not os.path.exists(directory):
+                os.makedirs(directory)
 
-    task_descriptions = f"{env_and_task} {nltd_to_math_requirements} {gpt_prompt_tips}"
+            if os.path.exists(python_file_path):
+                print('python_file_path exists:', python_file_path, sep='\n')
+                continue
 
-    solve_problem(task_descriptions=task_descriptions, env_and_task=env_and_task)
+            print('python_file_path:', python_file_path, sep='\n')
+            parts = file_path.split('/')
+            robot_num = '1'
+            if int(parts[2][0]) > 1:
+                robot_num = 'M'
+            sol_given_parts_key = f"{parts[1][0]}_{robot_num}"
+            sol_given_parts = sol_req[sol_given_parts_key]
+            task_descriptions = f"{env_and_task} {nltd_to_math_requirements}"
+
+            solve_problem(task_descriptions=task_descriptions, python_file_path=python_file_path,
+                          env_and_task=env_and_task, sol_given_parts=sol_given_parts)
 
 
 if __name__ == '__main__':

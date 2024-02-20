@@ -390,8 +390,7 @@ def refine(refine_count, client, gpt_model, init_messages, python_file_path, sol
 
         # From user
         tmp_user_content = f"Please provide a better solution with Python code. {sol_given_parts}"
-        tmp_user_message = {
-            "role": "user", "content": tmp_user_content}
+        tmp_user_message = {"role": "user", "content": tmp_user_content}
         init_messages.append(tmp_user_message)
         print('User: ', tmp_user_content, sep='\n')
 
