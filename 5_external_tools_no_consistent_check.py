@@ -18,7 +18,7 @@ GOOGLE_API_KEY = "AIzaSyBruy7vdcDDCHfIrNxgiYkBhAl7g2ajXGA"
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Solution path
-sol_path = 'solution/5_external_tools_no_consistent_check'
+sol_path = 'solution/5_external_tools_no_consistent_check_v2'
 
 consistent_check_count = 2
 refine_count = 3
@@ -127,7 +127,7 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
                 final_total_time = total_time
                 continue
             else:
-                print(f'The current solution is better than the previous one! {tmp_refine_ans_content}')
+                print(f'NOT better than the previous one! {tmp_refine_ans_content}')
                 continue
 
     # Save evaluation
