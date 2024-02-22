@@ -1,5 +1,6 @@
 """
 Environment information:
+
 There are five cities.
 
 City 1 has location (9, 4)
@@ -25,7 +26,10 @@ City 4 sells
 City 5 sells
     - T-shirts (20 units at $5 each)
     - Jeans (20 units at $10 each)
+"""
 
+"""
+Robot information:
 
 There is a robot.
 - The robot is at city 1.

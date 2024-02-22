@@ -1,5 +1,6 @@
 """
 Environment information:
+
 There are ten cities.
 
 City 1 has location (9, 4)
@@ -50,7 +51,10 @@ City 9 sells
 City 10 sells
     - Hats (20 units at $22 each)
     - Shoes (15 units at $28 each)
+"""
 
+"""
+Robot information:
 
 There is a robot.
 - The robot is at city 1.

@@ -1,5 +1,6 @@
 """
 Environment information:
+
 There are ten cities.
 
 City 1 has location (9, 4)
@@ -15,6 +16,10 @@ City 10 has location (9, 3)
 
 Each city has a service time window [start time, end time].
 After a city's last possible service time, it cannot be visited.
+"""
+
+"""
+Robot information:
 
 There is a robot.
 - The robot is at city 1.

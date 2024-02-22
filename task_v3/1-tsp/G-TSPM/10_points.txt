@@ -1,5 +1,6 @@
 """
 Environment information:
+
 There are ten cities.
 
 The distance between each pair of cities are presented in a distance matrix below:
@@ -19,7 +20,10 @@ The index of the raw and column is 1-based.
 
 For each value in the matrix, the row index represents the starting city, and the column index represents the destination city.
 For example, the distance between city 1 and city 2 is 4.
+"""
 
+"""
+Robot information:
 
 There is a robot.
 - The robot is at city 1.

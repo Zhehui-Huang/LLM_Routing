@@ -1,5 +1,6 @@
 """
 Environment information:
+
 There are five cities.
 
 City 1 has location (9, 4)
@@ -7,6 +8,10 @@ City 2 has location (4, 6)
 City 3 has location (4, 4)
 City 4 has location (3, 4)
 City 5 has location (4, 8)
+"""
+
+"""
+Robot information:
 
 There is a robot.
 - The robot is at city 1.

@@ -1,5 +1,6 @@
 """
 Environment information:
+
 There are ten cities.
 
 City 1 has location (9, 4)
@@ -12,6 +13,10 @@ City 7 has location (7, 5)
 City 8 has location (5, 0)
 City 9 has location (1, 5)
 City 10 has location (9, 3)
+"""
+
+"""
+Robot information:
 
 There is a robot.
 - The robot is at a mobile depot A (0, 4).
