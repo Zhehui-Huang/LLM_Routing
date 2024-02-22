@@ -38,5 +38,5 @@ All robots need to work together to visit all cities at least once, except the s
 
 Every city can be visited more than once.
 
-Please provide a solution to minimize the sum of all robots' travel costs.
+Please provide a solution to minimize the tour costs among all robots.
 ###

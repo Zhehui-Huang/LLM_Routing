@@ -40,5 +40,5 @@ City group F: City 6
 
 All robot needs to work together to visit exactly one city from each city group, and then back to the depot.
 
-Please provide a solution to minimize the sum of all robots' tour costs.
+Please provide a solution to minimize the tour costs among all robots.
 ###

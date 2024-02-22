@@ -17,7 +17,7 @@ After a city's last possible service time, it cannot be visited.
 Robot information:
 
 There is a robot.
-- The robot is at city 1.
+- The robot starts at city 1.
 - The robot travels 1 unit of distance with 1 unit of time.
 - The robot can travel between any two cities.
 - The travel cost is the Euclidean distance between two cities.

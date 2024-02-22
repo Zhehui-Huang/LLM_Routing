@@ -20,7 +20,7 @@ City 1, City 4, City 7 are all depots.
 """
 Robot information:
 
-There is four robots.
+There are four robots.
 - All robots start at city 1.
 - All robots can travel between any two cities.
 - The travel cost of all robots is the Euclidean distance between two cities.
@@ -35,5 +35,5 @@ The robot starts at city 1.
 
 The robot need to visit all cities exactly once (depot cities need to be visited at least once), and then back to any depot cities.
 
-Please provide a solution to minimize the sum of all robots' travel costs.
+Please provide a solution to minimize the tour costs among all robots.
 ###

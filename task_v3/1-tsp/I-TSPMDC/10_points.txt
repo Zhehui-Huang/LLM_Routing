@@ -33,7 +33,7 @@ Task:
 
 The robot starts at city 1.
 
-The robot need to visit all cities exactly once (depot cities need to be visited at least once), and then back to any depot cities.
+The robot need to visit all cities exactly once (depot cities need to be visited at least once), and then back to any depot city.
 
 Please provide a solution to minimize the travel cost of the robot.
 ###

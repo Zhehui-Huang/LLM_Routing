@@ -52,5 +52,5 @@ All robots need to visit all cities exactly once, except the starting city, and 
 
 Each robot can only visit cities with the same color as itself.
 
-Please provide a solution to minimize the sum of all robots' travel costs.
+Please provide a solution to minimize the tour costs among all robots.
 ###

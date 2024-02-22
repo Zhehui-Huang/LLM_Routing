@@ -59,9 +59,9 @@ There are four robots.
 Task:
 
 All robots need to visit cities cooperatively to buy products and then return to city 1.
-Each city, except the starting cities, can only be visited once.
+Each city, except the starting cities, can only be visited once by any robot.
 
 All robots need to work together to buy 60 units of product in total.
 
-Please provide a solution to minimize the sum of all robots' tour costs (travel cost + purchasing cost) enables the purchase of enough products.
+Please provide a solution to minimize the tour costs (travel cost + purchasing cost) among all robots, while satisfying the purchase of enough products.
 ###

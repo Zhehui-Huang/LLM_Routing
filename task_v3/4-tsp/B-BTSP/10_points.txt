@@ -34,5 +34,5 @@ All robots need to work together to visit all cities exactly once, except the de
 Please provide a solution to:
 
 Among all robots’ tours, minimize the biggest travel cost between any two consecutive cities in the tour.
-In the meantime, try to make the total travel cost of all robots as short as possible.
+In the meantime, try to make the tour costs among all robots as small as possible.
 ###

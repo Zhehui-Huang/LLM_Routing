@@ -33,5 +33,5 @@ All robots need to work together to visit all cities exactly once, except the de
 
 For any robot, if city 2, 5, 7, 10 in its tour, the robot must visit city 10 before city 7, must visit city 5 before city 7, must visit city 5 before city 2.
 
-Please provide a solution to minimize the sum of all robots' tour costs.
+Please provide a solution to minimize the tour costs among all robots.
 ###

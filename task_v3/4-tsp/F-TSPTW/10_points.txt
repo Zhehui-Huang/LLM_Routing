@@ -21,7 +21,7 @@ After a city's last possible service time, it cannot be visited.
 """
 Robot information:
 
-There is four robots.
+There are four robots.
 - All robots are at city 1, which is the depot.
 - All robots travel 1 unit of distance with 1 unit of time.
 - All robots can travel between any two cities.
@@ -45,5 +45,5 @@ City 8: Time window [2, 7]
 City 9: Time window [5, 10]
 City 10: Time window [4, 8]
 
-Please provide a solution to minimize the sum of all robots' travel costs while satisfying the time window constraints.
+Please provide a solution to minimize the tour costs among all robots while satisfying the time window constraints.
 ###

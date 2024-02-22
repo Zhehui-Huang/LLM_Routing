@@ -49,7 +49,7 @@ City 10:
 Robot information:
 
 There is a robot.
-- The robot is at city 1.
+- The robot starts at city 1.
 - The robot can travel between any two cities.
 - The travel cost is 10 times the Euclidean distance between two cities.
 """

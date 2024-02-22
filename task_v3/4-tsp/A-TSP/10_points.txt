@@ -31,5 +31,5 @@ All robots start from city 1.
 
 All robots need to work together to visit all cities exactly once, except the depot, and then back to the depot.
 
-Please provide a solution to minimize the sum of all robots' tour costs.
+Please provide a solution to minimize the tour costs among all robots.
 ###

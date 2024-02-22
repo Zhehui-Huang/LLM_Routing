@@ -18,7 +18,7 @@ City 10 has location (9, 3)
 """
 Robot information:
 
-There is four robots.
+There are four robots.
 - All robots start at city 1, which is the depot.
 - The robot can travel between any two cities.
 - The travel cost is the Euclidean distance between two cities.
@@ -29,5 +29,5 @@ Task:
 All robots will only work together to visit the cities with the distance to the city 1 less than or equal to 6 units.
 These cities are selected cities.
 The robot needs to visit all selected cities exactly once, except the starting cities, and then back to the starting city.
-Please provide a solution to minimize the sum of all robots' travel costs.
+Please provide a solution to minimize the tour costs among all robots.
 ###

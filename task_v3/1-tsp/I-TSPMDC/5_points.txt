@@ -1,7 +1,7 @@
 """
 Environment information:
 
-There are ten cities.
+There are five cities.
 
 City 1 has location (9, 4)
 City 2 has location (4, 6)
@@ -9,7 +9,7 @@ City 3 has location (4, 4)
 City 4 has location (3, 4)
 City 5 has location (4, 8)
 
-City 1, City 4 are all depots.
+City 1 and City 4 both are depots.
 """
 
 """
@@ -28,7 +28,7 @@ Task:
 
 The robot starts at city 1.
 
-The robot need to visit all cities exactly once (depot cities need to be visited at least once), and then back to any depot cities.
+The robot need to visit all cities exactly once (depot cities need to be visited at least once), and then back to any depot city.
 
 Please provide a solution to minimize the travel cost of the robot.
 ###

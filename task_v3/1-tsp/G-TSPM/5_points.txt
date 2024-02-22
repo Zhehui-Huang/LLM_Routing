@@ -21,7 +21,7 @@ For example, the distance between city 1 and city 2 is 2.
 Robot information:
 
 There is a robot.
-- The robot is at city 1.
+- The robot starts at city 1.
 - The robot can travel between any two cities.
 - The travel cost is the Euclidean distance between two cities.
 """
