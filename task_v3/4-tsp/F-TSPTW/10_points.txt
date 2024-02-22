@@ -1,0 +1,49 @@
+"""
+Environment information:
+
+There are ten cities.
+
+City 1 has location (9, 4)
+City 2 has location (4, 6)
+City 3 has location (4, 4)
+City 4 has location (3, 4)
+City 5 has location (4, 8)
+City 6 has location (4, 3)
+City 7 has location (7, 5)
+City 8 has location (5, 0)
+City 9 has location (1, 5)
+City 10 has location (9, 3)
+
+Each city has a service time window [start time, end time].
+After a city's last possible service time, it cannot be visited.
+"""
+
+"""
+Robot information:
+
+There is four robots.
+- All robots are at city 1, which is the depot.
+- All robots travel 1 unit of distance with 1 unit of time.
+- All robots can travel between any two cities.
+- The travel cost of all robots is the Euclidean distance between two cities.
+"""
+
+###
+Task:
+
+All robots need to work together to visit all cities exactly once, except the starting cities, and then back to the starting city.
+Each city must be visited within the time window below:
+
+City 1: This city is the depot. This city can be visited at any time.
+City 2: Time window [4, 6]
+City 3: Time window [2, 8]
+City 4: Time window [2, 8]
+City 5: Time window [6, 15]
+City 6: Time window [5, 10]
+City 7: Time window [1, 5]
+City 8: Time window [2, 7]
+City 9: Time window [5, 10]
+City 10: Time window [4, 8]
+
+Please provide a solution to minimize the sum of all robots' travel costs while satisfying the time window constraints.
+###

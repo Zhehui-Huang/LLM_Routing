@@ -1,0 +1,37 @@
+"""
+Environment information:
+
+There are ten cities.
+
+City 1 has location (9, 4)
+City 2 has location (4, 6)
+City 3 has location (4, 4)
+City 4 has location (3, 4)
+City 5 has location (4, 8)
+City 6 has location (4, 3)
+City 7 has location (7, 5)
+City 8 has location (5, 0)
+City 9 has location (1, 5)
+City 10 has location (9, 3)
+"""
+
+"""
+Robot information:
+
+There are four robots.
+- The depot of all robots is city 1.
+- All robots can travel between any two cities.
+- The travel cost is the Euclidean distance between two cities.
+"""
+
+###
+Task:
+
+All robots start from city 1.
+
+All robots need to work together to visit all cities exactly once, except the depot, and then back to the depot.
+
+For any robot, if city 2, 5, 7, 10 in its tour, the robot must visit city 10 before city 7, must visit city 5 before city 7, must visit city 5 before city 2.
+
+Please provide a solution to minimize the sum of all robots' tour costs.
+###

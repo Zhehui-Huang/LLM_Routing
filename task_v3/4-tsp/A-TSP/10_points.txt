@@ -18,16 +18,18 @@ City 10 has location (9, 3)
 """
 Robot information:
 
-There is a robot.
-- The robot is at a mobile depot A (0, 4).
-- The mobile depot A moves from (0, 4) to (10, 4) in 10 units of time with constant speed.
-- The robot can travel between any two cities.
-- The robot can move between any two objects with 1 unit of time.
+There are four robots.
+- The depot of all robots is city 1.
+- All robots can travel between any two cities.
 - The travel cost is the Euclidean distance between two cities.
 """
 
 ###
 Task:
-The robot needs to visit all cities exactly once, except the starting cities, and then back to the starting city.
-Please find the shortest tour for the robot.
+
+All robots start from city 1.
+
+All robots need to work together to visit all cities exactly once, except the depot, and then back to the depot.
+
+Please provide a solution to minimize the sum of all robots' tour costs.
 ###

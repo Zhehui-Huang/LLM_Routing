@@ -18,22 +18,16 @@ City 10 has location (9, 3)
 """
 Robot information:
 
-There is a robot.
-- The robot is at city 1.
+There is four robots.
+- All robots start at city 1, which is the depot.
 - The robot can travel between any two cities.
 - The travel cost is the Euclidean distance between two cities.
 """
 
 ###
 Task:
-There are five city groups.
-
-City group A: City 7, City 8
-City group B: City 3, City 6
-City group C: City 2, City 4
-City group D: City 5, City 9
-City group E: City 10
-
-The robot needs to visit exactly one city from each city group, and then back to the starting city.
-Please find the shortest tour for the robot.
+All robots will only work together to visit the cities with the distance to the city 1 less than or equal to 6 units.
+These cities are selected cities.
+The robot needs to visit all selected cities exactly once, except the starting cities, and then back to the starting city.
+Please provide a solution to minimize the sum of all robots' travel costs.
 ###

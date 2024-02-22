@@ -14,15 +14,15 @@ City 5 has location (4, 8)
 Robot information:
 
 There is a robot.
-- The robot is at a mobile depot A (0, 4).
-- The mobile depot A moves from (0, 4) to (10, 4) in 5 units of time with constant speed.
+- The robot is at city 1.
 - The robot can travel between any two cities.
-- The robot can move between any two objects with 1 unit of time.
 - The travel cost is the Euclidean distance between two cities.
 """
 
 ###
 Task:
-The robot needs to visit all cities exactly once, and then back to the depot.
+The robot will only visit the cities with the distance to the city 1 less than or equal to 6 units.
+These cities are selected cities.
+The robot needs to visit all selected cities exactly once, except the starting cities, and then back to the starting city.
 Please find the shortest tour for the robot.
 ###
