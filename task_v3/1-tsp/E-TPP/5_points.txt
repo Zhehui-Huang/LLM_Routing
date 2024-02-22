@@ -9,23 +9,20 @@ City 3 has location (4, 4)
 City 4 has location (3, 4)
 City 5 has location (4, 8)
 
-Each city may sell different products at different prices.
+Each city sell the product with different amount at different prices.
 
-City 2 sells
-    - T-shirts (15 units at $20 each)
-    - Hats (30 units at $5 each)
+City 2:
+    15 units at $5 each
 
-City 3 sells
-    - Hats (5 units at $20 each)
-    - Jeans (10 units at $10 each)
+City 3:
+    5 units at $8 each
 
-City 4 sells
-    - Jeans (10 units at $15 each)
-    - Hats (5 units at $25 each)
+City 4:
+    10 units at $4 each
 
-City 5 sells
-    - T-shirts (20 units at $5 each)
-    - Jeans (20 units at $10 each)
+City 5:
+    20 units at $10 each
+
 """
 
 """
@@ -39,13 +36,11 @@ There is a robot.
 
 ###
 Task:
+
 The robot needs to visit cities to buy products and then return to city 1.
 Each city, except the starting cities, can only be visited once.
 
-The products the robot needs to buy are:
-- 15 T-shirts
-- 15 Jeans
-- 15 Hats
+The robot needs to buy 30 units of product.
 
 Please find a route between a subset of the cities that minimizes total cost (travel cost + purchasing cost) and enables the purchase of all required products.
 ###

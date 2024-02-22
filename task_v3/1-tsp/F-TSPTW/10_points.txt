@@ -30,6 +30,7 @@ There is a robot.
 
 ###
 Task:
+
 The robot needs to visit all cities exactly once, except the starting cities, and then back to the starting city.
 Each city must be visited within the time window below:
 
