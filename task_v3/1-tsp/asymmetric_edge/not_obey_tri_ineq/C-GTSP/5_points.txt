@@ -1,0 +1,33 @@
+"""
+Environment information:
+There are five cities.
+
+The distance between each pair of cities are presented in a distance matrix below:
+
+[0, 2, 3, 7, 2]
+[3, 0, 5, 3, 2]
+[2, 4, 0, 5, 3]
+[2, 1, 2, 0, 1]
+[6, 3, 2, 3, 0]
+
+The index of the raw and column is 1-based.
+
+For each value in the matrix, the row index represents the starting city, and the column index represents the destination city.
+For example, the distance between city 1 and city 2 is 2.
+
+There is a robot.
+- The robot is at city 1.
+- The robot can travel between any two cities.
+- The travel cost is the Euclidean distance between two cities.
+"""
+
+###
+Task:
+There are two city groups.
+
+City group A: City 3, City 4
+City group B: City 2, City 5
+
+The robot needs to visit exactly one city from each city group, and then back to the starting city.
+Please find the shortest tour for the robot.
+###

@@ -1,0 +1,28 @@
+"""
+Environment information:
+There are ten cities.
+
+City 1 has location (9, 4)
+City 2 has location (4, 6)
+City 3 has location (4, 4)
+City 4 has location (3, 4)
+City 5 has location (4, 8)
+City 6 has location (4, 3)
+City 7 has location (7, 5)
+City 8 has location (5, 0)
+City 9 has location (1, 5)
+City 10 has location (9, 3)
+
+There is a robot.
+- The robot is at a mobile depot A (0, 4).
+- The mobile depot A moves from (0, 4) to (10, 4) in 5 units of time with constant speed.
+- The robot can travel between any two cities.
+- The robot can move between any two objects with 1 unit of time.
+- The travel cost is the Euclidean distance between two cities.
+"""
+
+###
+Task:
+The robot needs to visit all cities exactly once, except the starting cities, and then back to the starting city.
+Please find the shortest tour for the robot.
+###

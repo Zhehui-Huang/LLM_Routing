@@ -1,0 +1,43 @@
+"""
+Environment information:
+There are ten cities.
+
+City 1 has location (9, 4)
+City 2 has location (4, 6)
+City 3 has location (4, 4)
+City 4 has location (3, 4)
+City 5 has location (4, 8)
+City 6 has location (4, 3)
+City 7 has location (7, 5)
+City 8 has location (5, 0)
+City 9 has location (1, 5)
+City 10 has location (9, 3)
+
+Each city has a service time window [start time, end time].
+After a city's last possible service time, it cannot be visited.
+
+There is a robot.
+- The robot is at city 1.
+- The robot travels 1 unit of distance with 1 unit of time.
+- The robot can travel between any two cities.
+- The travel cost is the Euclidean distance between two cities.
+"""
+
+###
+Task:
+The robot needs to visit all cities exactly once, except the starting cities, and then back to the starting city.
+Each city must be visited within the time window below:
+
+City 1: This city is the city where the depot. This city can be visited at any time.
+City 2: Time window [11, 13]
+City 3: Time window [10, 15]
+City 4: Time window [12, 18]
+City 5: Time window [6, 15]
+City 6: Time window [6, 12]
+City 7: Time window [1, 30]
+City 8: Time window [4, 10]
+City 9: Time window [10, 20]
+City 10: Time window [1, 30]
+
+Please find the shortest tour for the robot.
+###

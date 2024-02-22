@@ -1,0 +1,73 @@
+"""
+Environment information:
+There are ten cities.
+
+City 1 has location (9, 4)
+City 2 has location (4, 6)
+City 3 has location (4, 4)
+City 4 has location (3, 4)
+City 5 has location (4, 8)
+City 6 has location (4, 3)
+City 7 has location (7, 5)
+City 8 has location (5, 0)
+City 9 has location (1, 5)
+City 10 has location (9, 3)
+
+Each city may sell different products at different prices.
+
+City 2 sells
+    - T-shirts (15 units at $20 each)
+    - Hats (30 units at $5 each)
+
+City 3 sells
+    - Hats (5 units at $20 each)
+    - Jeans (10 units at $10 each)
+
+City 4 sells
+    - Jeans (10 units at $15 each)
+    - Hats (5 units at $25 each)
+
+City 5 sells
+    - T-shirts (20 units at $5 each)
+    - Jeans (20 units at $10 each)
+
+City 6 sells
+    - Hats (15 units at $15 each)
+    - Shoes (25 units at $30 each)
+
+City 7 sells
+    - Shoes (10 units at $25 each)
+    - Jeans (15 units at $12 each)
+
+City 8 sells
+    - T-shirts (10 units at $18 each)
+    - Shoes (20 units at $20 each)
+
+City 9 sells
+    - T-shirts (15 units at $22 each)
+    - Jeans (10 units at $18 each)
+
+City 10 sells
+    - Hats (20 units at $22 each)
+    - Shoes (15 units at $28 each)
+
+
+There is a robot.
+- The robot is at city 1.
+- The robot can travel between any two cities.
+- The travel cost is 10 times the Euclidean distance between two cities.
+"""
+
+###
+Task:
+The robot needs to visit cities to buy products and then return to city 1.
+Each city, except the starting cities, can only be visited once.
+
+The products the robot needs to buy are:
+- 30 T-shirts
+- 30 Jeans
+- 30 Hats
+- 30 Shoes
+
+Please find a route between a subset of the cities that minimizes total cost (travel cost + purchasing cost) and enables the purchase of all required products.
+###

@@ -1,0 +1,22 @@
+"""
+Environment information:
+There are five cities.
+
+City 1 has location (9, 4)
+City 2 has location (4, 6)
+City 3 has location (4, 4)
+City 4 has location (3, 4)
+City 5 has location (4, 8)
+
+There is a robot.
+- The robot is at city 1.
+- The robot can travel between any two cities.
+- The travel cost is the Euclidean distance between two cities.
+"""
+
+###
+Task:
+The robot needs to visit all cities exactly once, except the starting cities, and then back to the starting city.
+The robot must visit city 4 before city 2 and must visit city 2 before city 3.
+Please find the shortest tour for the robot.
+###

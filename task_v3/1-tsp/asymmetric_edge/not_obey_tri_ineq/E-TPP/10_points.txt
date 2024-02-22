@@ -1,0 +1,81 @@
+"""
+Environment information:
+There are ten cities.
+
+The distance between each pair of cities are presented in a distance matrix below:
+
+[ 0,  4,  8,  5,  7,  2,  3,  9,  8,  5]
+[ 4,  0,  8,  3,  6,  5,  2,  8,  6,  2]
+[ 5,  1,  0,  6,  9,  1, 10,  3,  7,  4]
+[ 9,  3,  5,  0,  7,  4,  9,  7,  2,  4]
+[ 9,  2, 10,  9,  0,  5,  2,  4,  7,  8]
+[ 3,  1,  4,  2,  8,  0,  2,  5,  6, 10]
+[ 4,  6,  2,  4,  2, 10,  0,  8,  7,  9]
+[ 8,  5,  2,  5,  8, 10,  9,  0,  1,  9]
+[ 7,  9,  8,  1,  8,  8,  3,  1,  0,  3]
+[ 3,  1,  5, 10,  7, 10,  9,  7,  9,  0]
+
+The index of the raw and column is 1-based.
+
+For each value in the matrix, the row index represents the starting city, and the column index represents the destination city.
+For example, the distance between city 1 and city 2 is 4.
+
+
+Each city may sell different products at different prices.
+
+City 2 sells
+    - T-shirts (15 units at $20 each)
+    - Hats (30 units at $5 each)
+
+City 3 sells
+    - Hats (5 units at $20 each)
+    - Jeans (10 units at $10 each)
+
+City 4 sells
+    - Jeans (10 units at $15 each)
+    - Hats (5 units at $25 each)
+
+City 5 sells
+    - T-shirts (20 units at $5 each)
+    - Jeans (20 units at $10 each)
+
+City 6 sells
+    - Hats (15 units at $15 each)
+    - Shoes (25 units at $30 each)
+
+City 7 sells
+    - Shoes (10 units at $25 each)
+    - Jeans (15 units at $12 each)
+
+City 8 sells
+    - T-shirts (10 units at $18 each)
+    - Shoes (20 units at $20 each)
+
+City 9 sells
+    - T-shirts (15 units at $22 each)
+    - Jeans (10 units at $18 each)
+
+City 10 sells
+    - Hats (20 units at $22 each)
+    - Shoes (15 units at $28 each)
+
+
+There is a robot.
+- The robot is at city 1.
+- The robot can travel between any two cities.
+- The travel cost is 10 times the Euclidean distance between two cities.
+"""
+
+###
+Task:
+The robot needs to visit cities to buy products and then return to city 1.
+Each city, except the starting cities, can only be visited once.
+
+The products the robot needs to buy are:
+- 30 T-shirts
+- 30 Jeans
+- 30 Hats
+- 30 Shoes
+
+Please find a route between a subset of the cities that minimizes total cost (travel cost + purchasing cost) and enables the purchase of all required products.
+###

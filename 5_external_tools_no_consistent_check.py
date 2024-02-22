@@ -7,7 +7,7 @@ from openai import OpenAI
 
 from task_specify_sol_req import sol_req
 from utils import (extract_execute_code, read_file, nltd_to_math_requirements, gpt_prompt_tips, read_all_files,
-                   total_consistent_check, save_evaluation, nltd_to_math)
+                   save_evaluation, nltd_to_math)
 
 # OpenAI
 client = OpenAI()
@@ -24,14 +24,14 @@ consistent_check_count = 2
 refine_count = 3
 
 
-def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_parts):
+def solve_problem(task_descriptions, python_file_path, sol_given_parts):
     math_content_modify = nltd_to_math(client=client, gpt_model=gpt_model, task_descriptions=task_descriptions)
 
     # Ask recommended solvers
     tmp_recommend_solver = (
-        f"Please provide a tool (such as Gurobi, OR-Tools, etc.) that can best solve the following mathematical "
-        f"problem,"
-        f"and which you are most proficient with. You must only output the tool name. {math_content_modify}. "
+        f"Please provide the best tool (such as Gurobi, OR-Tools, etc.) that you want to use to solve the "
+        f"the following mathematical formulations. "
+        f"You must only output the tool name. {math_content_modify}. "
     )
     ask_recommend_solver_messages = [
         {"role": "system", "content": f"You are a helpful assistant. {gpt_prompt_tips}"},
@@ -48,7 +48,7 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
     # 3. Math to solution
     problem_solving_questions = (
         f"You must use Python code and {recommend_solver_content} to solve the above mathematical "
-        f"problem. You must consider all constrains regardless of complexity. {sol_given_parts}"
+        f"formulations. You must consider all constrains regardless of complexity. {sol_given_parts}"
     )
     print('problem_solving_questions:', problem_solving_questions, sep='\n')
 
@@ -99,10 +99,10 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
             final_total_time = total_time
         else:
             tmp_refine_question = (
-                f"Question: Based on the mathematical problem and solution requirements below, "
+                f"Question: Based on the mathematical formulations and solution requirements below, "
                 f"is the current solution better than the previous one? "
                 f"!!! You MUST ONLY EXACTLY OUTPUT <**Yes**> or <**No**> !!! "
-                f"### Mathematical problem: {math_content_modify} ### "
+                f"### Mathematical formulations: {math_content_modify} ### "
                 f"### Solution requirements: {sol_given_parts} ### "
                 f"### Previous solution: {pre_external_solutions.stdout} {pre_external_solutions.stderr} ### "
                 f"### Current solution: {external_solutions.stdout} {external_solutions.stderr} ### ")
@@ -119,15 +119,21 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
             )
             tmp_refine_ans_content = tmp_refine_ans_reply.choices[0].message.content
             if 'Yes' in tmp_refine_ans_content:
-                print(f'The current solution is better than the previous one! {tmp_refine_ans_content}')
+                print(f'Better than the previous one! {tmp_refine_ans_content}')
                 pre_external_solutions = copy.deepcopy(external_solutions)
 
                 # Update final solution
                 final_external_solutions = copy.deepcopy(external_solutions)
                 final_total_time = total_time
+                # Save evaluation
+                save_evaluation(python_file_path=python_file_path, external_solutions=external_solutions,
+                                total_time=total_time)
                 continue
             else:
                 print(f'NOT better than the previous one! {tmp_refine_ans_content}')
+                # Save evaluation
+                save_evaluation(python_file_path=python_file_path, external_solutions=external_solutions,
+                                total_time=total_time)
                 continue
 
     # Save evaluation
@@ -161,7 +167,7 @@ def main():
             task_descriptions = f"{env_and_task} {nltd_to_math_requirements}"
 
             solve_problem(task_descriptions=task_descriptions, python_file_path=python_file_path,
-                          env_and_task=env_and_task, sol_given_parts=sol_given_parts)
+                          sol_given_parts=sol_given_parts)
 
 
 if __name__ == '__main__':

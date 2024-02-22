@@ -16,11 +16,8 @@ direct_solution_requirements = (
 )
 
 nltd_to_math_requirements = (
-    "### Solution requirements: "
-    "Please translate task descriptions to mathematical problems given environment information. You must follow: "
-    "1. The mathematical problem should be as concise as possible. Only output things I asked and do not print "
-    "any analysis."
-    "2. Consider all constraints regardless of complexity. ###"
+    "### Please translate language descriptions to mathematical formulations. "
+    "Solution requirements: You must consider all constraints regardless of complexity. ###"
 )
 
 gpt_prompt_tips = (
@@ -73,8 +70,8 @@ def nltd_to_math(client, gpt_model, task_descriptions):
     )
 
     math_content = math_reply.choices[0].message.content
-    math_content_modify = f"### Mathematical problem: {math_content} ###"
-    print('Mathematical problem:    ', math_content_modify, sep='\n')
+    math_content_modify = f"### Mathematical formulation: {math_content} ###"
+    print('Mathematical formulation:    ', math_content_modify, sep='\n')
     print('====================================================================================================')
     return math_content_modify
 
@@ -87,7 +84,7 @@ def math_to_solution(client, gpt_model, task_descriptions, math_content_modify, 
             {"role": "system", "content": f"You are a helpful assistant. {prompt_tips}"},
             {"role": "user", "content": task_descriptions},
             {"role": "assistant", "content": math_content_modify},
-            {"role": "user", "content": f"Given above mathematical problem, please provide a solution. "
+            {"role": "user", "content": f"Given above mathematical formulation, please provide a solution. "
                                         f"{sol_given_parts}"},
         ],
         stream=False,
@@ -102,7 +99,7 @@ def consistent_check(client, gpt_model, task_descriptions, env_and_task, math_co
                      consistent_check_prex=None):
     if consistent_check_prex is None:
         consistent_check_prex = (
-            "### Question: are following natural language task descriptions and mathematical problem deliver the "
+            "### Question: are following language descriptions and mathematical formulations deliver the "
             "same thing? Do not be too strict. As long as you think there is no ambiguities, you can say yes. "
             "If your answer is yes, please **MUST** only output following: <***yes***>. "
             "If your answer is no, you **MUST** output two things. 1. output: <***no***>. 2. clarifications questions "
@@ -292,8 +289,8 @@ def reflect_solution(ori_python_file_path, reply_content, env_and_task, math_con
         # 2. Check if the solution is correct
         if question_for_answer is None:
             question_for_answer = (
-                "### Question: Is the solution valid given the description of the mathematical problems? "
-                "You only need to care if the solution is feasible or not, regardless of the optimality. "
+                "### Question: Is the solution valid given the mathematical descriptions? "
+                "You only need to care if the solution is feasible or not. "
                 "If the solution is valid, you must only output: <**Yes**> "
                 "If the solution is *NOT* valid, you must only output: <**No**> ###"
             )
@@ -402,10 +399,10 @@ def refine(refine_count, client, gpt_model, init_messages, python_file_path, sol
             final_total_time = total_time
         else:
             tmp_refine_question = (
-                f"Question: Based on the mathematical problem and solution requirements below, "
+                f"Question: Based on the mathematical formulations and solution requirements below, "
                 f"is the current solution better than the previous one? "
                 f"!!! You MUST ONLY EXACTLY OUTPUT <**Yes**> or <**No**> !!! "
-                f"### Mathematical problem: {math_content_modify} ### "
+                f"### Mathematical formulation: {math_content_modify} ### "
                 f"### Solution requirements: {sol_given_parts} ### "
                 f"### Previous solution: {pre_external_solutions.stdout} ### "
                 f"### Current solution: {external_solutions.stdout} ### ")
