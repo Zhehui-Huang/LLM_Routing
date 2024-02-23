@@ -26,8 +26,8 @@ There are four robots.
 
 ###
 Task:
-All robots will only work together to visit the cities with the distance to the city 1 less than or equal to 6 units.
+All robots will work together and only visit the cities with the distance to the city 1 less than or equal to 6 units.
 These cities are selected cities.
-The robot needs to visit all selected cities exactly once, except the starting cities, and then back to the starting city.
+All robots need to visit work together to visit all selected cities exactly once, except the starting cities, and then back to the starting city.
 Please provide a solution to minimize the tour costs among all robots.
 ###

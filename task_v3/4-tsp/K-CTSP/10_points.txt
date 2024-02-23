@@ -48,7 +48,7 @@ Task:
 
 All robots start at city 1.
 
-All robots need to visit all cities exactly once, except the starting city, and then back to the starting city.
+All robots need to work together to visit all cities exactly once, except the starting city, and then back to the starting city.
 
 Each robot can only visit cities with the same color as itself.
 

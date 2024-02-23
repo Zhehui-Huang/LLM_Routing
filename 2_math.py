@@ -29,7 +29,7 @@ def solve_problem(task_descriptions, python_file_path, sol_given_parts):
 
 
 def main():
-    text_files_loc = read_all_files(root_directory='task_v2')
+    text_files_loc = read_all_files(root_directory='task_v3')
     print('file number:', len(text_files_loc), sep='\n')
     for file_path in text_files_loc:
         for tid in range(3):
@@ -46,9 +46,9 @@ def main():
             print('python_file_path:', python_file_path, sep='\n')
             parts = file_path.split('/')
             robot_num = '1'
-            if int(parts[2][0]) > 1:
+            if int(parts[1][0]) > 1:
                 robot_num = 'M'
-            sol_given_parts_key = f"{parts[1][0]}_{robot_num}"
+            sol_given_parts_key = f"{parts[2][0]}_{robot_num}"
             sol_given_parts = sol_req[sol_given_parts_key]
             task_descriptions = f"{env_and_task} {nltd_to_math_requirements}"
 

@@ -31,7 +31,7 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
     problem_solving_questions = (
         f"Given above mathematical problem, please provide a solution. {sol_given_parts} "
         "!!! Even if the task asked for optimal solution, as long as you think it is too compute intensive, "
-        "you can provide a feasible solution with a heuristic solver. !!!"
+        "you are allow to provide a feasible solution with a heuristic solver. !!!"
         f"{sol_given_parts}"
     )
 
@@ -53,7 +53,7 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
 
 
 def main():
-    text_files_loc = read_all_files(root_directory='task_v2')
+    text_files_loc = read_all_files(root_directory='task_v3')
     print('file number:', len(text_files_loc), sep='\n')
     for file_path in text_files_loc:
         for tid in range(3):
@@ -70,9 +70,9 @@ def main():
             print('python_file_path:', python_file_path, sep='\n')
             parts = file_path.split('/')
             robot_num = '1'
-            if int(parts[2][0]) > 1:
+            if int(parts[1][0]) > 1:
                 robot_num = 'M'
-            sol_given_parts_key = f"{parts[1][0]}_{robot_num}"
+            sol_given_parts_key = f"{parts[2][0]}_{robot_num}"
             sol_given_parts = sol_req[sol_given_parts_key]
             task_descriptions = f"{env_and_task} {nltd_to_math_requirements}"
 

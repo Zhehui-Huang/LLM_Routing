@@ -19,17 +19,13 @@ City 10 has location (9, 3)
 Robot information:
 
 There are four robots.
-- The depot of all robots is city 1.
+- The depot of all robots is city 3.
 - All robots can travel between any two cities.
 - The travel cost is the Euclidean distance between two cities.
 """
 
 ###
 Task:
-
-All robots start from city 1.
-
-All robots need to work together to visit all cities exactly once, except the depot, and then back to the depot.
-
-Please provide a solution to minimize the tour costs among all robots.
+All robots starting their tours from the depot, with the goal of visiting all cities exactly once by any robot, and all robots must return to the depot after completing their tours of the cities.
+The goal is to minimize the total travel cost of all robots combined.
 ###

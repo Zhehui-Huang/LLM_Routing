@@ -31,9 +31,9 @@ There are four robots.
 ###
 Task:
 
-The robot starts at city 1.
+All robots start at city 1.
 
-The robot need to visit all cities exactly once (depot cities need to be visited at least once), and then back to any depot cities.
+All robots need to work together to visit all cities exactly once (depot cities need to be visited at least once), and then back to any depot cities.
 
 Please provide a solution to minimize the tour costs among all robots.
 ###

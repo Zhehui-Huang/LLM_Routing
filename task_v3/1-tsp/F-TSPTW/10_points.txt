@@ -35,15 +35,15 @@ The robot needs to visit all cities exactly once, except the starting cities, an
 Each city must be visited within the time window below:
 
 City 1: This city is the city where the depot. This city can be visited at any time.
-City 2: Time window [11, 13]
-City 3: Time window [10, 15]
-City 4: Time window [12, 18]
-City 5: Time window [6, 15]
-City 6: Time window [6, 12]
+City 2: Time window [7, 10]
+City 3: Time window [5, 8]
+City 4: Time window [12, 25]
+City 5: Time window [20, 50]
+City 6: Time window [2, 12]
 City 7: Time window [1, 30]
-City 8: Time window [4, 10]
-City 9: Time window [10, 20]
-City 10: Time window [1, 30]
+City 8: Time window [5, 20]
+City 9: Time window [10, 30]
+City 10: Time window [5, 40]
 
 Please find the shortest tour for the robot.
 ###

@@ -289,7 +289,7 @@ def reflect_solution(ori_python_file_path, reply_content, env_and_task, math_con
         # 2. Check if the solution is correct
         if question_for_answer is None:
             question_for_answer = (
-                "### Question: Is the solution valid given the mathematical descriptions? "
+                "### Question: Is the solution valid given the mathematical formulations? "
                 "You only need to care if the solution is feasible or not. "
                 "If the solution is valid, you must only output: <**Yes**> "
                 "If the solution is *NOT* valid, you must only output: <**No**> ###"
