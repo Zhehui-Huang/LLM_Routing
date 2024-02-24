@@ -4,11 +4,13 @@ import os
 from openai import OpenAI
 
 from task_specify_sol_req import sol_req
-from utils import read_file, gpt_prompt_tips, read_all_files, reflect_solution
+from utils import read_file, gpt_prompt_tips, read_all_files, reflect_solution, extract_execute_code, save_evaluation
 
 client = OpenAI()
 gpt_model = "gpt-4-0125-preview"
 sol_path = 'solution/1_direct_reflect'
+
+reflect_num = 3
 
 
 def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_parts):
@@ -24,18 +26,24 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
         stream=False,
     )
     reply_content = request_reply.choices[0].message.content
+    print('reply_content:', reply_content, sep='\n')
+
+    external_solutions, total_time = extract_execute_code(
+        problem_solving_content=reply_content, python_file_path=python_file_path)
 
     question_for_answer = (
-        "### Question: Is the solution valid given the natural language task descriptions? "
-        "You only need to care if the solution is feasible or not, regardless of the optimality. "
-        "If the solution is valid, you must only output: <**Yes**> "
-        "If the solution is *NOT* valid, you must only output: <**No**> ###"
+        "### \nQuestion: \nPlease use Python code to check if the above solution is correct and satisfies the task "
+        "requirements. You should at least check if tours satisfy the requirements, and the cost calculation is "
+        "correct. \n"
+        "If the solution is correct, you need to output exactly <** YES!!! **>. \n"
+        "If the solution is not correct, you need to output why the solution is wrong, at least give some hints. ###"
     )
 
-    find_solution_flag = reflect_solution(
-        ori_python_file_path=python_file_path, reply_content=reply_content, env_and_task=env_and_task,
-        math_content_modify=None, sol_given_parts=sol_given_parts, client=client, gpt_model=gpt_model,
-        question_for_answer=question_for_answer)
+    final_external_solutions, final_total_time, find_solution_flag, extra_eval_content = reflect_solution(
+        ori_python_file_path=python_file_path, math_content_modify=None, client=client, gpt_model=gpt_model,
+        reflect_num=reflect_num, question_for_answer=question_for_answer, external_solutions=external_solutions,
+        total_time=total_time, env_and_task=env_and_task, sol_given_parts=sol_given_parts
+    )
 
     if find_solution_flag is False:
         print(f'Can not find the solution!')

@@ -190,7 +190,11 @@ def extract_execute_code(problem_solving_content, python_file_path):
     # Execute the Python script
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     print(f"Start running the Python code at {current_time}...")
-    external_solutions = subprocess.run(['python', python_file_path], capture_output=True, text=True)
+    try:
+        external_solutions = subprocess.run(['python', python_file_path], capture_output=True, text=True, timeout=120)
+    except subprocess.TimeoutExpired:
+        external_solutions = None
+
     # Print or process the output
     # print("external_solutions.stdout:   ", external_solutions.stdout, sep="\n")
     # In case of errors
@@ -198,7 +202,7 @@ def extract_execute_code(problem_solving_content, python_file_path):
 
     end_time = time.time()
     total_time = end_time - start_time
-    # print(f"Total running time: {total_time} seconds")
+    print(f"Total running time: {total_time} seconds")
 
     # evaluate_file_path = 'evaluate' + python_file_path[8:-3] + '.txt'
     # directory = os.path.dirname(evaluate_file_path)
@@ -219,8 +223,11 @@ def extract_execute_code(problem_solving_content, python_file_path):
     return external_solutions, total_time
 
 
-def save_evaluation(python_file_path, external_solutions, total_time, q_meet_req_content=None, extra_eval_content=''):
-    evaluate_file_path = 'evaluate' + python_file_path[8:-3] + '.txt'
+def save_evaluation(python_file_path, external_solutions, total_time, q_meet_req_content=None, extra_eval_content='',
+                    reflect_id=0):
+    dir_paths = python_file_path[8:-3].split('/')
+    evaluate_file_path = f'evaluate/{dir_paths[1]}/{dir_paths[2]}/{dir_paths[3]}/r_{reflect_id}/{dir_paths[4]}' + '.txt'
+
     directory = os.path.dirname(evaluate_file_path)
     if not os.path.exists(directory):
         os.makedirs(directory)
@@ -266,24 +273,28 @@ def read_all_files(root_directory):
     return text_files_loc
 
 
-def reflect_solution(ori_python_file_path, reply_content, env_and_task, math_content_modify, sol_given_parts, client,
-                     gpt_model, reflect_num=2, question_for_answer=None):
+def reflect_solution(ori_python_file_path, math_content_modify, client, gpt_model, reflect_num=3,
+                     question_for_answer=None, external_solutions=None, total_time=None, env_and_task=None,
+                     sol_given_parts=None):
+    # Solve the problem
     find_solution_flag = False
+    extra_eval_content = None
+    python_file_path = ori_python_file_path
 
-    q_meet_req_messages = [
-        {"role": "system", "content": f"You are a helpful assistant. {gpt_prompt_tips}"},
-    ]
+    final_external_solutions = copy.deepcopy(external_solutions)
+    final_total_time = total_time
 
     for reflect_id in range(reflect_num):
         print(f'Reflection round: {reflect_id}')
 
-        # 1. Execute the code and get the results
-        # python_file_path = ori_python_file_path[:-3] + f'_{reflect_id}' + '.py'
-        python_file_path = ori_python_file_path
-        external_solutions, total_time = extract_execute_code(
-            problem_solving_content=reply_content, python_file_path=python_file_path)
+        if external_solutions is None:
+            exec_res = f"'''\nHere is the solution: ***no solution***\n'''"
+        else:
+            if external_solutions.stderr == "":
+                exec_res = f"'''\nHere is the solution:\n{external_solutions.stdout} \n'''"
+            else:
+                exec_res = f"'''\nHere is the solution:\n{external_solutions.stdout} \n{external_solutions.stderr}'''"
 
-        exec_res = f"### Here is the solution: {external_solutions.stdout} {external_solutions.stderr} ###"
         print('exec_res: ', exec_res, sep="\n")
 
         # 2. Check if the solution is correct
@@ -297,69 +308,86 @@ def reflect_solution(ori_python_file_path, reply_content, env_and_task, math_con
 
             q_meet_req = f"{math_content_modify} {exec_res} {question_for_answer}"
         else:
-            q_meet_req = (
-                f"{question_for_answer} ### Natural language task descriptions {env_and_task} " 
-                f"{sol_given_parts} ### {exec_res} !!! You MUST ONLY EXACTLY OUTPUT <**Yes**> or <**No**> !!!"
-            )
+            q_meet_req = f"{env_and_task} \n {exec_res} \n {question_for_answer}"
 
         print('q_meet_req: ', q_meet_req, sep="\n")
 
-        # q_meet_req_messages = [
-        #     {"role": "system", "content": f"You are a helpful assistant. {gpt_prompt_tips}"},
-        #     {"role": "user", "content": q_meet_req},
-        # ]
-        tmp_message_user = {"role": "user", "content": q_meet_req}
-        q_meet_req_messages.append(tmp_message_user)
+        q_meet_req_messages = [
+            {"role": "system", "content": f"You are a helpful assistant. {gpt_prompt_tips}"},
+            {"role": "user", "content": q_meet_req},
+        ]
+
         q_meet_req_reply = client.chat.completions.create(
             model=gpt_model,
             messages=q_meet_req_messages,
             stream=False,
         )
+
         q_meet_req_content = q_meet_req_reply.choices[0].message.content
         print('q_meet_req_content: ', q_meet_req_content, sep="\n")
 
-        if "**Yes**" in q_meet_req_content:
-            find_sol = f'Find the correct solution in round: {reflect_id}!'
-            print(find_sol)
+        verify_external_solutions, _ = extract_execute_code(
+            problem_solving_content=q_meet_req_content, python_file_path=python_file_path)
+
+        print('verify_external_solutions: ', verify_external_solutions.stdout, sep="\n")
+
+        if "YES!!!" in verify_external_solutions.stdout and verify_external_solutions.stderr == "":
+            extra_eval_content = f'Find the correct solution in round: {reflect_id}!'
+            print(extra_eval_content)
             find_solution_flag = True
-            # eva_python_file_path = python_file_path[:-3] + f'_reflect_yes' + '.py'
-            save_evaluation(python_file_path=python_file_path, external_solutions=external_solutions,
-                            total_time=total_time, extra_eval_content=find_sol)
+
+            final_external_solutions = copy.deepcopy(external_solutions)
+            final_total_time = total_time
+
+            save_evaluation(python_file_path=ori_python_file_path, external_solutions=final_external_solutions,
+                            total_time=final_total_time, extra_eval_content=extra_eval_content,
+                            reflect_id=reflect_id+1)
+
             break
         else:
             find_no_sol = f'Does Not Find the Solution in round: {reflect_id}'
-            print(f'In round: {reflect_id}, the solution is not correct or optimal!')
 
-            tmp_message_assistant = {"role": "assistant", "content": q_meet_req_content}
-            q_meet_req_messages.append(tmp_message_assistant)
+            if final_external_solutions is None:
+                extra_eval_content = (
+                    f"***no solution*** \nTime Out!\n{find_no_sol} \n{q_meet_req_content} \n"
+                )
+            else:
+                extra_eval_content = (
+                    f"{final_external_solutions.stdout} \n {final_external_solutions.stderr} \n {find_no_sol} \n "
+                    f"{q_meet_req_content} \n"
+                )
+            save_evaluation(python_file_path=ori_python_file_path, external_solutions=final_external_solutions,
+                            total_time=final_total_time, extra_eval_content=extra_eval_content,
+                            reflect_id=reflect_id+1)
 
-            user_question = (
-                f"### Since you think the solution is not valid, please provide following things: "
-                f"1. Analyze why the solution is not valid. "
-                f"2. Provide a correct solution with python code. {sol_given_parts} ###")
-            print('user_question: ', user_question, sep="\n")
-            tmp_message_user = {"role": "user", "content": user_question}
-            q_meet_req_messages.append(tmp_message_user)
+            if reflect_id == reflect_num - 1:
+                print(find_no_sol)
+                break
 
-            q_meet_req_reply = client.chat.completions.create(
+            # Since does not find the solution, we need to provide the correct solution
+            modified_task_descriptions = (
+                f"{env_and_task} \n{exec_res} \nHere are the analysis why the solution is not correct.\n"
+                f"{verify_external_solutions.stdout} \nGiven the above analysis, please provide a correct "
+                f"solution with Python code. If the solution is ***no solution***, please use a heuristic solver to "
+                f"solve the problem. \n{sol_given_parts}"
+            )
+            print('modified_task_descriptions: ', modified_task_descriptions, sep="\n")
+
+            request_reply = client.chat.completions.create(
                 model=gpt_model,
-                messages=q_meet_req_messages,
+                messages=[
+                    {"role": "system", "content": f"You are a helpful assistant. {gpt_prompt_tips}"},
+                    {"role": "user", "content": modified_task_descriptions},
+                ],
                 stream=False,
             )
-            q_meet_req_content = q_meet_req_reply.choices[0].message.content
-            print('q_meet_req_content: ', q_meet_req_content, sep="\n")
-            tmp_message_assistant = {"role": "assistant", "content": q_meet_req_content}
-            q_meet_req_messages.append(tmp_message_assistant)
+            reply_content = request_reply.choices[0].message.content
+            print('reply_content:', reply_content, sep='\n')
 
-            # Assign meet_req_content to reply_content, used for next round
-            reply_content = q_meet_req_content
-            # eva_python_file_path = python_file_path[:-3] + f'_reflect_no_{reflect_id}' + '.py'
-            save_evaluation(python_file_path=python_file_path, external_solutions=external_solutions,
-                            total_time=total_time, q_meet_req_content=q_meet_req_content,
-                            extra_eval_content=f"{external_solutions.stdout} \n {external_solutions.stderr} "
-                                               f"\n {find_no_sol} \n {q_meet_req_content} \n")
+            external_solutions, total_time = extract_execute_code(
+                problem_solving_content=reply_content, python_file_path=python_file_path)
 
-    return find_solution_flag
+    return final_external_solutions, final_total_time, find_solution_flag, extra_eval_content
 
 
 def refine(refine_count, client, gpt_model, init_messages, python_file_path, sol_given_parts, math_content_modify):

@@ -83,9 +83,9 @@ sol_req = {
         "### Solution requirements: please solve the problem with Python code. "
         "If there is no solution, only print ***no solution***. "
         "If there is a solution, please only output Python code without any analysis. In the Python code, you must: "
-        "1. Print the tour of each robot. (template: Robot <id> - Tour: <text>). "
-        "2. Print the travel cost of each robot, which rounded to two decimal places (template: Cost: <text>). "
-        "3. Print the total travel cost of all robots combined, which rounded to two decimal places (template: Final cost: <text>). ###"
+        "1. Firstly, print the tour of all robots. (template: Robot <id> - Tour: [<city id>, <city id>, ..., <city id>]). "
+        "2. Secondly, print the travel cost of all robots (template: Cost: <value>).  "
+        "3. Finally, print the maximum tour cost among all robots (template: Final cost: <value>). ###"
     ),
     'B_M': (
         "### Solution requirements: please solve the problem with Python code. "
