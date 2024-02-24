@@ -82,9 +82,10 @@ def math_to_solution(client, gpt_model, task_descriptions, math_content_modify, 
         model=gpt_model,
         messages=[
             {"role": "system", "content": f"You are a helpful assistant. {prompt_tips}"},
-            {"role": "user", "content": task_descriptions},
-            {"role": "assistant", "content": math_content_modify},
-            {"role": "user", "content": f"Given above mathematical formulation, please provide a solution. "
+            # {"role": "user", "content": task_descriptions},
+            # {"role": "assistant", "content": math_content_modify},
+            {"role": "user", "content": f"Given the mathematical formulation: \n{math_content_modify}. \n"
+                                        f"Please provide a solution. \n"
                                         f"{sol_given_parts}"},
         ],
         stream=False,
@@ -298,14 +299,7 @@ def reflect_solution(ori_python_file_path, math_content_modify, client, gpt_mode
         print('exec_res: ', exec_res, sep="\n")
 
         # 2. Check if the solution is correct
-        if question_for_answer is None:
-            question_for_answer = (
-                "### Question: Is the solution valid given the mathematical formulations? "
-                "You only need to care if the solution is feasible or not. "
-                "If the solution is valid, you must only output: <**Yes**> "
-                "If the solution is *NOT* valid, you must only output: <**No**> ###"
-            )
-
+        if math_content_modify is not None:
             q_meet_req = f"{math_content_modify} {exec_res} {question_for_answer}"
         else:
             q_meet_req = f"{env_and_task} \n {exec_res} \n {question_for_answer}"
