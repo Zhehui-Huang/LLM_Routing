@@ -27,5 +27,8 @@ There are four robots.
 ###
 Task:
 All robots starting their tours from the depot, with the goal of visiting all cities exactly once by any robot, and all robots must return to the depot after completing their tours of the cities.
+Each city must be visited exactly once by any one of the robots.
+All robots start their tour from the depot. After completing their tours, each robot must return to the depot.
+
 The goal is to minimize the total travel cost of all robots combined.
 ###

@@ -13,32 +13,31 @@ City 7 has location (7, 5)
 City 8 has location (5, 0)
 City 9 has location (1, 5)
 City 10 has location (9, 3)
+
+There are six city groups.
+
+City group A: City 7, City 8
+City group B: City 1
+City group C: City 2, City 4
+City group D: City 5, City 9
+City group E: City 10
+City group F: City 6
 """
 
 """
 Robot information:
 
 There are four robots.
-- The depot of all robots is city 1.
-- All robots can travel between any two cities.
+- The depot of all robots is city 3.
+- All robots can travel between any two cities, except travel between the same city.
 - The travel cost is the Euclidean distance between two cities.
 """
 
 ###
 Task:
+All robots starting their tours from the depot, with the goal of visiting all city groups exactly once by any robot, and all robots must return to the depot after completing their tours of the cities.
+Each city must be visited exactly once by any one of the robots.
+All robots start their tour from the depot. After completing their tours, each robot must return to the depot.
 
-All robots start from city 1.
-
-There are six city groups.
-
-City group A: City 7, City 8
-City group B: City 3
-City group C: City 2, City 4
-City group D: City 5, City 9
-City group E: City 10
-City group F: City 6
-
-All robot needs to work together to visit exactly one city from each city group, and then back to the depot.
-
-Please provide a solution to minimize the tour costs among all robots.
+The goal is to minimize the total travel cost of all robots combined.
 ###

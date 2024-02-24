@@ -49,19 +49,20 @@ City 10:
 Robot information:
 
 There are four robots.
-- The depot of all robots is city 1.
-- All robots can travel between any two cities.
-- The travel cost is the Euclidean distance between two cities.
+- The depot of all robots is city 3.
+- All robots can travel between any two cities, except travel between the same city.
+- The travel cost is 10 times the Euclidean distance between two cities.
 - Each robot has its own capacity. Robot A can carry up to 10 units, Robot B can carry up to 15 units, Robot C can carry up to 20 units, and Robot D can carry up to 20 units.
 """
 
 ###
 Task:
+All robots starting their tours from the depot, with the goal of visiting a subset of cities, and all robots must return to the depot after completing their tours of the cities.
+Each city can only be visited at most once by any one of the robots.
+All robots start their tour from the depot. After completing their tours, each robot must return to the depot.
 
-All robots need to visit cities cooperatively to buy products and then return to city 1.
-Each city, except the starting cities, can only be visited once by any robot.
+All robots work together to buy 60 units of product in total.
+If a city be visited by a robot, the robot must purchase all units of the product from the city.
 
-All robots need to work together to buy 60 units of product in total.
-
-Please provide a solution to minimize the tour costs (travel cost + purchasing cost) among all robots, while satisfying the purchase of enough products.
+The goal is to minimize the tour costs (travel cost + purchasing cost) among all robots, while satisfying the purchase of enough products.
 ###
