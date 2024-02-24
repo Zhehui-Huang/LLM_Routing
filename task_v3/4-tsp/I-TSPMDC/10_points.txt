@@ -3,13 +3,13 @@ Environment Information:
 
 There are ten cities, each with a specified location:
 
-City 1: (9, 4)
+City 1: (9, 4) [Depot]
 City 2: (4, 6)
 City 3: (4, 4) [Depot]
 City 4: (3, 4)
 City 5: (4, 8)
 City 6: (4, 3)
-City 7: (7, 5)
+City 7: (7, 5) [Depot]
 City 8: (5, 0)
 City 9: (1, 5)
 City 10: (9, 3)
@@ -29,17 +29,18 @@ All robots can recharge at any depot, and the energy will be fully recharged to 
 
 ###
 Objective:
-The objective is minimizing the maximum tour costs among all robots, while considering energy management and depot visits (crucial to achieving this goal).
+The objective is minimizing the maximum tour costs among all robots, while considering energy management and depot visits (crucial to achieving this objective).
 Each city must be visited exactly once by one of the robots, and no city should be visited by more than one robot.
+Depot cities must be visited at least once by any one of the robots.
 Energy constraints
 a. When a robot visits any depot city (City 1, City 3, City 7), its energy is fully recharged to 11 units, allowing it to continue its tour with renewed energy capacity.
 b. Visiting a depot not only allows for energy recharge but also is necessary for the robots to extend their tours beyond the initial energy limit.
 c. All robots must arrive at a depot before they run out of energy. Otherwise, the tour will be failed.
 d. You need to plan the tours considering the energy constraints, ensuring that robots visit a depot before their energy depletes, to recharge.
-e. For instance, a robot might start at City 3, visit City 2, City 7, then recharge at City 1 before continuing its tour.
+   For instance, a robot might start at City 3, visit City 2, City 7, then recharge at City 1 before continuing its tour.
 
 Constraints:
-1. Each robot starts its tour from the depot (City 3) and must return to the depot (City 3) after completing its tour.
+1. Each robot starts its tour from the depot (City 3) and must return to one of the depots after completing its tour.
 2. Each city must be visited exactly once by one of the robots. No city should be visited by more than one robot.
 3. Depot cities must be visited at least once by any one of the robots.
 4. Energy constraints
@@ -47,6 +48,6 @@ Constraints:
     b. Visiting a depot not only allows for energy recharge but also is necessary for the robots to extend their tours beyond the initial energy limit.
     c. All robots must arrive at a depot before they run out of energy. Otherwise, the tour will be failed.
     d. You need to plan the tours considering the energy constraints, ensuring that robots visit a depot before their energy depletes, to recharge.
-    e. For instance, a robot might start at City 3, visit City 2, City 7, then recharge at City 1 before continuing its tour.
+       For instance, a robot might start at City 3, visit City 2, City 7, then recharge at City 1 before continuing its tour.
 5. The goal is to minimize the maximum cost of the tours among all robots.
 ###

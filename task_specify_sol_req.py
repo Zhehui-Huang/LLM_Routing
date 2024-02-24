@@ -94,6 +94,7 @@ sol_req = {
         "2. Print the tour cost of each robot in the format: Robot <id> - Cost: <value>. \n"
         "3. Print the maximum tour cost among all robots in the format: Max Tour Cost: <value>. \n"
         "4. Print the maximum travel cost between any two consecutive cities among all robots' tour in the format: Final cost: <value>. \n"
+        "If no solution exists, print ***no solution***. \n"
     ),
     'C_M': (
         "\nSolution requirements: \n"

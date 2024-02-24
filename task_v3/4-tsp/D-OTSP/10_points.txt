@@ -27,6 +27,7 @@ All robots can travel between any two cities, except travel between the same cit
 Objective:
 The goal is to minimize the maximum tour cost among all robots under the given constraints.
 Each city must be visited exactly once by one of the robots, and no city should be visited by more than one robot.
+You should also consider the sequence constraints.
 
 Constraints:
 1. Each robot starts its tour from the depot (City 3) and must return to the depot (City 3) after completing its tour.

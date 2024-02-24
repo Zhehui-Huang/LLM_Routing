@@ -56,7 +56,7 @@ Each robot has its own capacity. Robot A can carry up to 10 units, Robot B can c
 ###
 Objective:
 The goal is to minimize the maximum tour costs (travel cost + purchasing cost) among all robots under the given constraints.
-Each city must be visited exactly once by one of the robots, and no city should be visited by more than one robot.
+Each city can be visited at most once by one of the robots. No city should be visited by more than one robot.
 If a city be visited by a robot, the robot must purchase all units of the product from the city.
 The product amount that a robot carries should not exceed its capacity.
 All robots collaborate to buy 60 units of product in total.
@@ -67,5 +67,6 @@ Constraints:
 3. All robots collaborate to buy 60 units of product in total.
 4. If a city be visited by a robot, the robot must purchase all units of the product from the city.
 5. The product amount that a robot carries should not exceed its capacity.
-6. The goal is to minimize the maximum cost of the tours among all robots.
+6. Each robot has its own capacity. Robot A can carry up to 10 units, Robot B can carry up to 15 units, Robot C can carry up to 20 units, and Robot D can carry up to 20 units.
+7. The goal is to minimize the maximum tour costs (travel cost + purchasing cost) among all robots.
 ###

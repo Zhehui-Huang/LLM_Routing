@@ -33,10 +33,10 @@ Each city has a service time window. Robots must visit the cities within the giv
 Constraints:
 1. Each robot starts its tour from the depot (City 3) and must return to the depot (City 3) after completing its tour.
 2. Each city must be visited exactly once by one of the robots. No city should be visited by more than one robot.
-3. Each city has a service time window [start time, end time]. After a city's last possible service time, it cannot be visited.
+3. Each city has a service time window [start time, end time]. After a city's end time of service, it cannot be visited.
     City 1: Time window [3, 8]
     City 2: Time window [5, 12]
-    City 3: This city is the depot.
+    City 3: This city is the depot. It can be visited at any time.
     City 4: Time window [0, 4]
     City 5: Time window [1, 10]
     City 6: Time window [1, 5]

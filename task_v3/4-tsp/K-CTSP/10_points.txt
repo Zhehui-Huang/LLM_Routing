@@ -31,7 +31,6 @@ City 10: ['yellow']
 """
 Robot information:
 
-There are four robots.
 Four robots are available for tasks.
 All robots start their journeys from the depot (City 3), and the travel cost between any two cities is determined by the Euclidean distance.
 All robots can travel between any two cities, except travel between the same city.
@@ -47,6 +46,7 @@ The colors of the robots are as follows:
 Objective:
 The goal is to minimize the maximum tour cost among all robots under the given constraints.
 Each city must be visited exactly once by one of the robots, and no city should be visited by more than one robot.
+Each robot can only visit cities that match its color.
 
 Constraints:
 1. Each robot starts its tour from the depot (City 3) and must return to the depot (City 3) after completing its tour.

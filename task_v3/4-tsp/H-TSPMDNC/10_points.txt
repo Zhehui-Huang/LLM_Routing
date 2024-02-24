@@ -6,10 +6,10 @@ There are ten cities, each with a specified location:
 City 1: (9, 4) [Depot]
 City 2: (4, 6)
 City 3: (4, 4)
-City 4: (3, 4)
+City 4: (3, 4) [Depot]
 City 5: (4, 8)
 City 6: (4, 3)
-City 7: (7, 5)
+City 7: (7, 5) [Depot]
 City 8: (5, 0)
 City 9: (1, 5)
 City 10: (9, 3)
@@ -29,14 +29,12 @@ All robots can travel between any two cities, except travel between the same cit
 Objective:
 The goal is to minimize the maximum tour cost among all robots under the given constraints.
 Each city must be visited exactly once by one of the robots, and no city should be visited by more than one robot.
-All robots can return to any depots after completing their tours of the cities.
+All robots must return to one of the depots after completing their tours of the cities.
 Depot cities must be visited at least once by any one of the robots.
 
 Constraints:
-1. Each robot starts its tour from the depot (City 1) and must return to the depot (City 1) after completing its tour.
+1. Each robot starts its tour from the depot (City 1) and must return to one of the depots after completing its tour.
 2. Each city must be visited exactly once by one of the robots. No city should be visited by more than one robot.
-3. All robots can return to any depots after completing their tours of the cities.
-4. Depot cities must be visited at least once by any one of the robots.
-5. All robots start their tour from the depot. After completing their tours, each robot must return to one of the depot cities.
-6. The goal is to minimize the maximum cost of the tours among all robots.
+3. Depot cities must be visited at least once by any one of the robots.
+4. The goal is to minimize the maximum cost of the tours among all robots.
 ###
