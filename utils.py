@@ -237,10 +237,11 @@ def save_evaluation(python_file_path, external_solutions, total_time, q_meet_req
         os.makedirs(directory)
 
     solution = extra_eval_content + '\n'
-    if external_solutions.stderr != "":
-        solution += "**no solution**"
-    else:
-        solution += external_solutions.stdout
+    if external_solutions is not None:
+        if external_solutions.stderr != "":
+            solution += "**no solution**"
+        else:
+            solution += external_solutions.stdout
 
     solution += f"\nTotal running time: {total_time} seconds"
 
