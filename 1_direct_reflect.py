@@ -33,8 +33,7 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
 
     question_for_answer = (
         "### \nQuestion: \nPlease use Python code to check if the above solution is correct and satisfies the task "
-        "requirements. You should at least check if tours satisfy the requirements, the cost calculation is "
-        "correct, robot can not travel between the same city, and etc. \n"
+        f"requirements. You should check constraints in \n{env_and_task}\n"
         "If the solution is correct, you need to output exactly <** YES!!! **>. \n"
         "If the solution is not correct, you need to output why the solution is wrong, at least give some hints. ###"
     )

@@ -1,56 +1,56 @@
 """
-Environment information:
+Environment Information:
 
-There are ten cities.
+There are ten cities, each with a specified location:
 
-City 1 has location (9, 4)
-City 2 has location (4, 6)
-City 3 has location (4, 4)
-City 4 has location (3, 4)
-City 5 has location (4, 8)
-City 6 has location (4, 3)
-City 7 has location (7, 5)
-City 8 has location (5, 0)
-City 9 has location (1, 5)
-City 10 has location (9, 3)
+City 1: (9, 4)
+City 2: (4, 6)
+City 3: (4, 4) [Depot]
+City 4: (3, 4)
+City 5: (4, 8)
+City 6: (4, 3)
+City 7: (7, 5)
+City 8: (5, 0)
+City 9: (1, 5)
+City 10: (9, 3)
 
 Each city has its own colors. The colors of the cities are as follows:
 
-City 1: red, green
-City 2: yellow, blue
-City 3: red, yellow
-City 4: red
-City 5: green
-City 6: yellow
-City 7: blue
-City 8: red, blue
-City 9: yellow, green
-City 10: yellow
-
+City 1: ['red', 'green']
+City 2: ['yellow', 'blue']
+City 3: ['red', 'green', 'yellow', 'blue']  # Depot
+City 4: ['red']
+City 5: ['green']
+City 6: ['yellow']
+City 7: ['blue']
+City 8: ['red', 'blue']
+City 9: ['yellow', 'green']
+City 10: ['yellow']
 """
 
 """
 Robot information:
 
 There are four robots.
-- All robots start at city 1, which is the depot.
-- All robots can travel between any two cities.
-- The travel cost of all robots is the Euclidean distance between two cities.
-- Each robot has its own color. The colors of the robots are as follows:
-  - Robot 1: red
-  - Robot 2: yellow
-  - Robot 3: green
-  - Robot 4: blue
+Four robots are available for tasks.
+All robots start their journeys from the depot (City 3), and the travel cost between any two cities is determined by the Euclidean distance.
+All robots can travel between any two cities, except travel between the same city.
+Robots are color-coded and can only visit cities matching their color.
+The colors of the robots are as follows:
+    Robot 1: red
+    Robot 2: yellow
+    Robot 3: green
+    Robot 4: blue
 """
 
 ###
-Task:
+Objective:
+The goal is to minimize the maximum tour cost among all robots under the given constraints.
+Each city must be visited exactly once by one of the robots, and no city should be visited by more than one robot.
 
-All robots start at city 1.
-
-All robots need to work together to visit all cities exactly once, except the starting city, and then back to the starting city.
-
-Each robot can only visit cities with the same color as itself.
-
-Please provide a solution to minimize the tour costs among all robots.
+Constraints:
+1. Each robot starts its tour from the depot (City 3) and must return to the depot (City 3) after completing its tour.
+2. Each robot can only visit cities that match its color.
+3. Each city must be visited exactly once by one of the robots, ensuring no city is visited by more than one robot.
+4. The objective is to minimize the maximum cost of the tours among all robots.
 ###

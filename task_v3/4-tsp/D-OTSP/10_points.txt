@@ -1,40 +1,39 @@
 """
-Environment information:
+Environment Information:
 
-There are ten cities.
+There are ten cities, each with a specified location:
 
-City 1 has location (9, 4)
-City 2 has location (4, 6)
-City 3 has location (4, 4)
-City 4 has location (3, 4)
-City 5 has location (4, 8)
-City 6 has location (4, 3)
-City 7 has location (7, 5)
-City 8 has location (5, 0)
-City 9 has location (1, 5)
-City 10 has location (9, 3)
+City 1: (9, 4)
+City 2: (4, 6)
+City 3: (4, 4) [Depot]
+City 4: (3, 4)
+City 5: (4, 8)
+City 6: (4, 3)
+City 7: (7, 5)
+City 8: (5, 0)
+City 9: (1, 5)
+City 10: (9, 3)
 """
 
 """
 Robot information:
 
-There are four robots.
-- The depot of all robots is city 3.
-- All robots can travel between any two cities, except travel between the same city.
-- The travel cost is the Euclidean distance between two cities.
+Four robots are available for tasks.
+All robots start their journeys from the depot (City 3), and the travel cost between any two cities is determined by the Euclidean distance.
+All robots can travel between any two cities, except travel between the same city.
 """
 
 ###
-Task:
-All robots starting their tours from the depot, with the goal of visiting all cities exactly once by any robot, and all robots must return to the depot after completing their tours of the cities.
-Each city must be visited exactly once by any one of the robots.
-All robots start their tour from the depot. After completing their tours, each robot must return to the depot.
+Objective:
+The goal is to minimize the maximum tour cost among all robots under the given constraints.
+Each city must be visited exactly once by one of the robots, and no city should be visited by more than one robot.
 
-Sequence Constraint Clarification: Within the tours of any robot, if any subset of the cities 2, 4, 5, 6, and 7 are visited, they must be visited in the sequence dictated by their numbering. This means that:
-
-If a robot's tour includes city 2 and any of the cities 4, 5, 6, or 7, then city 2 must be visited before any of these cities in the specified sequence.
-If a robot's tour includes cities 4 and 5, for example, city 4 must come before city 5 in the tour.
-This sequential constraint applies to any combination of these cities included in a single robot's tour, ensuring that the order 2 → 4 → 5 → 6 → 7 is maintained for any cities present from this list, even if not all are visited by the same robot.
-
-The goal is to minimize the total travel cost of all robots combined.
+Constraints:
+1. Each robot starts its tour from the depot (City 3) and must return to the depot (City 3) after completing its tour.
+2. Each city must be visited exactly once by one of the robots. No city should be visited by more than one robot.
+3. There are sequence constraints. Within the tours of any robot, if any subset of the cities 2, 4, 5, 6, and 7 are visited, they must be visited in the sequence dictated by their numbering. This means that:
+    a. If a robot's tour includes city 2 and any of the cities 4, 5, 6, or 7, then city 2 must be visited before any of these cities in the specified sequence.
+    b. If a robot's tour includes cities 4 and 5, for example, city 4 must come before city 5 in the tour.
+    c. This sequential constraint applies to any combination of these cities included in a single robot's tour, ensuring that the order 2 → 4 → 5 → 6 → 7 is maintained for any cities present from this list, even if not all are visited by the same robot.
+4. The goal is to minimize the maximum cost of the tours among all robots.
 ###

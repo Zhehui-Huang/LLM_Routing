@@ -1,36 +1,37 @@
 """
-Environment information:
+Environment Information:
 
-There are ten cities.
+There are ten cities, each with a specified location:
 
-City 1 has location (9, 4)
-City 2 has location (4, 6)
-City 3 has location (4, 4)
-City 4 has location (3, 4)
-City 5 has location (4, 8)
-City 6 has location (4, 3)
-City 7 has location (7, 5)
-City 8 has location (5, 0)
-City 9 has location (1, 5)
-City 10 has location (9, 3)
+City 1: (9, 4)
+City 2: (4, 6)
+City 3: (4, 4) [Depot]
+City 4: (3, 4)
+City 5: (4, 8)
+City 6: (4, 3)
+City 7: (7, 5)
+City 8: (5, 0)
+City 9: (1, 5)
+City 10: (9, 3)
 """
 
 """
 Robot information:
 
-There are four robots.
-- The depot of all robots is city 3.
-- All robots can travel between any two cities, except travel between the same city.
-- The travel cost is the Euclidean distance between two cities.
+Four robots are available for tasks.
+All robots start their journeys from the depot (City 3), and the travel cost between any two cities is determined by the Euclidean distance.
+All robots can travel between any two cities, except travel between the same city.
 """
 
 ###
-Task:
-All robots starting their tours from the depot, with the goal of visiting all cities exactly once by any robot, and all robots must return to the depot after completing their tours of the cities.
-Each city must be visited exactly once by any one of the robots.
-All robots start their tour from the depot. After completing their tours, each robot must return to the depot.
-
-Please provide a solution to:
+Objective:
 Primary objective: minimize the maximum travel cost between any two consecutive cities in any robot's tour.
 Secondary objective: minimize the discrepancy or balance the tour costs among all robots.
+Each city must be visited exactly once by one of the robots, and no city should be visited by more than one robot.
+
+Constraints:
+1. Each robot starts its tour from the depot (City 3) and must return to the depot (City 3) after completing its tour.
+2. Each city must be visited exactly once by one of the robots. No city should be visited by more than one robot.
+3. The primary objective is minimizing the maximum travel cost between any two consecutive cities in any robot's tour.
+4. The secondary objective is minimizing the discrepancy or balance the tour costs among all robots.
 ###
