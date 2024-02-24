@@ -20,7 +20,7 @@ There are three depots: City 1, City 4, City 7.
 """
 Robot information:
 
-Four robots are available for tasks.
+Four robots are available for the task.
 All robots start their journeys from the depot (City 1), and the travel cost between any two cities is determined by the Euclidean distance.
 All robots can travel between any two cities, except travel between the same city.
 """
@@ -37,4 +37,7 @@ Constraints:
 2. Each city must be visited exactly once by one of the robots. No city should be visited by more than one robot.
 3. Depot cities must be visited at least once by any one of the robots.
 4. The goal is to minimize the maximum cost of the tours among all robots.
+5. There are only four robots available for the task.
+6. The travel cost between any two cities is determined by the Euclidean distance.
+7. All robots can travel between any two cities, except travel between the same city.
 ###

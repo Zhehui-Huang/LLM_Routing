@@ -3,7 +3,8 @@ import os
 
 from openai import OpenAI
 from utils import (nltd_to_math, math_to_solution, read_file, gpt_prompt_tips, nltd_to_math_requirements,
-                   read_all_files, reflect_solution, extract_execute_code, save_evaluation, get_constraints)
+                   read_all_files, reflect_solution, extract_execute_code, save_evaluation, get_constraints,
+                   save_math_form)
 
 from task_specify_sol_req import sol_req
 
@@ -17,6 +18,7 @@ reflect_num = 3
 def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_parts):
     # 1. Translate natural language task descriptions (NLTD) to mathematical formulations.
     math_content_modify = nltd_to_math(client=client, gpt_model=gpt_model, task_descriptions=task_descriptions)
+    save_math_form(python_file_path, math_content_modify)
     # 2. Math to solution
     reply_content = math_to_solution(client=client, gpt_model=gpt_model, task_descriptions=task_descriptions,
                                      math_content_modify=math_content_modify, prompt_tips=gpt_prompt_tips,
@@ -32,7 +34,11 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
         "### \nQuestion: \nPlease use Python code to check if the above solution is correct and satisfies the "
         f"constraints: \n{constraints_content}\n"
         "If the solution is correct, you need to output exactly <** YES!!! **>. \n"
-        "If the solution is not correct, you need to output why the solution is wrong, at least give some hints. ###"
+        "If the solution is not correct, you need to use Python code to print which constraints are violated. "
+        "For example, if the constraint, each city must be visited exactly once by one of the robots, "
+        "is violated, and you found that city 1 is not visited, in the python code, you need to print: \n"
+        "Constraint Violated: Each city must be visited exactly once by one of the robots, "
+        "and city 1 is not visited. \n###"
     )
 
     extra_eval_content = 'This is without reflect!'

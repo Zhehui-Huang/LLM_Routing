@@ -18,7 +18,7 @@ City 10: (9, 3)
 """
 Robot information:
 
-Four robots are available for tasks.
+Four robots are available for the task.
 All robots start their journeys from the depot (City 3), and the travel cost between any two cities is determined by the Euclidean distance.
 All robots can travel between any two cities, except travel between the same city.
 """
@@ -35,5 +35,8 @@ Constraints:
 2. Each city must be visited exactly once by one of the robots. No city should be visited by more than one robot.
 3. The primary objective is minimizing the maximum travel cost between any two consecutive cities in any robot's tour.
 4. The secondary objective is minimizing the discrepancy or balance the tour costs among all robots.
-5. It's crucial that the solution first and foremost addresses the primary objective, with the secondary objective considered only after the primary has been optimized
+5. It's crucial that the solution first and foremost addresses the primary objective, with the secondary objective considered only after the primary has been optimized.
+6. There are only four robots available for the task.
+7. The travel cost between any two cities is determined by the Euclidean distance.
+8. All robots can travel between any two cities, except travel between the same city.
 ###

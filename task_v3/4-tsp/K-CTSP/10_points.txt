@@ -31,7 +31,7 @@ City 10: ['yellow']
 """
 Robot information:
 
-Four robots are available for tasks.
+Four robots are available for the task.
 All robots start their journeys from the depot (City 3), and the travel cost between any two cities is determined by the Euclidean distance.
 All robots can travel between any two cities, except travel between the same city.
 Robots are color-coded and can only visit cities matching their color.
@@ -53,4 +53,7 @@ Constraints:
 2. Each robot can only visit cities that match its color.
 3. Each city must be visited exactly once by one of the robots, ensuring no city is visited by more than one robot.
 4. The objective is to minimize the maximum cost of the tours among all robots.
+5. There are only four robots available for the task.
+6. The travel cost between any two cities is determined by the Euclidean distance.
+7. All robots can travel between any two cities, except travel between the same city.
 ###

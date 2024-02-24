@@ -38,7 +38,11 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
         "### \nQuestion: \nPlease use Python code to check if the above solution is correct and satisfies the "
         f"constraints: \n{constraints_content}\n"
         "If the solution is correct, you need to output exactly <** YES!!! **>. \n"
-        "If the solution is not correct, you need to output why the solution is wrong, at least give some hints. ###"
+        "If the solution is not correct, you need to use Python code to print which constraints are violated. "
+        "For example, if the constraint, each city must be visited exactly once by one of the robots, "
+        "is violated, and you found that city 1 is not visited, in the python code, you need to print: \n"
+        "Constraint Violated: Each city must be visited exactly once by one of the robots, "
+        "and city 1 is not visited. \n###"
     )
 
     extra_eval_content = 'This is without reflect!'

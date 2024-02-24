@@ -17,7 +17,7 @@ direct_solution_requirements = (
 
 nltd_to_math_requirements = (
     "### Please translate language descriptions to mathematical formulations. "
-    "Solution requirements: You must consider all constraints regardless of complexity. ###"
+    "You must consider all constraints regardless of complexity. ###"
 )
 
 gpt_prompt_tips = (
@@ -70,7 +70,7 @@ def nltd_to_math(client, gpt_model, task_descriptions):
     )
 
     math_content = math_reply.choices[0].message.content
-    math_content_modify = f"### Mathematical formulation: {math_content} ###"
+    math_content_modify = f"### \nMathematical formulation: {math_content} \n###"
     print('Mathematical formulation:    ', math_content_modify, sep='\n')
     print('====================================================================================================')
     return math_content_modify
@@ -346,9 +346,7 @@ def reflect_solution(ori_python_file_path, math_content_modify, client, gpt_mode
             find_no_sol = f'Does Not Find the Solution in round: {reflect_id}'
 
             if final_external_solutions is None:
-                extra_eval_content = (
-                    f"***no solution*** \nTime Out!\n{find_no_sol} \n{q_meet_req_content} \n"
-                )
+                extra_eval_content = f"***no solution*** \nTime Out!\n{find_no_sol} \n{q_meet_req_content} \n"
             else:
                 extra_eval_content = (
                     f"{final_external_solutions.stdout} \n {final_external_solutions.stderr} \n {find_no_sol} \n "
@@ -375,9 +373,10 @@ def reflect_solution(ori_python_file_path, math_content_modify, client, gpt_mode
 
             modified_task_descriptions = (
                 f"{tmp_pre_content} \n{exec_res} \nHere are the analysis why the solution is not correct.\n"
-                f"{tmp_verify_external_solutions_out} \nGiven the above analysis, please provide a correct "
-                f"solution with Python code. If the solution is ***no solution***, please use a heuristic solver to "
-                f"solve the problem. \n{sol_given_parts}"
+                f"{tmp_verify_external_solutions_out} \nPlease provide a correct solution with Python code. "
+                f"You can use the previous solution as a reference. \n"
+                f"If the solution is ***no solution*** or if you think the solution does not make sense, "
+                f"you are allow to use a heuristic solver to solve the problem. \n{sol_given_parts}"
             )
             print('modified_task_descriptions: ', modified_task_descriptions, sep="\n")
 
@@ -476,6 +475,17 @@ def get_constraints(env_and_task):
     constraints_text = env_and_task.split(start_keyword)[1].split(end_keyword)[0].strip()
 
     return constraints_text
+
+
+def save_math_form(python_file_path, math_content_modify):
+    math_file_path = f'math{python_file_path[8:-3]}' + '.txt'
+
+    directory = os.path.dirname(math_file_path)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+    with open(math_file_path, 'w') as math_file:
+        math_file.write(math_content_modify)
 
 
 def main():

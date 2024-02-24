@@ -18,7 +18,7 @@ City 10: (9, 3)
 """
 Robot information:
 
-Four robots are available for tasks.
+Four robots are available for the task.
 All robots start their journeys from the depot (City 3), and the travel cost between any two cities is determined by the Euclidean distance.
 All robots can travel between any two cities, except travel between the same city.
 """
@@ -37,4 +37,7 @@ Constraints:
     b. If a robot's tour includes cities 4 and 5, for example, city 4 must come before city 5 in the tour.
     c. This sequential constraint applies to any combination of these cities included in a single robot's tour, ensuring that the order 2 → 4 → 5 → 6 → 7 is maintained for any cities present from this list, even if not all are visited by the same robot.
 4. The goal is to minimize the maximum cost of the tours among all robots.
+5. There are only four robots available for the task.
+6. The travel cost between any two cities is determined by the Euclidean distance.
+7. All robots can travel between any two cities, except travel between the same city.
 ###

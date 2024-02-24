@@ -25,8 +25,8 @@ For example, the distance between city 1 and city 2 is 4.
 """
 Robot information:
 
-Four robots are available for tasks.
-All robots start their journeys from the depot (City 3), and the travel cost between any two cities is determined by the Euclidean distance.
+Four robots are available for the task.
+All robots start their journeys from the depot (City 3), and the travel cost between any two cities is determined by the distance matrix.
 All robots can travel between any two cities, except travel between the same city.
 """
 
@@ -41,4 +41,7 @@ Constraints:
 2. Each city can be visited by multiple robot multiple times.
 3. Each city must be visited by at least one robot one time.
 4. The goal is to minimize the maximum cost of the tours among all robots.
+5. There are only four robots available for the task.
+6. The travel cost between any two cities is determined by the distance matrix.
+7. All robots can travel between any two cities, except travel between the same city.
 ###

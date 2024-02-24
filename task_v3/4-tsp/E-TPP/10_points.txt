@@ -47,7 +47,7 @@ City 10:
 """
 Robot information:
 
-Four robots are available for tasks.
+Four robots are available for the task.
 All robots start their journeys from the depot (City 3), and the travel cost between any two cities is determined by the 10 times the Euclidean distance between these two cities.
 All robots can travel between any two cities, except travel between the same city.
 Each robot has its own capacity. Robot A can carry up to 10 units, Robot B can carry up to 15 units, Robot C can carry up to 20 units, and Robot D can carry up to 20 units.
@@ -69,4 +69,7 @@ Constraints:
 5. The product amount that a robot carries should not exceed its capacity.
 6. Each robot has its own capacity. Robot A can carry up to 10 units, Robot B can carry up to 15 units, Robot C can carry up to 20 units, and Robot D can carry up to 20 units.
 7. The goal is to minimize the maximum tour costs (travel cost + purchasing cost) among all robots.
+8. There are only four robots available for the task.
+9. The travel cost between any two cities is determined by the 10 times the Euclidean distance between these two cities.
+10. All robots can travel between any two cities, except travel between the same city.
 ###
