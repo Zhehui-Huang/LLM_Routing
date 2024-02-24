@@ -460,6 +460,16 @@ def refine(refine_count, client, gpt_model, init_messages, python_file_path, sol
     return final_external_solutions, final_total_time
 
 
+def get_constraints(env_and_task):
+    # Extracting the constraints section from the text
+    start_keyword = "Constraints:"
+    end_keyword = "###"
+    # Extract the constraints text
+    constraints_text = env_and_task.split(start_keyword)[1].split(end_keyword)[0].strip()
+
+    return constraints_text
+
+
 def main():
     text_files_content = extract_analysis_before_python(reflect_input_content='aaa 85```python')
     print(text_files_content)
