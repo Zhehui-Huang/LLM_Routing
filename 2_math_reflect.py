@@ -75,7 +75,7 @@ def main():
                 robot_num = 'M'
             sol_given_parts_key = f"{parts[2][0]}_{robot_num}"
             sol_given_parts = sol_req[sol_given_parts_key]
-            task_descriptions = f"{env_and_task} {nltd_to_math_requirements}"
+            task_descriptions = f"{env_and_task}\n{nltd_to_math_requirements}"
 
             solve_problem(task_descriptions=task_descriptions, python_file_path=python_file_path,
                           env_and_task=env_and_task, sol_given_parts=sol_given_parts)

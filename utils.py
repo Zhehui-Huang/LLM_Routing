@@ -191,10 +191,13 @@ def extract_execute_code(problem_solving_content, python_file_path):
     # Execute the Python script
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     print(f"Start running the Python code at {current_time}...")
-    try:
-        external_solutions = subprocess.run(['python', python_file_path], capture_output=True, text=True, timeout=120)
-    except subprocess.TimeoutExpired:
+    if start_index == -1:
         external_solutions = None
+    else:
+        try:
+            external_solutions = subprocess.run(['python', python_file_path], capture_output=True, text=True, timeout=120)
+        except subprocess.TimeoutExpired:
+            external_solutions = None
 
     # Print or process the output
     # print("external_solutions.stdout:   ", external_solutions.stdout, sep="\n")
@@ -325,7 +328,7 @@ def reflect_solution(ori_python_file_path, math_content_modify, client, gpt_mode
 
         print('verify_external_solutions: ', verify_external_solutions.stdout, sep="\n")
 
-        if "YES!!!" in verify_external_solutions.stdout and verify_external_solutions.stderr == "":
+        if verify_external_solutions is not None and "YES!!!" in verify_external_solutions.stdout and verify_external_solutions.stderr == "":
             extra_eval_content = f'Find the correct solution in round: {reflect_id}!'
             print(extra_eval_content)
             find_solution_flag = True
@@ -359,9 +362,19 @@ def reflect_solution(ori_python_file_path, math_content_modify, client, gpt_mode
                 break
 
             # Since does not find the solution, we need to provide the correct solution
+            if math_content_modify is None:
+                tmp_pre_content = env_and_task
+            else:
+                tmp_pre_content = math_content_modify
+
+            if verify_external_solutions is None:
+                tmp_verify_external_solutions_out = q_meet_req_content
+            else:
+                tmp_verify_external_solutions_out = verify_external_solutions.stdout
+
             modified_task_descriptions = (
-                f"{env_and_task} \n{exec_res} \nHere are the analysis why the solution is not correct.\n"
-                f"{verify_external_solutions.stdout} \nGiven the above analysis, please provide a correct "
+                f"{tmp_pre_content} \n{exec_res} \nHere are the analysis why the solution is not correct.\n"
+                f"{tmp_verify_external_solutions_out} \nGiven the above analysis, please provide a correct "
                 f"solution with Python code. If the solution is ***no solution***, please use a heuristic solver to "
                 f"solve the problem. \n{sol_given_parts}"
             )
