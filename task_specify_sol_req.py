@@ -3,75 +3,76 @@ sol_req = {
     # B: print the biggest travel cost between any two consecutive cities
     # E: print the total cost (travel cost + purchasing cost)
     'A_1': (
-        "### Solution requirements: please solve the problem with Python code. "
-        "If there is no solution, only print ***no solution***. "
-        "If there is a solution, please only output Python code without any analysis. In the Python code, you must: "
-        "1. Print the tour of the robot. (template: Tour: <text>). "
-        "2. Print the tour cost of the robot, which rounded to two decimal places. (template: Final cost: <text>). ###"
+        "\nSolution requirements: \n"
+        "Please solve this problem with Python code. Follow these guidelines in your solution: \n"
+        "1. Print the tour of the robot in the format: Robot 1 - Tour: [<depot city id>, <city id>, ..., <depot city id>]. \n"
+        "2. Print the tour cost of the robot in the format: Robot 1 - Final Cost: <value>. \n"
+        "If no solution exists, print ***no solution***. \n"
     ),
     'B_1': (
-        "### Solution requirements: please solve the problem with Python code. "
-        "If there is no solution, only print ***no solution***. "
-        "If there is a solution, please only output Python code without any analysis. In the Python code, you must: "
-        "1. Print the tour of the robot. (template: Tour: <text>). "
-        "2. Print the tour cost of the robot, which rounded to two decimal places. (template: Tour cost: <text>). "
-        "3. Print the biggest travel cost between any two consecutive cities in the tour, which rounded to two decimal places. (template: Final cost: <text>). ###"
+        "\nSolution requirements: \n"
+        "Please solve this problem with Python code. Follow these guidelines in your solution: \n"
+        "1. Print the tour of the robot in the format: Robot 1 - Tour: [<depot city id>, <city id>, ..., <depot city id>]. \n"
+        "2. Print the tour cost of the robot in the format: Robot 1 - Cost: <value>. \n"
+        "3. Print the biggest travel cost between any two consecutive cities in the tour in the format: Final cost: <value>. \n"
+        "If no solution exists, print ***no solution***. \n"
     ),
     'C_1': (
-        "### Solution requirements: please solve the problem with Python code. "
-        "If there is no solution, only print ***no solution***. "
-        "If there is a solution, please only output Python code without any analysis. In the Python code, you must: "
-        "1. Print the tour of the robot. (template: Tour: <text>). "
-        "2. Print the tour cost of the robot, which rounded to two decimal places. (template: Final cost: <text>). ###"
+        "\nSolution requirements: \n"
+        "Please solve this problem with Python code. Follow these guidelines in your solution: \n"
+        "1. Print the tour of the robot in the format: Robot 1 - Tour: [<depot city id>, <city id>, ..., <depot city id>]. \n"
+        "2. Print the tour cost of the robot in the format: Robot 1 - Final Cost: <value>. \n"
+        "If no solution exists, print ***no solution***. \n"
     ),
     'D_1': (
-        "### Solution requirements: please solve the problem with Python code. "
-        "If there is no solution, only print ***no solution***. "
-        "If there is a solution, please only output Python code without any analysis. In the Python code, you must: "
-        "1. Print the tour of the robot. (template: Tour: <text>). "
-        "2. Print the tour cost of the robot, which rounded to two decimal places. (template: Final cost: <text>). ###"
+        "\nSolution requirements: \n"
+        "Please solve this problem with Python code. Follow these guidelines in your solution: \n"
+        "1. Print the tour of the robot in the format: Robot 1 - Tour: [<depot city id>, <city id>, ..., <depot city id>]. \n"
+        "2. Print the tour cost of the robot in the format: Robot 1 - Final Cost: <value>. \n"
+        "If no solution exists, print ***no solution***. \n"
     ),
     'E_1': (
-        "### Solution requirements: please solve the problem with Python code. "
-        "If there is no solution, only print ***no solution***. "
-        "If there is a solution, please only output Python code without any analysis. In the Python code, you must: "
-        "1. Print the tour of the robot. (template: Tour: <text>). "
-        "2. Print the total cost (travel cost + purchasing cost) of the robot, which rounded to two decimal places. (template: Final cost: <text>). ###"
+        "\nSolution requirements: \n"
+        "Please solve this problem with Python code. Follow these guidelines in your solution: \n"
+        "1. Print the tour of the robot in the format: Robot 1 - Tour: [<depot city id>, <city id>, ..., <depot city id>]. \n"
+        "2. Print the purchase city and product quantity for the robot in the format: Robot 1 - Product: (<City id>, <Product amount>). \n"
+        "3. Print the total cost (travel cost + purchasing cost) of the robot in the format: Robot 1 - Final Cost: <value>. \n"
+        "If no solution exists, print ***no solution***. \n"
     ),
     'F_1': (
-        "### Solution requirements: please solve the problem with Python code. "
-        "If there is no solution, only print ***no solution***. "
-        "If there is a solution, please only output Python code without any analysis. In the Python code, you must: "
-        "1. Print the tour of the robot. (template: Tour: <text>). "
-        "2. Print the tour cost of the robot, which rounded to two decimal places. (template: Final cost: <text>). ###"
+        "\nSolution requirements: \n"
+        "Please solve this problem with Python code. Follow these guidelines in your solution: \n"
+        "1. Print the tour of the robot in the format: Robot 1 - Tour: [<depot city id>, <city id>, ..., <depot city id>]. \n"
+        "2. Print the tour cost of the robot in the format: Robot 1 - Final Cost: <value>. \n"
+        "If no solution exists, print ***no solution***. \n"
     ),
     'G_1': (
-        "### Solution requirements: please solve the problem with Python code. "
-        "If there is no solution, only print ***no solution***. "
-        "If there is a solution, please only output Python code without any analysis. In the Python code, you must: "
-        "1. Print the tour of the robot. (template: Tour: <text>). "
-        "2. Print the tour cost of the robot, which rounded to two decimal places. (template: Final cost: <text>). ###"
+        "\nSolution requirements: \n"
+        "Please solve this problem with Python code. Follow these guidelines in your solution: \n"
+        "1. Print the tour of the robot in the format: Robot 1 - Tour: [<depot city id>, <city id>, ..., <depot city id>]. \n"
+        "2. Print the tour cost of the robot in the format: Robot 1 - Final Cost: <value>. \n"
+        "If no solution exists, print ***no solution***. \n"
     ),
     'H_1': (
-        "### Solution requirements: please solve the problem with Python code. "
-        "If there is no solution, only print ***no solution***. "
-        "If there is a solution, please only output Python code without any analysis. In the Python code, you must: "
-        "1. Print the tour of the robot. (template: Tour: <text>). "
-        "2. Print the tour cost of the robot, which rounded to two decimal places. (template: Final cost: <text>). ###"
+        "\nSolution requirements: \n"
+        "Please solve this problem with Python code. Follow these guidelines in your solution: \n"
+        "1. Print the tour of the robot in the format: Robot 1 - Tour: [<depot city id>, <city id>, ..., <depot city id>]. \n"
+        "2. Print the tour cost of the robot in the format: Robot 1 - Final Cost: <value>. \n"
+        "If no solution exists, print ***no solution***. \n"
     ),
     'I_1': (
-        "### Solution requirements: please solve the problem with Python code. "
-        "If there is no solution, only print ***no solution***. "
-        "If there is a solution, please only output Python code without any analysis. In the Python code, you must: "
-        "1. Print the tour of the robot. (template: Tour: <text>). "
-        "2. Print the tour cost of the robot, which rounded to two decimal places. (template: Final cost: <text>). ###"
+        "\nSolution requirements: \n"
+        "Please solve this problem with Python code. Follow these guidelines in your solution: \n"
+        "1. Print the tour of the robot in the format: Robot 1 - Tour: [<depot city id>, <city id>, ..., <depot city id>]. \n"
+        "2. Print the tour cost of the robot in the format: Robot 1 - Final Cost: <value>. \n"
+        "If no solution exists, print ***no solution***. \n"
     ),
     'J_1': (
-        "### Solution requirements: please solve the problem with Python code. "
-        "If there is no solution, only print ***no solution***. "
-        "If there is a solution, please only output Python code without any analysis. In the Python code, you must: "
-        "1. Print the tour of the robot. (template: Tour: <text>). "
-        "2. Print the tour cost of the robot, which rounded to two decimal places. (template: Final cost: <text>). ###"
+        "\nSolution requirements: \n"
+        "Please solve this problem with Python code. Follow these guidelines in your solution: \n"
+        "1. Print the tour of the robot in the format: Robot 1 - Tour: [<depot city id>, <city id>, ..., <depot city id>]. \n"
+        "2. Print the tour cost of the robot in the format: Robot 1 - Final Cost: <value>. \n"
+        "If no solution exists, print ***no solution***. \n"
     ),
 
 
