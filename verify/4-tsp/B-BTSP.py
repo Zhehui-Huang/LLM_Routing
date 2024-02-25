@@ -1,3 +1,4 @@
+import argparse
 import sys
 
 from utils import read_all_files, save_final_results
@@ -23,7 +24,7 @@ test_file_num = 3
 
 
 # Detailed constraint check function
-def detailed_constraint_check(tours: dict, cities: dict, robot_costs: dict) -> str:
+def detailed_constraint_check(tours, robot_costs):
     all_contract_violated = ""
     # Check 1: Each robot starts and ends at the depot
     all_contract_violated += verify_start_end_depot(tours=tours)
@@ -47,9 +48,10 @@ def detailed_constraint_check(tours: dict, cities: dict, robot_costs: dict) -> s
         return "** YES!!! **"
 
 
-def main():
+def main(root_dir=""):
     valid_final_cost = {}
-    root_dir = '../../evaluate/1_direct_reflect_v3/4-tsp/B-BTSP'
+    tmp_file_name = root_dir[9:]
+    # root_dir = '../../evaluate/' + tmp_file_name
     text_files_loc = read_all_files(root_directory=root_dir)
     print('file number:', len(text_files_loc), sep='\n')
 
@@ -62,27 +64,31 @@ def main():
         # print(robot_tours)
         # print(robot_costs)
         # Running the detailed constraint check on the provided solution
-        constraint_check_message = detailed_constraint_check(robot_tours, cities, robot_costs)
+        constraint_check_message = detailed_constraint_check(robot_tours, robot_costs)
 
         if constraint_check_message == "** YES!!! **":
             # print('file_path: ', file_path, '\n')
-            reflect_id = int(file_path.split('/')[6].split('_')[1])
-            file_id = int(file_path.split('/')[7].split('.')[0][-1])
+            reflect_id = int(file_path.split('/')[4].split('_')[1])
+            file_id = int(file_path.split('/')[5].split('.')[0][-1])
 
             for i in range(reflect_id, reflect_num):
                 valid_final_cost[i][file_id] = final_cost
         else:
-            print(
-                '====================================================================================================')
-            print('file_path: ', file_path, '\n')
-            print(constraint_check_message)
-            print(
-                '====================================================================================================')
+            continue
+            # print(
+            #     '====================================================================================================')
+            # print('file_path: ', file_path, '\n')
+            # print(constraint_check_message)
+            # print(
+            #     '====================================================================================================')
 
     print('valid_final_cost:', valid_final_cost, sep='\n')
 
-    save_final_results(dir_path='1_direct_reflect_v3/4-tsp/B-BTSP', result_content=valid_final_cost)
+    save_final_results(dir_path=tmp_file_name, result_content=valid_final_cost)
 
 
 if __name__ == '__main__':
-    sys.exit(main())
+    parser = argparse.ArgumentParser(description="Run main function with parameters.")
+    parser.add_argument('--root_dir', type=str, default="", help="root_dir")
+    args = parser.parse_args()
+    sys.exit(main(root_dir=args.root_dir))
