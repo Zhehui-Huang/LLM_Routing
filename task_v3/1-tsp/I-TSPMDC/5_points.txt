@@ -30,8 +30,8 @@ The objective is minimizing the tour costs, while considering energy management 
 Constraints:
 1. The robot starts its tour from the depot (City 3) and must return to one of the depots after completing its tour.
 2. Each city must be visited exactly once.
-3. The travel cost between any two cities is determined by the Euclidean distance.
-4. Depot cities must be visited at least once.
+3. Depot cities must be visited at least once.
+4. The travel cost between any two cities is determined by the Euclidean distance.
 5. Energy constraints
     a. Each time the robot visits any depot city (City 1, City 3), its energy is fully recharged to 9 units, allowing it to continue its tour with renewed energy capacity.
     b. Visiting a depot not only allows for energy recharge but also is necessary for the robot to extend its tour beyond the initial energy limit.

@@ -33,6 +33,6 @@ The goal is to minimize the tour cost.
 Constraints:
 1. The robot starts its tour from the depot (City 3) and must return to one of the depots after completing its tour.
 2. Each city must be visited exactly once.
-3. The travel cost between any two cities is determined by the Euclidean distance.
-4. Depot cities must be visited at least once.
+3. Depot cities must be visited at least once.
+4. The travel cost between any two cities is determined by the Euclidean distance.
 ###

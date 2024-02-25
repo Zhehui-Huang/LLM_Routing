@@ -14,7 +14,7 @@ The distance between each pair of cities are presented in a distance matrix belo
 The index of the raw and column is 1-based.
 
 For each value in the matrix, the row index represents the starting city, and the column index represents the destination city.
-For example, the distance between city 1 and city 2 is 2.
+For example, the distance between city 1 and city 2 is 2, the distance between city 1 and city 4 is 7.
 """
 
 """

@@ -27,5 +27,5 @@ Constraints:
 1. The robot starts its tour from the depot (City 3) and must return to the depot (City 3) after completing its tour.
 2. The travel cost between any two cities is determined by the Euclidean distance.
 3. Only cities within a 4-unit distance from the depot (City 3) are selected for visits.
-4. Each selected city must be visited exactly once
+4. Each selected city must be visited exactly once.
 ###
