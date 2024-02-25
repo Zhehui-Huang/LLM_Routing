@@ -67,8 +67,10 @@ def compute_mean(values):
 
 def prepare_plot_data(json_data, extracted_parts):
     plot_data = []
+    raw_datas = []
     for jid, file in enumerate(json_data):
         means = []
+        raw_data = []
         for key in file.keys():
             values = list(file[key].values())
             values = np.round(values, 2)
@@ -79,12 +81,14 @@ def prepare_plot_data(json_data, extracted_parts):
 
             mean = compute_mean(values)
             means.append(mean)
+            raw_data.append(values)
         plot_data.append(means)
-    return plot_data
+        raw_datas.append(raw_data)
+    return plot_data, raw_datas
 
 
 json_data, extracted_parts = load_json_files()
-plot_data = prepare_plot_data(json_data, extracted_parts)
+plot_data, raw_datas = prepare_plot_data(json_data, extracted_parts)
 
 # Dynamically set group labels based on the number of files
 group_labels = [f'File {i + 1}' for i in range(len(json_data))]
@@ -97,19 +101,24 @@ fig, ax = plt.subplots(figsize=(12, 8))
 bar_width = 0.8 / len(plot_data[0])  # Adjust the bar width based on number of keys
 ind = np.arange(len(group_labels))  # the x locations for the groups
 
-for i in range(len(plot_data[0])):
-    means = [plot_data[j][i] for j in range(len(plot_data))]
+for i in range(len(raw_datas[0])):
+    values = [raw_datas[j][i] for j in range(len(raw_datas))]
     # calculate_optimality(best_value, means)
     ordered_keys = sorted(benchmark.keys())
 
     modified_means = []
-    for tj in range(len(means)):
-        if means[tj] == 0:
-            modified_means.append(0)
-            continue
+    for file_id in range(len(values)):
+        tmp_values = values[file_id]
 
-        tmp_mean = calculate_optimality(value=means[tj], best_value=benchmark[ordered_keys[tj]])
-        modified_means.append(tmp_mean)
+        optimality_data = []
+        for tmp_value in tmp_values:
+            if tmp_value == -1:
+                tmp_optimality = 0
+            else:
+                tmp_optimality = calculate_optimality(value=tmp_value, best_value=benchmark[ordered_keys[file_id]])
+            optimality_data.append(tmp_optimality)
+        mean_optimality_data = np.mean(optimality_data)
+        modified_means.append(mean_optimality_data)
 
     ax.bar(ind + i * bar_width, modified_means, bar_width, label=f'Key {i + 1}', color=next(colors))
 
