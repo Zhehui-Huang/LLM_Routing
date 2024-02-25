@@ -3,24 +3,30 @@ Environment information:
 
 There are five cities.
 
-City 1 has location (9, 4)
-City 2 has location (4, 6)
-City 3 has location (4, 4)
-City 4 has location (3, 4)
-City 5 has location (4, 8)
+City 1: (9, 4)
+City 2: (4, 6)
+City 3: (4, 4) [Depot]
+City 4: (3, 4)
+City 5: (4, 8)
 """
 
 """
 Robot information:
 
 There is a robot.
-- The robot starts at city 1.
+- The robot starts at city 3.
 - The robot can travel between any two cities.
 - The travel cost is the Euclidean distance between two cities.
 """
 
 ###
-Task:
-The robot needs to visit all cities exactly once, except the starting cities, and then back to the starting city.
-Please minimize the biggest travel cost between any two consecutive cities in the tour and try to make the tour as short as possible.
+Objective:
+Primary objective: minimize the travel cost between any two consecutive cities in the robot's tour.
+Secondary objective: minimize the discrepancy or balance the tour costs.
+It's crucial that the solution first and foremost addresses the primary objective, with the secondary objective considered only after the primary has been optimized.
+
+Constraints:
+1. The robot starts its tour from the depot (City 3) and must return to the depot (City 3) after completing its tour.
+2. Each city must be visited exactly once.
+3. The travel cost between any two cities is determined by the Euclidean distance.
 ###

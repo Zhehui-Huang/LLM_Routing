@@ -3,11 +3,11 @@ Environment information:
 
 There are five cities.
 
-City 1 has location (9, 4)
-City 2 has location (4, 6)
-City 3 has location (4, 4)
-City 4 has location (3, 4)
-City 5 has location (4, 8)
+City 1: (9, 4)
+City 2: (4, 6)
+City 3: (4, 4) [Depot]
+City 4: (3, 4)
+City 5: (4, 8)
 
 Each city sell the product with different amount at different prices.
 
@@ -29,18 +29,19 @@ City 5:
 Robot information:
 
 There is a robot.
-- The robot starts at city 1.
+- The robot starts at city 3.
 - The robot can travel between any two cities.
 - The travel cost is 10 times the Euclidean distance between two cities.
 """
 
 ###
-Task:
+Objective:
+The goal is to minimize the tour costs (travel cost + purchasing cost) while satisfying buy 30 units of product.
 
-The robot needs to visit cities to buy products and then return to city 1.
-Each city, except the starting cities, can only be visited once.
-
-The robot needs to buy 30 units of product.
-
-Please find a route between a subset of the cities that minimizes total cost (travel cost + purchasing cost) and enables the purchase of enough products.
+Constraints:
+1. The robot starts its tour from the depot (City 3) and must return to the depot (City 3) after completing its tour.
+2. Each city can be visited at most once.
+3. The travel cost between any two cities is determined by the 10 times the Euclidean distance between these two cities.
+4. If a city be visited by the robot, the robot must purchase all units of the product from the city.
+5. The robot needs to buy 30 units of product.
 ###

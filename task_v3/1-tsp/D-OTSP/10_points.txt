@@ -3,30 +3,37 @@ Environment information:
 
 There are ten cities.
 
-City 1 has location (9, 4)
-City 2 has location (4, 6)
-City 3 has location (4, 4)
-City 4 has location (3, 4)
-City 5 has location (4, 8)
-City 6 has location (4, 3)
-City 7 has location (7, 5)
-City 8 has location (5, 0)
-City 9 has location (1, 5)
-City 10 has location (9, 3)
+City 1: (9, 4)
+City 2: (4, 6)
+City 3: (4, 4) [Depot]
+City 4: (3, 4)
+City 5: (4, 8)
+City 6: (4, 3)
+City 7: (7, 5)
+City 8: (5, 0)
+City 9: (1, 5)
+City 10: (9, 3)
 """
 
 """
 Robot information:
 
 There is a robot.
-- The robot starts at city 1.
+- The robot starts at city 3.
 - The robot can travel between any two cities.
 - The travel cost is the Euclidean distance between two cities.
 """
 
 ###
-Task:
-The robot needs to visit all cities exactly once, except the starting cities, and then back to the starting city.
-The robot must visit city 9 before city 6, must visit city 6 before city 2, must visit city 2 before city 8.
-Please find the shortest tour for the robot.
+Objective:
+The goal is to minimize the tour cost.
+
+Constraints:
+1. The robot starts its tour from the depot (City 3) and must return to the depot (City 3) after completing its tour.
+2. Each city must be visited exactly once.
+3. The travel cost between any two cities is determined by the Euclidean distance.
+4. There are sequence constraints. Within a tour of the robot, if any subset of the cities 2, 6, 8, 9 are visited, they must be visited in the sequence dictated by their numbering. This means that:
+    a. If a robot's tour includes city 2 and any of the cities 6, 8, 9, then city 2 must be visited before any of these cities in the specified sequence.
+    b. If a robot's tour includes cities 2 and 8, for example, city 2 must come before city 8 in the tour.
+    c. This sequential constraint applies to any combination of these cities included in a single robot's tour, ensuring that the order 2 -> 6 -> 8 -> 9 is maintained for any cities present from this list.
 ###

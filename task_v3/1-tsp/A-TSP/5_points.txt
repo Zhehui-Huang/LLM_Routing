@@ -3,24 +3,28 @@ Environment information:
 
 There are five cities.
 
-City 1 has location (9, 4)
-City 2 has location (4, 6)
-City 3 has location (4, 4)
-City 4 has location (3, 4)
-City 5 has location (4, 8)
+City 1: (9, 4)
+City 2: (4, 6)
+City 3: (4, 4) [Depot]
+City 4: (3, 4)
+City 5: (4, 8)
 """
 
 """
 Robot information:
 
 There is a robot.
-- The robot starts at city 1.
+- The robot starts at city 3.
 - The robot can travel between any two cities.
 - The travel cost is the Euclidean distance between two cities.
 """
 
 ###
-Task:
-The robot needs to visit all cities exactly once, except the starting cities, and then back to the starting city.
-Please find the shortest tour for the robot.
+Objective:
+The goal is to minimize the tour cost.
+
+Constraints:
+1. The robot starts its tour from the depot (City 3) and must return to the depot (City 3) after completing its tour.
+2. Each city must be visited exactly once.
+3. The travel cost between any two cities is determined by the Euclidean distance.
 ###

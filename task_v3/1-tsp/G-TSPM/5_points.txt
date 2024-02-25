@@ -21,16 +21,17 @@ For example, the distance between city 1 and city 2 is 2.
 Robot information:
 
 There is a robot.
-- The robot starts at city 1.
+- The robot starts at city 3.
 - The robot can travel between any two cities.
 - The travel cost is the Euclidean distance between two cities.
 """
 
 ###
-Task:
-The robot needs to visit all cities at least once, and then back to the starting city.
+Objective:
+The goal is to minimize the tour cost.
 
-Each city can be visited more than once.
-
-Please find the shortest tour for the robot.
+Constraints:
+1. The robot starts its tour from the depot (City 3) and must return to the depot (City 3) after completing its tour.
+2. Each city can be visited multiple times.
+3. The travel cost between any two cities is determined by the distance matrix.
 ###
