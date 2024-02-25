@@ -1,8 +1,8 @@
 import sys
 
 from utils import read_all_files, save_final_results
-from verify_utils import extract_solution_with_separation, verify_start_end_depot, verify_visit_city_once, \
-    verify_num_robots, verify_euclidean_dist
+from verify_utils import extract_solution_with_separation, verify_start_end_depot, verify_num_robots, \
+    verify_euclidean_dist, verify_city_group_visitation
 
 # Define city coordinates with city index starting from 1
 cities = {
@@ -18,26 +18,32 @@ cities = {
     10: (9, 3)
 }
 
+city_groups = {
+    'A': [7, 8],  # Group A includes City 7 and City 8
+    'B': [1],  # Group B includes City 1
+    'C': [2, 4],  # and so on...
+    'D': [5, 9],
+    'E': [10],
+    'F': [6],
+}
+
 reflect_num = 4
 test_file_num = 3
 
 
 # Detailed constraint check function
-def detailed_constraint_check(tours: dict, cities: dict, robot_costs: dict) -> str:
+def detailed_constraint_check(tours: dict, robot_costs: dict) -> str:
     all_contract_violated = ""
     # Check 1: Each robot starts and ends at the depot
     all_contract_violated += verify_start_end_depot(tours=tours)
 
-    # Check 2: Each city must be visited exactly once
-    all_contract_violated += verify_visit_city_once(tours=tours, cities=cities)
+    # Check 2': Each city group must be visited exactly once
+    all_contract_violated += verify_city_group_visitation(tours, city_groups)
 
-    # Constraints 3 & 4: Primary and Secondary Objectives These are optimization goals rather than binary
-    # constraints, so we acknowledge their consideration without specific checks.
-
-    # Check 5: Number of robots
+    # Check 3: Number of robots
     all_contract_violated += verify_num_robots(tours=tours)
 
-    # Check 6: Check Euclidean distance between cities for all robots
+    # Check 4: Check Euclidean distance between cities for all robots
     all_contract_violated += verify_euclidean_dist(tours, cities, robot_costs)
 
     if all_contract_violated != "":
@@ -49,7 +55,8 @@ def detailed_constraint_check(tours: dict, cities: dict, robot_costs: dict) -> s
 
 def main():
     valid_final_cost = {}
-    root_dir = '../../evaluate/1_direct_reflect_v3/4-tsp/B-BTSP'
+    tmp_file_name = '1_direct_reflect_v3/4-tsp/C-GTSP'
+    root_dir = '../../evaluate/' + tmp_file_name
     text_files_loc = read_all_files(root_directory=root_dir)
     print('file number:', len(text_files_loc), sep='\n')
 
@@ -62,7 +69,7 @@ def main():
         # print(robot_tours)
         # print(robot_costs)
         # Running the detailed constraint check on the provided solution
-        constraint_check_message = detailed_constraint_check(robot_tours, cities, robot_costs)
+        constraint_check_message = detailed_constraint_check(robot_tours, robot_costs)
 
         if constraint_check_message == "** YES!!! **":
             # print('file_path: ', file_path, '\n')
@@ -81,7 +88,7 @@ def main():
 
     print('valid_final_cost:', valid_final_cost, sep='\n')
 
-    save_final_results(dir_path='1_direct_reflect_v3/4-tsp/B-BTSP', result_content=valid_final_cost)
+    save_final_results(dir_path=tmp_file_name, result_content=valid_final_cost)
 
 
 if __name__ == '__main__':

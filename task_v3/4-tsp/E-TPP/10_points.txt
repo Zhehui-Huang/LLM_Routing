@@ -16,11 +16,11 @@ City 10: (9, 3)
 
 Each city may sell different products at different prices.
 
+City 1:
+    5 units at $20 each
+
 City 2:
     15 units at $11 each
-
-City 3:
-    5 units at $20 each
 
 City 4:
     10 units at $15 each
@@ -65,11 +65,11 @@ Constraints:
 1. Each robot starts its tour from the depot (City 3) and must return to the depot (City 3) after completing its tour.
 2. Each city can be visited at most once by one of the robots. No city should be visited by more than one robot.
 3. All robots collaborate to buy 60 units of product in total.
-4. If a city be visited by a robot, the robot must purchase all units of the product from the city.
+4. Each robot has its own capacity. Robot A can carry up to 10 units, Robot B can carry up to 15 units, Robot C can carry up to 20 units, and Robot D can carry up to 20 units.
 5. The product amount that a robot carries should not exceed its capacity.
-6. Each robot has its own capacity. Robot A can carry up to 10 units, Robot B can carry up to 15 units, Robot C can carry up to 20 units, and Robot D can carry up to 20 units.
+6. If a city be visited by a robot, the robot must purchase all units of the product from the city.
 7. The goal is to minimize the maximum tour costs (travel cost + purchasing cost) among all robots.
-8. There are only four robots available for the task.
+8. You must use exactly four robots for the task.
 9. The travel cost between any two cities is determined by the 10 times the Euclidean distance between these two cities.
 10. All robots can travel between any two cities, except travel between the same city.
 ###

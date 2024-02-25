@@ -36,7 +36,7 @@ Constraints:
 3. The primary objective is minimizing the maximum travel cost between any two consecutive cities in any robot's tour.
 4. The secondary objective is minimizing the discrepancy or balance the tour costs among all robots.
 5. It's crucial that the solution first and foremost addresses the primary objective, with the secondary objective considered only after the primary has been optimized.
-6. There are only four robots available for the task.
+6. You must use exactly four robots for the task.
 7. The travel cost between any two cities is determined by the Euclidean distance.
 8. All robots can travel between any two cities, except travel between the same city.
 ###

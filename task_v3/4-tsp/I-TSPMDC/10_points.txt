@@ -50,7 +50,7 @@ Constraints:
     d. You need to plan the tours considering the energy constraints, ensuring that robots visit a depot before their energy depletes, to recharge.
        For instance, a robot might start at City 3, visit City 2, City 7, then recharge at City 1 before continuing its tour.
 5. The goal is to minimize the maximum cost of the tours among all robots.
-6. There are only four robots available for the task.
+6. You must use exactly four robots for the task.
 7. The travel cost between any two cities is determined by the Euclidean distance.
 8. All robots can travel between any two cities, except travel between the same city.
 ###

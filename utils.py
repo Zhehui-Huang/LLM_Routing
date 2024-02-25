@@ -1,4 +1,5 @@
 import copy
+import json
 import subprocess
 import time
 import os
@@ -486,6 +487,17 @@ def save_math_form(python_file_path, math_content_modify):
 
     with open(math_file_path, 'w') as math_file:
         math_file.write(math_content_modify)
+
+
+def save_final_results(dir_path, result_content):
+    file_path = '/home/zhehui/LLM_Routing/final_results/' + dir_path + '.json'
+    directory = os.path.dirname(file_path)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    # Save the dictionary to a JSON file
+    with open(file_path, 'w') as json_file:
+        # json.dump(result_content, json_file)
+        json.dump(result_content, json_file, indent=4)
 
 
 def main():

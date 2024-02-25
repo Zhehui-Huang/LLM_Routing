@@ -32,7 +32,7 @@ Constraints:
 2. Only cities within a 5-unit distance from the depot (City 3) are selected for visits.
 3. Each selected city must be visited exactly once by one of the robots. No city should be visited by more than one robot.
 4. The goal is to minimize the maximum cost of the tours among all robots.
-5. There are only four robots available for the task.
+5. You must use exactly four robots for the task.
 6. The travel cost between any two cities is determined by the Euclidean distance.
 7. All robots can travel between any two cities, except travel between the same city.
 ###

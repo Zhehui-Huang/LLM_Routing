@@ -116,8 +116,9 @@ sol_req = {
         "\nSolution requirements: \n"
         "Please solve this problem with Python code. Follow these guidelines in your solution: \n"
         "1. Print the tour of each robot in the format: Robot <id> - Tour: [<depot city id>, <city id>, ..., <depot city id>]. \n"
-        "2. Print the total cost (travel cost + purchasing cost) of each robot in the format: Robot <id> - Cost: <value>. \n"
-        "3. Print the maximum tour cost (travel cost + purchasing cost) among all robots in the format: Final cost: <value>. \n"
+        "2. Print the purchase city and product quantity for each robot in the format: Robot <id> - Product: (<City id>, <Product amount>). \n"
+        "3. Print the total cost (travel cost + purchasing cost) of each robot in the format: Robot <id> - Cost: <value>. \n"
+        "4. Print the maximum tour cost (travel cost + purchasing cost) among all robots in the format: Final cost: <value>. \n"
         "If no solution exists, print ***no solution***. \n"
     ),
     'F_M': (

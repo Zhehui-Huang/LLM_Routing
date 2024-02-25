@@ -5,8 +5,8 @@ There are ten cities, each with a specified location:
 
 City 1: (9, 4) [Depot]
 City 2: (4, 6)
-City 3: (4, 4)
-City 4: (3, 4) [Depot]
+City 3: (4, 4) [Depot]
+City 4: (3, 4)
 City 5: (4, 8)
 City 6: (4, 3)
 City 7: (7, 5) [Depot]
@@ -14,14 +14,14 @@ City 8: (5, 0)
 City 9: (1, 5)
 City 10: (9, 3)
 
-There are three depots: City 1, City 4, City 7.
+There are three depots: City 1, City 3, City 7.
 """
 
 """
 Robot information:
 
 Four robots are available for the task.
-All robots start their journeys from the depot (City 1), and the travel cost between any two cities is determined by the Euclidean distance.
+All robots start their journeys from the depot (City 3), and the travel cost between any two cities is determined by the Euclidean distance.
 All robots can travel between any two cities, except travel between the same city.
 """
 
@@ -33,11 +33,11 @@ All robots must return to one of the depots after completing their tours of the 
 Depot cities must be visited at least once by any one of the robots.
 
 Constraints:
-1. Each robot starts its tour from the depot (City 1) and must return to one of the depots after completing its tour.
+1. Each robot starts its tour from the depot (City 3) and must return to one of the depots after completing its tour.
 2. Each city must be visited exactly once by one of the robots. No city should be visited by more than one robot.
 3. Depot cities must be visited at least once by any one of the robots.
 4. The goal is to minimize the maximum cost of the tours among all robots.
-5. There are only four robots available for the task.
+5. You must use exactly four robots for the task.
 6. The travel cost between any two cities is determined by the Euclidean distance.
 7. All robots can travel between any two cities, except travel between the same city.
 ###
