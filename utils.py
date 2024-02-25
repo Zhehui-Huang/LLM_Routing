@@ -299,7 +299,7 @@ def reflect_solution(ori_python_file_path, math_content_modify, client, gpt_mode
             if external_solutions.stderr == "":
                 exec_res = f"'''\nHere is the solution:\n{external_solutions.stdout} \n'''"
             else:
-                exec_res = f"'''\nHere is the solution:\n{external_solutions.stdout} \n{external_solutions.stderr}'''"
+                exec_res = f"'''\nHere is the solution:\nThe solution has errors. \n{external_solutions.stderr}'''"
 
         print('exec_res: ', exec_res, sep="\n")
 
@@ -376,8 +376,10 @@ def reflect_solution(ori_python_file_path, math_content_modify, client, gpt_mode
                 f"{tmp_pre_content} \n{exec_res} \nHere are the analysis why the solution is not correct.\n"
                 f"{tmp_verify_external_solutions_out} \nPlease provide a correct solution with Python code. "
                 f"You can use the previous solution as a reference. \n"
-                f"If the solution is ***no solution*** or if you think the solution does not make sense, "
-                f"you are allow to use a heuristic solver to solve the problem. \n{sol_given_parts}"
+                f"If the solution is ***no solution***, you can use a heuristic solver to solve the problem. \n"
+                f"If the solution has errors, you can either fix the error or solve the problem from scratch, "
+                f"please use your best judgment. "
+                f"\n{sol_given_parts}"
             )
             print('modified_task_descriptions: ', modified_task_descriptions, sep="\n")
 

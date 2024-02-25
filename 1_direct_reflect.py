@@ -38,8 +38,9 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
         "### \nQuestion: \nPlease use Python code to check if the solution satisfies all of following "
         f"constraints one by one: \n{constraints_content}\n"
         "If the solution is correct, you need to output exactly <** YES!!! **>. \n"
-        "If the solution is not correct, you need to use Python code to print which constraints are violated."
-        "You need to combine all the constraints together. "
+        "If the solution is not correct, you need to use Python code to print all violated constraints."
+        "You need to combine all the constraints together. You should print the exact violated constraints. "
+        "You should not only output the index of the constraints. \n"
         "For example, if the constraint, each city must be visited exactly once by one of the robots, "
         "is violated, and you found that city 1 is not visited. Besides, you found travel cost calculation is wrong. \n"
         "In the python code, you need to combine both of them and print them out. \n###"
@@ -63,7 +64,7 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
 
 
 def main():
-    text_files_loc = read_all_files(root_directory='task_v3/4-tsp')
+    text_files_loc = read_all_files(root_directory='task_v3/4-tsp/C-GTSP')
     print('file number:', len(text_files_loc), sep='\n')
     for file_path in text_files_loc:
         for tid in range(3):
