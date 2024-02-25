@@ -10,7 +10,7 @@ def extract_solution_with_separation(file_path):
     # chunks = content.split('\n\n')
 
     chunks = re.split(r'\n\s*\n', content)
-    # Assuming the solution chunk is well defined and separated as indicated
+    # Assuming the solution chunk is well-defined and separated as indicated
     solution_chunk = ""
     for chunk in chunks:
         if "Robot" in chunk and "Tour" in chunk:
@@ -61,7 +61,7 @@ def calculate_distance(city1, city2):
 def calculate_tour_cost(tour, cities):
     cost = 0.0
     for i in range(len(tour) - 1):
-        cost += calculate_distance(cities[tour[i]], cities[tour[i + 1]])
+        cost += calculate_distance(cities[int(tour[i])], cities[int(tour[i + 1])])
     return cost
 
 
@@ -322,6 +322,37 @@ def verify_energy(tours, cities, ori_energy=11):
                 if energy < 0:
                     return f"Constraint Violated: Robot {robot} ran out of energy before reaching the next depot."
                 segment_distances.append(distance)
+
+    return ""
+
+
+def verify_color_match(robot_tours, city_colors, robot_colors, depot=3):
+    for robot, tour in robot_tours.items():
+        robot_color = robot_colors[int(robot.split(' ')[1])]
+        for city in tour:
+            city = int(city)
+            if city == depot:  # Skip depot
+                continue
+            if robot_color not in city_colors[city]:
+                return f"{robot} violates the color constraint at city {city}."
+    return ""
+
+
+def verify_selected_cities(tours):
+    city_10_visited = any(10 in tour for tour in tours.values())
+    if city_10_visited:
+        return "Constraint Violated: City 10 should not be visited."
+
+    cities_visited = []
+    for tour in tours.values():
+        cities_visited.extend(tour[1:-1])  # Exclude the depot from the beginning and end of each tour
+
+    # Check if each city (except for the depot and city 10, which should not be visited) is visited exactly once
+    cities_to_visit = set(range(1, 10))  # City 10 should not be visited, so it's excluded
+    visited_once_check = all(cities_visited.count(city) == 1 for city in cities_to_visit if city != 3)
+
+    if not visited_once_check:
+        return "Constraint Violated: Each city (except city 3 and city 10) should be visited exactly once."
 
     return ""
 
