@@ -283,15 +283,48 @@ def verify_start_multi_end_depot(tours, start_depot=3, depot_lists=None):
 
 
 def verify_visit_city_multi_depots_once(tours, cities, depot_lists):
-    # Check 2: Each city must be visited exactly once
-    all_visited_cities = [city for tour in tours.values() for city in tour[1:-1]]  # Excluding depot at start/end
-    if len(all_visited_cities) != len(set(all_visited_cities)) or len(all_visited_cities) != len(cities) - 1:
-        for city in range(1, len(cities) + 1):
-            if city != 3 and all_visited_cities.count(city) != 1:
-                return (f"Constraint Violated: Each city must be visited exactly once by one of the robots, "
-                        f"and city {city} is not visited correctly.")
+    # Initialize counters for city visits
+    city_visit_counts = {city_id: 0 for city_id in cities.keys()}
+
+    # Count visits for each city
+    for tour in tours.values():
+        for city in tour:
+            city_visit_counts[city] += 1
+
+    # Check if non-depot cities are visited exactly once and depots at least once
+    for city_id, visits in city_visit_counts.items():
+        is_depot = city_id in depot_lists
+
+        if is_depot and visits < 1:
+            return f"Constraint Violated: Depot city {city_id} is not visited at least once."
+        elif not is_depot and visits != 1:
+            return (f"Constraint Violated: Non-depot city {city_id} is visited {visits} times, "
+                    f"but should be exactly once.")
 
     return ""
+
+
+def verify_energy(tours, cities, ori_energy=11):
+    segment_distances = []  # To store distances of each travel segment
+
+    for robot, tour in tours.items():
+        energy = ori_energy
+        for i in range(len(tour) - 1):
+            distance = calculate_distance(cities[tour[i]], cities[tour[i + 1]])
+
+            # If the robot visits a depot, reset energy and continue
+            if tour[i] in [1, 3, 7]:
+                energy = ori_energy
+            else:
+                # Subtract the traveled distance from the robot's energy
+                energy -= distance
+                # If energy goes below 0 before reaching the next depot, return failure
+                if energy < 0:
+                    return f"Constraint Violated: Robot {robot} ran out of energy before reaching the next depot."
+                segment_distances.append(distance)
+
+    return ""
+
 
 def verify_sequence_constraints(tours, sequence_order):
     # Define the sequence order

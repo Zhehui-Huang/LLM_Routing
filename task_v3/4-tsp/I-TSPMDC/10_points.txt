@@ -33,7 +33,7 @@ The objective is minimizing the maximum tour costs among all robots, while consi
 Each city must be visited exactly once by one of the robots, and no city should be visited by more than one robot.
 Depot cities must be visited at least once by any one of the robots.
 Energy constraints
-a. When a robot visits any depot city (City 1, City 3, City 7), its energy is fully recharged to 11 units, allowing it to continue its tour with renewed energy capacity.
+a. Each time a robot visits any depot city (City 1, City 3, City 7), its energy is fully recharged to 11 units, allowing it to continue its tour with renewed energy capacity.
 b. Visiting a depot not only allows for energy recharge but also is necessary for the robots to extend their tours beyond the initial energy limit.
 c. All robots must arrive at a depot before they run out of energy. Otherwise, the tour will be failed.
 d. You need to plan the tours considering the energy constraints, ensuring that robots visit a depot before their energy depletes, to recharge.
@@ -44,7 +44,7 @@ Constraints:
 2. Each city must be visited exactly once by one of the robots. No city should be visited by more than one robot.
 3. Depot cities must be visited at least once by any one of the robots.
 4. Energy constraints
-    a. When a robot visits any depot city (City 1, City 3, City 7), its energy is fully recharged to 11 units, allowing it to continue its tour with renewed energy capacity.
+    a. Each time a robot visits any depot city (City 1, City 3, City 7), its energy is fully recharged to 11 units, allowing it to continue its tour with renewed energy capacity.
     b. Visiting a depot not only allows for energy recharge but also is necessary for the robots to extend their tours beyond the initial energy limit.
     c. All robots must arrive at a depot before they run out of energy. Otherwise, the tour will be failed.
     d. You need to plan the tours considering the energy constraints, ensuring that robots visit a depot before their energy depletes, to recharge.

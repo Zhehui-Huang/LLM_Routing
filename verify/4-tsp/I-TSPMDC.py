@@ -2,7 +2,8 @@ import sys
 
 from utils import read_all_files, save_final_results
 from verify_utils import extract_solution_with_separation, verify_start_end_depot, verify_visit_city_once, \
-    verify_num_robots, verify_euclidean_dist, verify_start_multi_end_depot, verify_visit_city_multi_depots_once
+    verify_num_robots, verify_euclidean_dist, verify_start_multi_end_depot, verify_visit_city_multi_depots_once, \
+    verify_energy
 
 # Define city coordinates with city index starting from 1
 cities = {
@@ -39,6 +40,9 @@ def detailed_constraint_check(tours: dict, robot_costs: dict) -> str:
     # Check 4: Check Euclidean distance between cities for all robots
     all_contract_violated += verify_euclidean_dist(tours, cities, robot_costs)
 
+    # Check 5: Check energy
+    all_contract_violated += verify_energy(tours, cities, ori_energy=11)
+
     if all_contract_violated != "":
         return all_contract_violated
     else:
@@ -48,7 +52,7 @@ def detailed_constraint_check(tours: dict, robot_costs: dict) -> str:
 
 def main():
     valid_final_cost = {}
-    tmp_file_name = '1_direct_reflect_v3/4-tsp/H-TSPMDNC'
+    tmp_file_name = '1_direct_reflect_v3/4-tsp/I-TSPMDC'
     root_dir = '../../evaluate/' + tmp_file_name
     text_files_loc = read_all_files(root_directory=root_dir)
     print('file number:', len(text_files_loc), sep='\n')
