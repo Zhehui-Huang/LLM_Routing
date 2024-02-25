@@ -22,6 +22,7 @@ def read_all_files(root_directory):
     text_files_loc.sort()
     return text_files_loc
 
+
 def main():
     root_directory = 'verify/4-tsp'
     text_files_loc = read_all_files(root_directory)
@@ -38,8 +39,6 @@ def main():
         # Execute the command
         subprocess.run(command)
         print('========================================================')
-
-
 
 
 if __name__ == '__main__':

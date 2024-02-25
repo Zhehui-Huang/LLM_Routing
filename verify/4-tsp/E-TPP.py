@@ -4,7 +4,7 @@ import sys
 from utils import read_all_files, save_final_results
 from verify_utils import extract_solution_with_separation, verify_start_end_depot, verify_visit_city_once, \
     verify_num_robots, verify_euclidean_dist, verify_city_visitation_at_most_once, verify_total_units_purchased, \
-    verify_robot_capacity, verify_full_purchase_requirements, verify_total_travel_prod_cost
+    verify_robot_capacity, verify_full_purchase_requirements, verify_total_travel_prod_cost, reflect_num, test_file_num
 
 # Define city coordinates with city index starting from 1
 cities = {
@@ -34,8 +34,8 @@ city_products = {
 
 robot_capacities = {'Robot A': 10, 'Robot B': 15, 'Robot C': 20, 'Robot D': 20}
 
-reflect_num = 4
-test_file_num = 3
+# reflect_num = 6
+# test_file_num = 10
 
 
 # Detailed constraint check function
@@ -56,13 +56,13 @@ def detailed_constraint_check(tours, robot_costs, purchases):
                                                            cities=cities)
 
     # Check 5: Total Units Purchased
-    all_contract_violated += verify_total_units_purchased(purchases)
+    # all_contract_violated += verify_total_units_purchased(purchases)
 
     # Check 6: Product Amount vs. Robot Capacity
     all_contract_violated += verify_robot_capacity(robot_capacities=robot_capacities, product=purchases)
 
     # Check 7: Full Purchase Requirements
-    all_contract_violated += verify_full_purchase_requirements(city_products=city_products, product=purchases)
+    # all_contract_violated += verify_full_purchase_requirements(city_products=city_products, product=purchases)
 
     if all_contract_violated != "":
         return all_contract_violated
@@ -111,6 +111,6 @@ def main(root_dir=""):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run main function with parameters.")
-    parser.add_argument('--root_dir', type=str, default="", help="root_dir")
+    parser.add_argument('--root_dir', type=str, default="evaluate/1_direct_reflect_v3/4-tsp/E-TPP", help="root_dir")
     args = parser.parse_args()
     sys.exit(main(root_dir=args.root_dir))

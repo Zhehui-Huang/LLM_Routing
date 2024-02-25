@@ -1,5 +1,6 @@
 import copy
 import json
+import re
 import subprocess
 import time
 import os
@@ -78,7 +79,6 @@ def nltd_to_math(client, gpt_model, task_descriptions):
 
 
 def math_to_solution(client, gpt_model, task_descriptions, math_content_modify, prompt_tips, sol_given_parts):
-
     solution_reply = client.chat.completions.create(
         model=gpt_model,
         messages=[
@@ -196,7 +196,8 @@ def extract_execute_code(problem_solving_content, python_file_path):
         external_solutions = None
     else:
         try:
-            external_solutions = subprocess.run(['python', python_file_path], capture_output=True, text=True, timeout=120)
+            external_solutions = subprocess.run(['python', python_file_path],
+                                                capture_output=True, text=True, timeout=120)
         except subprocess.TimeoutExpired:
             external_solutions = None
 
@@ -240,7 +241,7 @@ def save_evaluation(python_file_path, external_solutions, total_time, q_meet_req
     solution = extra_eval_content + '\n'
     if external_solutions is not None:
         if external_solutions.stderr != "":
-            solution += "**no solution**"
+            solution += f"{external_solutions.stdout}\n{external_solutions.stderr}"
         else:
             solution += external_solutions.stdout
 
@@ -340,7 +341,7 @@ def reflect_solution(ori_python_file_path, math_content_modify, client, gpt_mode
 
             save_evaluation(python_file_path=ori_python_file_path, external_solutions=final_external_solutions,
                             total_time=final_total_time, extra_eval_content=extra_eval_content,
-                            reflect_id=reflect_id+1)
+                            reflect_id=reflect_id + 1)
 
             break
         else:
@@ -355,7 +356,7 @@ def reflect_solution(ori_python_file_path, math_content_modify, client, gpt_mode
                 )
             save_evaluation(python_file_path=ori_python_file_path, external_solutions=final_external_solutions,
                             total_time=final_total_time, extra_eval_content=extra_eval_content,
-                            reflect_id=reflect_id+1)
+                            reflect_id=reflect_id + 1)
 
             if reflect_id == reflect_num - 1:
                 print(find_no_sol)
@@ -500,6 +501,30 @@ def save_final_results(dir_path, result_content):
     with open(file_path, 'w') as json_file:
         # json.dump(result_content, json_file)
         json.dump(result_content, json_file, indent=4)
+
+
+def replacement(match):
+    return f'{match.group(1)}, {match.group(2)}'
+
+
+def fix_pattern(input_str):
+    pattern = r'(\d)\s+(\d)'
+    corrected_str = input_str
+    while True:
+        new_str = re.sub(pattern, replacement, corrected_str)
+        if new_str == corrected_str:
+            break
+        corrected_str = new_str
+
+    try:
+        corrected_list = eval(corrected_str)
+    except:
+        corrected_list = []
+
+    if corrected_str != input_str:
+        print(f'fix the pattern from {input_str} to {corrected_list}')
+
+    return corrected_list
 
 
 def main():

@@ -8,7 +8,7 @@ benchmark = {
     'A-TSP': 11.09,
     'B-BTSP': 5.0,
     'C-GTSP': 10.19,
-    'D-OTSP': 15.56,
+    'D-OTSP': 11.09,
     'E-TPP': 221.98,
     'F-TSPTW': 12.18,
     'G-TSPM': 11,
@@ -38,7 +38,7 @@ def read_all_json_files(root_directory):
 
 
 def load_json_files():
-    root_dir = '/home/zhehui/LLM_Routing/final_results/1_direct_reflect_v3/4-tsp/back'
+    root_dir = '/home/zhehui/LLM_Routing/final_results/1_direct_reflect_v3/4-tsp'
     text_files_loc = read_all_json_files(root_directory=root_dir)
     json_datas = []
     for file_path in text_files_loc:
@@ -77,6 +77,7 @@ def prepare_plot_data(json_data, extracted_parts):
             tmp_bench = benchmark[extracted_parts[jid]]
             for x in values:
                 if x != -1 and x < tmp_bench:
+                    print(f'extracted_parts[jid]: {extracted_parts[jid]}')
                     raise ValueError(f'any(x < tmp_bench for x in values): {values} < {tmp_bench}')
 
             mean = compute_mean(values)

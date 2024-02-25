@@ -1,6 +1,11 @@
 import math
 import re
 
+from utils import fix_pattern
+
+reflect_num = 7
+test_file_num = 10
+
 
 def extract_solution_with_separation(file_path):
     with open(file_path, 'r') as file:
@@ -28,7 +33,7 @@ def extract_solution_with_separation(file_path):
         if line.startswith('Robot') and 'Tour' in line:
             parts = line.split(':')
             robot = parts[0].strip()
-            tour = eval(parts[1].strip())
+            tour = fix_pattern(parts[1].strip())
             tours[robot] = tour
 
         if line.startswith('Robot') and 'Cost' in line:
@@ -44,12 +49,13 @@ def extract_solution_with_separation(file_path):
             parts = line.split(':')
             final_cost = eval(parts[1].strip())
 
-        if file_path.split('/')[5] == 'E-TPP':
+        if 'E-TPP' in file_path:
             if line.startswith('Robot') and 'Product' in line:
                 parts = line.split(':')
                 robot = parts[0].split('-')[0].strip()
                 city_amount = eval(parts[1].strip())
-                purchases[robot] = city_amount
+                if isinstance(city_amount[0], tuple):
+                    purchases[robot] = city_amount[0]
 
     return tours, costs, final_cost, purchases
 
@@ -223,8 +229,11 @@ def calculate_total_cost(robot, tour, purchases, city_products, cities):
 def verify_total_travel_prod_cost(tours, purchases, city_products, robot_costs, cities):
     for robot, robot_tour in tours.items():
         robot_name = robot.split(' - ')[0]
-        calculated_cost = calculate_total_cost(robot, robot_tour, purchases, city_products, cities)
-        provided_cost = robot_costs[robot_name + ' - Cost']
+        try:
+            calculated_cost = calculate_total_cost(robot, robot_tour, purchases, city_products, cities)
+            provided_cost = robot_costs[robot_name + ' - Cost']
+        except:
+            return ""
 
         if not math.isclose(round(calculated_cost, 2), round(provided_cost, 2), rel_tol=1e-2):
             return (f"Constraint Violated: Tour cost for {robot} is incorrect. "
@@ -360,6 +369,8 @@ def verify_selected_cities(tours):
 def verify_sequence_constraints(tours, sequence_order):
     # Define the sequence order
     # sequence_order = [2, 4, 5, 6, 7]
+    if isinstance(sequence_order, str):
+        sequence_order = eval(sequence_order)
 
     for robot, tour in tours.items():
         # Filter the tour to only include cities that are part of the sequence constraint

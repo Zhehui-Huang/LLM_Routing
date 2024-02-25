@@ -11,11 +11,11 @@ City 5: (4, 8)
 
 Each city sell the product with different amount at different prices.
 
+City 1:
+    5 units at $8 each
+
 City 2:
     15 units at $5 each
-
-City 3:
-    5 units at $8 each
 
 City 4:
     10 units at $4 each

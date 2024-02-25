@@ -3,7 +3,7 @@ import sys
 
 from utils import read_all_files, save_final_results
 from verify_utils import extract_solution_with_separation, verify_start_end_depot, verify_visit_city_once, \
-    verify_num_robots, verify_euclidean_dist, verify_sequence_constraints
+    verify_num_robots, verify_euclidean_dist, verify_sequence_constraints, reflect_num, test_file_num
 
 # Define city coordinates with city index starting from 1
 cities = {
@@ -19,8 +19,8 @@ cities = {
     10: (9, 3)
 }
 
-reflect_num = 4
-test_file_num = 3
+# reflect_num = 4
+# test_file_num = 3
 
 
 # Detailed constraint check function
@@ -92,7 +92,7 @@ def main(root_dir, sequence_order):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run main function with parameters.")
-    parser.add_argument('--root_dir', type=str, default="", help="root_dir")
+    parser.add_argument('--root_dir', type=str, default="evaluate/1_direct_reflect_v3/4-tsp/D-OTSP", help="root_dir")
     parser.add_argument('--sequence_order', nargs='+', default="[2, 4, 5, 6, 7]", help="root_dir")
     args = parser.parse_args()
     sys.exit(main(root_dir=args.root_dir, sequence_order=args.sequence_order))

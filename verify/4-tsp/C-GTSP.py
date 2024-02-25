@@ -3,7 +3,7 @@ import sys
 
 from utils import read_all_files, save_final_results
 from verify_utils import extract_solution_with_separation, verify_start_end_depot, verify_num_robots, \
-    verify_euclidean_dist, verify_city_group_visitation
+    verify_euclidean_dist, verify_city_group_visitation, reflect_num, test_file_num
 
 # Define city coordinates with city index starting from 1
 cities = {
@@ -28,8 +28,8 @@ city_groups = {
     'F': [6],
 }
 
-reflect_num = 4
-test_file_num = 3
+# reflect_num = 4
+# test_file_num = 3
 
 
 # Detailed constraint check function
@@ -95,6 +95,6 @@ def main(root_dir=""):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run main function with parameters.")
-    parser.add_argument('--root_dir', type=str, default="", help="root_dir")
+    parser.add_argument('--root_dir', type=str, default="evaluate/1_direct_reflect_v3/4-tsp/C-GTSP", help="root_dir")
     args = parser.parse_args()
     sys.exit(main(root_dir=args.root_dir))

@@ -2,8 +2,9 @@ import argparse
 import sys
 
 from utils import read_all_files, save_final_results
-from verify_utils import extract_solution_with_separation, verify_start_end_depot, verify_visit_city_once, \
-    verify_num_robots, verify_euclidean_dist, verify_start_multi_end_depot, verify_visit_city_multi_depots_once
+from verify_utils import (extract_solution_with_separation, verify_start_end_depot, verify_visit_city_once, \
+    verify_num_robots, verify_euclidean_dist, verify_start_multi_end_depot, verify_visit_city_multi_depots_once,
+                          reflect_num, test_file_num)
 
 # Define city coordinates with city index starting from 1
 cities = {
@@ -19,8 +20,8 @@ cities = {
     10: (9, 3)
 }
 
-reflect_num = 4
-test_file_num = 3
+# reflect_num = 4
+# test_file_num = 3
 
 depot_lists = [1, 3, 7]
 

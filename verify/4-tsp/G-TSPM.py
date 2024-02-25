@@ -2,8 +2,9 @@ import argparse
 import sys
 
 from utils import read_all_files, save_final_results
-from verify_utils import extract_solution_with_separation, verify_start_end_depot, verify_visit_city_once, \
-    verify_num_robots, verify_euclidean_dist, verify_city_visitation_at_least_once, verify_dist_given_matrix
+from verify_utils import (extract_solution_with_separation, verify_start_end_depot, verify_visit_city_once, \
+    verify_num_robots, verify_euclidean_dist, verify_city_visitation_at_least_once, verify_dist_given_matrix,
+                          reflect_num, test_file_num)
 
 # Define city coordinates with city index starting from 1
 cities = {
@@ -32,8 +33,8 @@ distance_matrix = [
     [3, 1, 5, 10, 7, 10, 9, 7, 9, 0]
 ]
 
-reflect_num = 4
-test_file_num = 3
+# reflect_num = 4
+# test_file_num = 3
 
 
 # Detailed constraint check function
