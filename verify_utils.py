@@ -6,6 +6,27 @@ from utils import fix_pattern
 reflect_num = 7
 test_file_num = 10
 
+cities_5 = {
+    1: (9, 4),
+    2: (4, 6),
+    3: (4, 4),  # Depot
+    4: (3, 4),
+    5: (4, 8),
+}
+
+cities_10 = {
+    1: (9, 4),
+    2: (4, 6),
+    3: (4, 4),  # Depot
+    4: (3, 4),
+    5: (4, 8),
+    6: (4, 3),
+    7: (7, 5),
+    8: (5, 0),
+    9: (1, 5),
+    10: (9, 3)
+}
+
 
 def extract_solution_with_separation(file_path):
     with open(file_path, 'r') as file:

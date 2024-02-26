@@ -24,21 +24,55 @@ def read_all_files(root_directory):
 
 
 def main():
-    root_directory = 'verify/4-tsp'
-    text_files_loc = read_all_files(root_directory)
+    root_directory_list = ['verify/1-tsp', 'verify/4-tsp']
+    for root_directory in root_directory_list:
 
-    for pid, py_file in enumerate(text_files_loc):
-        print('========================================================')
-        print(py_file)
+        if '1-tsp' in root_directory:
+            text_files_loc = read_all_files(root_directory)
 
-        if 'D-OTSP' in py_file:
-            command = ['python', py_file, '--root_dir', f'evaluate/1_direct_reflect_v3/{py_file[7:-3]}',
-                       '--sequence_order', '[2,4,5,6,7]']
+            for pid, py_file in enumerate(text_files_loc):
+                print('========================================================')
+                print(py_file)
+
+                if '05_points_' in py_file:
+                    point_num = 5
+                    sequence_order = '[1, 2, 4]'
+                    # command = ['python', py_file, '--root_dir', f'evaluate/1_direct_reflect_v3/{py_file[7:-3]}'
+                    #            '--point_num', 5]
+                elif '10_points_' in py_file:
+                    point_num = 10
+                    sequence_order = '[2, 6, 8, 9]'
+                    # command = ['python', py_file, '--root_dir', f'evaluate/1_direct_reflect_v3/{py_file[7:-3]}'
+                    #            '--point_num', 10]
+                else:
+                    raise ValueError(f'Invalid file name  {py_file}')
+
+                if 'D-OTSP' in py_file:
+                    command = ['python', py_file, '--root_dir', f'evaluate/1_direct_reflect_v3/{py_file[7:-3]}',
+                               '--point_num', point_num, '--sequence_order', sequence_order]
+                else:
+                    command = ['python', py_file, '--root_dir', f'evaluate/1_direct_reflect_v3/{py_file[7:-3]}',
+                               '--point_num', point_num]
+
+                # Execute the command
+                subprocess.run(command)
+                print('========================================================')
         else:
-            command = ['python', py_file, '--root_dir', f'evaluate/1_direct_reflect_v3/{py_file[7:-3]}']
-        # Execute the command
-        subprocess.run(command)
-        print('========================================================')
+            # 4-tsp, no need to change
+            text_files_loc = read_all_files(root_directory)
+
+            for pid, py_file in enumerate(text_files_loc):
+                print('========================================================')
+                print(py_file)
+
+                if 'D-OTSP' in py_file:
+                    command = ['python', py_file, '--root_dir', f'evaluate/1_direct_reflect_v3/{py_file[7:-3]}',
+                               '--sequence_order', '[2,4,5,6,7]']
+                else:
+                    command = ['python', py_file, '--root_dir', f'evaluate/1_direct_reflect_v3/{py_file[7:-3]}']
+                # Execute the command
+                subprocess.run(command)
+                print('========================================================')
 
 
 if __name__ == '__main__':
