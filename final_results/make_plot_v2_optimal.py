@@ -118,6 +118,11 @@ for i in range(len(raw_datas[0])):
                 tmp_optimality = 0
             else:
                 tmp_optimality = calculate_optimality(value=tmp_value, best_value=benchmark[ordered_keys[file_id]])
+
+                if tmp_optimality < 1:
+                    tmp_optimality = 0
+
+
             optimality_data.append(tmp_optimality)
         mean_optimality_data = np.mean(optimality_data)
         modified_means.append(mean_optimality_data)
@@ -130,7 +135,7 @@ for i in range(len(raw_datas[0])):
 
 ax.set_xlabel('Tasks')
 ax.set_ylabel('Optimality')
-ax.set_title(f'TSP for Four Robot: 10 Points (Feasible Solutions)')
+ax.set_title(f'TSP for Four Robot: 10 Points (Optimal Solutions)')
 ax.set_xticks(ind + bar_width * len(plot_data[0]) / 2 - bar_width / 2)
 ax.set_xticklabels(group_labels)
 ax.legend()
