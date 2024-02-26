@@ -105,10 +105,10 @@ def main():
     for point_num in points_list:
         if point_num == 5:
             benchmark = benchmark_tsp_1_point_5
-            root_dir = '/home/zhehui/LLM_Routing/final_results/back_1_tsp/1-tsp/5'
+            root_dir = '/home/zhehui/LLM_Routing/final_results/1_direct_reflect_v3/1-tsp/5'
         elif point_num == 10:
             benchmark = benchmark_tsp_1_point_10
-            root_dir = '/home/zhehui/LLM_Routing/final_results/back_1_tsp/1-tsp/10'
+            root_dir = '/home/zhehui/LLM_Routing/final_results/1_direct_reflect_v3/1-tsp/10'
         else:
             raise ValueError(f'Invalid point number {point_num}')
 

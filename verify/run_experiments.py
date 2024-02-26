@@ -42,8 +42,8 @@ def read_res_txt_files(root_directory):
 
 
 def main():
-    # root_directory_list = ['verify/1-tsp', 'verify/4-tsp']
-    root_directory_list = ['verify/1-tsp']
+    root_directory_list = ['verify/1-tsp', 'verify/4-tsp']
+    # root_directory_list = ['verify/1-tsp']
     for root_directory in root_directory_list:
 
         if '1-tsp' in root_directory:
@@ -53,7 +53,7 @@ def main():
                 print('========================================================')
                 print(py_file)
 
-                command = ['python', py_file, '--root_dir', f'evaluate/back_1_tsp/{py_file[7:-3]}']
+                command = ['python', py_file, '--root_dir', f'evaluate/1_direct_reflect_v3/{py_file[7:-3]}']
 
                 # Execute the command
                 subprocess.run(command)
