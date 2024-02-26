@@ -282,7 +282,7 @@ def read_all_files(root_directory):
 
 def reflect_solution(ori_python_file_path, math_content_modify, client, gpt_model, reflect_num=3,
                      question_for_answer=None, external_solutions=None, total_time=None, env_and_task=None,
-                     sol_given_parts=None):
+                     sol_given_parts=None, external_solver=False, external_tool_name=""):
     # Solve the problem
     find_solution_flag = False
     extra_eval_content = None
@@ -300,15 +300,16 @@ def reflect_solution(ori_python_file_path, math_content_modify, client, gpt_mode
             if external_solutions.stderr == "":
                 exec_res = f"'''\nHere is the solution:\n{external_solutions.stdout} \n'''"
             else:
-                exec_res = f"'''\nHere is the solution:\nThe solution has errors. \n{external_solutions.stderr}'''"
+                exec_res = (f"'''\nHere is the solution:{external_solutions.stdout} \n"
+                            f"The solution has errors. \n{external_solutions.stderr}'''")
 
         print('exec_res: ', exec_res, sep="\n")
 
         # 2. Check if the solution is correct
         if math_content_modify is not None:
-            q_meet_req = f"{math_content_modify} {exec_res} {question_for_answer}"
+            q_meet_req = f"{math_content_modify} \n{exec_res} \n{question_for_answer}"
         else:
-            q_meet_req = f"{env_and_task} \n {exec_res} \n {question_for_answer}"
+            q_meet_req = f"{env_and_task} \n{exec_res} \n{question_for_answer}"
 
         print('q_meet_req: ', q_meet_req, sep="\n")
 
@@ -373,15 +374,29 @@ def reflect_solution(ori_python_file_path, math_content_modify, client, gpt_mode
             else:
                 tmp_verify_external_solutions_out = verify_external_solutions.stdout
 
-            modified_task_descriptions = (
-                f"{tmp_pre_content} \n{exec_res} \nHere are the analysis why the solution is not correct.\n"
-                f"{tmp_verify_external_solutions_out} \nPlease provide a correct solution with Python code. "
-                f"You can use the previous solution as a reference. \n"
-                f"If the solution is ***no solution***, you can use a heuristic solver to solve the problem. \n"
-                f"If the solution has errors, you can either fix the error or solve the problem from scratch, "
-                f"please use your best judgment. "
-                f"\n{sol_given_parts}"
-            )
+            if external_solver is False:
+                modified_task_descriptions = (
+                    f"{tmp_pre_content} \n{exec_res} \nHere are the analysis why the solution is not correct.\n"
+                    f"{tmp_verify_external_solutions_out} \nPlease provide a correct solution with Python code. "
+                    f"You can use the previous solution as a reference. \n"
+                    f"If the solution is ***no solution***, you can use a heuristic solver to solve the problem. \n"
+                    f"If the solution has errors, you can either fix the error or solve the problem from scratch, "
+                    f"please use your best judgment. "
+                    f"\n{sol_given_parts}"
+                )
+            else:
+                modified_task_descriptions = (
+                    f"{tmp_pre_content} \n{exec_res} \nHere are the analysis why the solution is not correct.\n"
+                    f"{tmp_verify_external_solutions_out} \nPlease provide a correct solution with Python code. "
+                    f"You can use the previous solution as a reference. \n"
+                    f"If the solution is ***no solution***, you can either stick on the current tool "
+                    f"{external_tool_name} or pick another tool (such as Gurobi, OR-Tools, etc.) "
+                    f"to solve the problem. \n"
+                    f"If the solution has errors, you have three choices, fix these errors, solve the problem "
+                    f"with current tool {external_tool_name}, or pick another tool. Please use your best judgment. \n"
+                    f"{sol_given_parts}"
+                )
+
             print('modified_task_descriptions: ', modified_task_descriptions, sep="\n")
 
             request_reply = client.chat.completions.create(
