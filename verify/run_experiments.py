@@ -22,6 +22,24 @@ def read_all_files(root_directory):
     text_files_loc.sort()
     return text_files_loc
 
+def read_res_txt_files(root_directory):
+    # List to hold the contents of all text files
+    text_files_loc = []
+
+    # Walk through the directory and its subdirectories
+    for dirpath, dirnames, filenames in os.walk(root_directory):
+        for filename in filenames:
+            if filename.endswith('.txt'):
+                # Construct the full file path
+                file_path = os.path.join(dirpath, filename)
+                if '__init__.py' in file_path:
+                    continue
+
+                text_files_loc.append(file_path)
+
+    text_files_loc.sort()
+    return text_files_loc
+
 
 def main():
     root_directory_list = ['verify/1-tsp', 'verify/4-tsp']
@@ -33,6 +51,11 @@ def main():
             for pid, py_file in enumerate(text_files_loc):
                 print('========================================================')
                 print(py_file)
+
+                # py_file[7:-3] = '1-tsp/A-TSP'
+                res_txt_file_root_dir = f'evaluate/back_1_tsp/{py_file[7:-3]}'
+
+                res_txt_file_loc = read_res_txt_files(res_txt_file_root_dir)
 
                 if '05_points_' in py_file:
                     point_num = 5
@@ -48,10 +71,10 @@ def main():
                     raise ValueError(f'Invalid file name  {py_file}')
 
                 if 'D-OTSP' in py_file:
-                    command = ['python', py_file, '--root_dir', f'evaluate/1_direct_reflect_v3/{py_file[7:-3]}',
+                    command = ['python', py_file, '--root_dir', f'evaluate/back_1_tsp/{py_file[7:-3]}',
                                '--point_num', point_num, '--sequence_order', sequence_order]
                 else:
-                    command = ['python', py_file, '--root_dir', f'evaluate/1_direct_reflect_v3/{py_file[7:-3]}',
+                    command = ['python', py_file, '--root_dir', f'evaluate/back_1_tsp/{py_file[7:-3]}',
                                '--point_num', point_num]
 
                 # Execute the command

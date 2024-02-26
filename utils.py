@@ -496,7 +496,8 @@ def save_final_results(dir_path, result_content, point_num=None):
     if point_num is None:
         file_path = '/home/zhehui/LLM_Routing/final_results/' + dir_path + '.json'
     else:
-        file_path = '/home/zhehui/LLM_Routing/final_results/' + dir_path + f'-{point_num}.json'
+        tmp_paths = dir_path.split('/')
+        file_path = f'/home/zhehui/LLM_Routing/final_results/{tmp_paths[0]}/{tmp_paths[1]}/{point_num}/{tmp_paths[2]}.json'
 
     directory = os.path.dirname(file_path)
     if not os.path.exists(directory):

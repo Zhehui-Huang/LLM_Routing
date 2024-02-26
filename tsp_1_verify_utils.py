@@ -77,22 +77,30 @@ def extract_solution_with_separation(file_path):
             if parts[1].strip() == 'inf':
                 cost = float(1e9)
             else:
-                cost = eval(parts[1].strip())
+                cost = eval(parts[1].strip().replace('.', ''))
             costs[robot] = cost
 
         final_cost_pattern = re.compile(r'final cost', re.IGNORECASE)
         final_cost_match = final_cost_pattern.search(line)
         if final_cost_match:
             parts = line.split(':')
-            final_cost = eval(parts[1].strip())
+            real_final_cost = parts[1].strip()
+            if parts[1].strip()[-1] == '.':
+                real_final_cost = real_final_cost[:-1]
+            final_cost = eval(real_final_cost)
 
         if 'E-TPP' in file_path:
             if line.startswith('Robot') and 'Product' in line:
                 parts = line.split(':')
                 robot = parts[0].split('-')[0].strip()
-                city_amount = eval(parts[1].strip())
-                if isinstance(city_amount[0], tuple):
-                    purchases[robot] = city_amount[0]
+                city_amount = eval(parts[1].strip().replace('.', ''))
+                if isinstance(city_amount, tuple):
+                    if robot not in purchases:
+                        purchases[robot] = [city_amount]
+                    else:
+                        purchases[robot].append(city_amount)
+                else:
+                    raise ValueError(f'Invalid city_amount {city_amount}')
 
     return tours, costs, final_cost, purchases
 
