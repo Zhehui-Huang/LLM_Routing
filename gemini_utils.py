@@ -11,8 +11,23 @@ genai.configure(api_key=GOOGLE_API_KEY)
 def ask_gemini(questions):
     gemini_model = genai.GenerativeModel('gemini-1.0-pro-latest')
     gemini_chat = gemini_model.start_chat(history=[])
-    question_reply = gemini_chat.send_message(f"{questions} {gemini_prompt_tips}")
+    question_reply = gemini_chat.send_message(f"{questions} \n{gemini_prompt_tips}")
     answer = question_reply.text
+    return answer
+
+
+def gemini_nltd_to_math(task_descriptions):
+    math_content = ask_gemini(task_descriptions)
+    math_content_modify = f"### \nMathematical formulation: {math_content} \n###"
+    print('Mathematical formulation:    ', math_content_modify, sep='\n')
+    print('====================================================================================================')
+    return math_content_modify
+
+
+def gemini_math_to_solution(math_content_modify, sol_given_parts):
+    questions = (f"Given the mathematical formulation: \n{math_content_modify}. \nPlease provide a solution. \n"
+                 f"{sol_given_parts}")
+    answer = ask_gemini(questions)
     return answer
 
 
@@ -20,7 +35,6 @@ def gemini_reflect_solution(
         ori_python_file_path, math_content_modify, reflect_num=3, question_for_answer=None,
         external_solutions=None, total_time=None, env_and_task=None, sol_given_parts=None, external_solver=False,
         external_tool_name=""):
-
     # Solve the problem
     find_solution_flag = False
     extra_eval_content = None
