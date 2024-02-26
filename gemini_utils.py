@@ -71,8 +71,8 @@ def gemini_reflect_solution(
         verify_external_solutions, _ = extract_execute_code(
             problem_solving_content=q_meet_req_content, python_file_path=python_file_path)
 
-        if verify_external_solutions is not None:
-            print('verify_external_solutions: ', verify_external_solutions.stdout, sep="\n")
+        # if verify_external_solutions is not None:
+        #     print('verify_external_solutions: ', verify_external_solutions.stdout, sep="\n")
 
         if verify_external_solutions is not None and "YES!!!" in verify_external_solutions.stdout and verify_external_solutions.stderr == "":
             extra_eval_content = f'Find the correct solution in round: {reflect_id}!'
