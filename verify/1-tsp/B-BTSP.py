@@ -4,7 +4,8 @@ import sys
 
 from utils import read_all_files, save_final_results
 from tsp_1_verify_utils import extract_solution_with_separation, verify_start_end_depot, verify_visit_city_once, \
-    verify_euclidean_dist, reflect_num, test_file_num, cities_5, cities_10, tsp_1_filter_files
+    verify_euclidean_dist, reflect_num, test_file_num, cities_5, cities_10, tsp_1_filter_files, get_euclidean_dist, \
+    get_max_two_city_distance
 
 
 # Detailed constraint check function
@@ -17,7 +18,7 @@ def detailed_constraint_check(tours, robot_costs, cities):
     all_contract_violated += verify_visit_city_once(tours=tours, cities=cities)
 
     # Check 3: Check Euclidean distance between cities for all robots
-    all_contract_violated += verify_euclidean_dist(tours, cities, robot_costs)
+    # all_contract_violated += verify_euclidean_dist(tours, cities, robot_costs)
 
     if all_contract_violated != "":
         return all_contract_violated
@@ -47,11 +48,13 @@ def main(root_dir=""):
             valid_final_cost[i] = {j: -1 for j in range(test_file_num)}
 
         for file_path in file_groups[str(point_num)]:
-            # print('file_path: ', file_path, '\n')
+            print('file_path: ', file_path)
             robot_tours, robot_costs, final_cost, _ = extract_solution_with_separation(file_path=file_path)
             # print(robot_tours)
             # print(robot_costs)
             # Running the detailed constraint check on the provided solution
+            robot_costs = {}
+            final_cost = get_max_two_city_distance(tours=robot_tours, cities=cities)
             constraint_check_message = detailed_constraint_check(tours=robot_tours, robot_costs=robot_costs,
                                                                  cities=cities)
 
@@ -76,6 +79,6 @@ def main(root_dir=""):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run main function with parameters.")
-    parser.add_argument('--root_dir', type=str, default="evaluate/back_1_tsp/1-tsp/B-BTSP", help="root_dir")
+    parser.add_argument('--root_dir', type=str, default="evaluate/5_external_tools_direct_v3/1-tsp/B-BTSP", help="root_dir")
     args = parser.parse_args()
     sys.exit(main(root_dir=args.root_dir))

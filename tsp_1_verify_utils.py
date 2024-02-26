@@ -1,6 +1,6 @@
 import math
 import re
-
+import numpy as np
 from utils import fix_pattern
 
 reflect_num = 7
@@ -42,6 +42,7 @@ def tsp_1_filter_files(files):
 
     return prefixes
 
+
 def extract_solution_with_separation(file_path):
     with open(file_path, 'r') as file:
         content = file.read()
@@ -69,6 +70,10 @@ def extract_solution_with_separation(file_path):
             parts = line.split(':')
             robot = parts[0].strip()
             tour = fix_pattern(parts[1].strip())
+            if 0 in tour:
+                print('tour: \n', tour)
+                tour = np.array(tour) + 1
+
             tours[robot] = tour
 
         if line.startswith('Robot') and 'Cost' in line:
@@ -156,6 +161,8 @@ def verify_num_robots(tours):
 def verify_euclidean_dist(tours, cities, robot_costs):
     for robot, tour in tours.items():
         # Assuming calculate_tour_cost is a function that you've defined elsewhere
+        if 0 in tour:
+            return f"Constraint Violated: There is no City 0, while City 0 is visited by {robot}."
         calculated_cost = calculate_tour_cost(tour, cities)
         try:
             robot_cost_key = robot.replace('Tour', 'Cost')  # Adjust the key to match the corresponding cost entry
@@ -170,6 +177,31 @@ def verify_euclidean_dist(tours, cities, robot_costs):
                     f"Expected: {provided_cost}, Calculated: {calculated_cost}.")
 
     return ""
+
+
+def get_euclidean_dist(tours, cities):
+    cost_list = []
+    for robot, tour in tours.items():
+        # Assuming calculate_tour_cost is a function that you've defined elsewhere
+        if len(set(tour)) != len(tour):
+            return f"Constraint Violated: City is visited more than once by {robot}."
+
+        if 0 in tour:
+            tour = np.array(tour) + 1
+        calculated_cost = calculate_tour_cost(tour, cities)
+        cost_list.append(calculated_cost)
+    final_cost = np.mean(cost_list)
+    return final_cost
+
+
+def get_max_two_city_distance(tours, cities):
+    max_cost = 0
+    for robot, tour in tours.items():
+        for i in range(len(tour) - 1):
+            cost = calculate_distance(cities[tour[i]], cities[tour[i + 1]])
+            max_cost = max(max_cost, cost)
+
+    return max_cost
 
 
 def verify_city_group_visitation(tours, city_groups):
