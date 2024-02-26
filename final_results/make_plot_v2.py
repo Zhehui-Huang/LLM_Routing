@@ -15,7 +15,7 @@ benchmark = {
     'H-TSPMDNC': 14.94,
     'I-TSPMDC': 10.16,
     'J-KTSP': 10.40,
-    'K-CTSP': 21.95,
+    'K-CTSP': 18.16,
 }
 
 
@@ -91,8 +91,9 @@ def prepare_plot_data(json_data, extracted_parts):
 json_data, extracted_parts = load_json_files()
 plot_data, raw_datas = prepare_plot_data(json_data, extracted_parts)
 
+group_labels = ['A-TSP', 'B-BTSP', 'C-GTSP', 'D-OTSP', 'E-TPP', 'F-TSPTW', 'G-TSPM', 'H-TSPMDNC', 'I-TSPMDC', 'J-KTSP', 'K-CTSP']
 # Dynamically set group labels based on the number of files
-group_labels = [f'File {i + 1}' for i in range(len(json_data))]
+group_labels = [group_labels[i] for i in range(len(json_data))]
 
 # Plotting adjustments
 colors = cycle(['blue', 'orange', 'green', 'red', 'purple', 'brown', 'pink', 'gray', 'olive', 'cyan'])
