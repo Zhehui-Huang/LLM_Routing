@@ -23,7 +23,7 @@ def verify_energy(tours, cities, ori_energy, depot_lists):
             distance = calculate_distance(cities[tour[i]], cities[tour[i + 1]])
 
             # If the robot visits a depot, reset energy and continue
-            if tour[i] in depot_lists:
+            if tour[i] in depot_lists and i != 0:
                 energy = ori_energy
             else:
                 # Subtract the traveled distance from the robot's energy
@@ -100,11 +100,11 @@ def main(root_dir=""):
                 for i in range(reflect_id, reflect_num):
                     valid_final_cost[i][file_id] = final_cost
             else:
-                # continue
-                print('==========================================================================================')
-                print('file_path: ', file_path, '\n')
-                print(constraint_check_message)
-                print('==========================================================================================')
+                continue
+                # print('==========================================================================================')
+                # print('file_path: ', file_path, '\n')
+                # print(constraint_check_message)
+                # print('==========================================================================================')
 
         print('valid_final_cost:', valid_final_cost, sep='\n')
 

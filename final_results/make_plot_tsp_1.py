@@ -15,8 +15,8 @@ benchmark_tsp_1_point_5 = {
     'F-TSPTW': 17.51,
     'G-TSPM': 10,
     'H-TSPMDNC': 11.64,
-    'I-TSPMDC': 1000,
-    'J-KTSP': 1000,
+    'I-TSPMDC': 20.79,
+    'J-KTSP': 9.12,
 }
 
 benchmark_tsp_1_point_10 = {
@@ -28,8 +28,8 @@ benchmark_tsp_1_point_10 = {
     'F-TSPTW': 26.45,
     'G-TSPM': 22,
     'H-TSPMDNC': 23.29,
-    'I-TSPMDC': 1000,
-    'J-KTSP': 1000,
+    'I-TSPMDC': 27.64,
+    'J-KTSP': 17.22,
 }
 
 
