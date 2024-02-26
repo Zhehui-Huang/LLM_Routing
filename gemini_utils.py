@@ -10,7 +10,7 @@ genai.configure(api_key=GOOGLE_API_KEY)
 
 
 def ask_gemini(questions):
-    gemini_model = genai.GenerativeModel('gemini-1.0-pro-latest')
+    gemini_model = genai.GenerativeModel('gemini-pro')
     gemini_chat = gemini_model.start_chat(history=[])
     question_reply = gemini_chat.send_message(f"{questions} \n{gemini_prompt_tips}")
     answer = question_reply.text

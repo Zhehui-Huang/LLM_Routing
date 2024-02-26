@@ -18,7 +18,7 @@ def clear_check(client, gpt_model, gpt_prompt_tips, question):
 
 
 def overall_clear_check(check_count, client, gpt_model, env_and_task, gpt_prompt_tips, gemini_prompt_tips):
-    gemini_model = genai.GenerativeModel('gemini-1.0-pro-latest')
+    gemini_model = genai.GenerativeModel('gemini-pro')
     question = (
         "### \nQuestion: are following language descriptions clear enough for you to solve the it? \n"
         "If your answer is yes, please only output: <*** YES!!! ***> \n"

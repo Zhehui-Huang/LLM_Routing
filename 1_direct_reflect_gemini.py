@@ -18,8 +18,6 @@ reflect_num = 6
 
 
 def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_parts):
-    # # Gemini
-    gemini_model = genai.GenerativeModel('gemini-1.0-pro-latest')
     # 1. Translate natural language task descriptions (NLTD) to solutions.
     print('task_descriptions: ', task_descriptions, sep="\n")
 
