@@ -492,8 +492,12 @@ def save_math_form(python_file_path, math_content_modify):
         math_file.write(math_content_modify)
 
 
-def save_final_results(dir_path, result_content):
-    file_path = '/home/zhehui/LLM_Routing/final_results/' + dir_path + '.json'
+def save_final_results(dir_path, result_content, point_num=None):
+    if point_num is None:
+        file_path = '/home/zhehui/LLM_Routing/final_results/' + dir_path + '.json'
+    else:
+        file_path = '/home/zhehui/LLM_Routing/final_results/' + dir_path + f'-{point_num}.json'
+
     directory = os.path.dirname(file_path)
     if not os.path.exists(directory):
         os.makedirs(directory)

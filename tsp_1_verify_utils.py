@@ -28,6 +28,20 @@ cities_10 = {
 }
 
 
+def tsp_1_filter_files(files):
+    prefixes = {'5': [], '10': []}
+
+    # Filter files based on prefixes
+    for file in files:
+        tmp_file = file.split('/')[-1]
+
+        if tmp_file.startswith('05'):
+            prefixes['5'].append(file)
+        elif tmp_file.startswith('10'):
+            prefixes['10'].append(file)
+
+    return prefixes
+
 def extract_solution_with_separation(file_path):
     with open(file_path, 'r') as file:
         content = file.read()
@@ -66,7 +80,9 @@ def extract_solution_with_separation(file_path):
                 cost = eval(parts[1].strip())
             costs[robot] = cost
 
-        if line.startswith('Final cost') or line.startswith('Final Cost'):
+        final_cost_pattern = re.compile(r'final cost', re.IGNORECASE)
+        final_cost_match = final_cost_pattern.search(line)
+        if final_cost_match:
             parts = line.split(':')
             final_cost = eval(parts[1].strip())
 
@@ -126,8 +142,12 @@ def verify_euclidean_dist(tours, cities, robot_costs):
     for robot, tour in tours.items():
         # Assuming calculate_tour_cost is a function that you've defined elsewhere
         calculated_cost = calculate_tour_cost(tour, cities)
-        robot_cost_key = robot.replace('Tour', 'Cost')  # Adjust the key to match the corresponding cost entry
-        provided_cost = robot_costs[robot_cost_key]
+        try:
+            robot_cost_key = robot.replace('Tour', 'Cost')  # Adjust the key to match the corresponding cost entry
+            provided_cost = robot_costs[robot_cost_key]
+        except:
+            robot_cost_key = robot.replace('Tour', 'Final Cost')  # Adjust the key to match the corresponding cost entry
+            provided_cost = robot_costs[robot_cost_key]
 
         # Check if the calculated cost matches the provided cost (within a small margin of error)
         if not math.isclose(round(calculated_cost, 2), round(provided_cost, 2), rel_tol=1e-2):
