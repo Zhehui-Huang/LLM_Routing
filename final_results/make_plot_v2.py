@@ -122,11 +122,15 @@ for i in range(len(raw_datas[0])):
         mean_optimality_data = np.mean(optimality_data)
         modified_means.append(mean_optimality_data)
 
-    ax.bar(ind + i * bar_width, modified_means, bar_width, label=f'Key {i + 1}', color=next(colors))
+    if i == 0:
+        tmp_label = 'No Reflect'
+    else:
+        tmp_label = f'Reflect {i}'
+    ax.bar(ind + i * bar_width, modified_means, bar_width, label=tmp_label, color=next(colors))
 
-ax.set_xlabel('Files')
-ax.set_ylabel('Mean Values')
-ax.set_title('Mean Values by File and Key')
+ax.set_xlabel('Tasks')
+ax.set_ylabel('Optimality')
+ax.set_title(f'TSP for Four Robot: 10 Points')
 ax.set_xticks(ind + bar_width * len(plot_data[0]) / 2 - bar_width / 2)
 ax.set_xticklabels(group_labels)
 ax.legend()

@@ -42,7 +42,8 @@ def read_res_txt_files(root_directory):
 
 
 def main():
-    root_directory_list = ['verify/1-tsp', 'verify/4-tsp']
+    # root_directory_list = ['verify/1-tsp', 'verify/4-tsp']
+    root_directory_list = ['verify/1-tsp']
     for root_directory in root_directory_list:
 
         if '1-tsp' in root_directory:
@@ -52,30 +53,7 @@ def main():
                 print('========================================================')
                 print(py_file)
 
-                # py_file[7:-3] = '1-tsp/A-TSP'
-                res_txt_file_root_dir = f'evaluate/back_1_tsp/{py_file[7:-3]}'
-
-                res_txt_file_loc = read_res_txt_files(res_txt_file_root_dir)
-
-                if '05_points_' in py_file:
-                    point_num = 5
-                    sequence_order = '[1, 2, 4]'
-                    # command = ['python', py_file, '--root_dir', f'evaluate/1_direct_reflect_v3/{py_file[7:-3]}'
-                    #            '--point_num', 5]
-                elif '10_points_' in py_file:
-                    point_num = 10
-                    sequence_order = '[2, 6, 8, 9]'
-                    # command = ['python', py_file, '--root_dir', f'evaluate/1_direct_reflect_v3/{py_file[7:-3]}'
-                    #            '--point_num', 10]
-                else:
-                    raise ValueError(f'Invalid file name  {py_file}')
-
-                if 'D-OTSP' in py_file:
-                    command = ['python', py_file, '--root_dir', f'evaluate/back_1_tsp/{py_file[7:-3]}',
-                               '--point_num', point_num, '--sequence_order', sequence_order]
-                else:
-                    command = ['python', py_file, '--root_dir', f'evaluate/back_1_tsp/{py_file[7:-3]}',
-                               '--point_num', point_num]
+                command = ['python', py_file, '--root_dir', f'evaluate/back_1_tsp/{py_file[7:-3]}']
 
                 # Execute the command
                 subprocess.run(command)
