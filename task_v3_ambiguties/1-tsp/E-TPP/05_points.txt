@@ -1,0 +1,41 @@
+"""
+Environment information:
+
+There are five cities.
+
+City 1: (9, 4)
+City 2: (4, 6)
+City 3: (4, 4) [Depot]
+City 4: (3, 4)
+City 5: (4, 8)
+
+Each city sell the product with different amount at different prices.
+
+City 1:
+    5 units at $8 each
+
+City 2:
+    15 units at $5 each
+
+City 4:
+    10 units at $4 each
+
+City 5:
+    20 units at $10 each
+
+"""
+
+"""
+Robot information:
+
+There is a robot.
+- The robot starts at city 3.
+- The robot can travel between any two cities.
+- The travel cost is 10 times the Euclidean distance between two cities.
+"""
+
+###
+The robot needs to visit cities to buy 30 units of the product and then return to the starting city.
+Each city can be visited at most once.
+Please find a tour from a subset of the cities that minimizes total cost (travel cost + purchasing cost).
+###
