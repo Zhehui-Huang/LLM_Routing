@@ -43,6 +43,7 @@ def read_res_txt_files(root_directory):
 
 def main():
     root_directory_list = ['verify/1-tsp', 'verify/4-tsp']
+    middle_under_evaluate = '5_external_tools_direct_v3'
     # root_directory_list = ['verify/1-tsp']
     for root_directory in root_directory_list:
 
@@ -53,7 +54,7 @@ def main():
                 print('========================================================')
                 print(py_file)
 
-                command = ['python', py_file, '--root_dir', f'evaluate/1_direct_reflect_v3/{py_file[7:-3]}']
+                command = ['python', py_file, '--root_dir', f'evaluate/{middle_under_evaluate}/{py_file[7:-3]}']
 
                 # Execute the command
                 subprocess.run(command)
@@ -67,10 +68,10 @@ def main():
                 print(py_file)
 
                 if 'D-OTSP' in py_file:
-                    command = ['python', py_file, '--root_dir', f'evaluate/1_direct_reflect_v3/{py_file[7:-3]}',
+                    command = ['python', py_file, '--root_dir', f'evaluate/{middle_under_evaluate}/{py_file[7:-3]}',
                                '--sequence_order', '[2,4,5,6,7]']
                 else:
-                    command = ['python', py_file, '--root_dir', f'evaluate/1_direct_reflect_v3/{py_file[7:-3]}']
+                    command = ['python', py_file, '--root_dir', f'evaluate/{middle_under_evaluate}/{py_file[7:-3]}']
                 # Execute the command
                 subprocess.run(command)
                 print('========================================================')
