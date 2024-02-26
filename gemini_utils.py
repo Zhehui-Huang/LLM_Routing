@@ -1,6 +1,7 @@
 import copy
 
 import google.generativeai as genai
+from google.generativeai.types import generation_types
 
 from utils import gemini_prompt_tips, extract_execute_code, save_evaluation
 
@@ -141,8 +142,13 @@ def gemini_reflect_solution(
 
             print('modified_task_descriptions: ', modified_task_descriptions, sep="\n")
 
-            reply_content = ask_gemini(questions=modified_task_descriptions)
-            print('reply_content:', reply_content, sep='\n')
+            try:
+                reply_content = ask_gemini(questions=modified_task_descriptions)
+                print('reply_content:', reply_content, sep='\n')
+            except generation_types.StopCandidateException as e:
+                reply_content = None
+                print("Encountered a StopCandidateException, adjusting input...")
+                break
 
             external_solutions, total_time = extract_execute_code(
                 problem_solving_content=reply_content, python_file_path=python_file_path)
