@@ -77,7 +77,10 @@ def extract_solution_with_separation(file_path):
             if parts[1].strip() == 'inf':
                 cost = float(1e9)
             else:
-                cost = eval(parts[1].strip().replace('.', ''))
+                tmp_real_cost = parts[1].strip()
+                if tmp_real_cost[-1] == '.':
+                    tmp_real_cost = tmp_real_cost[:-1]
+                cost = eval(tmp_real_cost)
             costs[robot] = cost
 
         final_cost_pattern = re.compile(r'final cost', re.IGNORECASE)
@@ -93,7 +96,11 @@ def extract_solution_with_separation(file_path):
             if line.startswith('Robot') and 'Product' in line:
                 parts = line.split(':')
                 robot = parts[0].split('-')[0].strip()
-                city_amount = eval(parts[1].strip().replace('.', ''))
+
+                real_city_amount = parts[1].strip()
+                if real_city_amount[-1] == '.':
+                    real_city_amount = real_city_amount[:-1]
+                city_amount = eval(real_city_amount)
                 if isinstance(city_amount, tuple):
                     if robot not in purchases:
                         purchases[robot] = [city_amount]
@@ -314,7 +321,7 @@ def verify_dist_given_matrix(tours, distance_matrix, robot_costs):
         for i in range(len(adjusted_tour) - 1):
             travel_cost += distance_matrix[adjusted_tour[i]][adjusted_tour[i + 1]]
 
-        robot_cost_key = robot.replace('Tour', 'Cost')  # Adjust the key to match the corresponding cost entry
+        robot_cost_key = robot.replace('Tour', 'Final Cost')  # Adjust the key to match the corresponding cost entry
         provided_cost = robot_costs[robot_cost_key]
         # Check if the calculated cost matches the provided cost (within a small margin of error)
         if not math.isclose(round(travel_cost, 2), round(provided_cost, 2), rel_tol=1e-2):
