@@ -31,17 +31,9 @@ All robots can travel between any two cities, except travel between the same cit
 """
 
 ###
-Objective:
-The goal is to minimize the maximum tour cost among all robots under the given constraints.
-Each city can be visited by multiple robot multiple times.
-Each city must be visited by at least one robot one time.
+Task:
+All robots need to work together to visit all cities at least once, except the starting cities, and then back to the starting city.
+Each city can be visited more than once.
 
-Constraints:
-1. Each robot starts its tour from the depot (City 3) and must return to the depot (City 3) after completing its tour.
-2. Each city can be visited by multiple robot multiple times.
-3. Each city must be visited by at least one robot one time.
-4. The goal is to minimize the maximum cost of the tours among all robots.
-5. You must use exactly four robots for the task.
-6. The travel cost between any two cities is determined by the distance matrix.
-7. All robots can travel between any two cities, except travel between the same city.
+The goal is to minimize the maximum tour cost among all robots.
 ###

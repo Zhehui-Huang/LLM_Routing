@@ -24,15 +24,10 @@ All robots can travel between any two cities, except travel between the same cit
 """
 
 ###
-Objective:
-Minimize the maximum tour cost among all robots. Each city within 5 units of distance from the depot must be visited.
+Task:
+All robots needs to work together to visit all cities within a 5-unit distance from the depot exactly once, except the starting cities, and then back to the starting city.
+Each selected city must be visited exactly once by one of the robots.
+Please find the shortest tour for the robot.
 
-Constraints:
-1. Each robot starts its tour from the depot (City 3) and must return to the depot after completing its tour.
-2. Only cities within a 5-unit distance from the depot (City 3) are selected for visits.
-3. Each selected city must be visited exactly once by one of the robots. No city should be visited by more than one robot.
-4. The goal is to minimize the maximum cost of the tours among all robots.
-5. You must use exactly four robots for the task.
-6. The travel cost between any two cities is determined by the Euclidean distance.
-7. All robots can travel between any two cities, except travel between the same city.
+The goal is to minimize the maximum cost of the tours among all robots.
 ###

@@ -24,20 +24,9 @@ All robots can travel between any two cities, except travel between the same cit
 """
 
 ###
-Objective:
-The goal is to minimize the maximum tour cost among all robots under the given constraints.
-Each city must be visited exactly once by one of the robots, and no city should be visited by more than one robot.
-You should also consider the sequence constraints.
-
-Constraints:
-1. Each robot starts its tour from the depot (City 3) and must return to the depot (City 3) after completing its tour.
-2. Each city must be visited exactly once by one of the robots. No city should be visited by more than one robot.
-3. There are sequence constraints. Within the tours of any robot, if any subset of the cities 2, 4, 5, 6, and 7 are visited, they must be visited in the sequence dictated by their numbering. This means that:
-    a. If a robot's tour includes city 2 and any of the cities 4, 5, 6, or 7, then city 2 must be visited before any of these cities in the specified sequence.
-    b. If a robot's tour includes cities 4 and 5, for example, city 4 must come before city 5 in the tour.
-    c. This sequential constraint applies to any combination of these cities included in a single robot's tour, ensuring that the order 2 → 4 → 5 → 6 → 7 is maintained for any cities present from this list, even if not all are visited by the same robot.
-4. The goal is to minimize the maximum cost of the tours among all robots.
-5. You must use exactly four robots for the task.
-6. The travel cost between any two cities is determined by the Euclidean distance.
-7. All robots can travel between any two cities, except travel between the same city.
+Task:
+All robots starting their tours from the depot, with the goal of visiting all cities exactly once by any robot, and all robots must return to the depot after completing their tours of the cities.
+Each city must be visited exactly once by any one of the robots.
+There is a sequential constraint for all robots. For the tour of each robot, it must ensure the order 2 → 4 → 5 → 6 → 7.
+The goal is to minimize the maximum tour cost among all robots.
 ###
