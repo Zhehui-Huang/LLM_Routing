@@ -97,7 +97,7 @@ def main():
     text_files_loc = read_all_files(root_directory='task_v3')
     print('file number:', len(text_files_loc), sep='\n')
     for file_path in text_files_loc:
-        for tid in range(3):
+        for tid in range(10):
             env_and_task = read_file(file_path=file_path)
             python_file_path = sol_path + file_path[4:-4] + f'_{tid}' + '.py'
             directory = os.path.dirname(python_file_path)
