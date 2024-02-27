@@ -4,11 +4,11 @@ import sys
 
 from utils import read_all_files, save_final_results
 from tsp_1_verify_utils import extract_solution_with_separation, verify_start_end_depot, verify_visit_city_once, \
-    verify_euclidean_dist, reflect_num, test_file_num, cities_5, cities_10, tsp_1_filter_files
+    verify_euclidean_dist, reflect_num, test_file_num, cities_5, cities_10, tsp_1_filter_files, verify_max_dist_two_city
 
 
 # Detailed constraint check function
-def detailed_constraint_check(tours, robot_costs, cities):
+def detailed_constraint_check(tours, robot_costs, cities, final_cost):
     all_contract_violated = ""
     # Check 1: Each robot starts and ends at the depot
     all_contract_violated += verify_start_end_depot(tours=tours)
@@ -18,6 +18,9 @@ def detailed_constraint_check(tours, robot_costs, cities):
 
     # Check 3: Check Euclidean distance between cities for all robots
     all_contract_violated += verify_euclidean_dist(tours, cities, robot_costs)
+
+    # Check 4: Check maximum distance between cities for all robots
+    all_contract_violated += verify_max_dist_two_city(tours, cities, final_cost)
 
     if all_contract_violated != "":
         return all_contract_violated
@@ -31,7 +34,7 @@ def main(root_dir=""):
     tmp_file_name = root_dir[9:]
     # root_dir = '../../evaluate/' + tmp_file_name
     unfiltered_text_files_loc = read_all_files(root_directory=root_dir)
-    print('file number:', len(unfiltered_text_files_loc), sep='\n')
+    print('file number:', len(unfiltered_text_files_loc))
     file_groups = tsp_1_filter_files(unfiltered_text_files_loc)
 
     for point_num in file_groups.keys():
@@ -53,7 +56,7 @@ def main(root_dir=""):
             # print(robot_costs)
             # Running the detailed constraint check on the provided solution
             constraint_check_message = detailed_constraint_check(tours=robot_tours, robot_costs=robot_costs,
-                                                                 cities=cities)
+                                                                 cities=cities, final_cost=final_cost)
 
             if constraint_check_message == "** YES!!! **":
                 # print('file_path: ', file_path, '\n')
@@ -63,11 +66,11 @@ def main(root_dir=""):
                 for i in range(reflect_id, reflect_num):
                     valid_final_cost[i][file_id] = final_cost
             else:
-                # continue
-                print('==========================================================================================')
-                print('file_path: ', file_path, '\n')
-                print(constraint_check_message)
-                print('==========================================================================================')
+                continue
+                # print('==========================================================================================')
+                # print('file_path: ', file_path, '\n')
+                # print(constraint_check_message)
+                # print('==========================================================================================')
 
         print('valid_final_cost:', valid_final_cost, sep='\n')
 
@@ -76,6 +79,6 @@ def main(root_dir=""):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run main function with parameters.")
-    parser.add_argument('--root_dir', type=str, default="evaluate/back_1_tsp/1-tsp/B-BTSP", help="root_dir")
+    parser.add_argument('--root_dir', type=str, default="evaluate/1_direct_reflect_v3/1-tsp/B-BTSP", help="root_dir")
     args = parser.parse_args()
     sys.exit(main(root_dir=args.root_dir))

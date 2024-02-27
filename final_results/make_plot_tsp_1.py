@@ -1,3 +1,4 @@
+import argparse
 import os
 import json
 import sys
@@ -8,7 +9,7 @@ from itertools import cycle
 
 benchmark_tsp_1_point_5 = {
     'A-TSP': 16.64,
-    'B-BTSP': 6.40,
+    'B-BTSP': 5.39,
     'C-GTSP': 5.24,
     'D-OTSP': 16.64,
     'E-TPP': 241.21,
@@ -28,8 +29,22 @@ benchmark_tsp_1_point_10 = {
     'F-TSPTW': 26.45,
     'G-TSPM': 22,
     'H-TSPMDNC': 23.29,
-    'I-TSPMDC': 27.64,
+    'I-TSPMDC': 27.04,
     'J-KTSP': 17.22,
+}
+
+benchmark_tsp_4_point_10 = {
+    'A-TSP': 11.09,
+    'B-BTSP': 5.0,
+    'C-GTSP': 10.19,
+    'D-OTSP': 11.09,
+    'E-TPP': 221.98,
+    'F-TSPTW': 12.18,
+    'G-TSPM': 11,
+    'H-TSPMDNC': 11.4,
+    'I-TSPMDC': 10.16,
+    'J-KTSP': 10.40,
+    'K-CTSP': 16.13,
 }
 
 
@@ -90,6 +105,7 @@ def prepare_plot_data(json_data, extracted_parts, benchmark):
             for x in values:
                 if x != -1 and x < tmp_bench:
                     print(f'extracted_parts[jid]: {extracted_parts[jid]}')
+                    print(f'benchmark: {benchmark}')
                     raise ValueError(f'any(x < tmp_bench for x in values): {values} < {tmp_bench}')
 
             mean = compute_mean(values)
@@ -100,70 +116,102 @@ def prepare_plot_data(json_data, extracted_parts, benchmark):
     return plot_data, raw_datas
 
 
-def main():
+def main(root_dir):
+    print(f"Processing {root_dir}")
     points_list = [5, 10]
-    for point_num in points_list:
-        if point_num == 5:
-            benchmark = benchmark_tsp_1_point_5
-            root_dir = '/home/zhehui/LLM_Routing/final_results/1_direct_reflect_v3/1-tsp/5'
-        elif point_num == 10:
-            benchmark = benchmark_tsp_1_point_10
-            root_dir = '/home/zhehui/LLM_Routing/final_results/1_direct_reflect_v3/1-tsp/10'
-        else:
-            raise ValueError(f'Invalid point number {point_num}')
+    tsp_list = ['1-tsp', '4-tsp']
+    for tsp_name in tsp_list:
+        for point_num in points_list:
+            if tsp_name == '1-tsp':
+                if point_num == 5:
+                    benchmark = benchmark_tsp_1_point_5
+                elif point_num == 10:
+                    benchmark = benchmark_tsp_1_point_10
+                else:
+                    raise ValueError(f'Invalid point number {point_num}')
 
-        json_data, extracted_parts = load_json_files(root_dir=root_dir)
-        plot_data, raw_datas = prepare_plot_data(json_data, extracted_parts, benchmark)
+                json_dir = f'final_results/{root_dir}/{tsp_name}/{point_num}'
+            elif tsp_name == '4-tsp':
+                if point_num == 5:
+                    continue
+                if point_num == 10:
+                    benchmark = benchmark_tsp_4_point_10
+                else:
+                    raise ValueError(f'Invalid point number {point_num}')
 
-        group_labels = ['A-TSP', 'B-BTSP', 'C-GTSP', 'D-OTSP', 'E-TPP', 'F-TSPTW', 'G-TSPM', 'H-TSPMDNC', 'I-TSPMDC',
-                        'J-KTSP', 'K-CTSP']
-        # Dynamically set group labels based on the number of files
-        group_labels = [group_labels[i] for i in range(len(json_data))]
-
-        # Plotting adjustments
-        colors = cycle(['blue', 'orange', 'green', 'red', 'purple', 'brown', 'pink', 'gray', 'olive', 'cyan'])
-        fig, ax = plt.subplots(figsize=(12, 8))
-
-        # Adjust these parameters to change the appearance of the plot
-        bar_width = 0.8 / len(plot_data[0])  # Adjust the bar width based on number of keys
-        ind = np.arange(len(group_labels))  # the x locations for the groups
-
-        for i in range(len(raw_datas[0])):
-            values = [raw_datas[j][i] for j in range(len(raw_datas))]
-            # calculate_optimality(best_value, means)
-            ordered_keys = sorted(benchmark.keys())
-
-            modified_means = []
-            for file_id in range(len(values)):
-                tmp_values = values[file_id]
-
-                optimality_data = []
-                for tmp_value in tmp_values:
-                    if tmp_value == -1:
-                        tmp_optimality = 0
-                    else:
-                        tmp_optimality = calculate_optimality(value=tmp_value,
-                                                              best_value=benchmark[ordered_keys[file_id]])
-                    optimality_data.append(tmp_optimality)
-                mean_optimality_data = np.mean(optimality_data)
-                modified_means.append(mean_optimality_data)
-
-            if i == 0:
-                tmp_label = 'No Reflect'
+                json_dir = f'final_results/{root_dir}/{tsp_name}'
             else:
-                tmp_label = f'Reflect {i}'
-            ax.bar(ind + i * bar_width, modified_means, bar_width, label=tmp_label, color=next(colors))
+                raise ValueError(f'Invalid tsp name {tsp_name}')
 
-        ax.set_xlabel('Tasks')
-        ax.set_ylabel('Optimality')
-        ax.set_title(f'TSP for One Robot: {point_num} Points (Feasible Solutions)')
-        ax.set_xticks(ind + bar_width * len(plot_data[0]) / 2 - bar_width / 2)
-        ax.set_xticklabels(group_labels)
-        ax.legend()
+            print(f"Processing json dir {json_dir}")
 
-        plt.tight_layout()
-        plt.show()
+            json_data, extracted_parts = load_json_files(root_dir=json_dir)
+            plot_data, raw_datas = prepare_plot_data(json_data, extracted_parts, benchmark)
+
+            group_labels = ['A-TSP', 'B-BTSP', 'C-GTSP', 'D-OTSP', 'E-TPP', 'F-TSPTW', 'G-TSPM', 'H-TSPMDNC', 'I-TSPMDC',
+                            'J-KTSP', 'K-CTSP']
+            # Dynamically set group labels based on the number of files
+            group_labels = [group_labels[i] for i in range(len(json_data))]
+
+            # Plotting adjustments
+            colors = cycle(['blue', 'orange', 'green', 'red', 'purple', 'brown', 'pink', 'gray', 'olive', 'cyan'])
+            fig, ax = plt.subplots(figsize=(12, 8))
+
+            # Adjust these parameters to change the appearance of the plot
+            bar_width = 0.8 / len(plot_data[0])  # Adjust the bar width based on number of keys
+            ind = np.arange(len(group_labels))  # the x locations for the groups
+
+            for i in range(len(raw_datas[0])):
+                values = [raw_datas[j][i] for j in range(len(raw_datas))]
+                # calculate_optimality(best_value, means)
+                ordered_keys = sorted(benchmark.keys())
+
+                modified_means = []
+                for file_id in range(len(values)):
+                    tmp_values = values[file_id]
+
+                    optimality_data = []
+                    for tmp_value in tmp_values:
+                        if tmp_value == -1:
+                            tmp_optimality = 0
+                        else:
+                            tmp_optimality = calculate_optimality(value=tmp_value,
+                                                                  best_value=benchmark[ordered_keys[file_id]])
+                        optimality_data.append(tmp_optimality)
+                    mean_optimality_data = np.mean(optimality_data)
+                    modified_means.append(mean_optimality_data)
+
+                if i == 0:
+                    tmp_label = 'No Reflect'
+                else:
+                    tmp_label = f'Reflect {i}'
+                ax.bar(ind + i * bar_width, modified_means, bar_width, label=tmp_label, color=next(colors))
+
+            ax.set_xlabel('Tasks')
+            ax.set_ylabel('Optimality')
+            if tsp_name == '1-tsp':
+                tmp_title_robot = 'One'
+            elif tsp_name == '4-tsp':
+                tmp_title_robot = 'Four'
+            else:
+                raise ValueError(f'Invalid tsp name {tsp_name}')
+            ax.set_title(f'TSP for {tmp_title_robot} Robot: {point_num} Points (Feasible Solutions)')
+            ax.set_xticks(ind + bar_width * len(plot_data[0]) / 2 - bar_width / 2)
+            ax.set_xticklabels(group_labels)
+            ax.legend()
+
+            plt.tight_layout()
+
+            file_name = f"final_plots/{root_dir}/{tsp_name}_point_{point_num}_feasible_solutions.pdf"
+            directory = f'final_plots/{root_dir}'
+            if not os.path.exists(directory):
+                os.makedirs(directory)
+            print(f"Saving plot to {file_name}")
+            plt.savefig(file_name)
 
 
 if __name__ == '__main__':
-    sys.exit(main())
+    parser = argparse.ArgumentParser(description="Run main function with parameters.")
+    parser.add_argument('--root_dir', type=str, default="1_direct_reflect_v3", help="root_dir")
+    args = parser.parse_args()
+    sys.exit(main(root_dir=args.root_dir))

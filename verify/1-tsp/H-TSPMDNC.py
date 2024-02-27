@@ -35,7 +35,7 @@ def main(root_dir=""):
     tmp_file_name = root_dir[9:]
     # root_dir = '../../evaluate/' + tmp_file_name
     unfiltered_text_files_loc = read_all_files(root_directory=root_dir)
-    print('file number:', len(unfiltered_text_files_loc), sep='\n')
+    print('file number:', len(unfiltered_text_files_loc))
     file_groups = tsp_1_filter_files(unfiltered_text_files_loc)
 
     for point_num in file_groups.keys():

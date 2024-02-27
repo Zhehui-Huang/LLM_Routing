@@ -22,6 +22,7 @@ def read_all_files(root_directory):
     text_files_loc.sort()
     return text_files_loc
 
+
 def read_res_txt_files(root_directory):
     # List to hold the contents of all text files
     text_files_loc = []
@@ -43,38 +44,41 @@ def read_res_txt_files(root_directory):
 
 def main():
     root_directory_list = ['verify/1-tsp', 'verify/4-tsp']
-    middle_under_evaluate = '5_external_tools_direct_v3'
-    # root_directory_list = ['verify/1-tsp']
-    for root_directory in root_directory_list:
+    middle_under_evaluate_list = [
+        '1_direct_reflect_v3', '2_math_reflect_v3', '5_external_tools_direct_v3',
+        '5_external_tools_math_v3', '1_direct_reflect_ambiguities_v3_ambiguities']
 
-        if '1-tsp' in root_directory:
-            text_files_loc = read_all_files(root_directory)
+    for middle_under_evaluate in middle_under_evaluate_list:
+        for root_directory in root_directory_list:
 
-            for pid, py_file in enumerate(text_files_loc):
-                print('========================================================')
-                print(py_file)
+            if '1-tsp' in root_directory:
+                text_files_loc = read_all_files(root_directory)
 
-                command = ['python', py_file, '--root_dir', f'evaluate/{middle_under_evaluate}/{py_file[7:-3]}']
+                for pid, py_file in enumerate(text_files_loc):
+                    print('========================================================')
+                    print(py_file)
 
-                # Execute the command
-                subprocess.run(command)
-                print('========================================================')
-        else:
-            # 4-tsp, no need to change
-            text_files_loc = read_all_files(root_directory)
-
-            for pid, py_file in enumerate(text_files_loc):
-                print('========================================================')
-                print(py_file)
-
-                if 'D-OTSP' in py_file:
-                    command = ['python', py_file, '--root_dir', f'evaluate/{middle_under_evaluate}/{py_file[7:-3]}',
-                               '--sequence_order', '[2,4,5,6,7]']
-                else:
                     command = ['python', py_file, '--root_dir', f'evaluate/{middle_under_evaluate}/{py_file[7:-3]}']
-                # Execute the command
-                subprocess.run(command)
-                print('========================================================')
+
+                    # Execute the command
+                    subprocess.run(command)
+                    print('========================================================')
+            else:
+                # 4-tsp, no need to change
+                text_files_loc = read_all_files(root_directory)
+
+                for pid, py_file in enumerate(text_files_loc):
+                    # print('========================================================')
+                    # print(py_file)
+
+                    if 'D-OTSP' in py_file:
+                        command = ['python', py_file, '--root_dir', f'evaluate/{middle_under_evaluate}/{py_file[7:-3]}',
+                                   '--sequence_order', '[2,4,5,6,7]']
+                    else:
+                        command = ['python', py_file, '--root_dir', f'evaluate/{middle_under_evaluate}/{py_file[7:-3]}']
+                    # Execute the command
+                    subprocess.run(command)
+                    # print('========================================================')
 
 
 if __name__ == '__main__':

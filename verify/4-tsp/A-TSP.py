@@ -50,7 +50,7 @@ def main(root_dir=""):
     tmp_file_name = root_dir[9:]
     # root_dir = '../../evaluate/' + tmp_file_name
     text_files_loc = read_all_files(root_directory=root_dir)
-    print('file number:', len(text_files_loc), sep='\n')
+    print('file number:', len(text_files_loc))
 
     for i in range(reflect_num):
         valid_final_cost[i] = {j: -1 for j in range(test_file_num)}
@@ -86,6 +86,6 @@ def main(root_dir=""):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run main function with parameters.")
-    parser.add_argument('--root_dir', type=str, default="", help="root_dir")
+    parser.add_argument('--root_dir', type=str, default="evaluate/2_math_reflect_v3/4-tsp/A-TSP", help="root_dir")
     args = parser.parse_args()
     sys.exit(main(root_dir=args.root_dir))

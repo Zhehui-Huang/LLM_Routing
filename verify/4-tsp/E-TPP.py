@@ -57,13 +57,13 @@ def detailed_constraint_check(tours, robot_costs, purchases):
                                                            cities=cities)
 
     # Check 5: Total Units Purchased
-    # all_contract_violated += verify_total_units_purchased(purchases)
+    all_contract_violated += verify_total_units_purchased(purchases)
 
     # Check 6: Product Amount vs. Robot Capacity
     all_contract_violated += verify_robot_capacity(robot_capacities=robot_capacities, product=purchases)
 
     # Check 7: Full Purchase Requirements
-    # all_contract_violated += verify_full_purchase_requirements(city_products=city_products, product=purchases)
+    all_contract_violated += verify_full_purchase_requirements(city_products=city_products, product=purchases)
 
     if all_contract_violated != "":
         return all_contract_violated
@@ -76,7 +76,7 @@ def main(root_dir=""):
     valid_final_cost = {}
     tmp_file_name = root_dir[9:]
     text_files_loc = read_all_files(root_directory=root_dir)
-    print('file number:', len(text_files_loc), sep='\n')
+    print('file number:', len(text_files_loc))
 
     for i in range(reflect_num):
         valid_final_cost[i] = {j: -1 for j in range(test_file_num)}
@@ -112,6 +112,6 @@ def main(root_dir=""):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run main function with parameters.")
-    parser.add_argument('--root_dir', type=str, default="evaluate/1_direct_reflect_v3/4-tsp/E-TPP", help="root_dir")
+    parser.add_argument('--root_dir', type=str, default="evaluate/1_direct_reflect_ambiguities_v3_ambiguities/4-tsp/E-TPP", help="root_dir")
     args = parser.parse_args()
     sys.exit(main(root_dir=args.root_dir))

@@ -38,7 +38,7 @@ def main(root_dir=""):
     tmp_file_name = root_dir[9:]
     # root_dir = '../../evaluate/' + tmp_file_name
     unfiltered_text_files_loc = read_all_files(root_directory=root_dir)
-    print('file number:', len(unfiltered_text_files_loc), sep='\n')
+    print('file number:', len(unfiltered_text_files_loc))
     file_groups = tsp_1_filter_files(unfiltered_text_files_loc)
 
     for point_num in file_groups.keys():
@@ -85,6 +85,6 @@ def main(root_dir=""):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run main function with parameters.")
-    parser.add_argument('--root_dir', type=str, default="evaluate/back_1_tsp/1-tsp/D-OTSP", help="root_dir")
+    parser.add_argument('--root_dir', type=str, default="evaluate/5_external_tools_direct_v3/1-tsp/D-OTSP", help="root_dir")
     args = parser.parse_args()
     sys.exit(main(root_dir=args.root_dir))

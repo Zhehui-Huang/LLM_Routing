@@ -5,7 +5,8 @@ import sys
 from utils import read_all_files, save_final_results
 from tsp_1_verify_utils import (extract_solution_with_separation, verify_start_end_depot,
                                 verify_city_visitation_at_most_once, verify_total_travel_prod_cost,
-                                reflect_num, test_file_num, cities_5, cities_10, tsp_1_filter_files)
+                                reflect_num, test_file_num, cities_5, cities_10, tsp_1_filter_files,
+                                verify_total_units_purchased)
 
 city_products_5 = {
     1: {'units': 5, 'price': 8},
@@ -41,10 +42,13 @@ def detailed_constraint_check(tours, robot_costs, purchases, cities, city_produc
                                                            cities=cities)
 
     # Check 5: Total Units Purchased
-    # all_contract_violated += verify_total_units_purchased(purchases)
+    all_contract_violated += verify_total_units_purchased(purchases)
 
-    # Check 6: Full Purchase Requirements
-    # all_contract_violated += verify_full_purchase_requirements(city_products=city_products, product=purchases)
+    try:
+        if len(tours['Robot 1 - Tour']) < 4:
+            all_contract_violated += "Robot 1 - Tour length is not 6\n"
+    except:
+        all_contract_violated += "Robot 1 - Tour length is not 6\n"
 
     if all_contract_violated != "":
         return all_contract_violated
@@ -58,7 +62,7 @@ def main(root_dir=""):
     tmp_file_name = root_dir[9:]
     # root_dir = '../../evaluate/' + tmp_file_name
     unfiltered_text_files_loc = read_all_files(root_directory=root_dir)
-    print('file number:', len(unfiltered_text_files_loc), sep='\n')
+    print('file number:', len(unfiltered_text_files_loc))
     file_groups = tsp_1_filter_files(unfiltered_text_files_loc)
 
     for point_num in file_groups.keys():
@@ -106,6 +110,6 @@ def main(root_dir=""):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run main function with parameters.")
-    parser.add_argument('--root_dir', type=str, default="evaluate/back_1_tsp/1-tsp/E-TPP", help="root_dir")
+    parser.add_argument('--root_dir', type=str, default="evaluate/2_math_reflect_v3/1-tsp/E-TPP", help="root_dir")
     args = parser.parse_args()
     sys.exit(main(root_dir=args.root_dir))

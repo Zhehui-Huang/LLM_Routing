@@ -63,20 +63,29 @@ def extract_solution_with_separation(file_path):
             if parts[1].strip() == 'inf':
                 cost = float(1e9)
             else:
-                cost = eval(parts[1].strip())
+                tmp_real_cost = parts[1].strip()
+                if tmp_real_cost[-1] == '.':
+                    tmp_real_cost = tmp_real_cost[:-1]
+                cost = eval(tmp_real_cost)
             costs[robot] = cost
 
         if line.startswith('Final cost') or line.startswith('Final Cost'):
             parts = line.split(':')
-            final_cost = eval(parts[1].strip())
+            tmp_real_cost = parts[1].strip()
+            if tmp_real_cost[-1] == '.':
+                tmp_real_cost = tmp_real_cost[:-1]
+            final_cost = eval(tmp_real_cost)
 
         if 'E-TPP' in file_path:
-            if line.startswith('Robot') and 'Product' in line:
-                parts = line.split(':')
-                robot = parts[0].split('-')[0].strip()
-                city_amount = eval(parts[1].strip())
-                if isinstance(city_amount[0], tuple):
-                    purchases[robot] = city_amount[0]
+            try:
+                if line.startswith('Robot') and 'Product' in line:
+                    parts = line.split(':')
+                    robot = parts[0].split('-')[0].strip()
+                    city_amount = eval(parts[1].strip())
+                    if isinstance(city_amount[0], tuple):
+                        purchases[robot] = city_amount[0]
+            except:
+                purchases = {}
 
     return tours, costs, final_cost, purchases
 
@@ -86,31 +95,41 @@ def calculate_distance(city1, city2):
 
 
 def calculate_tour_cost(tour, cities):
-    cost = 0.0
-    for i in range(len(tour) - 1):
-        cost += calculate_distance(cities[int(tour[i])], cities[int(tour[i + 1])])
+    try:
+        cost = 0.0
+        for i in range(len(tour) - 1):
+            cost += calculate_distance(cities[int(tour[i])], cities[int(tour[i + 1])])
+    except:
+        return -1
+
     return cost
 
 
 def verify_start_end_depot(tours, depot=3):
     # Check 1: Each robot starts and ends at the depot
     for robot, tour in tours.items():
-        if len(tour) == 0:
-            return f"Constraint Violated: Each robot must have a tour, but {robot} does not."
-        if tour[0] != depot or tour[-1] != depot:
-            return f"Constraint Violated: Each robot starts and ends at the depot, but {robot} does not."
+        try:
+            if len(tour) == 0:
+                return f"Constraint Violated: Each robot must have a tour, but {robot} does not."
+            if tour[0] != depot or tour[-1] != depot:
+                return f"Constraint Violated: Each robot starts and ends at the depot, but {robot} does not."
+        except:
+            return f"Constraint Violated: verify_start_end_depot, {tour} is not a list."
 
     return ""
 
 
 def verify_visit_city_once(tours, cities):
+    try:
     # Check 2: Each city must be visited exactly once
-    all_visited_cities = [city for tour in tours.values() for city in tour[1:-1]]  # Excluding depot at start/end
-    if len(all_visited_cities) != len(set(all_visited_cities)) or len(all_visited_cities) != len(cities) - 1:
-        for city in range(1, len(cities) + 1):
-            if city != 3 and all_visited_cities.count(city) != 1:
-                return (f"Constraint Violated: Each city must be visited exactly once by one of the robots, "
-                        f"and city {city} is not visited correctly.")
+        all_visited_cities = [city for tour in tours.values() for city in tour[1:-1]]  # Excluding depot at start/end
+        if len(all_visited_cities) != len(set(all_visited_cities)) or len(all_visited_cities) != len(cities) - 1:
+            for city in range(1, len(cities) + 1):
+                if city != 3 and all_visited_cities.count(city) != 1:
+                    return (f"Constraint Violated: Each city must be visited exactly once by one of the robots, "
+                            f"and city {city} is not visited correctly.")
+    except:
+        return f"Constraint Violated: verify_start_end_depot, {tours} is wrong."
 
     return ""
 
@@ -127,8 +146,10 @@ def verify_euclidean_dist(tours, cities, robot_costs):
         # Assuming calculate_tour_cost is a function that you've defined elsewhere
         calculated_cost = calculate_tour_cost(tour, cities)
         robot_cost_key = robot.replace('Tour', 'Cost')  # Adjust the key to match the corresponding cost entry
-        provided_cost = robot_costs[robot_cost_key]
-
+        try:
+            provided_cost = robot_costs[robot_cost_key]
+        except:
+            return f"Constraint Violated: Tour cost for {robot} is incorrect. "
         # Check if the calculated cost matches the provided cost (within a small margin of error)
         if not math.isclose(round(calculated_cost, 2), round(provided_cost, 2), rel_tol=1e-2):
             return (f"Constraint Violated: Tour cost for {robot} is incorrect. "
@@ -200,6 +221,8 @@ def verify_city_visitation_at_least_once(tours, cities):
 
 
 def verify_total_units_purchased(product):
+    if product == {}:
+        return f"Constraint Violated: product is {product}."
     total_units_purchased = sum(units for _, units in product.values())
     if total_units_purchased < 60:
         return (f"Constraint Violated: Total units purchased is {total_units_purchased}, "
@@ -216,6 +239,8 @@ def verify_robot_capacity(robot_capacities, product):
 
 
 def verify_full_purchase_requirements(city_products, product):
+    if product == {}:
+        return f"Constraint Violated: product is {product}."
     full_purchase_check = all(city_products[city]['units'] == units for robot, (city, units) in product.items())
 
     if not full_purchase_check:
@@ -358,9 +383,16 @@ def verify_energy(tours, cities, ori_energy=11):
 
 def verify_color_match(robot_tours, city_colors, robot_colors, depot=3):
     for robot, tour in robot_tours.items():
-        robot_color = robot_colors[int(robot.split(' ')[1])]
+        try:
+            robot_color = robot_colors[int(robot.split(' ')[1])]
+        except:
+            robot_color = robot_colors[int(robot.split(' ')[1][1])]
+
         for city in tour:
-            city = int(city)
+            try:
+                city = int(city)
+            except:
+                return f"{city} is not int."
             if city == depot:  # Skip depot
                 continue
             if robot_color not in city_colors[city]:
@@ -393,14 +425,35 @@ def verify_sequence_constraints(tours, sequence_order):
     if isinstance(sequence_order, str):
         sequence_order = eval(sequence_order)
 
-    for robot, tour in tours.items():
-        # Filter the tour to only include cities that are part of the sequence constraint
-        filtered_tour = [city for city in tour if city in sequence_order]
+    try:
+        for robot, tour in tours.items():
+            # Filter the tour to only include cities that are part of the sequence constraint
+            filtered_tour = [city for city in tour if city in sequence_order]
 
-        # Check if the filtered tour is in the same order as the sequence order
-        for i in range(len(filtered_tour) - 1):
-            if sequence_order.index(filtered_tour[i]) > sequence_order.index(filtered_tour[i + 1]):
-                return (f"Constraint Violated: Sequence constraint violated in {robot}'s tour. {filtered_tour[i]} "
-                        f"appears before {filtered_tour[i + 1]}")
+            # Check if the filtered tour is in the same order as the sequence order
+            for i in range(len(filtered_tour) - 1):
+                if sequence_order.index(filtered_tour[i]) > sequence_order.index(filtered_tour[i + 1]):
+                    return (f"Constraint Violated: Sequence constraint violated in {robot}'s tour. {filtered_tour[i]} "
+                            f"appears before {filtered_tour[i + 1]}")
+    except:
+        return f"Constraint Violated: verify_sequence_constraints, {tours} is wrong."
+
+    return ""
+
+
+def verify_max_dist_two_city(tours, cities, final_cost):
+    # Calculate the maximum travel cost between any two consecutive cities in the updated tour
+    try:
+        updated_max_cost = 0
+        for robot, tour in tours.items():
+            for i in range(len(tour) - 1):
+                cost = calculate_distance(cities[tour[i]], cities[tour[i + 1]])
+                updated_max_cost = max(updated_max_cost, cost)
+
+        if not math.isclose(round(updated_max_cost, 2), round(final_cost, 2), rel_tol=1e-2):
+            raise ValueError(f"Constraint Violated: Maximum travel cost between any two consecutive cities is incorrect. "
+                             f"Expected: {final_cost}, Calculated: {updated_max_cost}")
+    except:
+        return f"Constraint Violated: Tours are wrong."
 
     return ""

@@ -3,7 +3,7 @@ import sys
 
 from utils import read_all_files, save_final_results
 from verify_utils import extract_solution_with_separation, verify_start_end_depot, verify_visit_city_once, \
-    verify_num_robots, verify_euclidean_dist, reflect_num, test_file_num
+    verify_num_robots, verify_euclidean_dist, reflect_num, test_file_num, verify_max_dist_two_city
 
 # Define city coordinates with city index starting from 1
 cities = {
@@ -24,7 +24,7 @@ cities = {
 
 
 # Detailed constraint check function
-def detailed_constraint_check(tours, robot_costs):
+def detailed_constraint_check(tours, robot_costs, final_cost):
     all_contract_violated = ""
     # Check 1: Each robot starts and ends at the depot
     all_contract_violated += verify_start_end_depot(tours=tours)
@@ -41,6 +41,9 @@ def detailed_constraint_check(tours, robot_costs):
     # Check 6: Check Euclidean distance between cities for all robots
     all_contract_violated += verify_euclidean_dist(tours, cities, robot_costs)
 
+    # Check 7: Check maximum distance between cities for all robots
+    all_contract_violated += verify_max_dist_two_city(tours, cities, final_cost)
+
     if all_contract_violated != "":
         return all_contract_violated
     else:
@@ -53,7 +56,7 @@ def main(root_dir=""):
     tmp_file_name = root_dir[9:]
     # root_dir = '../../evaluate/' + tmp_file_name
     text_files_loc = read_all_files(root_directory=root_dir)
-    print('file number:', len(text_files_loc), sep='\n')
+    print('file number:', len(text_files_loc))
 
     for i in range(reflect_num):
         valid_final_cost[i] = {j: -1 for j in range(test_file_num)}
@@ -64,7 +67,7 @@ def main(root_dir=""):
         # print(robot_tours)
         # print(robot_costs)
         # Running the detailed constraint check on the provided solution
-        constraint_check_message = detailed_constraint_check(robot_tours, robot_costs)
+        constraint_check_message = detailed_constraint_check(robot_tours, robot_costs, final_cost)
 
         if constraint_check_message == "** YES!!! **":
             # print('file_path: ', file_path, '\n')
@@ -89,6 +92,6 @@ def main(root_dir=""):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run main function with parameters.")
-    parser.add_argument('--root_dir', type=str, default="", help="root_dir")
+    parser.add_argument('--root_dir', type=str, default="evaluate/2_math_reflect_v3/4-tsp/B-BTSP", help="root_dir")
     args = parser.parse_args()
     sys.exit(main(root_dir=args.root_dir))
