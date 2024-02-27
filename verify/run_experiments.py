@@ -46,7 +46,10 @@ def main():
     root_directory_list = ['verify/1-tsp', 'verify/4-tsp']
     middle_under_evaluate_list = [
         '1_direct_reflect_v3', '2_math_reflect_v3', '5_external_tools_direct_v3',
-        '5_external_tools_math_v3', '1_direct_reflect_ambiguities_v3_ambiguities']
+        '5_external_tools_math_v3', '1_direct_reflect_ambiguities_v3_ambiguities',
+        'gemini_1_direct_reflect_v3', 'gemini_2_math_reflect_v3', 'gemini_5_external_tools_direct_v3',
+        'gemini_5_external_tools_math_v3'
+    ]
 
     for middle_under_evaluate in middle_under_evaluate_list:
         for root_directory in root_directory_list:

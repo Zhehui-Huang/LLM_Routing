@@ -63,11 +63,13 @@ def main(root_dir=""):
                 for i in range(reflect_id, reflect_num):
                     valid_final_cost[i][file_id] = final_cost
             else:
-                continue
-                # print('==========================================================================================')
-                # print('file_path: ', file_path, '\n')
-                # print(constraint_check_message)
-                # print('==========================================================================================')
+                # continue
+                print(
+                    '====================================================================================================')
+                print('file_path: ', file_path, '\n')
+                print(constraint_check_message)
+                print(
+                    '====================================================================================================')
 
         print('valid_final_cost:', valid_final_cost, sep='\n')
 

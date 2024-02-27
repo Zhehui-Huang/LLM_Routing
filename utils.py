@@ -526,6 +526,11 @@ def replacement(match):
 
 
 def fix_pattern(input_str):
+    if len(input_str) == 0:
+        return []
+
+    if input_str[-1] == '.':
+        input_str = input_str[:-1]
     pattern = r'(\d)\s+(\d)'
     corrected_str = input_str
     while True:

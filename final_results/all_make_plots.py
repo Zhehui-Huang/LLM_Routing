@@ -6,7 +6,10 @@ def main():
 
     middle_under_evaluate_list = [
         '1_direct_reflect_v3', '2_math_reflect_v3', '5_external_tools_direct_v3',
-        '5_external_tools_math_v3', '1_direct_reflect_ambiguities_v3_ambiguities']
+        '5_external_tools_math_v3', '1_direct_reflect_ambiguities_v3_ambiguities',
+        'gemini_1_direct_reflect_v3', 'gemini_2_math_reflect_v3', 'gemini_5_external_tools_direct_v3',
+        'gemini_5_external_tools_math_v3'
+    ]
 
     py_plots_script = ['final_results/make_plot_tsp_1.py', 'final_results/make_plot_tsp_1_optimal.py']
 

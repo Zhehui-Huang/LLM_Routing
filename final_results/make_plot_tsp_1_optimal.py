@@ -202,8 +202,9 @@ def main(root_dir):
             ax.set_title(f'TSP for {tmp_title_robot} Robot: {point_num} Points (Optimal Solutions)')
             ax.set_xticks(ind + bar_width * len(plot_data[0]) / 2 - bar_width / 2)
             ax.set_xticklabels(group_labels)
-            ax.legend()
+            ax.legend(loc='upper center', bbox_to_anchor=(0.5, 1.15), ncol=7)
 
+            plt.ylim(0, 1.02)
             plt.tight_layout()
 
             file_name = f"final_plots/{root_dir}/{tsp_name}_point_{point_num}_optimal_solutions.pdf"
