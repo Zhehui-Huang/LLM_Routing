@@ -18,7 +18,7 @@ GOOGLE_API_KEY = "AIzaSyBruy7vdcDDCHfIrNxgiYkBhAl7g2ajXGA"
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Solution path
-sol_path = 'solution/5_external_tools_direct_fix_bug'
+sol_path = 'solution/z_fix_bug_5_external_tools_direct'
 
 reflect_num = 6
 

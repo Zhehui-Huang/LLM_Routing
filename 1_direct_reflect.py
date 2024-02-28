@@ -9,7 +9,7 @@ from utils import (read_file, gpt_prompt_tips, read_all_files, reflect_solution,
 
 client = OpenAI()
 gpt_model = "gpt-4-0125-preview"
-sol_path = 'solution/1_direct_reflect_fix_bug'
+sol_path = 'solution/z_fix_bug_1_direct_reflect'
 
 reflect_num = 6
 
