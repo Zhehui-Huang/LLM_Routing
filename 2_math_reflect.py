@@ -10,7 +10,7 @@ from task_specify_sol_req import sol_req
 
 client = OpenAI()
 gpt_model = "gpt-4-0125-preview"
-sol_path = 'solution/z_fix_bug_2_math_reflect'
+sol_path = 'solution/z_v2_fix_bug_2_math_reflect'
 
 reflect_num = 6
 
