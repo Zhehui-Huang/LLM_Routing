@@ -13,7 +13,7 @@ GOOGLE_API_KEY = "AIzaSyBruy7vdcDDCHfIrNxgiYkBhAl7g2ajXGA"
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Solution path
-sol_path = 'solution/gemini_5_external_tools_direct'
+sol_path = 'solution/Y_v2_gemini_5_external_tools_direct_fix_bug'
 
 reflect_num = 6
 
@@ -62,7 +62,7 @@ def solve_problem(task_descriptions, python_file_path, sol_given_parts, env_and_
         ori_python_file_path=python_file_path, math_content_modify=None, reflect_num=reflect_num,
         question_for_answer=question_for_answer, external_solutions=external_solutions, total_time=total_time,
         env_and_task=env_and_task, sol_given_parts=sol_given_parts,
-        external_solver=True, external_tool_name=recommend_solver_content
+        external_solver=True, external_tool_name=recommend_solver_content, reply_content=solution_content
     )
 
     if find_solution_flag is False:

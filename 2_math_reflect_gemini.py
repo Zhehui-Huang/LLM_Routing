@@ -12,7 +12,7 @@ from utils import (read_file, read_all_files, extract_execute_code,
 GOOGLE_API_KEY = "AIzaSyBruy7vdcDDCHfIrNxgiYkBhAl7g2ajXGA"
 genai.configure(api_key=GOOGLE_API_KEY)
 
-sol_path = 'solution/gemini_2_math_reflect'
+sol_path = 'solution/Y_v2_gemini_2_math_reflect_fix_bug'
 
 reflect_num = 6
 
@@ -50,7 +50,7 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
     final_external_solutions, final_total_time, find_solution_flag, extra_eval_content = gemini_reflect_solution(
         ori_python_file_path=python_file_path, math_content_modify=math_content_modify, reflect_num=reflect_num,
         question_for_answer=question_for_answer, external_solutions=external_solutions, total_time=total_time,
-        env_and_task=env_and_task, sol_given_parts=sol_given_parts
+        env_and_task=env_and_task, sol_given_parts=sol_given_parts, reply_content=reply_content
     )
 
     if find_solution_flag is False:
