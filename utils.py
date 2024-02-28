@@ -279,7 +279,7 @@ def read_all_files(root_directory):
 
 def reflect_solution(ori_python_file_path, math_content_modify, client, gpt_model, reflect_num=3,
                      question_for_answer=None, external_solutions=None, total_time=None, env_and_task=None,
-                     sol_given_parts=None, external_solver=False, external_tool_name=""):
+                     sol_given_parts=None, external_solver=False, external_tool_name="", reply_content=None):
     # Solve the problem
     find_solution_flag = False
     extra_eval_content = None
@@ -374,7 +374,8 @@ def reflect_solution(ori_python_file_path, math_content_modify, client, gpt_mode
 
             if external_solver is False:
                 modified_task_descriptions = (
-                    f"{tmp_pre_content} \n{exec_res} \nHere are the analysis why the solution is not correct.\n"
+                    f"{tmp_pre_content} \nHere is the solution code: {reply_content} "
+                    f"\n{exec_res} \nHere are the analysis why the solution is not correct.\n"
                     f"{tmp_verify_external_solutions_out} \nPlease provide a correct solution with Python code. "
                     f"You can use the previous solution as a reference. \n"
                     f"If the solution is ***no solution***, you can use a heuristic solver to solve the problem. \n"
@@ -384,7 +385,8 @@ def reflect_solution(ori_python_file_path, math_content_modify, client, gpt_mode
                 )
             else:
                 modified_task_descriptions = (
-                    f"{tmp_pre_content} \n{exec_res} \nHere are the analysis why the solution is not correct.\n"
+                    f"{tmp_pre_content} \nHere is the solution code: {reply_content} "
+                    f"\n{exec_res} \nHere are the analysis why the solution is not correct.\n"
                     f"{tmp_verify_external_solutions_out} \nPlease provide a correct solution with Python code. "
                     f"You can use the previous solution as a reference. \n"
                     f"If the solution is ***no solution***, you can either stick on the current tool "

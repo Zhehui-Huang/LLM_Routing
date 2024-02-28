@@ -10,7 +10,7 @@ from task_specify_sol_req import sol_req
 
 client = OpenAI()
 gpt_model = "gpt-4-0125-preview"
-sol_path = 'solution/2_math_reflect'
+sol_path = 'solution/2_math_reflect_fix_bug'
 
 reflect_num = 6
 
@@ -51,7 +51,7 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
         ori_python_file_path=python_file_path, math_content_modify=math_content_modify, client=client,
         gpt_model=gpt_model, reflect_num=reflect_num, question_for_answer=question_for_answer,
         external_solutions=external_solutions, total_time=total_time, env_and_task=env_and_task,
-        sol_given_parts=sol_given_parts
+        sol_given_parts=sol_given_parts, reply_content=reply_content
     )
 
     if find_solution_flag is False:
