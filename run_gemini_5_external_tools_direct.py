@@ -6,7 +6,7 @@ import time
 def main():
     while True:
         print('5_external_tools_direct_gemini: \nStart!')
-        return_ans = subprocess.run(['python', '5_external_tools_direct_gemini.py'], stderr=subprocess.PIPE, text=True)
+        return_ans = subprocess.run(['python', 'gemini_5_external_tools_direct.py'], stderr=subprocess.PIPE, text=True)
         if return_ans.stderr == "":
             break
         else:

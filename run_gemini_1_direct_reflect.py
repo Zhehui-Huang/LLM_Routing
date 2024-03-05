@@ -6,7 +6,7 @@ import time
 def main():
     while True:
         print('1_direct_reflect_gemini: \nStart!')
-        return_ans = subprocess.run(['python', '1_direct_reflect_gemini.py'], stderr=subprocess.PIPE, text=True)
+        return_ans = subprocess.run(['python', 'gemini_1_direct_reflect.py'], stderr=subprocess.PIPE, text=True)
         if return_ans.stderr == "":
             break
         else:
