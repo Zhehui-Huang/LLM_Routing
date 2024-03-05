@@ -110,8 +110,11 @@ def extract_solution_with_separation(file_path):
                     city_amount = eval(real_city_amount)
                 except:
                     extracted_numbers = re.findall(r'\d+', real_city_amount)
-                    real_city_amount = np.array([int(num) for num in extracted_numbers])[0]
-                    city_amount = eval(str(real_city_amount))
+                    if len(extracted_numbers) == 0:
+                        city_amount = 0
+                    else:
+                        real_city_amount = np.array([int(num) for num in extracted_numbers])[0]
+                        city_amount = eval(str(real_city_amount))
 
                 if isinstance(city_amount, tuple):
                     if robot not in purchases:
@@ -285,7 +288,6 @@ def verify_total_units_purchased(product):
                     "but the minimum required is 60.")
         return ""
     except:
-        raise ValueError(f"Constraint Violated: product is {product}.")
         return f"Constraint Violated: product is {product}."
 
 def verify_robot_capacity(robot_capacities, product):

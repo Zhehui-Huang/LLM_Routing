@@ -29,11 +29,20 @@ def detailed_constraint_check(tours: dict, robot_costs: dict) -> str:
     # Check 1: Each robot starts and ends at the depot
     all_contract_violated += verify_start_end_depot(tours=tours)
 
+    if all_contract_violated != "":
+        return all_contract_violated
+
     # Check 2: Each city must be visited exactly once
     all_contract_violated += verify_visit_city_once(tours=tours, cities=cities)
 
+    if all_contract_violated != "":
+        return all_contract_violated
+
     # Check 3: Number of robots
     all_contract_violated += verify_num_robots(tours=tours)
+
+    if all_contract_violated != "":
+        return all_contract_violated
 
     # Check 4: Check Euclidean distance between cities for all robots
     all_contract_violated += verify_euclidean_dist(tours, cities, robot_costs)
@@ -86,6 +95,6 @@ def main(root_dir=""):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run main function with parameters.")
-    parser.add_argument('--root_dir', type=str, default="evaluate/2_math_reflect_v3/4-tsp/A-TSP", help="root_dir")
+    parser.add_argument('--root_dir', type=str, default="evaluate/Y_v2_gemini_2_math_reflect_fix_bug_v3/4-tsp/A-TSP", help="root_dir")
     args = parser.parse_args()
     sys.exit(main(root_dir=args.root_dir))

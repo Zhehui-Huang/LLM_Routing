@@ -13,8 +13,14 @@ def detailed_constraint_check(tours, robot_costs, cities):
     # Check 1: Each robot starts and ends at the depot
     all_contract_violated += verify_start_end_depot(tours=tours)
 
+    if all_contract_violated != "":
+        return all_contract_violated
+
     # Check 2: Each city must be visited exactly once
     all_contract_violated += verify_visit_city_once(tours=tours, cities=cities)
+
+    if all_contract_violated != "":
+        return all_contract_violated
 
     # Check 3: Check Euclidean distance between cities for all robots
     all_contract_violated += verify_euclidean_dist(tours, cities, robot_costs)
@@ -63,13 +69,13 @@ def main(root_dir=""):
                 for i in range(reflect_id, reflect_num):
                     valid_final_cost[i][file_id] = final_cost
             else:
-                # continue
-                print(
-                    '====================================================================================================')
-                print('file_path: ', file_path, '\n')
-                print(constraint_check_message)
-                print(
-                    '====================================================================================================')
+                continue
+                # print(
+                #     '====================================================================================================')
+                # print('file_path: ', file_path, '\n')
+                # print(constraint_check_message)
+                # print(
+                #     '====================================================================================================')
 
         print('valid_final_cost:', valid_final_cost, sep='\n')
 
@@ -78,6 +84,6 @@ def main(root_dir=""):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run main function with parameters.")
-    parser.add_argument('--root_dir', type=str, default="evaluate/5_external_tools_direct_v3/1-tsp/A-TSP", help="root_dir")
+    parser.add_argument('--root_dir', type=str, default="evaluate/Y_v2_gemini_2_math_reflect_fix_bug_v3/1-tsp/A-TSP", help="root_dir")
     args = parser.parse_args()
     sys.exit(main(root_dir=args.root_dir))

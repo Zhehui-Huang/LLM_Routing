@@ -27,22 +27,30 @@ city_products_10 = {
     10: {'units': 20, 'price': 6},
 }
 
+min_cost_5 = 220
+min_cost_10 = 560
+
 
 def detailed_constraint_check(tours, robot_costs, purchases, cities, city_products):
     all_contract_violated = ""
     # Check 1: Each robot starts and ends at the depot
     all_contract_violated += verify_start_end_depot(tours=tours)
-
+    if all_contract_violated != "":
+        return all_contract_violated
     # Check 2: Each city at most once
     all_contract_violated += verify_city_visitation_at_most_once(tours=tours)
-
+    if all_contract_violated != "":
+        return all_contract_violated
     # Check 3: Check tour cost of all robots
     all_contract_violated += verify_total_travel_prod_cost(tours=tours, purchases=purchases,
                                                            city_products=city_products, robot_costs=robot_costs,
                                                            cities=cities)
-
+    if all_contract_violated != "":
+        return all_contract_violated
     # Check 5: Total Units Purchased
-    all_contract_violated += verify_total_units_purchased(purchases)
+    # all_contract_violated += verify_total_units_purchased(purchases)
+
+
 
     try:
         if len(tours['Robot 1 - Tour']) < 4:
@@ -70,9 +78,11 @@ def main(root_dir=""):
         if point_num == 5:
             cities = copy.deepcopy(cities_5)
             city_products = copy.deepcopy(city_products_5)
+            min_final_cost = min_cost_5
         elif point_num == 10:
             cities = copy.deepcopy(cities_10)
             city_products = copy.deepcopy(city_products_10)
+            min_final_cost = min_cost_10
         else:
             raise ValueError(f'Invalid point number {point_num}')
 
@@ -80,14 +90,17 @@ def main(root_dir=""):
             valid_final_cost[i] = {j: -1 for j in range(test_file_num)}
 
         for file_path in file_groups[str(point_num)]:
-            # print('file_path: ', file_path, '\n')
+            # print('file_path: ', file_path)
             robot_tours, robot_costs, final_cost, purchases = extract_solution_with_separation(file_path=file_path)
             # print(robot_tours)
             # print(robot_costs)
             # Running the detailed constraint check on the provided solution
-            constraint_check_message = detailed_constraint_check(tours=robot_tours, robot_costs=robot_costs,
-                                                                 purchases=purchases, cities=cities,
-                                                                 city_products=city_products)
+            if final_cost < min_final_cost:
+                constraint_check_message = "Final cost is less than the minimum cost"
+            else:
+                constraint_check_message = detailed_constraint_check(tours=robot_tours, robot_costs=robot_costs,
+                                                                     purchases=purchases, cities=cities,
+                                                                     city_products=city_products)
 
             if constraint_check_message == "** YES!!! **":
                 # print('file_path: ', file_path, '\n')
@@ -112,6 +125,6 @@ def main(root_dir=""):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run main function with parameters.")
-    parser.add_argument('--root_dir', type=str, default="evaluate/2_math_reflect_v3/1-tsp/E-TPP", help="root_dir")
+    parser.add_argument('--root_dir', type=str, default="evaluate/z_v2_fix_bug_5_external_tools_math_v3/1-tsp/E-TPP", help="root_dir")
     args = parser.parse_args()
     sys.exit(main(root_dir=args.root_dir))

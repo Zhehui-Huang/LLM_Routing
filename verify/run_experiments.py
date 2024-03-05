@@ -44,16 +44,27 @@ def read_res_txt_files(root_directory):
 
 def main():
     root_directory_list = ['verify/1-tsp', 'verify/4-tsp']
+    # middle_under_evaluate_list = [
+    #     '1_direct_reflect_v3', '2_math_reflect_v3', '5_external_tools_direct_v3',
+    #     '5_external_tools_math_v3', '1_direct_reflect_ambiguities_v3_ambiguities',
+    #     'gemini_1_direct_reflect_v3', 'gemini_2_math_reflect_v3', 'gemini_5_external_tools_direct_v3',
+    #     'gemini_5_external_tools_math_v3'
+    # ]
     middle_under_evaluate_list = [
-        '1_direct_reflect_v3', '2_math_reflect_v3', '5_external_tools_direct_v3',
-        '5_external_tools_math_v3', '1_direct_reflect_ambiguities_v3_ambiguities',
-        'gemini_1_direct_reflect_v3', 'gemini_2_math_reflect_v3', 'gemini_5_external_tools_direct_v3',
-        'gemini_5_external_tools_math_v3'
+        'z_v2_fix_bug_1_direct_reflect_v3',
+        'z_v2_fix_bug_2_math_reflect_v3',
+        'z_v2_fix_bug_5_external_tools_direct_v3',
+        'z_v2_fix_bug_5_external_tools_math_v3', 'z_v2_fix_bug_1_direct_reflect_ambiguities_v3_ambiguities',
+        'Y_v2_gemini_1_direct_reflect_fix_bug_v3', 'Y_v2_gemini_2_math_reflect_fix_bug_v3',
+        'Y_v2_gemini_5_external_tools_direct_fix_bug_v3',
+        'Y_v2_gemini_5_external_tools_math_fix_bug_v3',
+        'Y_v2_gemini_ambiguities_1_direct_reflect_fix_bug_v3_ambiguities'
     ]
 
     for middle_under_evaluate in middle_under_evaluate_list:
         for root_directory in root_directory_list:
-
+            print('middle_under_evaluate:  ', middle_under_evaluate)
+            print('root_directory:  ', root_directory)
             if '1-tsp' in root_directory:
                 text_files_loc = read_all_files(root_directory)
 

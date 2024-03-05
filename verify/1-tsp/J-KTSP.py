@@ -44,6 +44,8 @@ def detailed_constraint_check(tours, robot_costs, cities, selected_cities, point
     all_contract_violated += verify_start_end_depot(tours=tours)
 
     # Check 2: Check Euclidean distance between cities for all robots
+    if all_contract_violated != "":
+        return all_contract_violated
     all_contract_violated += verify_euclidean_dist(tours, cities, robot_costs)
 
     # Check 3: Each city must be visited exactly once
@@ -111,6 +113,6 @@ def main(root_dir=""):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run main function with parameters.")
-    parser.add_argument('--root_dir', type=str, default="evaluate/back_1_tsp/1-tsp/A-TSP", help="root_dir")
+    parser.add_argument('--root_dir', type=str, default="evaluate/z_v2_fix_bug_1_direct_reflect_v3/1-tsp/A-TSP", help="root_dir")
     args = parser.parse_args()
     sys.exit(main(root_dir=args.root_dir))

@@ -59,7 +59,8 @@ def detailed_constraint_check(tours: dict, robot_costs: dict) -> str:
     all_contract_violated += verify_euclidean_dist(tours, cities, robot_costs)
 
     # Check 5: Check color match
-    all_contract_violated += verify_color_match(robot_tours=tours, city_colors=city_colors, robot_colors=robot_colors)
+    if all_contract_violated == "":
+        all_contract_violated += verify_color_match(robot_tours=tours, city_colors=city_colors, robot_colors=robot_colors)
 
     if all_contract_violated != "":
         return all_contract_violated
@@ -72,13 +73,14 @@ def main(root_dir=""):
     valid_final_cost = {}
     tmp_file_name = root_dir[9:]
     text_files_loc = read_all_files(root_directory=root_dir)
+    print('K')
     print('file number:', len(text_files_loc))
 
     for i in range(reflect_num):
         valid_final_cost[i] = {j: -1 for j in range(test_file_num)}
 
     for file_path in text_files_loc:
-        # print('file_path: ', file_path, '\n')
+        print('file_path: ', file_path)
         robot_tours, robot_costs, final_cost, _ = extract_solution_with_separation(file_path=file_path)
         # print(robot_tours)
         # print(robot_costs)
@@ -108,6 +110,6 @@ def main(root_dir=""):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run main function with parameters.")
-    parser.add_argument('--root_dir', type=str, default="evaluate/5_external_tools_math_v3/4-tsp/K-CTSP", help="root_dir")
+    parser.add_argument('--root_dir', type=str, default="evaluate/Y_v2_gemini_2_math_reflect_fix_bug_v3/4-tsp/K-CTSP", help="root_dir")
     args = parser.parse_args()
     sys.exit(main(root_dir=args.root_dir))

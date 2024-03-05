@@ -41,7 +41,7 @@ benchmark_tsp_4_point_10 = {
     'E-TPP': 221.98,
     'F-TSPTW': 12.18,
     'G-TSPM': 11,
-    'H-TSPMDNC': 11.4,
+    'H-TSPMDNC': 9.16,
     'I-TSPMDC': 10.16,
     'J-KTSP': 10.40,
     'K-CTSP': 16.13,

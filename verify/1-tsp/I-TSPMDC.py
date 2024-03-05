@@ -20,7 +20,10 @@ def verify_energy(tours, cities, ori_energy, depot_lists):
     for robot, tour in tours.items():
         energy = ori_energy
         for i in range(len(tour) - 1):
-            distance = calculate_distance(cities[tour[i]], cities[tour[i + 1]])
+            try:
+                distance = calculate_distance(cities[tour[i]], cities[tour[i + 1]])
+            except KeyError:
+                return f"Constraint Violated: City {tour[i]} or {tour[i + 1]} not found in the city list."
 
             # If the robot visits a depot, reset energy and continue
             if tour[i] in depot_lists and i != 0:
@@ -115,6 +118,6 @@ def main(root_dir=""):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run main function with parameters.")
-    parser.add_argument('--root_dir', type=str, default="evaluate/5_external_tools_math_v3/1-tsp/I-TSPMDC", help="root_dir")
+    parser.add_argument('--root_dir', type=str, default="evaluate/z_v2_fix_bug_5_external_tools_direct_v3/1-tsp/I-TSPMDC", help="root_dir")
     args = parser.parse_args()
     sys.exit(main(root_dir=args.root_dir))

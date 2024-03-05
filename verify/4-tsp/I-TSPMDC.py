@@ -33,6 +33,9 @@ def detailed_constraint_check(tours: dict, robot_costs: dict) -> str:
     all_contract_violated += verify_start_multi_end_depot(tours, start_depot=3, depot_lists=depot_lists)
 
     # Check 2: Each city must be visited exactly once
+    if all_contract_violated != "":
+        return all_contract_violated
+
     all_contract_violated += verify_visit_city_multi_depots_once(tours, cities, depot_lists)
 
     # Check 3: Number of robots
@@ -91,6 +94,6 @@ def main(root_dir=""):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run main function with parameters.")
-    parser.add_argument('--root_dir', type=str, default="evaluate/1_direct_reflect_v3/4-tsp/I-TSPMDC", help="root_dir")
+    parser.add_argument('--root_dir', type=str, default="evaluate/z_v2_fix_bug_5_external_tools_direct_v3/4-tsp/I-TSPMDC", help="root_dir")
     args = parser.parse_args()
     sys.exit(main(root_dir=args.root_dir))

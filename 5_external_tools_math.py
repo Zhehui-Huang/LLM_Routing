@@ -7,7 +7,7 @@ from openai import OpenAI
 
 from task_specify_sol_req import sol_req
 from utils import (extract_execute_code, read_file, nltd_to_math_requirements, gpt_prompt_tips, read_all_files,
-                   save_evaluation, nltd_to_math, get_constraints, reflect_solution)
+                   save_evaluation, nltd_to_math, get_constraints, reflect_solution, save_math_form)
 
 # OpenAI
 client = OpenAI()
@@ -26,7 +26,7 @@ reflect_num = 6
 def solve_problem(task_descriptions, python_file_path, sol_given_parts, env_and_task):
     # NLTD to math
     math_content_modify = nltd_to_math(client=client, gpt_model=gpt_model, task_descriptions=task_descriptions)
-
+    save_math_form(python_file_path, math_content_modify)
     # Ask recommended solvers
     tmp_recommend_solver = (
         f"Please pick the best tool (such as Gurobi, OR-Tools, etc.) that you want to use to solve the "

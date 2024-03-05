@@ -60,13 +60,16 @@ def extract_solution_with_separation(file_path):
         if line.startswith('Robot') and 'Cost' in line:
             parts = line.split(':')
             robot = parts[0].strip()
-            if parts[1].strip() == 'inf':
-                cost = float(1e9)
-            else:
-                tmp_real_cost = parts[1].strip()
-                if tmp_real_cost[-1] == '.':
-                    tmp_real_cost = tmp_real_cost[:-1]
-                cost = eval(tmp_real_cost)
+            try:
+                if parts[1].strip() == 'inf' or parts[1].strip() == '-inf':
+                    cost = float(1e9)
+                else:
+                    tmp_real_cost = parts[1].strip()
+                    if tmp_real_cost[-1] == '.':
+                        tmp_real_cost = tmp_real_cost[:-1]
+                    cost = eval(tmp_real_cost)
+            except:
+                cost = 0
             costs[robot] = cost
 
         if line.startswith('Final cost') or line.startswith('Final Cost'):
@@ -74,7 +77,11 @@ def extract_solution_with_separation(file_path):
             tmp_real_cost = parts[1].strip()
             if tmp_real_cost[-1] == '.':
                 tmp_real_cost = tmp_real_cost[:-1]
-            final_cost = eval(tmp_real_cost)
+
+            if parts[1].strip() == 'inf' or parts[1].strip() == '-inf':
+                final_cost = float(1e9)
+            else:
+                final_cost = eval(tmp_real_cost)
 
         if 'E-TPP' in file_path:
             try:
@@ -231,7 +238,12 @@ def verify_total_units_purchased(product):
 
 
 def verify_robot_capacity(robot_capacities, product):
-    capacity_check = all(units <= robot_capacities[robot] for robot, (_, units) in product.items())
+    try:
+        capacity_check = all(units <= robot_capacities[robot] for robot, (_, units) in product.items())
+    except:
+        robot_capacities = {'Robot 1': 10, 'Robot 2': 15, 'Robot 3': 20, 'Robot 4': 20}
+        capacity_check = all(units <= robot_capacities[robot] for robot, (_, units) in product.items())
+
     if not capacity_check:
         return "Constraint Violated: At least one robot's capacity is exceeded by the purchased units."
 
@@ -324,6 +336,8 @@ def verify_dist_given_matrix(tours, distance_matrix, robot_costs):
 def verify_start_multi_end_depot(tours, start_depot=3, depot_lists=None):
     # Check if all robots start from City 3
     for robot, tour in tours.items():
+        if isinstance(tour, int):
+            return f"Constraint Violated: {tour} is not a list."
         if len(tour) == 0:
             return f"Constraint Violated: Each robot must have a tour, but {robot} does not."
         if tour[0] != start_depot:
@@ -344,7 +358,10 @@ def verify_visit_city_multi_depots_once(tours, cities, depot_lists):
     # Count visits for each city
     for tour in tours.values():
         for city in tour:
-            city_visit_counts[city] += 1
+            try:
+                city_visit_counts[city] += 1
+            except:
+                return f"Constraint Violated: City {city} does not exist."
 
     # Check if non-depot cities are visited exactly once and depots at least once
     for city_id, visits in city_visit_counts.items():
@@ -365,7 +382,10 @@ def verify_energy(tours, cities, ori_energy=11):
     for robot, tour in tours.items():
         energy = ori_energy
         for i in range(len(tour) - 1):
-            distance = calculate_distance(cities[tour[i]], cities[tour[i + 1]])
+            try:
+                distance = calculate_distance(cities[tour[i]], cities[tour[i + 1]])
+            except:
+                return f"Constraint Violated: City {tour[i], tour[i + 1]} does not exist."
 
             # If the robot visits a depot, reset energy and continue
             if tour[i] in [1, 3, 7]:
@@ -384,9 +404,21 @@ def verify_energy(tours, cities, ori_energy=11):
 def verify_color_match(robot_tours, city_colors, robot_colors, depot=3):
     for robot, tour in robot_tours.items():
         try:
-            robot_color = robot_colors[int(robot.split(' ')[1])]
+            robot_id = robot.split(' ')[1]
+            if robot_id in list(robot_colors.values()):
+                robot_color = robot_id
+            elif robot_id in list(['A', 'B', 'C', 'D']):
+                tmp_r_dict = {'A': 1, 'B': 2, 'C': 3, 'D': 4}
+                robot_id = tmp_r_dict[robot_id]
+                robot_color = robot_colors[robot_id]
+            else:
+                robot_color = robot_colors[int(robot_id)]
         except:
-            robot_color = robot_colors[int(robot.split(' ')[1][1])]
+            robot_id = robot.split(' ')[1][1]
+            if robot_id in list(robot_colors.values()):
+                robot_color = robot_id
+            else:
+                robot_color = robot_colors[int(robot_id)]
 
         for city in tour:
             try:

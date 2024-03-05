@@ -16,13 +16,16 @@ def detailed_constraint_check(tours, robot_costs, sequence_order, cities):
     all_contract_violated = ""
     # Check 1: Each robot starts and ends at the depot
     all_contract_violated += verify_start_end_depot(tours=tours)
-
+    if all_contract_violated != "":
+        return all_contract_violated
     # Check 2: Each city must be visited exactly once
     all_contract_violated += verify_visit_city_once(tours=tours, cities=cities)
-
+    if all_contract_violated != "":
+        return all_contract_violated
     # Check 3: Check Euclidean distance between cities for all robots
     all_contract_violated += verify_euclidean_dist(tours, cities, robot_costs)
-
+    if all_contract_violated != "":
+        return all_contract_violated
     # Check 4: Sequence order
     all_contract_violated += verify_sequence_constraints(tours, sequence_order)
 
