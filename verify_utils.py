@@ -433,7 +433,10 @@ def verify_color_match(robot_tours, city_colors, robot_colors, depot=3):
 
 
 def verify_selected_cities(tours):
-    city_10_visited = any(10 in tour for tour in tours.values())
+    try:
+        city_10_visited = any(10 in tour for tour in tours.values())
+    except:
+        return f"Constraint Violated: {tours} is wrong."
     if city_10_visited:
         return "Constraint Violated: City 10 should not be visited."
 

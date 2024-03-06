@@ -52,7 +52,7 @@ def calculate_optimality(value, best_value):
     if value == best_value:
         return 1.0
     else:
-        return 1 / (1 + (value - best_value) / best_value)
+        return best_value / value
 
 
 def read_all_json_files(root_directory):
