@@ -18,14 +18,14 @@ def calculate_results(obj, best_value, plot_metric):
         if obj < 0:
             return 0.0
         else:
-            if plot_metric == 'feasible':
+            if plot_metric == 'efficient':
                 return round(best_value / obj, 2)
             elif plot_metric == 'optimal':
                 if np.round(best_value / obj, 2) == 1.0:
                     return 1.0
                 else:
                     return 0.0
-            elif plot_metric == 'efficient':
+            elif plot_metric == 'feasible':
                 if np.round(best_value / obj, 2) > 0.0:
                     return 1.0
                 else:
