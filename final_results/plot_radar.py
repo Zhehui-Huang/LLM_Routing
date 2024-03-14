@@ -47,12 +47,25 @@ def make_radar_plot(folder_path, plot_metric, prex):
     # ax.set_theta_direction(-1)
 
     # colors = plt.cm.viridis(np.linspace(0, 1, len(keys)))
-    colors = ['#f4e13b', '#e8646c', '#60bc2c']  # '#7244cd'
+    colors = ['#377eb8', '#ff7f00', '#60bc2c']  # '#7244cd'
     for i, key in enumerate(keys):
         values = [d[key] for d in data]
         values += values[:1]  # Complete the loop
         ax.plot(angles, values, 'o-', linewidth=2 + 0.5 * i, label=key, color=colors[i])
         ax.fill(angles, values, alpha=0.25 + 0.1 * i, color=colors[i])
+
+        if int(key) == 6:
+            print('=========================')
+            print('key: ', key)
+
+            print('plot_metric', plot_metric)
+            tt_path = folder_path.split('/')
+            print('type: ', f'{tt_path[-2]}_{tt_path[-1]}')
+
+            print('value: ', values[:-1])
+            print('Avg Value: ', np.mean(values[:-1]))
+            print('=========================')
+
 
     ax.set_xticks(angles[:-1])
     ax.set_xticklabels(labels)
@@ -76,10 +89,15 @@ def make_radar_plot(folder_path, plot_metric, prex):
     plt.savefig(file_name)
 
 def main():
+    # ori_foler_path_list = [
+    #     'z_v2_fix_bug_1_direct_reflect_v3/1-tsp/5',
+    #     'z_v2_fix_bug_1_direct_reflect_v3/1-tsp/10',
+    #     'z_v2_fix_bug_1_direct_reflect_v3/4-tsp/10',
+    # ]
     ori_foler_path_list = [
-        'z_v2_fix_bug_1_direct_reflect_v3/1-tsp/5',
-        'z_v2_fix_bug_1_direct_reflect_v3/1-tsp/10',
-        'z_v2_fix_bug_1_direct_reflect_v3/4-tsp/10',
+        'Y_v2_gemini_ambiguities_1_direct_reflect_fix_bug_v3_ambiguities/1-tsp/5',
+        'Y_v2_gemini_ambiguities_1_direct_reflect_fix_bug_v3_ambiguities/1-tsp/10',
+        'Y_v2_gemini_ambiguities_1_direct_reflect_fix_bug_v3_ambiguities/4-tsp/10',
     ]
     for ori_folder_path in ori_foler_path_list:
         # ori_folder_path = 'z_v2_fix_bug_1_direct_reflect_v3/1-tsp/5'

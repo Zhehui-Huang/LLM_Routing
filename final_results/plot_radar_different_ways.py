@@ -56,13 +56,13 @@ def make_radar_plot(folder_path, plot_metric, prex, math_path, external_path, ma
     # ax.set_theta_direction(-1)
 
     # colors = plt.cm.viridis(np.linspace(0, 1, len(keys)))
-    colors = ['#f4e13b', '#7244cd', '#e8646c', '#60bc2c']  #
+    colors = ['#7244cd', '#377eb8', '#ff7f00', '#60bc2c']  #
 
     #
     key = '6'
     values = [d[key] for d in math_external_data]
     values += values[:1]  # Complete the loop
-    ax.plot(angles, values, 'o-', linewidth=2 + 0.5 * 0, label='Math + External', color=colors[0])
+    ax.plot(angles, values, 'o-', linewidth=2 + 0.5 * 0, label='Math + Solver', color=colors[0])
     ax.fill(angles, values, alpha=0.25 + 0.1 * 0, color=colors[0])
 
     values = [d[key] for d in math_data]
@@ -72,13 +72,13 @@ def make_radar_plot(folder_path, plot_metric, prex, math_path, external_path, ma
 
     values = [d[key] for d in external_data]
     values += values[:1]  # Complete the loop
-    ax.plot(angles, values, 'o-', linewidth=2 + 0.5 * 2, label='External', color=colors[2])
+    ax.plot(angles, values, 'o-', linewidth=2 + 0.5 * 2, label='Solver', color=colors[2])
     ax.fill(angles, values, alpha=0.25 + 0.1 * 2, color=colors[2])
 
 
     values = [d[key] for d in data]
     values += values[:1]  # Complete the loop
-    ax.plot(angles, values, 'o-', linewidth=2 + 0.5 * 3, label='Language', color=colors[3])
+    ax.plot(angles, values, 'o-', linewidth=2 + 0.5 * 3, label='NL', color=colors[3])
     ax.fill(angles, values, alpha=0.25 + 0.1 * 3, color=colors[3])
 
     ax.set_xticks(angles[:-1])

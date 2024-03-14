@@ -50,7 +50,7 @@ def make_radar_plot(folder_path, plot_metric, prex, concise_path):
     # ax.set_theta_direction(-1)
 
     # colors = plt.cm.viridis(np.linspace(0, 1, len(keys)))
-    colors = ['#f4e13b', '#e8646c', '#60bc2c']  # '#7244cd'
+    colors = ['#f4e13b', '#ff7f00', '#60bc2c']  # '#7244cd'
 
     print('plot_metric', plot_metric)
     tt_path = folder_path.split('/')

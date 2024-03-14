@@ -12,7 +12,7 @@ from utils import (read_file, read_all_files, extract_execute_code,
 GOOGLE_API_KEY = "AIzaSyBruy7vdcDDCHfIrNxgiYkBhAl7g2ajXGA"
 genai.configure(api_key=GOOGLE_API_KEY)
 
-sol_path = 'solution/Y_v3_gemini_1_direct_reflect'
+sol_path = 'solution/Y_v4_gemini_1_direct_reflect'
 
 reflect_num = 6
 
@@ -59,6 +59,9 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
 
 
 def main():
+    for m in genai.list_models():
+        if 'generateContent' in m.supported_generation_methods:
+            print(m.name)
     text_files_loc = read_all_files(root_directory='task_v3')
     print('file number:', len(text_files_loc), sep='\n')
     for file_path in text_files_loc:

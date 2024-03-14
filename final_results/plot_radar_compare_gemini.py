@@ -59,6 +59,15 @@ def make_radar_plot(folder_path, plot_metric, prex, gemini_path):
     ax.plot(angles, values, 'o-', linewidth=2 + 0.5 * 0, label='Gemini-Pro', color=colors[1])
     ax.fill(angles, values, alpha=0.25 + 0.1 * 0, color=colors[1])
 
+    print('=========================')
+    print('plot_metric', plot_metric)
+    tt_path = folder_path.split('/')
+    print('type: ', f'{tt_path[-2]}_{tt_path[-1]}')
+
+    print('value: ', values[:-1])
+    print('Avg Value: ', np.mean(values[:-1]))
+    print('=========================')
+
     values = [d[key] for d in data]
     values += values[:1]  # Complete the loop
     ax.plot(angles, values, 'o-', linewidth=2 + 0.5 * 1, label='GPT-4', color=colors[2])

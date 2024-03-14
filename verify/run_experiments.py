@@ -59,7 +59,7 @@ def main():
         # 'Y_v2_gemini_5_external_tools_direct_fix_bug_v3',
         # 'Y_v2_gemini_5_external_tools_math_fix_bug_v3',
         # 'Y_v2_gemini_ambiguities_1_direct_reflect_fix_bug_v3_ambiguities'
-        'Y_v3_gemini_1_direct_reflect_v3'
+        '3_user_direct_reflect_ambiguities_v3_ambiguities'
     ]
 
     for middle_under_evaluate in middle_under_evaluate_list:
