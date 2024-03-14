@@ -173,7 +173,7 @@ def total_consistent_check(consistent_check_count, client, gpt_model, task_descr
     return consistent_check_bool, math_content_modify
 
 
-def extract_execute_code(problem_solving_content, python_file_path):
+def extract_execute_code(problem_solving_content, python_file_path, reflect_id=-1):
     start_time = time.time()
     # Extra python code from problem_solving_content
     start_marker = "```python"  # Starting marker of Python code
@@ -183,7 +183,14 @@ def extract_execute_code(problem_solving_content, python_file_path):
     end_index = problem_solving_content.find(end_marker, start_index)
     extracted_code = problem_solving_content[start_index:end_index].strip()
 
-    with open(python_file_path, 'w') as python_file:
+    base_path, final_file_name = os.path.split(python_file_path)
+    final_python_file_path = base_path + f'/{reflect_id}/' + final_file_name
+
+    tmp_directory = os.path.dirname(final_python_file_path)
+    if not os.path.exists(tmp_directory):
+        os.makedirs(tmp_directory)
+
+    with open(final_python_file_path, 'w') as python_file:
         python_file.write(extracted_code)  # Write the extracted code to the file
 
     # Execute the Python script
@@ -193,7 +200,7 @@ def extract_execute_code(problem_solving_content, python_file_path):
         external_solutions = None
     else:
         try:
-            external_solutions = subprocess.run(['python', python_file_path],
+            external_solutions = subprocess.run(['python', final_python_file_path],
                                                 capture_output=True, text=True, timeout=120)
         except subprocess.TimeoutExpired:
             external_solutions = None
@@ -226,10 +233,58 @@ def extract_execute_code(problem_solving_content, python_file_path):
     return external_solutions, total_time
 
 
+def verify_extract_execute_code(problem_solving_content, python_file_path, reflect_id=-1):
+    start_time = time.time()
+    # Extra python code from problem_solving_content
+    start_marker = "```python"  # Starting marker of Python code
+    end_marker = "```"  # Ending marker of Python code
+
+    start_index = problem_solving_content.find(start_marker) + len(start_marker)
+    end_index = problem_solving_content.find(end_marker, start_index)
+    extracted_code = problem_solving_content[start_index:end_index].strip()
+
+    base_path, final_file_name = os.path.split(python_file_path)
+    base_path = base_path.replace('solution', 'sol_verification', 1)
+
+    final_python_file_path = base_path + f'/{reflect_id}/' + final_file_name
+
+    tmp_directory = os.path.dirname(final_python_file_path)
+    if not os.path.exists(tmp_directory):
+        os.makedirs(tmp_directory)
+
+    with open(final_python_file_path, 'w') as python_file:
+        python_file.write(extracted_code)  # Write the extracted code to the file
+
+    # Execute the Python script
+    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"Start running the Python code at {current_time}...")
+    if start_index == -1:
+        external_solutions = None
+    else:
+        try:
+            external_solutions = subprocess.run(['python', final_python_file_path],
+                                                capture_output=True, text=True, timeout=120)
+        except subprocess.TimeoutExpired:
+            external_solutions = None
+
+    end_time = time.time()
+    total_time = end_time - start_time
+    print(f"Total running time: {total_time} seconds")
+
+    return external_solutions, total_time
+
 def save_evaluation(python_file_path, external_solutions, total_time, q_meet_req_content=None, extra_eval_content='',
                     reflect_id=0):
     dir_paths = python_file_path[8:-3].split('/')
     evaluate_file_path = f'evaluate/{dir_paths[1]}/{dir_paths[2]}/{dir_paths[3]}/r_{reflect_id}/{dir_paths[4]}' + '.txt'
+
+    base_path, final_file_name = os.path.split(python_file_path)
+    final_python_file_path = base_path + f'/{reflect_id}/' + final_file_name
+
+    tmp_directory = os.path.dirname(final_python_file_path)
+    if not os.path.exists(tmp_directory):
+        os.makedirs(tmp_directory)
+
 
     directory = os.path.dirname(evaluate_file_path)
     if not os.path.exists(directory):
@@ -361,7 +416,7 @@ def reflect_solution(ori_python_file_path, math_content_modify, client, gpt_mode
             print('reply_content:', reply_content, sep='\n')
 
             external_solutions, total_time = extract_execute_code(
-                problem_solving_content=reply_content, python_file_path=python_file_path)
+                problem_solving_content=reply_content, python_file_path=python_file_path, reflect_id=reflect_id+1)
         else:
             # 2. Check if the solution is correct
             if math_content_modify is not None:
@@ -385,8 +440,8 @@ def reflect_solution(ori_python_file_path, math_content_modify, client, gpt_mode
             q_meet_req_content = q_meet_req_reply.choices[0].message.content
             print('q_meet_req_content: ', q_meet_req_content, sep="\n")
 
-            verify_external_solutions, _ = extract_execute_code(
-                problem_solving_content=q_meet_req_content, python_file_path=python_file_path)
+            verify_external_solutions, _ = verify_extract_execute_code(
+                problem_solving_content=q_meet_req_content, python_file_path=python_file_path, reflect_id=reflect_id+1)
 
             if verify_external_solutions is not None:
                 print('verify_external_solutions: ', verify_external_solutions.stdout, sep="\n")
@@ -473,7 +528,7 @@ def reflect_solution(ori_python_file_path, math_content_modify, client, gpt_mode
                 print('reply_content:', reply_content, sep='\n')
 
                 external_solutions, total_time = extract_execute_code(
-                    problem_solving_content=reply_content, python_file_path=python_file_path)
+                    problem_solving_content=reply_content, python_file_path=python_file_path, reflect_id=reflect_id+1)
 
     return final_external_solutions, final_total_time, find_solution_flag, extra_eval_content
 

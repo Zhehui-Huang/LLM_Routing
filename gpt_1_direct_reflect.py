@@ -9,7 +9,7 @@ from utils import (read_file, gpt_prompt_tips, read_all_files, reflect_solution,
 
 client = OpenAI()
 gpt_model = "gpt-4-0125-preview"
-sol_path = 'solution/z_v2_fix_bug_1_direct_reflect'
+sol_path = 'solution/AF_1_direct'
 
 reflect_num = 6
 
@@ -30,7 +30,7 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
     print('reply_content:', reply_content, sep='\n')
 
     external_solutions, total_time = extract_execute_code(
-        problem_solving_content=reply_content, python_file_path=python_file_path)
+        problem_solving_content=reply_content, python_file_path=python_file_path, reflect_id=0)
 
     constraints_content = get_constraints(env_and_task)
 
