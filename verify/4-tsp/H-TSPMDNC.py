@@ -1,6 +1,8 @@
 import argparse
 import sys
 
+import numpy as np
+
 from utils import read_all_files, save_final_results
 from verify_utils import (extract_solution_with_separation, verify_start_end_depot, verify_visit_city_once, \
     verify_num_robots, verify_euclidean_dist, verify_start_multi_end_depot, verify_visit_city_multi_depots_once,
@@ -60,12 +62,30 @@ def main(root_dir=""):
     for file_path in text_files_loc:
         # print('file_path: ', file_path, '\n')
         robot_tours, robot_costs, final_cost, _ = extract_solution_with_separation(file_path=file_path)
+        # if final_cost < 9.16 and final_cost > 0:
+        #     print(final_cost, 9.16)
+
         # print(robot_tours)
         # print(robot_costs)
         # Running the detailed constraint check on the provided solution
         constraint_check_message = detailed_constraint_check(robot_tours, robot_costs)
 
         if constraint_check_message == "** YES!!! **":
+            tmp_max_value = -1
+            for tmp_value in robot_costs.values():
+                if tmp_value > tmp_max_value:
+                    tmp_max_value = tmp_value
+
+            if np.round(final_cost, 2) < np.round(tmp_max_value, 2):
+                # print('final cost: ', final_cost)
+                # print('tmp_max_value: ', tmp_max_value)
+                print('change final cost from ', final_cost, ' to ', tmp_max_value, '\n')
+                final_cost = tmp_max_value
+
+
+            if np.round(final_cost, 2) < 9.16:
+                print('final cost: ', final_cost)
+
             # print('file_path: ', file_path, '\n')
             reflect_id = int(file_path.split('/')[4].split('_')[1])
             file_id = int(file_path.split('/')[5].split('.')[0][-1])
@@ -88,6 +108,6 @@ def main(root_dir=""):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run main function with parameters.")
-    parser.add_argument('--root_dir', type=str, default="", help="root_dir")
+    parser.add_argument('--root_dir', type=str, default="evaluate/Claude3_1_direct_v3/4-tsp/H-TSPMDNC", help="root_dir")
     args = parser.parse_args()
     sys.exit(main(root_dir=args.root_dir))

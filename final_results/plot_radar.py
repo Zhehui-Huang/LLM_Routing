@@ -69,6 +69,11 @@ def make_radar_plot(folder_path, plot_metric, prex):
 
     ax.set_xticks(angles[:-1])
     ax.set_xticklabels(labels)
+    ax.set_rlabel_position(0)
+    plt.yticks([0.2, 0.4, 0.6, 0.8], ["0.2", "0.4", "0.6", "0.8"], size=12)
+    plt.ylim(0, 1)
+
+
 
     plt.legend(loc='upper center', bbox_to_anchor=(0.5, 1.15), ncol=7)
     split_folder = folder_path.split('/')
@@ -82,7 +87,7 @@ def make_radar_plot(folder_path, plot_metric, prex):
     # title = f"{tmp_title} of {split_folder[3][0]} robot, {split_folder[4]} points"
     # plt.title(title)
     # plt.show()
-    file_name = f"plots/{prex}/{tmp_title}/{split_folder[3][0]}_{split_folder[4]}.pdf"
+    file_name = f"plots/Claude/{prex}/{tmp_title}/{split_folder[3][0]}_{split_folder[4]}.pdf"
     directory = os.path.dirname(file_name)
     if not os.path.exists(directory):
         os.makedirs(directory)
@@ -95,9 +100,9 @@ def main():
     #     'z_v2_fix_bug_1_direct_reflect_v3/4-tsp/10',
     # ]
     ori_foler_path_list = [
-        'Y_v2_gemini_ambiguities_1_direct_reflect_fix_bug_v3_ambiguities/1-tsp/5',
-        'Y_v2_gemini_ambiguities_1_direct_reflect_fix_bug_v3_ambiguities/1-tsp/10',
-        'Y_v2_gemini_ambiguities_1_direct_reflect_fix_bug_v3_ambiguities/4-tsp/10',
+        'Claude3_1_direct_v3/1-tsp/5',
+        'Claude3_1_direct_v3/1-tsp/10',
+        'Claude3_1_direct_v3/4-tsp/10',
     ]
     for ori_folder_path in ori_foler_path_list:
         # ori_folder_path = 'z_v2_fix_bug_1_direct_reflect_v3/1-tsp/5'

@@ -13,6 +13,9 @@ energy_unit_5 = 9
 depot_lists_10 = [1, 3, 7]
 energy_unit_10 = 11
 
+metric_5 = 20.79
+metric_10 = 27.04
+
 
 def verify_energy(tours, cities, ori_energy, depot_lists):
     segment_distances = []  # To store distances of each travel segment
@@ -26,8 +29,8 @@ def verify_energy(tours, cities, ori_energy, depot_lists):
                 return f"Constraint Violated: City {tour[i]} or {tour[i + 1]} not found in the city list."
 
             # If the robot visits a depot, reset energy and continue
-            if tour[i] in depot_lists and i != 0:
-                energy = ori_energy
+            if tour[i] in depot_lists:
+                energy = ori_energy - distance
             else:
                 # Subtract the traveled distance from the robot's energy
                 energy -= distance
@@ -75,10 +78,12 @@ def main(root_dir=""):
             cities = copy.deepcopy(cities_5)
             depot_lists = copy.deepcopy(depot_lists_5)
             ori_energy = energy_unit_5
+            energy_cost_metric = metric_5
         elif point_num == 10:
             cities = copy.deepcopy(cities_10)
             depot_lists = copy.deepcopy(depot_lists_10)
             ori_energy = energy_unit_10
+            energy_cost_metric = metric_10
         else:
             raise ValueError(f'Invalid point number {point_num}')
 
@@ -88,6 +93,8 @@ def main(root_dir=""):
         for file_path in file_groups[str(point_num)]:
             # print('file_path: ', file_path, '\n')
             robot_tours, robot_costs, final_cost, _ = extract_solution_with_separation(file_path=file_path)
+            if final_cost < energy_cost_metric and final_cost > 0 and point_num == 10:
+                print(final_cost, energy_cost_metric)
             # print(robot_tours)
             # print(robot_costs)
             # Running the detailed constraint check on the provided solution
@@ -118,6 +125,6 @@ def main(root_dir=""):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run main function with parameters.")
-    parser.add_argument('--root_dir', type=str, default="evaluate/z_v2_fix_bug_5_external_tools_direct_v3/1-tsp/I-TSPMDC", help="root_dir")
+    parser.add_argument('--root_dir', type=str, default="evaluate/z_v2_fix_bug_1_direct_reflect_v3/1-tsp/I-TSPMDC", help="root_dir")
     args = parser.parse_args()
     sys.exit(main(root_dir=args.root_dir))

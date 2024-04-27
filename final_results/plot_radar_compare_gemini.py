@@ -50,13 +50,15 @@ def make_radar_plot(folder_path, plot_metric, prex, gemini_path):
     # ax.set_theta_direction(-1)
 
     # colors = plt.cm.viridis(np.linspace(0, 1, len(keys)))
-    colors = ['#f4e13b', '#e8646c', '#60bc2c']  # '#7244cd'
+    # colors = ['#f4e13b', '#ff7f00', '#60bc2c']  # '#7244cd'
+    colors = ['#f4e13b', '#a65628', '#60bc2c']  # '#7244cd'
+
 
     #
     key = '6'
     values = [d[key] for d in gemini_data]
     values += values[:1]  # Complete the loop
-    ax.plot(angles, values, 'o-', linewidth=2 + 0.5 * 0, label='Gemini-Pro', color=colors[1])
+    ax.plot(angles, values, 'o-', linewidth=2 + 0.5 * 0, label='Claude 3 Opus', color=colors[1])
     ax.fill(angles, values, alpha=0.25 + 0.1 * 0, color=colors[1])
 
     print('=========================')
@@ -75,6 +77,9 @@ def make_radar_plot(folder_path, plot_metric, prex, gemini_path):
 
     ax.set_xticks(angles[:-1])
     ax.set_xticklabels(labels)
+    ax.set_rlabel_position(0)
+    plt.yticks([0.2, 0.4, 0.6, 0.8], ["0.2", "0.4", "0.6", "0.8"], size=12)
+    plt.ylim(0, 1)
 
     plt.legend(loc='upper center', bbox_to_anchor=(0.5, 1.15), ncol=7)
     split_folder = folder_path.split('/')
@@ -88,7 +93,7 @@ def make_radar_plot(folder_path, plot_metric, prex, gemini_path):
     # title = f"{tmp_title} of {split_folder[3][0]} robot, {split_folder[4]} points"
     # plt.title(title)
     # plt.show()
-    file_name = f"plots/gpt_gemini/{tmp_title}/{split_folder[3][0]}_{split_folder[4]}.pdf"
+    file_name = f"plots/gpt_claude/{tmp_title}/{split_folder[3][0]}_{split_folder[4]}.pdf"
     directory = os.path.dirname(file_name)
     if not os.path.exists(directory):
         os.makedirs(directory)
@@ -100,10 +105,15 @@ def main():
         'z_v2_fix_bug_1_direct_reflect_v3/1-tsp/10',
         'z_v2_fix_bug_1_direct_reflect_v3/4-tsp/10',
     ]
+    # ori_gemini_foler_path_list = [
+    #     'Y_v3_gemini_1_direct_reflect_v3/1-tsp/5',
+    #     'Y_v3_gemini_1_direct_reflect_v3/1-tsp/10',
+    #     'Y_v3_gemini_1_direct_reflect_v3/4-tsp/10',
+    # ]
     ori_gemini_foler_path_list = [
-        'Y_v3_gemini_1_direct_reflect_v3/1-tsp/5',
-        'Y_v3_gemini_1_direct_reflect_v3/1-tsp/10',
-        'Y_v3_gemini_1_direct_reflect_v3/4-tsp/10',
+        'Claude3_1_direct_v3/1-tsp/5',
+        'Claude3_1_direct_v3/1-tsp/10',
+        'Claude3_1_direct_v3/4-tsp/10',
     ]
     for f_id, ori_folder_path in enumerate(ori_foler_path_list):
         # ori_folder_path = 'z_v2_fix_bug_1_direct_reflect_v3/1-tsp/5'

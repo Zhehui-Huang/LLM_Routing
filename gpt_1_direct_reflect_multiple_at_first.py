@@ -1,5 +1,7 @@
 import sys
 import os
+import re
+from collections import Counter
 
 from openai import OpenAI
 
@@ -9,7 +11,7 @@ from utils import (read_file, gpt_prompt_tips, read_all_files, reflect_solution,
 
 client = OpenAI()
 gpt_model = "gpt-4-0125-preview"
-sol_path = 'solution/AF_1_direct_tt'
+sol_path = 'solution/AF_1_direct'
 
 reflect_num = 6
 
@@ -18,34 +20,49 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
     # 1. Translate natural language task descriptions (NLTD) to solutions.
     print('task_descriptions: ', task_descriptions, sep="\n")
 
-    request_reply = client.chat.completions.create(
-        model=gpt_model,
-        messages=[
-            {"role": "system", "content": f"You are a helpful assistant. {gpt_prompt_tips}"},
-            {"role": "user", "content": task_descriptions},
-        ],
-        stream=False,
-    )
-    reply_content = request_reply.choices[0].message.content
-    print('reply_content:', reply_content, sep='\n')
+    external_solutions_list = []
+    total_time_list = []
+    reply_content_list = []
+    final_cost_list = []
+    external_solutions = None
+    total_time = None
+    reply_content = None
+    for answer_id in range(3):
+        request_reply = client.chat.completions.create(
+            model=gpt_model,
+            messages=[
+                {"role": "system", "content": f"You are a helpful assistant. {gpt_prompt_tips}"},
+                {"role": "user", "content": task_descriptions},
+            ],
+            stream=False,
+        )
+        reply_content = request_reply.choices[0].message.content
+        print('reply_content:', reply_content, sep='\n')
 
-    external_solutions, total_time = extract_execute_code(
-        problem_solving_content=reply_content, python_file_path=python_file_path, reflect_id=0)
+        external_solutions, total_time = extract_execute_code(
+            problem_solving_content=reply_content, python_file_path=python_file_path, reflect_id=0)
 
-    # constraints_content_test = get_constraints(env_and_task)
-    get_constraints_reply = client.chat.completions.create(
-        model=gpt_model,
-        messages=[
-            {"role": "system", "content": f"You are a helpful assistant. {gpt_prompt_tips}"},
-            {"role": "user", "content": f'Please extract all constraints from the task descriptions: {env_and_task}. '
-                                        f'For example, the constraints can be like: Each city must be visited exactly'
-                                        f' once.'},
-        ],
-        stream=False,
-    )
-    constraints_content = get_constraints_reply.choices[0].message.content
-    print('constraints_content:', constraints_content, sep='\n')
+        if external_solutions is not None and external_solutions.stderr == "":
+            # extract final cost
+            final_cost_match = re.search(r"Final Cost: ([\d.]+)", external_solutions.stdout, re.IGNORECASE)
+            final_cost = float(final_cost_match.group(1)) if final_cost_match else None
+            if final_cost is not None:
+                external_solutions_list.append(external_solutions)
+                total_time_list.append(total_time)
+                reply_content_list.append(reply_content)
+                final_cost_list.append(round(final_cost, 2))
 
+    if len(final_cost_list) > 0:
+        most_common_value = Counter(final_cost_list).most_common(1)[0][0]
+        index_of_most_common = final_cost_list.index(most_common_value)
+        # external_solutions = external_solutions_list[index_of_most_common]
+        # total_time = total_time_list[index_of_most_common]
+        reply_content = reply_content_list[index_of_most_common]
+
+        external_solutions, total_time = extract_execute_code(
+            problem_solving_content=reply_content, python_file_path=python_file_path, reflect_id=0)
+
+    constraints_content = get_constraints(env_and_task)
 
     question_for_answer = (
         "### \nQuestion: \nPlease use Python code to check if the solution satisfies all of following "

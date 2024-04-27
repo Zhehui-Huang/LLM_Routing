@@ -18,15 +18,22 @@ def calculate_results(obj, best_value, plot_metric):
         if obj < 0:
             return 0.0
         else:
+            if round(best_value, 2) > round(obj, 2):
+                raise ValueError(f'round(best_value, 2) > round(obj, 2): {round(best_value, 2)} > {round(obj, 2)}')
+
             if plot_metric == 'efficient':
-                return round(best_value / obj, 2)
+                tmp_eff = round(best_value / obj, 2)
+                if 0.0 < tmp_eff <= 1.0:
+                    return round(best_value / obj, 2)
+                else:
+                    raise ValueError(f'0.0 < tmp_eff <= 1.0: {tmp_eff}')
             elif plot_metric == 'optimal':
                 if np.round(best_value / obj, 2) == 1.0:
                     return 1.0
                 else:
                     return 0.0
             elif plot_metric == 'feasible':
-                if np.round(best_value / obj, 2) > 0.0:
+                if 0.0 < np.round(best_value / obj, 2) <= 1.0:
                     return 1.0
                 else:
                     raise ValueError(f'np.round(best_value / obj, 2) > 0.0: {np.round(best_value / obj, 2)}')

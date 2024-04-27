@@ -59,10 +59,10 @@ def make_radar_plot(folder_path, plot_metric, prex, math_path, external_path, ma
     colors = ['#7244cd', '#377eb8', '#ff7f00', '#60bc2c']  #
 
     #
-    key = '6'
+    key = '0'
     values = [d[key] for d in math_external_data]
     values += values[:1]  # Complete the loop
-    ax.plot(angles, values, 'o-', linewidth=2 + 0.5 * 0, label='Math + Solver', color=colors[0])
+    ax.plot(angles, values, 'o-', linewidth=2 + 0.5 * 0, label='Math + External', color=colors[0])
     ax.fill(angles, values, alpha=0.25 + 0.1 * 0, color=colors[0])
 
     values = [d[key] for d in math_data]
@@ -72,7 +72,7 @@ def make_radar_plot(folder_path, plot_metric, prex, math_path, external_path, ma
 
     values = [d[key] for d in external_data]
     values += values[:1]  # Complete the loop
-    ax.plot(angles, values, 'o-', linewidth=2 + 0.5 * 2, label='Solver', color=colors[2])
+    ax.plot(angles, values, 'o-', linewidth=2 + 0.5 * 2, label='NL + External', color=colors[2])
     ax.fill(angles, values, alpha=0.25 + 0.1 * 2, color=colors[2])
 
 

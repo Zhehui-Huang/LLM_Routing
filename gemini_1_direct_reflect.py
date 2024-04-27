@@ -12,7 +12,7 @@ from utils import (read_file, read_all_files, extract_execute_code,
 GOOGLE_API_KEY = "AIzaSyBruy7vdcDDCHfIrNxgiYkBhAl7g2ajXGA"
 genai.configure(api_key=GOOGLE_API_KEY)
 
-sol_path = 'solution/Y_v4_gemini_1_direct_reflect'
+sol_path = 'solution/Y_v5_gemini_1_direct_reflect'
 
 reflect_num = 6
 

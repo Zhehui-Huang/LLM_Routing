@@ -5,6 +5,7 @@ from utils import read_all_files, save_final_results
 from verify_utils import extract_solution_with_separation, verify_start_end_depot, verify_visit_city_once, \
     verify_num_robots, verify_euclidean_dist, verify_start_multi_end_depot, verify_visit_city_multi_depots_once, \
     verify_energy, reflect_num, test_file_num
+import numpy as np
 
 # Define city coordinates with city index starting from 1
 cities = {
@@ -37,13 +38,17 @@ def detailed_constraint_check(tours: dict, robot_costs: dict) -> str:
         return all_contract_violated
 
     all_contract_violated += verify_visit_city_multi_depots_once(tours, cities, depot_lists)
+    if all_contract_violated != "":
+        return all_contract_violated
 
     # Check 3: Number of robots
     all_contract_violated += verify_num_robots(tours=tours)
-
+    if all_contract_violated != "":
+        return all_contract_violated
     # Check 4: Check Euclidean distance between cities for all robots
     all_contract_violated += verify_euclidean_dist(tours, cities, robot_costs)
-
+    if all_contract_violated != "":
+        return all_contract_violated
     # Check 5: Check energy
     all_contract_violated += verify_energy(tours, cities, ori_energy=11)
 
@@ -72,6 +77,20 @@ def main(root_dir=""):
         constraint_check_message = detailed_constraint_check(robot_tours, robot_costs)
 
         if constraint_check_message == "** YES!!! **":
+            tmp_max_value = -1
+            for tmp_value in robot_costs.values():
+                if tmp_value > tmp_max_value:
+                    tmp_max_value = tmp_value
+
+            if np.round(final_cost, 2) < np.round(tmp_max_value, 2):
+                # print('final cost: ', final_cost)
+                # print('tmp_max_value: ', tmp_max_value)
+                print('change final cost from ', final_cost, ' to ', tmp_max_value, '\n')
+                final_cost = tmp_max_value
+
+            if np.round(final_cost, 2) < 9.82:
+                print('final cost: ', final_cost)
+
             # print('file_path: ', file_path, '\n')
             reflect_id = int(file_path.split('/')[4].split('_')[1])
             file_id = int(file_path.split('/')[5].split('.')[0][-1])
@@ -94,6 +113,7 @@ def main(root_dir=""):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run main function with parameters.")
-    parser.add_argument('--root_dir', type=str, default="evaluate/z_v2_fix_bug_5_external_tools_direct_v3/4-tsp/I-TSPMDC", help="root_dir")
+    parser.add_argument('--root_dir', type=str,
+                        default="evaluate/Claude3_1_direct_v3/4-tsp/I-TSPMDC", help="root_dir")
     args = parser.parse_args()
     sys.exit(main(root_dir=args.root_dir))
