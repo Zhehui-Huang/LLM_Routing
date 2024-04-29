@@ -51,7 +51,8 @@ def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_p
 
 def get_hyperparameters():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--task', type=str, default='task_detail')
+    parser.add_argument('--task', type=str, default='task_detail',
+                        choices=['task_detail', 'task_concise'])
     parser.add_argument('--gpt_model', type=str, default='gpt-4-0125-preview')
     parser.add_argument('--sol_path', type=str, default='solution/gpt4_direct')
     parser.add_argument('--evaluate_num', type=int, default=10,
