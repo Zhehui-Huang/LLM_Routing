@@ -12,13 +12,13 @@ from utils import read_file, read_all_files, reflect_solution, extract_execute_c
 def solve_problem(task_descriptions, python_file_path, env_and_task, sol_given_parts, args):
     # Restart OpenAI
     client = OpenAI()
-    # 1. Translate natural language task descriptions (NLTD) to solutions.
+    # Translate natural language task descriptions (NLTD) to solutions.
     sol_content = ask_gpt(questions=task_descriptions, client=client, args=args)
 
     external_solutions, total_time = extract_execute_code(
         problem_solving_content=sol_content, python_file_path=python_file_path, reflect_id=0)
 
-    # 2. Get constraints from the task descriptions.
+    # Get constraints from the task descriptions.
     # constraints_content_test = get_constraints(env_and_task)
     get_constraints_prompt = (f'Please extract all constraints from the task descriptions: {env_and_task}. '
                               f'The example of constraints: Each city must be visited exactly one.')
