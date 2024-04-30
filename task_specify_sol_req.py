@@ -1,4 +1,4 @@
-sol_req = {
+sol_req_dict = {
     # Same: A, C, D, F, G, H, I, J
     # B: print the biggest travel cost between any two consecutive cities
     # E: print the total cost (travel cost + purchasing cost)

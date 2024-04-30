@@ -43,23 +43,6 @@ def read_file(file_path):
         return file.read()
 
 
-def nltd_to_math(client, gpt_model, task_descriptions):
-    math_reply = client.chat.completions.create(
-        model=gpt_model,
-        messages=[
-            {"role": "system", "content": f"You are a helpful assistant. {gpt_prompt_tips}"},
-            {"role": "user", "content": task_descriptions}
-        ],
-        stream=False,
-    )
-
-    math_content = math_reply.choices[0].message.content
-    math_content_modify = f"### \nMathematical formulation: {math_content} \n###"
-    print('Mathematical formulation:    ', math_content_modify, sep='\n')
-    print('====================================================================================================')
-    return math_content_modify
-
-
 def math_to_solution(client, gpt_model, task_descriptions, math_content_modify, prompt_tips, sol_given_parts):
     solution_reply = client.chat.completions.create(
         model=gpt_model,

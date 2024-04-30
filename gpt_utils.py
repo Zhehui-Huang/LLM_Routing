@@ -27,3 +27,21 @@ def ask_gpt(questions, client, args):
     reply_content = request_reply.choices[0].message.content
 
     return reply_content
+
+
+def nl_to_math_to_sol(env_and_task, client, args, sol_req):
+    # NL to Math
+    nl_to_math_requirements = (
+        "### Please translate language descriptions to mathematical formulations. "
+        "You must consider all constraints regardless of complexity. ###"
+    )
+    question_nl_to_math = f"{env_and_task}\n{nl_to_math_requirements}"
+
+    math_content = ask_gpt(questions=question_nl_to_math, client=client, args=args)
+
+    # Math to Solution
+    question_math_to_sol = (f"Please provide a solution given following mathematical formulation: \n{math_content}.\n "
+                            f"{sol_req}")
+
+    sol_content = ask_gpt(questions=question_math_to_sol, client=client, args=args)
+    return sol_content, math_content
