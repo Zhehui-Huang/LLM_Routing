@@ -4,6 +4,9 @@ import itertools
 import matplotlib.pyplot as plt
 import networkx as nx
 
+
+# traveling salesman problem
+
 # Function to solve the TSP using the DFJ formulation
 def solve_tsp(cities, distance_matrix):
     n = len(cities)
