@@ -1,16 +1,27 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Jul 19 23:07:48 2024
+
+@author: shiguangyao
+"""
+
 import gurobipy as gp
 from gurobipy import GRB
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Example data
-num_customers = 7
+# Parameters
+num_customers = 15
 vehicle_capacity = 50
-customer_demands = [0, 10, 20, 15, 25, 10, 5, 15]  # including depot demand (0)
 depot = 0
 
+# Generate random customer demands (including depot demand as 0)
+#np.random.seed(42)
+customer_demands = np.random.randint(1, 20, size=num_customers + 1)
+customer_demands[0] = 0  # Depot has no demand
+
 # Generate random coordinates for customers including the depot
-np.random.seed(1)
 customer_locations = np.random.rand(num_customers + 1, 2) * 100
 
 # Calculate distance matrix

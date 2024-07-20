@@ -2,41 +2,63 @@ import gurobipy as gp
 from gurobipy import GRB
 import matplotlib.pyplot as plt
 import networkx as nx
+import random
 
-# Sample data
-nodes = [0, 1, 2, 3]  # 0 is the depot
-products = [0, 1]
-edges = [(i, j) for i in nodes for j in nodes if i < j]
-travel_costs = {(0, 1): 10, (0, 2): 20, (0, 3): 30, (1, 2): 25, (1, 3): 35, (2, 3): 15}
-purchase_costs = {(1, 0): 5, (1, 1): 7, (2, 0): 8, (2, 1): 6, (3, 0): 4, (3, 1): 9}
-demands = {0: 10, 1: 15}
-availabilities = {(1, 0): 10, (1, 1): 15, (2, 0): 10, (2, 1): 10, (3, 0): 10, (3, 1): 15}
-positions = {0: (0, 0), 1: (1, 1), 2: (2, 0), 3: (1, -1)}  # Example positions for visualization
 
-# Create the model
+# *************************************
+# random cases are not always feasible 
+# *************************************
+
+# Parameters for random data generation
+num_nodes = 18  # including the depot
+num_edges = 20
+num_products = 5
+max_demand = 10
+max_quantity = 15
+max_price = 20
+max_travel_cost = 50
+
+# Generate random nodes and edges
+V = list(range(num_nodes))  # List of nodes including the depot (node 0)
+E = random.sample([(i, j) for i in V for j in V if i < j], num_edges)  # List of edges
+
+# Generate random products, suppliers, demand, quantity, price, and travel cost
+K = list(range(num_products))  # List of products
+M_k = {k: random.sample(V[1:], random.randint(1, num_nodes - 1)) for k in K}  # Suppliers for each product
+d_k = {k: random.randint(1, max_demand) for k in K}  # Demand for each product
+q_ik = {(i, k): random.randint(1, max_quantity) for k in K for i in M_k[k]}  # Quantity of product k at supplier i
+p_ik = {(i, k): random.randint(1, max_price) for k in K for i in M_k[k]}  # Price of product k at supplier i
+c_e = {(i, j): random.randint(1, max_travel_cost) for i, j in E}  # Cost of traveling on edge e
+
+# Create a new model
 model = gp.Model("STPP")
 
-# Variables
-x = model.addVars(edges, vtype=GRB.BINARY, name="x")
-y = model.addVars(nodes, vtype=GRB.BINARY, name="y")
-z = model.addVars(availabilities.keys(), vtype=GRB.CONTINUOUS, name="z")
+# Create variables
+x = model.addVars(E, vtype=GRB.BINARY, name="x")
+y = model.addVars(V, vtype=GRB.BINARY, name="y")
+z = model.addVars(q_ik.keys(), vtype=GRB.CONTINUOUS, name="z")
 
-# Objective function
-model.setObjective(gp.quicksum(travel_costs[e] * x[e] for e in edges) +
-                   gp.quicksum(purchase_costs[i, k] * z[i, k] for (i, k) in availabilities.keys()), GRB.MINIMIZE)
+# Set objective function
+model.setObjective(gp.quicksum(c_e[e] * x[e] for e in E) +
+                   gp.quicksum(p_ik[i, k] * z[i, k] for i, k in q_ik.keys()), GRB.MINIMIZE)
 
-# Constraints
-# Product demand satisfaction
-model.addConstrs((gp.quicksum(z[i, k] for i in nodes if (i, k) in availabilities) == demands[k] for k in products), "demand")
+# Add constraints
+for k in K:
+    model.addConstr(gp.quicksum(z[i, k] for i in M_k[k]) == d_k[k], name=f"demand_{k}")
 
-# Product availability
-model.addConstrs((z[i, k] <= availabilities[i, k] * y[i] for (i, k) in availabilities.keys()), "availability")
+for i, k in q_ik.keys():
+    model.addConstr(z[i, k] <= q_ik[i, k] * y[i], name=f"quantity_{i}_{k}")
 
-# Supplier selection
-model.addConstrs((gp.quicksum(x[e] for e in edges if i in e) == 2 * y[i] for i in nodes if i != 0), "supplier_selection")
+for h in V:
+    model.addConstr(gp.quicksum(x[e] for e in E if h in e) == 2 * y[h], name=f"degree_{h}")
 
-# Tour connectivity
-model.addConstrs((gp.quicksum(x[e] for e in edges if i in e) >= 2 * y[i] for i in nodes if i != 0), "connectivity")
+# Generate all non-empty proper subsets of V excluding the depot
+for S in range(1, 1 << (len(V) - 1)):
+    subset = [V[i] for i in range(len(V)) if (S & (1 << i)) > 0]
+    if len(subset) > 1:
+        for h in subset:
+            model.addConstr(gp.quicksum(x[e] for e in E if (e[0] in subset and e[1] not in subset) or (e[1] in subset and e[0] not in subset)) >= 2 * y[h],
+                            name=f"connectivity_{subset}_{h}")
 
 # Optimize the model
 model.optimize()
@@ -44,33 +66,40 @@ model.optimize()
 # Print the solution
 if model.status == GRB.OPTIMAL:
     print("Optimal solution found:")
-    selected_edges = []
-    selected_nodes = []
-    for e in edges:
+    for e in E:
         if x[e].x > 0.5:
-            print(f"Edge {e} is used")
-            selected_edges.append(e)
-    for i in nodes:
+            print(f"Edge {e} is used.")
+    for i in V:
         if y[i].x > 0.5:
-            print(f"Supplier {i} is selected")
-            selected_nodes.append(i)
-    for (i, k) in availabilities.keys():
-        if z[i, k].x > 0:
-            print(f"Product {k} is purchased from supplier {i} in quantity {z[i, k].x}")
+            print(f"Supplier {i} is visited.")
+    for i, k in z.keys():
+        if z[i, k].x > 0.1:
+            print(f"Purchase {z[i, k].x} units of product {k} from supplier {i}.")
 else:
     print("No optimal solution found.")
 
 # Visualization
 G = nx.Graph()
-G.add_nodes_from(nodes)
-G.add_edges_from(edges)
 
-pos = positions  # Node positions for visualization
+# Add nodes
+for node in V:
+    G.add_node(node)
 
-plt.figure(figsize=(8, 6))
+# Add edges
+for e in E:
+    if x[e].x > 0.5:
+        G.add_edge(e[0], e[1])
+
+# Position nodes using a layout
+pos = nx.spring_layout(G)
+
+# Draw the network
+plt.figure(figsize=(10, 8))
 nx.draw(G, pos, with_labels=True, node_color='lightblue', node_size=500, font_size=10, font_weight='bold')
-nx.draw_networkx_edges(G, pos, edgelist=selected_edges, edge_color='r', width=2)
-nx.draw_networkx_nodes(G, pos, nodelist=selected_nodes, node_color='orange', node_size=700)
 
-plt.title('Optimal Tour for STPP')
+# Draw edge labels
+edge_labels = {(i, j): f'' for i, j in E if x[(i, j)].x > 0.5}
+nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels)
+
+plt.title('Optimal Tour for the STPP')
 plt.show()
