@@ -2,10 +2,10 @@ import argparse
 import copy
 import sys
 
-from utils import read_all_files, save_final_results
-from tsp_1_verify_utils import (extract_solution_with_separation, verify_start_end_depot, verify_euclidean_dist,
-                                verify_city_group_visitation, reflect_num, test_file_num, cities_5, cities_10,
-                                tsp_1_filter_files)
+from others.utils import read_all_files, save_final_results
+from others.tsp_1_verify_utils import (extract_solution_with_separation, verify_start_end_depot, verify_euclidean_dist,
+                                       verify_city_group_visitation, reflect_num, test_file_num, cities_5, cities_10,
+                                       tsp_1_filter_files)
 
 city_groups_5 = {
     'A': [1, 4],

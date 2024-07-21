@@ -2,10 +2,10 @@ import argparse
 import copy
 import sys
 
-from tsp_1_verify_utils import (extract_solution_with_separation, verify_start_end_depot, verify_visit_city_once,
-                                verify_euclidean_dist, verify_sequence_constraints, reflect_num,
-                                test_file_num, cities_5, cities_10, tsp_1_filter_files)
-from utils import read_all_files, save_final_results
+from others.tsp_1_verify_utils import (extract_solution_with_separation, verify_start_end_depot, verify_visit_city_once,
+                                       verify_euclidean_dist, verify_sequence_constraints, reflect_num,
+                                       test_file_num, cities_5, cities_10, tsp_1_filter_files)
+from others.utils import read_all_files, save_final_results
 
 sequence_order_5 = [1, 2, 4]
 sequence_order_10 = [2, 6, 8, 9]

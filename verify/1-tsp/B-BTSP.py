@@ -2,8 +2,8 @@ import argparse
 import copy
 import sys
 
-from utils import read_all_files, save_final_results
-from tsp_1_verify_utils import extract_solution_with_separation, verify_start_end_depot, verify_visit_city_once, \
+from others.utils import read_all_files, save_final_results
+from others.tsp_1_verify_utils import extract_solution_with_separation, verify_start_end_depot, verify_visit_city_once, \
     verify_euclidean_dist, reflect_num, test_file_num, cities_5, cities_10, tsp_1_filter_files, verify_max_dist_two_city
 
 

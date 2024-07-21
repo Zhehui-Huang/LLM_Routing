@@ -1,8 +1,8 @@
 import argparse
 import sys
 
-from utils import read_all_files, save_final_results
-from verify_utils import extract_solution_with_separation, verify_start_end_depot, verify_visit_city_once, \
+from others.utils import read_all_files, save_final_results
+from others.verify_utils import extract_solution_with_separation, verify_start_end_depot, verify_visit_city_once, \
     verify_num_robots, verify_euclidean_dist, verify_start_multi_end_depot, verify_visit_city_multi_depots_once, \
     verify_energy, reflect_num, test_file_num
 import numpy as np

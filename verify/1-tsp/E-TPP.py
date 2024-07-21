@@ -2,11 +2,11 @@ import argparse
 import copy
 import sys
 
-from utils import read_all_files, save_final_results
-from tsp_1_verify_utils import (extract_solution_with_separation, verify_start_end_depot,
-                                verify_city_visitation_at_most_once, verify_total_travel_prod_cost,
-                                reflect_num, test_file_num, cities_5, cities_10, tsp_1_filter_files,
-                                verify_total_units_purchased)
+from others.utils import read_all_files, save_final_results
+from others.tsp_1_verify_utils import (extract_solution_with_separation, verify_start_end_depot,
+                                       verify_city_visitation_at_most_once, verify_total_travel_prod_cost,
+                                       reflect_num, test_file_num, cities_5, cities_10, tsp_1_filter_files,
+                                       verify_total_units_purchased)
 
 city_products_5 = {
     1: {'units': 5, 'price': 8},

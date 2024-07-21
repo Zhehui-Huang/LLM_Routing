@@ -2,10 +2,10 @@ import argparse
 import copy
 import sys
 
-from utils import read_all_files, save_final_results
-from tsp_1_verify_utils import (extract_solution_with_separation, verify_euclidean_dist, verify_start_multi_end_depot,
-                                verify_visit_city_multi_depots_once, reflect_num, test_file_num, cities_5, cities_10,
-                                calculate_distance, tsp_1_filter_files)
+from others.utils import read_all_files, save_final_results
+from others.tsp_1_verify_utils import (extract_solution_with_separation, verify_euclidean_dist, verify_start_multi_end_depot,
+                                       verify_visit_city_multi_depots_once, reflect_num, test_file_num, cities_5, cities_10,
+                                       calculate_distance, tsp_1_filter_files)
 
 depot_lists_5 = [1, 3]
 energy_unit_5 = 9
