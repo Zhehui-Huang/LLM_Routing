@@ -4,12 +4,12 @@ import argparse
 
 from openai import OpenAI
 
-from gpt_utils import ask_gpt, nl_to_math_to_sol
+from gpt_utils import ask_gpt, nl_to_math_to_sol, save_evaluation
 from task_specify_sol_req import sol_req_dict
-from utils import read_file, read_all_files, reflect_solution, extract_execute_code, save_evaluation, save_math_form
+from utils import read_file, read_all_files, execute_solutions, save_math_form
 
 
-def solve_problem(python_file_path, env_and_task, sol_req, args):
+def solve_problem(sol_code_path, env_and_task, sol_req, args):
     # Restart OpenAI
     client = OpenAI()
     # Translate natural language task descriptions (NLTD) to solutions.
@@ -18,15 +18,13 @@ def solve_problem(python_file_path, env_and_task, sol_req, args):
         sol_content = ask_gpt(questions=task_descriptions, client=client, args=args)
     elif args.prompt_paradigm in ['nl_to_math_to_sol', 'nl_to_math_to_sol_tool']: #TODO: Support nl_to_math_to_sol_tool
         sol_content, math_content = nl_to_math_to_sol(env_and_task=env_and_task, client=client, args=args, sol_req=sol_req)
-        save_math_form(python_file_path, math_content)
+        save_math_form(sol_code_path, math_content)
     else:
         raise NotImplementedError(f'args.prompt_paradigm: {args.prompt_paradigm} is not implemented!')
 
-    external_solutions, total_time = extract_execute_code(
-        problem_solving_content=sol_content, python_file_path=python_file_path, reflect_id=0)
-    extra_eval_content = 'This is without reflect!'
-    save_evaluation(python_file_path=python_file_path, external_solutions=external_solutions,
-                    total_time=total_time, extra_eval_content=extra_eval_content, reflect_id=0)
+    execute_res, execute_time = execute_solutions(sol_content=sol_content, sol_code_path=sol_code_path, reflect_id=0)
+    save_evaluation(sol_code_path=sol_code_path, execute_res=execute_res, execute_time=execute_time, verify_content='',
+                    extra_note='This is without reflect!', reflect_id=0)
 
     # Get constraints from the task descriptions.
     # constraints_content_test = get_constraints(env_and_task)
@@ -41,10 +39,10 @@ def solve_problem(python_file_path, env_and_task, sol_req, args):
     )
 
     final_external_solutions, final_total_time, find_solution_flag, extra_eval_content = reflect_solution(
-        ori_python_file_path=python_file_path, math_content_modify=None, client=client, gpt_model=args.gpt_model,
-        reflect_num=args.reflect_num, question_for_answer=question_for_answer, external_solutions=external_solutions,
-        total_time=total_time, env_and_task=env_and_task, sol_given_parts=sol_given_parts, external_solver=False,
-        external_tool_name="", reply_content=sol_content
+        env_and_task=env_and_task, sol_req=sol_req, question_for_answer=question_for_answer,
+        sol_content=sol_content, sol_code_path=sol_code_path, execute_res=execute_res, execute_time=execute_time,
+        math_content_modify=None, external_solver=False, external_tool_name="",
+        client=client, args=args,
     )
 
     if find_solution_flag is False:
@@ -80,13 +78,13 @@ def main():
     sol_path = f'solution/{args.gpt_model}/{args.prompt_paradigm}'
     for file_path in text_files_loc:
         for tid in range(args.evaluate_num):
-            python_file_path = os.path.join(sol_path, file_path[:-4] + f'_{tid}' + '.py')
-            directory = os.path.dirname(python_file_path)
+            sol_code_path = os.path.join(sol_path, file_path[:-4] + f'_{tid}' + '.py')
+            directory = os.path.dirname(sol_code_path)
             if not os.path.exists(directory):
                 os.makedirs(directory)
 
-            if os.path.exists(python_file_path):
-                print('python_file_path exists:', python_file_path, sep='\n')
+            if os.path.exists(sol_code_path):
+                print('sol_code_path exists:', sol_code_path, sep='\n')
                 continue
 
             parts = file_path.split('/')
@@ -101,7 +99,7 @@ def main():
             sol_req_key = f"{parts[2][0]}_{robot_num}"
             sol_req = sol_req_dict[sol_req_key]
 
-            solve_problem(python_file_path=python_file_path, env_and_task=env_and_task, sol_req=sol_req, args=args)
+            solve_problem(sol_code_path=sol_code_path, env_and_task=env_and_task, sol_req=sol_req, args=args)
 
 
 if __name__ == '__main__':
