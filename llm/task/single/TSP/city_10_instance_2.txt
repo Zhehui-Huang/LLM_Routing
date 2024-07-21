@@ -1,0 +1,41 @@
+###
+Environment information
+===
+There are 10 cities.
+Depot city 0: (52, 45)
+City 1: (92, 98)
+City 2: (56, 4)
+City 3: (98, 92)
+City 4: (58, 57)
+City 5: (9, 54)
+City 6: (90, 4)
+City 7: (34, 80)
+City 8: (28, 48)
+City 9: (53, 23)
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities. 
+
+###
+Task
+===
+The robot needs to visit all cities exactly once, except the depot city, and then return to the depot city.
+Please find the shortest tour for the robot.
+
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 100, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+
+###

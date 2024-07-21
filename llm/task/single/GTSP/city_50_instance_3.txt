@@ -1,0 +1,89 @@
+###
+Environment information
+===
+There are 50 cities.
+Depot city 0: (37, 21)
+City 1: (70, 41)
+City 2: (16, 38)
+City 3: (41, 54)
+City 4: (82, 43)
+City 5: (4, 21)
+City 6: (0, 33)
+City 7: (33, 84)
+City 8: (30, 16)
+City 9: (42, 9)
+City 10: (34, 73)
+City 11: (32, 62)
+City 12: (27, 19)
+City 13: (1, 68)
+City 14: (83, 52)
+City 15: (43, 23)
+City 16: (6, 64)
+City 17: (47, 44)
+City 18: (99, 36)
+City 19: (82, 93)
+City 20: (74, 21)
+City 21: (5, 55)
+City 22: (35, 14)
+City 23: (94, 7)
+City 24: (61, 2)
+City 25: (94, 24)
+City 26: (62, 35)
+City 27: (19, 11)
+City 28: (83, 44)
+City 29: (3, 25)
+City 30: (72, 52)
+City 31: (63, 33)
+City 32: (72, 12)
+City 33: (11, 38)
+City 34: (78, 93)
+City 35: (43, 13)
+City 36: (35, 22)
+City 37: (51, 53)
+City 38: (35, 56)
+City 39: (13, 3)
+City 40: (73, 16)
+City 41: (96, 94)
+City 42: (73, 79)
+City 43: (20, 96)
+City 44: (47, 84)
+City 45: (11, 13)
+City 46: (11, 1)
+City 47: (18, 97)
+City 48: (0, 45)
+City 49: (57, 24)
+
+There are 6 city groups: 
+Group 0: [3, 8, 16, 18, 25, 35, 36, 37, 45]
+Group 1: [1, 2, 5, 9, 11, 13, 43, 49]
+Group 2: [19, 27, 29, 34, 38, 40, 44, 46]
+Group 3: [4, 20, 24, 30, 39, 42, 47, 48]
+Group 4: [6, 10, 14, 17, 21, 22, 31, 32]
+Group 5: [7, 12, 15, 23, 26, 28, 33, 41]
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities. 
+
+###
+Task
+===
+The robot needs to visit at least one city from each group of cities, starting and ending at the depot city.
+Please find the shortest tour for the robot.
+
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 100, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+
+###
