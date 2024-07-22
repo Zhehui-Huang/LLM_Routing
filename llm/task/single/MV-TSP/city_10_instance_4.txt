@@ -2,27 +2,27 @@
 Environment information
 ===
 There are 10 cities.
-Depot city 0: (68, 58)
-City 1: (37, 95)
-City 2: (55, 94)
-City 3: (49, 13)
-City 4: (60, 18)
-City 5: (23, 36)
-City 6: (51, 37)
-City 7: (82, 81)
-City 8: (67, 37)
-City 9: (61, 43)
+Depot city 0: (41, 60)
+City 1: (48, 85)
+City 2: (96, 58)
+City 3: (68, 26)
+City 4: (59, 69)
+City 5: (77, 37)
+City 6: (23, 20)
+City 7: (4, 45)
+City 8: (89, 38)
+City 9: (77, 17)
 
 The depot city can be visited any number of times. The rest of cities need to be visited the following number of times: 
-City 1: 1
-City 2: 2
-City 3: 2
-City 4: 1
-City 5: 1
-City 6: 2
-City 7: 3
-City 8: 3
-City 9: 1
+City 1: 2
+City 2: 1
+City 3: 3
+City 4: 3
+City 5: 2
+City 6: 3
+City 7: 2
+City 8: 1
+City 9: 3
 ###
 
 ###

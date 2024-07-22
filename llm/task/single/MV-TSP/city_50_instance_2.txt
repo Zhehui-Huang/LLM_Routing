@@ -2,106 +2,106 @@
 Environment information
 ===
 There are 50 cities.
-Depot city 0: (59, 14)
-City 1: (58, 55)
-City 2: (38, 78)
-City 3: (49, 30)
-City 4: (51, 30)
-City 5: (5, 58)
-City 6: (75, 75)
-City 7: (16, 3)
-City 8: (27, 78)
-City 9: (60, 0)
-City 10: (86, 8)
-City 11: (41, 73)
-City 12: (82, 12)
-City 13: (42, 74)
-City 14: (88, 78)
-City 15: (68, 77)
-City 16: (69, 4)
-City 17: (22, 15)
-City 18: (0, 97)
-City 19: (47, 75)
-City 20: (15, 99)
-City 21: (45, 33)
-City 22: (99, 31)
-City 23: (59, 17)
-City 24: (29, 91)
-City 25: (96, 89)
-City 26: (82, 64)
-City 27: (48, 2)
-City 28: (90, 35)
-City 29: (95, 41)
-City 30: (15, 67)
-City 31: (24, 44)
-City 32: (32, 74)
-City 33: (67, 46)
-City 34: (90, 39)
-City 35: (80, 66)
-City 36: (84, 82)
-City 37: (12, 87)
-City 38: (3, 32)
-City 39: (41, 29)
-City 40: (56, 51)
-City 41: (57, 37)
-City 42: (92, 20)
-City 43: (46, 56)
-City 44: (88, 83)
-City 45: (67, 62)
-City 46: (57, 92)
-City 47: (24, 29)
-City 48: (67, 56)
-City 49: (82, 43)
+Depot city 0: (77, 81)
+City 1: (19, 45)
+City 2: (41, 22)
+City 3: (68, 76)
+City 4: (4, 66)
+City 5: (1, 41)
+City 6: (22, 40)
+City 7: (49, 37)
+City 8: (51, 37)
+City 9: (91, 73)
+City 10: (79, 21)
+City 11: (61, 66)
+City 12: (99, 77)
+City 13: (10, 46)
+City 14: (93, 23)
+City 15: (87, 87)
+City 16: (55, 24)
+City 17: (12, 58)
+City 18: (31, 52)
+City 19: (5, 56)
+City 20: (98, 46)
+City 21: (22, 75)
+City 22: (13, 2)
+City 23: (12, 37)
+City 24: (0, 11)
+City 25: (11, 78)
+City 26: (65, 29)
+City 27: (23, 89)
+City 28: (87, 52)
+City 29: (20, 44)
+City 30: (54, 7)
+City 31: (52, 21)
+City 32: (48, 21)
+City 33: (45, 38)
+City 34: (64, 29)
+City 35: (17, 49)
+City 36: (74, 67)
+City 37: (14, 75)
+City 38: (65, 66)
+City 39: (81, 84)
+City 40: (24, 84)
+City 41: (39, 40)
+City 42: (80, 66)
+City 43: (99, 64)
+City 44: (66, 65)
+City 45: (25, 2)
+City 46: (74, 32)
+City 47: (41, 98)
+City 48: (39, 56)
+City 49: (34, 12)
 
 The depot city can be visited any number of times. The rest of cities need to be visited the following number of times: 
-City 1: 2
+City 1: 3
 City 2: 3
 City 3: 1
-City 4: 3
-City 5: 3
+City 4: 2
+City 5: 1
 City 6: 3
-City 7: 1
+City 7: 3
 City 8: 2
-City 9: 1
+City 9: 3
 City 10: 2
 City 11: 1
 City 12: 3
-City 13: 2
-City 14: 2
-City 15: 2
-City 16: 3
+City 13: 3
+City 14: 1
+City 15: 1
+City 16: 2
 City 17: 2
-City 18: 2
+City 18: 1
 City 19: 3
-City 20: 2
-City 21: 1
-City 22: 1
+City 20: 1
+City 21: 3
+City 22: 3
 City 23: 2
-City 24: 2
-City 25: 3
+City 24: 1
+City 25: 2
 City 26: 2
-City 27: 3
-City 28: 1
-City 29: 2
-City 30: 2
-City 31: 2
-City 32: 1
+City 27: 1
+City 28: 3
+City 29: 1
+City 30: 3
+City 31: 1
+City 32: 2
 City 33: 3
 City 34: 3
-City 35: 1
-City 36: 3
-City 37: 2
-City 38: 1
-City 39: 1
-City 40: 2
-City 41: 3
-City 42: 3
-City 43: 2
+City 35: 3
+City 36: 1
+City 37: 3
+City 38: 3
+City 39: 3
+City 40: 1
+City 41: 1
+City 42: 2
+City 43: 3
 City 44: 1
-City 45: 3
-City 46: 1
-City 47: 3
-City 48: 3
+City 45: 1
+City 46: 3
+City 47: 1
+City 48: 1
 City 49: 2
 ###
 

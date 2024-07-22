@@ -76,6 +76,10 @@ def write_city_info(depot_loc, rest_cities_loc, path):
 def get_ktsp_k_list(city_num):
     if city_num == 10:
         k_list = [4, 5, 6, 7, 8]
+    elif city_num == 15:
+        k_list = [4, 6, 8, 10, 12]
+    elif city_num == 20:
+        k_list = [4, 7, 10, 13, 16]
     elif city_num == 25:
         k_list = [4, 8, 12, 16, 20]
     elif city_num == 50:
@@ -85,3 +89,15 @@ def get_ktsp_k_list(city_num):
 
     return k_list
 
+
+def read_txt_file(file_path):
+    with open(file_path, 'r') as f:
+        data = f.read()
+    return data
+
+
+def write_txt_file(file_name, content):
+    os.makedirs(os.path.dirname(file_name), exist_ok=True)
+    with open(file_name, 'w') as f:
+        f.write(content)
+        print(f'Write problem description to {file_name}')

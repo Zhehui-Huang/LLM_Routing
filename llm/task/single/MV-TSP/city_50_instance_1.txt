@@ -2,106 +2,106 @@
 Environment information
 ===
 There are 50 cities.
-Depot city 0: (65, 18)
-City 1: (87, 66)
-City 2: (18, 53)
-City 3: (20, 36)
-City 4: (33, 26)
-City 5: (36, 85)
-City 6: (6, 13)
-City 7: (65, 78)
-City 8: (63, 21)
-City 9: (33, 3)
-City 10: (32, 18)
-City 11: (61, 52)
-City 12: (1, 59)
-City 13: (4, 44)
-City 14: (80, 42)
-City 15: (2, 45)
-City 16: (33, 69)
-City 17: (46, 49)
-City 18: (53, 45)
-City 19: (0, 25)
-City 20: (25, 25)
-City 21: (68, 45)
-City 22: (9, 72)
-City 23: (15, 55)
-City 24: (69, 25)
-City 25: (35, 9)
-City 26: (76, 59)
-City 27: (68, 49)
-City 28: (60, 99)
-City 29: (96, 32)
-City 30: (78, 70)
-City 31: (95, 42)
-City 32: (40, 86)
-City 33: (40, 70)
-City 34: (86, 16)
-City 35: (94, 15)
-City 36: (74, 75)
-City 37: (5, 25)
-City 38: (75, 80)
-City 39: (52, 52)
-City 40: (78, 86)
-City 41: (62, 59)
-City 42: (4, 13)
-City 43: (99, 11)
-City 44: (48, 8)
-City 45: (15, 57)
-City 46: (6, 84)
-City 47: (90, 34)
-City 48: (95, 31)
-City 49: (29, 97)
+Depot city 0: (34, 2)
+City 1: (8, 50)
+City 2: (85, 92)
+City 3: (76, 26)
+City 4: (49, 63)
+City 5: (42, 97)
+City 6: (22, 12)
+City 7: (34, 86)
+City 8: (67, 64)
+City 9: (37, 47)
+City 10: (87, 73)
+City 11: (6, 10)
+City 12: (54, 31)
+City 13: (51, 63)
+City 14: (2, 49)
+City 15: (60, 70)
+City 16: (64, 41)
+City 17: (6, 51)
+City 18: (44, 98)
+City 19: (16, 70)
+City 20: (58, 33)
+City 21: (9, 87)
+City 22: (6, 85)
+City 23: (87, 86)
+City 24: (19, 61)
+City 25: (15, 73)
+City 26: (32, 35)
+City 27: (38, 29)
+City 28: (43, 12)
+City 29: (39, 31)
+City 30: (55, 49)
+City 31: (87, 93)
+City 32: (31, 97)
+City 33: (95, 84)
+City 34: (36, 30)
+City 35: (59, 14)
+City 36: (60, 48)
+City 37: (10, 39)
+City 38: (31, 53)
+City 39: (94, 91)
+City 40: (23, 73)
+City 41: (60, 97)
+City 42: (71, 38)
+City 43: (30, 93)
+City 44: (60, 85)
+City 45: (32, 61)
+City 46: (40, 91)
+City 47: (27, 47)
+City 48: (39, 34)
+City 49: (11, 43)
 
 The depot city can be visited any number of times. The rest of cities need to be visited the following number of times: 
-City 1: 2
+City 1: 1
 City 2: 1
 City 3: 2
-City 4: 1
-City 5: 1
+City 4: 3
+City 5: 3
 City 6: 2
 City 7: 2
 City 8: 3
 City 9: 2
-City 10: 2
+City 10: 1
 City 11: 3
-City 12: 1
-City 13: 3
+City 12: 3
+City 13: 2
 City 14: 1
-City 15: 3
-City 16: 2
-City 17: 2
+City 15: 1
+City 16: 3
+City 17: 3
 City 18: 3
-City 19: 1
-City 20: 3
-City 21: 3
-City 22: 1
+City 19: 2
+City 20: 2
+City 21: 1
+City 22: 2
 City 23: 3
-City 24: 2
-City 25: 3
+City 24: 3
+City 25: 2
 City 26: 2
 City 27: 3
 City 28: 3
 City 29: 1
-City 30: 2
-City 31: 3
-City 32: 1
-City 33: 3
-City 34: 2
+City 30: 1
+City 31: 2
+City 32: 2
+City 33: 1
+City 34: 1
 City 35: 3
 City 36: 2
-City 37: 1
-City 38: 3
-City 39: 1
-City 40: 2
-City 41: 3
+City 37: 3
+City 38: 1
+City 39: 2
+City 40: 3
+City 41: 1
 City 42: 2
-City 43: 3
-City 44: 1
-City 45: 1
-City 46: 1
-City 47: 1
-City 48: 1
+City 43: 1
+City 44: 3
+City 45: 2
+City 46: 3
+City 47: 2
+City 48: 3
 City 49: 2
 ###
 

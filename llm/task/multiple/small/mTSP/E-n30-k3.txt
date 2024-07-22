@@ -1,0 +1,70 @@
+###
+Environment information
+===
+There are 30 cities.
+Cities and Coordinates:
+Depot city 0: (162, 354)
+City 1: (218, 382)
+City 2: (218, 358)
+City 3: (201, 370)
+City 4: (214, 371)
+City 5: (224, 370)
+City 6: (210, 382)
+City 7: (104, 354)
+City 8: (126, 338)
+City 9: (119, 340)
+City 10: (129, 349)
+City 11: (126, 347)
+City 12: (125, 346)
+City 13: (116, 355)
+City 14: (126, 335)
+City 15: (125, 355)
+City 16: (119, 357)
+City 17: (115, 341)
+City 18: (153, 351)
+City 19: (175, 363)
+City 20: (180, 360)
+City 21: (159, 331)
+City 22: (188, 357)
+City 23: (152, 349)
+City 24: (215, 389)
+City 25: (212, 394)
+City 26: (188, 393)
+City 27: (207, 406)
+City 28: (184, 410)
+City 29: (207, 392)###
+
+
+###
+Robot Information
+===
+- Number of robots: 3
+- Starting location: All robots start at depot city 0.
+- Travel capability: Robots can travel between any two cities.
+- Travel cost: Calculated as the Euclidean distance between two cities.
+###
+###
+Task
+===
+The robots need to collectively visit all cities exactly once, except the depot city, and then return to the depot city.
+Please find the shortest tours for the robots.
+
+Format requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at the depot city 0.
+2) Please output the total travel cost for each tour and the overall total travel cost.
+
+For example, if there are two robots with the following tours and costs:
+Robot 1: 0 -> 1 -> 2 -> 0 with a travel cost of 50
+Robot 2: 0 -> 3 -> 4 -> 0 with a travel cost of 60
+then the output should be:
+
+Robot 1 Tour: [0, 1, 2, 0]
+Robot 1 Total Travel Cost: 50
+
+Robot 2 Tour: [0, 3, 4, 0]
+Robot 2 Total Travel Cost: 60
+
+Overall Total Travel Cost: 110
+
+###

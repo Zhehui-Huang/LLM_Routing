@@ -2,16 +2,16 @@
 Environment information
 ===
 There are 10 cities.
-Depot city 0: (8, 34)
-City 1: (47, 1)
-City 2: (83, 71)
-City 3: (27, 39)
-City 4: (86, 6)
-City 5: (23, 53)
-City 6: (77, 25)
-City 7: (54, 8)
-City 8: (37, 65)
-City 9: (8, 31)
+Depot city 0: (26, 51)
+City 1: (22, 39)
+City 2: (20, 50)
+City 3: (66, 98)
+City 4: (91, 56)
+City 5: (71, 4)
+City 6: (75, 80)
+City 7: (28, 47)
+City 8: (71, 87)
+City 9: (90, 73)
 ###
 
 ###

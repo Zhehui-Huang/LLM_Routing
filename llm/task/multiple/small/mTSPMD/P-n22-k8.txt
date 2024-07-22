@@ -1,0 +1,72 @@
+###
+Environment information
+===
+There are 22 cities.
+Cities and Coordinates:
+Depot city 0: (145, 215)
+Depot city 1: (151, 264)
+Depot city 2: (159, 261)
+Depot city 3: (130, 254)
+Depot city 4: (128, 252)
+Depot city 5: (163, 247)
+Depot city 6: (146, 246)
+Depot city 7: (161, 242)
+City 8: (142, 239)
+City 9: (163, 236)
+City 10: (148, 232)
+City 11: (128, 231)
+City 12: (156, 217)
+City 13: (129, 214)
+City 14: (146, 208)
+City 15: (164, 208)
+City 16: (141, 206)
+City 17: (147, 193)
+City 18: (164, 193)
+City 19: (129, 189)
+City 20: (155, 185)
+City 21: (139, 182)###
+
+
+###
+Robot Information
+===
+- Number of robots: 8
+- Starting and Ending Locations:
+Robot 0 starts and ends at depot city 0.
+Robot 1 starts and ends at depot city 1.
+Robot 2 starts and ends at depot city 2.
+Robot 3 starts and ends at depot city 3.
+Robot 4 starts and ends at depot city 4.
+Robot 5 starts and ends at depot city 5.
+Robot 6 starts and ends at depot city 6.
+Robot 7 starts and ends at depot city 7.
+- Travel Capability: Robots can travel between any two cities.
+- Travel Cost: Calculated as the Euclidean distance between two cities.
+###
+###
+Task Description
+===
+The robots need to collectively visit all cities exactly once and then return to their respective depots.
+Each robot starts and ends at its assigned depot.
+Please find the shortest tours for each robot.
+Ensure that the total travel cost for all robots is minimized.
+
+Format requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at its assigned depot.
+2) Please output the total travel cost for each tour and the overall total travel cost.
+
+For example, if there are two robots with the following tours and costs:
+Robot 1 (Depot 0): 0 -> 1 -> 2 -> 0 with a travel cost of 50
+Robot 2 (Depot 3): 3 -> 4 -> 5 -> 3 with a travel cost of 60
+then the output should be:
+
+Robot 1 Tour: [0, 1, 2, 0]
+Robot 1 Total Travel Cost: 50
+
+Robot 2 Tour: [3, 4, 5, 3]
+Robot 2 Total Travel Cost: 60
+
+Overall Total Travel Cost: 110
+
+###

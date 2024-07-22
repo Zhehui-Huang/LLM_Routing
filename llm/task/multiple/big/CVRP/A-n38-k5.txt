@@ -1,0 +1,127 @@
+###
+Environment information
+===
+There are 38 cities.
+Cities and Coordinates:
+Depot city 0: (69, 63)
+City 1: (3, 35)
+City 2: (71, 79)
+City 3: (1, 47)
+City 4: (11, 15)
+City 5: (87, 23)
+City 6: (37, 33)
+City 7: (87, 29)
+City 8: (35, 81)
+City 9: (55, 71)
+City 10: (41, 51)
+City 11: (93, 9)
+City 12: (11, 49)
+City 13: (75, 89)
+City 14: (75, 69)
+City 15: (97, 95)
+City 16: (15, 13)
+City 17: (63, 95)
+City 18: (47, 41)
+City 19: (45, 41)
+City 20: (89, 43)
+City 21: (45, 59)
+City 22: (95, 23)
+City 23: (19, 83)
+City 24: (71, 69)
+City 25: (27, 19)
+City 26: (17, 57)
+City 27: (93, 15)
+City 28: (59, 29)
+City 29: (35, 39)
+City 30: (33, 51)
+City 31: (61, 21)
+City 32: (89, 53)
+City 33: (33, 85)
+City 34: (37, 37)
+City 35: (21, 91)
+City 36: (67, 95)
+City 37: (61, 15)
+
+Demand list:
+City 0: 0
+City 1: 12
+City 2: 5
+City 3: 8
+City 4: 12
+City 5: 18
+City 6: 12
+City 7: 11
+City 8: 19
+City 9: 23
+City 10: 8
+City 11: 25
+City 12: 1
+City 13: 5
+City 14: 17
+City 15: 13
+City 16: 9
+City 17: 13
+City 18: 19
+City 19: 5
+City 20: 26
+City 21: 9
+City 22: 20
+City 23: 21
+City 24: 8
+City 25: 12
+City 26: 13
+City 27: 12
+City 28: 4
+City 29: 19
+City 30: 25
+City 31: 7
+City 32: 3
+City 33: 2
+City 34: 24
+City 35: 13
+City 36: 14
+City 37: 14
+###
+
+
+###
+Robot Information
+===
+- Number of robots: 5
+- The capacity of each robot: 100
+- Starting location: All robots start at depot city 0.
+- Travel capability: Robots can travel between any two cities.
+- Travel cost: Calculated as the Euclidean distance between two cities.
+###
+###
+Task Description
+===
+The robots need to collectively deliver goods to all cities, except the depot city, and then return to the depot city.
+Each robot has the same carrying capacity.
+Each city has a specific demand that must be met.
+Please find the shortest tours for the robots while ensuring that:
+- The demand of each city is met.
+- The capacity constraints of the robots are not violated.
+Minimize the total travel cost for all tours.
+
+###
+Format Requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at the depot city 0.
+2) Please output the total travel cost for each tour and the overall total travel cost.
+3) Ensure that the demand of each city is met and the capacity constraints of each robot are not violated.
+
+For example, if there are two robots with the following tours and costs:
+Robot 1: 0 -> 1 -> 2 -> 0 with a travel cost of 50
+Robot 2: 0 -> 3 -> 4 -> 0 with a travel cost of 60
+then the output should be:
+
+Robot 1 Tour: [0, 1, 2, 0]
+Robot 1 Total Travel Cost: 50
+
+Robot 2 Tour: [0, 3, 4, 0]
+Robot 2 Total Travel Cost: 60
+
+Overall Total Travel Cost: 110
+
+###

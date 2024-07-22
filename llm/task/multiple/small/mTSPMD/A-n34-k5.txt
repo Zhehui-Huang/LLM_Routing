@@ -1,0 +1,81 @@
+###
+Environment information
+===
+There are 34 cities.
+Cities and Coordinates:
+Depot city 0: (73, 39)
+Depot city 1: (67, 91)
+Depot city 2: (39, 21)
+Depot city 3: (3, 9)
+Depot city 4: (97, 15)
+City 5: (91, 65)
+City 6: (55, 75)
+City 7: (55, 71)
+City 8: (57, 85)
+City 9: (21, 15)
+City 10: (47, 57)
+City 11: (51, 97)
+City 12: (11, 11)
+City 13: (43, 59)
+City 14: (63, 69)
+City 15: (55, 77)
+City 16: (35, 11)
+City 17: (27, 91)
+City 18: (49, 25)
+City 19: (29, 93)
+City 20: (71, 27)
+City 21: (31, 43)
+City 22: (27, 9)
+City 23: (67, 99)
+City 24: (87, 81)
+City 25: (23, 81)
+City 26: (89, 33)
+City 27: (71, 91)
+City 28: (19, 77)
+City 29: (65, 77)
+City 30: (87, 79)
+City 31: (19, 83)
+City 32: (1, 59)
+City 33: (55, 7)###
+
+
+###
+Robot Information
+===
+- Number of robots: 5
+- Starting and Ending Locations:
+Robot 0 starts and ends at depot city 0.
+Robot 1 starts and ends at depot city 1.
+Robot 2 starts and ends at depot city 2.
+Robot 3 starts and ends at depot city 3.
+Robot 4 starts and ends at depot city 4.
+- Travel Capability: Robots can travel between any two cities.
+- Travel Cost: Calculated as the Euclidean distance between two cities.
+###
+###
+Task Description
+===
+The robots need to collectively visit all cities exactly once and then return to their respective depots.
+Each robot starts and ends at its assigned depot.
+Please find the shortest tours for each robot.
+Ensure that the total travel cost for all robots is minimized.
+
+Format requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at its assigned depot.
+2) Please output the total travel cost for each tour and the overall total travel cost.
+
+For example, if there are two robots with the following tours and costs:
+Robot 1 (Depot 0): 0 -> 1 -> 2 -> 0 with a travel cost of 50
+Robot 2 (Depot 3): 3 -> 4 -> 5 -> 3 with a travel cost of 60
+then the output should be:
+
+Robot 1 Tour: [0, 1, 2, 0]
+Robot 1 Total Travel Cost: 50
+
+Robot 2 Tour: [3, 4, 5, 3]
+Robot 2 Total Travel Cost: 60
+
+Overall Total Travel Cost: 110
+
+###

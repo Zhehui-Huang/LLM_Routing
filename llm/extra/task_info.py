@@ -1,4 +1,3 @@
-
 def a_tsp_task():
     task_info = (
         '###\n'
@@ -38,6 +37,7 @@ def d_ktsp_task(k):
     )
     return task_info
 
+
 def e_mvtsp_task():
     task_info = (
         '###\n'
@@ -63,4 +63,67 @@ def get_task_info(task_name, k=-1):
         task_info = e_mvtsp_task()
     else:
         raise ValueError(f'Invalid task name: {task_name}')
+    return task_info
+
+
+def a_mtsp_task():
+    task_info = (
+        '###\n'
+        'Task\n===\n'
+        'The robots need to collectively visit all cities exactly once, except the depot city, and then return to the depot city.\n'
+    )
+    task_info += 'Please find the shortest tours for the robots.\n\n'
+    return task_info
+
+
+def b_mtsp_minmax_task():
+    task_info = (
+        '###\n'
+        'Task\n===\n'
+        'The robots need to collectively visit all cities exactly once, except the depot city, and then return to the depot city.\n'
+        'Please minimize the maximum distance traveled by any single robot.\n\n'
+    )
+    return task_info
+
+
+def c_mtspmd_task():
+    task_info = (
+        '###\n'
+        'Task Description\n===\n'
+        'The robots need to collectively visit all cities exactly once and then return to their respective depots.\n'
+        'Each robot starts and ends at its assigned depot.\n'
+        'Please find the shortest tours for each robot.\n'
+        'Ensure that the total travel cost for all robots is minimized.\n\n'
+    )
+    return task_info
+
+
+def d_cvrp_task():
+    task_info = (
+        '###\n'
+        'Task Description\n===\n'
+        'The robots need to collectively deliver goods to all cities, except the depot city, and then return to the depot city.\n'
+        'Each robot has the same carrying capacity.\n'
+        'Each city has a specific demand that must be met.\n'
+        'Please find the shortest tours for the robots while ensuring that:\n'
+        '- The demand of each city is met.\n'
+        '- The capacity constraints of the robots are not violated.\n'
+        'Minimize the total travel cost for all tours.\n\n'
+    )
+    return task_info
+
+
+def get_multi_task_info(task_name):
+    # TASK_LIST = ['mTSP', 'mTSP_MinMax', 'mTSPMD', 'CVRP']
+    if task_name == 'mTSP':
+        task_info = a_mtsp_task()
+    elif task_name == 'mTSP_MinMax':
+        task_info = b_mtsp_minmax_task()
+    elif task_name == 'mTSPMD':
+        task_info = c_mtspmd_task()
+    elif task_name == 'CVRP':
+        task_info = d_cvrp_task()
+    else:
+        raise ValueError(f'Invalid task name: {task_name}')
+
     return task_info

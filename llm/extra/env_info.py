@@ -4,7 +4,7 @@ import numpy as np
 from utils import get_cities
 
 
-def get_env_info_str(city_num, instance_id, task_name, depot_loc, rest_cities_loc, extra_env_info_str):
+def get_env_info_str(city_num, depot_loc, rest_cities_loc, extra_env_info_str):
     # Environment information prex
     env_info = f'###\nEnvironment information\n===\nThere are {city_num} cities.\n'
 
@@ -20,3 +20,15 @@ def get_env_info_str(city_num, instance_id, task_name, depot_loc, rest_cities_lo
     city_loc_str += '###\n\n'
 
     return env_info + city_loc_str
+
+
+def get_multi_env_info_str(original_info, extra_env_info_str):
+    env_info = f'###\nEnvironment information\n===\n' + original_info
+
+    # Extra environment information
+    if extra_env_info_str != '':
+        env_info += extra_env_info_str
+
+    env_info += '###\n\n'
+
+    return env_info
