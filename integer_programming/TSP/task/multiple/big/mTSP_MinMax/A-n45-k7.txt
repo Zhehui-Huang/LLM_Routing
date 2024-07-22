@@ -1,0 +1,87 @@
+###
+Environment information
+===
+There are 45 cities.
+Cities and Coordinates:
+Depot city 0: (61, 99)
+City 1: (95, 7)
+City 2: (45, 87)
+City 3: (15, 47)
+City 4: (39, 75)
+City 5: (55, 23)
+City 6: (29, 71)
+City 7: (87, 79)
+City 8: (75, 63)
+City 9: (65, 61)
+City 10: (73, 35)
+City 11: (17, 35)
+City 12: (39, 99)
+City 13: (75, 77)
+City 14: (49, 37)
+City 15: (85, 31)
+City 16: (89, 71)
+City 17: (89, 43)
+City 18: (79, 81)
+City 19: (45, 5)
+City 20: (93, 69)
+City 21: (49, 69)
+City 22: (63, 25)
+City 23: (93, 33)
+City 24: (39, 45)
+City 25: (89, 33)
+City 26: (47, 77)
+City 27: (29, 19)
+City 28: (13, 65)
+City 29: (33, 9)
+City 30: (63, 9)
+City 31: (41, 13)
+City 32: (67, 75)
+City 33: (41, 27)
+City 34: (49, 77)
+City 35: (57, 81)
+City 36: (45, 5)
+City 37: (83, 7)
+City 38: (81, 61)
+City 39: (57, 81)
+City 40: (93, 89)
+City 41: (17, 13)
+City 42: (89, 27)
+City 43: (7, 25)
+City 44: (35, 35)
+###
+
+###
+Robot Information
+===
+- Number of robots: 7. Robot id starts from 0.
+- Starting location: All robots start at depot city 0.
+- Travel capability: Robots can travel between any two cities.
+- Travel cost: Calculated as the Euclidean distance between two cities.
+###
+
+###
+Task
+===
+The robots need to collectively visit all cities exactly once, except the depot city, and then return to the depot city.
+Please minimize the maximum distance traveled by any single robot.
+###
+
+###
+Format requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at the depot city 0.
+2) Please output the travel cost for each tour and the maximum travel cost among all tours.
+
+For example, if there are two robots with the following tours and costs:
+Robot 0: 0 -> 1 -> 2 -> 0 with a travel cost of 50
+Robot 1: 0 -> 3 -> 4 -> 0 with a travel cost of 60
+then the output should be:
+
+Robot 0 Tour: [0, 1, 2, 0]
+Robot 0 Total Travel Cost: 50
+
+Robot 1 Tour: [0, 3, 4, 0]
+Robot 1 Total Travel Cost: 60
+
+Maximum Travel Cost: 60
+###

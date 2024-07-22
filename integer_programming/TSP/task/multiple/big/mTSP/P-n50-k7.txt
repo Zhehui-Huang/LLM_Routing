@@ -1,0 +1,92 @@
+###
+Environment information
+===
+There are 50 cities.
+Cities and Coordinates:
+Depot city 0: (40, 40)
+City 1: (22, 22)
+City 2: (36, 26)
+City 3: (21, 45)
+City 4: (45, 35)
+City 5: (55, 20)
+City 6: (33, 34)
+City 7: (50, 50)
+City 8: (55, 45)
+City 9: (26, 59)
+City 10: (40, 66)
+City 11: (55, 65)
+City 12: (35, 51)
+City 13: (62, 35)
+City 14: (62, 57)
+City 15: (62, 24)
+City 16: (21, 36)
+City 17: (33, 44)
+City 18: (9, 56)
+City 19: (62, 48)
+City 20: (66, 14)
+City 21: (44, 13)
+City 22: (26, 13)
+City 23: (11, 28)
+City 24: (7, 43)
+City 25: (17, 64)
+City 26: (41, 46)
+City 27: (55, 34)
+City 28: (35, 16)
+City 29: (52, 26)
+City 30: (43, 26)
+City 31: (31, 76)
+City 32: (22, 53)
+City 33: (26, 29)
+City 34: (50, 40)
+City 35: (55, 50)
+City 36: (54, 10)
+City 37: (60, 15)
+City 38: (47, 66)
+City 39: (30, 60)
+City 40: (30, 50)
+City 41: (12, 17)
+City 42: (15, 14)
+City 43: (16, 19)
+City 44: (21, 48)
+City 45: (50, 30)
+City 46: (51, 42)
+City 47: (50, 15)
+City 48: (48, 21)
+City 49: (12, 38)
+###
+
+###
+Robot Information
+===
+- Number of robots: 7. Robot id starts from 0.
+- Starting location: All robots start at depot city 0.
+- Travel capability: Robots can travel between any two cities.
+- Travel cost: Calculated as the Euclidean distance between two cities.
+###
+
+###
+Task
+===
+The robots need to collectively visit all cities exactly once, except the depot city, and then return to the depot city.
+Please find the shortest tours for the robots.
+###
+
+###
+Format requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at the depot city 0.
+2) Please output the total travel cost for each tour and the overall total travel cost.
+
+For example, if there are two robots with the following tours and costs:
+Robot 0: 0 -> 1 -> 2 -> 0 with a travel cost of 50
+Robot 1: 0 -> 3 -> 4 -> 0 with a travel cost of 60
+then the output should be:
+
+Robot 0 Tour: [0, 1, 2, 0]
+Robot 0 Total Travel Cost: 50
+
+Robot 1 Tour: [0, 3, 4, 0]
+Robot 1 Total Travel Cost: 60
+
+Overall Total Travel Cost: 110
+###

@@ -1,0 +1,64 @@
+###
+Environment information
+===
+There are 15 cities.
+Depot city 0: (16, 90)
+City 1: (43, 99)
+City 2: (80, 21)
+City 3: (86, 92)
+City 4: (54, 93)
+City 5: (34, 73)
+City 6: (6, 61)
+City 7: (86, 69)
+City 8: (30, 50)
+City 9: (35, 73)
+City 10: (42, 64)
+City 11: (64, 30)
+City 12: (70, 95)
+City 13: (29, 64)
+City 14: (32, 79)
+
+The depot city can be visited any number of times. The rest of cities need to be visited the following number of times: 
+City 1: 3
+City 2: 3
+City 3: 1
+City 4: 3
+City 5: 2
+City 6: 3
+City 7: 1
+City 8: 3
+City 9: 3
+City 10: 2
+City 11: 3
+City 12: 2
+City 13: 1
+City 14: 1
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
+
+###
+Task
+===
+The robot needs to visit certain cities multiple times, starting and ending at the depot city. Each city must be visited the specified number of times. 
+The goal is to minimize the total travel cost while adhering to the visit requirements.
+###
+
+###
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 100, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+###
