@@ -7,6 +7,8 @@ import random
 import numpy as np
 import math
 # traveling salesman problem
+import os
+import pickle
 
 
 def generate_random_cities(n):
@@ -86,28 +88,57 @@ def solve_tsp(cities, distance_matrix):
     else:
         return None, None
 
-
+def read_city_locations(file_path):
+    city_locations = []
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+        for line in lines:
+            if "City" in line or "Depot" in line:
+                # Extract coordinates from the line
+                parts = line.split(':')
+                coordinates = parts[1].strip().strip('()').split(', ')
+                x = int(coordinates[0])
+                y = int(coordinates[1])
+                city_locations.append((x, y))
+    return city_locations
 
 # Example usage
 if __name__ == "__main__":
-    # cities = ["A", "B", "C", "D"]
-    # distance_matrix = [
-    #     [0, 10, 15, 20],
-    #     [10, 0, 35, 25],
-    #     [15, 35, 0, 30],
-    #     [20, 25, 30, 0]
-    # ]
+    file_names = []
+    # Get the current working directory
+    # make sure that the current folder is TSP
+    current_directory = os.getcwd()+'/task/single/TSP'
     
-    num_cities = 20
-    cities = generate_random_cities(num_cities)
-    distance_matrix = calculate_distance_matrix(cities)
+    # List all files in the current directory
+    files = os.listdir(current_directory)
+    for file_name in files:
+        if '25' in file_name or '50' in file_name:
+            continue
+        else:
+            file_names.append(file_name)
     
-    tour, cost = solve_tsp(cities, distance_matrix)
+    #num_cities = 20
+    #cities = generate_random_cities(num_cities)
+    
+    results = {}
+    
+    for file_path in file_names:
+        cities = read_city_locations(current_directory+'/'+file_path)
 
-    if tour:
-        print(f"Optimal tour: {tour}")
-        print(f"Optimal cost: {cost}")
-        #plot_tour(cities, distance_matrix, tour)
-        visualize_tour(cities, tour)
-    else:
-        print("No optimal solution found.")
+        distance_matrix = calculate_distance_matrix(cities)
+        
+        tour, cost = solve_tsp(cities, distance_matrix)
+    
+        if tour:
+            print(f"Optimal tour: {tour}")
+            print(f"Optimal cost: {cost}")
+            #plot_tour(cities, distance_matrix, tour)
+            #visualize_tour(cities, tour)
+            results[file_path] = [cost, tour]
+        else:
+            print("No optimal solution found.")
+    
+    with open('tsp_result.dic', 'wb') as f:  # open a text file
+        pickle.dump(results, f) # serialize the list
+    
+    
