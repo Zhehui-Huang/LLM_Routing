@@ -160,7 +160,7 @@ if __name__ == "__main__":
     file_names = []
     # Get the current working directory
     # make sure that the current folder is TSP
-    current_directory = os.getcwd()+'/task/single/GTSP'
+    current_directory = os.getcwd()+'/single/GTSP'
     
     # List all files in the current directory
     files = os.listdir(current_directory)
@@ -194,5 +194,5 @@ if __name__ == "__main__":
         else:
             print("No optimal solution found.")
     
-    with open('gtsp_result.dic', 'wb') as f:  # open a text file
+    with open('GTSP_result.dic', 'wb') as f:  # open a text file
         pickle.dump(results, f) # serialize the list

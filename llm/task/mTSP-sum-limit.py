@@ -161,40 +161,41 @@ def parse_file(file_path):
 #     for j in range(n):
 #         c[i][j] = np.linalg.norm(cities[i] - cities[j])
 
-
-file_names = []
-# Get the current working directory
-# make sure that the current folder is TSP
-current_directory = os.getcwd()+'/task/multiple/small/mTSP'
-
-# List all files in the current directory
-files = os.listdir(current_directory)
-for file_name in files:
-    # if '25' in file_name or '50' in file_name:
-    #     continue
-    # else:
-    file_names.append(file_name)
-
-results = {}
-for file_path in file_names:
-    info = parse_file(current_directory+'/'+file_path)
+# Example usage
+if __name__ == "__main__":
+    file_names = []
+    # Get the current working directory
+    # make sure that the current folder is TSP
+    current_directory = os.getcwd()+'/multiple/small/mTSP'
     
-    cities = info['city_coordi']
-    n = len(cities)
-    m = info['num_robot']
-    K = 2
-    L = np.ceil(n/m)+1
-    distance_matrix = calculate_distance_matrix(cities)    
-    tour, cost = solve_mtsp(n, m, K, L, distance_matrix)
-    if tour:
-        print(f"Optimal tour: {tour}")
-        print(f"Optimal cost: {cost}")
-        #plot_tour(cities, distance_matrix, tour)
-        #visualize_tour(cities, tour)
-        results[file_path] = [cost, tour]
-    else:
-        print("No optimal solution found.")
+    # List all files in the current directory
+    files = os.listdir(current_directory)
+    for file_name in files:
+        # if '25' in file_name or '50' in file_name:
+        #     continue
+        # else:
+        file_names.append(file_name)
+    
+    results = {}
+    for file_path in file_names:
+        info = parse_file(current_directory+'/'+file_path)
         
-with open('mtsp_limit_result.dic', 'wb') as f:  # open a text file
-    pickle.dump(results, f) # serialize the list
+        cities = info['city_coordi']
+        n = len(cities)
+        m = info['num_robot']
+        K = 2
+        L = np.ceil(n/m)+1
+        distance_matrix = calculate_distance_matrix(cities)    
+        tour, cost = solve_mtsp(n, m, K, L, distance_matrix)
+        if tour:
+            print(f"Optimal tour: {tour}")
+            print(f"Optimal cost: {cost}")
+            #plot_tour(cities, distance_matrix, tour)
+            #visualize_tour(cities, tour)
+            results[file_path] = [cost, tour]
+        else:
+            print("No optimal solution found.")
+            
+    with open('mtsp_limit_result.dic', 'wb') as f:  # open a text file
+        pickle.dump(results, f) # serialize the list
     
