@@ -1,37 +1,251 @@
 import sys
 import os
 import argparse
+import time
+import pytz
+from datetime import datetime
 
 from openai import OpenAI
-from utils import ask_llm, LLM_SYSTEM_PROMPT
+from utils import ask_llm, LLM_SYSTEM_PROMPT, list_files, extract_value, read_txt_file, write_py_file, run_py_file, limit_text, check_correct_in_file
+
+LA_TIMEZONE = pytz.timezone('America/Los_Angeles')
+
+SINGLE_TASK_LIST = ['TSP', 'BTSP', 'GTSP', 'KTSP', 'MV-TSP']
+CITY_NUM_LIST = [10, 15, 20, 25, 50]
+MAXIMUM_EXEC_TIME = 600
+MAXIMUM_TEXT_LENGTH = 1000
+
+
+def solve_single(args):
+    # TODO: Get execution time of optimal solutions provided by guangyao, the maximum exec time is less than 2x of that time.
+    # Setup client
+    client = OpenAI()
+
+    base_task_path = '/Users/tencentintern/Documents/LLM_Routing/llm/task/single'
+    base_solution_path = '/Users/tencentintern/Documents/LLM_Routing/llm/solution/single'
+    base_log_path = '/Users/tencentintern/Documents/LLM_Routing/llm/log/single'
+    base_verifier_path = '/Users/tencentintern/Documents/LLM_Routing/llm/verifier/single'
+    base_verifier_log_path = '/Users/tencentintern/Documents/LLM_Routing/llm/log_verifier/single'
+    base_exec_details_path = '/Users/tencentintern/Documents/LLM_Routing/llm/exec_details/single'
+    base_messages_path = '/Users/tencentintern/Documents/LLM_Routing/llm/messages/single'
+
+    for city_num in CITY_NUM_LIST:
+        for task_name in SINGLE_TASK_LIST:
+            task_folder = os.path.join(base_task_path, task_name)
+            file_path_list, file_name_list = list_files(directory=task_folder)
+
+            # Maintain exec_detail_path
+            for file_path, file_name in zip(file_path_list, file_name_list):
+                print(f"Task file path: {file_path}")
+                exec_detail_path = f'{base_exec_details_path}/{task_name}/{city_num}/exec_details_{file_name}.txt'
+
+                # Start time
+                start_time = time.time()
+                cur_time = datetime.now(LA_TIMEZONE)
+                print(f"[{cur_time.strftime('%Y-%m-%d %H:%M:%S')}]\tStarting ...")
+                with open(exec_detail_path, 'w') as file:
+                    file.write(f"Start time: [{cur_time.strftime('%Y-%m-%d %H:%M:%S')}]\n\n")
+                    file.write(f"Task file path: {exec_detail_path}\n===\n")
+
+                # Message path
+                messages_path = f'{base_messages_path}/{task_name}/{city_num}/messages_{file_name}.txt'
+                with open(messages_path, 'w') as file:
+                    file.write(f"Task file path: {messages_path}\n===\n")
+
+                # 1. Extract city number from file name
+                file_city_num = extract_value(file_name=file_name)
+                if file_city_num != city_num:
+                    continue
+
+                # 2. Load the task description
+                task_description = read_txt_file(path=file_path)
+
+                # 3. Construct the messages
+                messages = [
+                    {"role": "system", "content": LLM_SYSTEM_PROMPT},
+                    {"role": "user", "content": task_description}
+                ]
+                with open(messages_path, 'a') as file:
+                    file.write(f"System - LLM_SYSTEM_PROMPT:\n===\n{LLM_SYSTEM_PROMPT}\n\n")
+                    file.write(f"User - Task description:\n===\n{task_description}\n\n")
+
+                for i in range(args.reflect_num):
+                    print(f"Reflect count: {i}")
+                    with open(exec_detail_path, 'a') as file:
+                        file.write(f"\nReflect count: {i}\n===\n")
+                    # 3. Ask LLMs and get code
+                    code_solution_content, response_time = ask_llm(client=client, llm_model=args.llm_model, messages=messages)
+                    with open(exec_detail_path, 'a') as file:
+                        file.write(f"Ask LLM, response time: {response_time:.2f} seconds.\n")
+
+                    # 4. Save code.
+                    sol_file_path = f'{base_solution_path}/{task_name}/{city_num}/solution_{i}.py'
+                    write_py_file(path=sol_file_path, content=code_solution_content)
+
+                    # 5. Execute the code
+                    log_file_path = f'{base_log_path}/{task_name}/{city_num}/log_{i}.py'
+                    exec_status_str, execution_time = run_py_file(
+                        code_path=sol_file_path, log_path=log_file_path, max_exec_time=MAXIMUM_EXEC_TIME
+                    )
+                    with open(exec_detail_path, 'a') as file:
+                        file.write(f"Solution execution status: {exec_status_str}\nExecution time: {execution_time}\n")
+
+                    # 6 Check execution results
+                    response_solution = {"role": "assistant", "content": code_solution_content}
+                    messages.append(response_solution)
+                    with open(messages_path, 'a') as file:
+                        file.write(f"Assistant - Solution:\n===\n{code_solution_content}\n\n")
+
+                    if exec_status_str == 'success':
+                        # 6.1 Use a verifier to verify if the solution is correct.
+                        pass_verifier_value = -1
+                        overall_verifier_log_file_path = ''
+                        for vi in range(args.verify_retry_num):
+                            # 6.1.1 Generate verifier prompt
+                            if vi == 0:
+                                log_content = read_txt_file(path=log_file_path)
+                                clipped_log_content = limit_text(text=log_content, max_length=MAXIMUM_TEXT_LENGTH)
+                                verifier_prompt = (
+                                    'Here is the execution information:\n'
+                                    f'{clipped_log_content}\n'
+                                    f'Please generate Python code to verify if the solution is correct. Specifically, if the solution meets all requirements.'
+                                    f'You may generate unit tests for each requirement. '
+                                    f'If the solution is correct, output "CORRECT"; otherwise, output "FAIL".'
+                                )
+                            else:
+                                verify_log_content = read_txt_file(path=overall_verifier_log_file_path)
+                                clipped_verify_log_content = limit_text(text=verify_log_content, max_length=MAXIMUM_TEXT_LENGTH)
+                                verifier_prompt = (
+                                    f'The generated code for verification has bugs. Here is the execution information:\n'
+                                    f'{clipped_verify_log_content}\n'
+                                    f'Please fix all bugs. If fixing the bugs is too complex, you may generate a new verifier.'
+                                )
+
+                            user_prompt = {"role": "user", "content": verifier_prompt}
+                            messages.append(user_prompt)
+                            with open(messages_path, 'a') as file:
+                                file.write(f"User - Verifier prompt:\n===\n{verifier_prompt}\n\n")
+
+                            # 6.1.2 Ask LLMs and get verifier code
+                            verifier_code_content, response_time = ask_llm(client=client, llm_model=args.llm_model, messages=messages)
+                            with open(exec_detail_path, 'a') as file:
+                                file.write(f"Ask LLM, response time: {response_time:.2f} seconds.\n")
+
+                            # 6.1.3 Save verifier code
+                            verifier_file_path = f'{base_verifier_path}/{task_name}/{city_num}/verifier_{i}_{vi}.py'
+                            write_py_file(path=verifier_file_path, content=verifier_code_content)
+
+                            # 6.1.4 Execute verifier code
+                            verifier_log_file_path = f'{base_verifier_log_path}/{task_name}/{city_num}/verifier_log_{i}_{vi}.txt'
+                            verifier_exec_status_str, execution_time = run_py_file(
+                                code_path=verifier_file_path, log_path=verifier_log_file_path,
+                                max_exec_time=MAXIMUM_EXEC_TIME
+                            )
+
+                            with open(exec_detail_path, 'a') as file:
+                                file.write(f"Verifier Execution status: {verifier_exec_status_str}\nExecution time: {execution_time}\n")
+
+                            # 6.1.5 Check verifier execution results
+                            if verifier_exec_status_str == 'success':
+                                verify_res_bool = check_correct_in_file(file_path=verifier_log_file_path)
+                                if verify_res_bool:
+                                    pass_verifier_value = 1
+
+                                    with open(exec_detail_path, 'a') as file:
+                                        file.write(f"Pass Verifier\n")
+                                    break
+                                else:
+                                    pass_verifier_value = 0
+                                    with open(exec_detail_path, 'a') as file:
+                                        file.write(f"Fail Verifier\n")
+                                    break
+                            else:
+                                pass_verifier_value = -1
+                                response_verifier = {"role": "assistant", "content": verifier_code_content}
+                                messages.append(response_verifier)
+                                with open(messages_path, 'a') as file:
+                                    file.write(f"Assistant - Verifier:\n===\n{verifier_code_content}\n\n")
+
+                                overall_verifier_log_file_path = verifier_log_file_path
+
+                        if pass_verifier_value == 1:
+                            continue
+                        elif pass_verifier_value == 0:
+                            verify_log_content = read_txt_file(path=overall_verifier_log_file_path)
+                            clipped_verify_log_content = limit_text(text=verify_log_content,
+                                                                    max_length=MAXIMUM_TEXT_LENGTH)
+
+                            regenerate_prompt = (
+                                f'The generated code is incorrect and does not pass the verifier. Here is the veifier execution information:\n'
+                                f'{clipped_verify_log_content}\n'
+                                f'Please regenerate a solution for the task, using heuristics or approximation techniques if necessary.'
+                            )
+                            user_prompt = {"role": "user", "content": regenerate_prompt}
+                            messages.append(user_prompt)
+                            with open(messages_path, 'a') as file:
+                                file.write(f"User - Regenerate prompt:\n===\n{regenerate_prompt}\n\n")
+                            continue
+                        elif pass_verifier_value == -1:
+                            solve_task_prompt = (
+                                f'The generated code for verification has bugs and has exceeded the retry limit.\n'
+                                f'We think the generated solution for the task is incorrect.\n'
+                                f'Please regenerate a solution for the task, using heuristics or approximation techniques if necessary.'
+                            )
+                            user_prompt = {"role": "user", "content": solve_task_prompt}
+                            messages.append(user_prompt)
+                            with open(messages_path, 'a') as file:
+                                file.write(f"User - Regenerate Solve Task Prompt:\n===\n{solve_task_prompt}\n\n")
+                            continue
+                        else:
+                            raise ValueError(f"Unknown pass verifier value: {pass_verifier_value}")
+
+                    # 6. Verify executing results by using verifier
+                    # # 6.2 Execute error
+                    # # # 6.2.1 Timeout
+                    if exec_status_str == 'timeout':
+                        log_content = read_txt_file(path=log_file_path)
+                        clipped_log_content = limit_text(text=log_content, max_length=MAXIMUM_TEXT_LENGTH)
+
+                        timeout_prompt = (
+                            f'Here is the execution information:\n'
+                            f'{clipped_log_content}\n'
+                            f'The generated code exceeds the time limit of {MAXIMUM_EXEC_TIME} seconds.\n\n'
+                            f'Please generate a more time-efficient method, using heuristics or approximation techniques if necessary.'
+                        )
+                        user_prompt = {"role": "user", "content": timeout_prompt}
+                        messages.append(user_prompt)
+                        with open(messages_path, 'a') as file:
+                            file.write(f"User - Execution Timeout prompt:\n===\n{timeout_prompt}\n\n")
+                    elif exec_status_str == 'error':
+                        log_content = read_txt_file(path=log_file_path)
+                        clipped_log_content = limit_text(text=log_content, max_length=MAXIMUM_TEXT_LENGTH)
+
+                        fix_bug_prompt = (
+                            f'The generated code has bugs. Here is the execution information:\n'
+                            f'{clipped_log_content}\n'
+                            f'Please fix all bugs. If fixing the bugs is too complex, you may generate a new solution. '
+                            f'Feel free to use heuristics or approximation techniques if necessary.'
+                        )
+                        user_prompt = {"role": "user", "content": fix_bug_prompt}
+                        messages.append(user_prompt)
+                        with open(messages_path, 'a') as file:
+                            file.write(f"User - Fix Bug prompt:\n===\n{fix_bug_prompt}\n\n")
+                    else:
+                        raise ValueError(f"Unknown execution status: {exec_status_str}")
+
+                end_time = time.time()
+                response_time = end_time - start_time
+                cur_time = datetime.now(LA_TIMEZONE)
+                print(f"[{cur_time.strftime('%Y-%m-%d %H:%M:%S')}]\tFinished.\tOverall time: {response_time:.2f} seconds.")
+
+                with open(exec_detail_path, 'w') as file:
+                    file.write(f"[{cur_time.strftime('%Y-%m-%d %H:%M:%S')}]\tFinished.\n\n")
+                    file.write(f"Overall time: {response_time:.2f} seconds.\n")
 
 
 def solve_problem(args):
-    # Restart OpenAI
-    client = OpenAI()
-
-    # 1. Load the task description
-    task_to_code_prompt = ''
-
-    # 2. Construct the messages
-    messages = [
-        {"role": "system", "content": LLM_SYSTEM_PROMPT},
-        {"role": "user", "content": task_to_code_prompt}
-    ]
-    for i in range(args.reflect_num):
-        print(f"Reflect count: {i}")
-        # 3. Ask LLMs and get code
-        code_solution_content = ask_llm(client=client, llm_model=args.llm_model, messages=messages)
-
-        # 4. Save code.
-
-        # 5. Execute the code
-        # exec(code_solution_content)
-
-        # 6. Verify executing results by using verifier
-
-        # 7. If succeeded, break the loop; Otherwise, append info into messages and continue to reflect.
-
+    if args.robot_num == 'single':
+        solve_single(args=args)
 
 
 def get_args():
@@ -39,6 +253,9 @@ def get_args():
     parser.add_argument('--llm_model', type=str, default='gpt-4-turbo',
                         choices=['gpt-4-turbo-2024-04-09', 'gpt-4o-2024-05-13', 'gpt-4o-mini-2024-07-18'])
     parser.add_argument('--reflect_num', type=int, default=5, help='Default: self reflect 5 times.')
+    parser.add_argument('--verify_retry_num', type=int, default=2, help='Default: self reflect 5 times.')
+    parser.add_argument('--robot_num', type=str, default='single', choices=['single', 'multiple'],
+                        help='Default: self reflect 5 times.')
     return parser.parse_args()
 
 
