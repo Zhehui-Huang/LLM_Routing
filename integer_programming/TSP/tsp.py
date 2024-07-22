@@ -98,7 +98,7 @@ if __name__ == "__main__":
     #     [20, 25, 30, 0]
     # ]
     
-    num_cities = 18
+    num_cities = 20
     cities = generate_random_cities(num_cities)
     distance_matrix = calculate_distance_matrix(cities)
     
