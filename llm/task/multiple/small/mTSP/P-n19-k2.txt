@@ -21,8 +21,8 @@ City 14: (37, 69)
 City 15: (61, 33)
 City 16: (62, 63)
 City 17: (63, 69)
-City 18: (45, 35)###
-
+City 18: (45, 35)
+###
 
 ###
 Robot Information
@@ -32,12 +32,15 @@ Robot Information
 - Travel capability: Robots can travel between any two cities.
 - Travel cost: Calculated as the Euclidean distance between two cities.
 ###
+
 ###
 Task
 ===
 The robots need to collectively visit all cities exactly once, except the depot city, and then return to the depot city.
 Please find the shortest tours for the robots.
+###
 
+###
 Format requirements
 ===
 1) Please output the tours for each robot as a list of city indices. Each tour should start and end at the depot city 0.
@@ -55,5 +58,4 @@ Robot 2 Tour: [0, 3, 4, 0]
 Robot 2 Total Travel Cost: 60
 
 Overall Total Travel Cost: 110
-
 ###

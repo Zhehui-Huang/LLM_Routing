@@ -177,6 +177,7 @@ Robot Information
 - Travel Capability: Robots can travel between any two cities.
 - Travel Cost: Calculated as the Euclidean distance between two cities.
 ###
+
 """
     elif task_name == 'CVRP':
         capacity_value_str = read_txt_file(f'../city_list/multiple/capacity/{note}/{file_name}.txt')
@@ -190,6 +191,7 @@ Robot Information
 - Travel capability: Robots can travel between any two cities.
 - Travel cost: Calculated as the Euclidean distance between two cities.
 ###
+
 """
     else:
         robot_info = f"""
@@ -201,6 +203,7 @@ Robot Information
 - Travel capability: Robots can travel between any two cities.
 - Travel cost: Calculated as the Euclidean distance between two cities.
 ###
+
 """
 
     return robot_info

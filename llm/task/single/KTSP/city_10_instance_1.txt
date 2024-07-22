@@ -2,16 +2,16 @@
 Environment information
 ===
 There are 10 cities.
-Depot city 0: (61, 20)
-City 1: (4, 25)
-City 2: (41, 8)
-City 3: (35, 38)
-City 4: (74, 73)
-City 5: (10, 30)
-City 6: (76, 19)
-City 7: (23, 32)
-City 8: (45, 23)
-City 9: (14, 78)
+Depot city 0: (53, 68)
+City 1: (75, 11)
+City 2: (91, 95)
+City 3: (22, 80)
+City 4: (18, 63)
+City 5: (54, 91)
+City 6: (70, 14)
+City 7: (97, 44)
+City 8: (17, 69)
+City 9: (95, 89)
 ###
 
 ###
@@ -20,14 +20,17 @@ Robot information
 There is one robot.
 - The robot start at depot city 0. 
 - The robot can travel between any two cities. 
-- The travel cost is calculated as the Euclidean distance between the two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
 
 ###
 Task
 ===
 The robot needs to visit exactly 5 cities, excluding the depot city, starting and ending at the depot city.
 The goal is to find the shortest possible tour that visits exactly 5 cities out of the given set of cities.
+###
 
+###
 Format requirements
 ===
 1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
@@ -37,5 +40,4 @@ For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 1
 
 Tour: [0, 1, 2, 3, 0]
 Total travel cost: 100
-
 ###

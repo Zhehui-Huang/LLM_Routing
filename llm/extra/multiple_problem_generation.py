@@ -13,6 +13,7 @@ TASK_LIST = ['mTSP', 'mTSP_MinMax', 'mTSPMD', 'CVRP']
 def get_format_requirements(task_name):
     if task_name == 'mTSPMD':
         format_requirements = (
+            '###\n'
             'Format requirements\n'
             '===\n'
             '1) Please output the tours for each robot as a list of city indices. Each tour should start and end at its assigned depot.\n'
@@ -25,11 +26,12 @@ def get_format_requirements(task_name):
             'Robot 1 Total Travel Cost: 50\n\n'
             'Robot 2 Tour: [3, 4, 5, 3]\n'
             'Robot 2 Total Travel Cost: 60\n\n'
-            'Overall Total Travel Cost: 110\n\n'
+            'Overall Total Travel Cost: 110\n'
             '###'
         )
     elif task_name == 'mTSP_MinMax':
         format_requirements = (
+            '###\n'
             'Format requirements\n'
             '===\n'
             '1) Please output the tours for each robot as a list of city indices. Each tour should start and end at the depot city 0.\n'
@@ -42,7 +44,7 @@ def get_format_requirements(task_name):
             'Robot 1 Total Travel Cost: 50\n\n'
             'Robot 2 Tour: [0, 3, 4, 0]\n'
             'Robot 2 Total Travel Cost: 60\n\n'
-            'Maximum Travel Cost: 60\n\n'
+            'Maximum Travel Cost: 60\n'
             '###'
         )
     elif task_name == 'CVRP':
@@ -61,11 +63,12 @@ def get_format_requirements(task_name):
             'Robot 1 Total Travel Cost: 50\n\n'
             'Robot 2 Tour: [0, 3, 4, 0]\n'
             'Robot 2 Total Travel Cost: 60\n\n'
-            'Overall Total Travel Cost: 110\n\n'
+            'Overall Total Travel Cost: 110\n'
             '###'
         )
     else:
         format_requirements = (
+            '###\n'
             'Format requirements\n'
             '===\n'
             '1) Please output the tours for each robot as a list of city indices. Each tour should start and end at the depot city 0.\n'
@@ -78,7 +81,7 @@ def get_format_requirements(task_name):
             'Robot 1 Total Travel Cost: 50\n\n'
             'Robot 2 Tour: [0, 3, 4, 0]\n'
             'Robot 2 Total Travel Cost: 60\n\n'
-            'Overall Total Travel Cost: 110\n\n'
+            'Overall Total Travel Cost: 110\n'
             '###'
         )
 

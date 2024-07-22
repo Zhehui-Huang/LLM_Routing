@@ -2,106 +2,106 @@
 Environment information
 ===
 There are 50 cities.
-Depot city 0: (74, 95)
-City 1: (20, 24)
-City 2: (84, 9)
-City 3: (74, 28)
-City 4: (89, 11)
-City 5: (24, 36)
-City 6: (12, 6)
-City 7: (58, 4)
-City 8: (10, 14)
-City 9: (18, 77)
-City 10: (75, 23)
-City 11: (24, 69)
-City 12: (76, 88)
-City 13: (1, 32)
-City 14: (87, 76)
-City 15: (34, 18)
-City 16: (35, 42)
-City 17: (81, 58)
-City 18: (28, 90)
-City 19: (34, 43)
-City 20: (95, 74)
-City 21: (49, 68)
-City 22: (86, 76)
-City 23: (5, 86)
-City 24: (12, 89)
-City 25: (32, 3)
-City 26: (58, 99)
-City 27: (48, 85)
-City 28: (40, 62)
-City 29: (43, 86)
-City 30: (0, 95)
-City 31: (25, 71)
-City 32: (86, 37)
-City 33: (85, 90)
-City 34: (53, 45)
-City 35: (16, 74)
-City 36: (95, 12)
-City 37: (21, 83)
-City 38: (97, 61)
-City 39: (17, 83)
-City 40: (25, 3)
-City 41: (50, 50)
-City 42: (8, 19)
-City 43: (44, 15)
-City 44: (2, 68)
-City 45: (27, 76)
-City 46: (21, 84)
-City 47: (6, 25)
-City 48: (41, 1)
-City 49: (46, 45)
+Depot city 0: (73, 49)
+City 1: (56, 66)
+City 2: (63, 70)
+City 3: (12, 3)
+City 4: (42, 52)
+City 5: (3, 15)
+City 6: (48, 5)
+City 7: (57, 46)
+City 8: (6, 4)
+City 9: (95, 27)
+City 10: (48, 50)
+City 11: (85, 53)
+City 12: (38, 60)
+City 13: (15, 20)
+City 14: (84, 28)
+City 15: (46, 39)
+City 16: (44, 50)
+City 17: (72, 71)
+City 18: (66, 24)
+City 19: (92, 31)
+City 20: (93, 20)
+City 21: (91, 70)
+City 22: (14, 58)
+City 23: (9, 52)
+City 24: (42, 2)
+City 25: (41, 95)
+City 26: (42, 19)
+City 27: (19, 0)
+City 28: (67, 13)
+City 29: (41, 95)
+City 30: (66, 83)
+City 31: (43, 19)
+City 32: (78, 50)
+City 33: (17, 39)
+City 34: (21, 61)
+City 35: (84, 21)
+City 36: (66, 45)
+City 37: (35, 1)
+City 38: (61, 57)
+City 39: (92, 8)
+City 40: (43, 43)
+City 41: (48, 55)
+City 42: (41, 43)
+City 43: (92, 8)
+City 44: (51, 1)
+City 45: (15, 19)
+City 46: (23, 44)
+City 47: (54, 47)
+City 48: (24, 82)
+City 49: (82, 28)
 
 The depot city can be visited any number of times. The rest of cities need to be visited the following number of times: 
-City 1: 2
+City 1: 1
 City 2: 3
-City 3: 1
-City 4: 3
-City 5: 1
+City 3: 2
+City 4: 1
+City 5: 2
 City 6: 2
-City 7: 3
-City 8: 3
-City 9: 2
+City 7: 1
+City 8: 1
+City 9: 3
 City 10: 2
 City 11: 1
-City 12: 1
+City 12: 3
 City 13: 3
-City 14: 1
-City 15: 1
+City 14: 3
+City 15: 2
 City 16: 3
-City 17: 3
-City 18: 2
-City 19: 1
-City 20: 2
-City 21: 1
-City 22: 1
-City 23: 2
-City 24: 3
-City 25: 3
+City 17: 1
+City 18: 1
+City 19: 3
+City 20: 3
+City 21: 2
+City 22: 3
+City 23: 3
+City 24: 2
+City 25: 1
 City 26: 1
-City 27: 1
-City 28: 2
-City 29: 1
-City 30: 1
+City 27: 3
+City 28: 1
+City 29: 3
+City 30: 2
 City 31: 3
-City 32: 2
-City 33: 3
+City 32: 1
+City 33: 1
 City 34: 3
-City 35: 3
+City 35: 1
 City 36: 2
-City 37: 2
-City 38: 1
+City 37: 1
+City 38: 2
 City 39: 1
 City 40: 3
 City 41: 1
-City 42: 2
+City 42: 1
 City 43: 1
-City 44: 2
-City 45: 2
+City 44: 1
+City 45: 1
 City 46: 3
 City 47: 2
-City 48: 1
+City 48: 3
 City 49: 2
 ###
 
@@ -111,14 +111,17 @@ Robot information
 There is one robot.
 - The robot start at depot city 0. 
 - The robot can travel between any two cities. 
-- The travel cost is calculated as the Euclidean distance between the two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
 
 ###
 Task
 ===
 The robot needs to visit certain cities multiple times, starting and ending at the depot city. Each city must be visited the specified number of times. 
 The goal is to minimize the total travel cost while adhering to the visit requirements.
+###
 
+###
 Format requirements
 ===
 1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
@@ -128,5 +131,4 @@ For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 1
 
 Tour: [0, 1, 2, 3, 0]
 Total travel cost: 100
-
 ###

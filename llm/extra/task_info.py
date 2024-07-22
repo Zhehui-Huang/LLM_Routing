@@ -4,7 +4,7 @@ def a_tsp_task():
         'Task\n===\n'
         'The robot needs to visit all cities exactly once, except the depot city, and then return to the depot city.\n'
     )
-    task_info += 'Please find the shortest tour for the robot.\n\n'
+    task_info += 'Please find the shortest tour for the robot.\n###\n\n'
     return task_info
 
 
@@ -13,7 +13,7 @@ def b_btsp_task():
         '###\n'
         'Task\n===\n'
         'The robot needs to visit each city exactly once, starting and ending at the depot city. \n'
-        'The goal is to minimize the longest distance between any two consecutive cities in the tour.\n\n'
+        'The goal is to minimize the longest distance between any two consecutive cities in the tour.\n###\n\n'
     )
     return task_info
 
@@ -24,7 +24,7 @@ def c_gtsp_task():
         'Task\n===\n'
         'The robot needs to visit at least one city from each group of cities, starting and ending at the depot city.\n'
     )
-    task_info += 'Please find the shortest tour for the robot.\n\n'
+    task_info += 'Please find the shortest tour for the robot.\n###\n\n'
     return task_info
 
 
@@ -33,7 +33,7 @@ def d_ktsp_task(k):
         '###\n'
         'Task\n===\n'
         f'The robot needs to visit exactly {k} cities, excluding the depot city, starting and ending at the depot city.\n'
-        f'The goal is to find the shortest possible tour that visits exactly {k} cities out of the given set of cities.\n\n'
+        f'The goal is to find the shortest possible tour that visits exactly {k} cities out of the given set of cities.\n###\n\n'
     )
     return task_info
 
@@ -44,7 +44,7 @@ def e_mvtsp_task():
         'Task\n===\n'
         'The robot needs to visit certain cities multiple times, starting and ending at the depot city. Each city must be visited '
         'the specified number of times. \n'
-        'The goal is to minimize the total travel cost while adhering to the visit requirements.\n\n'
+        'The goal is to minimize the total travel cost while adhering to the visit requirements.\n###\n\n'
     )
 
     return task_info
@@ -72,7 +72,7 @@ def a_mtsp_task():
         'Task\n===\n'
         'The robots need to collectively visit all cities exactly once, except the depot city, and then return to the depot city.\n'
     )
-    task_info += 'Please find the shortest tours for the robots.\n\n'
+    task_info += 'Please find the shortest tours for the robots.\n###\n\n'
     return task_info
 
 
@@ -81,7 +81,7 @@ def b_mtsp_minmax_task():
         '###\n'
         'Task\n===\n'
         'The robots need to collectively visit all cities exactly once, except the depot city, and then return to the depot city.\n'
-        'Please minimize the maximum distance traveled by any single robot.\n\n'
+        'Please minimize the maximum distance traveled by any single robot.\n###\n\n'
     )
     return task_info
 
@@ -93,7 +93,7 @@ def c_mtspmd_task():
         'The robots need to collectively visit all cities exactly once and then return to their respective depots.\n'
         'Each robot starts and ends at its assigned depot.\n'
         'Please find the shortest tours for each robot.\n'
-        'Ensure that the total travel cost for all robots is minimized.\n\n'
+        'Ensure that the total travel cost for all robots is minimized.\n###\n\n'
     )
     return task_info
 
@@ -108,7 +108,7 @@ def d_cvrp_task():
         'Please find the shortest tours for the robots while ensuring that:\n'
         '- The demand of each city is met.\n'
         '- The capacity constraints of the robots are not violated.\n'
-        'Minimize the total travel cost for all tours.\n\n'
+        'Minimize the total travel cost for all tours.\n###\n\n'
     )
     return task_info
 

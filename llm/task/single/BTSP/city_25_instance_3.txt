@@ -2,31 +2,31 @@
 Environment information
 ===
 There are 25 cities.
-Depot city 0: (57, 80)
-City 1: (91, 34)
-City 2: (6, 17)
-City 3: (37, 29)
-City 4: (33, 69)
-City 5: (76, 53)
-City 6: (51, 67)
-City 7: (82, 28)
-City 8: (0, 28)
-City 9: (63, 31)
-City 10: (65, 54)
-City 11: (45, 78)
-City 12: (10, 84)
-City 13: (33, 73)
-City 14: (45, 86)
-City 15: (23, 58)
-City 16: (62, 69)
-City 17: (73, 68)
-City 18: (46, 27)
-City 19: (39, 5)
-City 20: (96, 2)
-City 21: (93, 8)
-City 22: (57, 83)
-City 23: (71, 86)
-City 24: (22, 93)
+Depot city 0: (50, 21)
+City 1: (37, 7)
+City 2: (42, 93)
+City 3: (84, 35)
+City 4: (81, 8)
+City 5: (97, 23)
+City 6: (98, 87)
+City 7: (42, 46)
+City 8: (15, 83)
+City 9: (88, 41)
+City 10: (63, 79)
+City 11: (14, 37)
+City 12: (97, 69)
+City 13: (40, 25)
+City 14: (36, 84)
+City 15: (35, 62)
+City 16: (1, 91)
+City 17: (90, 7)
+City 18: (43, 66)
+City 19: (83, 35)
+City 20: (87, 40)
+City 21: (0, 1)
+City 22: (9, 24)
+City 23: (10, 55)
+City 24: (44, 31)
 ###
 
 ###
@@ -35,14 +35,17 @@ Robot information
 There is one robot.
 - The robot start at depot city 0. 
 - The robot can travel between any two cities. 
-- The travel cost is calculated as the Euclidean distance between the two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
 
 ###
 Task
 ===
 The robot needs to visit each city exactly once, starting and ending at the depot city. 
 The goal is to minimize the longest distance between any two consecutive cities in the tour.
+###
 
+###
 Format requirements
 ===
 1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
@@ -54,5 +57,4 @@ For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0, the total travel cost is 100,
 Tour: [0, 1, 2, 3, 0]
 Total travel cost: 100
 Maximum distance between consecutive cities: 40
-
 ###

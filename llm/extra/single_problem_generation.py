@@ -16,6 +16,7 @@ def get_format_requirements(task_name):
     # Format requirements
     if task_name == 'BTSP':
         format_requirements = (
+            '###\n'
             'Format requirements\n'
             '===\n'
             '1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.\n'
@@ -25,11 +26,12 @@ def get_format_requirements(task_name):
             'then the output should be: \n\n'
             'Tour: [0, 1, 2, 3, 0]\n'
             'Total travel cost: 100\n'
-            'Maximum distance between consecutive cities: 40\n\n'
+            'Maximum distance between consecutive cities: 40\n'
             '###'
         )
     else:
         format_requirements = (
+            '###\n'
             'Format requirements\n'
             '===\n'
             '1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.\n'
@@ -37,7 +39,7 @@ def get_format_requirements(task_name):
             'For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 100, '
             'then the output should be: \n\n'
             'Tour: [0, 1, 2, 3, 0]\n'
-            'Total travel cost: 100\n\n'
+            'Total travel cost: 100\n'
             '###'
         )
     return format_requirements

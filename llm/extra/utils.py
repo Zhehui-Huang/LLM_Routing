@@ -23,7 +23,7 @@ def get_robot_info_str():
     robot_info = '###\nRobot information\n===\nThere is one robot.\n'
     robot_info += '- The robot start at depot city 0. \n'
     robot_info += '- The robot can travel between any two cities. \n'
-    robot_info += '- The travel cost is calculated as the Euclidean distance between the two cities. \n\n'
+    robot_info += '- The travel cost is calculated as the Euclidean distance between the two cities.\n###\n\n'
     return robot_info
 
 

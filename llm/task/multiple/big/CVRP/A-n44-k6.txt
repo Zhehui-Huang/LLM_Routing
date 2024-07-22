@@ -95,7 +95,6 @@ City 42: 14
 City 43: 18
 ###
 
-
 ###
 Robot Information
 ===
@@ -105,6 +104,7 @@ Robot Information
 - Travel capability: Robots can travel between any two cities.
 - Travel cost: Calculated as the Euclidean distance between two cities.
 ###
+
 ###
 Task Description
 ===
@@ -115,6 +115,7 @@ Please find the shortest tours for the robots while ensuring that:
 - The demand of each city is met.
 - The capacity constraints of the robots are not violated.
 Minimize the total travel cost for all tours.
+###
 
 ###
 Format Requirements
@@ -135,5 +136,4 @@ Robot 2 Tour: [0, 3, 4, 0]
 Robot 2 Total Travel Cost: 60
 
 Overall Total Travel Cost: 110
-
 ###

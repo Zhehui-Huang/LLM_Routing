@@ -2,16 +2,16 @@
 Environment information
 ===
 There are 10 cities.
-Depot city 0: (38, 65)
-City 1: (49, 14)
-City 2: (81, 31)
-City 3: (43, 10)
-City 4: (27, 82)
-City 5: (69, 83)
-City 6: (49, 22)
-City 7: (5, 85)
-City 8: (32, 50)
-City 9: (10, 83)
+Depot city 0: (90, 3)
+City 1: (11, 17)
+City 2: (7, 27)
+City 3: (95, 81)
+City 4: (41, 54)
+City 5: (31, 35)
+City 6: (23, 95)
+City 7: (20, 56)
+City 8: (49, 29)
+City 9: (13, 17)
 ###
 
 ###
@@ -20,14 +20,17 @@ Robot information
 There is one robot.
 - The robot start at depot city 0. 
 - The robot can travel between any two cities. 
-- The travel cost is calculated as the Euclidean distance between the two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
 
 ###
 Task
 ===
 The robot needs to visit exactly 6 cities, excluding the depot city, starting and ending at the depot city.
 The goal is to find the shortest possible tour that visits exactly 6 cities out of the given set of cities.
+###
 
+###
 Format requirements
 ===
 1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
@@ -37,5 +40,4 @@ For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 1
 
 Tour: [0, 1, 2, 3, 0]
 Total travel cost: 100
-
 ###

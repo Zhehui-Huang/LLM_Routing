@@ -32,8 +32,8 @@ City 25: (212, 394)
 City 26: (188, 393)
 City 27: (207, 406)
 City 28: (184, 410)
-City 29: (207, 392)###
-
+City 29: (207, 392)
+###
 
 ###
 Robot Information
@@ -46,6 +46,7 @@ Robot 2 starts and ends at depot city 2.
 - Travel Capability: Robots can travel between any two cities.
 - Travel Cost: Calculated as the Euclidean distance between two cities.
 ###
+
 ###
 Task Description
 ===
@@ -53,7 +54,9 @@ The robots need to collectively visit all cities exactly once and then return to
 Each robot starts and ends at its assigned depot.
 Please find the shortest tours for each robot.
 Ensure that the total travel cost for all robots is minimized.
+###
 
+###
 Format requirements
 ===
 1) Please output the tours for each robot as a list of city indices. Each tour should start and end at its assigned depot.
@@ -71,5 +74,4 @@ Robot 2 Tour: [3, 4, 5, 3]
 Robot 2 Total Travel Cost: 60
 
 Overall Total Travel Cost: 110
-
 ###

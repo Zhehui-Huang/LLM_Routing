@@ -2,56 +2,56 @@
 Environment information
 ===
 There are 50 cities.
-Depot city 0: (22, 7)
-City 1: (50, 30)
-City 2: (42, 28)
-City 3: (78, 99)
-City 4: (48, 69)
-City 5: (3, 98)
-City 6: (58, 23)
-City 7: (5, 73)
-City 8: (9, 57)
-City 9: (61, 50)
-City 10: (16, 84)
-City 11: (80, 4)
-City 12: (16, 99)
-City 13: (2, 12)
-City 14: (25, 86)
-City 15: (29, 33)
-City 16: (15, 43)
-City 17: (52, 28)
-City 18: (50, 72)
-City 19: (27, 4)
-City 20: (77, 58)
-City 21: (52, 7)
-City 22: (33, 42)
-City 23: (51, 98)
-City 24: (77, 57)
-City 25: (84, 45)
-City 26: (55, 47)
-City 27: (20, 24)
-City 28: (71, 38)
-City 29: (2, 25)
-City 30: (34, 65)
-City 31: (75, 37)
-City 32: (28, 20)
-City 33: (66, 78)
-City 34: (57, 99)
-City 35: (82, 92)
-City 36: (53, 72)
-City 37: (66, 60)
-City 38: (30, 66)
-City 39: (42, 83)
-City 40: (52, 23)
-City 41: (27, 54)
-City 42: (94, 4)
-City 43: (66, 30)
-City 44: (9, 87)
-City 45: (4, 82)
-City 46: (72, 87)
-City 47: (70, 56)
-City 48: (60, 22)
-City 49: (21, 84)
+Depot city 0: (79, 96)
+City 1: (40, 58)
+City 2: (64, 99)
+City 3: (75, 84)
+City 4: (87, 58)
+City 5: (78, 65)
+City 6: (60, 88)
+City 7: (37, 56)
+City 8: (31, 73)
+City 9: (62, 67)
+City 10: (47, 7)
+City 11: (31, 68)
+City 12: (87, 1)
+City 13: (47, 67)
+City 14: (3, 49)
+City 15: (74, 65)
+City 16: (64, 22)
+City 17: (31, 82)
+City 18: (44, 13)
+City 19: (29, 84)
+City 20: (3, 29)
+City 21: (35, 9)
+City 22: (15, 38)
+City 23: (86, 20)
+City 24: (90, 40)
+City 25: (2, 25)
+City 26: (54, 24)
+City 27: (32, 51)
+City 28: (83, 15)
+City 29: (91, 13)
+City 30: (86, 63)
+City 31: (45, 80)
+City 32: (79, 64)
+City 33: (64, 3)
+City 34: (23, 85)
+City 35: (46, 58)
+City 36: (68, 92)
+City 37: (93, 95)
+City 38: (98, 44)
+City 39: (26, 83)
+City 40: (85, 46)
+City 41: (59, 14)
+City 42: (19, 56)
+City 43: (10, 15)
+City 44: (47, 62)
+City 45: (61, 89)
+City 46: (28, 15)
+City 47: (72, 69)
+City 48: (21, 60)
+City 49: (13, 39)
 ###
 
 ###
@@ -60,14 +60,17 @@ Robot information
 There is one robot.
 - The robot start at depot city 0. 
 - The robot can travel between any two cities. 
-- The travel cost is calculated as the Euclidean distance between the two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
 
 ###
 Task
 ===
 The robot needs to visit all cities exactly once, except the depot city, and then return to the depot city.
 Please find the shortest tour for the robot.
+###
 
+###
 Format requirements
 ===
 1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
@@ -77,5 +80,4 @@ For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 1
 
 Tour: [0, 1, 2, 3, 0]
 Total travel cost: 100
-
 ###

@@ -2,47 +2,47 @@
 Environment information
 ===
 There are 20 cities.
-Depot city 0: (52, 77)
-City 1: (71, 0)
-City 2: (2, 60)
-City 3: (18, 47)
-City 4: (30, 66)
-City 5: (89, 59)
-City 6: (5, 51)
-City 7: (68, 36)
-City 8: (37, 3)
-City 9: (31, 53)
-City 10: (39, 1)
-City 11: (22, 79)
-City 12: (65, 65)
-City 13: (49, 42)
-City 14: (79, 0)
-City 15: (7, 15)
-City 16: (10, 24)
-City 17: (52, 0)
-City 18: (28, 52)
-City 19: (50, 22)
+Depot city 0: (3, 26)
+City 1: (85, 72)
+City 2: (67, 0)
+City 3: (50, 99)
+City 4: (61, 89)
+City 5: (91, 56)
+City 6: (2, 65)
+City 7: (38, 68)
+City 8: (3, 92)
+City 9: (59, 8)
+City 10: (30, 88)
+City 11: (30, 53)
+City 12: (11, 14)
+City 13: (52, 49)
+City 14: (18, 49)
+City 15: (64, 41)
+City 16: (28, 49)
+City 17: (91, 94)
+City 18: (51, 58)
+City 19: (30, 48)
 
 The depot city can be visited any number of times. The rest of cities need to be visited the following number of times: 
-City 1: 1
+City 1: 2
 City 2: 1
-City 3: 1
+City 3: 2
 City 4: 2
-City 5: 1
-City 6: 3
-City 7: 3
-City 8: 3
+City 5: 2
+City 6: 1
+City 7: 1
+City 8: 1
 City 9: 1
-City 10: 3
-City 11: 3
+City 10: 2
+City 11: 1
 City 12: 2
-City 13: 3
-City 14: 3
-City 15: 3
-City 16: 1
+City 13: 1
+City 14: 2
+City 15: 1
+City 16: 3
 City 17: 3
 City 18: 1
-City 19: 3
+City 19: 2
 ###
 
 ###
@@ -51,14 +51,17 @@ Robot information
 There is one robot.
 - The robot start at depot city 0. 
 - The robot can travel between any two cities. 
-- The travel cost is calculated as the Euclidean distance between the two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
 
 ###
 Task
 ===
 The robot needs to visit certain cities multiple times, starting and ending at the depot city. Each city must be visited the specified number of times. 
 The goal is to minimize the total travel cost while adhering to the visit requirements.
+###
 
+###
 Format requirements
 ===
 1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
@@ -68,5 +71,4 @@ For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 1
 
 Tour: [0, 1, 2, 3, 0]
 Total travel cost: 100
-
 ###

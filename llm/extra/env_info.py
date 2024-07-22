@@ -29,6 +29,9 @@ def get_multi_env_info_str(original_info, extra_env_info_str):
     if extra_env_info_str != '':
         env_info += extra_env_info_str
 
-    env_info += '###\n\n'
+    if env_info[-1] == '\n':
+        env_info += '###\n'
+    else:
+        env_info += '\n###\n'
 
     return env_info
