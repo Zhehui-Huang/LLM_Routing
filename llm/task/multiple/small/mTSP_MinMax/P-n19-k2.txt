@@ -27,7 +27,7 @@ City 18: (45, 35)
 ###
 Robot Information
 ===
-- Number of robots: 2
+- Number of robots: 2. Robot id starts from 0.
 - Starting location: All robots start at depot city 0.
 - Travel capability: Robots can travel between any two cities.
 - Travel cost: Calculated as the Euclidean distance between two cities.
@@ -47,15 +47,15 @@ Format requirements
 2) Please output the travel cost for each tour and the maximum travel cost among all tours.
 
 For example, if there are two robots with the following tours and costs:
-Robot 1: 0 -> 1 -> 2 -> 0 with a travel cost of 50
-Robot 2: 0 -> 3 -> 4 -> 0 with a travel cost of 60
+Robot 0: 0 -> 1 -> 2 -> 0 with a travel cost of 50
+Robot 1: 0 -> 3 -> 4 -> 0 with a travel cost of 60
 then the output should be:
 
-Robot 1 Tour: [0, 1, 2, 0]
-Robot 1 Total Travel Cost: 50
+Robot 0 Tour: [0, 1, 2, 0]
+Robot 0 Total Travel Cost: 50
 
-Robot 2 Tour: [0, 3, 4, 0]
-Robot 2 Total Travel Cost: 60
+Robot 1 Tour: [0, 3, 4, 0]
+Robot 1 Total Travel Cost: 60
 
 Maximum Travel Cost: 60
 ###

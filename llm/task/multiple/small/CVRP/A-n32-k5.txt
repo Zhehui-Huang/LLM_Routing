@@ -74,7 +74,7 @@ City 31: 9
 ###
 Robot Information
 ===
-- Number of robots: 5
+- Number of robots: 5. Robot id starts from 0.
 - The capacity of each robot: 100
 - Starting location: All robots start at depot city 0.
 - Travel capability: Robots can travel between any two cities.
@@ -101,15 +101,15 @@ Format Requirements
 3) Ensure that the demand of each city is met and the capacity constraints of each robot are not violated.
 
 For example, if there are two robots with the following tours and costs:
-Robot 1: 0 -> 1 -> 2 -> 0 with a travel cost of 50
-Robot 2: 0 -> 3 -> 4 -> 0 with a travel cost of 60
+Robot 0: 0 -> 1 -> 2 -> 0 with a travel cost of 50
+Robot 1: 0 -> 3 -> 4 -> 0 with a travel cost of 60
 then the output should be:
 
-Robot 1 Tour: [0, 1, 2, 0]
-Robot 1 Total Travel Cost: 50
+Robot 0 Tour: [0, 1, 2, 0]
+Robot 0 Total Travel Cost: 50
 
-Robot 2 Tour: [0, 3, 4, 0]
-Robot 2 Total Travel Cost: 60
+Robot 1 Tour: [0, 3, 4, 0]
+Robot 1 Total Travel Cost: 60
 
 Overall Total Travel Cost: 110
 ###

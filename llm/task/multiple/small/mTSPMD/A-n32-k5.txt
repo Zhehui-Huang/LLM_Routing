@@ -40,7 +40,7 @@ City 31: (98, 5)
 ###
 Robot Information
 ===
-- Number of robots: 5
+- Number of robots: 5. Robot id starts from 0.
 - Starting and Ending Locations:
 Robot 0 starts and ends at depot city 0.
 Robot 1 starts and ends at depot city 1.
@@ -67,15 +67,15 @@ Format requirements
 2) Please output the total travel cost for each tour and the overall total travel cost.
 
 For example, if there are two robots with the following tours and costs:
-Robot 1 (Depot 0): 0 -> 1 -> 2 -> 0 with a travel cost of 50
-Robot 2 (Depot 3): 3 -> 4 -> 5 -> 3 with a travel cost of 60
+Robot 0 (Depot 0): 0 -> 2 -> 3 -> 0 with a travel cost of 50
+Robot 1 (Depot 1): 1 -> 4 -> 5 -> 1 with a travel cost of 60
 then the output should be:
 
-Robot 1 Tour: [0, 1, 2, 0]
-Robot 1 Total Travel Cost: 50
+Robot 0 Tour: [0, 2, 3, 0]
+Robot 0 Total Travel Cost: 50
 
-Robot 2 Tour: [3, 4, 5, 3]
-Robot 2 Total Travel Cost: 60
+Robot 1 Tour: [1, 4, 5, 1]
+Robot 1 Total Travel Cost: 60
 
 Overall Total Travel Cost: 110
 ###

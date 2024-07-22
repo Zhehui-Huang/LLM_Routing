@@ -171,7 +171,7 @@ def get_multi_robot_info_str(task_name, robot_num, file_name, note):
 ###
 Robot Information
 ===
-- Number of robots: {robot_num}
+- Number of robots: {robot_num}. Robot id starts from 0.
 - Starting and Ending Locations:
 {robot_start_end_str.strip()}
 - Travel Capability: Robots can travel between any two cities.
@@ -185,7 +185,7 @@ Robot Information
 ###
 Robot Information
 ===
-- Number of robots: {robot_num}
+- Number of robots: {robot_num}. Robot id starts from 0.
 - The capacity of each robot: {capacity_value_str}
 - Starting location: All robots start at depot city 0.
 - Travel capability: Robots can travel between any two cities.
@@ -198,7 +198,7 @@ Robot Information
 ###
 Robot Information
 ===
-- Number of robots: {robot_num}
+- Number of robots: {robot_num}. Robot id starts from 0.
 - Starting location: All robots start at depot city 0.
 - Travel capability: Robots can travel between any two cities.
 - Travel cost: Calculated as the Euclidean distance between two cities.
