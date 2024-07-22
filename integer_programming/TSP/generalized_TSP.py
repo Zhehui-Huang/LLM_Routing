@@ -60,7 +60,7 @@ def solve_gtsp(V, V_p, distance_matrix, k, coords):
     u = m.addVars(range(2, k+1), vtype=GRB.CONTINUOUS, name="u")
     
     # Set objective
-    m.setObjective(quicksum(distance_matrix[i][ j] * x[i, j] for i in V for j in V if i != j), GRB.MINIMIZE)
+    m.setObjective(quicksum(distance_matrix[i][j] * x[i, j] for i in V for j in V if i != j), GRB.MINIMIZE)
     
     # Add constraints
     for p in range(k):
@@ -165,10 +165,11 @@ if __name__ == "__main__":
     # List all files in the current directory
     files = os.listdir(current_directory)
     for file_name in files:
-        if '25' in file_name or '50' in file_name:
-            continue
-        else:
-            file_names.append(file_name)
+        #if '25' in file_name or '50' in file_name:
+        # if '50' in file_name:
+        #     continue
+        # else:
+        file_names.append(file_name)
     
     #num_cities = 20
     #cities = generate_random_cities(num_cities)
@@ -183,7 +184,7 @@ if __name__ == "__main__":
         coords = {i:cities[i] for i in V}
         k = len(group)
         tour, cost = solve_gtsp(V, group, distance_matrix, k, coords)
-        visualize_tour(cities, tour)
+        #visualize_tour(cities, tour)
         if tour:
             print(f"Optimal tour: {tour}")
             print(f"Optimal cost: {cost}")
