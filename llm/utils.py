@@ -37,7 +37,7 @@ def ask_llm(client, llm_model, messages):
     response_time = end_time - start_time
     cur_time = datetime.now(LA_TIMEZONE)
     print(f"[{cur_time.strftime('%Y-%m-%d %H:%M:%S')}]\tFinished.\tResponse time: {response_time:.2f} seconds.")
-    return completion.choices[0].message, response_time
+    return completion.choices[0].message.content, response_time
 
 
 def list_files(directory):
@@ -133,5 +133,8 @@ def check_correct_in_file(file_path):
         for line in file:
             if 'CORRECT' in line:
                 return True
-    return False
+            if 'FAIL' in line:
+                return False
+
+    raise ValueError("No 'CORRECT' or 'FAIL' found in the output file.")
 

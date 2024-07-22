@@ -10,24 +10,31 @@ from utils import ask_llm, LLM_SYSTEM_PROMPT, list_files, extract_value, read_tx
 
 LA_TIMEZONE = pytz.timezone('America/Los_Angeles')
 
-SINGLE_TASK_LIST = ['TSP', 'BTSP', 'GTSP', 'KTSP', 'MV-TSP']
-CITY_NUM_LIST = [10, 15, 20, 25, 50]
+# SINGLE_TASK_LIST = ['TSP', 'BTSP', 'GTSP', 'KTSP', 'MV-TSP']
+SINGLE_TASK_LIST = ['TSP']
+# CITY_NUM_LIST = [10, 15, 20, 25, 50]
+CITY_NUM_LIST = [10]
 MAXIMUM_EXEC_TIME = 600
 MAXIMUM_TEXT_LENGTH = 1000
+
+BASE_PATH = '/Users/tencentintern/Documents/LLM_Routing/llm'
+
+OPENAI_API_KEY = "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"
 
 
 def solve_single(args):
     # TODO: Get execution time of optimal solutions provided by guangyao, the maximum exec time is less than 2x of that time.
     # Setup client
-    client = OpenAI()
+    client = OpenAI(api_key=OPENAI_API_KEY)
 
-    base_task_path = '/Users/tencentintern/Documents/LLM_Routing/llm/task/single'
-    base_solution_path = '/Users/tencentintern/Documents/LLM_Routing/llm/solution/single'
-    base_log_path = '/Users/tencentintern/Documents/LLM_Routing/llm/log/single'
-    base_verifier_path = '/Users/tencentintern/Documents/LLM_Routing/llm/verifier/single'
-    base_verifier_log_path = '/Users/tencentintern/Documents/LLM_Routing/llm/log_verifier/single'
-    base_exec_details_path = '/Users/tencentintern/Documents/LLM_Routing/llm/exec_details/single'
-    base_messages_path = '/Users/tencentintern/Documents/LLM_Routing/llm/messages/single'
+    path_prex = 'extra_info'
+    base_task_path = f'{BASE_PATH}/task/single'
+    base_solution_path = f'{BASE_PATH}/{path_prex}/solution/single'
+    base_log_path = f'{BASE_PATH}/{path_prex}/log/single'
+    base_verifier_path = f'{BASE_PATH}/{path_prex}/verifier/single'
+    base_verifier_log_path = f'{BASE_PATH}/{path_prex}/log_verifier/single'
+    base_exec_details_path = f'{BASE_PATH}/{path_prex}/exec_details/single'
+    base_messages_path = f'{BASE_PATH}/{path_prex}/messages/single'
 
     for city_num in CITY_NUM_LIST:
         for task_name in SINGLE_TASK_LIST:
@@ -36,10 +43,19 @@ def solve_single(args):
 
             # Maintain exec_detail_path
             for file_path, file_name in zip(file_path_list, file_name_list):
-                print(f"Task file path: {file_path}")
-                exec_detail_path = f'{base_exec_details_path}/{task_name}/{city_num}/exec_details_{file_name}.txt'
+                # 0. Extract city number from file name
+                file_city_num = extract_value(file_name=file_name)
+                if int(file_city_num) != city_num:
+                    continue
 
-                # Start time
+                print(f"Task file path: {file_path}")
+
+                # 1. Create exec_details and messages_path file
+
+                # 1.1 exec_details
+                exec_detail_path = f'{base_exec_details_path}/{task_name}/{city_num}/exec_details_{file_name}'
+                os.makedirs(os.path.dirname(exec_detail_path), exist_ok=True)
+
                 start_time = time.time()
                 cur_time = datetime.now(LA_TIMEZONE)
                 print(f"[{cur_time.strftime('%Y-%m-%d %H:%M:%S')}]\tStarting ...")
@@ -47,15 +63,11 @@ def solve_single(args):
                     file.write(f"Start time: [{cur_time.strftime('%Y-%m-%d %H:%M:%S')}]\n\n")
                     file.write(f"Task file path: {exec_detail_path}\n===\n")
 
-                # Message path
-                messages_path = f'{base_messages_path}/{task_name}/{city_num}/messages_{file_name}.txt'
+                # 1.2 messages_path
+                messages_path = f'{base_messages_path}/{task_name}/{city_num}/messages_{file_name}'
+                os.makedirs(os.path.dirname(messages_path), exist_ok=True)
                 with open(messages_path, 'w') as file:
                     file.write(f"Task file path: {messages_path}\n===\n")
-
-                # 1. Extract city number from file name
-                file_city_num = extract_value(file_name=file_name)
-                if file_city_num != city_num:
-                    continue
 
                 # 2. Load the task description
                 task_description = read_txt_file(path=file_path)
@@ -100,6 +112,37 @@ def solve_single(args):
                         # 6.1 Use a verifier to verify if the solution is correct.
                         pass_verifier_value = -1
                         overall_verifier_log_file_path = ''
+
+                        extract_constraints_prompt = (
+                            'Following is the task description for a variant of the TSP (Traveling Salesman Problem) or VRP (Vehicle Routing Problem):\n'
+                            '---\n'
+                            f'{task_description}\n'
+                            '---\n'
+                            'Please extract all constraints from the given task description and list them in the following format:\n'
+                            '- [Requirement 1]\n'
+                            '- [Requirement 2]\n'
+                            '- [Requirement 3]\n'
+                            'Ensure the output contains only the list of constraints in the specified format and no additional information.'
+                        )
+
+                        extract_constraints_messages = [
+                            {"role": "system", "content": LLM_SYSTEM_PROMPT},
+                            {"role": "user", "content": extract_constraints_prompt}
+                        ]
+                        with open(messages_path, 'a') as file:
+                            file.write(f"Another LLM - Extract constraints prompt:\n===\n{extract_constraints_prompt}\n\n")
+
+                        constraints_content, response_time = ask_llm(
+                            client=client, llm_model=args.llm_model, messages=extract_constraints_messages
+                        )
+                        with open(exec_detail_path, 'a') as file:
+                            file.write(f"Ask Another LLM for constraints \n{constraints_content}\n\nResponse time: {response_time:.2f} seconds.\n")
+
+                        constraints_content_response = {"role": "assistant", "content": constraints_content}
+                        extract_constraints_messages.append(constraints_content_response)
+                        with open(messages_path, 'a') as file:
+                            file.write(f"Another LLM - Extract constraints response:\n===\n{constraints_content_response}\n\n")
+
                         for vi in range(args.verify_retry_num):
                             # 6.1.1 Generate verifier prompt
                             if vi == 0:
@@ -108,9 +151,10 @@ def solve_single(args):
                                 verifier_prompt = (
                                     'Here is the execution information:\n'
                                     f'{clipped_log_content}\n'
-                                    f'Please generate Python code to verify if the solution is correct. Specifically, if the solution meets all requirements.'
-                                    f'You may generate unit tests for each requirement. '
-                                    f'If the solution is correct, output "CORRECT"; otherwise, output "FAIL".'
+                                    'Please generate Python code to verify if the solution is correct by checking the following requirements:\n'
+                                    f'{constraints_content}\n'
+                                    'You may generate unit tests for each requirement. '
+                                    'If the solution is correct, output "CORRECT"; otherwise, output "FAIL".'
                                 )
                             else:
                                 verify_log_content = read_txt_file(path=overall_verifier_log_file_path)
@@ -122,14 +166,14 @@ def solve_single(args):
                                 )
 
                             user_prompt = {"role": "user", "content": verifier_prompt}
-                            messages.append(user_prompt)
+                            extract_constraints_messages.append(user_prompt)
                             with open(messages_path, 'a') as file:
-                                file.write(f"User - Verifier prompt:\n===\n{verifier_prompt}\n\n")
+                                file.write(f"Another LLM - User - Verifier prompt:\n===\n{verifier_prompt}\n\n")
 
                             # 6.1.2 Ask LLMs and get verifier code
-                            verifier_code_content, response_time = ask_llm(client=client, llm_model=args.llm_model, messages=messages)
+                            verifier_code_content, response_time = ask_llm(client=client, llm_model=args.llm_model, messages=extract_constraints_messages)
                             with open(exec_detail_path, 'a') as file:
-                                file.write(f"Ask LLM, response time: {response_time:.2f} seconds.\n")
+                                file.write(f"Ask Another LLM, response time: {response_time:.2f} seconds.\n")
 
                             # 6.1.3 Save verifier code
                             verifier_file_path = f'{base_verifier_path}/{task_name}/{city_num}/verifier_{i}_{vi}.py'
@@ -143,7 +187,7 @@ def solve_single(args):
                             )
 
                             with open(exec_detail_path, 'a') as file:
-                                file.write(f"Verifier Execution status: {verifier_exec_status_str}\nExecution time: {execution_time}\n")
+                                file.write(f"Another - Verifier Execution status: {verifier_exec_status_str}\nExecution time: {execution_time}\n")
 
                             # 6.1.5 Check verifier execution results
                             if verifier_exec_status_str == 'success':
@@ -152,19 +196,19 @@ def solve_single(args):
                                     pass_verifier_value = 1
 
                                     with open(exec_detail_path, 'a') as file:
-                                        file.write(f"Pass Verifier\n")
+                                        file.write(f"Another LLM - Pass Verifier\n")
                                     break
                                 else:
                                     pass_verifier_value = 0
                                     with open(exec_detail_path, 'a') as file:
-                                        file.write(f"Fail Verifier\n")
+                                        file.write(f"Another LLM - Fail Verifier\n")
                                     break
                             else:
                                 pass_verifier_value = -1
                                 response_verifier = {"role": "assistant", "content": verifier_code_content}
-                                messages.append(response_verifier)
+                                extract_constraints_messages.append(response_verifier)
                                 with open(messages_path, 'a') as file:
-                                    file.write(f"Assistant - Verifier:\n===\n{verifier_code_content}\n\n")
+                                    file.write(f"Another LLM - Assistant - Verifier:\n===\n{verifier_code_content}\n\n")
 
                                 overall_verifier_log_file_path = verifier_log_file_path
 
@@ -181,11 +225,13 @@ def solve_single(args):
                                 f'Please regenerate a solution for the task, using heuristics or approximation techniques if necessary.'
                             )
                             user_prompt = {"role": "user", "content": regenerate_prompt}
+                            # Here, should be messages instead of extract_constraints_messages, since I want to regenerate solutions
                             messages.append(user_prompt)
                             with open(messages_path, 'a') as file:
                                 file.write(f"User - Regenerate prompt:\n===\n{regenerate_prompt}\n\n")
                             continue
                         elif pass_verifier_value == -1:
+                            # Here, should be messages instead of extract_constraints_messages, since I want to regenerate solutions
                             solve_task_prompt = (
                                 f'The generated code for verification has bugs and has exceeded the retry limit.\n'
                                 f'We think the generated solution for the task is incorrect.\n'
@@ -252,7 +298,7 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--llm_model', type=str, default='gpt-4-turbo',
                         choices=['gpt-4-turbo-2024-04-09', 'gpt-4o-2024-05-13', 'gpt-4o-mini-2024-07-18'])
-    parser.add_argument('--reflect_num', type=int, default=5, help='Default: self reflect 5 times.')
+    parser.add_argument('--reflect_num', type=int, default=3, help='Default: self reflect 5 times.')
     parser.add_argument('--verify_retry_num', type=int, default=2, help='Default: self reflect 5 times.')
     parser.add_argument('--robot_num', type=str, default='single', choices=['single', 'multiple'],
                         help='Default: self reflect 5 times.')
