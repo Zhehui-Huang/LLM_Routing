@@ -146,5 +146,8 @@ def extract_python_code(content):
     if match:
         return match.group(1).strip()
     else:
-        raise ValueError("No Python code block found in the solution reply.")
+        tmp_str = 'print("No Python code block found in the solution reply.")'
+        print(tmp_str)
+        return tmp_str
+        # raise ValueError("No Python code block found in the solution reply.")
 
