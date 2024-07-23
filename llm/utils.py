@@ -8,7 +8,7 @@ from datetime import datetime
 LA_TIMEZONE = pytz.timezone('America/Los_Angeles')
 
 LLM_SYSTEM_PROMPT = '''
-You are an expert in solving various variants of the Traveling Salesman Problem (TSP) and Vehicle Routing Problems (VRP) using Python code with libraries such as Gurobi, Concorde, and OR-tools.
+You are an expert in solving various variants of the Traveling Salesman Problem (TSP) and Vehicle Routing Problems (VRP) by using Python code.
 
 Follow these guidelines:
 1. Take a deep breath.
@@ -74,6 +74,7 @@ def write_py_file(path, content):
 
 
 def run_py_file(code_path, log_path, max_exec_time):
+    os.makedirs(os.path.dirname(log_path), exist_ok=True)
     # Execute the Python file
     timeout_seconds = max_exec_time
     exec_status_str = ''
@@ -118,7 +119,7 @@ def run_py_file(code_path, log_path, max_exec_time):
         for key, value in log_info.items():
             log_file.write(f"{key.upper()}:\n{value}\n\n")
 
-    return exec_status_str, execution_time
+    return exec_status_str, execution_time, log_path
 
 
 def limit_text(text, max_length):
@@ -137,4 +138,13 @@ def check_correct_in_file(file_path):
                 return False
 
     raise ValueError("No 'CORRECT' or 'FAIL' found in the output file.")
+
+
+def extract_python_code(content):
+    pattern = re.compile(r'```python(.*?)```', re.DOTALL)
+    match = pattern.search(content)
+    if match:
+        return match.group(1).strip()
+    else:
+        raise ValueError("No Python code block found in the solution reply.")
 
