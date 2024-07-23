@@ -10,8 +10,7 @@ from utils import ask_llm, LLM_SYSTEM_PROMPT, list_files, extract_value, read_tx
 
 LA_TIMEZONE = pytz.timezone('America/Los_Angeles')
 
-# SINGLE_TASK_LIST = ['TSP', 'BTSP', 'GTSP', 'KTSP', 'MV-TSP']
-SINGLE_TASK_LIST = ['TSP']
+SINGLE_TASK_LIST = ['TSP', 'BTSP', 'GTSP', 'KTSP', 'MV-TSP']
 # CITY_NUM_LIST = [10, 15, 20, 25, 50]
 CITY_NUM_LIST = [10]
 MAXIMUM_EXEC_TIME = 600
@@ -37,13 +36,7 @@ def solve_single(args):
     base_messages_path = f'{BASE_PATH}/{path_prex}/messages/single'
     base_constraints_path = f'{BASE_PATH}/{path_prex}/constraints/single'
 
-    track_file_path = f'{BASE_PATH}/{path_prex}/track_single.txt'
-    os.makedirs(os.path.dirname(track_file_path), exist_ok=True)
-    if os.path.exists(track_file_path):
-        raise FileExistsError(f"Track file already exists: {track_file_path}")
-    else:
-        with open(track_file_path, 'w') as file:
-            file.write("Track file for single task execution.\n===\n")
+    base_track_file_path = f'{BASE_PATH}/{path_prex}/track'
 
     for city_num in CITY_NUM_LIST:
         for task_name in SINGLE_TASK_LIST:
@@ -51,6 +44,13 @@ def solve_single(args):
             file_path_list, file_name_list = list_files(directory=task_folder)
             file_path_list.sort()
             file_name_list.sort()
+
+            # Create track file
+            track_file_path = f'{base_track_file_path}/{task_name}/{city_num}/track.txt'
+            os.makedirs(os.path.dirname(track_file_path), exist_ok=True)
+            with open(track_file_path, 'w') as file:
+                file.write(f"Task: {task_name}, City: {city_num}\n")
+
             # Maintain exec_detail_path
             for file_path, file_name in zip(file_path_list, file_name_list):
                 # 0. Extract city number from file name
@@ -62,7 +62,7 @@ def solve_single(args):
 
                 file_base_name = file_name[:-4]
                 with open(track_file_path, 'a') as file:
-                    file.write(f"City: {city_num}, Task: {task_name}, File: {file_base_name}\n+++\n")
+                    file.write(f"File: {file_base_name}\n+++\n")
                 # 1. Create exec_details and messages_path file
 
                 # 1.1 exec_details
@@ -329,7 +329,7 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--llm_model', type=str, default='gpt-4-turbo',
                         choices=['gpt-4-turbo-2024-04-09', 'gpt-4o-2024-05-13', 'gpt-4o-mini-2024-07-18'])
-    parser.add_argument('--reflect_num', type=int, default=3, help='Default: self reflect 5 times.')
+    parser.add_argument('--reflect_num', type=int, default=4, help='Default: self reflect 3 times.')
     parser.add_argument('--verify_retry_num', type=int, default=2, help='Default: self reflect 5 times.')
     parser.add_argument('--robot_num', type=str, default='single', choices=['single', 'multiple'],
                         help='Default: self reflect 5 times.')
