@@ -133,11 +133,11 @@ def check_correct_in_file(file_path):
     with open(file_path, 'r') as file:
         for line in file:
             if 'CORRECT' in line:
-                return True
+                return 'CORRECT'
             if 'FAIL' in line:
-                return False
+                return 'FAIL'
 
-    raise ValueError("No 'CORRECT' or 'FAIL' found in the output file.")
+    return 'None'
 
 
 def extract_python_code(content):
@@ -151,3 +151,19 @@ def extract_python_code(content):
         return tmp_str
         # raise ValueError("No Python code block found in the solution reply.")
 
+
+def check_log_file_empty(file_path):
+    with open(file_path, 'r') as file:
+        content = file.read()
+        output_section = content.split('OUTPUT:')[1].split('ERROR:')[0].strip()
+        error_section = content.split('ERROR:')[1].strip()
+
+        # Check if the sections are empty
+        output_empty = (output_section == "")
+        error_empty = (error_section == "")
+
+    # Determine the result based on the conditions
+    if output_empty and error_empty:
+        return 'EMPTY'
+    else:
+        return 'NOT EMPTY'
