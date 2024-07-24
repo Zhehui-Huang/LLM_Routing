@@ -55,8 +55,7 @@ def get_results_one_try(
     # Check the content in tmp_log_file_path, if it is empty, then return 'fail', 'None', 'None'
     file_empty_str = check_log_file_empty(file_path=tmp_log_file_path)
     if exec_status_str == 'fail' or file_empty_str == 'EMPTY':
-        write_end_info(start_time=start_time, exec_detail_path=exec_detail_path, tmp_reflect_num=llm_exec_reflect_num,
-                       tmp_log_file_path=tmp_log_file_path)
+        write_end_info(start_time=start_time, exec_detail_path=exec_detail_path)
         # exec_status_str, unit_test_status, unit_test_res
         return 'fail', 'None', 'None', total_request_llm_num_dict
 
@@ -101,13 +100,14 @@ def get_results_one_try(
         file.write(f"Another LLM - User - Ask for prompts\n")
         file.write(f"Another LLM - Assistant - Constraints response: {constraints_path}\n")
 
-    unit_test_status, unit_test_res = get_executable_unit_test_code(
+    unit_test_status, unit_test_res, total_request_llm_num_dict = get_executable_unit_test_code(
         args=args, client=client, extract_constraints_messages=extract_constraints_messages,
         task_name=task_name, city_num=city_num, file_base_name=file_base_name,
         llm_exec_reflect_num=llm_exec_reflect_num, base_verifier_log_path=base_verifier_log_path,
         base_verifier_path=base_verifier_path, exec_detail_path=exec_detail_path,
         log_file_path=tmp_log_file_path, constraints_content=constraints_content,
-        messages_path=messages_path, instance_tid=instance_tid, outer_tid=outer_tid
+        messages_path=messages_path, instance_tid=instance_tid, outer_tid=outer_tid,
+        total_request_llm_num_dict=total_request_llm_num_dict
     )
 
     if unit_test_status == 'success':
