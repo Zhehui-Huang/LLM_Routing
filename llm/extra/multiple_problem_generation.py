@@ -7,11 +7,11 @@ from utils import get_ktsp_k_list, read_txt_file, write_txt_file
 from multi_utils import get_multi_robot_info_str, modify_mTSPMD_info, extract_robot_num, extract_demand_info, FILE_NAME_SMALL, FILE_NAME_BIG
 
 
-TASK_LIST = ['mTSP', 'mTSP_MinMax', 'mTSPMD', 'CVRP']
+TASK_LIST = ['mTSP', 'mTSP_MinMax', 'mTSPMD', 'mTSPMD_non_fix', 'CVRP']
 
 
 def get_format_requirements(task_name):
-    if task_name == 'mTSPMD':
+    if task_name == 'mTSPMD' or task_name == 'mTSPMD_non_fix':
         format_requirements = (
             '###\n'
             'Format requirements\n'
@@ -103,7 +103,7 @@ def problem_generation(file_names, note):
 
             # Get robot number
             robot_num = extract_robot_num(filename=file_name + '.txt')
-            if task_name == 'mTSPMD':
+            if task_name == 'mTSPMD' or task_name == 'mTSPMD_non_fix':
                 original_info = modify_mTSPMD_info(content=original_info, robot_num=robot_num)
 
             env_info_str = get_multi_env_info_str(original_info=original_info, extra_env_info_str=extra_env_info_str)
@@ -124,7 +124,7 @@ def problem_generation(file_names, note):
 
 def main():
     problem_generation(file_names=FILE_NAME_SMALL, note='small')
-    problem_generation(file_names=FILE_NAME_BIG, note='big')
+    # problem_generation(file_names=FILE_NAME_BIG, note='big')
 
 
 if __name__ == '__main__':

@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.8 (quad-swarm-rl) (4)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="llm_math" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="llm_routing" project-jdk-type="Python SDK" />
 </project>

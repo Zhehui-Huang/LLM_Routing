@@ -7,11 +7,13 @@ import pytz
 from datetime import datetime
 LA_TIMEZONE = pytz.timezone('America/Los_Angeles')
 
-SINGLE_TASK_LIST = ['TSP', 'BTSP', 'GTSP', 'KTSP', 'MV-TSP']
+# SINGLE_TASK_LIST = ['TSP', 'BTSP', 'GTSP', 'KTSP', 'MV-TSP']
+SINGLE_TASK_LIST = ['TSP', 'BTSP', 'GTSP', 'KTSP']
 MULTI_TASK_LIST = ['mTSP', 'mTSP_MinMax', 'mTSPMD', 'CVRP']
 # CITY_NUM_LIST = [10, 15, 20, 25, 50]
-CITY_NUM_LIST = [10]
-MAXIMUM_EXEC_TIME = 600
+# CITY_NUM_LIST = [10]
+CITY_NUM_LIST = [15, 20]
+MAXIMUM_EXEC_TIME = 180
 MAXIMUM_TEXT_LENGTH = 2000
 
 INSTANCE_TRY_TIMES = 5
@@ -178,7 +180,7 @@ def check_log_file_empty(file_path):
 def write_start_info(file_base_name, base_exec_details_path, task_name, city_num, base_messages_path,
                      instance_tid, outer_tid):
     # 2 Execution results
-    exec_detail_path = f'{base_exec_details_path}/{task_name}/{city_num}/{instance_tid}/{outer_tid}/exec_details_{file_base_name}.txt'
+    exec_detail_path = f'{base_exec_details_path}/{task_name}/{city_num}/{file_base_name}/{instance_tid}/{outer_tid}/exec_details_{file_base_name}.txt'
     os.makedirs(os.path.dirname(exec_detail_path), exist_ok=True)
 
     start_time = time.time()
@@ -189,7 +191,7 @@ def write_start_info(file_base_name, base_exec_details_path, task_name, city_num
         file.write(f"Task file path: {exec_detail_path}\n===\n")
 
     # 3 Message info
-    messages_path = f'{base_messages_path}/{task_name}/{city_num}/{instance_tid}/{outer_tid}/messages_{file_base_name}.txt'
+    messages_path = f'{base_messages_path}/{task_name}/{city_num}/{file_base_name}/{instance_tid}/{outer_tid}/messages_{file_base_name}.txt'
     os.makedirs(os.path.dirname(messages_path), exist_ok=True)
     with open(messages_path, 'w') as file:
         file.write(f"Task file path: {messages_path}\n===\n")

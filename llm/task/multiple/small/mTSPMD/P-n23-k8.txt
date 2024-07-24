@@ -48,10 +48,10 @@ Robot 7 starts and ends at depot city 7.
 ###
 Task Description
 ===
-The robots need to collectively visit all cities exactly once and then return to their respective depots.
+The robots must collectively visit all cities exactly once and then return to their respective depots.
 Each robot starts and ends at its assigned depot.
-Please find the shortest tours for each robot.
-Ensure that the total travel cost for all robots is minimized.
+The objective is to determine the shortest possible tours for each robot while minimizing the total travel cost for all robots combined.
+Ensure that each city is visited exactly once, and each robot returns to its starting depot after completing its tour.
 ###
 
 ###

@@ -14,7 +14,7 @@ from verifier import get_executable_unit_test_code
 LA_TIMEZONE = pytz.timezone('America/Los_Angeles')
 
 
-BASE_PATH = '/Users/tencentintern/Documents/LLM_Routing/llm'
+BASE_PATH = '/home/ethan/repository/LLM_Routing/llm'
 OPENAI_API_KEY = "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"
 
 
@@ -176,11 +176,15 @@ def solve_batch(args):
                 # 1. Instance try 5 times
                 for instance_tid in range(INSTANCE_TRY_TIMES):
                     final_success_bool = False
-                    track_file_path = f'{base_track_file_path}/{task_name}/{city_num}/{instance_tid}/track.txt'
+                    track_file_path = f'{base_track_file_path}/{task_name}/{city_num}/{file_base_name}/{instance_tid}/track.txt'
+                    if os.path.exists(track_file_path):
+                        print(f'File exists {track_file_path}\n')
+                        continue
+
                     os.makedirs(os.path.dirname(track_file_path), exist_ok=True)
                     # Create track file
                     with open(track_file_path, 'w') as file:
-                        file.write(f"Task: {task_name}, City: {city_num}, Run time: {instance_tid}, File name: {file_base_name}\n\n")
+                        file.write(f"Task: {task_name}, City: {city_num}, File name: {file_base_name}, Run time: {instance_tid}\n\n")
 
                     total_request_llm_num_dict = {
                         'exec': 0,

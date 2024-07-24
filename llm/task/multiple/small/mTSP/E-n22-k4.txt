@@ -37,10 +37,12 @@ Robot Information
 ###
 
 ###
-Task
+Task Description
 ===
-The robots need to collectively visit all cities exactly once, except the depot city, and then return to the depot city.
-Please find the shortest tours for the robots.
+The robots must collectively visit all cities exactly once, excluding the depot city as a destination, and then return to the depot city after completing their tours.
+Each robot starts and ends its tour at the depot.
+The objective is to determine the shortest possible tours for the robots while minimizing the total travel cost.
+Ensure that every city, except the depot, is visited exactly once.
 ###
 
 ###

@@ -38,10 +38,12 @@ Robot Information
 ###
 
 ###
-Task
+Task Description
 ===
-The robots need to collectively visit all cities exactly once, except the depot city, and then return to the depot city.
-Please minimize the maximum distance traveled by any single robot.
+The robots must collectively visit all cities exactly once, excluding the depot city as a destination, and then return to the depot city after completing their tours.
+Each robot starts and ends its tour at the depot.
+The primary objective is to minimize the maximum distance traveled by any single robot.
+Ensure that every city, except the depot, is visited exactly once.
 ###
 
 ###
