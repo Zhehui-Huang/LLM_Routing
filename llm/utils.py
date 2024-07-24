@@ -7,6 +7,15 @@ import pytz
 from datetime import datetime
 LA_TIMEZONE = pytz.timezone('America/Los_Angeles')
 
+SINGLE_TASK_LIST = ['TSP', 'BTSP', 'GTSP', 'KTSP', 'MV-TSP']
+MULTI_TASK_LIST = ['mTSP', 'mTSP_MinMax', 'mTSPMD', 'CVRP']
+# CITY_NUM_LIST = [10, 15, 20, 25, 50]
+CITY_NUM_LIST = [10]
+MAXIMUM_EXEC_TIME = 600
+MAXIMUM_TEXT_LENGTH = 2000
+
+INSTANCE_TRY_TIMES = 5
+
 LLM_SYSTEM_PROMPT = '''
 You are an expert in solving various variants of the Traveling Salesman Problem (TSP) and Vehicle Routing Problems (VRP) by using Python code.
 
@@ -149,7 +158,6 @@ def extract_python_code(content):
         tmp_str = 'print("No Python code block found in the solution reply.")'
         print(tmp_str)
         return tmp_str
-        # raise ValueError("No Python code block found in the solution reply.")
 
 
 def check_log_file_empty(file_path):
@@ -167,3 +175,57 @@ def check_log_file_empty(file_path):
         return 'EMPTY'
     else:
         return 'NOT EMPTY'
+
+
+def write_start_info(track_file_path, file_base_name, base_exec_details_path, task_name, city_num,
+                     base_messages_path, instance_tid, outer_tid):
+    # 1. Track info
+    with open(track_file_path, 'a') as file:
+        file.write(f"File: {file_base_name}\n+++\n")
+    # 2 Execution results
+    exec_detail_path = f'{base_exec_details_path}/{task_name}/{city_num}/{instance_tid}/{outer_tid}/exec_details_{file_base_name}.txt'
+    os.makedirs(os.path.dirname(exec_detail_path), exist_ok=True)
+
+    start_time = time.time()
+    cur_time = datetime.now(LA_TIMEZONE)
+    print(f"[{cur_time.strftime('%Y-%m-%d %H:%M:%S')}]\tStarting ...")
+    with open(exec_detail_path, 'w') as file:
+        file.write(f"Start time: [{cur_time.strftime('%Y-%m-%d %H:%M:%S')}]\n\n")
+        file.write(f"Task file path: {exec_detail_path}\n===\n")
+
+    # 3 Message info
+    messages_path = f'{base_messages_path}/{task_name}/{city_num}/{instance_tid}/{outer_tid}/messages_{file_base_name}.txt'
+    os.makedirs(os.path.dirname(messages_path), exist_ok=True)
+    with open(messages_path, 'w') as file:
+        file.write(f"Task file path: {messages_path}\n===\n")
+
+    return exec_detail_path, start_time, messages_path
+
+
+def write_end_info(start_time, exec_detail_path, track_file_path, tmp_reflect_num, tmp_log_file_path):
+    # 1. Exec details
+    end_time = time.time()
+    response_time = end_time - start_time
+    cur_time = datetime.now(LA_TIMEZONE)
+    print(f"[{cur_time.strftime('%Y-%m-%d %H:%M:%S')}]\tFinished.\tOverall time: {response_time:.2f} seconds.")
+    with open(exec_detail_path, 'a') as file:
+        file.write(f"[{cur_time.strftime('%Y-%m-%d %H:%M:%S')}]\tFinished.\n\n")
+        file.write(f"Overall time: {response_time:.2f} seconds.\n")
+
+    # 2. Track info
+    with open(track_file_path, 'a') as file:
+        file.write(f"Reflect num: {tmp_reflect_num}\n")
+        file.write(f"Log of solution file path: {tmp_log_file_path}\n+++\n\n\n")
+
+
+def get_output_details(content):
+    formatted_str = ''
+    output_details = content.split('OUTPUT:')[1].split('ERROR:')[0].strip()
+    if output_details != "":
+        formatted_str += f'OUTPUT:\n{output_details}\n\n'
+
+    error_details = content.split('ERROR:')[1].strip()
+    if error_details != "":
+        formatted_str += f'ERROR:\n{error_details}\n\n'
+
+    return formatted_str
