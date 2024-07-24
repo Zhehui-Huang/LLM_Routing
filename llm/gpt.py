@@ -19,17 +19,16 @@ OPENAI_API_KEY = "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"
 
 
 def get_results_one_try(
-        args, client, file_path, file_base_name, task_name, city_num, track_file_path,
+        args, client, file_path, file_base_name, task_name, city_num,
         base_exec_details_path, base_messages_path, base_solution_path, base_log_path, base_constraints_path,
-        base_verifier_path, base_verifier_log_path, instance_tid, outer_tid):
+        base_verifier_path, base_verifier_log_path, instance_tid, outer_tid, total_request_llm_num_dict):
     # 1. Write start info;
     # a) Track info: Reflect times and results path
     # b) Execution info: The process of each instance execution
     # c) Message info: How the message construct
     exec_detail_path, start_time, messages_path = write_start_info(
-        track_file_path=track_file_path, file_base_name=file_base_name,
-        base_exec_details_path=base_exec_details_path, task_name=task_name, city_num=city_num,
-        base_messages_path=base_messages_path, instance_tid=instance_tid, outer_tid=outer_tid
+        file_base_name=file_base_name, base_exec_details_path=base_exec_details_path, task_name=task_name,
+        city_num=city_num, base_messages_path=base_messages_path, instance_tid=instance_tid, outer_tid=outer_tid
     )
 
     # 2. Load the task description
@@ -45,21 +44,21 @@ def get_results_one_try(
         file.write(f"User - Task description: {file_base_name}\n")
 
     # 4. Task -> Solution & Execution -> Results -> exec_status_str
-    exec_status_str, llm_exec_reflect_num, tmp_log_file_path = task2exec_res(
+    exec_status_str, llm_exec_reflect_num, tmp_log_file_path, total_request_llm_num_dict = task2exec_res(
         args=args, client=client, file_base_name=file_base_name, task_name=task_name, city_num=city_num,
         messages=messages, base_solution_path=base_solution_path, base_log_path=base_log_path,
-        exec_detail_path=exec_detail_path, messages_path=messages_path, instance_tid=instance_tid, outer_tid=outer_tid
+        exec_detail_path=exec_detail_path, messages_path=messages_path, instance_tid=instance_tid, outer_tid=outer_tid,
+        total_request_llm_num_dict=total_request_llm_num_dict
     )
 
     # 5. Check exec_status_str, exec_status_str = fail
     # Check the content in tmp_log_file_path, if it is empty, then return 'fail', 'None', 'None'
     file_empty_str = check_log_file_empty(file_path=tmp_log_file_path)
     if exec_status_str == 'fail' or file_empty_str == 'EMPTY':
-        write_end_info(start_time=start_time, exec_detail_path=exec_detail_path,
-                       track_file_path=track_file_path, tmp_reflect_num=llm_exec_reflect_num,
+        write_end_info(start_time=start_time, exec_detail_path=exec_detail_path, tmp_reflect_num=llm_exec_reflect_num,
                        tmp_log_file_path=tmp_log_file_path)
-        # return exec_status_str, unit_test_status, unit_test_res
-        return 'fail', 'None', 'None'
+        # exec_status_str, unit_test_status, unit_test_res
+        return 'fail', 'None', 'None', total_request_llm_num_dict
 
     # 7 exec_status_str = success -> verifier
     # 7.1 Get constraints from task description
@@ -84,6 +83,8 @@ def get_results_one_try(
     constraints_content, response_time = ask_llm(
         client=client, llm_model=args.llm_model, messages=extract_constraints_messages
     )
+    total_request_llm_num_dict['constraints'] += 1
+
     constraints_path = f'{base_constraints_path}/{task_name}/{city_num}/{file_base_name}/{instance_tid}/{outer_tid}/constraints_r{llm_exec_reflect_num}.txt'
     os.makedirs(os.path.dirname(constraints_path), exist_ok=True)
     with open(constraints_path, 'w') as file:
@@ -111,28 +112,17 @@ def get_results_one_try(
 
     if unit_test_status == 'success':
         if unit_test_res == 'CORRECT':
-            with open(track_file_path, 'a') as file:
-                file.write(f"Get results, pass the verifier.\n\n")
-
             # return exec_status_str, unit_test_status, unit_test_res
-            return 'success', 'success', 'CORRECT'
+            return 'success', 'success', 'CORRECT', total_request_llm_num_dict
         elif unit_test_res == 'FAIL':
-            with open(track_file_path, 'a') as file:
-                file.write(f"Get results, can not pass the verifier.\n\n")
             # return exec_status_str, unit_test_status, unit_test_res
-            return 'success', 'success', 'FAIL'
+            return 'success', 'success', 'FAIL', total_request_llm_num_dict
         elif unit_test_res == 'None':
-            with open(track_file_path, 'a') as file:
-                file.write(f"Get results, but the verifier does not output CORRECT or FAIL.\n\n")
-
             # return exec_status_str, unit_test_status, unit_test_res
-            return 'success', 'success', 'None'
+            return 'success', 'success', 'None', total_request_llm_num_dict
     elif unit_test_status == 'fail':
-        with open(track_file_path, 'a') as file:
-            file.write(f"Get results, but the verifier has bugs.\n\n")
-
         # return exec_status_str, unit_test_status, unit_test_res
-        return 'success', 'fail', 'not_executed'
+        return 'success', 'fail', 'not_executed', total_request_llm_num_dict
     else:
         raise ValueError(f"Unknown unit test status: {unit_test_status}")
 
@@ -190,28 +180,38 @@ def solve_batch(args):
                     os.makedirs(os.path.dirname(track_file_path), exist_ok=True)
                     # Create track file
                     with open(track_file_path, 'w') as file:
-                        file.write(f"Task: {task_name}, City: {city_num}, Run time: {instance_tid}\n")
+                        file.write(f"Task: {task_name}, City: {city_num}, Run time: {instance_tid}, File name: {file_base_name}\n\n")
 
+                    total_request_llm_num_dict = {
+                        'exec': 0,
+                        'verifier': 0,
+                        'constraints': 0,
+                    }
                     for outer_tid in range(args.reflect_num):
-                        exec_status_str, unit_test_status, unit_test_res = get_results_one_try(
+                        exec_status_str, unit_test_status, unit_test_res, total_request_llm_num_dict = get_results_one_try(
                             args=args, client=client, file_path=file_path, file_base_name=file_base_name,
-                            task_name=task_name, city_num=city_num, track_file_path=track_file_path,
+                            task_name=task_name, city_num=city_num,
                             base_exec_details_path=base_exec_details_path, base_messages_path=base_messages_path,
                             base_solution_path=base_solution_path, base_log_path=base_log_path,
                             base_constraints_path=base_constraints_path, base_verifier_path=base_verifier_path,
                             base_verifier_log_path=base_verifier_log_path, instance_tid=instance_tid,
-                            outer_tid=outer_tid
+                            outer_tid=outer_tid, total_request_llm_num_dict=total_request_llm_num_dict
                         )
                         if exec_status_str == 'success' and unit_test_status == 'success' and unit_test_res == 'CORRECT':
                             final_success_bool = True
                             break
 
+                    total_llm_rnum = sum(total_request_llm_num_dict.values())
+                    total_llm_rnum_str = ', '.join(f"'{key}': {value}" for key, value in total_request_llm_num_dict.items())
+
                     if final_success_bool:
                         with open(track_file_path, 'a') as file:
-                            file.write(f"Finally get correct results.\n")
+                            file.write(f"Success: Request LLM number: {total_llm_rnum}\n")
+                            file.write(f"Details: {total_llm_rnum_str}\n\n\n")
                     else:
                         with open(track_file_path, 'a') as file:
-                            file.write(f"Can not get results.\n")
+                            file.write(f"Fail: Request LLM number: {total_llm_rnum}\n")
+                            file.write(f"Details: {total_llm_rnum_str}\n\n\n")
 
 
 def solve_problem(args):

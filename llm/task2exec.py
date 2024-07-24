@@ -3,7 +3,7 @@ from utils import (ask_llm, read_txt_file, write_py_file, run_py_file, limit_tex
 
 
 def task2exec_res(args, client, file_base_name, task_name, city_num, messages, base_solution_path, base_log_path,
-                  exec_detail_path, messages_path, instance_tid, outer_tid):
+                  exec_detail_path, messages_path, instance_tid, outer_tid, total_request_llm_num_dict):
     tmp_reflect_num = 0
     tmp_log_file_path = None
     for i in range(args.reflect_num):
@@ -13,6 +13,8 @@ def task2exec_res(args, client, file_base_name, task_name, city_num, messages, b
 
         # 1. LLM -> Code & extract code & write code
         code_solution_content, response_time = ask_llm(client=client, llm_model=args.llm_model, messages=messages)
+        total_request_llm_num_dict['exec'] += 1
+
         code_solution_content = extract_python_code(content=code_solution_content)
 
         sol_file_path = f'{base_solution_path}/{task_name}/{city_num}/{file_base_name}/{instance_tid}/{outer_tid}/solution_r{i}.py'
@@ -36,7 +38,7 @@ def task2exec_res(args, client, file_base_name, task_name, city_num, messages, b
                 with open(messages_path, 'a') as file:
                     file.write(f"Assistant - Solution: {sol_file_path}\n")
 
-                return 'success', i, log_file_path
+                return 'success', i, log_file_path, total_request_llm_num_dict
 
         # Setup some variables
         tmp_reflect_num = i
@@ -94,4 +96,4 @@ def task2exec_res(args, client, file_base_name, task_name, city_num, messages, b
         with open(messages_path, 'a') as file:
             file.write(f"Assistant - Solution: {sol_file_path}\n")
 
-    return 'fail', tmp_reflect_num, tmp_log_file_path
+    return 'fail', tmp_reflect_num, tmp_log_file_path, total_request_llm_num_dict

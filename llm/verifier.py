@@ -4,7 +4,8 @@ from utils import (ask_llm, read_txt_file, write_py_file, run_py_file, limit_tex
 
 def get_executable_unit_test_code(args, client, extract_constraints_messages, task_name, city_num, file_base_name,
                                   llm_exec_reflect_num, base_verifier_log_path, base_verifier_path, exec_detail_path,
-                                  log_file_path, constraints_content, messages_path, instance_tid, outer_tid):
+                                  log_file_path, constraints_content, messages_path, instance_tid, outer_tid,
+                                  total_request_llm_num_dict):
     overall_verifier_prompt = ''
     unit_test_status = ''
     unit_test_res = ''
@@ -31,6 +32,7 @@ def get_executable_unit_test_code(args, client, extract_constraints_messages, ta
         # 2. Verifier LLM: generate unit tests code
         verifier_code_content, response_time = ask_llm(client=client, llm_model=args.llm_model,
                                                        messages=extract_constraints_messages)
+        total_request_llm_num_dict['verifier'] += 1
         verifier_code_content = extract_python_code(content=verifier_code_content)
 
         # 3. Write verifier code to file & execute verifier code
@@ -49,12 +51,12 @@ def get_executable_unit_test_code(args, client, extract_constraints_messages, ta
                 with open(exec_detail_path, 'a') as file:
                     file.write(f"Ask another LLM for verifier code, response time: {response_time:.2f} seconds.\n")
                     file.write(f"Another LLM - pass verifier\n")
-                return 'success', 'CORRECT'
+                return 'success', 'CORRECT', total_request_llm_num_dict
             elif verify_res_str == 'FAIL':
                 with open(exec_detail_path, 'a') as file:
                     file.write(f"Ask another LLM for verifier code, response time: {response_time:.2f} seconds.\n")
                     file.write(f"Another LLM - fail verifier\n")
-                return 'success', 'FAIL'
+                return 'success', 'FAIL', total_request_llm_num_dict
             elif verify_res_str == 'None':
                 unit_test_status = 'success'
                 unit_test_res = 'None'
@@ -99,4 +101,4 @@ def get_executable_unit_test_code(args, client, extract_constraints_messages, ta
             file.write(f"Another LLM - User - Verifier prompt.\n")
             file.write(f"Another LLM - Assistant - Verifier: {verifier_file_path}\n")
 
-    return unit_test_status, unit_test_res
+    return unit_test_status, unit_test_res, total_request_llm_num_dict

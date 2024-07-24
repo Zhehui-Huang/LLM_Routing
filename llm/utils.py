@@ -86,7 +86,6 @@ def run_py_file(code_path, log_path, max_exec_time):
     os.makedirs(os.path.dirname(log_path), exist_ok=True)
     # Execute the Python file
     timeout_seconds = max_exec_time
-    exec_status_str = ''
 
     start_time = time.time()
     cur_time = datetime.now(LA_TIMEZONE)
@@ -108,8 +107,7 @@ def run_py_file(code_path, log_path, max_exec_time):
             'error': result.stderr
         }
 
-    except subprocess.TimeoutExpired as e:
-        exec_success = False
+    except subprocess.TimeoutExpired as _:
         log_path = log_path.replace('.txt', '_timeout.txt')
         exec_status_str = 'timeout'
         log_info = {
@@ -177,11 +175,8 @@ def check_log_file_empty(file_path):
         return 'NOT EMPTY'
 
 
-def write_start_info(track_file_path, file_base_name, base_exec_details_path, task_name, city_num,
-                     base_messages_path, instance_tid, outer_tid):
-    # 1. Track info
-    with open(track_file_path, 'a') as file:
-        file.write(f"File: {file_base_name}\n+++\n")
+def write_start_info(file_base_name, base_exec_details_path, task_name, city_num, base_messages_path,
+                     instance_tid, outer_tid):
     # 2 Execution results
     exec_detail_path = f'{base_exec_details_path}/{task_name}/{city_num}/{instance_tid}/{outer_tid}/exec_details_{file_base_name}.txt'
     os.makedirs(os.path.dirname(exec_detail_path), exist_ok=True)
@@ -202,7 +197,7 @@ def write_start_info(track_file_path, file_base_name, base_exec_details_path, ta
     return exec_detail_path, start_time, messages_path
 
 
-def write_end_info(start_time, exec_detail_path, track_file_path, tmp_reflect_num, tmp_log_file_path):
+def write_end_info(start_time, exec_detail_path):
     # 1. Exec details
     end_time = time.time()
     response_time = end_time - start_time
@@ -211,11 +206,6 @@ def write_end_info(start_time, exec_detail_path, track_file_path, tmp_reflect_nu
     with open(exec_detail_path, 'a') as file:
         file.write(f"[{cur_time.strftime('%Y-%m-%d %H:%M:%S')}]\tFinished.\n\n")
         file.write(f"Overall time: {response_time:.2f} seconds.\n")
-
-    # 2. Track info
-    with open(track_file_path, 'a') as file:
-        file.write(f"Reflect num: {tmp_reflect_num}\n")
-        file.write(f"Log of solution file path: {tmp_log_file_path}\n+++\n\n\n")
 
 
 def get_output_details(content):
