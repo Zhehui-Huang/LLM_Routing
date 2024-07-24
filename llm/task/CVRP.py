@@ -221,10 +221,15 @@ if __name__ == "__main__":
         # if '25' in file_name or '50' in file_name:
         #     continue
         # else:
+        if int(file_name[3]) >= 3:
+            continue
+        if int(file_name[-5]) >= 6:
+            continue
         file_names.append(file_name)
     
     results = {}
-    for file_path in file_names[1:2]:
+    for file_path in file_names:
+        print(f"Solving CVRP for file: {file_path}")
         info = parse_file(current_directory+'/'+file_path)
         customer_locations = info['city_coordi']
         num_customers = len(customer_locations)-1 # excluding the depot

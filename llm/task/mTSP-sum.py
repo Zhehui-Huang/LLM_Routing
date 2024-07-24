@@ -168,6 +168,7 @@ if __name__ == "__main__":
     
     results = {}
     for file_path in file_names:
+        print(f"Solving mTSP-sum.py {file_path}")
         info = parse_file(current_directory+'/'+file_path)
         
         cities = info['city_coordi']

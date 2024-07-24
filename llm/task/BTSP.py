@@ -16,7 +16,7 @@ import numpy as np
 import math
 import os
 import pickle
-
+from run_code import get_start_time, get_end_time
 
 def generate_random_cities(n):
     cities = [(random.uniform(0, 100), random.uniform(0, 100)) for _ in range(n)]
@@ -177,6 +177,8 @@ if __name__ == "__main__":
     results = {}
     
     for file_path in file_names:
+        print(f"Solving BTSP for file: {file_path}")
+        start_time = get_start_time()
         cities = read_city_locations(current_directory+'/'+file_path)
 
         distance_matrix = calculate_distance_matrix(cities)
@@ -191,7 +193,9 @@ if __name__ == "__main__":
             results[file_path] = [cost, tour]
         else:
             print("No optimal solution found.")
-    
+
+        get_end_time(start_time=start_time)
+
     with open('BTSP_result.dic', 'wb') as f:  # open a text file
         pickle.dump(results, f) # serialize the list
 

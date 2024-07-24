@@ -144,7 +144,7 @@ def parse_file(file_path):
 file_names = []
 # Get the current working directory
 # make sure that the current folder is TSP
-current_directory = os.getcwd()+'/task/multiple/small/mTSPMD'
+current_directory = os.getcwd()+'/multiple/small/mTSPMD'
 
 # List all files in the current directory
 files = os.listdir(current_directory)
@@ -152,10 +152,13 @@ for file_name in files:
     # if '25' in file_name or '50' in file_name:
     #     continue
     # else:
+    if int(file_name[3]) >= 3:
+        continue
     file_names.append(file_name)
 
 results = {}
-for file_path in file_names[1:2]:
+for file_path in file_names:
+    print(f"Solving mTSP-MD not fixed for file: {file_path}")
     info = parse_file(current_directory+'/'+file_path)
     
     cities = info['cities']

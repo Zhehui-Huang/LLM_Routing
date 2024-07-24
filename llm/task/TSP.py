@@ -124,6 +124,7 @@ if __name__ == "__main__":
     results = {}
     
     for file_path in file_names:
+        print(f"Solving TSP for file: {file_path}")
         cities = read_city_locations(current_directory+'/'+file_path)
 
         distance_matrix = calculate_distance_matrix(cities)
