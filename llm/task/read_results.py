@@ -16,6 +16,8 @@ import os
 import pickle
 
 
-filename = 'TSP_result.dic'
+filename = 'mtsp_md_free_result.dic'
 with open(filename, 'rb') as f:
     result = pickle.load(f)
+
+print(result)

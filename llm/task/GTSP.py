@@ -165,11 +165,10 @@ if __name__ == "__main__":
     # List all files in the current directory
     files = os.listdir(current_directory)
     for file_name in files:
-        #if '25' in file_name or '50' in file_name:
-        # if '50' in file_name:
-        #     continue
-        # else:
-        file_names.append(file_name)
+        if '25' in file_name or '50' in file_name:
+            continue
+        else:
+            file_names.append(file_name)
     
     #num_cities = 20
     #cities = generate_random_cities(num_cities)
@@ -177,6 +176,7 @@ if __name__ == "__main__":
     results = {}
     
     for file_path in file_names:
+        print(f"Solving GTSP for file: {file_path}")
         cities = read_city_locations(current_directory+'/'+file_path)
         group = read_city_groups(current_directory+'/'+file_path)
         distance_matrix = calculate_distance_matrix(cities)
