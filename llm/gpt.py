@@ -222,9 +222,9 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--llm_model', type=str, default='gpt-4-turbo',
                         choices=['gpt-4-turbo-2024-04-09', 'gpt-4o-2024-05-13', 'gpt-4o-mini-2024-07-18'])
-    parser.add_argument('--reflect_num', type=int, default=4, help='Default: self reflect 3 times.')
+    parser.add_argument('--reflect_num', type=int, default=3, help='Default: total 3, self reflect 2 times.')
     parser.add_argument('--robot_num', type=str, default='single', choices=['single', 'multiple'],
-                        help='Default: self reflect 5 times.')
+                        help='Default: single')
     return parser.parse_args()
 
 
