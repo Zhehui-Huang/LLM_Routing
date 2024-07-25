@@ -26,7 +26,7 @@ def c_gtsp_task(extra_content):
     task_info = (
         '###\n'
         'Task\n===\n'
-        'The robot needs to visit at least one city from each group of cities, starting and ending at the depot city.\n'
+        'The robot needs to visit exactly one city from each group of cities, starting and ending at the depot city.\n'
         'Please find the shortest tour for the robot.\n'
         f'{extra_content}'
         '###\n\n'
@@ -38,7 +38,7 @@ def d_ktsp_task(k, extra_content):
     task_info = (
         '###\n'
         'Task\n===\n'
-        f'The robot needs to visit exactly {k} cities, excluding the depot city, starting and ending at the depot city.\n'
+        f'The robot needs to visit exactly {k} cities, including the depot city, starting and ending at the depot city.\n'
         f'The goal is to find the shortest possible tour that visits exactly {k} cities out of the given set of cities.\n'
         f'{extra_content}'
         f'###\n\n'

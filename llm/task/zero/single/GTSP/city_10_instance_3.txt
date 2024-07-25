@@ -14,12 +14,12 @@ City 8: (85, 71)
 City 9: (6, 76)
 
 There are 6 city groups: 
-Group 0: [5, 8]
-Group 1: [4, 7]
-Group 2: [3, 9]
-Group 3: [2]
-Group 4: [1]
-Group 5: [6]
+Group 0: [2, 8]
+Group 1: [1, 7]
+Group 2: [3, 6]
+Group 3: [5]
+Group 4: [4]
+Group 5: [9]
 ###
 
 ###
@@ -34,7 +34,7 @@ There is one robot.
 ###
 Task
 ===
-The robot needs to visit at least one city from each group of cities, starting and ending at the depot city.
+The robot needs to visit exactly one city from each group of cities, starting and ending at the depot city.
 Please find the shortest tour for the robot.
 ###
 

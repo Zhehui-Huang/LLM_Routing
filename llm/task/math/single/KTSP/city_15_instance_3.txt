@@ -31,7 +31,7 @@ There is one robot.
 ###
 Task
 ===
-The robot needs to visit exactly 10 cities, excluding the depot city, starting and ending at the depot city.
+The robot needs to visit exactly 10 cities, including the depot city, starting and ending at the depot city.
 The goal is to find the shortest possible tour that visits exactly 10 cities out of the given set of cities.
 You can use the following mathematical formulation to solve the problem:
 ****

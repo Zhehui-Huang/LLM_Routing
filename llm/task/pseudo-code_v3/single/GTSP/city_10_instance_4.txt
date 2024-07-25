@@ -15,12 +15,12 @@ City 9: (66, 62)
 
 There are 7 city groups: 
 Group 0: [1, 6]
-Group 1: [2, 9]
-Group 2: [4]
-Group 3: [5]
-Group 4: [8]
-Group 5: [3]
-Group 6: [7]
+Group 1: [4, 8]
+Group 2: [5]
+Group 3: [3]
+Group 4: [7]
+Group 5: [9]
+Group 6: [2]
 ###
 
 ###
@@ -35,7 +35,7 @@ There is one robot.
 ###
 Task
 ===
-The robot needs to visit at least one city from each group of cities, starting and ending at the depot city.
+The robot needs to visit exactly one city from each group of cities, starting and ending at the depot city.
 Please find the shortest tour for the robot.
 You can use the following pseudocode to solve the problem:
 ****

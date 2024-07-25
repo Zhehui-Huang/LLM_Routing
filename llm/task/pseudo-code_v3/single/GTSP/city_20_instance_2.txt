@@ -24,11 +24,11 @@ City 18: (51, 58)
 City 19: (30, 48)
 
 There are 5 city groups: 
-Group 0: [2, 3, 9, 13]
-Group 1: [7, 8, 10, 15]
-Group 2: [14, 16, 17, 18]
-Group 3: [1, 4, 6, 19]
-Group 4: [5, 11, 12]
+Group 0: [7, 14, 16, 19]
+Group 1: [2, 6, 12, 17]
+Group 2: [3, 8, 9, 15]
+Group 3: [10, 11, 13, 18]
+Group 4: [1, 4, 5]
 ###
 
 ###
@@ -43,7 +43,7 @@ There is one robot.
 ###
 Task
 ===
-The robot needs to visit at least one city from each group of cities, starting and ending at the depot city.
+The robot needs to visit exactly one city from each group of cities, starting and ending at the depot city.
 Please find the shortest tour for the robot.
 You can use the following pseudocode to solve the problem:
 ****

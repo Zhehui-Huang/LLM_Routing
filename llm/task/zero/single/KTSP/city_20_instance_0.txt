@@ -36,7 +36,7 @@ There is one robot.
 ###
 Task
 ===
-The robot needs to visit exactly 4 cities, excluding the depot city, starting and ending at the depot city.
+The robot needs to visit exactly 4 cities, including the depot city, starting and ending at the depot city.
 The goal is to find the shortest possible tour that visits exactly 4 cities out of the given set of cities.
 ###
 
