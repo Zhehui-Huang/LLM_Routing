@@ -10,13 +10,12 @@ from token_utils import calculate_token_num
 
 LA_TIMEZONE = pytz.timezone('America/Los_Angeles')
 
-# SINGLE_TASK_LIST = ['TSP', 'BTSP', 'GTSP', 'KTSP', 'MV-TSP']
-SINGLE_TASK_LIST = ['TSP']
-MULTI_TASK_LIST = ['mTSP', 'mTSP_MinMax', 'mTSPMD', 'CVRP']
+SINGLE_TASK_LIST = ['TSP', 'BTSP', 'GTSP', 'KTSP']
+MULTI_TASK_LIST = ['mTSP', 'mTSP_MinMax', 'mTSPMD', 'mTSPMD_non_fix', 'CVRP']
 # CITY_NUM_LIST = [10, 15, 20, 25, 50]
 # CITY_NUM_LIST = [10]
-CITY_NUM_LIST = [10]
-MAXIMUM_EXEC_TIME = 180
+CITY_NUM_LIST = [10, 15, 20]
+MAXIMUM_EXEC_TIME = 200
 MAXIMUM_TEXT_LENGTH = 2000
 
 INSTANCE_TRY_TIMES = 5

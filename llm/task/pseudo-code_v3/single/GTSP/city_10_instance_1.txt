@@ -14,10 +14,10 @@ City 8: (17, 69)
 City 9: (95, 89)
 
 There are 4 city groups: 
-Group 0: [1, 4, 6]
-Group 1: [5, 8]
-Group 2: [7, 9]
-Group 3: [2, 3]
+Group 0: [5, 6, 7]
+Group 1: [2, 3]
+Group 2: [1, 9]
+Group 3: [4, 8]
 ###
 
 ###

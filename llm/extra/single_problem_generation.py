@@ -66,7 +66,7 @@ def problem_generation(shot_type, vid=0):
                 # 1. Get environment information
                 extra_env_info_str = ''
                 if task_name == 'GTSP':
-                    extra_env_info_str = get_city_group_str(city_num, instance_id)
+                    extra_env_info_str = get_city_group_str(city_num=city_num, instance_id=instance_id, shot_type=shot_type)
                 elif task_name == 'MV-TSP':
                     extra_env_info_str = get_mvtsp_visit_num_str(city_num)
 

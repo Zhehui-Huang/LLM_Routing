@@ -19,12 +19,12 @@ City 13: (29, 64)
 City 14: (32, 79)
 
 There are 6 city groups: 
-Group 0: [2, 8, 14]
-Group 1: [1, 12, 13]
-Group 2: [5, 11]
-Group 3: [7, 10]
-Group 4: [4, 9]
-Group 5: [3, 6]
+Group 0: [1, 6, 14]
+Group 1: [5, 12, 13]
+Group 2: [7, 10]
+Group 3: [4, 11]
+Group 4: [2, 8]
+Group 5: [3, 9]
 ###
 
 ###

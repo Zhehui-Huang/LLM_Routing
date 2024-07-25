@@ -33,7 +33,7 @@ FILE_NAME_BIG = [
     # 'P-n51-k10'
 ]
 
-BASE_PATH = '/Users/tencentintern/Documents/LLM_Routing/llm'
+BASE_PATH = '/home/ethan/repository/backup/LLM_Routing/llm'
 
 
 def download_files(file_names, size):

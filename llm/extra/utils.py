@@ -11,9 +11,24 @@ def get_robot_info_str():
     return robot_info
 
 
-def get_city_group_str(city_num, instance_id):
-    tmp_city_id_list = [i for i in range(1, city_num)]
-    random.shuffle(tmp_city_id_list)
+def get_city_group_str(city_num, instance_id, shot_type):
+    if shot_type == 'zero':
+        tmp_group_file_path = f'../city_list/group_gtsp_single/group_{city_num}_{instance_id}.txt'
+        if os.path.exists(tmp_group_file_path):
+            raise ValueError(f"File exists! {tmp_group_file_path}")
+
+        tmp_city_id_list = [i for i in range(1, city_num)]
+        random.shuffle(tmp_city_id_list)
+
+        os.makedirs(os.path.dirname(tmp_group_file_path), exist_ok=True)
+        with open(tmp_group_file_path, 'w') as fs:
+            tmp_city_id_str = ', '.join(str(i) for i in tmp_city_id_list)
+            fs.write(tmp_city_id_str)
+    else:
+        with open(f'../city_list/group_gtsp_single/group_{city_num}_{instance_id}.txt', 'r') as fr:
+            content = fr.read()
+            tmp_city_id_list = [int(i) for i in content.split(', ')]
+
     group_num = instance_id + 3
     groups_list = [[] for _ in range(group_num)]
     city_group_str = f"\nThere are {group_num} city groups: \n"

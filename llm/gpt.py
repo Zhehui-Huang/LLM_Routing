@@ -14,7 +14,7 @@ from verifier import get_executable_unit_test_code
 LA_TIMEZONE = pytz.timezone('America/Los_Angeles')
 
 
-BASE_PATH = '/home/ethan/repository/LLM_Routing/llm'
+BASE_PATH = '/home/ethan/repository/backup/LLM_Routing/llm'
 OPENAI_API_KEY = "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"
 
 
@@ -135,7 +135,7 @@ def solve_batch(args):
     client = OpenAI(api_key=OPENAI_API_KEY)
 
     path_prex = 'extra_info'
-    base_task_path = f'{BASE_PATH}/task/{args.robot_num}'
+    base_task_path = f'{BASE_PATH}/task/zero/{args.robot_num}/'
 
     # LLM executor
     base_solution_path = f'{BASE_PATH}/{path_prex}/solution/{args.robot_num}'
