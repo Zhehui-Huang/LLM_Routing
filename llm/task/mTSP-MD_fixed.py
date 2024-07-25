@@ -41,7 +41,7 @@ def visualize_tour(cities, tour):
     plt.grid()
     plt.show()
 
-def solve_mTSP_MD_free(n, m, m_k, K, L, D, V_prime, V, c):
+def solve_mTSP_MD_fix(n, m, m_k, K, L, D, V_prime, V, c):
     # Create a new model
     model = gp.Model("multiple_depot_mtsp_fixed_destination")
     d = len(D)
@@ -206,7 +206,7 @@ for file_path in file_names:
     V = list(range(n))
     m_i = {dep:1 for dep in D}
     
-    tour, cost = solve_mTSP_MD_free(n, m, m_i, K, L, D, V_prime, V, distance_matrix)
+    tour, cost = solve_mTSP_MD_fix(n, m, m_i, K, L, D, V_prime, V, distance_matrix)
     if tour:
         print(f"Optimal tour: {tour}")
         print(f"Optimal cost: {cost}")

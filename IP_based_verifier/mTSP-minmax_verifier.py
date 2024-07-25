@@ -126,59 +126,143 @@ def solve_mTSP_max(num_locations, num_salesmen,  costs):
         print("No optimal solution found")
         return None, None
 
-
+def solve_mTSP_max_verifier(num_locations, num_salesmen,  costs, sol_x):
+    N = num_locations
+    M = num_salesmen
+    # Create model
+    m = Model()
+    
+    # Variables
+    x = m.addVars(N, N, M, vtype=GRB.BINARY, name='x')
+    u = m.addVars(N, M, vtype=GRB.CONTINUOUS, name='u')
+    L = m.addVar(vtype=GRB.CONTINUOUS, name='L')
+    
+    # Objective: Minimize the maximum route length
+    m.setObjective(L, GRB.MINIMIZE)
+    
+    # Constraints
+    # Each city is visited exactly once
+    m.addConstrs((quicksum(x[i, j, k] for k in range(M) for j in range(N) if j != i) == 1 for i in range(1, N)), name='visit_once')
+    
+    # Each salesman starts and ends at the depot
+    m.addConstrs((quicksum(x[0, j, k] for j in range(1, N)) == 1 for k in range(M)), name='start_depot')
+    m.addConstrs((quicksum(x[i, 0, k] for i in range(1, N)) == 1 for k in range(M)), name='end_depot')
+    
+    # Subtour elimination (MTZ constraints)
+    m.addConstrs((u[i, k] - u[j, k] + N * x[i, j, k] <= N - 1 for i in range(1, N) for j in range(1, N) if i != j for k in range(M)), name='subtour_elimination')
+    m.addConstrs((u[i, k] >= 2 for i in range(1, N) for k in range(M)), name='u_lower_bound')
+    m.addConstrs((u[i, k] <= N for i in range(1, N) for k in range(M)), name='u_upper_bound')
+    
+    # Flow constraints to ensure the continuity of each tour
+    m.addConstrs((quicksum(x[i, j, k] for j in range(N) if j != i) - quicksum(x[j, i, k] for j in range(N) if j != i) == 0 for i in range(N) for k in range(M)), name='flow_continuity')
+    
+    # Maximum route length constraint
+    m.addConstrs((quicksum(costs[i][j] * x[i, j, k] for i in range(N) for j in range(N) if i != j) <= L for k in range(M)), name='max_route_length')
+    
+    
+    
+    for i in range(N):
+        for j in range(N):
+            for k in range(M):
+                m.addConstr(x[i, j, k] ==sol_x[i][j][k]) 
+                
+                
+    # Optimize model
+    m.optimize()
+    
+    # Print solution
+    if m.status == GRB.OPTIMAL:
+        print('Optimal value:', L.X)
+        routes = []
+        for k in range(M):
+            print(f'Salesman {k + 1}:')
+            for i in range(N):
+                for j in range(N):
+                    if x[i, j, k].X > 0.5:
+                        routes.append((i, j))
+        return routes, m.objVal
+    else:
+        print("No optimal solution found")
+        return None, None
 
 
 def route2edges(routes, num_city, num_vehicle):
     # route = [0, 1, 2, 3， 0]
-    x = np.zeros((num_city, num_city))
+    x = np.zeros((num_city, num_city, num_vehicle))
     assert len(routes)==num_vehicle
     for vehicle in range(len(routes)):
         route = routes[vehicle]
         for i in range(len(route)-1):
-            x[route[i], route[i+1]] = 1
+            x[route[i], route[i+1], vehicle] = 1
     return x
 
 
     
 if __name__ == "__main__":
-    file_names = []
-    # Get the current working directory
-    # make sure that the current folder is TSP
-    current_directory = os.getcwd()+'/multiple/small/mTSP_MinMax'
-    
-    # List all files in the current directory
-    files = os.listdir(current_directory)
-    for file_name in files:
-        # if '25' in file_name or '50' in file_name:
-        #     continue
-        # else:
+    current_directory = os.getcwd()+'/multiple/small/mTSP'
+    file_name = "E-n22-k4.txt"
+    routes = [[0, 1, 2, 3, 4, 5, 6, 7, 0], [0,8,9,10,11,12, 0], [0,13,14,15,16,17, 0], [0, 18, 19, 20, 21, 0]]
 
-        if int(file_name[3]) >= 3:
-            continue
-        if int(file_name[-5]) >= 6:
-            continue
-
-        file_names.append(file_name)
     
-    results = {}
-    for file_path in file_names:
-        print(f"Solving mTSP-minmax {file_path}")
-        info = parse_file(current_directory+'/'+file_path)
+    info = parse_file(current_directory+'/'+file_name)
+    cities = info['city_coordi']
+    n = len(cities)
+    m = info['num_robot']
+    distance_matrix = calculate_distance_matrix(cities)  
+    sol_x = route2edges(routes, n, m)
+    tour, cost = solve_mTSP_max_verifier(n, m, distance_matrix, sol_x)
+    
+    if tour:
+        print("**************************")
+        print(f"feasible route: {routes}")
+        #plot_tour(cities, distance_matrix, tour)
+        #visualize_tour(cities, tour)
         
-        cities = info['city_coordi']
-        n = len(cities)
-        m = info['num_robot']
-        distance_matrix = calculate_distance_matrix(cities)    
-        tour, cost = solve_mTSP_max(n, m, distance_matrix)
-        if tour:
-            print(f"Optimal tour: {tour}")
-            print(f"Optimal cost: {cost}")
-            #plot_tour(cities, distance_matrix, tour)
-            visualize_tour(cities, tour)
-            results[file_path] = [cost, tour]
-        else:
-            print("No optimal solution found.")
+    else:
+        print("**************************")
+        print("Infeasible route.")
+    
+    
+    
+    
+    
+    # file_names = []
+    # # Get the current working directory
+    # # make sure that the current folder is TSP
+    # current_directory = os.getcwd()+'/multiple/small/mTSP_MinMax'
+    
+    # # List all files in the current directory
+    # files = os.listdir(current_directory)
+    # for file_name in files:
+    #     # if '25' in file_name or '50' in file_name:
+    #     #     continue
+    #     # else:
+
+    #     if int(file_name[3]) >= 3:
+    #         continue
+    #     if int(file_name[-5]) >= 6:
+    #         continue
+
+    #     file_names.append(file_name)
+    
+    # results = {}
+    # for file_path in file_names:
+    #     print(f"Solving mTSP-minmax {file_path}")
+    #     info = parse_file(current_directory+'/'+file_path)
+        
+    #     cities = info['city_coordi']
+    #     n = len(cities)
+    #     m = info['num_robot']
+    #     distance_matrix = calculate_distance_matrix(cities)    
+    #     tour, cost = solve_mTSP_max(n, m, distance_matrix)
+    #     if tour:
+    #         print(f"Optimal tour: {tour}")
+    #         print(f"Optimal cost: {cost}")
+    #         #plot_tour(cities, distance_matrix, tour)
+    #         visualize_tour(cities, tour)
+    #         results[file_path] = [cost, tour]
+    #     else:
+    #         print("No optimal solution found.")
             
-    with open('mtsp_max_result.dic', 'wb') as f:  # open a text file
-        pickle.dump(results, f) # serialize the list
+    # with open('mtsp_max_result.dic', 'wb') as f:  # open a text file
+    #     pickle.dump(results, f) # serialize the list

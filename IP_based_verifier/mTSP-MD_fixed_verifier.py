@@ -1,13 +1,3 @@
-# import gurobipy as gp
-# from gurobipy import GRB
-# import numpy as np
-# import matplotlib.pyplot as plt
-
-
-
-
-
-
 import gurobipy as gp
 from gurobipy import GRB
 import matplotlib.pyplot as plt
@@ -41,7 +31,7 @@ def visualize_tour(cities, tour):
     plt.grid()
     plt.show()
 
-def solve_mTSP_MD_free(n, m, m_k, K, L, D, V_prime, V, c):
+def solve_mTSP_MD_fix(n, m, m_k, K, L, D, V_prime, V, c):
     # Create a new model
     model = gp.Model("multiple_depot_mtsp_fixed_destination")
     d = len(D)
@@ -96,53 +86,81 @@ def solve_mTSP_MD_free(n, m, m_k, K, L, D, V_prime, V, c):
             for i in range(n):
                 for j in range(n):
                     if solution[i, j, k] > 0.5:
-                        routes.append((i, j))
-    
-        # Visualization
-        # colors = ['r', 'g', 'b', 'c', 'm', 'y', 'k']
-        # plt.figure(figsize=(10, 10))
-        # for i in range(n):
-        #     if i < d:
-        #         plt.plot(node_locations[i][0], node_locations[i][1], 's', markersize=10, label=f'Depot {i}')
-        #     else:
-        #         plt.plot(node_locations[i][0], node_locations[i][1], 'o', markersize=5, label=f'Customer {i}')
-    
-        # for k in range(d):
-        #     for (i, j) in routes[k]:
-        #         plt.plot([node_locations[i][0], node_locations[j][0]], [node_locations[i][1], node_locations[j][1]], colors[k % len(colors)], label=f'Route {k}' if i == k else "")
-    
-        # plt.xlabel('X-coordinate')
-        # plt.ylabel('Y-coordinate')
-        # plt.title('Multiple Depot m-TSP with Fixed Destination')
-        # plt.legend()
-        # plt.show()
-    
+                        routes.append((i, j))    
         return routes, model.objVal
     else:
         print("No optimal solution found")
         return None, None
 
 
-# # Sample data
-# n = 15 # Total number of nodes
-# d = 3   # Number of depots
-# m = 4   # Total number of salesmen
-# K = 2   # Minimum number of nodes a salesman must visit
-# L = np.ceil(n/m)+1   # Maximum number of nodes a salesman can visit
-# m_k = [1, 1, 2]  # Number of salesmen at each depot
+def solve_mTSP_MD_fix_verifier(n, m, m_k, K, L, D, V_prime, V, c, sol_x):
+    # Create a new model
+    model = gp.Model("multiple_depot_mtsp_fixed_destination")
+    d = len(D)
+    # Variables
+    x = model.addVars(n, n, d, vtype=GRB.BINARY, name="x")
+    u = model.addVars(n, vtype=GRB.INTEGER, name="u")
+    
+    # Objective function: minimize the total cost
+    model.setObjective(gp.quicksum(c[i][j] * x[i, j, k] for k in D for i in range(n) for j in range(n)), GRB.MINIMIZE)
+    
+    # Constraints
+    # 1. Salesmen departure from each depot
+    for k in D:
+        model.addConstr(gp.quicksum(x[k, j, k] for j in V_prime) == m_k[k])
+    
+    # 2. Each customer node is visited exactly once
+    for j in V_prime:
+        model.addConstr(gp.quicksum(x[k, j, k] for k in D) + gp.quicksum(x[i, j, k] for i in V_prime if i!=j for k in D) == 1)
+    
+    # 3. Route continuity for customer nodes
+    for k in D:
+        for j in V_prime:
+            model.addConstr(x[k, j, k] + gp.quicksum(x[i, j, k] for i in V_prime) - x[j, k, k] - gp.quicksum(x[j, i, k] for i in V_prime) == 0)
+    
+    # 4. Route continuity for depot nodes
+    for k in D:
+        model.addConstr(gp.quicksum(x[k, j, k] for j in V_prime) - gp.quicksum(x[j, k, k] for j in V_prime) == 0)
+    
+    # 5. Bounding constraints
+    for i in V_prime:
+        model.addConstr(u[i] + (L - 2) * gp.quicksum(x[k, i, k] for k in D) - gp.quicksum(x[i, k, k] for k in D) <= L - 1)
+        model.addConstr(u[i] + gp.quicksum(x[k, i, k] for k in D) + (2 - K) * gp.quicksum(x[i, k, k] for k in D) >= 2)
+    
+    # 6. Single customer visit restriction
+    for i in V_prime:
+        model.addConstr(gp.quicksum(x[k, i, k] for k in D) + gp.quicksum(x[i, k, k] for k in D) <= 1)
+    
+    # 7. Subtour elimination constraints
+    for i in V_prime:
+        for j in V_prime:
+            if i != j:
+                model.addConstr(u[i] - u[j] + L * gp.quicksum(x[i, j, k] for k in D) + (L - 2) * gp.quicksum(x[j, i, k] for k in D) <= L - 1)
+    
+    #****************************
+    for i in range(n):
+        for j in range(n):
+            for k in range(d):
+                model.addConstr(x[i, j, k] ==sol_x[i][j][k]) 
+    
+    
+    # Optimize model
+    model.optimize()
+    
+    # Extract solution
+    if model.status == GRB.OPTIMAL:
+        solution = model.getAttr('x', x)
+        routes = []
+        for k in D:
+            for i in range(n):
+                for j in range(n):
+                    if solution[i, j, k] > 0.5:
+                        routes.append((i, j))    
+        return routes, model.objVal
+    else:
+        print("No optimal solution found")
+        return None, None
 
-# # Generate random node locations
-# #np.random.seed(42)
-# node_locations = np.random.rand(n, 2) * 100  # Random locations in a 100x100 area
-
-# # Calculate the cost matrix as the Euclidean distance between nodes
-# def euclidean_distance(p1, p2):
-#     return np.sqrt((p1[0] - p2[0])**2 + (p1[1] - p2[1])**2)
-
-# c = np.zeros((n, n))
-# for i in range(n):
-#     for j in range(n):
-#         c[i, j] = euclidean_distance(node_locations[i], node_locations[j])
 
 
 def parse_file(file_path):
@@ -171,6 +189,57 @@ def parse_file(file_path):
             data['num_robot'] = int(num_robots_str.split()[0].replace('.', ''))
 
     return data
+
+def route2edges(routes, num_city, num_vehicle):
+    # route = [0, 1, 2, 3， 0]
+    x = np.zeros((num_city, num_city, num_vehicle))
+    assert len(routes)==num_vehicle
+    for vehicle in range(len(routes)):
+        route = routes[vehicle]
+        for i in range(len(route)-1):
+            x[route[i], route[i+1], vehicle] = 1
+    return x
+
+
+
+
+
+
+if __name__ == "__main__":
+    current_directory = os.getcwd()+'/multiple/small/mTSPMD'
+    file_name = "E-n22-k4.txt"
+    #routes = [[0, 4, 5, 6, 7, 0], [1,8,9,10,11,12,1], [2,13,14,15,16,17,2], [3, 18, 19, 20, 21,3]]
+    routes = [[0, 4, 5, 6, 7, 0], [1,8,9,10,11,12,0], [2,13,14,15,16,17,3], [3, 18, 19, 20, 21,2]]
+
+    
+    
+    info = parse_file(current_directory+'/'+file_name)
+    cities = info['cities']
+    n = len(cities)
+    m = info['num_robot']
+    K = 2
+    L = np.ceil(n/m)+1
+    distance_matrix = calculate_distance_matrix(cities)
+    D = info['depot_cities']
+    V = list(range(n))
+    V_prime = list(set(list(range(n)))-set(D))
+    m_i = {dep:1 for dep in D}
+    sol_x = route2edges(routes, n, m)
+    tour, cost = solve_mTSP_MD_free_verifier(n, m, m_i, K, L, D, V_prime, V, distance_matrix, sol_x)
+    if tour:
+        print("**************************")
+        print(f"feasible route: {routes}")
+        #plot_tour(cities, distance_matrix, tour)
+        #visualize_tour(cities, tour)
+        
+    else:
+        print("**************************")
+        print("Infeasible route.")
+
+
+
+
+
 
 
 file_names = []
