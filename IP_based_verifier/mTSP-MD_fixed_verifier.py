@@ -140,7 +140,7 @@ def solve_mTSP_MD_fix_verifier(n, m, m_k, K, L, D, V_prime, V, c, sol_x):
     #****************************
     for i in range(n):
         for j in range(n):
-            for k in range(d):
+            for k in D:
                 model.addConstr(x[i, j, k] ==sol_x[i][j][k]) 
     
     
@@ -190,14 +190,14 @@ def parse_file(file_path):
 
     return data
 
-def route2edges(routes, num_city, num_vehicle):
+def route2edges(routes, num_city, num_depot):
     # route = [0, 1, 2, 3， 0]
-    x = np.zeros((num_city, num_city, num_vehicle))
-    assert len(routes)==num_vehicle
-    for vehicle in range(len(routes)):
-        route = routes[vehicle]
-        for i in range(len(route)-1):
-            x[route[i], route[i+1], vehicle] = 1
+    x = np.zeros((num_city, num_city, num_depot))
+    assert len(routes)==num_depot
+    for depot in routes:
+        for route in routes[depot]:
+            for i in range(len(route)-1):
+                x[route[i], route[i+1], depot] = 1
     return x
 
 
@@ -208,9 +208,11 @@ def route2edges(routes, num_city, num_vehicle):
 if __name__ == "__main__":
     current_directory = os.getcwd()+'/multiple/small/mTSPMD'
     file_name = "E-n22-k4.txt"
-    #routes = [[0, 4, 5, 6, 7, 0], [1,8,9,10,11,12,1], [2,13,14,15,16,17,2], [3, 18, 19, 20, 21,3]]
-    routes = [[0, 4, 5, 6, 7, 0], [1,8,9,10,11,12,0], [2,13,14,15,16,17,3], [3, 18, 19, 20, 21,2]]
-
+    # the route here should follow the following format
+    #{depot1:[route1=[0, 1, 2, 3, 0], route2, ...], depot2:[route1, route2, ...]}
+    routes1 = {0:[[0, 4, 5, 6, 7, 0]], 1:[[1,8,9,10,11,12,1]], 2:[[2,13,14,15,16,17,2]], 3:[[3, 18, 19, 20, 21,3]]}
+    routes2 = {0:[[0, 4, 5, 6, 7, 1]], 1:[[1,8,9,10,11,12,0]], 2:[[2,13,14,15,16,17,3]], 3:[[3, 18, 19, 20, 21,2]]}
+    routes = routes1
     
     
     info = parse_file(current_directory+'/'+file_name)
@@ -224,8 +226,8 @@ if __name__ == "__main__":
     V = list(range(n))
     V_prime = list(set(list(range(n)))-set(D))
     m_i = {dep:1 for dep in D}
-    sol_x = route2edges(routes, n, m)
-    tour, cost = solve_mTSP_MD_free_verifier(n, m, m_i, K, L, D, V_prime, V, distance_matrix, sol_x)
+    sol_x = route2edges(routes, n, len(D))
+    tour, cost = solve_mTSP_MD_fix_verifier(n, m, m_i, K, L, D, V_prime, V, distance_matrix, sol_x)
     if tour:
         print("**************************")
         print(f"feasible route: {routes}")
@@ -242,48 +244,48 @@ if __name__ == "__main__":
 
 
 
-file_names = []
-# Get the current working directory
-# make sure that the current folder is TSP
-current_directory = os.getcwd()+'/multiple/small/mTSPMD'
+# file_names = []
+# # Get the current working directory
+# # make sure that the current folder is TSP
+# current_directory = os.getcwd()+'/multiple/small/mTSPMD'
 
-# List all files in the current directory
-files = os.listdir(current_directory)
-for file_name in files:
-    # if '25' in file_name or '50' in file_name:
-    #     continue
-    # else:
-    if int(file_name[3]) >= 3:
-        continue
-    if int(file_name[-5]) < 6:
-        continue
-    file_names.append(file_name)
+# # List all files in the current directory
+# files = os.listdir(current_directory)
+# for file_name in files:
+#     # if '25' in file_name or '50' in file_name:
+#     #     continue
+#     # else:
+#     if int(file_name[3]) >= 3:
+#         continue
+#     if int(file_name[-5]) < 6:
+#         continue
+#     file_names.append(file_name)
 
-results = {}
-for file_path in file_names:
-    print(f"Solving mTSP-MD fixed for file: {file_path}")
-    info = parse_file(current_directory+'/'+file_path)
+# results = {}
+# for file_path in file_names:
+#     print(f"Solving mTSP-MD fixed for file: {file_path}")
+#     info = parse_file(current_directory+'/'+file_path)
     
-    cities = info['cities']
-    n = len(cities)
-    m = info['num_robot']
-    K = 2
-    L = np.ceil(n/m)+1
-    distance_matrix = calculate_distance_matrix(cities)
-    D = info['depot_cities']
-    V_prime = list(range(m, n)) 
-    V = list(range(n))
-    m_i = {dep:1 for dep in D}
+#     cities = info['cities']
+#     n = len(cities)
+#     m = info['num_robot']
+#     K = 2
+#     L = np.ceil(n/m)+1
+#     distance_matrix = calculate_distance_matrix(cities)
+#     D = info['depot_cities']
+#     V_prime = list(range(m, n)) 
+#     V = list(range(n))
+#     m_i = {dep:1 for dep in D}
     
-    tour, cost = solve_mTSP_MD_free(n, m, m_i, K, L, D, V_prime, V, distance_matrix)
-    if tour:
-        print(f"Optimal tour: {tour}")
-        print(f"Optimal cost: {cost}")
-        #plot_tour(cities, distance_matrix, tour)
-        visualize_tour(cities, tour)
-        results[file_path] = [cost, tour]
-    else:
-        print("No optimal solution found.")
+#     tour, cost = solve_mTSP_MD_fix(n, m, m_i, K, L, D, V_prime, V, distance_matrix)
+#     if tour:
+#         print(f"Optimal tour: {tour}")
+#         print(f"Optimal cost: {cost}")
+#         #plot_tour(cities, distance_matrix, tour)
+#         visualize_tour(cities, tour)
+#         results[file_path] = [cost, tour]
+#     else:
+#         print("No optimal solution found.")
         
-with open('mtsp_md_fix_result.dic', 'wb') as f:  # open a text file
-    pickle.dump(results, f) # serialize the list
+# with open('mtsp_md_fix_result.dic', 'wb') as f:  # open a text file
+#     pickle.dump(results, f) # serialize the list
