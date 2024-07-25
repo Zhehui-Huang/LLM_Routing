@@ -125,6 +125,21 @@ def solve_mTSP_max(num_locations, num_salesmen,  costs):
     else:
         print("No optimal solution found")
         return None, None
+
+
+
+
+def route2edges(routes, num_city, num_vehicle):
+    # route = [0, 1, 2, 3， 0]
+    x = np.zeros((num_city, num_city))
+    assert len(routes)==num_vehicle
+    for vehicle in range(len(routes)):
+        route = routes[vehicle]
+        for i in range(len(route)-1):
+            x[route[i], route[i+1]] = 1
+    return x
+
+
     
 if __name__ == "__main__":
     file_names = []

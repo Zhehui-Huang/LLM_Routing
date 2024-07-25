@@ -151,11 +151,12 @@ def route2edges(route, num_city):
 if __name__ == "__main__":
     current_directory = os.getcwd()+'/single/KTSP'
     file_name = 'city_10_instance_0.txt'
+    route = [0, 1, 2, 3, 4, 0]
+    
+    
     cities = read_city_locations(current_directory+'/'+file_name)
     distance_matrix = calculate_distance_matrix(cities)
-    
     #tour, cost = solve_tsp(cities, distance_matrix)
-    route = [0, 1, 2, 3, 4, 0]
     sol_x =  route2edges(route, len(cities))
     k = int(np.ceil(len(cities)/2))
     tour, cost = solve_k_tsp_verifier(cities, distance_matrix, k, sol_x, route)

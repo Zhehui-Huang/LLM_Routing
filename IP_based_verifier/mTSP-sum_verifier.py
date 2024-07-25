@@ -116,25 +116,45 @@ def solve_mTSP(num_locations, num_salesmen,  costs):
     # Optimize
     model.optimize()
     
-    # # Extract solution
-    # solution = []
-    # for i in range(n):
-    #     for j in range(n):
-    #         if x[i, j].X > 0.5:
-    #             solution.append((i, j))
 
-    # # Visualization
-    # G = nx.DiGraph()
-    # G.add_nodes_from(range(n))
-    # G.add_edges_from(solution)
+def solve_mTSP_verifier(num_locations, num_salesmen,  costs, sol_x):
+    n = num_locations  # Number of nodes (including depot)
+    m = num_salesmen   # Number of salesmen
 
-    # pos = {i: coordinates[i] for i in range(n)}
-    # labels = {i: f"{i}" for i in range(n)}
-    # nx.draw(G, pos, with_labels=True, labels=labels, node_size=700, node_color="skyblue", font_size=10, font_weight="bold")
-    # edge_labels = {(i, j): f"{costs[i][j]:.2f}" for i, j in solution}
-    # nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels)
-    # plt.title("Multiple Traveling Salesman Problem Solution")
-    # plt.show()
+    # Model
+    model = gp.Model()
+
+    # Variables
+    x = model.addVars(n, n, vtype=GRB.BINARY, name='x')
+    u = model.addVars(n, vtype=GRB.CONTINUOUS, name='u')
+
+    # Objective
+    model.setObjective(gp.quicksum(costs[i][j] * x[i, j] for i in range(n) for j in range(n)), GRB.MINIMIZE)
+
+    # Constraints
+    model.addConstr(gp.quicksum(x[0, j] for j in range(1, n)) == m, "depot_departure")
+    model.addConstr(gp.quicksum(x[j, 0] for j in range(1, n)) == m, "depot_return")
+
+    for i in range(1, n):
+        model.addConstr(gp.quicksum(x[i, j] for j in range(n) if j != i) == 1, f"visit_{i}")
+        model.addConstr(gp.quicksum(x[j, i] for j in range(n) if j != i) == 1, f"return_{i}")
+
+    # Subtour elimination (MTZ constraints)
+    for i in range(1, n):
+        for j in range(1, n):
+            if i != j:
+                model.addConstr(u[i] - u[j] + (n * x[i, j]) <= n - 1)
+                
+    
+    for i in range(n):
+        for j in range(n):
+                model.addConstr(x[i, j] ==sol_x[i][j])             
+    
+                
+    # Optimize
+    model.optimize()
+
+
     
     # Print the results
     if model.status == GRB.OPTIMAL:
@@ -151,39 +171,79 @@ def solve_mTSP(num_locations, num_salesmen,  costs):
         print("No optimal solution found")
         return None, None
 
+
+
+def route2edges(routes, num_city, num_vehicle):
+    # route = [0, 1, 2, 3， 0]
+    x = np.zeros((num_city, num_city))
+    assert len(routes)==num_vehicle
+    for vehicle in range(len(routes)):
+        route = routes[vehicle]
+        for i in range(len(route)-1):
+            x[route[i], route[i+1]] = 1
+    return x
+
+
 # Example usage
 if __name__ == "__main__":
-    file_names = []
-    # Get the current working directory
-    # make sure that the current folder is TSP
     current_directory = os.getcwd()+'/multiple/small/mTSP'
+    file_name = "E-n22-k4.txt"
+    routes = [[0, 1, 2, 3, 4, 5, 6, 7, 0], [0,8,9,10,11,12, 0], [0,13,14,15,16,17, 0], [0, 18, 19, 20, 21, 0]]
+
     
-    # List all files in the current directory
-    files = os.listdir(current_directory)
-    for file_name in files:
-        # if '25' in file_name or '50' in file_name:
-        #     continue
-        # else:
-        file_names.append(file_name)
+    info = parse_file(current_directory+'/'+file_name)
+    cities = info['city_coordi']
+    n = len(cities)
+    m = info['num_robot']
+    distance_matrix = calculate_distance_matrix(cities)  
+    sol_x = route2edges(routes, n, m)
+    tour, cost = solve_mTSP_verifier(n, m, distance_matrix, sol_x)
     
-    results = {}
-    for file_path in file_names:
-        print(f"Solving mTSP-sum.py {file_path}")
-        info = parse_file(current_directory+'/'+file_path)
+    if tour:
+        print("**************************")
+        print(f"feasible route: {routes}")
+        #plot_tour(cities, distance_matrix, tour)
+        #visualize_tour(cities, tour)
         
-        cities = info['city_coordi']
-        n = len(cities)
-        m = info['num_robot']
-        distance_matrix = calculate_distance_matrix(cities)    
-        tour, cost = solve_mTSP(n, m, distance_matrix)
-        if tour:
-            print(f"Optimal tour: {tour}")
-            print(f"Optimal cost: {cost}")
-            #plot_tour(cities, distance_matrix, tour)
-            #visualize_tour(cities, tour)
-            results[file_path] = [cost, tour]
-        else:
-            print("No optimal solution found.")
+    else:
+        print("**************************")
+        print("Infeasible route.")
+    
+    
+    
+    
+    
+    # file_names = []
+    # # Get the current working directory
+    # # make sure that the current folder is TSP
+    # current_directory = os.getcwd()+'/multiple/small/mTSP'
+    
+    # # List all files in the current directory
+    # files = os.listdir(current_directory)
+    # for file_name in files:
+    #     # if '25' in file_name or '50' in file_name:
+    #     #     continue
+    #     # else:
+    #     file_names.append(file_name)
+    
+    # results = {}
+    # for file_path in file_names:
+    #     print(f"Solving mTSP-sum.py {file_path}")
+    #     info = parse_file(current_directory+'/'+file_path)
+        
+    #     cities = info['city_coordi']
+    #     n = len(cities)
+    #     m = info['num_robot']
+    #     distance_matrix = calculate_distance_matrix(cities)    
+    #     tour, cost = solve_mTSP(n, m, distance_matrix)
+    #     if tour:
+    #         print(f"Optimal tour: {tour}")
+    #         print(f"Optimal cost: {cost}")
+    #         #plot_tour(cities, distance_matrix, tour)
+    #         #visualize_tour(cities, tour)
+    #         results[file_path] = [cost, tour]
+    #     else:
+    #         print("No optimal solution found.")
             
-    with open('mtsp_result.dic', 'wb') as f:  # open a text file
-        pickle.dump(results, f) # serialize the list
+    # with open('mtsp_result.dic', 'wb') as f:  # open a text file
+    #     pickle.dump(results, f) # serialize the list
