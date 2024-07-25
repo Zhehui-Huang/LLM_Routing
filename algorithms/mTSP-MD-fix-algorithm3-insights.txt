@@ -1,0 +1,29 @@
+Genetic Algorithm Approach for Fixed Destination Multi-depot mTSP
+
+Authors: Kamran Kardel, Nikbakhsh Javadian, Fereydoun Adbesh
+Institution: Department of Industrial Engineering, University of Science and Technology Mazandaran Babol, Iran
+
+Abstract:
+This paper explores a novel GA chromosome and related operators specifically designed for the MmTSP, where multiple salesmen depart from various depots and must return to their starting city. The approach is tested against optimal solutions obtained by Lingo 8 and shows promising theoretical properties and computational performance.
+
+Key Insights:
+
+1. GA Design:
+   - A new chromosome structure for MmTSP includes two distinct parts: a permutation of city numbers and a segment defining the distribution of cities among salesmen, ensuring diversity and quality in initial solutions.
+
+2. Crossover Techniques:
+   - Four types of permutation-based crossover methods were evaluated: Ordered Crossover (OX), Partially Matched Crossover (PMX), Union Crossover#2 (UX2), and a newly proposed Modified Moon Crossover (new MX), with each showing varied strengths in solving the MmTSP.
+
+3. Mutation and Selection:
+   - The GA utilizes 1-bit and 2-opt mutation techniques to enhance solution diversity and employs elitism, roulette wheel, and binary tournament strategies for parent selection, optimizing the balance between exploration and exploitation.
+
+4. Computational Efficiency:
+   - Demonstrates the efficiency of the GA in reducing computational time compared to traditional methods, especially in large-scale problems where exact methods are impractical.
+
+5. Practical Applications:
+   - Suitable for complex logistics and distribution problems involving multiple depots and salesmen, where routing efficiency significantly impacts operational costs and service quality.
+
+6. Future Research:
+   - Potential enhancements include refining crossover and mutation operators and exploring their applicability to other complex routing problems beyond the MmTSP.
+
+This detailed exploration of GA for the MmTSP provides a robust framework for addressing complex multi-depot routing issues, offering significant improvements over traditional methods.

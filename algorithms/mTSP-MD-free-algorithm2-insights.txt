@@ -1,0 +1,30 @@
+Comparative Study of Meta-heuristic Algorithms for Non-fixed Destination Multi-depot mTSP
+
+Authors: Fereydoun Adbesh, Kamran Kardel
+Institution: Department of Industrial Engineering, Mazandaran University of Science and Technology, Babol, Iran
+
+Abstract:
+This study addresses the non-fixed destination multi-depot mTSP, where salesmen depart from multiple depots and are not required to return to their original starting cities, but the number of cities in each depot remains consistent. The paper evaluates the computational performance and theoretical properties of three meta-heuristic algorithms—Genetic Algorithms (GAs), Simulated Annealing (SA), and Tabu Search (TS)—against optimal solutions derived from Lingo 8 software.
+
+Key Insights:
+
+1. Algorithm Overview:
+   - Genetic Algorithms (GAs): Utilizes custom chromosome designs and operators like crossover and mutation tailored for mTSP.
+   - Simulated Annealing (SA): Adapts by allowing worse moves to escape local optima, with a cooling schedule to guide the solution process.
+   - Tabu Search (TS): Employs memory structures to avoid revisiting recent solutions, enhancing the exploration of the solution space.
+
+2. Performance Evaluation:
+   - SA and TS demonstrated solutions close to the optimal, particularly effective in medium to very large-sized problems.
+   - GAs were less effective compared to SA and TS but still offered competitive solutions in larger setups.
+
+3. Practical Applications:
+   - These algorithms are crucial for complex logistics and distribution challenges involving multiple depots where route optimization significantly impacts efficiency and cost.
+
+4. Computational Efficiency:
+   - SA offered the fastest solutions with considerable accuracy.
+   - TS was noted for its robustness and ability to find high-quality solutions, especially in larger scenarios.
+
+5. Future Directions:
+   - Further refinement of these meta-heuristics could explore integrating machine learning techniques to adapt dynamically to varying problem conditions.
+
+These insights underline the effectiveness of advanced heuristic methods in solving complex routing problems like the non-fixed destination multi-depot mTSP, demonstrating significant improvements in operational efficiencies.

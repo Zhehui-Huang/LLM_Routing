@@ -1,0 +1,78 @@
+###
+Environment information
+===
+There are 10 cities.
+Depot city 0: (50, 42)
+City 1: (41, 1)
+City 2: (18, 46)
+City 3: (40, 98)
+City 4: (51, 69)
+City 5: (47, 39)
+City 6: (62, 26)
+City 7: (79, 31)
+City 8: (61, 90)
+City 9: (42, 49)
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
+
+###
+Task
+===
+The robot needs to visit each city exactly once, starting and ending at the depot city. 
+The goal is to minimize the longest distance between any two consecutive cities in the tour.
+You can refer to the insights provided below to solve the problem.
+****
+Guaranteed Performance Heuristics for the Bottleneck Traveling Salesman Problem (BTSP)
+
+Authors: R. Gary Parker and Ronald L. Rardin
+
+Key Insights:
+
+1. Problem Definition:
+   - The Bottleneck Traveling Salesman Problem (BTSP) seeks to minimize the maximum edge cost in a Hamiltonian cycle of a graph.
+
+2. Algorithmic Feasibility:
+   - No polynomial-time, constant-performance-bound algorithm can exist for BTSP with arbitrary costs unless P=NP.
+
+3. Heuristic Development:
+   - For graphs with positive costs adhering to the triangle inequality, a polynomial-time heuristic with a worst-case performance bound of 2 is developed.
+
+4. Algorithmic Approach:
+   - The algorithm, named Algorithm BT, operates by:
+     1. Generating a bottleneck-optimal biconnected subgraph.
+     2. Tracing a Hamiltonian cycle in the square of this subgraph to approximate the optimal tour for BTSP.
+
+5. Performance Bounds:
+   - Under the triangle inequality condition, the heuristic guarantees that the maximum edge cost of the solution is at most twice the optimal value.
+
+6. Theoretical Contributions:
+   - Leverages properties of biconnected graphs and the concept of graph squaring, providing a methodologically interesting solution.
+
+7. Implications for Further Research:
+   - Suggests potential for further improvements in heuristic design or problem constraints could potentially lower the bound of 2.
+
+These insights offer a structured approach to tackling the BTSP, useful under specific graph conditions, contributing to heuristic algorithm design for combinatorial optimization problems.
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+3) Please output the maximum distance between any two consecutive cities in the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0, the total travel cost is 100, and the maximum distance between any two consecutive cities is 40, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+Maximum distance between consecutive cities: 40
+###

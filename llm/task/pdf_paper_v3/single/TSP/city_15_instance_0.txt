@@ -1,0 +1,75 @@
+###
+Environment information
+===
+There are 15 cities.
+Depot city 0: (9, 93)
+City 1: (8, 51)
+City 2: (74, 99)
+City 3: (78, 50)
+City 4: (21, 23)
+City 5: (88, 59)
+City 6: (79, 77)
+City 7: (63, 23)
+City 8: (19, 76)
+City 9: (21, 38)
+City 10: (19, 65)
+City 11: (11, 40)
+City 12: (3, 21)
+City 13: (60, 55)
+City 14: (4, 39)
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
+
+###
+Task
+===
+The robot needs to visit all cities exactly once, except the depot city, and then return to the depot city.
+Please find the shortest tour for the robot.
+You can refer to the insights provided below to solve the problem.
+****
+Heuristic Algorithm for the Travelling Salesman Problem (TSP):
+
+1. Algorithm Overview:
+   - The TSP is modeled on a graph where cities are vertices and paths between them are edges with associated costs.
+   - The heuristic includes constructing a shortest spanning tree (SST) and finding a minimum-cost perfect matching on a subgraph induced by vertices of odd degree in the SST.
+
+2. Efficiency and Performance:
+   - The heuristic has a polynomial time complexity of O(n^3).
+   - It guarantees a worst-case performance ratio of less than 3/2, which is a significant improvement over the previous best-known ratio of 2.
+
+3. Components of the Heuristic:
+   - Shortest Spanning Tree (SST): Constructed from the graph defining the TSP. Used as a backbone for creating a tour.
+   - Minimum-Cost Perfect Matching: Performed on the subgraph induced by vertices that have an odd degree in the SST. Ensures that the resultant graph has all vertices of even degree, enabling it to be Eulerian.
+   - Conversion to a Hamiltonian Circuit: By using properties of Eulerian circuits and the triangular inequality, the constructed Eulerian graph is converted into a Hamiltonian circuit that visits each city exactly once.
+
+4. Theoretical Foundation:
+   - A key theorem presented in the paper establishes that the cost of the Hamiltonian circuit found by the heuristic is no more than 3/2 times the cost of the optimal TSP tour.
+   - The theorem and its proof leverage the concept of perfect matching and the properties of Eulerian circuits.
+
+5. Practical Implications:
+   - The algorithm's design allows for practical implementations where an approximate solution is sufficient and a polynomial time solution is necessary due to the size of the problem.
+   - The balance between computational efficiency and solution quality makes this heuristic particularly useful for large-scale TSP instances where exact solutions are computationally prohibitive.
+
+This heuristic provides a robust method for approaching the TSP, especially in scenarios where an exact solution is not feasible due to the problem's scale.
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 100, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+###

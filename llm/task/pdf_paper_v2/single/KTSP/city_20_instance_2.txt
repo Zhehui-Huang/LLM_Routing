@@ -1,0 +1,81 @@
+###
+Environment information
+===
+There are 20 cities.
+Depot city 0: (3, 26)
+City 1: (85, 72)
+City 2: (67, 0)
+City 3: (50, 99)
+City 4: (61, 89)
+City 5: (91, 56)
+City 6: (2, 65)
+City 7: (38, 68)
+City 8: (3, 92)
+City 9: (59, 8)
+City 10: (30, 88)
+City 11: (30, 53)
+City 12: (11, 14)
+City 13: (52, 49)
+City 14: (18, 49)
+City 15: (64, 41)
+City 16: (28, 49)
+City 17: (91, 94)
+City 18: (51, 58)
+City 19: (30, 48)
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
+
+###
+Task
+===
+The robot needs to visit exactly 10 cities, including the depot city, starting and ending at the depot city.
+The goal is to find the shortest possible tour that visits exactly 10 cities out of the given set of cities.
+You can refer to the insights provided below to solve the problem.
+****
+Insights from "A General Variable Neighborhood Search Algorithm for the k-Traveling Salesman Problem"
+
+Authors: Pandiri Venkatesh, Gaurav Srivastava, Alok Singh
+
+Key Insights:
+
+1. k-TSP Definition:
+   - The k-Traveling Salesman Problem (k-TSP) is a variant of the classic Traveling Salesman Problem where the goal is to find the shortest route visiting exactly k out of n cities, involving subset selection and permutation optimization.
+
+2. Algorithm Overview:
+   - This is the first metaheuristic specifically designed for k-TSP, utilizing a general variable neighborhood search (GVNS), leveraging variable neighborhood descent (VND) with two neighborhood structures for optimization.
+
+3. Local Search Strategy:
+   - Employs two neighborhood structures: one focusing on swapping non-tour cities with tour cities, and another adjusting the sequence of cities within the tour.
+
+4. Computational Efficiency:
+   - Tested against benchmark instances from TSPLIB, showing promising results in computational efficiency and solution quality.
+
+5. Practical Applications:
+   - Relevant in distributed network design and rural healthcare delivery, optimizing routes based on a limited number of crucial nodes (cities).
+
+6. Future Research Directions:
+   - Suggests potential future research in adapting the GVNS to other complex routing problems and exploring population-based metaheuristic approaches.
+
+This novel approach addresses the k-TSP efficiently and opens avenues for adapting its strategies to other complex optimization problems.
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 100, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+###

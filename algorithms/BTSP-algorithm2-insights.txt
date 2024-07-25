@@ -1,0 +1,30 @@
+Guaranteed Performance Heuristics for the Bottleneck Traveling Salesman Problem (BTSP)
+
+Authors: R. Gary Parker and Ronald L. Rardin
+
+Key Insights:
+
+1. Problem Definition:
+   - The Bottleneck Traveling Salesman Problem (BTSP) seeks to minimize the maximum edge cost in a Hamiltonian cycle of a graph.
+
+2. Algorithmic Feasibility:
+   - No polynomial-time, constant-performance-bound algorithm can exist for BTSP with arbitrary costs unless P=NP.
+
+3. Heuristic Development:
+   - For graphs with positive costs adhering to the triangle inequality, a polynomial-time heuristic with a worst-case performance bound of 2 is developed.
+
+4. Algorithmic Approach:
+   - The algorithm, named Algorithm BT, operates by:
+     1. Generating a bottleneck-optimal biconnected subgraph.
+     2. Tracing a Hamiltonian cycle in the square of this subgraph to approximate the optimal tour for BTSP.
+
+5. Performance Bounds:
+   - Under the triangle inequality condition, the heuristic guarantees that the maximum edge cost of the solution is at most twice the optimal value.
+
+6. Theoretical Contributions:
+   - Leverages properties of biconnected graphs and the concept of graph squaring, providing a methodologically interesting solution.
+
+7. Implications for Further Research:
+   - Suggests potential for further improvements in heuristic design or problem constraints could potentially lower the bound of 2.
+
+These insights offer a structured approach to tackling the BTSP, useful under specific graph conditions, contributing to heuristic algorithm design for combinatorial optimization problems.

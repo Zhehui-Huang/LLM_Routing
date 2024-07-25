@@ -1,0 +1,27 @@
+Two Multi-Start Heuristics for the k-Traveling Salesman Problem
+
+Authors: Venkatesh Pandiri, Alok Singh
+
+Key Insights:
+
+1. k-TSP Overview:
+   - The k-TSP seeks a minimum length tour starting and ending at the home city, visiting exactly k out of n cities.
+   - Relevant in scenarios with limited resources to visit all cities, such as distribution network design and rural healthcare delivery.
+
+2. Multi-Start GVNS Approach:
+   - Utilizes a variable neighborhood descent (VND) with two neighborhood structures focused on subset selection and permutation.
+   - Demonstrates effectiveness across a range of instances, minimizing complexity through targeted local searches.
+
+3. Multi-Start Hyper-Heuristic Approach:
+   - Combines two low-level heuristics: one for subset selection and another for permutation, adapting to problem characteristics dynamically.
+   - Offers a versatile and adaptive solution framework capable of handling diverse problem instances.
+
+4. Computational Results:
+   - The HH approach generally outperformed the GVNS approach in benchmark tests, showing superior adaptability and solution quality.
+   - Benchmark instances were derived from TSPLIB, tailored to demonstrate the effectiveness of the methods.
+
+5. Practical Implications and Future Work:
+   - These heuristic approaches provide robust frameworks for k-TSP and similar logistical challenges.
+   - Future studies could explore the integration of these heuristics with other metaheuristic frameworks to enhance solution quality further.
+
+This document provides a comprehensive analysis of the proposed heuristics for k-TSP, offering insights into their practical applications and potential for future research enhancements.

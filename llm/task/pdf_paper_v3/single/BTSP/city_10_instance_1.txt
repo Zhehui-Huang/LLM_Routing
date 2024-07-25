@@ -1,0 +1,73 @@
+###
+Environment information
+===
+There are 10 cities.
+Depot city 0: (53, 68)
+City 1: (75, 11)
+City 2: (91, 95)
+City 3: (22, 80)
+City 4: (18, 63)
+City 5: (54, 91)
+City 6: (70, 14)
+City 7: (97, 44)
+City 8: (17, 69)
+City 9: (95, 89)
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
+
+###
+Task
+===
+The robot needs to visit each city exactly once, starting and ending at the depot city. 
+The goal is to minimize the longest distance between any two consecutive cities in the tour.
+You can refer to the insights provided below to solve the problem.
+****
+A Unified Approach to Approximation Algorithms for Bottleneck Problems
+
+Authors: Dorit S. Hochbaum and David B. Shmoys
+
+Key Insights:
+
+1. Approximation Algorithms:
+   - Polynomial-time algorithms that guarantee solutions within a constant factor of the optimal solution for various NP-complete bottleneck problems.
+
+2. Power-of-Graphs Technique:
+   - Utilizes the concept of the power of a graph to formulate solutions, enhancing connections based on step proximity in the original graph.
+
+3. Problem Applications:
+   - Addresses routing and location problems, such as vehicle routing and the k-center problem, aiming to minimize the maximum distance or connection cost.
+
+4. Best-Possible Guarantees:
+   - Demonstrates that for many of the problems, the approximation algorithms provided are the best possible under the assumption that P != NP.
+
+5. Example Problems and Solutions:
+   - Detailed solutions for problems like the k-center problem, focusing on minimizing the longest link in network connections.
+
+6. Theoretical Impact and Practical Implications:
+   - Provides theoretical frameworks and practical tools for efficiently solving complex optimization problems in system design and operations research.
+
+These algorithms are crucial for tackling NP-complete problems by providing feasible, near-optimal solutions efficiently in theoretical and practical settings.
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+3) Please output the maximum distance between any two consecutive cities in the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0, the total travel cost is 100, and the maximum distance between any two consecutive cities is 40, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+Maximum distance between consecutive cities: 40
+###

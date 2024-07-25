@@ -1,0 +1,85 @@
+###
+Environment information
+===
+There are 15 cities.
+Depot city 0: (35, 40)
+City 1: (39, 41)
+City 2: (81, 30)
+City 3: (5, 50)
+City 4: (72, 90)
+City 5: (54, 46)
+City 6: (8, 70)
+City 7: (97, 62)
+City 8: (14, 41)
+City 9: (70, 44)
+City 10: (27, 47)
+City 11: (41, 74)
+City 12: (53, 80)
+City 13: (21, 21)
+City 14: (12, 39)
+
+There are 7 city groups: 
+Group 0: [3, 8]
+Group 1: [4, 13]
+Group 2: [1, 2]
+Group 3: [6, 14]
+Group 4: [5, 9]
+Group 5: [7, 12]
+Group 6: [10, 11]
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
+
+###
+Task
+===
+The robot needs to visit exactly one city from each group of cities, starting and ending at the depot city.
+Please find the shortest tour for the robot.
+You can refer to the insights provided below to solve the problem.
+****
+Adaptations of Lin-Kernighan Heuristic for Generalized Traveling Salesman Problem (GTSP)
+
+Authors: D. Karapetyan, G. Gutin
+
+Key Insights:
+
+1. Background on GTSP:
+   - In GTSP, unlike traditional TSP, the goal is to visit exactly one vertex from each cluster. This problem has practical applications in logistics such as warehouse order picking and courier routing.
+
+2. Lin-Kernighan Heuristic:
+   - Originally designed for TSP, Lin-Kernighan is one of the most effective heuristics for solving it. Its adaptability to GTSP is explored, maintaining its effectiveness and adjusting for the problem's complexity through specialized adaptations.
+
+3. Adaptation Strategies:
+   - Discusses multiple adaptation strategies, focusing on adjusting the heuristic to handle sets of vertices (clusters) instead of individual vertices.
+
+4. Experimental Validation:
+   - Various adaptations of the Lin-Kernighan heuristic are tested against established GTSP benchmarks. The adaptations show promising results, often outperforming other heuristics.
+
+5. Algorithm Complexity and Performance:
+   - The adaptations are designed to be efficient, with a focus on minimizing the increase in computational complexity introduced by the cluster-based problem structure of GTSP.
+
+6. Practical Implications and Future Work:
+   - The successful adaptation suggests potential for further research in other complex routing and optimization problems. Future work will explore refining these adaptations and expanding their applicability.
+
+This approach not only enhances understanding of heuristic optimizations for GTSP but also provides a robust framework for tackling similar logistics and distribution challenges.
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 100, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+###

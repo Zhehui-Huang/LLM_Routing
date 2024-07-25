@@ -1,0 +1,28 @@
+An Effective Heuristic Algorithm for the Traveling-Salesman Problem (TSP)
+
+Authors: S. Lin and B. W. Kernighan
+
+Key Insights:
+
+1. Algorithm Efficiency:
+   - Highly effective for generating optimum and near-optimum solutions for the symmetric TSP.
+   - Efficiently handles classical problems and randomly generated problems with up to 110 cities.
+   - Run times increase approximately with n^2; e.g., a 100-city problem typically requires less than 25 seconds.
+
+2. Algorithm Description:
+   - Based on iterative improvements of randomly selected feasible solutions.
+   - Involves generating a pseudorandom feasible solution, attempting to improve this solution, and iterating until no further improvements can be found or satisfactory answers are achieved.
+
+3. Practical Application:
+   - Successfully tested on various TSP instances including classical literature problems and graph partitioning.
+   - Shows substantial promise across a wide range of combinatorial optimization problems due to its general approach to heuristics.
+
+4. Computational Experience:
+   - Demonstrates high frequency of producing optimum solutions with experience on a variety of TSP configurations.
+   - Effectively handles large problem sizes, suggesting scalability.
+
+5. Theoretical and Practical Relevance:
+   - Offers a robust method for not only TSP but potentially other combinatorial optimization challenges.
+   - Balances computational efficiency and solution quality, viable for both theoretical exploration and practical implementations.
+
+This heuristic algorithm provides a foundational approach to solving TSP with potential applications in other complex optimization scenarios, beneficial for both academic research and practical problem-solving in operations research.

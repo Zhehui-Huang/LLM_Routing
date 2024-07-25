@@ -1,0 +1,32 @@
+A Comparative Study of Genetic Algorithms, Simulated Annealing and Tabu Search for Non-fixed Destination Multi-depot Multiple Traveling Salesman Problem
+
+Authors: Fereydoun Adbesh, Kamran Kardel
+Institution: Department of Industrial Engineering, Mazandaran University of Science and Technology, Babol, Iran
+
+Abstract:
+The paper evaluates three meta-heuristics—Genetic Algorithms (GAs), Simulated Annealing (SA), and Tabu Search (TS)—for solving the non-fixed destination multi-depot multiple traveling salesmen problem (MmTSP). This variant allows salesmen to start from multiple depots and return to any starting city, maintaining the number of cities per depot constant. The study compares the theoretical properties and computational performance of these algorithms against optimal solutions obtained by Lingo 8.
+
+Key Insights:
+
+1. Problem Complexity:
+   - MmTSP involves salesmen starting from multiple depots without the necessity to return to their original depots. It represents a significant challenge due to the flexible endpoints and multiple depots, which increase the complexity of routing decisions.
+
+2. Meta-heuristic Approaches:
+   - Genetic Algorithms (GAs) utilize custom chromosome designs to optimize routes.
+   - Simulated Annealing (SA) adapts by allowing worse moves to escape local optima, with a controlled cooling schedule.
+   - Tabu Search (TS) employs memory structures to avoid revisiting recent solutions, enhancing exploration of the solution space.
+
+3. Comparative Performance:
+   - SA and TS demonstrate close-to-optimal solutions, particularly effective in medium to large-sized problems.
+   - GAs show competitive performance but are slightly less effective compared to SA and TS.
+
+4. Practical Applications:
+   - Suitable for complex logistics and distribution challenges involving multiple depots where routing flexibility significantly impacts operational efficiency and cost.
+
+5. Computational Efficiency:
+   - The study highlights the efficiency of SA for faster solutions, whereas TS offers robustness and high-quality solutions, particularly in larger scenarios.
+
+6. Future Directions:
+   - Further refinement of these meta-heuristics could explore integrating advanced features like dynamic adaptation to problem constraints and real-time data.
+
+These insights provide a foundation for utilizing advanced heuristic methods in solving complex routing problems in logistics and distribution, characterized by multiple depots and flexible endpoints.

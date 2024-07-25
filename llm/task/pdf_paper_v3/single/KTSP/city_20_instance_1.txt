@@ -1,0 +1,83 @@
+###
+Environment information
+===
+There are 20 cities.
+Depot city 0: (14, 77)
+City 1: (34, 20)
+City 2: (19, 38)
+City 3: (14, 91)
+City 4: (68, 98)
+City 5: (45, 84)
+City 6: (4, 56)
+City 7: (54, 82)
+City 8: (37, 28)
+City 9: (27, 45)
+City 10: (90, 85)
+City 11: (98, 76)
+City 12: (6, 19)
+City 13: (26, 29)
+City 14: (21, 79)
+City 15: (49, 23)
+City 16: (78, 76)
+City 17: (68, 45)
+City 18: (50, 28)
+City 19: (69, 9)
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
+
+###
+Task
+===
+The robot needs to visit exactly 7 cities, including the depot city, starting and ending at the depot city.
+The goal is to find the shortest possible tour that visits exactly 7 cities out of the given set of cities.
+You can refer to the insights provided below to solve the problem.
+****
+Two Multi-Start Heuristics for the k-Traveling Salesman Problem
+
+Authors: Venkatesh Pandiri, Alok Singh
+
+Key Insights:
+
+1. k-TSP Overview:
+   - The k-TSP seeks a minimum length tour starting and ending at the home city, visiting exactly k out of n cities.
+   - Relevant in scenarios with limited resources to visit all cities, such as distribution network design and rural healthcare delivery.
+
+2. Multi-Start GVNS Approach:
+   - Utilizes a variable neighborhood descent (VND) with two neighborhood structures focused on subset selection and permutation.
+   - Demonstrates effectiveness across a range of instances, minimizing complexity through targeted local searches.
+
+3. Multi-Start Hyper-Heuristic Approach:
+   - Combines two low-level heuristics: one for subset selection and another for permutation, adapting to problem characteristics dynamically.
+   - Offers a versatile and adaptive solution framework capable of handling diverse problem instances.
+
+4. Computational Results:
+   - The HH approach generally outperformed the GVNS approach in benchmark tests, showing superior adaptability and solution quality.
+   - Benchmark instances were derived from TSPLIB, tailored to demonstrate the effectiveness of the methods.
+
+5. Practical Implications and Future Work:
+   - These heuristic approaches provide robust frameworks for k-TSP and similar logistical challenges.
+   - Future studies could explore the integration of these heuristics with other metaheuristic frameworks to enhance solution quality further.
+
+This document provides a comprehensive analysis of the proposed heuristics for k-TSP, offering insights into their practical applications and potential for future research enhancements.
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 100, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+###

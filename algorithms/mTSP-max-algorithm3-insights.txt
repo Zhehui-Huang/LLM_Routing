@@ -1,0 +1,27 @@
+Advanced Heuristic for MinMax mTSP: ITSHA
+
+Authors: Jiongzhi Zheng, Yawei Hong, Wenchang Xu, Wentao Li, Yongfu Chen
+Institution: School of Mechanical Science and Engineering, Huazhong University of Science and Technology, China
+
+Abstract:
+The ITSHA is designed to optimize the mTSP with both MinSum and MinMax objectives. It consists of an initialization stage to generate diverse initial solutions and an improvement stage applying Variable Neighborhood Search (VNS) to refine these solutions. The algorithm demonstrates superior performance compared to state-of-the-art heuristics.
+
+Key Insights:
+
+1. Algorithm Structure:
+   - Initialization Stage: Utilizes fuzzy c-means (FCM) clustering and random greedy heuristics to create initial solutions that are diverse and of high quality.
+   - Improvement Stage: Employs VNS with custom local search neighborhoods to optimize solutions, incorporating methods to escape local optima.
+
+2. Performance and Evaluation:
+   - Tested on a wide range of public benchmark instances, ITSHA significantly outperforms existing heuristics on both MinSum and MinMax objectives.
+   - Demonstrates effectiveness in real-world applications like traffic signalization, showcasing substantial route optimization.
+
+3. Novel Components:
+   - Introduces new local search operators (2-opt, Insert, and Swap) tailored for mTSP, providing a deeper and more effective exploration of the solution space.
+   - Applies a candidate set approach to each city to narrow down the search scope and improve the efficiency of the neighborhoods.
+
+4. Practical Relevance and Future Work:
+   - The algorithm's adaptability to both objectives makes it highly relevant for complex logistic applications.
+   - Future enhancements could include further refining the heuristic elements and exploring its application to other complex routing problems.
+
+These insights affirm ITSHA's robust capability in handling complex mTSP scenarios, significantly enhancing route optimization and efficiency.

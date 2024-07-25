@@ -1,0 +1,81 @@
+###
+Environment information
+===
+There are 15 cities.
+Depot city 0: (16, 90)
+City 1: (43, 99)
+City 2: (80, 21)
+City 3: (86, 92)
+City 4: (54, 93)
+City 5: (34, 73)
+City 6: (6, 61)
+City 7: (86, 69)
+City 8: (30, 50)
+City 9: (35, 73)
+City 10: (42, 64)
+City 11: (64, 30)
+City 12: (70, 95)
+City 13: (29, 64)
+City 14: (32, 79)
+
+There are 6 city groups: 
+Group 0: [1, 6, 14]
+Group 1: [5, 12, 13]
+Group 2: [7, 10]
+Group 3: [4, 11]
+Group 4: [2, 8]
+Group 5: [3, 9]
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
+
+###
+Task
+===
+The robot needs to visit exactly one city from each group of cities, starting and ending at the depot city.
+Please find the shortest tour for the robot.
+You can refer to the insights provided below to solve the problem.
+****
+Insights from "GLNS: An Effective Large Neighborhood Search Heuristic for GTSP"
+
+Authors: Stephen L. Smith, Frank Imeson
+
+Abstract:
+The GLNS algorithm is designed to solve the exactly-one-in-a-set GTSP using an adaptive large neighborhood search (ALNS). This method involves iteratively modifying the tour by removing and adding vertices to find optimal routes. The algorithm integrates several insertion mechanisms, offering extensive benchmarking against other leading methods.
+
+Key Features of GLNS:
+1. Adaptive Large Neighborhood Search: Core technique of iteratively modifying the tour by removing and adding vertices to find better solutions.
+2. General Insertion Mechanism: Includes specific cases like nearest, farthest, and random insertion methods, enhancing solution space exploration.
+3. Benchmarking and Performance: Performs competitively with the best algorithms on standard GTSP libraries and excels on challenging non-metric and non-clustered instances.
+4. Application in Complex Scenarios: Applicable in operations research, material flow design, vehicle routing, and robotics motion planning.
+
+Implementation and Optimization:
+- Incorporates multiple trials with dynamic heuristic selection based on performance.
+- Utilizes simulated annealing criteria for accepting new solutions and multiple stopping criteria based on improvement metrics.
+- Implemented in Julia for optimization of speed and flexibility.
+
+Conclusions and Future Work:
+The GLNS algorithm offers robust capabilities for solving GTSP problems, handling various instance complexities with high efficiency. Future research could further enhance insertion and removal heuristics and their impact on performance in diverse problems.
+
+This approach not only enhances understanding of heuristic optimizations for GTSP but also provides a framework for tackling logistics and distribution challenges in operations research and robotic path planning.
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 100, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+###

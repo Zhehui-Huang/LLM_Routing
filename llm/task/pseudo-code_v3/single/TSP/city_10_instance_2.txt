@@ -28,7 +28,7 @@ Task
 ===
 The robot needs to visit all cities exactly once, except the depot city, and then return to the depot city.
 Please find the shortest tour for the robot.
-You can use the following pseudocode to solve the problem:
+You can refer to the pseudocode provided below to solve the problem:
 ****
 Christofides algorithm
 

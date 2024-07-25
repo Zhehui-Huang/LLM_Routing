@@ -38,7 +38,7 @@ Task
 ===
 The robot needs to visit each city exactly once, starting and ending at the depot city. 
 The goal is to minimize the longest distance between any two consecutive cities in the tour.
-You can use the following mathematical formulation to solve the problem:
+You can refer to the mathematical formulation provided below to solve the problem:
 ****
 #integer programming formulation
 

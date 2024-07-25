@@ -38,7 +38,7 @@ Task
 ===
 The robot needs to visit each city exactly once, starting and ending at the depot city. 
 The goal is to minimize the longest distance between any two consecutive cities in the tour.
-You can use the following pseudocode to solve the problem:
+You can refer to the pseudocode provided below to solve the problem:
 ****
 #heuristic algorithm
 

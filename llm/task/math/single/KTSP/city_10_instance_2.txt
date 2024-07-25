@@ -28,7 +28,7 @@ Task
 ===
 The robot needs to visit exactly 6 cities, including the depot city, starting and ending at the depot city.
 The goal is to find the shortest possible tour that visits exactly 6 cities out of the given set of cities.
-You can use the following mathematical formulation to solve the problem:
+You can refer to the mathematical formulation provided below to solve the problem:
 ****
 #heuristic algorithm
 

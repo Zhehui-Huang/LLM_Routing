@@ -1,0 +1,25 @@
+Generalized k-Opt Exchange Procedure for the mTSP
+
+Authors: Jean-Yves Potvin, Guy Lapalme, Jean-Marc Rousseau
+
+Abstract:
+This paper introduces a technique that generalizes the classical k-opt exchange by allowing exchanges that lead to the partition of a single tour into multiple subtours, which are then merged back into an equivalent single tour. This method enhances the k-opt procedure by expanding the set of exchange opportunities, which is particularly effective for mTSP problems with time windows.
+
+Key Features of the Generalized k-Opt Procedure:
+1. Generalized k-Changes:
+   - Considers "generalized" k-changes, which involve splitting a tour into multiple subtours. These subtours are feasible if each contains at least one copy of the depot, offering more exchange opportunities.
+
+2. Feasibility of New Solutions:
+   - New solutions are feasible if at least one copy of the depot is included in each subchain, allowing more complex changes than traditional methods.
+
+3. Advantages Over Classical Methods:
+   - This generalized approach is shown to be more powerful than the classical k-opt due to its ability to consider a broader range of potential solutions.
+
+4. Performance with Time Windows:
+   - Particularly advantageous for mTSP with time windows, as it accommodates constraints more effectively than traditional methods.
+
+5. Numerical Results:
+   - Presents numerical results demonstrating the effectiveness of this method on both classical mTSP and mTSP with time windows, showing significant improvements over existing solutions.
+
+Conclusion:
+The generalized k-opt exchange procedure provides a robust framework for solving mTSP problems, offering substantial improvements, especially in cases with additional constraints like time windows.
