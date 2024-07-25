@@ -3,13 +3,12 @@ import sys
 
 from env_info import get_env_info_str
 from task_info import get_task_info
-from utils import get_robot_info_str, random_generate_cities_depot, get_city_group_str, write_city_info, get_ktsp_k_list, get_mvtsp_visit_num_str
+from utils import get_robot_info_str, get_city_group_str, get_ktsp_k_list, get_mvtsp_visit_num_str
 
-
-CITY_NUM_LIST = [10, 15, 20, 25, 50]
+CITY_NUM_LIST = [10, 15, 20]
 INSTANCE_NUM = 5
 # TASK_LIST = ['TSP', 'BTSP', 'GTSP', 'KTSP', 'MV-TSP', 'TPP']
-TASK_LIST = ['TSP', 'BTSP', 'GTSP', 'KTSP', 'MV-TSP']
+TASK_LIST = ['TSP', 'BTSP', 'GTSP', 'KTSP']
 
 
 def get_format_requirements(task_name):
@@ -45,14 +44,20 @@ def get_format_requirements(task_name):
     return format_requirements
 
 
-def problem_generation():
+def get_city_loc(city_list_path):
+    with open(city_list_path, 'r') as f:
+        lines = f.readlines()
+        depot_loc = [int(x) for x in lines[0].strip().split(',')]
+        rest_cities_loc = [[int(x) for x in line.strip().split(',')] for line in lines[1:]]
+
+    return depot_loc, rest_cities_loc
+
+
+def problem_generation(shot_type, vid=0):
     for city_num in CITY_NUM_LIST:
         for instance_id in range(INSTANCE_NUM):
-            depot_loc, rest_cities_loc = random_generate_cities_depot(city_num=city_num)
-
-            # Write city info to file
-            path = f'../city_list/single/city_{city_num}_instance_{instance_id}.txt'
-            write_city_info(depot_loc, rest_cities_loc, path)
+            city_list_path = f'../city_list/single/city_{city_num}_instance_{instance_id}.txt'
+            depot_loc, rest_cities_loc = get_city_loc(city_list_path=city_list_path)
 
             # Generate problem description
             for task_name in TASK_LIST:
@@ -72,17 +77,32 @@ def problem_generation():
                 robot_info_str = get_robot_info_str()
 
                 # 3. Get task information
+                if shot_type == 'zero':
+                    file_path = ''
+                elif shot_type == 'math':
+                    file_path = f'../../algorithms/{task_name}-algorithm1.txt'
+                elif shot_type == 'pseudo-code':
+                    file_path = f'../../algorithms/{task_name}-algorithm{vid}.txt'
+                else:
+                    raise ValueError(f'Invalid shot type: {shot_type}')
+
                 if task_name == 'KTSP':
                     k_list = get_ktsp_k_list(city_num=city_num)
-                    task_info_str = get_task_info(task_name=task_name, k=k_list[instance_id])
+                    task_info_str = get_task_info(task_name=task_name, k=k_list[instance_id], shot_type=shot_type,
+                                                  file_path=file_path)
                 else:
-                    task_info_str = get_task_info(task_name=task_name)
+                    task_info_str = get_task_info(task_name=task_name, shot_type=shot_type, file_path=file_path)
 
                 # 4. Get format requirements
                 format_requirements_str = get_format_requirements(task_name=task_name)
 
                 problem_description_str = env_info_str + robot_info_str + task_info_str + format_requirements_str
-                file_name = f'../task/single/{task_name}/city_{city_num}_instance_{instance_id}.txt'
+
+                if vid == 0:
+                    file_name = f'../task/{shot_type}/single/{task_name}/city_{city_num}_instance_{instance_id}.txt'
+                else:
+                    file_name = f'../task/{shot_type}_v{vid}/single/{task_name}/city_{city_num}_instance_{instance_id}.txt'
+
                 os.makedirs(os.path.dirname(file_name), exist_ok=True)
                 with open(file_name, 'w') as f:
                     f.write(problem_description_str)
@@ -90,7 +110,18 @@ def problem_generation():
 
 
 def main():
-    problem_generation()
+    # Zero-shot
+    problem_generation(shot_type='zero')
+
+    # Use math formulation as context
+    problem_generation(shot_type='math')
+
+    # Use pseudo-code of a approximation algorithm as context
+    problem_generation(shot_type='pseudo-code', vid=2)
+    problem_generation(shot_type='pseudo-code', vid=3)
+
+    # Use paper pdf file as context
+    # problem_generation(shot_type='pdf_paper')
 
 
 if __name__ == '__main__':

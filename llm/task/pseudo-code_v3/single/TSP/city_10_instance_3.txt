@@ -1,0 +1,60 @@
+###
+Environment information
+===
+There are 10 cities.
+Depot city 0: (84, 67)
+City 1: (74, 40)
+City 2: (71, 13)
+City 3: (74, 82)
+City 4: (97, 28)
+City 5: (0, 31)
+City 6: (8, 62)
+City 7: (74, 56)
+City 8: (85, 71)
+City 9: (6, 76)
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
+
+###
+Task
+===
+The robot needs to visit all cities exactly once, except the depot city, and then return to the depot city.
+Please find the shortest tour for the robot.
+You can use the following pseudocode to solve the problem:
+****
+Christofides algorithm
+
+Input: Complete graph G with weights w satisfying the triangle inequality
+Output: Approximate solution to the Traveling Salesman Problem
+
+1. Compute a minimum spanning tree (MST) T of G.
+2. Identify the set O of vertices with odd degree in T.
+3. Find a minimum-weight perfect matching M in the subgraph induced by O.
+4. Combine the edges of T and M to form a multigraph H where each vertex has even degree.
+5. Find an Eulerian circuit in H.
+6. Convert the Eulerian circuit into a Hamiltonian circuit by skipping repeated vertices.
+
+Return the Hamiltonian circuit.
+
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 100, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+###

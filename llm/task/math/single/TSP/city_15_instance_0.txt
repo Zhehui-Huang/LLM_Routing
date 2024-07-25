@@ -1,0 +1,83 @@
+###
+Environment information
+===
+There are 15 cities.
+Depot city 0: (9, 93)
+City 1: (8, 51)
+City 2: (74, 99)
+City 3: (78, 50)
+City 4: (21, 23)
+City 5: (88, 59)
+City 6: (79, 77)
+City 7: (63, 23)
+City 8: (19, 76)
+City 9: (21, 38)
+City 10: (19, 65)
+City 11: (11, 40)
+City 12: (3, 21)
+City 13: (60, 55)
+City 14: (4, 39)
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
+
+###
+Task
+===
+The robot needs to visit all cities exactly once, except the depot city, and then return to the depot city.
+Please find the shortest tour for the robot.
+You can use the following mathematical formulation to solve the problem:
+****
+#integer programming formulation
+
+ 
+Let \( n \) be the number of cities. Let \( c_{ij} \) be the cost of traveling from city \( i \) to city \( j \). Define binary decision variables \( x_{ij} \) such that:
+\[
+x_{ij} =
+\begin{cases}
+1 & \text{if the tour goes directly from city } i \text{ to city } j, \\
+0 & \text{otherwise}.
+\end{cases}
+\]
+
+The integer programming formulation for the TSP is as follows:
+
+\[
+\begin{aligned}
+& \min && \sum_{i=1}^{n} \sum_{j=1}^{n} c_{ij} x_{ij} \\
+& \text{s.t.} && \sum_{j=1, j \ne i}^{n} x_{ij} = 1 \quad \forall i = 1, \ldots, n \\
+& && \sum_{i=1, i \ne j}^{n} x_{ij} = 1 \quad \forall j = 1, \ldots, n \\
+& && \sum_{i, j \in S} x_{ij} \leq |S|-1 \quad \forall S \subset \{1, \ldots, n\}, \ 2 \leq |S| \leq n - 1 \\
+& && x_{ij} \in \{0, 1\} \quad \forall i, j = 1, \ldots, n
+\end{aligned}
+\]
+
+Explanation:
+\begin{itemize}
+    \item The objective function minimizes the total cost of the tour.
+    \item The first set of constraints ensures that each city \( i \) is left exactly once.
+    \item The second set of constraints ensures that each city \( j \) is entered exactly once.
+    \item The third set of constraints (subtour elimination constraints) ensures that no subtours are formed. 
+    %These constraints can be expressed using subtour elimination constraints like the Miller-Tucker-Zemlin (MTZ) constraints for efficiency.
+\end{itemize}
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 100, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+###

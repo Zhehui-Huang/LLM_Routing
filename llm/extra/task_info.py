@@ -1,66 +1,101 @@
-def a_tsp_task():
+def a_tsp_task(extra_content):
     task_info = (
         '###\n'
         'Task\n===\n'
         'The robot needs to visit all cities exactly once, except the depot city, and then return to the depot city.\n'
+        'Please find the shortest tour for the robot.\n'
+        f'{extra_content}'
+        f'###\n\n'
     )
-    task_info += 'Please find the shortest tour for the robot.\n###\n\n'
     return task_info
 
 
-def b_btsp_task():
+def b_btsp_task(extra_content):
     task_info = (
         '###\n'
         'Task\n===\n'
         'The robot needs to visit each city exactly once, starting and ending at the depot city. \n'
-        'The goal is to minimize the longest distance between any two consecutive cities in the tour.\n###\n\n'
+        'The goal is to minimize the longest distance between any two consecutive cities in the tour.\n'
+        f'{extra_content}'
+        '###\n\n'
     )
     return task_info
 
 
-def c_gtsp_task():
+def c_gtsp_task(extra_content):
     task_info = (
         '###\n'
         'Task\n===\n'
         'The robot needs to visit at least one city from each group of cities, starting and ending at the depot city.\n'
+        'Please find the shortest tour for the robot.\n'
+        f'{extra_content}'
+        '###\n\n'
     )
-    task_info += 'Please find the shortest tour for the robot.\n###\n\n'
     return task_info
 
 
-def d_ktsp_task(k):
+def d_ktsp_task(k, extra_content):
     task_info = (
         '###\n'
         'Task\n===\n'
         f'The robot needs to visit exactly {k} cities, excluding the depot city, starting and ending at the depot city.\n'
-        f'The goal is to find the shortest possible tour that visits exactly {k} cities out of the given set of cities.\n###\n\n'
+        f'The goal is to find the shortest possible tour that visits exactly {k} cities out of the given set of cities.\n'
+        f'{extra_content}'
+        f'###\n\n'
     )
     return task_info
 
 
-def e_mvtsp_task():
+def e_mvtsp_task(extra_content):
     task_info = (
         '###\n'
         'Task\n===\n'
         'The robot needs to visit certain cities multiple times, starting and ending at the depot city. Each city must be visited '
         'the specified number of times. \n'
-        'The goal is to minimize the total travel cost while adhering to the visit requirements.\n###\n\n'
+        'The goal is to minimize the total travel cost while adhering to the visit requirements.\n'
+        f'{extra_content}'
+        '###\n\n'
     )
-
     return task_info
 
 
-def get_task_info(task_name, k=-1):
+def read_context(file_path):
+    # file_path = f'../../algorithms/{task_name}-algorithm1.txt'
+    with open(file_path, 'r') as f:
+        context = f.read()
+
+    return context
+
+
+def get_task_info(task_name, k=-1, shot_type='zero', file_path=''):
+    if shot_type == 'zero':
+        extra_content = ''
+    else:
+        if shot_type == 'math':
+            context_type = 'mathematical formulation'
+        elif shot_type == 'pseudo-code':
+            context_type = 'pseudocode'
+        else:
+            raise ValueError(f'Invalid shot type: {shot_type}')
+
+        context = read_context(file_path=file_path)
+        extra_content = (
+            f'You can use the following {context_type} to solve the problem:\n'
+            f'****\n'
+            f'{context}\n'
+            f'****\n'
+        )
+
     if task_name == 'TSP':
-        task_info = a_tsp_task()
+        task_info = a_tsp_task(extra_content=extra_content)
     elif task_name == 'BTSP':
-        task_info = b_btsp_task()
+        task_info = b_btsp_task(extra_content=extra_content)
     elif task_name == 'GTSP':
-        task_info = c_gtsp_task()
+        task_info = c_gtsp_task(extra_content=extra_content)
     elif task_name == 'KTSP':
-        task_info = d_ktsp_task(k=k)
+        task_info = d_ktsp_task(k=k, extra_content=extra_content)
     elif task_name == 'MV-TSP':
-        task_info = e_mvtsp_task()
+        task_info = e_mvtsp_task(extra_content=extra_content)
     else:
         raise ValueError(f'Invalid task name: {task_name}')
     return task_info

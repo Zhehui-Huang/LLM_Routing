@@ -1,0 +1,273 @@
+###
+Environment information
+===
+There are 20 cities.
+Depot city 0: (26, 60)
+City 1: (73, 84)
+City 2: (89, 36)
+City 3: (15, 0)
+City 4: (11, 10)
+City 5: (69, 22)
+City 6: (28, 11)
+City 7: (70, 2)
+City 8: (47, 50)
+City 9: (60, 29)
+City 10: (29, 26)
+City 11: (85, 68)
+City 12: (60, 1)
+City 13: (71, 73)
+City 14: (82, 47)
+City 15: (19, 25)
+City 16: (75, 9)
+City 17: (52, 54)
+City 18: (64, 72)
+City 19: (14, 89)
+
+There are 7 city groups: 
+Group 0: [2, 8, 11]
+Group 1: [1, 5, 12]
+Group 2: [9, 13, 18]
+Group 3: [4, 15, 17]
+Group 4: [3, 10, 16]
+Group 5: [7, 14]
+Group 6: [6, 19]
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
+
+###
+Task
+===
+The robot needs to visit at least one city from each group of cities, starting and ending at the depot city.
+Please find the shortest tour for the robot.
+You can use the following pseudocode to solve the problem:
+****
+
+
+\section*{Pseudo Code for GLNS Algorithm}
+
+\subsection*{Main Algorithm: GLNS}
+
+\begin{algorithm}
+\caption{GLNS (G, P\_V)}
+\begin{algorithmic}[1]
+\Require GTSP instance (G, P\_V)
+\Ensure A GTSP tour on G
+\For{$i = 1$ to num\_trials}
+    \State $T \gets$ initial\_tour(G, P\_V) // Sec. 5.1
+    \State $T_{\text{best},i} \gets T$
+    \Repeat
+        \State $R, I \gets$ select\_heuristics() // Sec. 5.2
+        \State $N_r \gets$ random\_number(1, N\_max)
+        \State $T_{\text{new}} \gets$ copy(T)
+        \State $T_{\text{new}} \gets$ remove\_vertices(T_{\text{new}}, R, N_r) // Sec. 4
+        \State $T_{\text{new}} \gets$ insert\_vertices(T_{\text{new}}, I, N_r) // Sec. 3
+        \State $T_{\text{new}} \gets$ local\_optimize(T_{\text{new}}) // Sec. 5.5
+        \If{cost($T_{\text{new}}$) < cost($T_{\text{best},i}$)}
+            \State $T_{\text{best},i} \gets T_{\text{new}}$
+        \EndIf
+        \If{accept($T_{\text{new}}$, T)} // Sec. 5.3
+            \State $T \gets T_{\text{new}}$
+        \EndIf
+        \State record\_improvement(R, I)
+    \Until stop\_criterion\_met() // Sec. 5.3
+    \State update\_weights() // Sec. 5.4
+\EndFor
+\State \Return min\_cost\_tour($T_{\text{best}}$)
+\end{algorithmic}
+\end{algorithm}
+
+\subsection*{Subroutines}
+
+\subsubsection*{Initial Tour Construction}
+
+\begin{algorithm}
+\caption{initial\_tour(G, P\_V)}
+\begin{algorithmic}[1]
+\Require GTSP instance (G, P\_V)
+\Ensure Initial tour T
+\If{use\_random\_insertion}
+    \State $v \gets$ random\_vertex(G)
+    \State $T \gets$ insert\_vertex(empty\_tour(), $v$)
+    \For{each set $V_i$ in $P_V \setminus \{$set of $v\}$}
+        \State $T \gets$ insert\_set(T, $V_i$, $\lambda=1$, noise=max\_noise)
+    \EndFor
+\Else
+    \State $T \gets$ random\_tour(P\_V)
+\EndIf
+\State \Return T
+\end{algorithmic}
+\end{algorithm}
+
+\subsubsection*{Select Heuristics}
+
+\begin{algorithm}
+\caption{select\_heuristics()}
+\begin{algorithmic}[1]
+\Ensure Selected removal heuristic R and insertion heuristic I
+\State $R \gets$ roulette\_wheel\_selection(removal\_heuristics, weights)
+\State $I \gets$ roulette\_wheel\_selection(insertion\_heuristics, weights)
+\State \Return $R, I$
+\end{algorithmic}
+\end{algorithm}
+
+\subsubsection*{Remove Vertices}
+
+\begin{algorithm}
+\caption{remove\_vertices(T, R, N\_r)}
+\begin{algorithmic}[1]
+\Require Tour T, removal heuristic R, number of removals $N_r$
+\Ensure Modified tour T with $N_r$ vertices removed
+\For{$j = 1$ to $N_r$}
+    \State $T \gets R$.remove(T)
+\EndFor
+\State \Return T
+\end{algorithmic}
+\end{algorithm}
+
+\subsubsection*{Insert Vertices}
+
+\begin{algorithm}
+\caption{insert\_vertices(T, I, N\_r)}
+\begin{algorithmic}[1]
+\Require Tour T, insertion heuristic I, number of insertions $N_r$
+\Ensure Modified tour T with $N_r$ vertices inserted
+\For{$j = 1$ to $N_r$}
+    \State $T \gets I$.insert(T)
+\EndFor
+\State \Return T
+\end{algorithmic}
+\end{algorithm}
+
+\subsubsection*{Local Optimization}
+
+\begin{algorithm}
+\caption{local\_optimize(T)}
+\begin{algorithmic}[1]
+\Require Tour T
+\Ensure Locally optimized tour T
+\State improved $\gets$ true
+\While{improved}
+    \State improved $\gets$ false
+    \State $T \gets$ reoptimize\_vertices(T)
+    \State $T \gets$ move\_optimize(T)
+    \If{cost(T) improved}
+        \State improved $\gets$ true
+    \EndIf
+\EndWhile
+\State \Return T
+\end{algorithmic}
+\end{algorithm}
+
+\subsubsection*{Accept New Tour}
+
+\begin{algorithm}
+\caption{accept(T\_new, T)}
+\begin{algorithmic}[1]
+\Require New tour $T_{\text{new}}$, current tour T
+\Ensure Boolean indicating if $T_{\text{new}}$ is accepted
+\State $\Delta\_cost \gets$ cost($T_{\text{new}}$) - cost(T)
+\If{$\Delta\_cost < 0$}
+    \State \Return true
+\Else
+    \State probability $\gets \exp(-\Delta\_cost /$ temperature)
+    \State \Return random() < probability
+\EndIf
+\end{algorithmic}
+\end{algorithm}
+
+\subsubsection*{Stop Criterion}
+
+\begin{algorithm}
+\caption{stop\_criterion\_met()}
+\begin{algorithmic}[1]
+\Ensure Boolean indicating if stopping criterion is met
+\If{no\_improvement\_count $\geq$ threshold}
+    \State \Return true
+\Else
+    \State \Return false
+\EndIf
+\end{algorithmic}
+\end{algorithm}
+
+\subsubsection*{Update Weights}
+
+\begin{algorithm}
+\caption{update\_weights()}
+\begin{algorithmic}[1]
+\For{each heuristic h}
+    \State $h$.weight $\gets \epsilon \cdot h$.weight + (1 - $\epsilon$) \cdot $h$.score
+\EndFor
+\end{algorithmic}
+\end{algorithm}
+
+\subsection*{Explanation}
+
+1. \textbf{GLNS Main Algorithm:}
+   \begin{itemize}
+       \item The algorithm runs for a specified number of trials, each time initializing a tour and iteratively improving it.
+       \item In each iteration, it selects heuristics for removing and inserting vertices, applies these heuristics, and locally optimizes the tour.
+       \item The new tour is accepted based on a simulated annealing criterion.
+       \item Weights for heuristics are updated based on their performance to guide future selections.
+   \end{itemize}
+
+2. \textbf{Initial Tour Construction:}
+   \begin{itemize}
+       \item Two methods are available: random insertion (inserts vertices using a heuristic) and random tour (completely random order).
+   \end{itemize}
+
+3. \textbf{Heuristic Selection:}
+   \begin{itemize}
+       \item Heuristics are selected using a roulette wheel mechanism weighted by their performance scores.
+   \end{itemize}
+
+4. \textbf{Vertex Removal and Insertion:}
+   \begin{itemize}
+       \item Vertices are removed and inserted using the selected heuristics to explore new tour configurations.
+   \end{itemize}
+
+5. \textbf{Local Optimization:}
+   \begin{itemize}
+       \item The tour is locally optimized by reoptimizing vertices and moving vertices within the tour until no further improvement is possible.
+   \end{itemize}
+
+6. \textbf{Acceptance Criterion:}
+   \begin{itemize}
+       \item The new tour is accepted if it improves the cost or based on a probabilistic acceptance criterion.
+   \end{itemize}
+
+7. \textbf{Stopping Criterion:}
+   \begin{itemize}
+       \item The iterative improvement process stops when no improvement is observed for a certain number of iterations.
+   \end{itemize}
+
+8. \textbf{Weight Update:}
+   \begin{itemize}
+       \item Heuristic weights are updated based on their performance to adaptively guide the search process.
+   \end{itemize}
+
+By following this pseudo code and understanding the corresponding subroutines, you can implement the GLNS algorithm to solve the Generalized Traveling Salesman Problem effectively.
+
+
+
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 100, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+###

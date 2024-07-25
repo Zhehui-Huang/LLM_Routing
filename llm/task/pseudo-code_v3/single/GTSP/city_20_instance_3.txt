@@ -1,0 +1,191 @@
+###
+Environment information
+===
+There are 20 cities.
+Depot city 0: (30, 56)
+City 1: (53, 42)
+City 2: (1, 95)
+City 3: (25, 61)
+City 4: (69, 57)
+City 5: (6, 58)
+City 6: (12, 84)
+City 7: (72, 77)
+City 8: (98, 95)
+City 9: (11, 0)
+City 10: (61, 25)
+City 11: (52, 0)
+City 12: (60, 95)
+City 13: (10, 94)
+City 14: (96, 73)
+City 15: (14, 47)
+City 16: (18, 16)
+City 17: (4, 43)
+City 18: (53, 76)
+City 19: (19, 72)
+
+There are 6 city groups: 
+Group 0: [1, 5, 11, 15]
+Group 1: [8, 16, 17]
+Group 2: [10, 14, 18]
+Group 3: [2, 9, 12]
+Group 4: [6, 7, 19]
+Group 5: [3, 4, 13]
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
+
+###
+Task
+===
+The robot needs to visit at least one city from each group of cities, starting and ending at the depot city.
+Please find the shortest tour for the robot.
+You can use the following pseudocode to solve the problem:
+****
+
+\section*{LK General Implementation and Subroutines for GTSP}
+
+\begin{algorithm}[H]
+\caption{LK General Implementation}
+\begin{algorithmic}[1]
+\REQUIRE The original tour $T$
+\STATE Initialize the number of idle iterations $i \gets 0$
+\WHILE{$i < m$}
+    \STATE Cyclically select the next edge $e \to b \in T$
+    \STATE Let $P_o = b \to \ldots \to e$ be the path obtained from $T$ by removing the edge $e \to b$
+    \STATE Run $T' \gets \text{ImprovePath}(P_o, 1, \emptyset)$
+    \IF{$w(T') < w(T)$}
+        \STATE Set $T \gets \text{ImproveTour}(T')$
+        \STATE Reset the number of idle iterations $i \gets 0$
+    \ELSE
+        \STATE Increase the number of idle iterations $i \gets i + 1$
+    \ENDIF
+\ENDWHILE
+\end{algorithmic}
+\end{algorithm}
+
+\noindent\textbf{Explanation:}
+\begin{itemize}
+    \item The main loop of the LK General Implementation selects edges cyclically, removes them to create paths, and tries to improve these paths using the \texttt{ImprovePath} function.
+    \item If an improvement is found, it updates the tour; otherwise, it counts idle iterations.
+\end{itemize}
+
+\begin{algorithm}[H]
+\caption{ImprovePath}
+\begin{algorithmic}[1]
+\REQUIRE The path $P = b \to \ldots \to e$, recursion depth $\text{depth}$, and the set of restricted vertices $R$
+\IF{$\text{depth} \geq \alpha$}
+    \STATE Find the edge $x \to y \in P$, $x \neq b$, $x \notin R$ such that it maximizes the path gain $\text{Gain}(P, x \to y)$
+\ELSE
+    \STATE Repeat the rest of the procedure for every edge $x \to y \in P$, $x \neq b$, $x \notin R$
+\ENDIF
+
+\STATE Conduct the local search move: $P \gets \text{RearrangePath}(P, x \to y)$
+\IF{$\text{GainIsAcceptable}(P, x \to y)$}
+    \STATE Replace the edge $x \to y$ with $x \to e$ in $P$
+    $T' = \text{CloseUp}(P)$
+    \IF{$w(T') \geq w(T)$}
+        \STATE Run $T' \gets \text{ImprovePath}(P, \text{depth} + 1, R \cup \{x\})$
+        \IF{$w(T') < w(T)$}
+            \RETURN $T'$
+        \ENDIF
+    \ELSE
+        \STATE Restore the path $P$
+    \ENDIF
+\ENDIF
+\RETURN $T$
+\end{algorithmic}
+\end{algorithm}
+
+\noindent\textbf{Explanation:}
+\begin{itemize}
+    \item The \texttt{ImprovePath} function is recursive and tries to improve the path by exploring possible rearrangements and calculating their gains.
+    \item It uses a backtracking mechanism to try improvements and accepts them based on the gain calculated.
+\end{itemize}
+
+\begin{algorithm}[H]
+\caption{Gain}
+\begin{algorithmic}[1]
+\REQUIRE The path $P$, the edge $x \to y$
+\RETURN $w(x \to y) - w(e \to x)$
+\end{algorithmic}
+\end{algorithm}
+
+\noindent\textbf{Explanation:}
+\begin{itemize}
+    \item The \texttt{Gain} function calculates the gain of breaking a path $P$ at an edge $x \to y$.
+\end{itemize}
+
+\begin{algorithm}[H]
+\caption{RearrangePath}
+\begin{algorithmic}[1]
+\REQUIRE The path $P = b \to \ldots \to x \to y \to \ldots \to e$, the edge $x \to y$
+\RETURN $b \to \ldots \to x \to e \to \ldots \to y$
+\end{algorithmic}
+\end{algorithm}
+
+\noindent\textbf{Explanation:}
+\begin{itemize}
+    \item The \texttt{RearrangePath} function removes an edge $x \to y$ from a path $P$ and adds the edge $x \to e$, where $P = b \to ... \to x \to y \to ... \to e$.
+\end{itemize}
+
+\begin{algorithm}[H]
+\caption{GainIsAcceptable}
+\begin{algorithmic}[1]
+\REQUIRE The path $P$, the edge $x \to y$
+\RETURN $w(P) < w(T)$
+\end{algorithmic}
+\end{algorithm}
+
+\noindent\textbf{Explanation:}
+\begin{itemize}
+    \item The \texttt{GainIsAcceptable} function determines if the gain of breaking a path $P$ at an edge $x \to y$ is worth further effort. This example uses Option 4, which accepts the gain if the path weight is reduced.
+\end{itemize}
+
+\begin{algorithm}[H]
+\caption{CloseUp}
+\begin{algorithmic}[1]
+\REQUIRE The path $P$
+\RETURN $b \to \ldots \to e \to b$
+\end{algorithmic}
+\end{algorithm}
+
+\noindent\textbf{Explanation:}
+\begin{itemize}
+    \item The \texttt{CloseUp} function adds an edge to a path $P$ to produce a feasible tour.
+\end{itemize}
+
+\begin{algorithm}[H]
+\caption{ImproveTour}
+\begin{algorithmic}[1]
+\REQUIRE The tour $T$
+\RETURN $\text{CO}(T)$
+\end{algorithmic}
+\end{algorithm}
+
+\noindent\textbf{Explanation:}
+\begin{itemize}
+    \item The \texttt{ImproveTour} function applies cluster optimization (CO) to improve the tour. The exact nature of CO is not detailed in the pseudo code provided, but it refers to optimizing the tour within the constraints of the GTSP.
+\end{itemize}
+
+
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 100, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+###

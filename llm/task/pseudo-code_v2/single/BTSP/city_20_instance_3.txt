@@ -1,0 +1,96 @@
+###
+Environment information
+===
+There are 20 cities.
+Depot city 0: (30, 56)
+City 1: (53, 42)
+City 2: (1, 95)
+City 3: (25, 61)
+City 4: (69, 57)
+City 5: (6, 58)
+City 6: (12, 84)
+City 7: (72, 77)
+City 8: (98, 95)
+City 9: (11, 0)
+City 10: (61, 25)
+City 11: (52, 0)
+City 12: (60, 95)
+City 13: (10, 94)
+City 14: (96, 73)
+City 15: (14, 47)
+City 16: (18, 16)
+City 17: (4, 43)
+City 18: (53, 76)
+City 19: (19, 72)
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
+
+###
+Task
+===
+The robot needs to visit each city exactly once, starting and ending at the depot city. 
+The goal is to minimize the longest distance between any two consecutive cities in the tour.
+You can use the following pseudocode to solve the problem:
+****
+#heuristic algorithm
+
+
+\textbf{Input:} A weighted complete graph $G(V, E)$ with edge weights $c_{ij}$.
+
+\textbf{Steps:}
+
+\begin{enumerate}
+    \item \textbf{Bottleneck-optimal Biconnected Subgraph (Step 1):}
+    \begin{enumerate}
+        \item Apply Algorithm BB to obtain $G(V, E_{BB})$, a bottleneck-optimal biconnected subgraph of $G$.
+        \item \textbf{Algorithm BB:}
+        \begin{enumerate}
+            \item \textbf{Step 0 (Initialization):} 
+            \begin{itemize}
+                \item Sort the edges $E$ in non-decreasing order of their weights $c_{ij}$.
+                \item Initialize the solution set $E_{BB}$ as an empty set.
+            \end{itemize}
+            \item \textbf{Step 1 (Augmentation):}
+            \begin{itemize}
+                \item Select the next edge in order from the sorted list and add it to $E_{BB}$.
+            \end{itemize}
+            \item \textbf{Step 2 (Stopping Condition):}
+            \begin{itemize}
+                \item Check if $G(V, E_{BB})$ is biconnected.
+                \item If it is, compute $c_{BB} = \max \{c_{ij} : (i, j) \in E_{BB} \}$ and stop.
+                \item If not, repeat Step 1.
+            \end{itemize}
+        \end{enumerate}
+    \end{enumerate}
+    \item \textbf{Tour Identification (Step 2):}
+    \begin{itemize}
+        \item Identify an approximate optimal tour for BTSP by tracing a Hamiltonian cycle $T$ in the square $G^2(V, E_{BB}^2)$ of the biconnected subgraph obtained in Step 1.
+        \item Define $c_T = \max \{c_{ij} : (i, j) \in T \}$.
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Output:} An approximate solution to BTSP with the bottleneck cost $c_T$.
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+3) Please output the maximum distance between any two consecutive cities in the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0, the total travel cost is 100, and the maximum distance between any two consecutive cities is 40, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+Maximum distance between consecutive cities: 40
+###

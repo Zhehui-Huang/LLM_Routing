@@ -1,0 +1,60 @@
+###
+Environment information
+===
+There are 10 cities.
+Depot city 0: (50, 42)
+City 1: (41, 1)
+City 2: (18, 46)
+City 3: (40, 98)
+City 4: (51, 69)
+City 5: (47, 39)
+City 6: (62, 26)
+City 7: (79, 31)
+City 8: (61, 90)
+City 9: (42, 49)
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
+
+###
+Task
+===
+The robot needs to visit exactly 4 cities, excluding the depot city, starting and ending at the depot city.
+The goal is to find the shortest possible tour that visits exactly 4 cities out of the given set of cities.
+You can use the following mathematical formulation to solve the problem:
+****
+#heuristic algorithm
+
+Given a complete, edge-weighted, undirected graph $G = (V, E)$, where $V = \{1, 2, \ldots, n\}$ is the set of $n$ nodes in which the first node `1' represents the home city and the remaining $n - 1$ nodes represent other cities, $E = \{(i, j) | i, j \in V\}$ is the set of edges and each edge $(i, j) \in E$ has an associated distance $d_{ij}$. The $k$-TSP seeks a minimum length Hamiltonian cycle over all the subgraphs induced by the subsets of $V$ with exactly $k$ nodes including the home city. Throughout this paper, we will use node and city interchangeably. Let $V'$ denote such a subset of $k$ nodes. We will use binary variable $y_i$ to specify whether a node $i$ belongs to $V'$ ($y_i = 1$) or not ($y_i = 0$), and another binary variable $x_{ij}$ to specify whether an edge $(i, j)$ belongs to the Hamiltonian cycle over $V'$ ($x_{ij} = 1$) or not ($x_{ij} = 0$). With the help of these notational conventions, the $k$-TSP can be formulated in the following manner:
+
+\begin{align}
+    \text{Minimize} \quad & \sum_{i \in V} \sum_{j \in V} d_{ij} x_{ij} \tag{1} \\
+    \text{subject to:} \quad & \sum_{i \in V} y_i = k, \tag{2} \\
+    & \sum_{i \in V} x_{1i} = 1 = \sum_{i \in V} x_{i1}, \tag{3} \\
+    & \sum_{(k, i) \in E} x_{ki} + \sum_{(i, j) \in E} x_{ij} = 2y_i \quad \forall i \in V, \tag{4} \\
+    & \sum_{i \in S} \sum_{j \in S} x_{ij} \leq |S| - 1, \quad \forall S \subset V' \subset V, \tag{5} \\
+    & x_{ij}, y_i \in \{0, 1\} \quad \forall (i, j) \in E, i \in V. \tag{6}
+\end{align}
+
+The objective function of the $k$-TSP is represented by Eq. (1) which minimizes the total length of the cycle. Equation (2) ensures that $k$ cities are exactly visited and Eq. (3) enforces the constraint that the tour should start and end at the first city (i.e., home city). Equation (4) enforces the constraints on the in-degree and the out-degree of the visited nodes. Equation (5) is the sub-tour elimination constraint. Equation (6) restricts the values of decision variables $x_{ij}$ and $y_i$ to either 0 or 1.
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 100, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+###

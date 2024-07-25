@@ -1,0 +1,81 @@
+###
+Environment information
+===
+There are 10 cities.
+Depot city 0: (90, 3)
+City 1: (11, 17)
+City 2: (7, 27)
+City 3: (95, 81)
+City 4: (41, 54)
+City 5: (31, 35)
+City 6: (23, 95)
+City 7: (20, 56)
+City 8: (49, 29)
+City 9: (13, 17)
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
+
+###
+Task
+===
+The robot needs to visit each city exactly once, starting and ending at the depot city. 
+The goal is to minimize the longest distance between any two consecutive cities in the tour.
+You can use the following pseudocode to solve the problem:
+****
+#heuristic algorithm
+
+
+\section*{Bottleneck Traveling Salesman Problem Algorithm}
+
+\begin{algorithm}
+\caption{Approximation Algorithm for Bottleneck Traveling Salesman Problem}
+\label{alg:btsp}
+\begin{algorithmic}[1]
+\STATE \textbf{Input:} A complete graph $G = (V, E)$ with edge weights $c_{ij}$ satisfying the triangle inequality.
+\STATE \textbf{Output:} A Hamiltonian path with the maximum edge weight minimized.
+\STATE Sort the edges of $G$ in non-decreasing order of weights: $c_1 \leq c_2 \leq \ldots \leq c_m$.
+\FOR{each edge weight $c_i$ in the sorted list}
+    \STATE Construct the bottleneck graph $BOTTLENECKG(c_i) = (V, E_i)$, where $E_i = \{(u,v) \mid c_{uv} \leq c_i\}$.
+    \IF{$BOTTLENECKG(c_i)$ contains a Hamiltonian path}
+        \STATE Output the Hamiltonian path.
+        \STATE \textbf{Terminate}
+    \ENDIF
+\ENDFOR
+\end{algorithmic}
+\end{algorithm}
+
+\section*{Procedure for Checking Hamiltonian Path}
+\begin{algorithm}
+\caption{Check for Hamiltonian Path in $BOTTLENECKG(c_i)$}
+\label{alg:check_hamiltonian}
+\begin{algorithmic}[1]
+\STATE \textbf{Input:} A graph $BOTTLENECKG(c_i) = (V, E_i)$.
+\STATE \textbf{Output:} True if there exists a Hamiltonian path, False otherwise.
+\STATE Use a heuristic or approximation method to check if $BOTTLENECKG(c_i)$ contains a Hamiltonian path.
+\STATE \textbf{Return} True if a Hamiltonian path is found, False otherwise.
+\end{algorithmic}
+\end{algorithm}
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+3) Please output the maximum distance between any two consecutive cities in the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0, the total travel cost is 100, and the maximum distance between any two consecutive cities is 40, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+Maximum distance between consecutive cities: 40
+###

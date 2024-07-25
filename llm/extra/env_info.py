@@ -1,8 +1,3 @@
-import os
-import random
-import numpy as np
-from utils import get_cities
-
 
 def get_env_info_str(city_num, depot_loc, rest_cities_loc, extra_env_info_str):
     # Environment information prex

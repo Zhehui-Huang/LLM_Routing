@@ -1,0 +1,56 @@
+###
+Environment information
+===
+There are 15 cities.
+Depot city 0: (16, 90)
+City 1: (43, 99)
+City 2: (80, 21)
+City 3: (86, 92)
+City 4: (54, 93)
+City 5: (34, 73)
+City 6: (6, 61)
+City 7: (86, 69)
+City 8: (30, 50)
+City 9: (35, 73)
+City 10: (42, 64)
+City 11: (64, 30)
+City 12: (70, 95)
+City 13: (29, 64)
+City 14: (32, 79)
+
+There are 6 city groups: 
+Group 0: [6, 8, 13]
+Group 1: [5, 10, 12]
+Group 2: [1, 14]
+Group 3: [4, 9]
+Group 4: [2, 3]
+Group 5: [7, 11]
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
+
+###
+Task
+===
+The robot needs to visit at least one city from each group of cities, starting and ending at the depot city.
+Please find the shortest tour for the robot.
+###
+
+###
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 100, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+###

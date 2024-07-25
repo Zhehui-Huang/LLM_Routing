@@ -1,0 +1,80 @@
+###
+Environment information
+===
+There are 10 cities.
+Depot city 0: (53, 68)
+City 1: (75, 11)
+City 2: (91, 95)
+City 3: (22, 80)
+City 4: (18, 63)
+City 5: (54, 91)
+City 6: (70, 14)
+City 7: (97, 44)
+City 8: (17, 69)
+City 9: (95, 89)
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
+
+###
+Task
+===
+The robot needs to visit all cities exactly once, except the depot city, and then return to the depot city.
+Please find the shortest tour for the robot.
+You can use the following pseudocode to solve the problem:
+****
+Lin-Kernighan algorithm
+
+
+Input: A graph G with a cost function c, and an initial tour T.
+Output: An improved tour T'.
+
+1. Initialize:
+   a. Set best gain g* := 0
+   b. Set best set of edges F := ∅
+   c. Push all vertices u in V(G) with (u, 0, 0) onto the stack
+
+2. Main Loop:
+   Repeat until no improvement is found:
+   a. Set current tour gain g := 0
+   b. While the stack is not empty:
+      i. Pop (u, i, g) from the stack
+      ii. If i is even:
+         For each v in V(G) such that (v_i, u) is in T:
+            Push (u, i + 1, g + c(v_i, u)) onto the stack
+      iii. If i is odd:
+         If g > c(v_i, v_0):
+            Report a closed alternating trail with gain g - c(v_i, v_0)
+         For each u in V(G) such that g > c(v_i, u):
+            Push (u, i + 1, g - c(v_i, u)) onto the stack
+      iv. If g* > 0:
+         Update T := T Δ F
+         Clear the stack
+      v. If i > backtracking depth:
+         Pop all elements with depth > backtracking depth from the stack
+   c. If no improvement found, stop
+
+3. Return the improved tour T'
+
+
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 100, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+###

@@ -1,0 +1,138 @@
+###
+Environment information
+===
+There are 10 cities.
+Depot city 0: (90, 3)
+City 1: (11, 17)
+City 2: (7, 27)
+City 3: (95, 81)
+City 4: (41, 54)
+City 5: (31, 35)
+City 6: (23, 95)
+City 7: (20, 56)
+City 8: (49, 29)
+City 9: (13, 17)
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
+
+###
+Task
+===
+The robot needs to visit exactly 6 cities, excluding the depot city, starting and ending at the depot city.
+The goal is to find the shortest possible tour that visits exactly 6 cities out of the given set of cities.
+You can use the following pseudocode to solve the problem:
+****
+Below is the pseudo code for the General Variable Neighborhood Search (GVNS) algorithm, including its necessary subroutines:
+
+
+Algorithm GVNS for k-TSP
+Input: Set of parameters for GVNS
+Output: Best solution found
+
+1: while iter ≤ itermax do
+2:     S ← GenerateInitialSolution()
+3:     p ← 1
+4:     while p ≤ pmax do
+5:         S' ← Shake(S, Np)
+6:         S'' ← VND(S')
+7:         if F(S'') < F(S) then
+8:             S ← S''
+9:             p ← 1
+10:        else
+11:            p ← p + 1
+12:    iter ← iter + 1
+13: return Best solution S
+
+Subroutine GenerateInitialSolution()
+Input: None
+Output: Initial solution S
+
+1: S ← ∅
+2: Select a city randomly and add to S
+3: while |S| < k do
+4:     Select a city not in S randomly
+5:     Insert the city into S at the best position
+6: return S
+
+Subroutine Shake(S, Np)
+Input: Current solution S, Neighborhood structure Np
+Output: Shaken solution S'
+
+1: S' ← Generate a random solution in the p-th neighborhood of S
+2: return S'
+
+Subroutine VND(S')
+Input: Initial solution S'
+Output: Local optimal solution S''
+
+1: S'' ← S'
+2: repeat
+3:     p ← 1
+4:     while p ≤ pmax do
+5:         S''' ← LocalSearch(S'', Np)
+6:         if F(S''') < F(S'') then
+7:             S'' ← S'''
+8:             p ← 1
+9:         else
+10:            p ← p + 1
+11: until no improvement in all neighborhoods
+12: return S''
+
+Subroutine LocalSearch(S, Np)
+Input: Current solution S, Neighborhood structure Np
+Output: Improved solution S'
+
+1: if Np is N1 then
+2:     for each city i in S do
+3:         for each city j not in S do
+4:             S' ← Exchange i with j in S
+5:             if F(S') < F(S) then
+6:                 return S'
+7: else if Np is N2 then
+8:     for each pair of cities (i, j) in S do
+9:         S' ← Swap i and j in S
+10:        if F(S') < F(S) then
+11:            return S'
+12: return S
+
+
+{Explanation of Subroutines}
+
+{GenerateInitialSolution}
+Generates an initial solution \( S \) by randomly selecting a starting city and iteratively adding cities at the best position until exactly \( k \) cities are included in the tour.
+
+{Shake}
+Generates a new solution \( S' \) by making random changes in the current solution \( S \) within the \( p \)-th neighborhood.
+
+{Variable Neighborhood Descent (VND)}
+Applies local search within defined neighborhood structures \( N1 \) and \( N2 \) to find improved solutions. Uses a first improvement strategy to restart the search in the first neighborhood upon finding a better solution.
+\begin{itemize}
+    \item \textbf{N1}: Exchange operation where a city in the tour is replaced with an unvisited city.
+    \item \textbf{N2}: Swap operation where two cities in the tour exchange positions.
+\end{itemize}
+
+{LocalSearch}
+Explores the given neighborhood structure \( N_p \) to find an improved solution. If an improvement is found, the new solution is returned; otherwise, the current solution is maintained.
+
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 100, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+###

@@ -33,7 +33,8 @@ FILE_NAME_BIG = [
     # 'P-n51-k10'
 ]
 
-BASE_PATH = '/home/ethan/repository/LLM_Routing/llm'
+BASE_PATH = '/Users/tencentintern/Documents/LLM_Routing/llm'
+
 
 def download_files(file_names, size):
     link_prex = 'http://vrp.galgos.inf.puc-rio.br/media/com_vrp/instances//'
@@ -226,7 +227,7 @@ def modify_mTSPMD_info(content, robot_num):
 
 
 def main():
-    # download_original_files()
+    download_original_files()
     batch_extract_node_info()
 
 

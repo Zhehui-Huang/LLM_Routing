@@ -1,11 +1,9 @@
-import os
 import sys
 
 from env_info import get_multi_env_info_str
+from multi_utils import get_multi_robot_info_str, modify_mTSPMD_info, extract_robot_num, FILE_NAME_SMALL
 from task_info import get_multi_task_info
-from utils import get_ktsp_k_list, read_txt_file, write_txt_file
-from multi_utils import get_multi_robot_info_str, modify_mTSPMD_info, extract_robot_num, extract_demand_info, FILE_NAME_SMALL, FILE_NAME_BIG
-
+from utils import read_txt_file, write_txt_file
 
 TASK_LIST = ['mTSP', 'mTSP_MinMax', 'mTSPMD', 'mTSPMD_non_fix', 'CVRP']
 
@@ -123,6 +121,7 @@ def problem_generation(file_names, note):
 
 
 def main():
+    # Zero-shot
     problem_generation(file_names=FILE_NAME_SMALL, note='small')
     # problem_generation(file_names=FILE_NAME_BIG, note='big')
 

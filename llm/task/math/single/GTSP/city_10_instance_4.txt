@@ -1,0 +1,84 @@
+###
+Environment information
+===
+There are 10 cities.
+Depot city 0: (79, 15)
+City 1: (79, 55)
+City 2: (4, 80)
+City 3: (65, 26)
+City 4: (92, 9)
+City 5: (83, 61)
+City 6: (22, 21)
+City 7: (97, 70)
+City 8: (20, 99)
+City 9: (66, 62)
+
+There are 7 city groups: 
+Group 0: [2, 5]
+Group 1: [1, 8]
+Group 2: [4]
+Group 3: [7]
+Group 4: [3]
+Group 5: [6]
+Group 6: [9]
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
+
+###
+Task
+===
+The robot needs to visit at least one city from each group of cities, starting and ending at the depot city.
+Please find the shortest tour for the robot.
+You can use the following mathematical formulation to solve the problem:
+****
+# integer programming formulation
+
+\begin{align}
+\min \quad & \sum_{i \in V} \sum_{j \in V \setminus \{i\}} c_{ij} x_{ij}  \\
+\text{s.t.} \quad & \sum_{i \in V_p} \sum_{j \in V \setminus V_p} x_{ij} = 1, \quad \forall p = 1, \ldots, k  \\
+& \sum_{j \in V_p} \sum_{i \in V \setminus V_p} x_{ij} = 1, \quad \forall p = 1, \ldots, k  \\
+& \sum_{j \in V \setminus \{i\}} x_{ji} - \sum_{j \in V \setminus \{i\}} x_{ij} = 0, \quad \forall i \in V  \\
+& x_{ij} \in \{0, 1\}, \quad \forall (i, j) \in A  \\
+&
+\begin{aligned} 
+     & u_p - u_q + k \sum_{i \in V_p} \sum_{j \in V_q} x_{ij} \\
+    & + (k-2) \sum_{i \in V_q} \sum_{j \in V_p} x_{ij} \leq k-1, \\
+   & \quad p \neq q; \, p, q = 2, \ldots, k  
+\end{aligned}
+  \\
+& u_p \geq 0, \quad p = 2, \ldots, k 
+\end{align}
+
+
+
+\begin{itemize}
+    \item \textbf{Objective Function (1):} Minimize the total travel cost.
+    \item \textbf{Constraint (2):} Each cluster must have exactly one outgoing edge to a node outside the cluster.
+    \item \textbf{Constraint (3):} Each cluster must have exactly one incoming edge from a node outside the cluster.
+    \item \textbf{Constraint (4):} Flow conservation constraint to maintain the tour.
+    \item \textbf{Constraint (5):} Binary variable constraint.
+    \item \textbf{Constraint (6):} Subtour elimination constraints to prevent subtours.
+    \item \textbf{Constraint (7):} Non-negativity constraint for the continuous variables used in the subtour elimination constraints.
+\end{itemize}
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0 and the total travel cost is 100, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+###
