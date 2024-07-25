@@ -1,0 +1,60 @@
+###
+Environment information
+===
+There are 25 cities.
+Depot city 0: (58, 50)
+City 1: (22, 2)
+City 2: (42, 54)
+City 3: (8, 52)
+City 4: (37, 17)
+City 5: (96, 76)
+City 6: (42, 43)
+City 7: (25, 64)
+City 8: (72, 36)
+City 9: (15, 70)
+City 10: (1, 92)
+City 11: (85, 97)
+City 12: (91, 44)
+City 13: (23, 56)
+City 14: (64, 21)
+City 15: (45, 87)
+City 16: (30, 83)
+City 17: (23, 36)
+City 18: (99, 10)
+City 19: (15, 64)
+City 20: (89, 81)
+City 21: (12, 19)
+City 22: (10, 15)
+City 23: (76, 4)
+City 24: (18, 35)
+###
+
+###
+Robot information
+===
+There is one robot.
+- The robot start at depot city 0. 
+- The robot can travel between any two cities. 
+- The travel cost is calculated as the Euclidean distance between the two cities.
+###
+
+###
+Task
+===
+The robot needs to visit each city exactly once, starting and ending at the depot city. 
+The goal is to minimize the longest distance between any two consecutive cities in the tour.
+###
+
+###
+Format requirements
+===
+1) Please output the tour as a list of city indices. The tour should start and end at the depot city 0.
+2) Please output the total travel cost of the tour.
+3) Please output the maximum distance between any two consecutive cities in the tour.
+
+For example, if the tour is 0 -> 1 -> 2 -> 3 -> 0, the total travel cost is 100, and the maximum distance between any two consecutive cities is 40, then the output should be: 
+
+Tour: [0, 1, 2, 3, 0]
+Total travel cost: 100
+Maximum distance between consecutive cities: 40
+###
