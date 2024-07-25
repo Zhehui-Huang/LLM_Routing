@@ -64,12 +64,12 @@ Robot Information
 ###
 Task Description
 ===
-The robots need to collectively deliver goods to all cities, except the depot city, and then return to the depot city.
-Each robot has the same carrying capacity.
+The robots must collectively deliver goods to all cities, excluding the depot city, and then return to the depot city after completing their deliveries.
+Each robot has a specified carrying capacity.
 Each city has a specific demand that must be met.
-Please find the shortest tours for the robots while ensuring that:
-- The demand of each city is met.
-- The capacity constraints of the robots are not violated.
+The objective is to determine the shortest possible tours for the robots while ensuring that:
+- The demand of each city is fully met.
+- The capacity constraints of the robots are not exceeded.
 Minimize the total travel cost for all tours.
 ###
 
