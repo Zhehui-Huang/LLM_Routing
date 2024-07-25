@@ -1,0 +1,119 @@
+###
+Environment information
+===
+There are 23 cities.
+Cities and Coordinates:
+Depot city 0: (30, 40)
+City 1: (37, 52)
+City 2: (49, 49)
+City 3: (52, 64)
+City 4: (31, 62)
+City 5: (52, 33)
+City 6: (42, 41)
+City 7: (52, 41)
+City 8: (57, 58)
+City 9: (62, 42)
+City 10: (42, 57)
+City 11: (27, 68)
+City 12: (43, 67)
+City 13: (58, 48)
+City 14: (58, 27)
+City 15: (37, 69)
+City 16: (38, 46)
+City 17: (61, 33)
+City 18: (62, 63)
+City 19: (63, 69)
+City 20: (45, 35)
+City 21: (32, 39)
+City 22: (56, 37)
+###
+
+###
+Robot Information
+===
+- Number of robots: 8. Robot id starts from 0.
+- Starting location: All robots start at depot city 0.
+- Travel capability: Robots can travel between any two cities.
+- Travel cost: Calculated as the Euclidean distance between two cities.
+###
+
+###
+Task Description
+===
+The robots must collectively visit all cities exactly once, excluding the depot city as a destination, and then return to the depot city after completing their tours.
+Each robot starts and ends its tour at the depot.
+The primary objective is to minimize the maximum distance traveled by any single robot.
+Ensure that every city, except the depot, is visited exactly once.
+You can use the following mathematical formulation to solve the problem:
+****
+\begin{itemize}
+    \item \( x_{ijk} \): Binary variable that is 1 if salesman \( k \) travels directly from node \( i \) to node \( j \), 0 otherwise.
+    \item \( u_i \): Continuous variable representing the position of node \( i \) in the tour.
+\end{itemize}
+
+
+\begin{itemize}
+    \item \( c_{ij} \): Cost (distance, time, etc.) associated with traveling from node \( i \) to node \( j \).
+    \item \( m \): Number of salesmen.
+    \item \( n \): Total number of nodes (including the depot).
+\end{itemize}
+
+
+Minimize the total travel cost:
+\[
+\min \max_{i=1, ...n, j=1, ..., n, k=1, ..., m} c_{ij} x_{ijk}
+\]
+
+\subsection*{Constraints}
+1. \textbf{Each city is visited exactly once by one salesman:}
+\[
+\sum_{i=1}^{n} \sum_{k=1}^{m} x_{ijk} = 1 \quad \forall j = 1, \ldots, n
+\]
+
+2. \textbf{Flow conservation constraints (each salesman must leave each visited node and enter each visited node exactly once):}
+\[
+\sum_{j=1}^{n} x_{ipk} - \sum_{j=1}^{n} x_{pjk} = 0 \quad \forall k = 1, \ldots, m, \; p = 1, \ldots, n
+\]
+
+3. \textbf{Each salesman must leave the depot exactly once:}
+\[
+\sum_{j=1}^{n} x_{1jk} = 1 \quad \forall k = 1, \ldots, m
+\]
+
+4. \textbf{Subtour elimination constraints:}
+\[
+u_i - u_j + n \sum_{k=1}^{m} x_{ijk} \leq n - 1 \quad \forall i \neq j, \; i, j = 2, \ldots, n
+\]
+
+5. \textbf{Binary constraints for assignment variables:}
+\[
+x_{ijk} \in \{0, 1\} \quad \forall i, j = 1, \ldots, n, \; k = 1, \ldots, m
+\]
+
+6. \textbf{Continuous variables for node positions:}
+\[
+u_i \geq 0 \quad \forall i = 2, \ldots, n
+\]
+
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at the depot city 0.
+2) Please output the travel cost for each tour and the maximum travel cost among all tours.
+
+For example, if there are two robots with the following tours and costs:
+Robot 0: 0 -> 1 -> 2 -> 0 with a travel cost of 50
+Robot 1: 0 -> 3 -> 4 -> 0 with a travel cost of 60
+then the output should be:
+
+Robot 0 Tour: [0, 1, 2, 0]
+Robot 0 Total Travel Cost: 50
+
+Robot 1 Tour: [0, 3, 4, 0]
+Robot 1 Total Travel Cost: 60
+
+Maximum Travel Cost: 60
+###

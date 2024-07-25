@@ -1,0 +1,134 @@
+###
+Environment information
+===
+There are 21 cities.
+Cities and Coordinates:
+Depot city 0: (30, 40)
+Depot city 1: (37, 52)
+City 2: (49, 49)
+City 3: (52, 64)
+City 4: (31, 62)
+City 5: (52, 33)
+City 6: (42, 41)
+City 7: (52, 41)
+City 8: (57, 58)
+City 9: (62, 42)
+City 10: (42, 57)
+City 11: (27, 68)
+City 12: (43, 67)
+City 13: (58, 48)
+City 14: (58, 27)
+City 15: (37, 69)
+City 16: (38, 46)
+City 17: (61, 33)
+City 18: (62, 63)
+City 19: (63, 69)
+City 20: (45, 35)
+###
+
+###
+Robot Information
+===
+- Number of robots: 2. Robot id starts from 0.
+- Starting and Ending Locations:
+Robot 0 starts and ends at depot city 0.
+Robot 1 starts and ends at depot city 1.
+- Travel Capability: Robots can travel between any two cities.
+- Travel Cost: Calculated as the Euclidean distance between two cities.
+###
+
+###
+Task Description
+===
+The robots must collectively visit all cities exactly once and then return to their respective depots.
+Each robot starts and ends at its assigned depot.
+The objective is to determine the shortest possible tours for each robot while minimizing the total travel cost for all robots combined.
+Ensure that each city is visited exactly once, and each robot returns to its starting depot after completing its tour.
+You can use the following pseudocode to solve the problem:
+****
+
+\subsection*{Initialization}
+\begin{enumerate}
+    \item \textbf{Parameters Setup}: The algorithm starts by initializing several parameters:
+    \begin{itemize}
+        \item \textit{antnum}: Number of artificial ants.
+        \item \textit{cyclenum}: Number of successive cycles with no improvement in the best solution before termination.
+        \item \textit{inittrail}: Initial amount of pheromone on the paths.
+        \item \textit{$\alpha$ (alpha)}: Parameter to control the influence of pheromone trails.
+        \item \textit{$\beta$ (beta)}: Parameter to control the influence of heuristic information.
+        \item \textit{$\rho$ (rho)}: Evaporation rate of the pheromone.
+    \end{itemize}
+    \item \textbf{Pheromone Initialization}: All pheromone values $\tau_{ij}$ on the paths are set to \textit{inittrail}.
+\end{enumerate}
+
+\subsection*{Main Cycle}
+The algorithm operates in cycles, where each cycle consists of the following steps:
+
+\begin{enumerate}
+    \item \textbf{Solution Construction}:
+    \begin{itemize}
+        \item Each of the \textit{antnum} ants constructs a solution.
+        \item Each ant starts from a randomly selected depot and constructs a tour by choosing the next city based on a transition probability until returning to the starting depot.
+        \item \textbf{Transition Probability}: The probability $p_{ij}^k$ that ant $k$ moves from city $i$ to city $j$ is given by:
+        \[
+        p_{ij}^k = \begin{cases}
+        \frac{[\tau_{ij}(t)]^\alpha [\eta_{ij}]^\beta}{\sum_{k \in \text{allowed}_k} [\tau_{ik}(t)]^\alpha [\eta_{ik}]^\beta} & \text{if } j \in \text{allowed}_k \\
+        0 & \text{otherwise}
+        \end{cases}
+        \]
+        Here, \textit{allowed\_k} is the set of cities that ant $k$ has not yet visited, $\tau_{ij}(t)$ is the pheromone value on the path from $i$ to $j$ at time $t$, and $\eta_{ij}$ is the heuristic information, typically the inverse of the distance between cities $i$ and $j$.
+        
+        \item \textbf{Special Cases for Transition Probability}: Modifications are made to avoid infeasible solutions:
+        \begin{itemize}
+            \item Ant returns to the depot if it has visited the maximum allowed cities $L$.
+            \item Ant returns to the depot if continuing would prevent subsequent tours from satisfying the minimum number of cities $K$.
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{Trail Update}:
+    \begin{itemize}
+        \item After all ants have constructed their solutions, the pheromone trails are updated.
+        \item \textbf{Evaporation}: Pheromone on all paths is reduced by a factor of $\rho$:
+        \[
+        \tau_{ij} \leftarrow (1 - \rho) \tau_{ij}
+        \]
+        \item \textbf{Pheromone Addition}: Pheromone is added to the paths that were used by the ants. If $F_k$ is the objective function value (e.g., inverse of the tour length) for ant $k$, then:
+        \[
+        \tau_{ij} \leftarrow \tau_{ij} + \sum_{k=1}^{antnum} \Delta \tau_{ij}^k
+        \]
+        where:
+        \[
+        \Delta \tau_{ij}^k = \begin{cases}
+        F_k & \text{if ant } k \text{ uses path } (i,j) \\
+        0 & \text{otherwise}
+        \end{cases}
+        \]
+    \end{itemize}
+    \item \textbf{Stopping Criterion}: The cycle repeats until there is no improvement in the best solution for \textit{cyclenum} successive cycles.
+\end{enumerate}
+
+\subsection*{Algorithm Termination}
+Once the stopping criterion is met, the algorithm returns the best solution found during the cycles.
+
+
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at its assigned depot.
+2) Please output the total travel cost for each tour and the overall total travel cost.
+
+For example, if there are two robots with the following tours and costs:
+Robot 0 (Depot 0): 0 -> 2 -> 3 -> 0 with a travel cost of 50
+Robot 1 (Depot 1): 1 -> 4 -> 5 -> 1 with a travel cost of 60
+then the output should be:
+
+Robot 0 Tour: [0, 2, 3, 0]
+Robot 0 Total Travel Cost: 50
+
+Robot 1 Tour: [1, 4, 5, 1]
+Robot 1 Total Travel Cost: 60
+
+Overall Total Travel Cost: 110
+###

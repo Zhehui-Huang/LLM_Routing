@@ -1,0 +1,144 @@
+###
+Environment information
+===
+There are 19 cities.
+Cities and Coordinates:
+Depot city 0: (30, 40)
+Depot city 1: (37, 52)
+City 2: (49, 43)
+City 3: (52, 64)
+City 4: (31, 62)
+City 5: (52, 33)
+City 6: (42, 41)
+City 7: (52, 41)
+City 8: (57, 58)
+City 9: (62, 42)
+City 10: (42, 57)
+City 11: (27, 68)
+City 12: (43, 67)
+City 13: (58, 27)
+City 14: (37, 69)
+City 15: (61, 33)
+City 16: (62, 63)
+City 17: (63, 69)
+City 18: (45, 35)
+###
+
+###
+Robot Information
+===
+- Number of robots: 2. Robot id starts from 0.
+- Starting location: All robots start at depot city 0.
+- Travel capability: Robots can travel between any two cities.
+- Travel cost: Calculated as the Euclidean distance between two cities.
+###
+
+###
+Task Description
+===
+The robots need to collectively visit all cities exactly once.
+Each robot starts from a designated depot but does not need to return to the depot after completing its tour.
+The robots can stop at any city as their endpoint.
+The goal is to determine the shortest tours for each robot while minimizing the total travel cost for all robots combined.
+Ensure that each city is visited exactly once and that the tours are optimized for the lowest total travel distance or cost.
+You can use the following pseudocode to solve the problem:
+****
+\subsection{Initial Solution}
+An initial solution is necessary for any Tabu Search (TS) algorithm to start the local search process. The quality of this initial solution significantly affects the performance of the TS heuristic.
+
+\textbf{Heuristic Algorithm (NNS)}: Based on nearest neighborhood search to find the initial solution.
+\begin{enumerate}
+    \item Randomly select a starting depot for each tour and allocate the nearest city until all depots are connected to one city.
+    \item Allocate the nearest city to the last city in each tour until all cities are allocated.
+    \item Allocate the last city in each tour to the nearest finishing depot.
+\end{enumerate}
+
+\subsection{Neighborhood Structure}
+Various neighborhood structures are applied to generate neighbor solutions from the current solution. These structures are based on the 2-interchange generation mechanism and include combinations of vertex reassignment, vertex swap, 2-opt moves, and ‘tails swap’ between two tours.
+
+\textbf{Move Operators}:
+\begin{enumerate}
+    \item \textbf{Relocate Operator}: Move a city from one tour to another.
+    \item \textbf{Exchange Operator}: Swap two cities between tours.
+    \item \textbf{Tail-swap Operator}: Swap the tails of two tours.
+    \item \textbf{Depot-exchange Operator}: Exchange starting/ending depots between tours.
+\end{enumerate}
+
+\subsection{Tabu List}
+The tabu list keeps track of recently made moves or visited solutions to prevent cycling and encourage exploration of new areas in the search space.
+
+\textbf{Attributes}: The list contains fitness function attributes of solutions during the last 10-15 iterations.
+
+\textbf{Management}: The tabu status of the last fitness function performed is added to the list, while others are decreased by one until zero.
+
+\subsection{Stopping Criterion}
+The search terminates if either a specified number of iterations have elapsed in total or since the last best solution was found.
+
+\subsection{Intra Exchanging Phase}
+This phase improves the current solution by exchanging pairs of nodes within individual tours.
+
+\textbf{Operation}: Similar to the exchange operator but applied within the same tour, choosing the best exchange between two nodes.
+
+\subsection{The TS Algorithm}
+The proposed TS algorithm uses a Pareto principle for acceptance of neighbor solutions, ensuring solutions are non-dominated.
+
+\begin{enumerate}
+    \item \textbf{Initialization}:
+    \begin{enumerate}
+        \item Set iteration index \(i\) and consecutive iterations without change \(c\) to 0.
+        \item Generate initial solution \(X_0\) with NNS and create \(p-1\) solutions with relocate operator to form the Pareto list.
+        \item Set the best solution as \(X_{\text{best}}\) and the worst solution as the current solution.
+    \end{enumerate}
+    \item \textbf{Main Loop}:
+    \begin{enumerate}
+        \item Repeat until maximum iterations or tabu list is empty:
+        \begin{enumerate}
+            \item Select a neighborhood move operator randomly.
+            \item Generate a new solution from the current solution.
+            \item If the new solution is better and not tabu, update the current solution and tabu list, and reset \(c\).
+            \item If no improvement after \(v\) consecutive iterations, perform intra exchanging phase.
+            \item If no change after maximum consecutive iterations, eliminate the current solution and select the worst solution in the Pareto list as the current solution.
+        \end{enumerate}
+    \end{enumerate}
+    \item \textbf{Diversification}: Stochastic neighborhood selection among four types of moves and varying tabu length introduces diversification.
+\end{enumerate}
+
+\subsection{Pseudo Code}
+\begin{verbatim}
+Set i and c equal to 0;
+Generate initial solution X0 with NNS;
+Generate p - 1 solutions from X0 with relocate operator and set these p solutions as Pareto list;
+Set the best solution in the list as Xbest and the worst solution as the current solution;
+Repeat
+  Select one of the four types of neighborhood move operator randomly;
+  Generate one solution by the selected move operator from the current solution;
+  If the new solution is not tabu and better, update the current solution and tabu list, set i = i + 1 and c = 0;
+  Otherwise, set c = c + 1;
+  If (c mod v == 0), perform intra exchanging phase;
+  If (c > mc), eliminate current solution from the list and set the worst solution in the list as the current solution;
+Until (i <= m) and tabu list is not empty;
+\end{verbatim}
+
+
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at its assigned depot.
+2) Please output the total travel cost for each tour and the overall total travel cost.
+
+For example, if there are two robots with the following tours and costs:
+Robot 0 (Depot 0): 0 -> 2 -> 3 -> 0 with a travel cost of 50
+Robot 1 (Depot 1): 1 -> 4 -> 5 -> 1 with a travel cost of 60
+then the output should be:
+
+Robot 0 Tour: [0, 2, 3, 0]
+Robot 0 Total Travel Cost: 50
+
+Robot 1 Tour: [1, 4, 5, 1]
+Robot 1 Total Travel Cost: 60
+
+Overall Total Travel Cost: 110
+###

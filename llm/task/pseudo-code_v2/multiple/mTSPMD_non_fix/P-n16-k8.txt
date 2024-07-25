@@ -1,0 +1,137 @@
+###
+Environment information
+===
+There are 16 cities.
+Cities and Coordinates:
+Depot city 0: (30, 40)
+Depot city 1: (37, 52)
+Depot city 2: (49, 49)
+Depot city 3: (52, 64)
+Depot city 4: (31, 62)
+Depot city 5: (52, 33)
+Depot city 6: (42, 41)
+Depot city 7: (52, 41)
+City 8: (57, 58)
+City 9: (62, 42)
+City 10: (42, 57)
+City 11: (27, 68)
+City 12: (43, 67)
+City 13: (58, 48)
+City 14: (58, 27)
+City 15: (37, 69)
+###
+
+###
+Robot Information
+===
+- Number of robots: 8. Robot id starts from 0.
+- Starting location: All robots start at depot city 0.
+- Travel capability: Robots can travel between any two cities.
+- Travel cost: Calculated as the Euclidean distance between two cities.
+###
+
+###
+Task Description
+===
+The robots need to collectively visit all cities exactly once.
+Each robot starts from a designated depot but does not need to return to the depot after completing its tour.
+The robots can stop at any city as their endpoint.
+The goal is to determine the shortest tours for each robot while minimizing the total travel cost for all robots combined.
+Ensure that each city is visited exactly once and that the tours are optimized for the lowest total travel distance or cost.
+You can use the following pseudocode to solve the problem:
+****
+\subsection{Chromosome Representation}
+\textbf{Structure}: Each chromosome is a permutation of the integers representing the cities, partitioned into subtours by inserting negative integers.
+\begin{itemize}
+    \item Length: \(n + 2m\) where \(n\) is the number of cities, \(m\) is the number of salesmen.
+    \item Negative integers: Represent depot transitions, ensuring each salesman starts and ends at a depot.
+\end{itemize}
+\textbf{Example}: For \(n = 14\), \(m = 3\), \(d = 2\), and \(m_1 = 2\), \(m_2 = 1\), a chromosome could be: \([-1, 7, 8, -1, 5, 1, -2, 12, 4, -1, -2, 6, 3, 10, 2, 14, 13, 9, 11, -1]\).
+
+\subsection{Initial Population}
+\textbf{Generation}: Chromosomes are generated randomly, ensuring feasibility.
+\begin{itemize}
+    \item Permutation: Cities are randomly permuted.
+    \item Depot Insertions: Negative integers are inserted at appropriate positions, ensuring each tour has at least one city.
+\end{itemize}
+
+\subsection{Crossover}
+\textbf{Modified 2-point Crossover}:
+\begin{itemize}
+    \item Select two points \(r_1\) and \(r_2\) in two parent chromosomes.
+    \item Offspring Generation:
+    \begin{itemize}
+        \item \textbf{O1}: Copy segments before \(r_1\) and after \(r_2\) from Parent 1, fill the middle from Parent 2, avoiding repeats.
+        \item \textbf{O2}: Copy the middle segment from Parent 1, fill before \(r_1\) and after \(r_2\) from Parent 2, avoiding repeats.
+        \item \textbf{O3}: Copy segments before \(r_1\) and after \(r_2\) from Parent 2, fill the middle from Parent 1, avoiding repeats.
+        \item \textbf{O4}: Copy the middle segment from Parent 2, fill before \(r_1\) and after \(r_2\) from Parent 1, avoiding repeats.
+    \end{itemize}
+\end{itemize}
+\textbf{Example}: For parents P1 and P2 with \(n = 12\), \(m = 3\), \(d = 2\), \(m_1 = 2\), \(m_2 = 1\), selecting \(r_1 = 6\) and \(r_2 = 13\):
+\begin{itemize}
+    \item \textbf{O1}: \([-1, 7, 8, -1, -2, 5, 6, -1, -1, 12, 3, 4, 1, 10, 2, 9, 11, -2]\)
+\end{itemize}
+
+\subsection{Mutation}
+\textbf{Operators}:
+\begin{itemize}
+    \item \textbf{1-bit}: Move one city to another tour.
+    \item \textbf{2-opt}: Swap two cities between tours.
+    \item \textbf{Intra-2-opt}: Swap two cities within the same tour.
+\end{itemize}
+
+\subsection{Parent Selection Strategies}
+\begin{itemize}
+    \item \textbf{Elitism}: Select the best chromosomes from the previous generation.
+    \item \textbf{Roulette Wheel}: Probability-based selection considering fitness.
+    \item \textbf{Binary Tournament}: Randomly select two chromosomes, choose the better one, repeat.
+\end{itemize}
+
+\subsection{The Genetic Algorithm}
+\textbf{Parameters}:
+\begin{itemize}
+    \item \(G_{\text{max}}\): Maximum generations.
+    \item \(\sigma_{\text{min}}\): Minimum diversity.
+    \item \(pop\_size\): Population size.
+    \item \(cr\): Crossover rate.
+    \item \(mr\): Mutation rate.
+    \item \(rr\): Reproduction rate.
+\end{itemize}
+\textbf{Steps}:
+\begin{enumerate}
+    \item Initialize: \(g = 0\), \(t = 0\), \(c = cr \times pop\_size\), \(m = mr \times pop\_size\), \(r = rr \times pop\_size\).
+    \item Generate initial population randomly.
+    \item Repeat until stopping criteria are met:
+    \begin{itemize}
+        \item Select \(r\) best chromosomes for next generation.
+        \item Select parents and perform crossover to produce offspring.
+        \item Apply mutation to offspring.
+        \item Replace parents if offspring have better fitness.
+        \item Continue until the new population is created.
+    \end{itemize}
+    \item Stop if \(G_{\text{max}}\) generations have passed or diversity is below \(\sigma_{\text{min}}\).
+\end{enumerate}
+
+
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at its assigned depot.
+2) Please output the total travel cost for each tour and the overall total travel cost.
+
+For example, if there are two robots with the following tours and costs:
+Robot 0 (Depot 0): 0 -> 2 -> 3 -> 0 with a travel cost of 50
+Robot 1 (Depot 1): 1 -> 4 -> 5 -> 1 with a travel cost of 60
+then the output should be:
+
+Robot 0 Tour: [0, 2, 3, 0]
+Robot 0 Total Travel Cost: 50
+
+Robot 1 Tour: [1, 4, 5, 1]
+Robot 1 Total Travel Cost: 60
+
+Overall Total Travel Cost: 110
+###

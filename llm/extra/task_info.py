@@ -101,7 +101,7 @@ def get_task_info(task_name, k=-1, shot_type='zero', file_path=''):
     return task_info
 
 
-def a_mtsp_task():
+def a_mtsp_task(extra_content):
     task_info = (
         '###\n'
         'Task Description\n===\n'
@@ -110,12 +110,13 @@ def a_mtsp_task():
         'Each robot starts and ends its tour at the depot.\n'
         'The objective is to determine the shortest possible tours for the robots while minimizing the total travel cost.\n'
         'Ensure that every city, except the depot, is visited exactly once.\n'
+        f'{extra_content}'
         '###\n\n'
     )
     return task_info
 
 
-def b_mtsp_minmax_task():
+def b_mtsp_minmax_task(extra_content):
     task_info = (
         '###\n'
         'Task Description\n===\n'
@@ -124,12 +125,13 @@ def b_mtsp_minmax_task():
         'Each robot starts and ends its tour at the depot.\n'
         'The primary objective is to minimize the maximum distance traveled by any single robot.\n'
         'Ensure that every city, except the depot, is visited exactly once.\n'
+        f'{extra_content}'
         '###\n\n'
     )
     return task_info
 
 
-def c_mtspmd_task():
+def c_mtspmd_task(extra_content):
     task_info = (
         '###\n'
         'Task Description\n===\n'
@@ -137,12 +139,13 @@ def c_mtspmd_task():
         'Each robot starts and ends at its assigned depot.\n'
         'The objective is to determine the shortest possible tours for each robot while minimizing the total travel cost for all robots combined.\n'
         'Ensure that each city is visited exactly once, and each robot returns to its starting depot after completing its tour.\n'
+        f'{extra_content}'
         '###\n\n'
     )
     return task_info
 
 
-def d_cvrp_task():
+def d_cvrp_task(extra_content):
     task_info = (
         '###\n'
         'Task Description\n===\n'
@@ -153,12 +156,14 @@ def d_cvrp_task():
         'The objective is to determine the shortest possible tours for the robots while ensuring that:\n'
         '- The demand of each city is fully met.\n'
         '- The capacity constraints of the robots are not exceeded.\n'
-        'Minimize the total travel cost for all tours.\n###\n\n'
+        'Minimize the total travel cost for all tours.\n'
+        f'{extra_content}'
+        '###\n\n'
     )
     return task_info
 
 
-def e_mtspmd_non_fix_task():
+def e_mtspmd_non_fix_task(extra_content):
     task_info = (
         '###\n'
         'Task Description\n===\n'
@@ -167,23 +172,42 @@ def e_mtspmd_non_fix_task():
         'The robots can stop at any city as their endpoint.\n'
         'The goal is to determine the shortest tours for each robot while minimizing the total travel cost for all robots combined.\n'
         'Ensure that each city is visited exactly once and that the tours are optimized for the lowest total travel distance or cost.\n'
+        f'{extra_content}'
         '###\n\n'
     )
     return task_info
 
 
-def get_multi_task_info(task_name):
+def get_multi_task_info(task_name, shot_type, file_path):
+    if shot_type == 'zero':
+        extra_content = ''
+    else:
+        if shot_type == 'math':
+            context_type = 'mathematical formulation'
+        elif shot_type == 'pseudo-code':
+            context_type = 'pseudocode'
+        else:
+            raise ValueError(f'Invalid shot type: {shot_type}')
+
+        context = read_context(file_path=file_path)
+        extra_content = (
+            f'You can use the following {context_type} to solve the problem:\n'
+            f'****\n'
+            f'{context}\n'
+            f'****\n'
+        )
+
     # TASK_LIST = ['mTSP', 'mTSP_MinMax', 'mTSPMD', 'mTSPMD_non_fix', 'CVRP']
     if task_name == 'mTSP':
-        task_info = a_mtsp_task()
+        task_info = a_mtsp_task(extra_content=extra_content)
     elif task_name == 'mTSP_MinMax':
-        task_info = b_mtsp_minmax_task()
+        task_info = b_mtsp_minmax_task(extra_content=extra_content)
     elif task_name == 'mTSPMD':
-        task_info = c_mtspmd_task()
+        task_info = c_mtspmd_task(extra_content=extra_content)
     elif task_name == 'mTSPMD_non_fix':
-        task_info = e_mtspmd_non_fix_task()
+        task_info = e_mtspmd_non_fix_task(extra_content=extra_content)
     elif task_name == 'CVRP':
-        task_info = d_cvrp_task()
+        task_info = d_cvrp_task(extra_content=extra_content)
     else:
         raise ValueError(f'Invalid task name: {task_name}')
 

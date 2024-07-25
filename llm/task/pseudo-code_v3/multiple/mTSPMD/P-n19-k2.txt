@@ -1,0 +1,122 @@
+###
+Environment information
+===
+There are 19 cities.
+Cities and Coordinates:
+Depot city 0: (30, 40)
+Depot city 1: (37, 52)
+City 2: (49, 43)
+City 3: (52, 64)
+City 4: (31, 62)
+City 5: (52, 33)
+City 6: (42, 41)
+City 7: (52, 41)
+City 8: (57, 58)
+City 9: (62, 42)
+City 10: (42, 57)
+City 11: (27, 68)
+City 12: (43, 67)
+City 13: (58, 27)
+City 14: (37, 69)
+City 15: (61, 33)
+City 16: (62, 63)
+City 17: (63, 69)
+City 18: (45, 35)
+###
+
+###
+Robot Information
+===
+- Number of robots: 2. Robot id starts from 0.
+- Starting and Ending Locations:
+Robot 0 starts and ends at depot city 0.
+Robot 1 starts and ends at depot city 1.
+- Travel Capability: Robots can travel between any two cities.
+- Travel Cost: Calculated as the Euclidean distance between two cities.
+###
+
+###
+Task Description
+===
+The robots must collectively visit all cities exactly once and then return to their respective depots.
+Each robot starts and ends at its assigned depot.
+The objective is to determine the shortest possible tours for each robot while minimizing the total travel cost for all robots combined.
+Ensure that each city is visited exactly once, and each robot returns to its starting depot after completing its tour.
+You can use the following pseudocode to solve the problem:
+****
+
+\section*{Problem Definition and Formulation}
+
+The MmTSP involves:
+\begin{itemize}
+    \item \textbf{Graph Representation}: The problem is represented on a directed graph \( G = (V, A) \), where \( V \) is the set of nodes (cities and depots), and \( A \) is the set of arcs with associated costs (distances) \( C \).
+    \item \textbf{Depots and Salesmen}: The node set \( V \) is partitioned into depots \( D \) and customer nodes \( V' \). Each depot has a set number of salesmen \( m_k \), and the total number of salesmen is \( m \).
+    \item \textbf{Constraints}: Each city must be visited exactly once, and the number of cities visited by each salesman must lie within a specified range.
+\end{itemize}
+
+The mathematical formulation includes binary variables \( x_{ijk} \) indicating if salesman \( k \) travels from city \( i \) to city \( j \). Constraints ensure each salesman starts and ends at the same depot, each city is visited exactly once, and tour lengths are within specified limits.
+
+\section*{Genetic Algorithm Approach}
+
+\subsection*{Chromosome Representation}
+\begin{itemize}
+    \item \textbf{First Part}: A permutation of integers representing the sequence of cities to be visited.
+    \item \textbf{Second Part}: Specifies the number of cities each salesman visits, constrained to positive integers summing to the total number of cities.
+\end{itemize}
+
+\subsection*{Crossover Operators}
+\begin{itemize}
+    \item \textbf{Ordered Crossover (OX)}, \textbf{Partially Matched Crossover (PMX)}, \textbf{Union Crossover \#2 (UX2)}, and a \textbf{Modified Moon Crossover (MX)} are used to generate new offspring.
+    \item \textbf{Moon Crossover}: Selects an arbitrary salesman and copies the first few cities from one parent while preserving the order of remaining cities from the second parent.
+\end{itemize}
+
+\subsection*{Mutation Operators}
+\begin{itemize}
+    \item \textbf{1-bit Mutation}: Transfers a city from one salesman’s tour to another’s.
+    \item \textbf{2-opt Mutation}: Exchanges two cities between two salesmen’s tours.
+\end{itemize}
+
+\subsection*{Initial Population}
+Chromosomes are generated randomly, ensuring no duplicates. The first part is a random permutation of cities, while the second part is generated such that the sum equals the total number of cities.
+
+\subsection*{Parent Selection Strategies}
+\begin{itemize}
+    \item \textbf{Elitism}: Selects the best-performing chromosomes.
+    \item \textbf{Roulette Wheel}: Selects chromosomes based on their fitness proportionally.
+    \item \textbf{Binary Tournament}: Selects the best of two randomly chosen chromosomes.
+\end{itemize}
+
+\section*{Computational Results}
+
+The algorithm was tested on various problem sizes. Comparisons were made between the GA results and optimal solutions obtained using Lingo 8.0 for small problem sizes. Results showed the GA achieved solutions close to the optimal with reasonable computational times. Different crossover methods and parent selection strategies were also compared:
+
+\begin{itemize}
+    \item \textbf{UX2 Crossover}: Generally provided better fitness values but required more computational time.
+    \item \textbf{Moon Crossover}: Had shorter computational times but slightly lower fitness values.
+    \item \textbf{Elitism Strategy}: Combined with UX2 crossover, performed well for smaller problems.
+    \item \textbf{Binary Tournament Strategy}: Worked better with the Moon crossover for larger problems.
+\end{itemize}
+
+
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at its assigned depot.
+2) Please output the total travel cost for each tour and the overall total travel cost.
+
+For example, if there are two robots with the following tours and costs:
+Robot 0 (Depot 0): 0 -> 2 -> 3 -> 0 with a travel cost of 50
+Robot 1 (Depot 1): 1 -> 4 -> 5 -> 1 with a travel cost of 60
+then the output should be:
+
+Robot 0 Tour: [0, 2, 3, 0]
+Robot 0 Total Travel Cost: 50
+
+Robot 1 Tour: [1, 4, 5, 1]
+Robot 1 Total Travel Cost: 60
+
+Overall Total Travel Cost: 110
+###

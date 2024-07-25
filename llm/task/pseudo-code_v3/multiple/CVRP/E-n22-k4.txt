@@ -1,0 +1,206 @@
+###
+Environment information
+===
+There are 22 cities.
+Cities and Coordinates:
+Depot city 0: (145, 215)
+City 1: (151, 264)
+City 2: (159, 261)
+City 3: (130, 254)
+City 4: (128, 252)
+City 5: (163, 247)
+City 6: (146, 246)
+City 7: (161, 242)
+City 8: (142, 239)
+City 9: (163, 236)
+City 10: (148, 232)
+City 11: (128, 231)
+City 12: (156, 217)
+City 13: (129, 214)
+City 14: (146, 208)
+City 15: (164, 208)
+City 16: (141, 206)
+City 17: (147, 193)
+City 18: (164, 193)
+City 19: (129, 189)
+City 20: (155, 185)
+City 21: (139, 182)
+
+Demand list:
+City 0: 0
+City 1: 1100
+City 2: 700
+City 3: 800
+City 4: 1400
+City 5: 2100
+City 6: 400
+City 7: 800
+City 8: 100
+City 9: 500
+City 10: 600
+City 11: 1200
+City 12: 1300
+City 13: 1300
+City 14: 300
+City 15: 900
+City 16: 2100
+City 17: 1000
+City 18: 900
+City 19: 2500
+City 20: 1800
+City 21: 700
+###
+
+###
+Robot Information
+===
+- Number of robots: 4. Robot id starts from 0.
+- The capacity of each robot: 6000
+- Starting location: All robots start at depot city 0.
+- Travel capability: Robots can travel between any two cities.
+- Travel cost: Calculated as the Euclidean distance between two cities.
+###
+
+###
+Task Description
+===
+The robots must collectively deliver goods to all cities, excluding the depot city, and then return to the depot city after completing their deliveries.
+Each robot has a specified carrying capacity.
+Each city has a specific demand that must be met.
+The objective is to determine the shortest possible tours for the robots while ensuring that:
+- The demand of each city is fully met.
+- The capacity constraints of the robots are not exceeded.
+Minimize the total travel cost for all tours.
+You can use the following pseudocode to solve the problem:
+****
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\begin{document}
+
+\section*{A Novel Algorithm for CVRP}
+
+\subsection*{Algorithm Overview}
+
+The algorithm employs a two-stage process:
+\begin{enumerate}
+    \item \textbf{Initial Solution Construction}: It starts with generating an initial feasible solution.
+    \item \textbf{Solution Improvement}: It then uses ALNS to improve this solution iteratively.
+\end{enumerate}
+
+\subsection*{Notation}
+\begin{itemize}
+    \item \( S \): Set of points to visit.
+    \item \( P \): Set of arcs representing points \((x_i, y_i)\) in \( S \).
+    \item \( D_{ij} \): Distance matrix.
+    \item \( R \): Set of routes.
+    \item \( k \): Number of vehicles/routes.
+    \item \( d_i \): Demand at node \( i \).
+    \item \( C \): Vehicle capacity.
+    \item \( p_{ijk} \): Binary variable indicating if vehicle \( k \) moves from \( i \) to \( j \).
+\end{itemize}
+
+\subsection*{Initial Solution Construction}
+\begin{enumerate}
+    \item \textbf{Start from a random point \( i \)} and set \( p_{ijk} = 1 \) for the arc with the minimum distance \( D_{ij} \).
+    \item \textbf{Update the capacity and set of unvisited points}.
+    \item \textbf{Repeat} until all points are included in routes ensuring capacity constraints are met.
+\end{enumerate}
+
+\subsection*{Solution Improvement using ALNS}
+\begin{enumerate}
+    \item \textbf{Select a subset of points} from routes to relocate.
+    \item \textbf{Determine the second closest point} for each selected point.
+    \item \textbf{Relocate the points}, ensuring capacity constraints are not violated.
+    \item \textbf{Update the routes} iteratively to avoid cycling using a Tabu list.
+\end{enumerate}
+
+\subsection*{Pseudo Code}
+
+\begin{algorithm}
+\caption{CVRP\_Heuristic}
+\begin{algorithmic}[1]
+\Require Set of points \( S \), distance matrix \( D_{ij} \), vehicle capacity \( C \), number of vehicles \( k \)
+\Ensure Set of routes \( R \) minimizing the total distance
+\State Initialize: Set \( S \), \( P \), \( D_{ij} \), \( d_i \), \( C \), \( k \)
+\State Generate initial solution:
+    \begin{enumerate}
+        \item Start from a random point \( i \)
+        \item Set \( p_{ijk} = 1 \) for arc \((i, j)\) with minimum \( D_{ij} \)
+        \item Update capacity and unvisited points
+        \item Repeat until all points are visited ensuring capacity constraints
+    \end{enumerate}
+\State Improve solution using ALNS:
+    \begin{enumerate}
+        \item Select subset of points from routes by roulette wheel selection
+        \item Determine second closest points using \( D_{ij} \) matrix
+        \item Relocate points ensuring capacity constraints
+        \item Repeat relocation for all selected points
+        \item Update Tabu list to avoid cycling
+    \end{enumerate}
+\State Return the improved set of routes \( R \)
+\end{algorithmic}
+\end{algorithm}
+
+\subsection*{Related Subroutines}
+
+\begin{algorithm}
+\caption{RelocatePoints}
+\begin{algorithmic}[1]
+\Require Set of routes \( R \), distance matrix \( D_{ij} \), capacity \( C \)
+\Ensure Updated set of routes \( R \)
+\State Select points from each route by roulette wheel selection
+\For{each selected point}
+    \State Find the second closest point using \( D_{ij} \)
+    \If{not in the same route}
+        \State Relocate
+        \State Update capacity and check constraints
+    \EndIf
+\EndFor
+\State Return updated routes
+\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+\caption{UpdateTabuList}
+\begin{algorithmic}[1]
+\Require Current solution \( F \), best solution \( F_{best} \), Tabu list
+\Ensure Updated Tabu list, best solution \( F_{best} \)
+\If{$F$ is better than $F_{best}$ and feasible}
+    \State Update \( F_{best} = F \)
+\EndIf
+\State Update Tabu list to include recent moves
+\State Return updated Tabu list, best solution \( F_{best} \)
+\end{algorithmic}
+\end{algorithm}
+
+This algorithm provides a robust approach to solving CVRP by combining initial solution construction with iterative improvement using adaptive neighborhood search and tabu mechanisms to avoid local optima and ensure convergence to a high-quality solution.
+
+
+\end{document}
+
+****
+###
+
+###
+Format Requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at the depot city 0.
+2) Please output the total travel cost for each tour and the overall total travel cost.
+3) Ensure that the demand of each city is met and the capacity constraints of each robot are not violated.
+
+For example, if there are two robots with the following tours and costs:
+Robot 0: 0 -> 1 -> 2 -> 0 with a travel cost of 50
+Robot 1: 0 -> 3 -> 4 -> 0 with a travel cost of 60
+then the output should be:
+
+Robot 0 Tour: [0, 1, 2, 0]
+Robot 0 Total Travel Cost: 50
+
+Robot 1 Tour: [0, 3, 4, 0]
+Robot 1 Total Travel Cost: 60
+
+Overall Total Travel Cost: 110
+###

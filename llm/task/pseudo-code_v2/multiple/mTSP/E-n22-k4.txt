@@ -1,0 +1,173 @@
+###
+Environment information
+===
+There are 22 cities.
+Cities and Coordinates:
+Depot city 0: (145, 215)
+City 1: (151, 264)
+City 2: (159, 261)
+City 3: (130, 254)
+City 4: (128, 252)
+City 5: (163, 247)
+City 6: (146, 246)
+City 7: (161, 242)
+City 8: (142, 239)
+City 9: (163, 236)
+City 10: (148, 232)
+City 11: (128, 231)
+City 12: (156, 217)
+City 13: (129, 214)
+City 14: (146, 208)
+City 15: (164, 208)
+City 16: (141, 206)
+City 17: (147, 193)
+City 18: (164, 193)
+City 19: (129, 189)
+City 20: (155, 185)
+City 21: (139, 182)
+###
+
+###
+Robot Information
+===
+- Number of robots: 4. Robot id starts from 0.
+- Starting location: All robots start at depot city 0.
+- Travel capability: Robots can travel between any two cities.
+- Travel cost: Calculated as the Euclidean distance between two cities.
+###
+
+###
+Task Description
+===
+The robots must collectively visit all cities exactly once, excluding the depot city as a destination, and then return to the depot city after completing their tours.
+Each robot starts and ends its tour at the depot.
+The objective is to determine the shortest possible tours for the robots while minimizing the total travel cost.
+Ensure that every city, except the depot, is visited exactly once.
+You can use the following pseudocode to solve the problem:
+****
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+
+
+The MTOUR algorithm addresses the Multiple Traveling Salesmen Problem (mTSP), where multiple salesmen must cover different routes starting and ending at a common depot, with the objective of minimizing the total distance traveled.
+
+\section*{Detailed Summary}
+
+\subsection*{1. Initialization}
+\begin{itemize}
+    \item Define the number of salesmen \( m \).
+    \item Initialize the set of cities \( C \) and the common depot.
+    \item Choose a starting point for each salesman at the depot.
+\end{itemize}
+
+\subsection*{2. Subroutine: Assignment of Cities}
+\begin{itemize}
+    \item Distribute cities among the salesmen using a heuristic approach to ensure an initial feasible solution.
+    \item The assignment aims to balance the workload among the salesmen, considering proximity to the depot.
+\end{itemize}
+
+\subsection*{3. Subroutine: Tour Construction}
+\begin{itemize}
+    \item For each salesman, construct an initial tour using a heuristic like the nearest neighbor or a greedy algorithm.
+    \item This step creates an initial path for each salesman starting and ending at the depot.
+\end{itemize}
+
+\subsection*{4. Subroutine: Tour Improvement}
+\begin{itemize}
+    \item Apply local search techniques such as 2-opt or 3-opt to improve the individual tours.
+    \item These techniques involve iteratively improving the tour by reversing the order of cities in a segment to reduce the total travel distance.
+\end{itemize}
+
+\subsection*{5. Subroutine: Inter-Salesmen Optimization}
+\begin{itemize}
+    \item Optimize the assignment of cities between salesmen by exploring possible reassignments that can lead to a lower total distance.
+    \item Techniques like swap or relocate are used to move cities between different salesmen's tours to achieve a more optimal solution.
+\end{itemize}
+
+\subsection*{6. Termination}
+\begin{itemize}
+    \item The algorithm terminates when no further improvements can be made through local or inter-salesmen optimizations.
+    \item The final solution consists of \( m \) optimized tours, one for each salesman, covering all cities.
+\end{itemize}
+
+\section*{Detailed Steps}
+
+\subsection*{1. Initialization}
+\begin{itemize}
+    \item Set the number of salesmen \( m \).
+    \item Identify and assign the common depot as the starting point for each salesman.
+    \item Initialize the set of cities \( C \) excluding the depot.
+\end{itemize}
+
+\subsection*{2. Assignment of Cities}
+\begin{itemize}
+    \item Use a heuristic to divide the remaining cities among the salesmen. This could be based on geographic clustering or other distance measures.
+    \item Ensure each salesman has a roughly equal number of cities to visit, considering the proximity to the depot.
+\end{itemize}
+
+\subsection*{3. Tour Construction}
+\begin{itemize}
+    \item For each salesman, create an initial tour:
+    \begin{itemize}
+        \item Begin at the depot.
+        \item Select the next city to visit based on the nearest neighbor heuristic or another greedy method.
+        \item Continue until all assigned cities are visited and return to the depot.
+    \end{itemize}
+    \item This results in an initial feasible tour for each salesman.
+\end{itemize}
+
+\subsection*{4. Tour Improvement}
+\begin{itemize}
+    \item Apply local search methods to each salesman's tour:
+    \begin{itemize}
+        \item \textbf{2-opt:} Evaluate pairs of edges and reverse segments to find a shorter tour.
+        \item \textbf{3-opt:} Consider three edges at a time and rearrange to reduce the tour length.
+    \end{itemize}
+    \item Iteratively apply these improvements until no further reduction in tour length is possible.
+\end{itemize}
+
+\subsection*{5. Inter-Salesmen Optimization}
+\begin{itemize}
+    \item Explore potential improvements by moving cities between salesmen's tours:
+    \begin{itemize}
+        \item \textbf{Swap:} Exchange cities between two salesmen's tours and check for improvement.
+        \item \textbf{Relocate:} Move a city from one salesman's tour to another and evaluate the impact on total distance.
+    \end{itemize}
+    \item Perform these operations iteratively to achieve a better overall solution.
+\end{itemize}
+
+\subsection*{6. Termination}
+\begin{itemize}
+    \item The algorithm stops when no further improvements can be made through intra-tour or inter-tour optimizations.
+    \item The final solution is a set of \( m \) optimized tours that collectively cover all cities with minimized total travel distance.
+\end{itemize}
+
+
+
+\end{document}
+
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at the depot city 0.
+2) Please output the total travel cost for each tour and the overall total travel cost.
+
+For example, if there are two robots with the following tours and costs:
+Robot 0: 0 -> 1 -> 2 -> 0 with a travel cost of 50
+Robot 1: 0 -> 3 -> 4 -> 0 with a travel cost of 60
+then the output should be:
+
+Robot 0 Tour: [0, 1, 2, 0]
+Robot 0 Total Travel Cost: 50
+
+Robot 1 Tour: [0, 3, 4, 0]
+Robot 1 Total Travel Cost: 60
+
+Overall Total Travel Cost: 110
+###

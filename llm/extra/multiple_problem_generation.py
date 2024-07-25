@@ -6,6 +6,13 @@ from task_info import get_multi_task_info
 from utils import read_txt_file, write_txt_file
 
 TASK_LIST = ['mTSP', 'mTSP_MinMax', 'mTSPMD', 'mTSPMD_non_fix', 'CVRP']
+TASK_GET_ALGO_DICT = {
+    'mTSP': 'mTSP',
+    'mTSP_MinMax': 'mTSP-max',
+    'mTSPMD': 'mTSP-MD-fix',
+    'mTSPMD_non_fix': 'mTSP-MD-free',
+    'CVRP': 'CVRP'
+}
 
 
 def get_format_requirements(task_name):
@@ -86,7 +93,7 @@ def get_format_requirements(task_name):
     return format_requirements
 
 
-def problem_generation(file_names, note):
+def problem_generation(file_names, note, shot_type, vid=0):
     for file_name in file_names:
         # Generate problem description
         for task_name in TASK_LIST:
@@ -110,20 +117,42 @@ def problem_generation(file_names, note):
             robot_info_str = get_multi_robot_info_str(task_name=task_name, robot_num=robot_num, file_name=file_name, note=note)
 
             # 3. Get task information
-            task_info_str = get_multi_task_info(task_name=task_name)
+            if shot_type == 'zero':
+                file_path = ''
+            elif shot_type == 'math':
+                file_path = f'../../algorithms/{TASK_GET_ALGO_DICT[task_name]}-algorithm1.txt'
+            elif shot_type == 'pseudo-code':
+                file_path = f'../../algorithms/{TASK_GET_ALGO_DICT[task_name]}-algorithm{vid}.txt'
+            else:
+                raise ValueError(f'Invalid shot type: {shot_type}')
+
+            task_info_str = get_multi_task_info(task_name=task_name, shot_type=shot_type, file_path=file_path)
 
             # 4. Get format requirements
             format_requirements_str = get_format_requirements(task_name=task_name)
             problem_description_str = env_info_str + robot_info_str + task_info_str + format_requirements_str
 
-            tmp_file_name = f'../task/multiple/{note}/{task_name}/{file_name}.txt'
+            # tmp_file_name = f'../task/multiple/{note}/{task_name}/{file_name}.txt'
+
+            if vid == 0:
+                tmp_file_name = f'../task/{shot_type}/multiple/{task_name}/{file_name}.txt'
+            else:
+                tmp_file_name = f'../task/{shot_type}_v{vid}/multiple/{task_name}/{file_name}.txt'
+
             write_txt_file(file_name=tmp_file_name, content=problem_description_str)
 
 
 def main():
     # Zero-shot
-    problem_generation(file_names=FILE_NAME_SMALL, note='small')
+    problem_generation(file_names=FILE_NAME_SMALL, note='small', shot_type='zero')
     # problem_generation(file_names=FILE_NAME_BIG, note='big')
+
+    # Use math formulation as context
+    problem_generation(file_names=FILE_NAME_SMALL, note='small', shot_type='math')
+
+    # Use pseudo-code of a approximation algorithm as context
+    problem_generation(file_names=FILE_NAME_SMALL, note='small', shot_type='pseudo-code', vid=2)
+    problem_generation(file_names=FILE_NAME_SMALL, note='small', shot_type='pseudo-code', vid=3)
 
 
 if __name__ == '__main__':

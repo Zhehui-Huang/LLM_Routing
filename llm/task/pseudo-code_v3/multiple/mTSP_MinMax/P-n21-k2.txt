@@ -1,0 +1,152 @@
+###
+Environment information
+===
+There are 21 cities.
+Cities and Coordinates:
+Depot city 0: (30, 40)
+City 1: (37, 52)
+City 2: (49, 49)
+City 3: (52, 64)
+City 4: (31, 62)
+City 5: (52, 33)
+City 6: (42, 41)
+City 7: (52, 41)
+City 8: (57, 58)
+City 9: (62, 42)
+City 10: (42, 57)
+City 11: (27, 68)
+City 12: (43, 67)
+City 13: (58, 48)
+City 14: (58, 27)
+City 15: (37, 69)
+City 16: (38, 46)
+City 17: (61, 33)
+City 18: (62, 63)
+City 19: (63, 69)
+City 20: (45, 35)
+###
+
+###
+Robot Information
+===
+- Number of robots: 2. Robot id starts from 0.
+- Starting location: All robots start at depot city 0.
+- Travel capability: Robots can travel between any two cities.
+- Travel cost: Calculated as the Euclidean distance between two cities.
+###
+
+###
+Task Description
+===
+The robots must collectively visit all cities exactly once, excluding the depot city as a destination, and then return to the depot city after completing their tours.
+Each robot starts and ends its tour at the depot.
+The primary objective is to minimize the maximum distance traveled by any single robot.
+Ensure that every city, except the depot, is visited exactly once.
+You can use the following pseudocode to solve the problem:
+****
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+
+\section*{Summary of the ITSHA Algorithm}
+
+The proposed Iterated Two-Stage Heuristic Algorithm (ITSHA) for the Multiple Traveling Salesmen Problem (mTSP) involves two main stages: the initialization stage and the improvement stage. Here's a detailed summary of the algorithm, including its key components and subroutines:
+
+\subsection*{Initialization Stage}
+\subsubsection*{Fuzzy C-Means Clustering (FCM) Algorithm}
+\begin{itemize}
+    \item The FCM algorithm is used to cluster cities into groups based on their positions.
+    \item It assigns cities to clusters with a degree of membership, leading to diverse and high-quality initial solutions.
+    \item Objective Function:
+    \[
+    J = \sum_{i=2}^{n} \sum_{j=1}^{m} u_{ij}^w \|x_i - v_j\|^2
+    \]
+    where $u_{ij}$ is the membership degree, $x_i$ is the position of city $i$, $v_j$ is the cluster center of cluster $j$, and $w$ is the weighting exponent.
+    \item The clustering is iteratively refined until convergence.
+\end{itemize}
+
+\subsubsection*{Random Greedy Heuristic}
+\begin{itemize}
+    \item After clustering, a random greedy heuristic is applied to generate an initial solution.
+    \item The heuristic constructs a tour for each salesman by selecting cities from their respective clusters in a greedy manner, but with some randomness to enhance solution diversity.
+\end{itemize}
+
+\subsection*{Improvement Stage}
+\subsubsection*{Variable Neighborhood Search (VNS)}
+\begin{itemize}
+    \item The VNS is the core of the improvement stage and uses several neighborhood structures to iteratively improve the initial solution.
+    \item Three main local search operators are employed:
+    \begin{itemize}
+        \item \textbf{2-opt}: Swaps two edges to remove intersections, improving the tour.
+        \item \textbf{Insert}: Moves a sequence of cities to a different position in the tour.
+        \item \textbf{Swap}: Exchanges two sequences of cities between different parts of the tour.
+    \end{itemize}
+    \item Each of these operators is applied in both inter-tour and intra-tour contexts.
+\end{itemize}
+
+\subsubsection*{Solution Adjustment}
+\begin{itemize}
+    \item To escape local optima, the current solution is adjusted several times during the improvement stage.
+    \item Random adjustments involve deleting and re-inserting a number of cities to perturb the solution and potentially find better ones.
+\end{itemize}
+
+\subsubsection*{Adaptive Candidate Sets}
+\begin{itemize}
+    \item Candidate sets, which are lists of the nearest cities, are used to reduce the search space for the local search operators.
+    \item These sets are adjusted dynamically based on the current best solutions, helping the algorithm to focus on promising regions of the search space.
+\end{itemize}
+
+\subsection*{Algorithm Flow}
+\begin{enumerate}
+    \item \textbf{Initialize Candidate Sets}: Precompute candidate sets for each city to limit the search scope.
+    \item \textbf{Iterative Process}:
+    \begin{enumerate}
+        \item Repeat until the cut-off time is reached:
+        \begin{enumerate}
+            \item \textbf{Initialization Stage}: Generate an initial solution using FCM and the random greedy heuristic.
+            \item \textbf{Improvement Stage}:
+            \begin{enumerate}
+                \item Apply VNS with the three local search operators.
+                \item Adjust the solution randomly several times to escape local optima.
+                \item Update candidate sets based on the best solutions found.
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}
+    \item \textbf{Output}: The best solution found during the iterative process.
+\end{enumerate}
+
+\subsection*{Key Advantages}
+\begin{itemize}
+    \item The FCM clustering helps in generating diverse initial solutions, which improves the algorithm's ability to explore the solution space.
+    \item The combination of 2-opt, Insert, and Swap operators in the VNS provides a powerful mechanism for both broad and deep local search.
+    \item Adaptive candidate sets enhance the efficiency of the local search by focusing on promising moves and reducing computational overhead.
+    \item The iterative adjustment of solutions helps in escaping local optima and finding better solutions over time.
+\end{itemize}
+
+
+\end{document}
+
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at the depot city 0.
+2) Please output the travel cost for each tour and the maximum travel cost among all tours.
+
+For example, if there are two robots with the following tours and costs:
+Robot 0: 0 -> 1 -> 2 -> 0 with a travel cost of 50
+Robot 1: 0 -> 3 -> 4 -> 0 with a travel cost of 60
+then the output should be:
+
+Robot 0 Tour: [0, 1, 2, 0]
+Robot 0 Total Travel Cost: 50
+
+Robot 1 Tour: [0, 3, 4, 0]
+Robot 1 Total Travel Cost: 60
+
+Maximum Travel Cost: 60
+###

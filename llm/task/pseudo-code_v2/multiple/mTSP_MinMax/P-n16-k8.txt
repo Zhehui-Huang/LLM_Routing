@@ -1,0 +1,162 @@
+###
+Environment information
+===
+There are 16 cities.
+Cities and Coordinates:
+Depot city 0: (30, 40)
+City 1: (37, 52)
+City 2: (49, 49)
+City 3: (52, 64)
+City 4: (31, 62)
+City 5: (52, 33)
+City 6: (42, 41)
+City 7: (52, 41)
+City 8: (57, 58)
+City 9: (62, 42)
+City 10: (42, 57)
+City 11: (27, 68)
+City 12: (43, 67)
+City 13: (58, 48)
+City 14: (58, 27)
+City 15: (37, 69)
+###
+
+###
+Robot Information
+===
+- Number of robots: 8. Robot id starts from 0.
+- Starting location: All robots start at depot city 0.
+- Travel capability: Robots can travel between any two cities.
+- Travel cost: Calculated as the Euclidean distance between two cities.
+###
+
+###
+Task Description
+===
+The robots must collectively visit all cities exactly once, excluding the depot city as a destination, and then return to the depot city after completing their tours.
+Each robot starts and ends its tour at the depot.
+The primary objective is to minimize the maximum distance traveled by any single robot.
+Ensure that every city, except the depot, is visited exactly once.
+You can use the following pseudocode to solve the problem:
+****
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\section*{Summary of the General Variable Neighborhood Search (GVNS) Algorithm}
+
+The General Variable Neighborhood Search (GVNS) algorithm is designed to solve the multiple traveling salesmen problem (mTSP). The main goal of GVNS is to find high-quality solutions by systematically exploring various neighborhoods of the current solution to escape local optima. Here is a detailed summary of the GVNS algorithm as presented in the paper:
+
+\subsection*{Components of GVNS}
+\begin{enumerate}
+    \item \textbf{Initial Solution}: A feasible solution is obtained using a competition rule-based heuristic.
+    \item \textbf{Shaking Procedure}: The current solution is perturbed to explore new regions of the solution space.
+    \item \textbf{Sequential Variable Neighborhood Descent (Seq-VND)}: A sequence of neighborhood structures is searched to find the local optimum.
+    \item \textbf{Terminating Condition}: The algorithm stops when a maximum running time (\(t_{\max}\)) is reached.
+\end{enumerate}
+
+\subsection*{Algorithm Steps}
+\subsubsection*{Initialization}
+A competition rule-based heuristic is used to obtain an initial feasible solution. Nodes are sorted based on their distance to the depot, and small tours are constructed starting with the closest nodes.
+\begin{verbatim}
+Procedure Initialization(d)
+1: Sort nodes in non-decreasing order of distance to the depot
+2: For v = 1 to m do
+3:    Initialize tour v with the v-th closest node
+4: End For
+5: For i = m+1 to n do
+6:    Assign node i to the tour v* that minimizes a specific cost function
+7: End For
+\end{verbatim}
+
+\subsubsection*{Shaking}
+This step perturbs the current solution to escape local optima. A node from a randomly chosen tour is relocated to another random position in another tour.
+\begin{verbatim}
+Procedure Shake(x, k)
+1: While k > 0 do
+2:    Choose a random tour v
+3:    Choose a random node i from tour v
+4:    Choose another random tour t ≠ v
+5:    Insert node i into tour t
+6:    Decrease k by 1
+7: End While
+8: Return x
+\end{verbatim}
+
+\subsubsection*{Sequential VND (Seq-VND)}
+This procedure searches through a sequence of neighborhoods to find the local optimum. Five neighborhood structures are used:
+\begin{enumerate}
+    \item \textbf{One-point move}: Relocates a node to a new position in another tour.
+    \item \textbf{Or-opt move}: Moves a string of nodes (size two or three) to a new position in another tour.
+    \item \textbf{Two-point move}: Swaps positions of two nodes.
+    \item \textbf{Three-point move}: Swaps a pair of adjacent nodes with a node in another tour.
+    \item \textbf{2-opt move}: Removes two non-adjacent arcs and reconnects the tour.
+\end{enumerate}
+\begin{verbatim}
+Procedure Seq_VND(x, lmax)
+1: For l = 1 to lmax do
+2:    Explore the l-th neighborhood of x to find the best local solution x'
+3:    If x' is better than x then
+4:       x = x'
+5:       Restart the search with the smallest neighborhood
+6:    Else
+7:       Continue to the next neighborhood
+8:    End If
+9: End For
+\end{verbatim}
+
+\subsubsection*{GVNS Main Loop}
+The main loop of the GVNS algorithm alternates between shaking and Seq-VND until the time limit is reached.
+\begin{verbatim}
+Procedure GVNS(d, lmax, kmax, tmax)
+1: x = Initialization(d)
+2: While t < tmax do
+3:    k = 1
+4:    While k < kmax do
+5:       x' = Shake(x, k)
+6:       x'' = Seq_VND(x', lmax)
+7:       If f(x'') < f(x) then
+8:          x = x''
+9:          k = 1
+10:       Else
+11:          k = k + 1
+12:       End If
+13:    End While
+14: End While
+\end{verbatim}
+
+\subsection*{Key Details}
+\begin{itemize}
+    \item \textbf{Initialization Heuristic}: A competition-based heuristic constructs initial tours by iteratively selecting the best tour for each unassigned node based on a specific cost function.
+    \item \textbf{Neighborhood Search}: Five types of neighborhood moves (one-point, two-point, or-opt, three-point, 2-opt) are used to explore the solution space.
+    \item \textbf{Shaking}: Helps in escaping local optima by introducing randomness into the solution.
+    \item \textbf{Convergence}: The algorithm converges early, with minor improvements observed after a certain point, and is set to run for \(n\) seconds, where \(n\) is the number of nodes.
+\end{itemize}
+
+This summary encapsulates the GVNS algorithm's methodology and subroutines, making it a comprehensive and self-contained explanation.
+
+\end{document}
+
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at the depot city 0.
+2) Please output the travel cost for each tour and the maximum travel cost among all tours.
+
+For example, if there are two robots with the following tours and costs:
+Robot 0: 0 -> 1 -> 2 -> 0 with a travel cost of 50
+Robot 1: 0 -> 3 -> 4 -> 0 with a travel cost of 60
+then the output should be:
+
+Robot 0 Tour: [0, 1, 2, 0]
+Robot 0 Total Travel Cost: 50
+
+Robot 1 Tour: [0, 3, 4, 0]
+Robot 1 Total Travel Cost: 60
+
+Maximum Travel Cost: 60
+###

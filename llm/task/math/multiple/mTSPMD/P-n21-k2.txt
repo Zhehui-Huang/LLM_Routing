@@ -1,0 +1,145 @@
+###
+Environment information
+===
+There are 21 cities.
+Cities and Coordinates:
+Depot city 0: (30, 40)
+Depot city 1: (37, 52)
+City 2: (49, 49)
+City 3: (52, 64)
+City 4: (31, 62)
+City 5: (52, 33)
+City 6: (42, 41)
+City 7: (52, 41)
+City 8: (57, 58)
+City 9: (62, 42)
+City 10: (42, 57)
+City 11: (27, 68)
+City 12: (43, 67)
+City 13: (58, 48)
+City 14: (58, 27)
+City 15: (37, 69)
+City 16: (38, 46)
+City 17: (61, 33)
+City 18: (62, 63)
+City 19: (63, 69)
+City 20: (45, 35)
+###
+
+###
+Robot Information
+===
+- Number of robots: 2. Robot id starts from 0.
+- Starting and Ending Locations:
+Robot 0 starts and ends at depot city 0.
+Robot 1 starts and ends at depot city 1.
+- Travel Capability: Robots can travel between any two cities.
+- Travel Cost: Calculated as the Euclidean distance between two cities.
+###
+
+###
+Task Description
+===
+The robots must collectively visit all cities exactly once and then return to their respective depots.
+Each robot starts and ends at its assigned depot.
+The objective is to determine the shortest possible tours for each robot while minimizing the total travel cost for all robots combined.
+Ensure that each city is visited exactly once, and each robot returns to its starting depot after completing its tour.
+You can use the following mathematical formulation to solve the problem:
+****
+Consider a complete directed graph \( G = (V, A) \) where:
+\begin{itemize}
+    \item \( V \) is the set of \( n \) nodes (vertices).
+    \item \( A \) is the set of arcs.
+    \item \( C = (c_{ij}) \) is the cost (distance) matrix associated with each arc \((i, j) \in A\).
+\end{itemize}
+
+The node set \( V \) is partitioned into:
+\begin{itemize}
+    \item \( D \), the set of depots, where \( |D| = d \).
+    \item \( V' \), the set of customer nodes, such that \( V = D \cup V' \).
+\end{itemize}
+
+Let \( m \) be the total number of salesmen distributed across the depots, with \( m_i \) salesmen initially located at depot \( i \in D \).
+
+Define the decision variables:
+\begin{itemize}
+    \item \( x_{ijk} \) as a binary variable equal to 1 if a salesman from depot \( k \) travels from node \( i \) to node \( j \), and 0 otherwise.
+    \item \( u_i \) as the number of nodes visited on a salesman's path up to node \( i \).
+\end{itemize}
+
+Parameters:
+\begin{itemize}
+    \item \( L \) is the maximum number of nodes a salesman can visit.
+    \item \( K \) is the minimum number of nodes a salesman must visit.
+\end{itemize}
+
+
+
+Minimize the total cost of the tours:
+\[
+\min \sum_{k \in D} \sum_{j \in V'} \left(c_{kj} x_{kjk} + c_{jk} x_{jkk}\right) + \sum_{k \in D} \sum_{i \in V'} \sum_{j \in V'} c_{ij} x_{ijk}
+\]
+
+
+
+\begin{enumerate}
+    \item \textbf{Salesmen departure from each depot:}
+    \[
+    \sum_{j \in V'} x_{kjk} = m_k \quad \forall k \in D
+    \]
+
+    \item \textbf{Each customer node is visited exactly once:}
+    \[
+    \sum_{k \in D} \sum_{i \in V} x_{ijk} = 1 \quad \forall j \in V'
+    \]
+
+    \item \textbf{Route continuity for each depot:}
+    \[
+    \sum_{j \in V} x_{ijk} = \sum_{j \in V} x_{jik} \quad \forall k \in D, \forall i \in V
+    \]
+
+    \item \textbf{Bounding constraints:}
+    \[
+    u_i + (L - 2) \sum_{k \in D} x_{kik} - \sum_{k \in D} x_{ikk} \leq L - 1 \quad \forall i \in V'
+    \]
+    \[
+    u_i + \sum_{k \in D} x_{kik} + (2 - K) \sum_{k \in D} x_{ikk} \geq 2 \quad \forall i \in V'
+    \]
+
+    \item \textbf{Single customer visit restriction:}
+    \[
+    \sum_{k \in D} x_{kik} + \sum_{k \in D} x_{ikk} \leq 1 \quad \forall i \in V'
+    \]
+
+    \item \textbf{Subtour elimination constraints:}
+    \[
+    u_i - u_j + L \sum_{k \in D} x_{ijk} + (L - 2) \sum_{k \in D} x_{jik} \leq L - 1 \quad \forall i \neq j, \forall i, j \in V'
+    \]
+
+    \item \textbf{Binary constraints:}
+    \[
+    x_{ijk} \in \{0, 1\} \quad \forall i, j \in V, k \in D
+    \]
+\end{enumerate}
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at its assigned depot.
+2) Please output the total travel cost for each tour and the overall total travel cost.
+
+For example, if there are two robots with the following tours and costs:
+Robot 0 (Depot 0): 0 -> 2 -> 3 -> 0 with a travel cost of 50
+Robot 1 (Depot 1): 1 -> 4 -> 5 -> 1 with a travel cost of 60
+then the output should be:
+
+Robot 0 Tour: [0, 2, 3, 0]
+Robot 0 Total Travel Cost: 50
+
+Robot 1 Tour: [1, 4, 5, 1]
+Robot 1 Total Travel Cost: 60
+
+Overall Total Travel Cost: 110
+###

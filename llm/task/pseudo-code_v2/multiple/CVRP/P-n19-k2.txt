@@ -1,0 +1,267 @@
+###
+Environment information
+===
+There are 19 cities.
+Cities and Coordinates:
+Depot city 0: (30, 40)
+City 1: (37, 52)
+City 2: (49, 43)
+City 3: (52, 64)
+City 4: (31, 62)
+City 5: (52, 33)
+City 6: (42, 41)
+City 7: (52, 41)
+City 8: (57, 58)
+City 9: (62, 42)
+City 10: (42, 57)
+City 11: (27, 68)
+City 12: (43, 67)
+City 13: (58, 27)
+City 14: (37, 69)
+City 15: (61, 33)
+City 16: (62, 63)
+City 17: (63, 69)
+City 18: (45, 35)
+
+Demand list:
+City 0: 0
+City 1: 19
+City 2: 30
+City 3: 16
+City 4: 23
+City 5: 11
+City 6: 31
+City 7: 15
+City 8: 28
+City 9: 14
+City 10: 8
+City 11: 7
+City 12: 14
+City 13: 19
+City 14: 11
+City 15: 26
+City 16: 17
+City 17: 6
+City 18: 15
+###
+
+###
+Robot Information
+===
+- Number of robots: 2. Robot id starts from 0.
+- The capacity of each robot: 160
+- Starting location: All robots start at depot city 0.
+- Travel capability: Robots can travel between any two cities.
+- Travel cost: Calculated as the Euclidean distance between two cities.
+###
+
+###
+Task Description
+===
+The robots must collectively deliver goods to all cities, excluding the depot city, and then return to the depot city after completing their deliveries.
+Each robot has a specified carrying capacity.
+Each city has a specific demand that must be met.
+The objective is to determine the shortest possible tours for the robots while ensuring that:
+- The demand of each city is fully met.
+- The capacity constraints of the robots are not exceeded.
+Minimize the total travel cost for all tours.
+You can use the following pseudocode to solve the problem:
+****
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\section*{Summary of the Proposed Enhancement of Clarke-Wright Savings Algorithm}
+
+The proposed enhancement to the Clarke-Wright Savings Algorithm (CW) seeks to find high-quality feasible solutions to the Capacitated Vehicle Routing Problem (CVRP) by iteratively applying a two-phase probabilistic procedure and route post-improvement procedures. This enhanced approach is described through the following steps:
+
+\begin{enumerate}
+    \item \textbf{Initialization}:
+    \begin{itemize}
+        \item Compute the cost matrix.
+        \item Compute the cost savings matrix.
+        \item Sort the cost savings in descending order.
+        \item Generate initial routes and solutions based on cost savings.
+    \end{itemize}
+    \item \textbf{Iterative Improvement}:
+    \begin{itemize}
+        \item Apply the two-phase probabilistic procedure to re-rank the cost savings.
+        \item Generate new routes and solutions based on the new cost savings.
+        \item Update the best solution if the new solution is feasible and better.
+    \end{itemize}
+    \item \textbf{Route Post-Improvement}:
+    \begin{itemize}
+        \item Apply intra-route and inter-route local search procedures to improve the routes.
+    \end{itemize}
+\end{enumerate}
+
+\section*{Pseudo Code of the Proposed CW (Figure 2)}
+
+\begin{verbatim}
+costmatrix = DoCostMatrix()
+costsaving = DoCostSaving(costmatrix)
+Call DoSort(costsaving)
+costlink = DoCostLink(costsaving)
+route = DoRoute(costlink)
+solution = DoSolution(route)
+
+For iteration = 1 To 1000
+    new_costsaving = TwoPhaseProbabilistic(costsaving, 0, 20)
+    costlink = DoCostLink(new_costsaving)
+    new_route = DoRoute(costlink)
+    new_solution = DoSolution(new_route)
+    If new_solution < solution Then
+        If IsFeasible(new_solution) = True Then
+            route = new_route
+            solution = new_solution
+            costsaving = new_costsaving
+        End If
+    End If
+Next iteration
+
+improveRoute = RoutePostImprovement(route)
+solution = DoSolution(improveRoute)
+\end{verbatim}
+
+\section*{Subroutines}
+
+\subsection*{DoCostMatrix}
+Generates the cost matrix for all customer pairs.
+
+\subsection*{DoCostSaving}
+Calculates cost savings for every pair of customers.
+
+\subsection*{DoSort}
+Sorts the cost savings list in descending order.
+
+\subsection*{DoCostLink}
+Generates the cost link from the sorted cost savings list.
+
+\subsection*{DoRoute}
+Constructs initial routes based on the cost links.
+
+\subsection*{DoSolution}
+Calculates the total cost of the routes.
+
+\subsection*{TwoPhaseProbabilistic}
+A probabilistic procedure to escape the greedy nature of CW.
+
+\begin{verbatim}
+For no = 1 To UpperBound(costsaving)
+    tournamentsize = RandomInteger(0 To 20)
+    j = 0
+    For i = 1 To UpperBound(costsaving)
+        If costsaving(i).deleted = False Then
+            j = j + 1
+            nosaving(j) = i
+            If j = tournamentsize Then Exit For i
+        End If
+    Next i
+    sumsaving = 0
+    For i = 1 To tournamentsize
+        sumsaving = sumsaving + costsaving(nosaving(i)).value
+    Next i
+    For i = 1 To tournamentsize
+        If i = 1 Then
+            probability(i) = costsaving(nosaving(i)).value / sumsaving
+        Else
+            probability(i) = probability(i – 1) + (costsaving(nosaving(i)).value / sumsaving)
+        End If
+    Next i
+    prob = RandomDecimal(0 To 1)
+    For i = 1 To tournamentsize
+        If prob < probability(i) Then
+            new_costsaving(no).value = costsaving(nosaving(i)).value
+            costsaving(nosaving(i)).deleted = True
+            Exit For i
+        End If
+    Next i
+Next no
+Return new_costsaving
+\end{verbatim}
+
+\section*{Route Post-Improvement}
+
+The route post-improvement applies intra-route and inter-route moves to further optimize the solution.
+
+\begin{verbatim}
+(a) Intra-route move
+For iteration_global = 1 To 100
+    For i = 1 To UpperBound(route)
+        For iteration_local = 1 To 50
+            rand = RandomInteger(1 To 2)
+            If rand = 1 Then
+                cal_route = DoMoveRoute(route(i))
+            Else If rand = 2 Then
+                cal_route = DoSwapRoute(route(i))
+            End If
+            cal_solution = DoSolution(cal_route)
+            solution = DoSolution(route(i))
+            If cal_solution < solution Then
+                route(i) = cal_route
+            End If
+        Next iteration_local
+    Next i
+Next iteration_global
+Return route
+
+(b) Inter-route move
+For iteration_global = 1 To 100
+    For i = 1 To UpperBound(route) - 1
+        For j = i + 1 To UpperBound(route)
+            For iteration_local = 1 To 50
+                rand = RandomInteger(1 To 2)
+                If rand = 1 Then
+                    cal_route = DoMoveRoute(route(i), route(j))
+                Else If rand = 2 Then
+                    cal_route = DoSwapRoute(route(i), route(j))
+                End If
+                cal_solution = DoSolution(cal_route(i), cal_route(j))
+                solution = DoSolution(route(i), route(j))
+                If cal_solution < solution Then
+                    route(i) = cal_route(i)
+                    route(j) = cal_route(j)
+                End If
+            Next iteration_local
+        Next j
+    Next i
+Next iteration_global
+Return route
+\end{verbatim}
+
+\section*{Explanation}
+
+\begin{itemize}
+    \item \textbf{Initialization}: Initializes the cost and savings matrices, sorts the savings, and constructs initial routes.
+    \item \textbf{Iterative Improvement}: Uses a two-phase probabilistic approach to introduce randomness and avoid local optima, continually updating the solution if improvements are found.
+    \item \textbf{Route Post-Improvement}: Applies local search techniques to further enhance the routes by moving and swapping customers within and between routes.
+\end{itemize}
+
+This enhanced algorithm effectively combines classical savings with probabilistic and local search methods to find near-optimal solutions for CVRP.
+
+\end{document}
+
+****
+###
+
+###
+Format Requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at the depot city 0.
+2) Please output the total travel cost for each tour and the overall total travel cost.
+3) Ensure that the demand of each city is met and the capacity constraints of each robot are not violated.
+
+For example, if there are two robots with the following tours and costs:
+Robot 0: 0 -> 1 -> 2 -> 0 with a travel cost of 50
+Robot 1: 0 -> 3 -> 4 -> 0 with a travel cost of 60
+then the output should be:
+
+Robot 0 Tour: [0, 1, 2, 0]
+Robot 0 Total Travel Cost: 50
+
+Robot 1 Tour: [0, 3, 4, 0]
+Robot 1 Total Travel Cost: 60
+
+Overall Total Travel Cost: 110
+###
