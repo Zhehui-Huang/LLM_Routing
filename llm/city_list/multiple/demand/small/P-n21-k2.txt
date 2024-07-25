@@ -1,0 +1,46 @@
+There are 21 cities.
+Cities and Coordinates:
+Depot city 0: (30, 40)
+City 1: (37, 52)
+City 2: (49, 49)
+City 3: (52, 64)
+City 4: (31, 62)
+City 5: (52, 33)
+City 6: (42, 41)
+City 7: (52, 41)
+City 8: (57, 58)
+City 9: (62, 42)
+City 10: (42, 57)
+City 11: (27, 68)
+City 12: (43, 67)
+City 13: (58, 48)
+City 14: (58, 27)
+City 15: (37, 69)
+City 16: (38, 46)
+City 17: (61, 33)
+City 18: (62, 63)
+City 19: (63, 69)
+City 20: (45, 35)
+
+Demand list:
+City 0: 0
+City 1: 7
+City 2: 30
+City 3: 16
+City 4: 23
+City 5: 11
+City 6: 19
+City 7: 15
+City 8: 28
+City 9: 8
+City 10: 8
+City 11: 7
+City 12: 14
+City 13: 6
+City 14: 19
+City 15: 11
+City 16: 12
+City 17: 26
+City 18: 17
+City 19: 6
+City 20: 15

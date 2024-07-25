@@ -6,30 +6,34 @@ import subprocess
 from utils import read_txt_file
 
 FILE_NAME_SMALL = [
-    'P-n19-k2',
-    'P-n20-k2',
-    'E-n22-k4',
-    'E-n30-k3',
-    'A-n32-k5',
+    # 'E-n13-k4',
     'P-n16-k8',
-    'P-n22-k8',
+    'P-n19-k2',
+    # 'P-n20-k2',
+    'P-n21-k2',
+    'E-n22-k4',
     'P-n23-k8',
-    'A-n33-k6',
-    'A-n34-k5'
+    # 'E-n22-k4',
+    # 'E-n30-k3',
+    # 'A-n32-k5',
+    # 'P-n22-k8',
+    # 'A-n33-k6',
+    # 'A-n34-k5'
 ]
 FILE_NAME_BIG = [
-    'A-n38-k5',
-    'P-n40-k5',
-    'A-n44-k6',
-    'F-n45-k4',
-    'P-n45-k5',
-    'A-n45-k7',
-    'P-n50-k7',
-    'P-n50-k8',
-    'E-n51-k5',
-    'P-n51-k10'
+    # 'A-n38-k5',
+    # 'P-n40-k5',
+    # 'A-n44-k6',
+    # 'F-n45-k4',
+    # 'P-n45-k5',
+    # 'A-n45-k7',
+    # 'P-n50-k7',
+    # 'P-n50-k8',
+    # 'E-n51-k5',
+    # 'P-n51-k10'
 ]
 
+BASE_PATH = '/Users/tencentintern/Documents/LLM_Routing/llm'
 
 def download_files(file_names, size):
     link_prex = 'http://vrp.galgos.inf.puc-rio.br/media/com_vrp/instances//'
@@ -37,7 +41,7 @@ def download_files(file_names, size):
         problem_link = f'{link_prex}{file_name[0]}/{file_name}.vrp'
 
         # Change target dir
-        target_dir = f"/Users/tencentintern/Documents/LLM_Routing/llm/city_list/multiple/original/{size}"
+        target_dir = f"{BASE_PATH}/city_list/multiple/original/{size}"
         os.makedirs(target_dir, exist_ok=True)
         os.chdir(target_dir)
 
@@ -53,7 +57,7 @@ def download_files(file_names, size):
 
 def download_original_files():
     download_files(file_names=FILE_NAME_SMALL, size='small')
-    download_files(file_names=FILE_NAME_BIG, size='big')
+    # download_files(file_names=FILE_NAME_BIG, size='big')
 
 
 def extract_node_info(data, file_name):
@@ -125,11 +129,11 @@ def extract_capacity_info(data):
 
 
 def batch_extract_node_info():
-    target_dir = "/Users/tencentintern/Documents/LLM_Routing/llm/city_list/multiple/original"
-    write_dir = "/Users/tencentintern/Documents/LLM_Routing/llm/city_list/multiple/processed"
-    include_demand_dir = "/Users/tencentintern/Documents/LLM_Routing/llm/city_list/multiple/demand"
-    capacity_dir = "/Users/tencentintern/Documents/LLM_Routing/llm/city_list/multiple/capacity"
-    for size in ['small', 'big']:
+    target_dir = f"{BASE_PATH}/city_list/multiple/original"
+    write_dir = f"{BASE_PATH}/city_list/multiple/processed"
+    include_demand_dir = f"{BASE_PATH}/city_list/multiple/demand"
+    capacity_dir = f"{BASE_PATH}/city_list/multiple/capacity"
+    for size in ['small']:
         for file_name in os.listdir(f"{target_dir}/{size}"):
             print(f"Processing {size} {file_name}...")
             with open(f"{target_dir}/{size}/{file_name}", 'r') as f:
@@ -222,8 +226,8 @@ def modify_mTSPMD_info(content, robot_num):
 
 
 def main():
+    download_original_files()
     batch_extract_node_info()
-    # download_original_files()
 
 
 if __name__ == '__main__':
