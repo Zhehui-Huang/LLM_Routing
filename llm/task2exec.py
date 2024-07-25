@@ -3,7 +3,8 @@ from utils import (ask_llm, read_txt_file, write_py_file, run_py_file, limit_tex
 
 
 def task2exec_res(args, client, file_base_name, task_name, city_num, messages, base_solution_path, base_log_path,
-                  exec_detail_path, messages_path, instance_tid, outer_tid, total_request_llm_num_dict):
+                  exec_detail_path, messages_path, instance_tid, outer_tid, total_request_llm_num_dict,
+                  token_file_path):
     tmp_reflect_num = 0
     tmp_log_file_path = None
     for i in range(args.reflect_num):
@@ -12,7 +13,8 @@ def task2exec_res(args, client, file_base_name, task_name, city_num, messages, b
             file.write(f"\nReflect count: {i}\n===\n")
 
         # 1. LLM -> Code & extract code & write code
-        code_solution_content, response_time = ask_llm(client=client, llm_model=args.llm_model, messages=messages)
+        code_solution_content, response_time = ask_llm(client=client, llm_model=args.llm_model, messages=messages,
+                                                       token_file_path=token_file_path, notes='exec')
         total_request_llm_num_dict['exec'] += 1
 
         code_solution_content = extract_python_code(content=code_solution_content)

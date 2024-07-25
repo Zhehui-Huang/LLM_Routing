@@ -5,14 +5,17 @@ import subprocess
 import time
 import pytz
 from datetime import datetime
+
+from token_utils import calculate_token_num
+
 LA_TIMEZONE = pytz.timezone('America/Los_Angeles')
 
 # SINGLE_TASK_LIST = ['TSP', 'BTSP', 'GTSP', 'KTSP', 'MV-TSP']
-SINGLE_TASK_LIST = ['TSP', 'BTSP', 'GTSP', 'KTSP']
+SINGLE_TASK_LIST = ['TSP']
 MULTI_TASK_LIST = ['mTSP', 'mTSP_MinMax', 'mTSPMD', 'CVRP']
 # CITY_NUM_LIST = [10, 15, 20, 25, 50]
 # CITY_NUM_LIST = [10]
-CITY_NUM_LIST = [15, 20]
+CITY_NUM_LIST = [10]
 MAXIMUM_EXEC_TIME = 180
 MAXIMUM_TEXT_LENGTH = 2000
 
@@ -34,7 +37,7 @@ Now, let's proceed with the task at hand.
 '''
 
 
-def ask_llm(client, llm_model, messages):
+def ask_llm(client, llm_model, messages, token_file_path, notes=''):
     start_time = time.time()
     cur_time = datetime.now(LA_TIMEZONE)
     print(f"[{cur_time.strftime('%Y-%m-%d %H:%M:%S')}]\tAsking LLM ...")
@@ -48,7 +51,11 @@ def ask_llm(client, llm_model, messages):
     response_time = end_time - start_time
     cur_time = datetime.now(LA_TIMEZONE)
     print(f"[{cur_time.strftime('%Y-%m-%d %H:%M:%S')}]\tFinished.\tResponse time: {response_time:.2f} seconds.")
-    return completion.choices[0].message.content, response_time
+
+    response_content = completion.choices[0].message.content
+    calculate_token_num(messages=messages, response_content=response_content, model=llm_model, token_file_path=token_file_path,
+                        notes=notes)
+    return response_content, response_time
 
 
 def list_files(directory):

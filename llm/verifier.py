@@ -5,7 +5,7 @@ from utils import (ask_llm, read_txt_file, write_py_file, run_py_file, limit_tex
 def get_executable_unit_test_code(args, client, extract_constraints_messages, task_name, city_num, file_base_name,
                                   llm_exec_reflect_num, base_verifier_log_path, base_verifier_path, exec_detail_path,
                                   log_file_path, constraints_content, messages_path, instance_tid, outer_tid,
-                                  total_request_llm_num_dict):
+                                  total_request_llm_num_dict, token_file_path):
     overall_verifier_prompt = ''
     unit_test_status = ''
     unit_test_res = ''
@@ -30,8 +30,10 @@ def get_executable_unit_test_code(args, client, extract_constraints_messages, ta
         extract_constraints_messages.append(user_prompt)
 
         # 2. Verifier LLM: generate unit tests code
-        verifier_code_content, response_time = ask_llm(client=client, llm_model=args.llm_model,
-                                                       messages=extract_constraints_messages)
+        verifier_code_content, response_time = ask_llm(
+            client=client, llm_model=args.llm_model, messages=extract_constraints_messages,
+            token_file_path=token_file_path, notes='verifier')
+
         total_request_llm_num_dict['verifier'] += 1
         verifier_code_content = extract_python_code(content=verifier_code_content)
 

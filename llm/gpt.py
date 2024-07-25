@@ -21,7 +21,8 @@ OPENAI_API_KEY = "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"
 def get_results_one_try(
         args, client, file_path, file_base_name, task_name, city_num,
         base_exec_details_path, base_messages_path, base_solution_path, base_log_path, base_constraints_path,
-        base_verifier_path, base_verifier_log_path, instance_tid, outer_tid, total_request_llm_num_dict):
+        base_verifier_path, base_verifier_log_path, instance_tid, outer_tid, total_request_llm_num_dict,
+        token_file_path):
     # 1. Write start info;
     # a) Track info: Reflect times and results path
     # b) Execution info: The process of each instance execution
@@ -48,7 +49,7 @@ def get_results_one_try(
         args=args, client=client, file_base_name=file_base_name, task_name=task_name, city_num=city_num,
         messages=messages, base_solution_path=base_solution_path, base_log_path=base_log_path,
         exec_detail_path=exec_detail_path, messages_path=messages_path, instance_tid=instance_tid, outer_tid=outer_tid,
-        total_request_llm_num_dict=total_request_llm_num_dict
+        total_request_llm_num_dict=total_request_llm_num_dict, token_file_path=token_file_path
     )
 
     # 5. Check exec_status_str, exec_status_str = fail
@@ -80,7 +81,8 @@ def get_results_one_try(
 
     # 7.2 Ask LLM for constraints -> Write down constraints
     constraints_content, response_time = ask_llm(
-        client=client, llm_model=args.llm_model, messages=extract_constraints_messages
+        client=client, llm_model=args.llm_model, messages=extract_constraints_messages,
+        token_file_path=token_file_path, notes='extract_constraints'
     )
     total_request_llm_num_dict['constraints'] += 1
 
@@ -107,7 +109,7 @@ def get_results_one_try(
         base_verifier_path=base_verifier_path, exec_detail_path=exec_detail_path,
         log_file_path=tmp_log_file_path, constraints_content=constraints_content,
         messages_path=messages_path, instance_tid=instance_tid, outer_tid=outer_tid,
-        total_request_llm_num_dict=total_request_llm_num_dict
+        total_request_llm_num_dict=total_request_llm_num_dict, token_file_path=token_file_path
     )
 
     if unit_test_status == 'success':
@@ -147,6 +149,7 @@ def solve_batch(args):
     base_verifier_log_path = f'{BASE_PATH}/{path_prex}/log_verifier/{args.robot_num}'
 
     base_track_file_path = f'{BASE_PATH}/{path_prex}/track/{args.robot_num}'
+    base_token_file_path = f'{BASE_PATH}/{path_prex}/token/{args.robot_num}'
 
     for city_num in CITY_NUM_LIST:
 
@@ -192,6 +195,11 @@ def solve_batch(args):
                         'constraints': 0,
                     }
                     for outer_tid in range(args.reflect_num):
+                        token_file_path = f'{base_token_file_path}/{task_name}/{city_num}/{file_base_name}/{instance_tid}/{outer_tid}/token_details.txt'
+                        os.makedirs(os.path.dirname(token_file_path), exist_ok=True)
+                        with open(token_file_path, 'w') as file:
+                            file.write(f"Task: {task_name}, City: {city_num}, File name: {file_base_name}, Run time: {instance_tid}, Try id: {outer_tid}\n\n")
+
                         exec_status_str, unit_test_status, unit_test_res, total_request_llm_num_dict = get_results_one_try(
                             args=args, client=client, file_path=file_path, file_base_name=file_base_name,
                             task_name=task_name, city_num=city_num,
@@ -199,7 +207,8 @@ def solve_batch(args):
                             base_solution_path=base_solution_path, base_log_path=base_log_path,
                             base_constraints_path=base_constraints_path, base_verifier_path=base_verifier_path,
                             base_verifier_log_path=base_verifier_log_path, instance_tid=instance_tid,
-                            outer_tid=outer_tid, total_request_llm_num_dict=total_request_llm_num_dict
+                            outer_tid=outer_tid, total_request_llm_num_dict=total_request_llm_num_dict,
+                            token_file_path=token_file_path
                         )
                         if exec_status_str == 'success' and unit_test_status == 'success' and unit_test_res == 'CORRECT':
                             final_success_bool = True
