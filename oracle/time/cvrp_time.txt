@@ -1,0 +1,12 @@
+CVRP
+
+file_path: E-n22-k4.txt:	108.03 s
+
+file_path: P-n16-k8.txt:	90.87 s
+
+file_path: P-n19-k2.txt:	3.87 s
+
+file_path: P-n21-k2.txt:	2.12 s
+
+file_path: P-n23-k8.txt:	5016.95 s
+

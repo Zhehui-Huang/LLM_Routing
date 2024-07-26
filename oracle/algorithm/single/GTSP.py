@@ -84,31 +84,6 @@ def solve_gtsp(V, V_p, distance_matrix, k, coords):
     # Optimize model
     m.optimize()
 
-    # Extract solution
-    # edges = []
-    # if m.status == GRB.OPTIMAL:
-    #     for i in V:
-    #         for j in V:
-    #             if i != j and x[i, j].x > 1e-6:
-    #                 edges.append((i, j))
-
-    # # Visualize the solution
-    # G = nx.DiGraph()
-    # G.add_edges_from(edges)
-    # pos = {i: coords[i] for i in V}
-
-    # plt.figure(figsize=(12, 8))
-    # nx.draw(G, pos, with_labels=True, node_color='lightblue', node_size=500, font_size=10, font_weight='bold')
-    # edge_labels = {(i, j): '' for i, j in edges}
-    # nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=8)
-
-    # # Draw clusters
-    # for cluster_idx, cluster in enumerate(V_p):
-    #     nx.draw_networkx_nodes(G, pos, nodelist=cluster, node_size=700, alpha=0.6)
-
-    # plt.title('Generalized TSP Solution with Distance-Based Costs and Clusters')
-    # plt.show()
-
     # Extract the solution
     if m.status == GRB.OPTIMAL:
         tour = []
@@ -139,7 +114,9 @@ if __name__ == "__main__":
     file_names = []
     # Get the current working directory
     # make sure that the current folder is TSP
-    current_directory = os.getcwd() + '../../../task/zero/single/GTSP'
+    task_name = 'GTSP'
+    current_directory = os.getcwd() + f'../../../task/zero/single/{task_name}'
+    file_write_path = f'../../results/{task_name}_result.dic'
 
     # List all files in the current directory
     files = os.listdir(current_directory)
@@ -160,36 +137,12 @@ if __name__ == "__main__":
         coords = {i: cities[i] for i in V}
         k = len(group)
         tour, cost = solve_gtsp(V, group, distance_matrix, k, coords)
-        #visualize_tour(cities, tour)
         if tour:
             print(f"Optimal tour: {tour}")
             print(f"Optimal cost: {cost}")
-            #plot_tour(cities, distance_matrix, tour)
-            #visualize_tour(cities, tour)
             results[file_path] = [cost, tour]
         else:
             print("No optimal solution found.")
 
-    with open('../../results/gtsp.dic', 'wb') as f:  # open a text file
-        pickle.dump(results, f)  # serialize the list
-
-# Example data
-# random.seed(42)
-# V = list(range(1, 16))  # set of nodes
-# k = 5  # number of sets (partitions)
-
-# # Generate random coordinates for each node
-# coords = {i: (random.uniform(0, 100), random.uniform(0, 100)) for i in V}
-
-# # Cluster nodes into k groups (3 nodes each)
-# V_p = [[] for _ in range(k)]
-# for i, node in enumerate(V):
-#     V_p[i % k].append(node)
-
-# # Ensure we have exactly k clusters of 3 nodes each
-# assert len(V_p) == k and all(len(cluster) == 3 for cluster in V_p)
-
-
-# c = {(i, j): euclidean_distance(coords[i], coords[j]) for i in V for j in V if i != j}
-
-#solve_gtsp(V, V_p, c, k, coords)
+    with open(file_write_path, 'wb') as f:
+        pickle.dump(results, f)

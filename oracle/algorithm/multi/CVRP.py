@@ -248,6 +248,6 @@ if __name__ == "__main__":
         else:
             print("No optimal solution found.")
     
-    with open('cvrp_result.dic', 'wb') as f:  # open a text file
+    with open('CVRP_result.dic', 'wb') as f:  # open a text file
         pickle.dump(results, f) # serialize the list
         #visualize_tour(customer_locations, tour)

@@ -1,0 +1,12 @@
+mTSP minmax
+
+file_path: E-n22-k4.txt:	25405.55 s
+
+file_path: P-n16-k8.txt:	5.05 s
+
+file_path: P-n19-k2.txt:	4.76 s
+
+file_path: P-n21-k2.txt:	13.09 s
+
+file_path: P-n23-k8.txt:	30659.50 s
+

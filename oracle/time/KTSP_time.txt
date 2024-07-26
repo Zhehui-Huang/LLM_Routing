@@ -1,0 +1,32 @@
+KTSP
+
+file_path: city_10_instance_0.txt:	0.03 s
+
+file_path: city_10_instance_1.txt:	0.03 s
+
+file_path: city_10_instance_2.txt:	0.04 s
+
+file_path: city_10_instance_3.txt:	0.03 s
+
+file_path: city_10_instance_4.txt:	0.05 s
+
+file_path: city_15_instance_0.txt:	5.48 s
+
+file_path: city_15_instance_1.txt:	1.16 s
+
+file_path: city_15_instance_2.txt:	4.48 s
+
+file_path: city_15_instance_3.txt:	1.41 s
+
+file_path: city_15_instance_4.txt:	3.13 s
+
+file_path: city_20_instance_0.txt:	4325.34 s
+
+file_path: city_20_instance_1.txt:	1046.41 s
+
+file_path: city_20_instance_2.txt:	917.33 s
+
+file_path: city_20_instance_3.txt:	276.79 s
+
+file_path: city_20_instance_4.txt:	394.04 s
+

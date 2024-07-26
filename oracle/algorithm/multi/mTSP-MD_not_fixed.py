@@ -182,7 +182,7 @@ for file_path in file_names:
     else:
         print("No optimal solution found.")
         
-with open('mtsp_md_free_result.dic', 'wb') as f:  # open a text file
+with open('mTSP-MD_not_fixed_result.dic', 'wb') as f:  # open a text file
     pickle.dump(results, f) # serialize the list
 # Define the data
 #np.random.seed(42)  # For reproducibility

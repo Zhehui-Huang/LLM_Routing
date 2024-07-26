@@ -1,0 +1,12 @@
+mtsp_md_fix
+
+file_path: E-n22-k4.txt:	4.32 s
+
+file_path: P-n16-k8.txt:	0.08 s
+
+file_path: P-n19-k2.txt:	0.26 s
+
+file_path: P-n21-k2.txt:	0.62 s
+
+file_path: P-n23-k8.txt:	0.14 s
+
