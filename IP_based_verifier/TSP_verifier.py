@@ -170,7 +170,7 @@ def route2edges(route, num_city):
 if __name__ == "__main__":
     current_directory = os.getcwd()+'/single/TSP'
     file_name = 'city_10_instance_0.txt'
-    route = [0, 1, 2, 3, 4, 5, 6, 7, 8,  0]
+    route = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
     
     cities = read_city_locations(current_directory+'/'+file_name)
     distance_matrix = calculate_distance_matrix(cities)
