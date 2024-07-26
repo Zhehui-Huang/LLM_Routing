@@ -130,12 +130,15 @@ def get_results_one_try(
 
 
 def solve_batch(args):
-    # TODO: Get execution time of optimal solutions provided by guangyao, the maximum exec time is less than 2x of that time.
     # Setup client
     client = OpenAI(api_key=OPENAI_API_KEY)
 
-    path_prex = 'extra_info'
-    base_task_path = f'{BASE_PATH}/task/zero/{args.robot_num}/'
+    if args.shot_item == 'zero':
+        path_prex = f'extra_info'
+    else:
+        path_prex = f'extra_info_{args.shot_item}'
+
+    base_task_path = f'{BASE_PATH}/task/{args.shot_item}/{args.robot_num}/'
 
     # LLM executor
     base_solution_path = f'{BASE_PATH}/{path_prex}/solution/{args.robot_num}'
@@ -237,6 +240,9 @@ def get_args():
                         choices=['gpt-4-turbo-2024-04-09', 'gpt-4o-2024-05-13', 'gpt-4o-mini-2024-07-18'])
     parser.add_argument('--reflect_num', type=int, default=3, help='Default: total 3, self reflect 2 times.')
     parser.add_argument('--robot_num', type=str, default='single', choices=['single', 'multiple'],
+                        help='Default: single')
+    parser.add_argument('--shot_item', type=str, default='zero',
+                        choices=['zero', 'math', 'pseudo-code_v2', 'pseudo-code_v3', 'pdf_paper_v2', 'pdf_paper_v3'],
                         help='Default: single')
     return parser.parse_args()
 
