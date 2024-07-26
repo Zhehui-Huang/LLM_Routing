@@ -115,8 +115,8 @@ if __name__ == "__main__":
     # Get the current working directory
     # make sure that the current folder is TSP
     task_name = 'GTSP'
-    current_directory = os.getcwd() + f'../../../task/zero/single/{task_name}'
-    file_write_path = f'../../results/{task_name}_result.dic'
+    current_directory = f'../../../llm/task/zero/single/{task_name}'
+    file_write_path = f'../../results/single/{task_name}_result.dic'
 
     # List all files in the current directory
     files = os.listdir(current_directory)
