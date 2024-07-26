@@ -123,6 +123,8 @@ def problem_generation(file_names, note, shot_type, vid=0):
                 file_path = f'../../algorithms/{TASK_GET_ALGO_DICT[task_name]}-algorithm1.txt'
             elif shot_type == 'pseudo-code':
                 file_path = f'../../algorithms/{TASK_GET_ALGO_DICT[task_name]}-algorithm{vid}.txt'
+            elif shot_type == 'pdf_paper':
+                file_path = f'../../algorithms/{TASK_GET_ALGO_DICT[task_name]}-algorithm{vid}-insights.txt'
             else:
                 raise ValueError(f'Invalid shot type: {shot_type}')
 
@@ -153,6 +155,9 @@ def main():
     # Use pseudo-code of a approximation algorithm as context
     problem_generation(file_names=FILE_NAME_SMALL, note='small', shot_type='pseudo-code', vid=2)
     problem_generation(file_names=FILE_NAME_SMALL, note='small', shot_type='pseudo-code', vid=3)
+
+    problem_generation(file_names=FILE_NAME_SMALL, note='small', shot_type='pdf_paper', vid=2)
+    problem_generation(file_names=FILE_NAME_SMALL, note='small', shot_type='pdf_paper', vid=3)
 
 
 if __name__ == '__main__':

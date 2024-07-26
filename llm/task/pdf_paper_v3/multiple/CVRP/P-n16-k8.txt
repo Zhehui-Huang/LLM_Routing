@@ -1,0 +1,116 @@
+###
+Environment information
+===
+There are 16 cities.
+Cities and Coordinates:
+Depot city 0: (30, 40)
+City 1: (37, 52)
+City 2: (49, 49)
+City 3: (52, 64)
+City 4: (31, 62)
+City 5: (52, 33)
+City 6: (42, 41)
+City 7: (52, 41)
+City 8: (57, 58)
+City 9: (62, 42)
+City 10: (42, 57)
+City 11: (27, 68)
+City 12: (43, 67)
+City 13: (58, 48)
+City 14: (58, 27)
+City 15: (37, 69)
+
+Demand list:
+City 0: 0
+City 1: 19
+City 2: 30
+City 3: 16
+City 4: 23
+City 5: 11
+City 6: 31
+City 7: 15
+City 8: 28
+City 9: 8
+City 10: 8
+City 11: 7
+City 12: 14
+City 13: 6
+City 14: 19
+City 15: 11
+###
+
+###
+Robot Information
+===
+- Number of robots: 8. Robot id starts from 0.
+- The capacity of each robot: 35
+- Starting location: All robots start at depot city 0.
+- Travel capability: Robots can travel between any two cities.
+- Travel cost: Calculated as the Euclidean distance between two cities.
+###
+
+###
+Task Description
+===
+The robots must collectively deliver goods to all cities, excluding the depot city, and then return to the depot city after completing their deliveries.
+Each robot has a specified carrying capacity.
+Each city has a specific demand that must be met.
+The objective is to determine the shortest possible tours for the robots while ensuring that:
+- The demand of each city is fully met.
+- The capacity constraints of the robots are not exceeded.
+Minimize the total travel cost for all tours.
+You can refer to the insights provided below to solve the problem.
+****
+Insights from "A Novel Heuristic Algorithm for CVRP"
+
+Authors: Sena Kır, Harun Reşit Yazgan, Emre Tüncel
+
+Key Insights:
+
+1. Algorithm Overview:
+   - Combines tabu search and adaptive large neighborhood search (ALNS) to address the complexity of CVRP, effective in large-scale scenarios.
+   - Incorporates custom-designed destroy/repair operators that consider both route sequence and vehicle capacity.
+
+2. Performance on Benchmarks:
+   - Demonstrates superior performance on benchmark problems, providing solutions quickly and efficiently with competitive accuracy.
+   - Notably effective in reducing computational time compared to existing methods.
+
+3. Real-World Application:
+   - Successfully applied to a real-life CVRP for a company in Sakarya, Turkey, leading to significant operational improvements.
+   - Comparative analysis showed that the heuristic outperforms the company's previous methods, highlighting its practical viability and efficiency.
+
+4. Special Features:
+   - Features innovative methods such as a relocation procedure that adjusts routes based on proximity and capacity constraints.
+   - Utilizes a movement list to avoid cycling and enhance the diversity of solutions explored.
+
+5. Theoretical Contributions:
+   - Supports infeasible intermediate solutions, broadening the search space and potentially leading to better final solutions.
+   - Employs an adaptive memory and flexible parameter settings to optimize performance dynamically based on the problem's characteristics.
+
+6. Implementation and Results:
+   - Detailed implementation results show that the algorithm performs well against known benchmarks, improving on the best-known solutions for several instances.
+
+This structured approach not only enhances understanding of heuristic optimizations for CVRP but also provides a robust framework for tackling similar logistics and distribution challenges.
+****
+###
+
+###
+Format Requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at the depot city 0.
+2) Please output the total travel cost for each tour and the overall total travel cost.
+3) Ensure that the demand of each city is met and the capacity constraints of each robot are not violated.
+
+For example, if there are two robots with the following tours and costs:
+Robot 0: 0 -> 1 -> 2 -> 0 with a travel cost of 50
+Robot 1: 0 -> 3 -> 4 -> 0 with a travel cost of 60
+then the output should be:
+
+Robot 0 Tour: [0, 1, 2, 0]
+Robot 0 Total Travel Cost: 50
+
+Robot 1 Tour: [0, 3, 4, 0]
+Robot 1 Total Travel Cost: 60
+
+Overall Total Travel Cost: 110
+###

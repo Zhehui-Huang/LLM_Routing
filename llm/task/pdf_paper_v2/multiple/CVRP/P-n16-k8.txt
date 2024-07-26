@@ -1,0 +1,114 @@
+###
+Environment information
+===
+There are 16 cities.
+Cities and Coordinates:
+Depot city 0: (30, 40)
+City 1: (37, 52)
+City 2: (49, 49)
+City 3: (52, 64)
+City 4: (31, 62)
+City 5: (52, 33)
+City 6: (42, 41)
+City 7: (52, 41)
+City 8: (57, 58)
+City 9: (62, 42)
+City 10: (42, 57)
+City 11: (27, 68)
+City 12: (43, 67)
+City 13: (58, 48)
+City 14: (58, 27)
+City 15: (37, 69)
+
+Demand list:
+City 0: 0
+City 1: 19
+City 2: 30
+City 3: 16
+City 4: 23
+City 5: 11
+City 6: 31
+City 7: 15
+City 8: 28
+City 9: 8
+City 10: 8
+City 11: 7
+City 12: 14
+City 13: 6
+City 14: 19
+City 15: 11
+###
+
+###
+Robot Information
+===
+- Number of robots: 8. Robot id starts from 0.
+- The capacity of each robot: 35
+- Starting location: All robots start at depot city 0.
+- Travel capability: Robots can travel between any two cities.
+- Travel cost: Calculated as the Euclidean distance between two cities.
+###
+
+###
+Task Description
+===
+The robots must collectively deliver goods to all cities, excluding the depot city, and then return to the depot city after completing their deliveries.
+Each robot has a specified carrying capacity.
+Each city has a specific demand that must be met.
+The objective is to determine the shortest possible tours for the robots while ensuring that:
+- The demand of each city is fully met.
+- The capacity constraints of the robots are not exceeded.
+Minimize the total travel cost for all tours.
+You can refer to the insights provided below to solve the problem.
+****
+Enhanced Clarke-Wright Savings Algorithm for Capacitated Vehicle Routing Problem (CVRP)
+
+Authors: Tantikorn Pichpibul and Ruengsak Kawtummachai
+
+Key Insights:
+
+1. Introduction to CVRP:
+   - CVRP optimizes the delivery routes from a depot to various customers, ensuring no vehicle capacity is exceeded.
+
+2. Clarke-Wright Savings Algorithm:
+   - Focuses on connecting routes that maximize travel cost savings. The enhancements aim to improve these connections.
+
+3. New Enhancements:
+   - Introduce a two-phase probabilistic mechanism and a route post-improvement procedure to enhance solution quality.
+
+4. Two-Phase Probabilistic Mechanism:
+   - Introduces randomness in route selection to escape the original algorithm's greedy nature, potentially leading to better solutions.
+
+5. Route Post-Improvement Procedure:
+   - Further local optimizations, like customer swaps and reassignments, are performed to refine the solution after initial configurations.
+
+6. Computational Results:
+   - Demonstrates significant improvements over the original method in terms of solution quality across various test scenarios.
+
+7. Conclusion:
+   - The enhancements make the Clarke-Wright Savings Algorithm a competitive option for solving complex CVRP instances efficiently.
+
+This detailed understanding can help in implementing new routing algorithms or improving existing logistics and delivery systems.
+****
+###
+
+###
+Format Requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at the depot city 0.
+2) Please output the total travel cost for each tour and the overall total travel cost.
+3) Ensure that the demand of each city is met and the capacity constraints of each robot are not violated.
+
+For example, if there are two robots with the following tours and costs:
+Robot 0: 0 -> 1 -> 2 -> 0 with a travel cost of 50
+Robot 1: 0 -> 3 -> 4 -> 0 with a travel cost of 60
+then the output should be:
+
+Robot 0 Tour: [0, 1, 2, 0]
+Robot 0 Total Travel Cost: 50
+
+Robot 1 Tour: [0, 3, 4, 0]
+Robot 1 Total Travel Cost: 60
+
+Overall Total Travel Cost: 110
+###

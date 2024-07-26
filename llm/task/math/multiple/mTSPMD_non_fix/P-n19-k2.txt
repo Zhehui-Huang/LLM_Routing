@@ -41,7 +41,7 @@ Each robot starts from a designated depot but does not need to return to the dep
 The robots can stop at any city as their endpoint.
 The goal is to determine the shortest tours for each robot while minimizing the total travel cost for all robots combined.
 Ensure that each city is visited exactly once and that the tours are optimized for the lowest total travel distance or cost.
-You can use the following mathematical formulation to solve the problem:
+You can refer to the mathematical formulation provided below to solve the problem:
 ****
 \begin{itemize}
     \item $V$: Set of nodes, partitioned into $D$ (depots) and $V'$ (customer nodes).

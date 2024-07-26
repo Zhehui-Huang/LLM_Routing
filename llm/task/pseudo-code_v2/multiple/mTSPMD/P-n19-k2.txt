@@ -42,7 +42,7 @@ The robots must collectively visit all cities exactly once and then return to th
 Each robot starts and ends at its assigned depot.
 The objective is to determine the shortest possible tours for each robot while minimizing the total travel cost for all robots combined.
 Ensure that each city is visited exactly once, and each robot returns to its starting depot after completing its tour.
-You can use the following pseudocode to solve the problem:
+You can refer to the pseudocode provided below to solve the problem:
 ****
 
 \subsection*{Initialization}

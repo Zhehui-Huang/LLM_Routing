@@ -73,7 +73,7 @@ The objective is to determine the shortest possible tours for the robots while e
 - The demand of each city is fully met.
 - The capacity constraints of the robots are not exceeded.
 Minimize the total travel cost for all tours.
-You can use the following mathematical formulation to solve the problem:
+You can refer to the mathematical formulation provided below to solve the problem:
 ****
 The Capacitated Vehicle Routing Problem (CVRP) aims to find a set of minimum total cost routes for a fleet of capacitated vehicles based at a single depot, to serve a set of customers under the following constraints:
 \begin{enumerate}

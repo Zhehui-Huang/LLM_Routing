@@ -185,15 +185,17 @@ def get_multi_task_info(task_name, shot_type, file_path):
         extra_content = ''
     else:
         if shot_type == 'math':
-            context_type = 'mathematical formulation'
+            context_type = 'You can refer to the mathematical formulation provided below to solve the problem:\n'
         elif shot_type == 'pseudo-code':
-            context_type = 'pseudocode'
+            context_type = 'You can refer to the pseudocode provided below to solve the problem:\n'
+        elif shot_type == 'pdf_paper':
+            context_type = f'You can refer to the insights provided below to solve the problem.\n'
         else:
             raise ValueError(f'Invalid shot type: {shot_type}')
 
         context = read_context(file_path=file_path)
         extra_content = (
-            f'You can use the following {context_type} to solve the problem:\n'
+            f'{context_type}'
             f'****\n'
             f'{context}\n'
             f'****\n'

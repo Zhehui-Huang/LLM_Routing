@@ -1,0 +1,94 @@
+###
+Environment information
+===
+There are 19 cities.
+Cities and Coordinates:
+Depot city 0: (30, 40)
+Depot city 1: (37, 52)
+City 2: (49, 43)
+City 3: (52, 64)
+City 4: (31, 62)
+City 5: (52, 33)
+City 6: (42, 41)
+City 7: (52, 41)
+City 8: (57, 58)
+City 9: (62, 42)
+City 10: (42, 57)
+City 11: (27, 68)
+City 12: (43, 67)
+City 13: (58, 27)
+City 14: (37, 69)
+City 15: (61, 33)
+City 16: (62, 63)
+City 17: (63, 69)
+City 18: (45, 35)
+###
+
+###
+Robot Information
+===
+- Number of robots: 2. Robot id starts from 0.
+- Starting and Ending Locations:
+Robot 0 starts and ends at depot city 0.
+Robot 1 starts and ends at depot city 1.
+- Travel Capability: Robots can travel between any two cities.
+- Travel Cost: Calculated as the Euclidean distance between two cities.
+###
+
+###
+Task Description
+===
+The robots must collectively visit all cities exactly once and then return to their respective depots.
+Each robot starts and ends at its assigned depot.
+The objective is to determine the shortest possible tours for each robot while minimizing the total travel cost for all robots combined.
+Ensure that each city is visited exactly once, and each robot returns to its starting depot after completing its tour.
+You can refer to the insights provided below to solve the problem.
+****
+Ant Colony Optimization for Fixed Destination Multi-Depot mTSP
+
+Authors: Soheil Ghafurian, Nikbakhsh Javadian
+Institution: Department of Industrial Engineering, Mazandaran University of Science and Technology, Iran
+
+Abstract:
+The paper presents an Ant Colony System (ACS) to solve the complex problem where multiple salesmen operate from several depots and must return to their original starting points after completing their tours. Each city is visited by exactly one salesman, with the aim to minimize the total length of the tours.
+
+Key Insights:
+
+1. Problem Complexity:
+   - The fixed destination multi-depot mTSP is noted for its high complexity due to multiple depots and the requirement for each salesman to return to their starting city.
+
+2. Ant Colony System (ACS) Implementation:
+   - The ACS is tailored to manage the additional complexity by modifying the transition probabilities and pheromone updates, which guide the ants in constructing solutions that consider multiple depots and fixed endpoints.
+
+3. Algorithm Enhancements:
+   - Includes a pheromone evaporation mechanism and dynamic updates based on the quality of the solutions found, which helps avoid local optima and improves the convergence toward optimal solutions.
+
+4. Experimental Results:
+   - Comparative results with Lingo 8.0, which uses exact methods, show that the ACS provides competitive solutions with significantly reduced computational times, especially as the problem size increases.
+
+5. Real-world Application Potential:
+   - Given its effectiveness and efficiency, this ACS approach is suitable for large-scale logistics and distribution problems where multiple depots are involved, and each operation cycle needs to reset at the origin.
+
+These insights offer a comprehensive understanding of the application of an ant colony system to solve a particularly challenging variant of the mTSP, highlighting both its practical implications and potential for further research and optimization.
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at its assigned depot.
+2) Please output the total travel cost for each tour and the overall total travel cost.
+
+For example, if there are two robots with the following tours and costs:
+Robot 0 (Depot 0): 0 -> 2 -> 3 -> 0 with a travel cost of 50
+Robot 1 (Depot 1): 1 -> 4 -> 5 -> 1 with a travel cost of 60
+then the output should be:
+
+Robot 0 Tour: [0, 2, 3, 0]
+Robot 0 Total Travel Cost: 50
+
+Robot 1 Tour: [1, 4, 5, 1]
+Robot 1 Total Travel Cost: 60
+
+Overall Total Travel Cost: 110
+###

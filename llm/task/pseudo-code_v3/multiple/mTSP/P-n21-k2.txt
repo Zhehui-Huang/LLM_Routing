@@ -42,7 +42,7 @@ The robots must collectively visit all cities exactly once, excluding the depot 
 Each robot starts and ends its tour at the depot.
 The objective is to determine the shortest possible tours for the robots while minimizing the total travel cost.
 Ensure that every city, except the depot, is visited exactly once.
-You can use the following pseudocode to solve the problem:
+You can refer to the pseudocode provided below to solve the problem:
 ****
 \documentclass{article}
 \usepackage{amsmath}

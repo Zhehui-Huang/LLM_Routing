@@ -1,0 +1,88 @@
+###
+Environment information
+===
+There are 16 cities.
+Cities and Coordinates:
+Depot city 0: (30, 40)
+City 1: (37, 52)
+City 2: (49, 49)
+City 3: (52, 64)
+City 4: (31, 62)
+City 5: (52, 33)
+City 6: (42, 41)
+City 7: (52, 41)
+City 8: (57, 58)
+City 9: (62, 42)
+City 10: (42, 57)
+City 11: (27, 68)
+City 12: (43, 67)
+City 13: (58, 48)
+City 14: (58, 27)
+City 15: (37, 69)
+###
+
+###
+Robot Information
+===
+- Number of robots: 8. Robot id starts from 0.
+- Starting location: All robots start at depot city 0.
+- Travel capability: Robots can travel between any two cities.
+- Travel cost: Calculated as the Euclidean distance between two cities.
+###
+
+###
+Task Description
+===
+The robots must collectively visit all cities exactly once, excluding the depot city as a destination, and then return to the depot city after completing their tours.
+Each robot starts and ends its tour at the depot.
+The objective is to determine the shortest possible tours for the robots while minimizing the total travel cost.
+Ensure that every city, except the depot, is visited exactly once.
+You can refer to the insights provided below to solve the problem.
+****
+Generalized k-Opt Exchange Procedure for the mTSP
+
+Authors: Jean-Yves Potvin, Guy Lapalme, Jean-Marc Rousseau
+
+Abstract:
+This paper introduces a technique that generalizes the classical k-opt exchange by allowing exchanges that lead to the partition of a single tour into multiple subtours, which are then merged back into an equivalent single tour. This method enhances the k-opt procedure by expanding the set of exchange opportunities, which is particularly effective for mTSP problems with time windows.
+
+Key Features of the Generalized k-Opt Procedure:
+1. Generalized k-Changes:
+   - Considers "generalized" k-changes, which involve splitting a tour into multiple subtours. These subtours are feasible if each contains at least one copy of the depot, offering more exchange opportunities.
+
+2. Feasibility of New Solutions:
+   - New solutions are feasible if at least one copy of the depot is included in each subchain, allowing more complex changes than traditional methods.
+
+3. Advantages Over Classical Methods:
+   - This generalized approach is shown to be more powerful than the classical k-opt due to its ability to consider a broader range of potential solutions.
+
+4. Performance with Time Windows:
+   - Particularly advantageous for mTSP with time windows, as it accommodates constraints more effectively than traditional methods.
+
+5. Numerical Results:
+   - Presents numerical results demonstrating the effectiveness of this method on both classical mTSP and mTSP with time windows, showing significant improvements over existing solutions.
+
+Conclusion:
+The generalized k-opt exchange procedure provides a robust framework for solving mTSP problems, offering substantial improvements, especially in cases with additional constraints like time windows.
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at the depot city 0.
+2) Please output the total travel cost for each tour and the overall total travel cost.
+
+For example, if there are two robots with the following tours and costs:
+Robot 0: 0 -> 1 -> 2 -> 0 with a travel cost of 50
+Robot 1: 0 -> 3 -> 4 -> 0 with a travel cost of 60
+then the output should be:
+
+Robot 0 Tour: [0, 1, 2, 0]
+Robot 0 Total Travel Cost: 50
+
+Robot 1 Tour: [0, 3, 4, 0]
+Robot 1 Total Travel Cost: 60
+
+Overall Total Travel Cost: 110
+###

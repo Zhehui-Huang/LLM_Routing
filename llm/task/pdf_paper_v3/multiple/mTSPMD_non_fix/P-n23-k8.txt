@@ -1,0 +1,103 @@
+###
+Environment information
+===
+There are 23 cities.
+Cities and Coordinates:
+Depot city 0: (30, 40)
+Depot city 1: (37, 52)
+Depot city 2: (49, 49)
+Depot city 3: (52, 64)
+Depot city 4: (31, 62)
+Depot city 5: (52, 33)
+Depot city 6: (42, 41)
+Depot city 7: (52, 41)
+City 8: (57, 58)
+City 9: (62, 42)
+City 10: (42, 57)
+City 11: (27, 68)
+City 12: (43, 67)
+City 13: (58, 48)
+City 14: (58, 27)
+City 15: (37, 69)
+City 16: (38, 46)
+City 17: (61, 33)
+City 18: (62, 63)
+City 19: (63, 69)
+City 20: (45, 35)
+City 21: (32, 39)
+City 22: (56, 37)
+###
+
+###
+Robot Information
+===
+- Number of robots: 8. Robot id starts from 0.
+- Starting location: All robots start at depot city 0.
+- Travel capability: Robots can travel between any two cities.
+- Travel cost: Calculated as the Euclidean distance between two cities.
+###
+
+###
+Task Description
+===
+The robots need to collectively visit all cities exactly once.
+Each robot starts from a designated depot but does not need to return to the depot after completing its tour.
+The robots can stop at any city as their endpoint.
+The goal is to determine the shortest tours for each robot while minimizing the total travel cost for all robots combined.
+Ensure that each city is visited exactly once and that the tours are optimized for the lowest total travel distance or cost.
+You can refer to the insights provided below to solve the problem.
+****
+A Comparative Study of Genetic Algorithms, Simulated Annealing and Tabu Search for Non-fixed Destination Multi-depot Multiple Traveling Salesman Problem
+
+Authors: Fereydoun Adbesh, Kamran Kardel
+Institution: Department of Industrial Engineering, Mazandaran University of Science and Technology, Babol, Iran
+
+Abstract:
+The paper evaluates three meta-heuristics—Genetic Algorithms (GAs), Simulated Annealing (SA), and Tabu Search (TS)—for solving the non-fixed destination multi-depot multiple traveling salesmen problem (MmTSP). This variant allows salesmen to start from multiple depots and return to any starting city, maintaining the number of cities per depot constant. The study compares the theoretical properties and computational performance of these algorithms against optimal solutions obtained by Lingo 8.
+
+Key Insights:
+
+1. Problem Complexity:
+   - MmTSP involves salesmen starting from multiple depots without the necessity to return to their original depots. It represents a significant challenge due to the flexible endpoints and multiple depots, which increase the complexity of routing decisions.
+
+2. Meta-heuristic Approaches:
+   - Genetic Algorithms (GAs) utilize custom chromosome designs to optimize routes.
+   - Simulated Annealing (SA) adapts by allowing worse moves to escape local optima, with a controlled cooling schedule.
+   - Tabu Search (TS) employs memory structures to avoid revisiting recent solutions, enhancing exploration of the solution space.
+
+3. Comparative Performance:
+   - SA and TS demonstrate close-to-optimal solutions, particularly effective in medium to large-sized problems.
+   - GAs show competitive performance but are slightly less effective compared to SA and TS.
+
+4. Practical Applications:
+   - Suitable for complex logistics and distribution challenges involving multiple depots where routing flexibility significantly impacts operational efficiency and cost.
+
+5. Computational Efficiency:
+   - The study highlights the efficiency of SA for faster solutions, whereas TS offers robustness and high-quality solutions, particularly in larger scenarios.
+
+6. Future Directions:
+   - Further refinement of these meta-heuristics could explore integrating advanced features like dynamic adaptation to problem constraints and real-time data.
+
+These insights provide a foundation for utilizing advanced heuristic methods in solving complex routing problems in logistics and distribution, characterized by multiple depots and flexible endpoints.
+****
+###
+
+###
+Format requirements
+===
+1) Please output the tours for each robot as a list of city indices. Each tour should start and end at its assigned depot.
+2) Please output the total travel cost for each tour and the overall total travel cost.
+
+For example, if there are two robots with the following tours and costs:
+Robot 0 (Depot 0): 0 -> 2 -> 3 -> 0 with a travel cost of 50
+Robot 1 (Depot 1): 1 -> 4 -> 5 -> 1 with a travel cost of 60
+then the output should be:
+
+Robot 0 Tour: [0, 2, 3, 0]
+Robot 0 Total Travel Cost: 50
+
+Robot 1 Tour: [1, 4, 5, 1]
+Robot 1 Total Travel Cost: 60
+
+Overall Total Travel Cost: 110
+###
