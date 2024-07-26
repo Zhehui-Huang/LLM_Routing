@@ -33,7 +33,7 @@ FILE_NAME_BIG = [
     # 'P-n51-k10'
 ]
 
-BASE_PATH = '/home/ethan/repository/backup/LLM_Routing/llm'
+BASE_PATH = os.path.join(os.getcwd(), '../')
 
 
 def download_files(file_names, size):

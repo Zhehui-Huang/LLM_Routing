@@ -14,8 +14,10 @@ from verifier import get_executable_unit_test_code
 LA_TIMEZONE = pytz.timezone('America/Los_Angeles')
 
 
-BASE_PATH = '/home/ethan/repository/backup/LLM_Routing/llm'
-OPENAI_API_KEY = "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"
+# BASE_PATH = '/home/ethan/repository/backup/LLM_Routing/llm'
+BASE_PATH = os.getcwd()
+# OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "<YOUR KEY>"
 
 
 def get_results_one_try(
@@ -131,7 +133,15 @@ def get_results_one_try(
 
 def solve_batch(args, tmp_city_num_list):
     # Setup client
-    client = OpenAI(api_key=OPENAI_API_KEY)
+    if args.llm_model == 'llama3.1:8b-instruct-fp16':
+        client = OpenAI(
+            base_url='http://localhost:11434/v1/',
+
+            # required but ignored
+            api_key='ollama',
+        )
+    else:
+        client = OpenAI(api_key=OPENAI_API_KEY)
 
     if args.shot_item == 'zero':
         path_prex = f'extra_info'
@@ -246,8 +256,8 @@ def solve_problem(args):
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--llm_model', type=str, default='gpt-4-turbo',
-                        choices=['gpt-4-turbo-2024-04-09', 'gpt-4o-2024-05-13', 'gpt-4o-mini-2024-07-18'])
+    parser.add_argument('--llm_model', type=str, default='llama3.1:8b-instruct-fp16',
+                        choices=['gpt-4-turbo-2024-04-09', 'gpt-4o-2024-05-13', 'gpt-4o-mini-2024-07-18', 'llama3.1:8b-instruct-fp16'])
     parser.add_argument('--reflect_num', type=int, default=3, help='Default: total 3, self reflect 2 times.')
     parser.add_argument('--robot_num', type=str, default='single', choices=['single', 'multiple'],
                         help='Default: single')

@@ -31,7 +31,7 @@ def list_files_in_directory(directory):
 
 
 def extract_import():
-    folder_path = '/home/ethan/repository/LLM_Routing/llm/extra_info/solution'
+    folder_path = os.path.join(os.getcwd(), '../extra_info/solution')
     all_import_lines_list = []
     file_path_list = list_files_in_directory(directory=folder_path)
     for file_path in file_path_list:
@@ -46,7 +46,8 @@ def extract_import():
 
 
 def extract_module_not_found():
-    folder_path = '/home/ethan/repository/LLM_Routing/llm/extra_info/log'
+    # folder_path = '/home/ethan/repository/LLM_Routing/llm/extra_info/log'
+    folder_path = os.path.join(os.getcwd(), '../extra_info/log')
     all_import_lines_list = []
     file_path_list = list_files_in_directory(directory=folder_path)
     for file_path in file_path_list:

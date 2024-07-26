@@ -52,8 +52,13 @@ def ask_llm(client, llm_model, messages, token_file_path, notes=''):
     print(f"[{cur_time.strftime('%Y-%m-%d %H:%M:%S')}]\tFinished.\tResponse time: {response_time:.2f} seconds.")
 
     response_content = completion.choices[0].message.content
-    calculate_token_num(messages=messages, response_content=response_content, model=llm_model, token_file_path=token_file_path,
-                        notes=notes)
+    if llm_model == 'llama3.1:8b-instruct-fp16':
+        calculate_token_num(messages=messages, response_content=response_content, model='gpt-4-turbo', token_file_path=token_file_path,
+                            notes=notes)
+    else:
+        calculate_token_num(messages=messages, response_content=response_content, model=llm_model, token_file_path=token_file_path,
+                            notes=notes)
+
     return response_content, response_time
 
 
