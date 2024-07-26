@@ -129,7 +129,7 @@ def get_results_one_try(
         raise ValueError(f"Unknown unit test status: {unit_test_status}")
 
 
-def solve_batch(args):
+def solve_batch(args, tmp_city_num_list):
     # Setup client
     client = OpenAI(api_key=OPENAI_API_KEY)
 
@@ -154,7 +154,7 @@ def solve_batch(args):
     base_track_file_path = f'{BASE_PATH}/{path_prex}/track/{args.robot_num}'
     base_token_file_path = f'{BASE_PATH}/{path_prex}/token/{args.robot_num}'
 
-    for city_num in CITY_NUM_LIST:
+    for city_num in tmp_city_num_list:
 
         if args.robot_num == 'single':
             cur_task_list = SINGLE_TASK_LIST
@@ -172,9 +172,10 @@ def solve_batch(args):
             # Maintain exec_detail_path
             for file_path, file_name in zip(file_path_list, file_name_list):
                 # 0. Extract city number from file name
-                file_city_num = extract_value(file_name=file_name)
-                if int(file_city_num) != city_num:
-                    continue
+                if args.robot_num == 'single':
+                    file_city_num = extract_value(file_name=file_name)
+                    if int(file_city_num) != city_num:
+                        continue
 
                 print(f"Task file path: {file_path}")
                 file_base_name = file_name[:-4]
@@ -231,7 +232,16 @@ def solve_batch(args):
 
 
 def solve_problem(args):
-    solve_batch(args=args)
+    if args.city_num_list == '10':
+        tmp_city_num_list = [10]
+    elif args.city_num_list == '15':
+        tmp_city_num_list = [15]
+    elif args.city_num_list == '20':
+        tmp_city_num_list = [20]
+    else:
+        raise ValueError(f"Unknown city num_list: {args.city_num_list}")
+
+    solve_batch(args=args, tmp_city_num_list=tmp_city_num_list)
 
 
 def get_args():
@@ -244,6 +254,8 @@ def get_args():
     parser.add_argument('--shot_item', type=str, default='zero',
                         choices=['zero', 'math', 'pseudo-code_v2', 'pseudo-code_v3', 'pdf_paper_v2', 'pdf_paper_v3'],
                         help='Default: single')
+    parser.add_argument('--city_num_list', type=str, default='10', choices=['10', '15', '20'],
+                        help='Default: 10')
     return parser.parse_args()
 
 
