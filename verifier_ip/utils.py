@@ -8,6 +8,25 @@ import matplotlib.pyplot as plt
 from gurobipy import GRB
 
 TASK_BASE_PATH = os.path.join(os.getcwd(), "../../llm/task/zero")
+LLM_FOLDER_PATH = os.path.join(os.getcwd(), "../../llm")
+
+def extract_route_and_cost(file_path):
+    tour = []
+    total_travel_cost = None
+    output_found = False
+
+    with open(file_path, 'r') as file:
+        for line in file:
+            if 'OUTPUT' in line:
+                output_found = True
+            if output_found:
+                if line.startswith('Tour:'):
+                    tour = list(map(int, line.split(':')[1].strip()[1:-1].split(',')))
+                elif line.startswith('Total travel cost:'):
+                    total_travel_cost = float(line.split(':')[1].strip())
+
+    return tour, total_travel_cost
+
 
 def calculate_distance_matrix(cities):
     n = len(cities)
