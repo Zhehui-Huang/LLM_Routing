@@ -2,7 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import networkx as nx
 from gurobipy import Model, GRB, quicksum
-
+import gurobipy as gp
+from gurobipy import GRB
 
 import math
 import os
@@ -126,75 +127,145 @@ def solve_mTSP_max(num_locations, num_salesmen,  costs):
         print("No optimal solution found")
         return None, None
 
+# def solve_mTSP_max_verifier(num_locations, num_salesmen,  costs, sol_x):
+#     N = num_locations
+#     M = num_salesmen
+#     # Create model
+#     m = Model()
+    
+#     # Variables
+#     x = m.addVars(N, N, M, vtype=GRB.BINARY, name='x')
+#     u = m.addVars(N, M, vtype=GRB.CONTINUOUS, name='u')
+#     L = m.addVar(vtype=GRB.CONTINUOUS, name='L')
+    
+#     # Objective: Minimize the maximum route length
+#     m.setObjective(L, GRB.MINIMIZE)
+    
+#     # Constraints
+#     # Each city is visited exactly once
+#     m.addConstrs((quicksum(x[i, j, k] for k in range(M) for j in range(N) if j != i) == 1 for i in range(1, N)), name='visit_once')
+    
+#     # Each salesman starts and ends at the depot
+#     m.addConstrs((quicksum(x[0, j, k] for j in range(1, N)) == 1 for k in range(M)), name='start_depot')
+#     m.addConstrs((quicksum(x[i, 0, k] for i in range(1, N)) == 1 for k in range(M)), name='end_depot')
+    
+#     # Subtour elimination (MTZ constraints)
+#     m.addConstrs((u[i, k] - u[j, k] + N * x[i, j, k] <= N - 1 for i in range(1, N) for j in range(1, N) if i != j for k in range(M)), name='subtour_elimination')
+#     m.addConstrs((u[i, k] >= 2 for i in range(1, N) for k in range(M)), name='u_lower_bound')
+#     m.addConstrs((u[i, k] <= N for i in range(1, N) for k in range(M)), name='u_upper_bound')
+    
+#     # Flow constraints to ensure the continuity of each tour
+#     m.addConstrs((quicksum(x[i, j, k] for j in range(N) if j != i) - quicksum(x[j, i, k] for j in range(N) if j != i) == 0 for i in range(N) for k in range(M)), name='flow_continuity')
+    
+#     # Maximum route length constraint
+#     m.addConstrs((quicksum(costs[i][j] * x[i, j, k] for i in range(N) for j in range(N) if i != j) <= L for k in range(M)), name='max_route_length')
+    
+    
+    
+#     for i in range(N):
+#         for j in range(N):
+#             for k in range(M):
+#                 m.addConstr(x[i, j, k] ==sol_x[i][j][k]) 
+                
+                
+#     # Optimize model
+#     m.optimize()
+    
+#     # Print solution
+#     if m.status == GRB.OPTIMAL:
+#         print('Optimal value:', L.X)
+#         routes = []
+#         for k in range(M):
+#             print(f'Salesman {k + 1}:')
+#             for i in range(N):
+#                 for j in range(N):
+#                     if x[i, j, k].X > 0.5:
+#                         routes.append((i, j))
+#         return routes, m.objVal
+#     else:
+#         print("No optimal solution found")
+#         return None, None
+
+
+# def route2edges(routes, num_city, num_vehicle):
+#     # route = [0, 1, 2, 3， 0]
+#     x = np.zeros((num_city, num_city, num_vehicle))
+#     assert len(routes)==num_vehicle
+#     for vehicle in range(len(routes)):
+#         route = routes[vehicle]
+#         for i in range(len(route)-1):
+#             x[route[i], route[i+1], vehicle] = 1
+#     return x
+
+
+
+
 def solve_mTSP_max_verifier(num_locations, num_salesmen,  costs, sol_x):
-    N = num_locations
-    M = num_salesmen
-    # Create model
-    m = Model()
-    
+    n = num_locations  # Number of nodes (including depot)
+    m = num_salesmen   # Number of salesmen
+
+    # Model
+    model = gp.Model()
+
     # Variables
-    x = m.addVars(N, N, M, vtype=GRB.BINARY, name='x')
-    u = m.addVars(N, M, vtype=GRB.CONTINUOUS, name='u')
-    L = m.addVar(vtype=GRB.CONTINUOUS, name='L')
-    
-    # Objective: Minimize the maximum route length
-    m.setObjective(L, GRB.MINIMIZE)
-    
+    x = model.addVars(n, n, vtype=GRB.BINARY, name='x')
+    u = model.addVars(n, vtype=GRB.CONTINUOUS, name='u')
+
+    # Objective
+    model.setObjective(gp.quicksum(costs[i][j] * x[i, j] for i in range(n) for j in range(n)), GRB.MINIMIZE)
+
     # Constraints
-    # Each city is visited exactly once
-    m.addConstrs((quicksum(x[i, j, k] for k in range(M) for j in range(N) if j != i) == 1 for i in range(1, N)), name='visit_once')
-    
-    # Each salesman starts and ends at the depot
-    m.addConstrs((quicksum(x[0, j, k] for j in range(1, N)) == 1 for k in range(M)), name='start_depot')
-    m.addConstrs((quicksum(x[i, 0, k] for i in range(1, N)) == 1 for k in range(M)), name='end_depot')
-    
+    model.addConstr(gp.quicksum(x[0, j] for j in range(1, n)) == m, "depot_departure")
+    model.addConstr(gp.quicksum(x[j, 0] for j in range(1, n)) == m, "depot_return")
+
+    for i in range(1, n):
+        model.addConstr(gp.quicksum(x[i, j] for j in range(n) if j != i) == 1, f"visit_{i}")
+        model.addConstr(gp.quicksum(x[j, i] for j in range(n) if j != i) == 1, f"return_{i}")
+
     # Subtour elimination (MTZ constraints)
-    m.addConstrs((u[i, k] - u[j, k] + N * x[i, j, k] <= N - 1 for i in range(1, N) for j in range(1, N) if i != j for k in range(M)), name='subtour_elimination')
-    m.addConstrs((u[i, k] >= 2 for i in range(1, N) for k in range(M)), name='u_lower_bound')
-    m.addConstrs((u[i, k] <= N for i in range(1, N) for k in range(M)), name='u_upper_bound')
-    
-    # Flow constraints to ensure the continuity of each tour
-    m.addConstrs((quicksum(x[i, j, k] for j in range(N) if j != i) - quicksum(x[j, i, k] for j in range(N) if j != i) == 0 for i in range(N) for k in range(M)), name='flow_continuity')
-    
-    # Maximum route length constraint
-    m.addConstrs((quicksum(costs[i][j] * x[i, j, k] for i in range(N) for j in range(N) if i != j) <= L for k in range(M)), name='max_route_length')
-    
-    
-    
-    for i in range(N):
-        for j in range(N):
-            for k in range(M):
-                m.addConstr(x[i, j, k] ==sol_x[i][j][k]) 
+    for i in range(1, n):
+        for j in range(1, n):
+            if i != j:
+                model.addConstr(u[i] - u[j] + (n * x[i, j]) <= n - 1)
                 
-                
-    # Optimize model
-    m.optimize()
     
-    # Print solution
-    if m.status == GRB.OPTIMAL:
-        print('Optimal value:', L.X)
+    for i in range(n):
+        for j in range(n):
+                model.addConstr(x[i, j] ==sol_x[i][j])             
+    
+                
+    # Optimize
+    model.optimize()
+
+
+    
+    # Print the results
+    if model.status == GRB.OPTIMAL:
+        print("Optimal solution found:")
+        print("Objective value:", model.objVal)
         routes = []
-        for k in range(M):
-            print(f'Salesman {k + 1}:')
-            for i in range(N):
-                for j in range(N):
-                    if x[i, j, k].X > 0.5:
-                        routes.append((i, j))
-        return routes, m.objVal
+        for i in range(n):
+            for j in range(n):
+                if x[i, j].X > 0.5:  # if x[i, j] is 1
+                    #print(f"x[{i},{j}] = 1")
+                    routes.append((i, j))
+        return routes, model.objVal
     else:
         print("No optimal solution found")
         return None, None
 
 
+
 def route2edges(routes, num_city, num_vehicle):
     # route = [0, 1, 2, 3， 0]
-    x = np.zeros((num_city, num_city, num_vehicle))
+    x = np.zeros((num_city, num_city))
     assert len(routes)==num_vehicle
     for vehicle in range(len(routes)):
         route = routes[vehicle]
         for i in range(len(route)-1):
-            x[route[i], route[i+1], vehicle] = 1
+            x[route[i], route[i+1]] = 1
     return x
+
 
 
     

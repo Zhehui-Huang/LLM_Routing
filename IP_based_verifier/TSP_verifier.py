@@ -89,6 +89,22 @@ def solve_tsp(cities, distance_matrix):
         return None, None
 
 
+
+def read_city_locations(file_path):
+    city_locations = []
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+        for line in lines:
+            if "City" in line or "Depot" in line:
+                # Extract coordinates from the line
+                parts = line.split(':')
+                coordinates = parts[1].strip().strip('()').split(', ')
+                x = int(coordinates[0])
+                y = int(coordinates[1])
+                city_locations.append((x, y))
+    return city_locations
+
+
 def solve_tsp_verifier(cities, distance_matrix, sol_x):
     n = len(cities)
 
@@ -141,22 +157,6 @@ def solve_tsp_verifier(cities, distance_matrix, sol_x):
         return tour, model.objVal
     else:
         return None, None
-
-
-
-def read_city_locations(file_path):
-    city_locations = []
-    with open(file_path, 'r') as file:
-        lines = file.readlines()
-        for line in lines:
-            if "City" in line or "Depot" in line:
-                # Extract coordinates from the line
-                parts = line.split(':')
-                coordinates = parts[1].strip().strip('()').split(', ')
-                x = int(coordinates[0])
-                y = int(coordinates[1])
-                city_locations.append((x, y))
-    return city_locations
 
 
 def route2edges(route, num_city):

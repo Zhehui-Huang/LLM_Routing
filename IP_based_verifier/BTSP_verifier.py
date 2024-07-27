@@ -107,68 +107,68 @@ def solve_bottleneck_tsp(cities, distance_matrix):
 
 
 # Function to solve the Bottleneck TSP using the DFJ formulation
-def solve_bottleneck_tsp_verifier(cities, distance_matrix, sol_x):
-    n = len(cities)
+# def solve_bottleneck_tsp_verifier(cities, distance_matrix, sol_x):
+#     n = len(cities)
 
-    # Create a new Gurobi model
-    model = gp.Model("BottleneckTSP")
+#     # Create a new Gurobi model
+#     model = gp.Model("BottleneckTSP")
 
-    # Create variables
-    x = model.addVars(n, n, vtype=GRB.BINARY, name="x")
-    z = model.addVar(vtype=GRB.CONTINUOUS, name="z")
+#     # Create variables
+#     x = model.addVars(n, n, vtype=GRB.BINARY, name="x")
+#     z = model.addVar(vtype=GRB.CONTINUOUS, name="z")
 
-    # Set the objective function to minimize the maximum edge cost
-    model.setObjective(z, GRB.MINIMIZE)
+#     # Set the objective function to minimize the maximum edge cost
+#     model.setObjective(z, GRB.MINIMIZE)
 
-    # Add constraints
-    # Each city must be left exactly once
-    for i in range(n):
-        model.addConstr(gp.quicksum(x[i, j] for j in range(n) if j != i) == 1, name=f"leave_{i}")
+#     # Add constraints
+#     # Each city must be left exactly once
+#     for i in range(n):
+#         model.addConstr(gp.quicksum(x[i, j] for j in range(n) if j != i) == 1, name=f"leave_{i}")
 
-    # Each city must be entered exactly once
-    for j in range(n):
-        model.addConstr(gp.quicksum(x[i, j] for i in range(n) if i != j) == 1, name=f"enter_{j}")
+#     # Each city must be entered exactly once
+#     for j in range(n):
+#         model.addConstr(gp.quicksum(x[i, j] for i in range(n) if i != j) == 1, name=f"enter_{j}")
 
-    # Ensure the bottleneck cost is greater than or equal to each edge cost in the tour
-    for i in range(n):
-        for j in range(n):
-            if i != j:
-                model.addConstr(x[i, j] * distance_matrix[i][j] <= z, name=f"bottleneck_{i}_{j}")
+#     # Ensure the bottleneck cost is greater than or equal to each edge cost in the tour
+#     for i in range(n):
+#         for j in range(n):
+#             if i != j:
+#                 model.addConstr(x[i, j] * distance_matrix[i][j] <= z, name=f"bottleneck_{i}_{j}")
 
-    # DFJ subtour elimination constraints
-    def add_subtour_elimination_constraints(model, x, n):
-        subsets = []
-        for r in range(2, n):
-            subsets.extend(itertools.combinations(range(n), r))
+#     # DFJ subtour elimination constraints
+#     def add_subtour_elimination_constraints(model, x, n):
+#         subsets = []
+#         for r in range(2, n):
+#             subsets.extend(itertools.combinations(range(n), r))
         
-        for subset in subsets:
-            S = set(subset)
-            if 1 <= len(S) <= n - 1:
-                model.addConstr(gp.quicksum(x[i, j] for i in S for j in S if i != j) <= len(S) - 1)
+#         for subset in subsets:
+#             S = set(subset)
+#             if 1 <= len(S) <= n - 1:
+#                 model.addConstr(gp.quicksum(x[i, j] for i in S for j in S if i != j) <= len(S) - 1)
 
-    add_subtour_elimination_constraints(model, x, n)
+#     add_subtour_elimination_constraints(model, x, n)
     
     
     
-    # enforce solution to be the same as sol_x
-    for i in range(n):
-        for j in range(n):
-            model.addConstr(x[i, j] == sol_x[i][j])
+#     # enforce solution to be the same as sol_x
+#     for i in range(n):
+#         for j in range(n):
+#             model.addConstr(x[i, j] == sol_x[i][j])
     
     
-    # Optimize the model
-    model.optimize()
+#     # Optimize the model
+#     model.optimize()
 
-    # Extract the solution
-    if model.status == GRB.OPTIMAL:
-        tour = []
-        for i in range(n):
-            for j in range(n):
-                if x[i, j].x > 0.5:
-                    tour.append((i, j))
-        return tour, model.objVal
-    else:
-        return None, None
+#     # Extract the solution
+#     if model.status == GRB.OPTIMAL:
+#         tour = []
+#         for i in range(n):
+#             for j in range(n):
+#                 if x[i, j].x > 0.5:
+#                     tour.append((i, j))
+#         return tour, model.objVal
+#     else:
+#         return None, None
 
 
 
@@ -213,12 +213,78 @@ def read_city_locations(file_path):
     return city_locations
 
 
+# def route2edges(route, num_city):
+#     # route = [0, 1, 2, 3， 0]
+#     x = np.zeros((num_city, num_city))
+#     for i in range(len(route)-1):
+#         x[route[i], route[i+1]] = 1
+#     return x
+
+
+def solve_bottleneck_tsp_verifier(cities, distance_matrix, sol_x):
+    n = len(cities)
+
+    # Create a new Gurobi model
+    model = gp.Model("TSP")
+
+    # Create variables
+    x = model.addVars(n, n, vtype=GRB.BINARY, name="x")
+
+    # Set the objective function
+    model.setObjective(gp.quicksum(distance_matrix[i][j] * x[i, j] for i in range(n) for j in range(n)), GRB.MINIMIZE)
+
+    # Add constraints
+    # Each city must be left exactly once
+    for i in range(n):
+        model.addConstr(gp.quicksum(x[i, j] for j in range(n) if j != i) == 1, name=f"leave_{i}")
+
+    # Each city must be entered exactly once
+    for j in range(n):
+        model.addConstr(gp.quicksum(x[i, j] for i in range(n) if i != j) == 1, name=f"enter_{j}")
+
+    # DFJ subtour elimination constraints
+    def add_subtour_elimination_constraints(model, x, n):
+        subsets = []
+        for r in range(2, n):
+            subsets.extend(itertools.combinations(range(n), r))
+        
+        for subset in subsets:
+            S = set(subset)
+            if 1 <= len(S) <= n - 1:
+                model.addConstr(gp.quicksum(x[i, j] for i in S for j in S if i != j) <= len(S) - 1)
+
+    add_subtour_elimination_constraints(model, x, n)
+    
+    
+    # enforce solution to be the same as sol_x
+    for i in range(n):
+        for j in range(n):
+            model.addConstr(x[i, j] == sol_x[i][j])
+    # Optimize the model
+    model.optimize()
+
+    # Extract the solution
+    if model.status == GRB.OPTIMAL:
+        tour = []
+        for i in range(n):
+            for j in range(n):
+                if x[i, j].x > 0.5:
+                    tour.append((i, j))
+        return tour, model.objVal
+    else:
+        return None, None
+
+
 def route2edges(route, num_city):
     # route = [0, 1, 2, 3， 0]
     x = np.zeros((num_city, num_city))
     for i in range(len(route)-1):
         x[route[i], route[i+1]] = 1
     return x
+
+
+
+
 
 # Example usage
 if __name__ == "__main__":
