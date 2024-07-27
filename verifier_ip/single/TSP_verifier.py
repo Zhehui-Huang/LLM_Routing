@@ -74,6 +74,7 @@ def deal_instance(file_name, cities, distance_matrix, oracle_res):
     opt_gap_list = []
     success_list = []
     for instance_try_id in range(5):
+        print(f'{city_num}/{instance_name}/{instance_try_id}')
         tmp_folder_path = os.path.join(
             LLM_FOLDER_PATH,
             f'extra_info/log/single/TSP/{city_num}/{instance_name}/{instance_try_id}'
@@ -84,8 +85,11 @@ def deal_instance(file_name, cities, distance_matrix, oracle_res):
         log_names = os.listdir(max_try_id_path)
         max_log_filename = max(log_names, key=lambda name: int(name.split('_')[1][1]))
 
-        if 'error' in max_log_filename:
-            raise ValueError("Error file found.")
+        if 'error' in max_log_filename or 'timeout' in max_log_filename:
+            print(f"Error file found: {max_log_filename}")
+            success_list.append(0)
+            continue
+            # raise ValueError("Error file found.")
 
         route_res_path = os.path.join(LLM_FOLDER_PATH, f'extra_info/log/single/TSP/'
                                                        f'{city_num}/{instance_name}/{instance_try_id}/{max_try_id}/'
@@ -98,7 +102,9 @@ def deal_instance(file_name, cities, distance_matrix, oracle_res):
         tour, ground_cost = solve_tsp_verifier(cities=cities, distance_matrix=distance_matrix, sol_x=sol_x)
 
         if tour:
-            if not bool(np.isclose(ground_cost, llm_travel_cost, atol=1)):
+            if llm_travel_cost is None:
+                raise ValueError("LLM travel cost is None.")
+            elif not bool(np.isclose(ground_cost, llm_travel_cost, atol=1)):
                 print(f"Costs are not equal. path: {route_res_path}")
 
             cost = ground_cost
@@ -114,7 +120,8 @@ def deal_instance(file_name, cities, distance_matrix, oracle_res):
             opt_gap_list.append(optimality_gap)
             success_list.append(1)
         else:
-            raise ValueError("Tour is empty.")
+            success_list.append(0)
+            # raise ValueError("Tour is empty.")
             # print("***********\tSTART\t***************")
             # print(f'{city_num}/{instance_name}/{instance_try_id}/{max_try_id}/{max_log_filename}')
             # print(f"Infeasible route. {route}\t\tllm_travel_cost: {llm_travel_cost}\t\tground_cost: {ground_cost}")
