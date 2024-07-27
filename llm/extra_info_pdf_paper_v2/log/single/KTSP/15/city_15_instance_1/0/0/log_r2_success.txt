@@ -1,8 +1,0 @@
-OUTPUT:
-Tour: None
-Total travel cost: 118.90
-
-
-ERROR:
-
-

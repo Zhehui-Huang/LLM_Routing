@@ -1,5 +1,0 @@
-- [Requirement 1] The robot has to start and end its tour at the depot city 0.
-- [Requirement 2] The robot must visit exactly 7 cities in total, including the depot city.
-- [Requirement 3] The solution must find the shortest possible route that satisfies these criteria.
-- [Requirement 4] The result should be displayed as a list of city indices representing the tour, starting and ending at city 0.
-- [Requirement 5] The result should also include the total travel cost of the tour, calculated as the sum of the Euclidean distances between consecutive cities visited in the tour.

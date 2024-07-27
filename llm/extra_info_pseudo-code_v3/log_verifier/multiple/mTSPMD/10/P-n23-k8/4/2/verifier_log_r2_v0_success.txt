@@ -1,8 +1,0 @@
-OUTPUT:
-Robot starts and ends at different depots.
-FAIL
-
-
-ERROR:
-
-

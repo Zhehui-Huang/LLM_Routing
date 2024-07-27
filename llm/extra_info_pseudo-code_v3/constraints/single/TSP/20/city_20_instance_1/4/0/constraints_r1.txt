@@ -1,5 +1,0 @@
-- [Requirement 1] The robot starts and ends the tour at the depot city 0.
-- [Requirement 2] The robot must visit all cities exactly once, except the depot city.
-- [Requirement 3] The travel cost between any two cities is calculated using the Euclidean distance.
-- [Requirement 4] The output must include the shortest tour as a list of city indices and the total travel cost.
-- [Requirement 5] Use Christofides algorithm to find an approximate solution for the TSP.

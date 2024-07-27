@@ -1,8 +1,0 @@
-- [Each robot starts and ends its tour at the depot (city 0).]
-- [The demand of each city must be fully met by the deliveries from robots.]
-- [The carrying capacity of each robot should not be exceeded.]
-- [The objective is to minimize the total travel cost for all tours.]
-- [Each robot has a fixed capacity of 35 units.]
-- [There are 8 robots available for use.]
-- [Travel costs between cities are determined by the Euclidean distance.]
-- [All cities, including the depot, are connected and accessible by the robots.]

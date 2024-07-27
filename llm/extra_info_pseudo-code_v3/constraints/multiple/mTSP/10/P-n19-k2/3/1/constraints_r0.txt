@@ -1,6 +1,0 @@
-- [There are 19 cities each identified by a unique index and given specific coordinates.]
-- [There are 2 robots with the task of visiting all cities starting and ending their journey at the depot city (City 0).]
-- [Each city, except for the depot, must be visited exactly once by any of the robots.]
-- [The travel cost between two cities is calculated based on the Euclidean distance between them.]
-- [The objective is to minimize the total travel cost for both robots' tours combined.]
-- [The output should be the list of cities visited by each robot, starting and ending at the depot, and the total travel cost for each tour and combined.]

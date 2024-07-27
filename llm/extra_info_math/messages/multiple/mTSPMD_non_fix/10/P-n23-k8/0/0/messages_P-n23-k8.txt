@@ -1,7 +1,0 @@
-Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/messages/multiple/mTSPMD_non_fix/10/P-n23-k8/0/0/messages_P-n23-k8.txt
-===
-System - LLM_SYSTEM_PROMPT
-User - Task description: P-n23-k8
-Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD_non_fix/10/P-n23-k8/0/0/solution_r0.py
-Another LLM - User - Ask for prompts
-Another LLM - Assistant - Constraints response: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/constraints/multiple/mTSPMD_non_fix/10/P-n23-k8/0/0/constraints_r0.txt

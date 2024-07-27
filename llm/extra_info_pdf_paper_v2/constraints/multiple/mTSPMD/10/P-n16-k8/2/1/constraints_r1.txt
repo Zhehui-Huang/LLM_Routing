@@ -1,7 +1,0 @@
-- [Requirement 1] There are 16 cities, each uniquely identified with indices from 0 to 15.
-- [Requirement 2] There are 8 robots with individual starting and ending points at specified depot cities (0 through 7).
-- [Requirement 3] Each robot must start and end its tour at its assigned depot while visiting each city exactly once across all robots.
-- [Requirement 4] Travel cost between cities is determined by the Euclidean distance between their coordinates.
-- [Requirement 5] The objective is to minimize the total travel cost for all robots combined, ensuring efficient tours for each robot.
-- [Requirement 6] The solution should output tours for each robot starting and ending at their respective depots.
-- [Requirement 7] Each city must be visited by exactly one robot and not be revisited by the same or any other robot within the tour setup.

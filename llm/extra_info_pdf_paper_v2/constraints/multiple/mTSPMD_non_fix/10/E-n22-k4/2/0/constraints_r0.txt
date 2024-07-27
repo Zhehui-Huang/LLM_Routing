@@ -1,6 +1,0 @@
-- [Requirement 1] The environment consists of 22 cities including multiple depots, with robots starting from different specified depot cities.
-- [Requirement 2] All robots begin their journey from depot city 0 and do not require returning to any depot after the completion of their tours.
-- [Requirement 3] The goal is for robots to collectively visit each city exactly once, optimizing to achieve the shortest possible total tour distance.
-- [Requirement 4] Each robot's travel cost between any two cities is calculated using the Euclidean distance formula.
-- [Requirement 5] The solution should minimize the total travel cost for all robots combined.
-- [Requirement 6] The output format must include finely detailed tours for each robot starting and ending at designated depots, individual travel costs for each tour, and the overall total travel cost.

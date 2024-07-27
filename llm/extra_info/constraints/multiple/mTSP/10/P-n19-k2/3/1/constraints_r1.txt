@@ -1,7 +1,0 @@
-- [There are 19 cities with specified coordinates including the depot city.]
-- [There are 2 robots, both starting from the depot city 0.]
-- [All robots must start and end their tours at the depot city.]
-- [Each robot can travel to any city, and the distance between two cities is calculated with the Euclidean formula.]
-- [Each city must be visited exactly once by any one of the robots, excluding the depot city from being a destination.]
-- [The objective is to minimize the total travel cost while ensuring all tours meet the problem constraints.]
-- [Output must include the tour paths for each robot starting and ending at city 0 and the travel costs for each robot's tour, plus the total combined cost.]

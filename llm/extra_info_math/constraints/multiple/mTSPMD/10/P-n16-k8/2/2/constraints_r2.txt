@@ -1,5 +1,0 @@
-- [Each robot must start and end at its assigned depot.]
-- [Each robot must visit each city exactly once, excluding other depots.]
-- [Minimize the total travel cost for all robots combined.]
-- [Travel cost is calculated as the Euclidean distance between two cities.]
-- [The graph of cities is complete and directed, allowing travel between any two cities.]

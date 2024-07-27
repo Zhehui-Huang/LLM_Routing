@@ -1,8 +1,0 @@
-OUTPUT:
-Calculated Maximum Travel Cost: 98.6920458500636
-CORRECT
-
-
-ERROR:
-
-

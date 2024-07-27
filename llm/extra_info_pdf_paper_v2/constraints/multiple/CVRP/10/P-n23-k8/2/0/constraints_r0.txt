@@ -1,7 +1,0 @@
-- [Requirement 1] Robots must start and end their routes at the depot city 0.
-- [Requirement 2] Each city demand must be fully met by the deliveries.
-- [Requirement 3] The capacity of each robot (40 units) must not be exceeded while fulfilling city demands.
-- [Requirement 4] Minimize the total travel cost for all tours combined.
-- [Requirement 5] Ensure using exactly 8 robots for the routes.
-- [Requirement 6] Travel cost between any two cities is calculated using Euclidean distance.
-- [Requirement 7] Each city must be included in some tour for deliveries, excluding depot city 0.

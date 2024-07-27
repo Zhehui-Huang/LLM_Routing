@@ -1,9 +1,0 @@
-OUTPUT:
-
-
-ERROR:
-  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/BTSP/20/city_20_instance_3/0/0/verifier_r2_v0.py", line 25
-    exam        return TEST_FAIL_TEXT
-IndentationError: expected an indented block after 'else' statement on line 24
-
-

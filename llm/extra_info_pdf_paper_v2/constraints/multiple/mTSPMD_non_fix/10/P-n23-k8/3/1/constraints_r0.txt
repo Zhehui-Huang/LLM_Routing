@@ -1,5 +1,0 @@
-- [Requirement 1] Each robot must visit all cities exactly once collectively, with each city being visited by only one robot.
-- [Requirement 2] All robots start their tour from the designated depot city.
-- [Requirement 3] Robots do not need to return to the depot city after completing their tours.
-- [Requirement 4] The aim is to minimize the total travel distance across all robots.
-- [Requirement 5] The solution should optimize for the shortest possible tours for each robot.

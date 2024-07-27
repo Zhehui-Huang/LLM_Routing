@@ -1,3 +1,0 @@
-- [Each city must be visited exactly once by a robot, excluding the start and return at the depot city.]
-- [The total demand served by each robot cannot exceed its carrying capacity of 35.]
-- [All robots must start and finish their tour at the depot city.]

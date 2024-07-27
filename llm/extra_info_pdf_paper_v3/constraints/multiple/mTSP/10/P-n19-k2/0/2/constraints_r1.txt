@@ -1,8 +1,0 @@
-- [There are 19 cities, each identified with a unique index from 0 to 18 and associated coordinates. City 0 is the depot city.]
-- [There are 2 robots available for the task that both start and end their route at the depot city 0.]
-- [Robots must visit all cities exactly once, excluding the depot city, and ensure each tour ends back at the depot.]
-- [Travel cost is the Euclidean distance between two cities.]
-- [Objective is to determine the shortest possible tours for the robots while minimizing the overall total travel cost.]
-- [Travel capability stipulates that robots can travel between any two cities.]
-- [Each robot's tour output should be a list of city indices starting and ending at city 0 (depot).]
-- [Output should include the travel cost for each robot's tour and the combined total travel cost for all tours.]

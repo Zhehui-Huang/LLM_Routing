@@ -1,8 +1,0 @@
-- [Each robot must start and end its tour at the depot city (City 0).]
-- [The travel cost between cities is calculated using the Euclidean distance.]
-- [The robots must collectively deliver goods to all cities, excluding the depot city.]
-- [The demand of each city, excluding the depot, must be fully met from the supplies carried by the robots.]
-- [The carrying capacity of each robot is limited to 40 units.]
-- [The tours should be planned to minimize the sum of the distances (total travel cost) traveled by all robots.]
-- [The capacity constraints of the robots must not be exceeded.]
-- [There are 8 robots available for making deliveries.]

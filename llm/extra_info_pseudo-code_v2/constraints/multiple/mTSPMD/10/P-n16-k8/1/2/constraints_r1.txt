@@ -1,8 +1,0 @@
-- [There are 16 cities with specified coordinates.]
-- [There are 8 robots, each assigned to start and end at a specific depot city.]
-- [Each robot must visit all cities exactly once and then return to the assigned depot.]
-- [The objective is to minimize the total travel cost for all robots combined.]
-- [Travel cost is calculated based on the Euclidean distance between two cities.]
-- [An ant colony optimization algorithm is suggested to solve the problem, involving parameters: antnum, cyclenum, inittrail, alpha, beta, and rho.]
-- [The solution and pheromone trails are updated in iterative cycles until no improvement is observed for cyclenum consecutive cycles.]
-- [The output should include the tours for each robot, starting and ending at its depot, and the travel costs for each tour and the overall total travel cost.]

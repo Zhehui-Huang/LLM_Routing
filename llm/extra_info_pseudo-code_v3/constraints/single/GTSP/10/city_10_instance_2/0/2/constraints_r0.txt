@@ -1,9 +1,0 @@
-- [Requirement 1] The robot must start and end its route at depot city 0.
-- [Requirement 2] The robot must visit exactly one city from each group of cities.
-- [Requirement 3] The objective is to find the shortest possible tour for the robot.
-- [Requirement 4] The output should include the tour as a list of city indices starting and ending at the depot city.
-- [Requirement 5] The output should report the total travel cost of the tour.
-- [Requirement 6] The distance between cities is calculated using the Euclidean formula.
-- [Requirement 7] The environment consists of 10 stylized cities positioned at given coordinates, grouped into 5 groups.
-- [Requirement 8] Only one robot is available for completing the tour.
-- [Requirement 9] The robot can travel between any two cities.

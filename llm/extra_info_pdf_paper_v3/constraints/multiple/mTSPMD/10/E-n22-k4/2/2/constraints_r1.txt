@@ -1,7 +1,0 @@
-- [Requirement 1] The environment consists of 22 cities, including four specific depot cities. Each city is assigned a unique coordinate.
-- [Requirement 2] There are four robots, each starting and ending at a designated depot city.
-- [Requirement 3] Each robot must visit all cities exactly once and return to its starting depot, ensuring no city is visited more than once across all tours.
-- [Requirement 4] Travel cost between cities is calculated using the Euclidean distance.
-- [Requirement 5] The goal is to minimize the total travel cost incurred by all robots.
-- [Requirement 6] The output should list the tour for each robot starting and ending at the respective depot and include individual total travel costs for each tour and the overall combined travel cost.
-- [Requirement 7] Implement a solution using genetic algorithms based on suggested methods in the provided literature, applying specific GA techniques like ordered crossover, partially matched crossover, and mutation strategies like 1-bit and 2-opt.

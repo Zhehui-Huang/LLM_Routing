@@ -1,4 +1,0 @@
-- [The robot must start and end its journey at the depot city (city 0).]
-- [The robot must visit a total of 4 cities, including the depot city.]
-- [The distance between cities is calculated using the Euclidean formula.]
-- [The objective is to minimize the total travel cost of visiting the cities.]

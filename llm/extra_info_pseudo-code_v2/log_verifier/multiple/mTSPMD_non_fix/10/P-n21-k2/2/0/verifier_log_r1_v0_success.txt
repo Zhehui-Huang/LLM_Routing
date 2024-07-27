@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: The tour should start and end with the same depot
-
-
-ERROR:
-
-

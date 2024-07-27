@@ -1,4 +1,0 @@
-- [Requirement 1] The robot must start and end its tour at the depot city, which is city 0.
-- [Requirement 2] The robot has to visit each city exactly once, excluding the depot city which needs to be visited twice (start and end of the tour).
-- [Requirement 3] The travel cost between any two cities is their Euclidean distance.
-- [Requirement 4] The solution should minimize the total travel cost of the complete tour.

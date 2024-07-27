@@ -1,7 +1,0 @@
-- [Requirement 1] Each robot starts at the depot city 0, visits an optimal set of cities, and then returns to the depot city 0.
-- [Requirement 2] Robots must collectively deliver goods to every city (excluding the depot city 0), with each city's specific demand being fully met.
-- [Requirement 3] Capacity constraints for each robot must not be exceeded, where each robot has a capacity limit of 35.
-- [Requirement 4] Travel cost is calculated as the Euclidean distance between each pair of cities, and the total travel cost for all tours must be minimized.
-- [Requirement 5] Output each robot's tour starting and ending at the depot city 0.
-- [Requirement 6] Provide the total travel cost for each robot's tour and the overall total travel cost.
-- [Requirement 7] Ensure that the solution utilizes efficient heuristic methods to avoid excessive computational times and accuracy problems in large-scale scenarios, as suggested by insights from related research.

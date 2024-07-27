@@ -1,9 +1,0 @@
-Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/messages/single/BTSP/10/city_10_instance_4/4/1/messages_city_10_instance_4.txt
-===
-System - LLM_SYSTEM_PROMPT
-User - Task description: city_10_instance_4
-User - execution does not output any results.
-Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/10/city_10_instance_4/4/1/solution_r0.py
-Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/10/city_10_instance_4/4/1/solution_r1.py
-Another LLM - User - Ask for prompts
-Another LLM - Assistant - Constraints response: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/constraints/single/BTSP/10/city_10_instance_4/4/1/constraints_r1.txt

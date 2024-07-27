@@ -1,6 +1,0 @@
-- [The robot must start and end the tour at the depot city 0.]
-- [Each city must be visited exactly once by the robot, excluding the starting/ending depot city 0.]
-- [The shortest tour path should minimize the longest distance between any two consecutive cities in the tour.]
-- [Output should list the tour as city indices, starting and ending at city 0.]
-- [Output should include the total travel cost of the tour.]
-- [Output should include the maximum distance between any two consecutive cities in the tour.]

@@ -1,4 +1,0 @@
-- [Requirement 1] The robot needs to start and end the tour at depot city 0.
-- [Requirement 2] The robot must visit exactly 4 cities, including the depot city.
-- [Requirement 3] The goal is to find the shortest possible tour in terms of Euclidean distance.
-- [Requirement 4] Each city can only be visited once in the tour, except for the depot city 0 which will be visited twice (at the start and end of the tour).

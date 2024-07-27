@@ -1,5 +1,0 @@
-- [Requirement 1] The robot must start and end the tour at the depot city, which is city 0.
-- [Requirement 2] The robot must visit all other cities exactly once during the tour.
-- [Vehicle Routing Problem] The problem is a classic Traveling Salesman Problem (TSP) with the robot needing to find a minimum tour starting and ending at the depot city after visiting every other city exactly once.
-- [Travel Cost Metric] The travel cost between any two cities is calculated using the Euclidean distance formula.
-- [Output Format] The solution must output the tour as a list of city indices starting and ending at the depot city, and separately the total travel cost of the tour.

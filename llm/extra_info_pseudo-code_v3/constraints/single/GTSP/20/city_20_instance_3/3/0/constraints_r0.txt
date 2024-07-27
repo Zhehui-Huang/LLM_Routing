@@ -1,8 +1,0 @@
-- [The environment consists of 20 cities with their respective coordinates provided.]
-- [There is a depot city labeled as city 0.]
-- [Cities are divided into 6 groups, each containing different city numbers.]
-- [One robot will navigate the cities, and it starts and ends its journey at the depot city.]
-- [The robot must visit exactly one city from each group.]
-- [Travel cost between cities is calculated using the Euclidean distance.]
-- [The robot should find the shortest tour that meets all constraints.]
-- [Output the tour starting and ending at the depot city and include the total travel cost.]

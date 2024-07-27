@@ -1,7 +1,0 @@
-- [Requirement 1] Each robot must start and end its tour at its designated depot.
-- [Requirement 2] All robots collectively must visit each city exactly once.
-- [Requirement 3] The objective is to minimize the total travel cost for all robots combined.
-- [Requirement 4] The travel cost between cities is calculated using the Euclidean distance.
-- [Requirement 5] Output the tours for each robot as a list of city indices, starting and ending at its assigned depot.
-- [Requirement 6] Output the total travel cost for each individual robot's tour and the overall total travel cost for all robots combined.
-- [Requirement 7] Implement the solution using a genetic algorithm approach, as highlighted in the provided insights, which includes specific chromosome structure, crossover and mutation techniques, and selection strategies.

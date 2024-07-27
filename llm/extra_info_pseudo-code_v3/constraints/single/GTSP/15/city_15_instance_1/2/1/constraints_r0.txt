@@ -1,6 +1,0 @@
-- [There are 15 cities with specified coordinates, starting from depot city 0 up to city 14.]
-- [There is one robot starting the route at depot city 0.]
-- [The robot must visit exactly one city from each of four city groups.]
-- [The robot must finish the route at the depot city 0 after visiting the cities.]
-- [The travel cost is based on the Euclidean distance between cities.]
-- [The output of the solution must be a tour list starting and ending at depot city 0, along with the total travel cost.]

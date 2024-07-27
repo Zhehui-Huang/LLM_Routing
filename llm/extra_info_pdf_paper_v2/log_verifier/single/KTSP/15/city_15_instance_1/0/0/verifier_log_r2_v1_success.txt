@@ -1,8 +1,0 @@
-OUTPUT:
-No tour provided. Verification FAIL.
-FAIL
-
-
-ERROR:
-
-

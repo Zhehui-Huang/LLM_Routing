@@ -1,6 +1,0 @@
-- [Requirement 1] The robot must start and end its tour at the depot city 0.
-- [Requirement 2] The robot must visit exactly 10 cities, including the depot city.
-- [Requirement 3] The robot can choose any 10 cities from the provided list of 15 cities.
-- [Requirement 4] The goal is to find the shortest possible tour that meets the above conditions.
-- [Requirement 5] The robot can travel between any two cities with the travel cost calculated as the Euclidean distance between them.
-- [Requirement 6] The final output should be a list indicating the order of visited cities, starting and ending at city 0, along with the total travel cost of the tour.

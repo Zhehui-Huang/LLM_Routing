@@ -1,7 +1,0 @@
-OUTPUT:
-Verification Result: CORRECT
-
-
-ERROR:
-
-

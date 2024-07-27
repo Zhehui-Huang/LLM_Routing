@@ -1,8 +1,0 @@
-- [There are 20 cities, each identified with unique coordinates and an index from 0 to 19.]
-- [City 0 is the depot city with coordinates (3, 26).]
-- [The robot starts and ends its journey at the depot city, city 0.]
-- [The robot must visit exactly 10 cities, including the depot city.]
-- [The travel cost between any two cities is calculated as the Euclidean distance between them.]
-- [The objective is to find the shortest possible tour that covers 10 cities.]
-- [The solution must be presented as a list of city indices starting and ending at the depot city.]
-- [The output must also include the total travel cost of the tour.]

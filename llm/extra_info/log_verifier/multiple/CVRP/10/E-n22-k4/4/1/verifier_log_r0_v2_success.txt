@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Incorrect computed travel cost for Robot 3
-
-
-ERROR:
-
-

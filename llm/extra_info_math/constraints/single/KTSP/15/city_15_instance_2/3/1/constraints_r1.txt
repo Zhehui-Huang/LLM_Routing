@@ -1,4 +1,0 @@
-- [The robot must start and end its tour at the depot city 0.]
-- [The robot needs to visit exactly 8 cities, including the depot city.]
-- [The total number of cities including the depot is 15.]
-- [Travel cost between any two cities is determined by the Euclidean distance.]

@@ -1,9 +1,0 @@
-Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/messages/multiple/mTSP/10/P-n16-k8/4/1/messages_P-n16-k8.txt
-===
-System - LLM_SYSTEM_PROMPT
-User - Task description: P-n16-k8
-User - execution does not output any results.
-Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP/10/P-n16-k8/4/1/solution_r0.py
-Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP/10/P-n16-k8/4/1/solution_r1.py
-Another LLM - User - Ask for prompts
-Another LLM - Assistant - Constraints response: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/constraints/multiple/mTSP/10/P-n16-k8/4/1/constraints_r1.txt

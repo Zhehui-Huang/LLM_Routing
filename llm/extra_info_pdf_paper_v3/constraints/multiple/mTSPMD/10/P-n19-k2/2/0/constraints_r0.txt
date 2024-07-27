@@ -1,4 +1,0 @@
-- [Requirement 1] Robots must collectively visit all cities exactly once except the depot cities, which will be visited twice (start and end of the tour) by their respective robots.
-- [Requirement 2] Each robot starts and ends its tour at the assigned depot (Robot 0 at Depot city 0, and Robot 1 at Depot city 1).
-- [Requirement 3] Objective is to determine the shortest possible tours for each robot to minimize the total travel cost for all robots combined, using Euclidean distance between cities as travel cost.
-- [Requirement 4] A genetic algorithm (GA) approach is recommended to optimize the routes, utilizing insights such as specific chromosome structures for multi-depot, crossover and mutation techniques, and selection strategies as discussed in the mentioned academic paper.

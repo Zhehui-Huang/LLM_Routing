@@ -1,5 +1,0 @@
-- [The robot must start and end the tour at the depot city 0.]
-- [The robot must visit each city exactly once, except the depot city.]
-- [The total travel cost of the tour must be minimized.]
-- [The travel cost between two cities is calculated using the Euclidean distance.]
-- [The solution must ensure no subtours are formed within the tour.]

@@ -1,5 +1,0 @@
-- [Requirement 1] Implement a solution for a TSP scenario where a robot starts at a depot, visits each city exactly once, and returns to the depot.
-- [Requirement 2] Use the provided coordinates for 20 cities, including the depot city, to calculate the Euclidean distance for the travel cost between any two cities.
-- [Requirement 3] Employ a heuristic approach that constructs a shortest spanning tree (SST), performs a minimum-cost perfect matching on the subgraph induced by vertices of odd degree in the SST, and converts this into a Hamiltonian circuit.
-- [Requirement 4] Provide the output in the format "Tour: [list of city indices]" starting and ending at the depot city, and include the "Total travel cost".
-- [Requirement 5] Ensure the heuristic aims for a performance within the worst-case ratio of less than 3/2 times the cost of the optimal tour and with polynomial time complexity of O(n^3).

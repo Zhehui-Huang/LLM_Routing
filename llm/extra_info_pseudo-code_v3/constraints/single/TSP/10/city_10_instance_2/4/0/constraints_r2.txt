@@ -1,5 +1,0 @@
-- [The robot must start and end the tour at the depot city (city 0).]
-- [The robot must visit each city exactly once, excluding the depot city when considering visiting, and finally return to the depot city.]
-- [The travel cost between any two cities is calculated using Euclidean distance.]
-- [Your solution to finding the shortest tour should follow the steps of the Christofides algorithm provided in the task description.]
-- [Output must include the tour as a list of city indices beginning and ending at the depot, as well as the total travel cost of that tour.]

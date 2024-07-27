@@ -1,8 +1,0 @@
-- [Requirement 1] The robot must start at the depot city 0.
-- [Requirement 2] The robot must visit all cities exactly once, excluding the depot city.
-- [Requirement 3] After visiting all cities, the robot must return to the depot city 0.
-- [Requirement 4] The tour path should be expressed as a list of city indices, starting and ending at city 0.
-- [Requirement 5] The travel cost between cities is calculated using the Euughterereesianral distance formula.
-- [Requirement 6] Output must include the total travel cost of the tour.
-- [Requirement 7] Use an effective heuristic algorithm, reflecting properties similar to those described in Lin-Kernighan's method, to approach or achieve the shortest possible tour.
-- [Requirement 8] Cities are represented by their index numbers and their respective coordinates.

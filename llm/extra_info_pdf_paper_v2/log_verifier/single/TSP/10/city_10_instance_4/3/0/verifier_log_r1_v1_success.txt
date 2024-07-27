@@ -1,8 +1,0 @@
-OUTPUT:
-CORRECT
-Calculated Total Travel Cost: 320.7939094250147
-
-
-ERROR:
-
-

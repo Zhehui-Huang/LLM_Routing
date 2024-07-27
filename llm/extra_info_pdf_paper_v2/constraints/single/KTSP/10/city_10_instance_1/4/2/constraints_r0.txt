@@ -1,5 +1,0 @@
-- [The robot must start and end the tour at the depot city 0.]
-- [The tour must include exactly 5 cities, counting the depot city.]
-- [The solution must minimize the total Euclidean travel distance.]
-- [The tour must be represented as a list of city indices starting and finishing at city 0.]
-- [The output must include the total travel cost of the tour.]

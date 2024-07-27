@@ -1,8 +1,0 @@
-- [Requirement 1] The robots must deliver goods to all cities, excluding the depot city, and then return to the depot city after completing their deliveries.
-- [Requirement 2] Each robot has a specified carrying capacity of 6000 units.
-- [Requirement 3] Each city has a specific demand that must be met.
-- [Requirement 4] Minimize the total travel cost for all tours.
-- [Requirement 5] Ensure that the capacity constraints of the robots are not exceeded.
-- [Requirement 6] The output should be the tours for each robot as a list of city indices starting and ending at the depot city 0.
-- [Requirement 7] Output the total travel cost for each tour and the overall total travel cost.
-- [Requirement 8] Travel cost between any two cities is calculated as the Euclidean distance.

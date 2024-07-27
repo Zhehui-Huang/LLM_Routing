@@ -1,8 +1,0 @@
-- [There are 10 cities, each with a specified location.]
-- [There are 3 groups of cities: Group 0: [1, 2, 6], Group 1: [3, 7, 8], Group 2: [4, 5, 9].]
-- [The robot starts at the depot city 0 and must return to this city after the tour.]
-- [The robot needs to visit exactly one city from each city group.]
-- [Travel cost between any two cities is calculated using the Euclidean distance.]
-- [The solution must find the shortest possible tour considering the above constraints.]
-- [Output the tour as a list of city indices, beginning and ending at city 0.]
-- [Output the total travel cost of the tour.]

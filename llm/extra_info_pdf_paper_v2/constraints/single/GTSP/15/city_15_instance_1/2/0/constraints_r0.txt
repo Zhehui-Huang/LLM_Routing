@@ -1,5 +1,0 @@
-- [The environment comprises 15 cities including a depot city, with each city assigned a specific (x, y) coordinate.]
-- [Cities are grouped into 4 distinct groups; each group contains a subset of the cities.]
-- [The robot starts and ends its tour at the depot city, city 0.]
-- [The robot travels between any two cities, calculating cost via Euclidean distance.]
-- [The robot must visit exactly one city from each group during its tour.]

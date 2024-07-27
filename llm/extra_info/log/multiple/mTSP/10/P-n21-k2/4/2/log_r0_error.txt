@@ -1,9 +1,0 @@
-OUTPUT:
-
-
-ERROR:
-WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-F0000 00:00:1721930311.389327  259164 routing_index_manager.cc:39] Check failed: ends.size() == num_vehicles (11 vs. 1) 
-*** Check failure stack trace: ***
-
-

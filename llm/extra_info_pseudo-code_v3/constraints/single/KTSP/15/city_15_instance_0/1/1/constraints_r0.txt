@@ -1,5 +1,0 @@
-- [Requirement 1] The tour must start and end at the depot city, which is city 0.
-- [Requirement 2] The tour must visit exactly four cities, including the depot city.
-- [Requirement 3] The goal is to find the shortest possible tour that minimizes the total travel cost, with travel cost defined as the Euclidean distance between cities.
-- [Requirement 4] Output should be in the format: "Tour: [city indices in the order visited]" followed by "Total travel cost: [numerical cost]".
-- [Requirement 5] The solution should be arrived at using the GVNS algorithm as described, which involves generating initial solutions, shaking, applying variable neighborhood descent (VND) with N1 and N2 structures, and iteratively improving the solution until a stopping criterion is met.

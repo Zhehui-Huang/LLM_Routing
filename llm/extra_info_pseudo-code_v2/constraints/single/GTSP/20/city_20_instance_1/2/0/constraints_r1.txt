@@ -1,8 +1,0 @@
-- [The environment consists of 20 cities including a depot city at index 0.]
-- [Cities are divided into 4 groups with specific members in each group.]
-- [The robot starts and ends its journey at the depot city 0.]
-- [Travel costs between cities are calculated based on Euclidean distance.]
-- [The robot needs to visit exactly one city from each city group.]
-- [There is only one robot for the task.]
-- [The task is to find the shortest tour for the robot that visits one city from each group.]
-- [The output of the solution should be the shortest tour as a list starting and ending at the depot city, and also include the total travel cost.]

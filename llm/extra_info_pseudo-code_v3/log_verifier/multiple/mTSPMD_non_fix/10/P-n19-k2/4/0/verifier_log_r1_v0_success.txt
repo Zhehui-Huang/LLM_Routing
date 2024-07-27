@@ -1,9 +1,0 @@
-OUTPUT:
-All cities are visited exactly once and tours are started and ended at correct depots.
-Overall Total Travel Cost: 241.88721120597612
-CORRECT
-
-
-ERROR:
-
-

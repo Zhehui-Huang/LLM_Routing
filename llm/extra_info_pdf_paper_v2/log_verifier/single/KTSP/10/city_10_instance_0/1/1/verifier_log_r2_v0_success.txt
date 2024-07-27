@@ -1,7 +1,0 @@
-OUTPUT:
-Validation Result: CORRECT
-
-
-ERROR:
-
-

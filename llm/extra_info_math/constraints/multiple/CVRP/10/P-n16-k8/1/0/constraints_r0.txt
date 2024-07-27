@@ -1,4 +1,0 @@
-- [Each robot must start and end its tour at the depot city (city 0).]
-- [Each city (except for the depot) must be visited exactly once by any robot.]
-- [The total demand delivered by each robot must not exceed the robot's capacity of 35 units.]
-- [Minimize the total travel cost for all robots' tours based on the Euclidean distance between cities.]

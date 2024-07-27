@@ -1,8 +1,0 @@
-- [Requirement 1] There are 16 cities with specific coordinates that need to be considered for routing.
-- [Requirement 2] 8 robots are available, all starting from depot city 0 and do not need to return to the depot after completing their tours.
-- [Requirement 3] Each city must be visited exactly once by any robot.
-- [Requirement 4] The robots can start their tour from any designated depot city.
-- [Requirement 5] The goal is to minimize the total travel cost for all robots, calculated using the Euclidean distance between cities.
-- [Requirement 6] The solution must provide the shortest possible tours for each robot, ensuring efficiency in terms of travel cost.
-- [Requirement 7] The output should include the route for each robot as a list of city indices, the total cost for each robot's tour, and the overall combined cost of all tours.
-- [Requirement 8] Use heuristic methods such as Genetic Algorithms, Simulated Annealing, or Tabu Search to solve the problem efficiently.

@@ -1,4 +1,0 @@
-- [Each city starting from index 1 to 22 must be visited exactly once by the robots.]
-- [The sum of the demand of the cities in each robot's route must not exceed the robot's capacity limit of 40.]
-- [Each robot must start and end its route at the depot city 0.]
-- [The total distance traveled by all robots combined should be minimized.]

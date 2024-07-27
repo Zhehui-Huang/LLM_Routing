@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Incorrect cost for robot 0: Computed cost = 142.32846773724017, Provided cost = 109.88
-
-
-ERROR:
-
-

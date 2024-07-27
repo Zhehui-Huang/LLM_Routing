@@ -1,6 +1,0 @@
-- [There are 20 cities with specified coordinates.]
-- [The robot starts at depot city 0 and should return there after visiting all other cities exactly once.]
-- [Travel cost between any two cities is calculated using the Euclidean distance.]
-- [The solution should include finding the shortest tour using an effective heuristic algorithm based on iterative improvements of randomly selected feasible solutions.]
-- [The solution should output the tour as a list of city indices starting and ending at the depot city 0.]
-- [The solution should also output the total travel cost of the tour.]

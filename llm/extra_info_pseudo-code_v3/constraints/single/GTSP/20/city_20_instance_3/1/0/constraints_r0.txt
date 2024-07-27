@@ -1,5 +1,0 @@
-- [The robot must start and end its journey at the depot city, which is city 0.]
-- [There are 20 cities, including the depot.]
-- [Cities are organized into 6 distinct groups, and the robot must visit exactly one city from each group.]
-- [Travel cost between cities is calculated using the Euclidean distance between their coordinates.]
-- [The robot's path must be the shortest tour possible that satisfies the previous constraints.]

@@ -1,5 +1,0 @@
-- [There are 23 cities, each with specified coordinates and demands, excluding the depot city which has a demand of 0.]
-- [The problem requires minimizing the total travel cost for 8 robots, each with a carrying capacity of 40, starting and finishing at the depot city 0.]
-- [Travel cost is calculated using the Euclidean distance between cities.]
-- [Each city's demand must be met without exceeding the robots' carrying capacity.]
-- [The output should list the tours for each robot starting and ending at the depot city, include the total travel cost for each individual tour, and the overall total travel cost.]

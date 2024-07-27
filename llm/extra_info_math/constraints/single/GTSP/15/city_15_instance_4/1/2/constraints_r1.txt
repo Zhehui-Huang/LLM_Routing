@@ -1,7 +1,0 @@
-- [The robot starts at the depot city 0 and must return there after completing the visits.]
-- [The robot must visit exactly one city from each group of cities.]
-- [Each city that is part of a group has exactly one outgoing edge to a city outside the group and one incoming edge from a city outside the group.]
-- [Travel cost is calculated as the Euclidean distance between any two cities.]
-- [The objective is to find the shortest tour possible, minimizing the total Euclidean distance traveled.]
-- [Ensure no subtours are formed, meaning the route must form a single tour without any separate cycles.]
-- [The travel comprises only direct movements between cities, without revisitations to any city other than the depot.]

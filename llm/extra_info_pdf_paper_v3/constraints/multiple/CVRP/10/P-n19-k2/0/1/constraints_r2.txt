@@ -1,5 +1,0 @@
-- [Each robot must start and end its tour at the depot city (City 0).]
-- [All cities, except the depot, must have their demands fully met.]
-- [The carrying capacity of each robot (160 units each) must not be exceeded.]
-- [The objective is to minimize the total travel cost for all tours combined.]
-- [Tours must adhere to the travel capability and cost structure, which is based on the Euclidean distance between cities.]

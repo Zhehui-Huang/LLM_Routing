@@ -1,5 +1,0 @@
-- [Requirement 1] The robot must start and end the tour at the depot city 0.
-- [Requirement 2] Each city must be visited exactly once by the robot, excluding the depot city 0.
-- [Requirement 3] Travel cost is calculated based on the Euclidean distance between two cities.
-- [Requirement 4] The tour should minimize the total travel cost.
-- [Requirement 5] Avoid subtours, ensuring that the path contains no cycles that do not include all cities.

@@ -1,6 +1,0 @@
-- [The robot must start and end its route at the depot city (city 0).]
-- [The route must include exactly 16 cities from the set of 20 available cities.]
-- [Travel cost between any two cities is determined by the Euclidean distance between them.]
-- [The objective is to find the minimum travel cost for the route.]
-- [Output the tour as a list of city indices, starting and ending at city 0.]
-- [Output the total travel double check the formatting and publication process for all new and existing documents for travel cost of the tour.]

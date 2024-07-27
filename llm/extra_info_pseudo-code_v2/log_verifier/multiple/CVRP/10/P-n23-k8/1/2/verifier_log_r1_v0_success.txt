@@ -1,7 +1,0 @@
-OUTPUT:
-CORRECT; Total calculated cost: 646.6853469234836
-
-
-ERROR:
-
-

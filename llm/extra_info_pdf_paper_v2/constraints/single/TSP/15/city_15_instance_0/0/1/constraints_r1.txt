@@ -1,5 +1,0 @@
-- [The problem involves 15 cities including a depot city, with specific coordinates provided for each.]
-- [There is one robot that begins its traversal at the depot city 0, and returns to the depot city after visiting all other cities exactly once.]
-- [The travel cost between any two cities is evaluated using the Euclidean distance.]
-- [The objective of the problem is to find the shortest possible round tour for achieving this.]
-- [The output should list the sequence of cities visited starting and ending at the depot city, followed by the total travel cost of the journey.]

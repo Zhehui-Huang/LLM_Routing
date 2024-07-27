@@ -1,8 +1,0 @@
-OUTPUT:
-Best Tour: [0, 1, 5, 7, 9, 3, 4, 0, 0]
-Best Tour Cost: 178.11
-
-
-ERROR:
-
-

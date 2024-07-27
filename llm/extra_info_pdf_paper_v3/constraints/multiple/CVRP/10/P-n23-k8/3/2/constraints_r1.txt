@@ -1,6 +1,0 @@
-- [Requirement 1]: Each robot must start its tour from the depot city 0 and end its tour at the depot city 0.
-- [Requirement 2]: The total load carried by a robot on its tour should not exceed the robot's capacity of 40 units.
-- [Requirement 3]: Each city's demand must be met exactly by one or more robots.
-- [Requirement 4]: Minimize the total travel cost of all tours, where the travel cost is calculated as the Euclidean distance between cities.
-- [Requirement 5]: Ensure that none of the cities, except the depot, are left out in planning.
-- [Requirement 6]: All robots' operations are limited to delivering goods and returning; they operate simultaneously and independently.

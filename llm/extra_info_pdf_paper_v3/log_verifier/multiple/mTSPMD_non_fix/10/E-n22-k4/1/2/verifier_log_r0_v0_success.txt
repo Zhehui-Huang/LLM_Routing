@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Requirement 1
-
-
-ERROR:
-
-

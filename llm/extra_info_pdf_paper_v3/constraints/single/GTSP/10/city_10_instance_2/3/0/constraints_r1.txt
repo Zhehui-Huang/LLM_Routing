@@ -1,6 +1,0 @@
-- [Requirement 1] There are 10 cities with specified coordinates, and a depot at city 0 with coordinates (90, 3).
-- [Requirement 2] There are 5 city groups; robots must visit one city from each group: Group 0: [3, 6], Group 1: [5, 8], Group 2: [4, 9], Group 3: [1, 7], Group 4: [2].
-- [Requirement 3] The robot starts and ends its journey at the depot city 0.
-- [Requirement 4] The robot must calculate travel cost as the Euclidean distance between cities.
-- [Requirement 5] The task is to determine the shortest possible tour that visits one city from each group plus the depot at the start and end.
-- [Requirement 6] Output should be in the format of a list of city indices representing the tour and the total travel cost.

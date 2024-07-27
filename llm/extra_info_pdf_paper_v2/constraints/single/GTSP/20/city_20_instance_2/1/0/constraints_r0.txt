@@ -1,9 +1,0 @@
-- [Requirement 1] There are 20 cities, including a depot, with fixed coordinates.
-- [Requirement 2] There are 5 city groups, with each group containing specific cities.
-- [Requirement 3] The robot starts and ends its journey at the depot city 0.
-- [Requirement 4] The robot must visit exactly one city from each group.
-- [Requirement 5] Travel cost is calculated using the Euclidean distance between cities.
-- [Requirement 6] The objective is to minimize the total travel distance of the tour.
-- [Requirement 7] The output should be a list of city indices representing the tour, starting and ending at the depot.
-- [Requirement 8] The output should include the total travel cost of the tour.
-- [Requirement 9] The robot can travel directly between any two cities.

@@ -1,9 +1,0 @@
-- [Requirement 1] Each city's demand must be fully met.
-- [Requirement 2] The capacity constraints of each robot, which is 35, must not be exceeded.
-- [Requirement 3] All tours must start and end at the depot city 0.
-- [Requirement 4] Deliver goods to all the cities, excluding the depot city.
-- [Requirement 5] Minimize the total travel cost for all tours.
-- [Requirement 6] Calculate travel cost as Euclidean distance between two cities.
-- [Requirement 7] Each robot starts at the depot city 0.
-- [Requirement 8] There are eight robots available for routing.
-- [Requirement 9] Output should be in the format of tours for each robot as a list of city indices and the total travel cost for each tour, including an overall total travel cost.

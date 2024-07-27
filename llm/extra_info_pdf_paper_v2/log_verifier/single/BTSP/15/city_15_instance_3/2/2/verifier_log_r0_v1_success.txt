@@ -1,7 +1,0 @@
-OUTPUT:
-CORRECT: Total travel cost: 667.7299999999999, Maximum distance: 76.55
-
-
-ERROR:
-
-

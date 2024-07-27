@@ -1,3 +1,0 @@
-- [Requirement 1] The robot must visit all cities exactly once, excluding the depot city, and then return to the depot city.
-- [Requirement 2] The travel cost between cities is measured as the Euclidean distance, and the robot aims to minimize the total travel cost for the tour.
-- [Requirement 3] Output the sequence of cities as the tour starting and ending at the depot city 0, and provide the total minimum travel cost of that tour.

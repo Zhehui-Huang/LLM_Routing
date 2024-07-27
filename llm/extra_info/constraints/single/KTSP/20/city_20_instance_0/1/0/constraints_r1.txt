@@ -1,3 +1,0 @@
-- [Requirement 1] The robot must start and end the tour at city 0 (depot city).
-- [Requirement 2] The robot is required to visit exactly 4 distinct cities, including the depot city.
-- [Requirement 3] The tour must minimize the total travel cost, which is the sum of the Euclidean distances between consecutive cities in the tour.

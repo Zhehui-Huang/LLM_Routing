@@ -1,4 +1,0 @@
-- [The task involves finding a shortest possible tour in which a robot needs to visit exactly 8 cities from a given set of 15 cities, starting and ending at the depot city (City 0).]
-- [The robot starts its journey at Depot City 0 and must return there after visiting the other cities.]
-- [The objective is to minimize the total tour distance, calculated as the Euclidean distance between cities.]
-- [The output should include a list of city indices representing the tour, starting and ending at City 0, as well as the total travel cost of the tour.]

@@ -1,7 +1,0 @@
-- [Requirement 1] The robot must visit all cities exactly once, except the depot city, and then return to the depot city.
-- [Requirement 2] The robot starts its journey at the depot city, identified as city 0.
-- [Requirement 3] The cost of traveling between any two cities is defined as the Euclidean distance between them.
-- [Requirement 4] The output should be in the form that starts with the depot city, listing subsequent cities visited, and ends at the depot city.
-- [Requirement 5] The solution must provide not only the tour but also the total travel cost of the tour using the specified cost function.
-- [Requirement 6] The task must be implemented using a heuristic algorithm suitable for the Traveling Salesman Problem (TSP), leveraging concepts such as constructing a shortest spanning tree and minimum-cost perfect matching.
-- [Requirement 7] The algorithm employed should strive to offer a solution no more than 3/2 times the cost of an optimal TSP tour.

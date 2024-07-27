@@ -1,8 +1,0 @@
-OUTPUT:
-City Visit Check: PASS
-CORRECT
-
-
-ERROR:
-
-

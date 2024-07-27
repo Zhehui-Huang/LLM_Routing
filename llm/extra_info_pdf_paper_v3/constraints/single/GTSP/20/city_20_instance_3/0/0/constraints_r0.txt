@@ -1,7 +1,0 @@
-- [Requirement 1] There are 20 distinct cities with specified coordinates, including a depot city (city 0).
-- [Requirement 2] Cities are divided into 6 groups, with each group containing a specific subset of cities.
-- [Requirement 3] There is one robot that starts and ends its route at the depot city 0.
-- [Requirement 4] The robot must visit exactly one city from each city group.
-- [Requirement 5] The robot can travel between any two cities with the travel cost as the Euclidean distance between these cities.
-- [Requirement 6] The task is to find the shortest possible route (tour) that fulfills the specified requirements.
-- [Requirement 7] The output should consist of the list of cities visited in the tour, starting and ending at the depot city, and the total travel cost of this route.

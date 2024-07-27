@@ -1,5 +1,0 @@
-- [Requirement 1] There are 23 cities, including a depot city (city 0), and each city has specific coordinates.
-- [Requirement 2] There are 8 robots, all starting and ending their tours at the depot city.
-- [Requirement 3] All non-depot cities must be visited exactly once by the robots, and each robot must return to the depot after completing their tour.
-- [Requirement 4] The objective is to minimize the total travel cost, which is calculated as the Euclidean distance between cities.
-- [Requirement 5] The robots' tours and the corresponding individual and overall travel costs must be detailed in the output.

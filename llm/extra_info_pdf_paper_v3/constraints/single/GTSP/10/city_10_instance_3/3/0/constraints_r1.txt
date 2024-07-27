@@ -1,6 +1,0 @@
-- [The robot must start and end its journey at the depot city, which is city 0.]
-- [Each city group must be represented exactly once in the robot's tour by visiting one city from each group.]
-- [The robot can travel between any two cities.]
-- [Travel costs between cities are determined by the Euclidean distance between them.]
-- [There are 10 cities, arranged into 6 groups.]
-- [Only one robot is available for the task.]

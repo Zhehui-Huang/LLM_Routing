@@ -1,8 +1,0 @@
-- [Requirement 1] The robot must visit each city exactly once, starting and ending at the depot city 0.
-- [Requirement 2] Each leg of the journey (from one city to another, without returning to the depot in between) must be represented by an integer programming variable \(x_{ij}\), where \(i\) and \(j\) represent the departure and arrival city indices, respectively.
-- [Requirement 3] The robot must minimize the maximum distance between any two consecutive cities in the tour.
-- [Requirement 4] The travel cost between two cities is calculated as the Euclidean distance between them.
-- [Requirement 5] Subtours (i.e., cycles that do not include all cities) must be avoided; thus, for any subset \(S\) of cities, the number of edges in \(S\) (i.e., legs of the journey that begin and end within \(S\)) must be less than the number of cities in \(S\).
-- [Requirement 6] The variable \(x_{ij}\) is binary, i.e., \(x_{ij} \in \{0, 1\}\).
-- [Requirement 7] The sum of \(x_{ij}\) across all \(j\), for each \(i\), is exactly one; this ensures that the robot departs each city exactly once.
-- [Requirement 8] The sum of \(x_{ij}\) across all \(i\), for each \(j\), is exactly one; this ensures that the robot arrives at each city exactly once.

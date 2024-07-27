@@ -1,8 +1,0 @@
-- [Each robot must visit each city once and only once, excluding its start depot unless returning at tour's end.]
-- [The sum of tours initiated at each depot must equal the number of robots assigned to that depot.]
-- [The tour for each robot should start from a designated start depot (initially all robots start at depot city 0) and may terminate at any city, not necessarily a depot.]
-- [Travel cost is calculated based on the Euclidean distance between consecutive cities on a tour.]
-- [The objective is to minimize the total travel cost for all robots combined.]
-- [Every node must connect with exactly one successor and one predecessor, ensuring coverage and preventing isolated sub-tours.]
-- [Binary variable constraints enforce that each decision variable only takes the values 0 or 1, indicating the absence or presence of a path between two cities respectively.]
-- [Subtour elimination constraints are essential to preclude the formation of isolated cycles that do not contribute to the comprehensive solution of visiting all cities.]

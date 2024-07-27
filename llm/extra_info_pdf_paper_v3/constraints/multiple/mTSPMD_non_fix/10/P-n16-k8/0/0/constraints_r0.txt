@@ -1,8 +1,0 @@
-- [Requirement 1] The solution must optimize tours for each of the 8 robots ensuring all 16 cities are visited exactly once collectively by all robots.
-- [Requirement 2] Each robot starts its tour from the designated depot city 0 and can finish at any city.
-- [Requirement 3] The total travel cost should be minimized, calculated using Euclidean distance between cities.
-- [Requirement 4] Each robot's tour output should be a list of city indices, starting at the assigned depot.
-- [Requirement 5] Provide individual total travel cost for each robot’s tour and an overall total travel cost.
-- [Requirement 6] Use advanced heuristic methods to find an efficient solution, considering the study insights which suggest Simulated Annealing and Tabu Search for their performance on this type of problem.
-- [Requirement 7] The solution does not require returning robots to their initial depots post completion of their tours.
-- [Requirement 8] Ensure computational efficiency and robust solution quality, as per insights.

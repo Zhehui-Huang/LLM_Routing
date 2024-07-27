@@ -1,6 +1,0 @@
-- [Each robot starts its route from Depot city 0.]
-- [All robots must visit each city exactly once, ensuring that no city is visited more than once across all robots.]
-- [The goal is to minimize the total travel cost across all robots, which is calculated as the Euclidean distance between cities.]
-- [Each tour must be optimized to have the shortest path for individual robots while also aiming for the lowest combined travel cost.]
-- [Tours do not require the robots to return to their start depot after visiting all assigned cities.]
-- [The model setup should adhere to the mathematical formulation described with constraints on tour initialization, visitation, and binary conditions for travel between cities.]

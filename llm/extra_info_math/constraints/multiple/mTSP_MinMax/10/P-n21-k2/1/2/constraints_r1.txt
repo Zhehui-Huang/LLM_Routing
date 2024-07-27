@@ -1,6 +1,0 @@
-- [Requirement 1] Each city is visited exactly once by one salesman.
-- [Requirement 2] Flow conservation constraints (each salesman must leave each visited node and enter each visited node exactly once).
-- [Requirement 3] Each salesman must leave the depot exactly once.
-- [Requirement 4] Subtour elimination constraints.
-- [Requirement 5] Binary constraints for assignment variables.
-- [Requirement 6] Continuous variables for node positions.

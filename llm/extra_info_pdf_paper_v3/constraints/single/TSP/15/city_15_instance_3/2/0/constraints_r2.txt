@@ -1,8 +1,0 @@
-- [Requirement 1] There are 15 cities with predefined coordinates, including a depot city (City 0).
-- [Requirement 2] The robot starts and ends the journey at the depot city (City 0).
-- [Requirement 3] The robot must visit all other cities exactly once.
-- [Requirement 4] The travel cost between any two cities is calculated using the Euclidean distance.
-- [Requirement 5] The solution must find the shortest possible tour that satisfies all the above requirements.
-- [Requirement 6] Output the tour as a list of city indices, starting and ending at the depot city.
-- [Requirement 7] Output the total travel cost of the tour.
-- [Requirement 8] Use a heuristic algorithm combining a shortest spanning tree and a minimum-cost perfect matching to solve the problem.

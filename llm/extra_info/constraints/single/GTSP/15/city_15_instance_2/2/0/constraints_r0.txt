@@ -1,7 +1,0 @@
-- [There are 15 cities, including the depot which is city 0.]
-- [Cities are organized into 5 groups, each consisting of exactly three cities.]
-- [The robot starts its route at depot city 0 and must return there to finish the route.]
-- [The robot must visit exactly one city from each group.]
-- [The robot can travel directly between any two cities.]
-- [Travel cost between cities is the Euclidean distance between them.]
-- [The objective is to find the shortest travel route, fulfilling the above constraints.]

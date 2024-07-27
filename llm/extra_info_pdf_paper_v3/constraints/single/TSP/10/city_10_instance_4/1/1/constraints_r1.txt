@@ -1,4 +1,0 @@
-- [The robot must visit all cities exactly once, except for the depot city (City 0), and then return to the depot city.]
-- [Each city is represented as a vertex, and the paths between cities are edges with associated travel costs calculated using the Euclidean distance between cities.]
-- [The output should provide the shortest tour starting and ending at the depot city 0 and present the tour as a list of city indices.]
-- [The output should also include the total travel cost of the tour.]

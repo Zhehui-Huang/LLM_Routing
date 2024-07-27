@@ -1,7 +1,0 @@
-OUTPUT:
-A feasible solution could not be found with the given number of robots and their capacities.
-
-
-ERROR:
-
-

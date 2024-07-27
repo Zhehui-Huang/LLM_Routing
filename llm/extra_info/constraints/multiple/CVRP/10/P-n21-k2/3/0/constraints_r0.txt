@@ -1,6 +1,0 @@
-- [Each robot's tour must start and end at depot city 0.]
-- [Each city's demand must be met exactly.]
-- [All cities, excluding the depot, must be visited at least once.]
-- [The carrying capacity of each robot must not be exceeded.]
-- [Travel cost between cities is computed as the Euclidean distance.]
-- [The objective is to minimize the total travel cost for all tours.]

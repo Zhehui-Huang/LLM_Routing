@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Requirement 4 - Calculated Cost: 48.32714824078144, Expected Cost: 60.36874281957374
-
-
-ERROR:
-
-

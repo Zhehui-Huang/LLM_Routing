@@ -1,6 +1,0 @@
-- [Each route must start and end at the depot city.]
-- [Each city (excluding the depot) must be visited exactly once by any robot.]
-- [The total demand on each robot's route must not exceed the robot's capacity of 160.]
-- [The objective is to minimize the total travel cost for all routes combined.]
-- [Travel cost is calculated using the Euclidean distance between cities.]
-- [All robots start the route from the depot city (city 0).]

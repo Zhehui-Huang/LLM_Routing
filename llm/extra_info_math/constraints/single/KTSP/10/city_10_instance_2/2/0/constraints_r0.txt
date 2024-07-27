@@ -1,3 +1,0 @@
-- [Requirement 1] The robot starts and ends the tour at the depot city (index 0).
-- [Requirement 2] The robot visits exactly 6 cities out of the 10 possible cities.
-- [Requirement 3] The goal is to find the shortest possible tour according to the Euclidean distance between cities.

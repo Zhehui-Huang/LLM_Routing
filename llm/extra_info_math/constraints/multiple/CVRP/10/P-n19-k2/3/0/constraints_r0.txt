@@ -1,4 +1,0 @@
-- Each robot must start and end at the depot city.
-- Each city must be visited exactly once by any robot.
-- The sum of the demand of the cities in any single tour cannot exceed the robot's carrying capacity.
-- The objective is to minimize the total travel cost for all robots' tours.

@@ -1,5 +1,0 @@
-- [The robot must visit each city exactly once, except for the depot city, and then return to the depot city.]
-- [The robot starts and ends the journey at the depot city 0.]
-- [The travel cost is calculated as the Euclidean distance between any two cities.]
-- [The tour needs to be the shortest possible path that meets all the other requirements.]
-- [The solution must output the tour starting and ending at the depot city and the total travel cost of the tour.]

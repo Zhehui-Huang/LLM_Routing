@@ -1,3 +1,0 @@
-- [Requirement 1] Robots must visit all 23 cities exactly once, and each city should be visited by only one robot.
-- [Requirement 2] Each robot starts from depot city 0 and can finish at any city.
-- [Requirement 3] Minimize the total travel cost for all robots combined, which is quantified as the sum of the Euclidean distances between consecutive cities in their tours.

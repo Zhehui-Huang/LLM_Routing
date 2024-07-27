@@ -1,7 +1,0 @@
-OUTPUT:
-Test result: CORRECT
-
-
-ERROR:
-
-

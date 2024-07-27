@@ -1,8 +1,0 @@
-- [There are 21 cities, each identified by a numeric index and corresponding coordinates.]
-- [There are 2 robots, each starting and ending tours at the depot city, which is city 0.]
-- [Each robot must visit all cities exactly once, excluding the depot city as a destination.]
-- [Travel cost between two cities is calculated using the Euclidean distance.]
-- [The objective is to determine the shortest possible tours for the robots while minimizing the total travel cost.]
-- [The solution should output the tours for each robot along with individual travel costs and the combined overall travel cost.]
-- [The output format should list each robot's tour and travel cost, starting and ending at the depot city.]
-- [The task is a variant of the Multiple Traveling Salesmen Problem (MTSP) employing a generalized k-Opt Exchange Procedure.]

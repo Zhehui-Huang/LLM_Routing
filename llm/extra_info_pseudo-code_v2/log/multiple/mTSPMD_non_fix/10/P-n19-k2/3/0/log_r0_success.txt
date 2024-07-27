@@ -1,8 +1,0 @@
-OUTPUT:
-Best solution found: [0, 16, 10, 4, 2, -1, 13, 12, 11, 14, 15, 18, 5, 9, 7, 6, 8, 3, 17, 1]
-Cost of the solution: 365.3580612012282
-
-
-ERROR:
-
-

@@ -1,6 +1,0 @@
-- [Requirement 1] The robot must start and end its journey at depot city 0.
-- [Requirement 2] The solution should involve exactly 16 cities, including the depot city.
-- [Requirement 3] The robot can only travel via direct connections between any two cities.
-- [Requirement 4] The goal is to find the shortest possible route that fulfills the above conditions.
-- [Requirement 5] Travel cost between cities is calculated using the Euclidean distance formula.
-- [Requirement 6] Output must include both the sequence of cities in the tour and the corresponding total travel cost.

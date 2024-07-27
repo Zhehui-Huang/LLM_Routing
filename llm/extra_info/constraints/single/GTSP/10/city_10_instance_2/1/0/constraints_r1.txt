@@ -1,5 +1,0 @@
-- [Requirement 1] The robot must start and end its tour at the depot city, indexed 0.
-- [Requirement 2] The tour should include exactly one city from each city group. There are five city groups.
-- [Requirement 3] Travel cost is calculated using the Euclidean distance between cities. Use this cost to find the shortest possible tour.
-- [Requirement 4] Format the output as a list that shows the tour route starting and ending at the depot city, followed by the total travel cost.
-- [Requirement 5] There are 10 specific cities with predefined coordinates to consider in calculating route distances and planning.

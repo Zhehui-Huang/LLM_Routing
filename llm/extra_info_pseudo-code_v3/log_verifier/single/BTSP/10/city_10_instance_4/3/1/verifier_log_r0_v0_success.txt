@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Tour visits cities more than once or some cities are not visited.
-
-
-ERROR:
-
-

@@ -1,4 +1,0 @@
-- [The robot must start and end its journey at the depot city 0.]
-- [The robot should visit exactly one city from each of the five city groups.]
-- [Travel cost is measured as the Euclidean distance between two points (cities).]
-- [The output should include both the shortest tour path as a list of city indices starting and ending at city 0, and the total travel cost of that tour.]

@@ -1,8 +1,0 @@
-- [Requirement 1] There are 19 cities with specific coordinates, each identified by a unique index from 0 to 18. Depot city 0 is at coordinates (30, 40), and depot city 1 is at coordinates (37, 52).
-- [Requirement 2] Two robots are available for routing, where Robot 0 starts and ends at depot city 0, and Robot 1 starts and ends at depot city 1.
-- [Requirement 3] Each robot must visit each city exactly once, excluding their respective starting depot city which should only be visited at the start and the end of the tour.
-- [Requirement 4] The objective is to minimize the total travel cost, which is the sum of the Euclidean distances for the tours of both robots.
-- [Requirement 5] Travel cost is calculated based on the Euclidean distance between cities.
-- [Requirement 6] Output must include the tours for each robot starting and ending at their respective depots, the total travel cost for each robot's tour, and the combined total travel cost for both tours.
-- [Requirement 7] The solution approach should ideally utilize Genetic Algorithms with elements such as a specific chromosome structure for MmTSP, a set of crossover techniques (OX, PMX, UX2, new MX), mutation techniques (1-bit, 2-opt), and selection strategies (elitism, roulette wheel, binary tournament).
-- [Requirement 8] The solution is expected to demonstrate computational efficiency and applicability to complex multi-depot routing issues resembling practical logistics and distribution problems.

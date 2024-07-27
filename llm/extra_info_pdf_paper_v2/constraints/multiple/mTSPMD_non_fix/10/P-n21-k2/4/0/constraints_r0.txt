@@ -1,4 +1,0 @@
-- [Requirement 1] There are two robots, and both start their journey from the same depot city, which is city 0.
-- [Requirement 2] Robots need to collectively visit all cities exactly once, without the need to return to the depot after completing their tours.
-- [Requirement 3] The objective is to find the route configuration that minimizes the total combined travel cost for both robots, calculated as the Euclidean distance between cities.
-- [Requirement 4] Output must include the path taken by each robot as a list of city indices and their respective tour costs. Additionally, you must provide the overall total travel cost.

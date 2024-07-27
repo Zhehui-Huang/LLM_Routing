@@ -1,6 +1,0 @@
-Task: TSP, City: 10, File name: city_10_instance_4, Run time: 0
-
-Success: Request LLM number: 19
-Details: 'exec': 8, 'verifier': 8, 'constraints': 3
-
-

@@ -1,8 +1,0 @@
-- [Requirement 1] All cities, excluding the depot city, must have their specific demands fully met by the deliveries made by the robots.
-- [Requirement 2] Each robot must adhere to its carrying capacity constraint of 160 units while delivering goods.
-- [Requirement 3] Robots must start and end their tour at the depot city.
-- [Requirement 4] Minimize the total travel cost, which is calculated based on the Euclidean distance between cities.
-- [Requirement 5] The output should include detailed tour information and cost for each robot as well as the overall total travel cost.
-- [Requirement 6] There are 19 cities with specified coordinates, including the depot city.
-- [Requirement 7] There are two robots available for distribution tasks, and all robots start at the depot city.
-- [Requirement 8] The solution must ensure that the capacity constraints are not exceeded while meeting the specific demand of each city.

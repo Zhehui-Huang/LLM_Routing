@@ -1,8 +1,0 @@
-- [There are 16 cities, including the depot city (city 0).]
-- [Each robot starts at the depot city 0 and must return to the depot city after visiting other cities.]
-- [All cities except the depot city (city 0) must be visited exactly once by the robots collectively.]
-- [The objective is to minimize the total travel cost for all the robots combined, where travel cost is calculated as the Euclidean distance between two cities.]
-- [There are 8 robots available for the task.]
-- [Travel routes must be feasible; each route must start and end at the depot city 0.]
-- [Output should list each robot's tour starting and ending at the depot city 0, the total travel cost for each tour, and the overall total travel cost.]
-- [Robustness of the solution should be enhanced by using techniques such as the generalized k-opt exchange procedure, effectively creating and managing multiple subtours where necessary.]

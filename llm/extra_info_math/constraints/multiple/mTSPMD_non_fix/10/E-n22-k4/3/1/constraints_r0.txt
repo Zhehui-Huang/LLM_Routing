@@ -1,6 +1,0 @@
-- [Each robot must start from a designated depot.]
-- [Each robot does not need to return to the depot after completing its tour.]
-- [All robots must collectively visit all cities exactly once.]
-- [Optimize for the shortest tours for each robot.]
-- [Minimize the total travel cost for all robots combined.]
-- [Travel cost is calculated as the Euclidean distance between two cities.]

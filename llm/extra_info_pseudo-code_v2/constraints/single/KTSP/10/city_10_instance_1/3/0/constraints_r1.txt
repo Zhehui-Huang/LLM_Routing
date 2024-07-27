@@ -1,6 +1,0 @@
-- [Requirement 1] The robot must start and end its tour at the depot city, which is city 0.
-- [Requirement 2] The robot must visit exactly 5 cities from the given 10 cities.
-- [Requirement 3] The travel cost between any two cities is defined as the Euclidean distance.
-- [Requirement 4] The goal is to find the shortest possible tour that fulfills the above requirements.
-- [Requirement 5] The output should be presented as a tour list of city indices starting and ending at city 0, and the total travel cost of the tour.
-- [Requirement 6] Implement the pseudocode for the General Variable Neighborhood Search (GVNV) algorithm described, including all specified subroutines and methodologies like GenerateInitialSolution, Shake, VND, and LocalSearch.

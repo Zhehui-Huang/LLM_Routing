@@ -1,4 +1,0 @@
-- [Requirement 1] The solution must determine routes for 8 robots starting and ending at the depot city 0, visiting all other cities exactly once.
-- [Requirement 2] Travel cost between any two cities is calculated using the Euclidean distance formula.
-- [Requirement 3] Optimize to achieve the shortest possible total travel cost while fulfilling the routing constraints.
-- [Requirement 4] Output each robot's tour starting and ending at city 0, along with the travel cost for each tour and the total travel cost for all tours.

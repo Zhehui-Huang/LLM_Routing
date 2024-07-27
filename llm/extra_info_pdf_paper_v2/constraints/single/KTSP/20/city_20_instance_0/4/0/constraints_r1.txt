@@ -1,5 +1,0 @@
-- [The robot must start and end its journey at the depot city, which is city 0.]
-- [The tour must include exactly 4 cities, including the depot.]
-- [The travel cost between any two cities is based on the Euclidean distance.]
-- [Only one tour needs to be found that minimizes the total travel cost for visiting these 4 cities.]
-- [Output format must include the tour path as a list of city indices and the total travel cost.]

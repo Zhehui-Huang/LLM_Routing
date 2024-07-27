@@ -1,3 +1,0 @@
-- [Requirement 1] The robot must start and end the tour at depot city 0.
-- [Requirement 2] The robot must visit exactly one city from each of the 7 groups during the tour.
-- [Requirement 3] The shortest tour is determined by minimizing the total Euclidean distance traveled by the robot.

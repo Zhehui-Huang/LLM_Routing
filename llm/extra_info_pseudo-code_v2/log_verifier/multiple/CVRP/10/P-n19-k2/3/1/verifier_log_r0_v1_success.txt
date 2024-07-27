@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Demand not met for all cities
-
-
-ERROR:
-
-

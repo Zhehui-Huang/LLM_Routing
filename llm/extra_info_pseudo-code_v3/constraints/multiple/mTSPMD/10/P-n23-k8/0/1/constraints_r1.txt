@@ -1,4 +1,0 @@
-- [Each robot must start and end its tour at its assigned depot.]
-- [Each city must be visited exactly once by the robots collectively.]
-- [The travel cost is calculated using the Euclidean distance between cities.]
-- [The objective is to minimize the total travel cost for all robots combined while adhering to the tour constraints.]

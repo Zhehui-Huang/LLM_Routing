@@ -1,8 +1,0 @@
-OUTPUT:
-Total demand is not precisely met by the provided tours.
-FAIL
-
-
-ERROR:
-
-

@@ -1,3 +1,0 @@
-- [Each robot must start and end at its assigned depot.]
-- [Each city must be visited exactly once by any one robot and must not be revisited by any other robot.]
-- [Minimize the total travel cost for all robots combined.]

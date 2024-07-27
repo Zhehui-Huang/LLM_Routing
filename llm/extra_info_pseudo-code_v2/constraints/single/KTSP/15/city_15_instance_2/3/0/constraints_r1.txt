@@ -1,9 +1,0 @@
-- [Requirement 1] The robot must visit exactly 8 cities, including the depot city (City 0).
-- [Requirement 2] The robot must start and end the tour at the depot city (City 0).
-- [Requirement 3] The total number of cities available is 15.
-- [Requirement 4] All cities are connected and the robot can travel from any city to any other city.
-- [Requirement 5] The travel cost between two cities is calculated based on the Euclidean distance between them.
-- [Requirement 6] The tour should be expressed as a list of city indices beginning and ending with the depot city.
-- [Requirement 7] The output should also contain the total travel cost of the tour.
-- [Requirement 8] The solution should leverage a General Variable Neighborhood Search (GVNS) algorithm to find the optimal tour.
-- [Requirement 9] Ensure that the algorithm's performance is sufficiently good to be used in a practical scenario where it significantly impacts the career and life of the user.

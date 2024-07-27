@@ -1,9 +1,0 @@
-- [Requirement 1] There are 21 cities with specified coordinates, including two depot cities.
-- [Requirement 2] There are 2 robots, both starting at depot city 0.
-- [Requirement 3] Each robot needs to visit all cities exactly once collectively.
-- [Requirement 4] Each city must be visited exactly once by any of the robots.
-- [Requirement 5] Tours need to start at a designated depot and can stop at any city, without a requirement to return to the depot.
-- [Requirement 6] The objective is to minimize the total travel cost for all robots, measured as the sum of the Euclidean distances between sequential cities in each robot's tour.
-- [Requirement 7] Output must include each robot's tour starting and ending at their designated depot, the total travel cost for each robot, and the overall total travel cost.
-- [Requirement 8] Each robot's tour and costs should be outputted in the format specified in the 'Format requirements' section.
-- [Requirement 9] The solution should employ a meta-heuristic algorithm taking insights from a comparative study which evaluates Genetic Algorithms, Simulated Annealing, and Tabli Search.

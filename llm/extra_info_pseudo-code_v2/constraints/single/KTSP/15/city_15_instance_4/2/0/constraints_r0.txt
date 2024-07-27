@@ -1,7 +1,0 @@
-- [There are 15 distinct cities indexed from 0 to 14 with their respective coordinates given.]
-- [Depot city is city 0 with coordinates (35, 40).]
-- [The robot starts and ends its tour at the depot city 0.]
-- [The robot is required to visit exactly 12 cities, including the depot city 0.]
-- [Travel cost between any two cities is calculated as the Euclidean distance between them.]
-- [The goal is to find the shortest possible tour that visits exactly 12 cities out of the given set.]
-- [The tour and total travel cost must be output as specified, starting and ending at city 0.]

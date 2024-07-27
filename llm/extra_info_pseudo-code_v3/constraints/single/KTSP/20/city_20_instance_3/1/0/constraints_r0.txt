@@ -1,4 +1,0 @@
-- [Requirement 1] The solution must include exactly 13 cities, starting and ending at the depot city (city 0).
-- [Requirement 2] The travel cost between cities is calculated using the Euclidean distance formula.
-- [Requirement 3] The goal is to find the shortest possible tour that complies with the above requirements using the General Variable Neighborhood Search (GVNS) algorithm.
-- [Requirement 4] The output should specify the sequence of the city indices as a tour, starting and ending at city 0, and the total travel cost of the tour.

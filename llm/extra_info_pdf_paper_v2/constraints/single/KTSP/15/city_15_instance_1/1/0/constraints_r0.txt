@@ -1,3 +1,0 @@
-- [Requirement 1] The robot must start and end at the depot city 0.
-- [Requirement 2] The robot must visit exactly 6 cities out of the given 15 cities.
-- [Requirement 3] The travel path must minimize the total travel cost, which is based on the Euclidean distance between cities.

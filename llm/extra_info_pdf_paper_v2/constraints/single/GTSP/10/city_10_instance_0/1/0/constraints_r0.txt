@@ -1,6 +1,0 @@
-- [The environment comprises 10 cities with specified coordinates.]
-- [City groups are defined with three groups each containing a subset of cities.]
-- [One robot starts and ends its journey at the depot city, city 0.]
-- [The robot must visit exactly one city from each group.]
-- [Euclidean distance is used to calculate travel costs between cities.]
-- [The required output is a tour starting and ending at the depot city 0 along with the total travel cost of this tour.]

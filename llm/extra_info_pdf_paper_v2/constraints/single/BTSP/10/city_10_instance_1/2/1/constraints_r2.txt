@@ -1,7 +1,0 @@
-- [There are 10 cities including the depot city, indexed from 0 to 9.]
-- [The robot starts at the depot city (index 0) and must end at the depot city.]
-- [The robot must visit each city exactly once.]
-- [The travel cost is calculated as the Euclidean distance between two cities.]
-- [The goal is to minimize the longest distance between any two consecutive cities in the tour (Bottleneck Traveling Salesman Problem).]
-- [The triangle inequality holds, implying that the direct path between two cities is the shortest route.]
-- [Output must include the final tour as a list of city indices, total travel cost of the tour, and the maximum distance between any two consecutive cities in the tour.]

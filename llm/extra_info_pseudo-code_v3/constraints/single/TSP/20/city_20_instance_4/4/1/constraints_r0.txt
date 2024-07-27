@@ -1,8 +1,0 @@
-- [There are 20 cities including the depot city.]
-- [The depot city is city 0 with coordinates (26, 60).]
-- [The robot starts and ends its tour at the depot city 0.]
-- [The robot needs to visit all other cities exactly once.]
-- [Travel cost is calculated as the Euclidean distance between cities.]
-- [Christofides algorithm should be used to find an approximate solution to the TSP.]
-- [Output should be a list of city indices starting and ending at depot city 0.]
-- [Output should also include the total travel cost of the tour.]

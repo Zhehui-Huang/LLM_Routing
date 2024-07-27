@@ -1,6 +1,0 @@
-Task: BTSP, City: 10, File name: city_10_instance_4, Run time: 4
-
-Success: Request LLM number: 18
-Details: 'exec': 7, 'verifier': 8, 'constraints': 3
-
-

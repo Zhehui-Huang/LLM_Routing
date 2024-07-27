@@ -1,5 +1,0 @@
-- [Requirement 1] There are 15 cities indexed from 0 (depot) to 14, with known coordinates for each city.
-- [Requirement 2] The robot starts at the depot city (city 0) and must return to the depot city after visiting all other cities exactly once (forming a closed tour).
-- [Requirement 3] The robot can travel between any two cities with the travel cost calculated as the Euclidean distance between cities.
-- [Requirement 4] The output of the solution needs to include the tour as a list of city indices starting and ending at the depot city.
-- [Requirement 5] The output also requires the total travel cost of the tour, calculated using the Euclidean distances for each leg of the journey.

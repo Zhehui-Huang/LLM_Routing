@@ -1,3 +1,0 @@
-- [Requirement 1] The solution must find the shortest possible tour that includes exactly 8 cities out of the given 15, starting and ending at the depot city 0.
-- [Requirement 2] The robot can start from the depot city and is able to travel between any two cities directly with the travel cost being the Euclidean distance between the two cities.
-- [Requirement 3] The output of the solution must be formatted as a list of city indices representing the tour, starting and ending at the depot city 0, followed by the total travel cost of that tour.

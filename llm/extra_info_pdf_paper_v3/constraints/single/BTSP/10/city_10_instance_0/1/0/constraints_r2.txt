@@ -1,3 +1,0 @@
-- [Requirement 1] The target graph includes 10 specific locations (cities) with given coordinates, starting from Depot city 0.
-- [Requirement 2] There is one robot that starts and finishes its route at Depot city 0, and it must visit each other city exactly once.
-- [Requirement 3] The journey's travel costs are determined by the Euclidean distances between cities, and the goal is to minimize the maximum distance between any two consecutive cities in the robot's tour.

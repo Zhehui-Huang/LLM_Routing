@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Calculated travel cost does not match the given cost.
-
-
-ERROR:
-
-

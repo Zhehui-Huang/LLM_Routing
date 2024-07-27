@@ -1,6 +1,0 @@
-- [Requirement 1] All robots need to collectively visit each city exactly once.
-- [Requirement 2] Each tour should start at its assigned depot and can end at any city.
-- [Requirement 3] Minimize the total time/cost of travel for all tours combined.
-- [Requirement 4] The output format should provide tours for each robot, the total cost for each tour, and the overall combined cost.
-- [Requirement 5] Utilize the nearest neighborhood search for an initial solution, followed by Tabu Search algorithm with diverse neighborhood structures for optimization.
-- [Requirement 6] Each city should be visited by only one robot.

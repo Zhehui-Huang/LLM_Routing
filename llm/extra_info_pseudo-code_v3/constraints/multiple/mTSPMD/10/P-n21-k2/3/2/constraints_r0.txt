@@ -1,4 +1,0 @@
-- [Each robot must start and end at its assigned depot.]
-- [Robots must collectively visit all cities exactly once.]
-- [The objective is to minimize the total travel cost for all robots combined.]
-- [Travel cost is calculated as the Euclidean distance between two cities.]

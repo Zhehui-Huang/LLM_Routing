@@ -1,8 +1,0 @@
-- [There are 22 cities, with given coordinates for each, including depots for the robots.]
-- [Each robot starts and ends its tour at a designated depot city.]
-- [Robots must visit each city exactly once across all tours, ensuring no city is visited by more than one robot.]
-- [The objective is to find the shortest possible tours for each robot, minimizing the total travel cost for all tours combined.]
-- [Travel cost between cities is calculated using the Euclidean distance.]
-- [The solution to the problem should be computed using an algorithm styled after the ant colony optimization approach, with parameters such as number of ants, cycles, initial pheromone levels, influence of pheromone trails and heuristic information, and pheromone evaporation rate.]
-- [Tours for each robot need to be provided as a list of visited city indices starting and ending at the robot's assigned depot.]
-- [Output should include the total cost of each robot's tour and the overall combined cost of all tours.]

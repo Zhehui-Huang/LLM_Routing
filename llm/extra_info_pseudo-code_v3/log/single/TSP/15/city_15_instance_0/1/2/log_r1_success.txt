@@ -1,8 +1,0 @@
-OUTPUT:
-Tour: [0, 2, 6, 5, 3, 7, 4, 9, 11, 1, 10, 8, 14, 12, 13, 0, 0]
-Total travel cost: inf
-
-
-ERROR:
-
-

@@ -1,6 +1,0 @@
-Task: mTSPMD_non_fix, City: 10, File name: P-n23-k8, Run time: 3
-
-Fail: Request LLM number: 10
-Details: 'exec': 5, 'verifier': 3, 'constraints': 2
-
-

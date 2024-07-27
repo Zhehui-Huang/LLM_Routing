@@ -1,8 +1,0 @@
-- [There are 15 cities including the depot city.]
-- [The robot starts and ends at the depot city 0.]
-- [The robot must visit exactly 6 cities, including the depot city.]
-- [Travel cost is calculated as the Euclidean distance between two cities.]
-- [The goal is to find the shortest possible tour that visits exactly 6 cities.]
-- [Use the GVNS algorithm to find a near-optimal solution.]
-- [Output the tour as a list of city indices, starting and ending at the depot city 0.]
-- [Output the total travel cost of the tour.]

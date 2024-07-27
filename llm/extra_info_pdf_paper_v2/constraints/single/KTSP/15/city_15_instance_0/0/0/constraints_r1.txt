@@ -1,6 +1,0 @@
-- [Requirement 1] The robot starts and ends its tour at the depot city (city index 0).
-- [Requirement 2] The tour must visit exactly 4 cities, including the depot city.
-- [Requirement 3] Calculate the travel cost as the Euclidean distance between any two cities.
-- [Requirement 4] Optimize the tour to achieve the shortest possible travel cost.
-- [Requirement 5] Output the tour as a list of city indices starting and ending at the depot city.
-- [Requirement 6] Output the total travel cost of the tour.

@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Not all groups are visited.
-
-
-ERROR:
-
-

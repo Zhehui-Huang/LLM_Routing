@@ -1,8 +1,0 @@
-- [Requirement 1] There are 16 defined cities with their coordinates specified, including a depot city (city 0).
-- [Requirement 2] There are 8 robots, all starting and ending tours at the depot city (city 0).
-- [Requirement 3] Robots can travel between any two cities. Travel cost is calculated as the Euclidean distance between the cities.
-- [Requirement 4] Each robot must visit every city exactly once, except the depot city, which it returns to after completing the tour.
-- [Requirement 5] The objective is to minimize the total travel cost across all robots while ensuring each city, except for the depot, is visited exactly once.
-- [Requirement 6] Output should be in the format of a list of city indices for each robot's tour starting and ending at the depot city and should include the total travel cost for each tour and an overall total travel cost.
-- [Requirement 7] Decision-making or optimization may incorporate heuristic methods and hybrid strategies for effective problem-solving.
-- [Requirement 8] Performance optimization is key, aiming to achieve the shortest possible tours and the lowest overall travel cost.

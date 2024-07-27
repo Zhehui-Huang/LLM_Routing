@@ -1,6 +1,0 @@
-- [Requirement 1] There are 22 cities, including 4 depot cities, each assigned as a start and end point for one of the 4 robots.
-- [Requirement 2] Robots must visit each city exactly once except their respective depots, which they visit twice (start and end).
-- [Requirement 3] Each robot’s travel cost is calculated using the Euclidean distance between cities.
-- [Requirement 4] The objective is to minimize the total travel cost across all robots, ensuring the shortest possible tours for each robot.
-- [Requirement 5] Use the Ant Colony Optimization (ACS) method tailored for multi-depot mTSP to solve the problem based on the provided academic insights.
-- [Requirement 6] Output should include each robot's tour starting and ending at their assigned depot and the tour's total travel cost, plus the overall combined cost of all tours.

@@ -1,5 +1,0 @@
-- [Requirement 1]: The robot must start and finish at the depot city, indexed as 0.
-- [Requirement 2]: The robot must visit exactly one city from each of the four groups.
-- [Requirement 3]: Travel costs between cities are calculated using the Euclidean distance metric.
-- [Requirement 4]: Optimize the route to minimize the total travel cost.
-- [Requirement 5]: The output of the solution must include the tour as a list of city indices and the total travel cost, both starting and ending at the depot city.

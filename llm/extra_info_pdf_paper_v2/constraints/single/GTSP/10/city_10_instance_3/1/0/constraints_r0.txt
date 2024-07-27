@@ -1,6 +1,0 @@
-- [The environment comprises 10 cities with specific coordinate locations for the depot and cities.]
-- [There are 6 groups of cities, with each group containing specific cities. Only one city from each group must be visited by the robot.]
-- [One robot starts and ends its route at the depot city (0).]
-- [The travel cost between any two cities is calculated using the Euclidean distance formula.]
-- [The robot must determine a path that visits exactly one city from each group, starting and ending the tour at the city labeled as the depot (0), in order to minimize the total travel cost.]
-- [The final solution should be a list of city indices forming the shortest possible tour, starting and ending at city 0, and the total travel cost of this tour.]

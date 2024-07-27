@@ -1,8 +1,0 @@
-- [Requirement 1] There are 15 cities with the depot located at city 0.
-- [Requirement 2] There are 5 city groups: Group 0, Group 1, Group 2, Group 3, and Group 4.
-- [Requirement 3] Each groups has their own specific cities: Group 0: [8, 12, 14]; Group 1: [7, 10, 11]; Group 2: [4, 6, 9]; Group 3: [1, 3, 13]; and Group 4: [2, 5].
-- [Requirement 4] There is one robot that starts at the depot city 0.
-- [Requirement 5] The robot must visit exactly one city from each group.
-- [Requirement 6] The robot needs to return to the depot city 0 after visiting one city from each group.
-- [Requirement 7] Travel between cities is calculated using Euclidean distance.
-- [Requirement 8] The task is to find the shortest tour that satisfies the travel conditions.

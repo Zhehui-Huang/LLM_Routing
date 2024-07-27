@@ -1,3 +1,0 @@
-- [Each city is visited exactly once by one robot.]
-- [Each robot starts and ends its tour at the depot city.]
-- [The primary goal is to minimize the maximum distance traveled by any single robot.]

@@ -1,6 +1,0 @@
-- [Requirement 1] Each robot must start and end its tour at its respective starting depot.
-- [Requirement 2] Each city is to be visited exactly once by any one of the robots.
-- [Requirement 3] The objective is to minimize the total travel cost across all robots, which is calculated based on the Euclidean distance between cities.
-- [Requirement 4] The solution should specify the tour for each robot with the city indices beginning and ending at the corresponding depot city.
-- [Requirement 5] The solution should provide the total travel cost for each individual robot as well as the overall total travel cost for all robots.
-- [Requirement 6] The problem should be solved using an iterative approach where an ant colony algorithm simulates ants constructing tours, updating pheromone trails based on tour quality, and repeating this process until no further improvements are observed for a set number of cycles.

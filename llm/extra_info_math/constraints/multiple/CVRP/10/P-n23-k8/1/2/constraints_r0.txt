@@ -1,4 +1,0 @@
-- [Each route must start and terminate at the depot city (City 0).]
-- [Each city must be visited by exactly one robot.]
-- [The total load carried by each robot on its route must not exceed the robot's capacity of 40 units.]
-- [The solution must strive to minimize the total travel distance across all robots.]

@@ -1,3 +1,0 @@
-- [Requirement 1] Each of the 8 robots must start and end its tour at its assigned depot city.
-- [Requirement 2] Each city must be visited exactly once by any one of the robots.
-- [Requirement 3] The goal is to minimize the total travel cost for all robots combined, where the travel cost is the sum of the Euclidean distances between consecutive cities visited in the tours.

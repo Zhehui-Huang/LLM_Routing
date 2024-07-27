@@ -1,8 +1,0 @@
-- [Each robot starts and ends at its assigned depot.]
-- [Robots must collectively visit all cities exactly once.]
-- [Each city is visited exactly once, except the depots which are the starting and ending points for the respective robots.]
-- [Objective is to minimize the total travel cost for all robots combined while ensuring each robot completes its tour.]
-- [Travel Cost is calculated as the Euclidean distance between two cities.]
-- [There are 4 robots and each robot's tour must be computed.]
-- [Output tours for each robot as a list of city indices starting and ending at its assigned depot.]
-- [Output the total travel cost for each tour and the overall total travel cost.]

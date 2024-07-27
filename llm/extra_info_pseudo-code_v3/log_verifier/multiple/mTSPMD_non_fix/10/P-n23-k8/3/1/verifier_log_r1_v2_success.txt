@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Cost discrepancy for tour [0, 21, 15]
-
-
-ERROR:
-
-

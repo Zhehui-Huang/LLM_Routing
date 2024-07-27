@@ -1,6 +1,0 @@
-- [The robot needs to visit all cities exactly once, except the depot city, and then return to the depot city.]
-- [The travel cost is calculated as the Euclidean distance between two cities.]
-- [The robot starts at depot city 0 and must also end the tour at depot city 0.]
-- [Use Christofides algorithm to find an approximate solution to the Traveling Salesman Problem.]
-- [Output the tour as a list of city indices starting and ending at depot city 0.]
-- [Output the total travel cost of the tour.]

@@ -1,5 +1,0 @@
-- [The robot must visit all cities exactly once, except for the depot city, which it must start and end at.]
-- [Each city can be treated as a graph vertex, and travel paths between them as graph edges with associated Euclidean cost.]
-- [The solution must provide the shortest possible tour that satisfies the above visitation constraint.]
-- [The output should specify the tour as a list of city indices, starting and ending at the depot.]
-- [The output should also specify the total travel cost of the tour.]

@@ -1,6 +1,0 @@
-- [Requirement 1] Implement a heuristic algorithm to minimize the longest distance between any two consecutive cities in the robot's tour.
-- [Requirement 2] The robot must start and end its tour at the depot city (city 0), visiting each city exactly once.
-- [Requirement 3] Output should include:
-  - The tour as a list of city indices starting and ending at the depot city 0.
-  - The total travel cost of the tour.
-  - The maximum distance between any two consecutive cities in the tour.

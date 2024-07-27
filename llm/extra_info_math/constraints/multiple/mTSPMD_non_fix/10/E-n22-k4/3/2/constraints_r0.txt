@@ -1,7 +1,0 @@
-- [Each robot must start its route from depot city 0.]
-- [Robots can finish their tour at any city.]
-- [Each city must be visited exactly once by a robot.]
-- [The goal is to minimize the total travel cost for all robots combined.]
-- [The travel cost between cities is calculated using the Euclidean distance.]
-- [There are a total of 4 robots available for the task.]
-- [The network consists of 22 cities, including 4 depots.]

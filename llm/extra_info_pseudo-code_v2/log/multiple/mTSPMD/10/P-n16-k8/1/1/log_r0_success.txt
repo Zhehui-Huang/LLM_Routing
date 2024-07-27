@@ -1,8 +1,0 @@
-OUTPUT:
-Best Tour: [7, 14, 9, 13, 8, 12, 15, 11, 10, 7]
-Best Tour Total Travel Cost: 118.50348450043907
-
-
-ERROR:
-
-

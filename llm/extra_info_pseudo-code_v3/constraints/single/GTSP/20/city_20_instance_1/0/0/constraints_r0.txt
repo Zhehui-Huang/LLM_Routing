@@ -1,7 +1,0 @@
-- [There are 20 cities with specific coordinates, including a depot city labeled city 0.]
-- [Cities are divided into four groups; a robot must visit exactly one city from each group in its tour.]
-- [The robot starts and ends at the depot city 0.]
-- [Travel cost is the Euclidean distance between any two cities.]
-- [The solution must find the shortest tour that abides by the given constraints.]
-- [Output the tour as a list of city indices, starting and ending at the depot city 0.]
-- [Output the total travel cost of the tour.]

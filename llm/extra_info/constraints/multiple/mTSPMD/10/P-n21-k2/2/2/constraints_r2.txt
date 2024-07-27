@@ -1,3 +1,0 @@
-- [Requirement 1] The robots must start at their respective depot cities (Robot 0 starts at city 0 and ends at city 0, Robot 1 starts at city 1 and ends at city 1).
-- [Requirement 2] Each robot must visit every city exactly once, except for the depots which must be visited exactly twice (at start and end of the tour).
-- [Requirement 3] The objective is to minimize the total Euclidean distance traveled by all robots combined across their tours.

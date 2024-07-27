@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Tour must visit exactly 7 cities, including the depot city.
-
-
-ERROR:
-
-

@@ -1,8 +1,0 @@
-OUTPUT:
-Initial Tour: [0, 3, 2, 7, 9, 0]
-Initial Cost: 331.07347000075094
-
-
-ERROR:
-
-

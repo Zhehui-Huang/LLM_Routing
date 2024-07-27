@@ -1,6 +1,0 @@
-- [The problem involves 10 cities, including a depot city 0.]
-- [The robot starts its tour at the depot city 0 and must return to the depot after visiting all other cities.]
-- [Each city must be visited exactly once by the robot, apart from the depot city which must be visited exactly twice (start and end of the tour).]
-- [Travel cost between two cities is determined by the Euclidean distance.]
-- [The output should include the shortest tour as a list of city indices starting and ending at the depot city.]
-- [The output should also include the total travel cost of the tour.]

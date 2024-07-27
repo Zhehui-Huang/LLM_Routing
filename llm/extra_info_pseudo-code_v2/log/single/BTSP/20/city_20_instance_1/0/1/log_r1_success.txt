@@ -1,9 +1,0 @@
-OUTPUT:
-Tour: Placeholder for actual tour path
-Total travel cost: Placeholder for total cost calculation
-Maximum distance between consecutive cities: 60.41
-
-
-ERROR:
-
-

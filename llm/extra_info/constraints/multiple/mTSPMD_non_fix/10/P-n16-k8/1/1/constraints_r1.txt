@@ -1,5 +1,0 @@
-- [Requirement 1] Each of the eight robots must start their tour at depot city 0 and need not return to any depot city after all cities are visited.
-
-- [Requirement 2] Each city must be visited exactly once by any of the robots while also minimizing the total travel cost or distance across all tours combined.
-
-- [Requirement 3] Output should include a list of city indices for each robot's tour, starting and potentially ending at the designated starting depot city, plus the travel cost for each tour and the collective total travel cost for all robots.

@@ -1,6 +1,0 @@
-- [The robot must start and end its tour at the depot city 0.]
-- [The robot must visit each city exactly once, excluding the depot when on tour.]
-- [Each connection from city i to city j must either be used (x_ij = 1) or not used (x_ij = 0) in the tour.]
-- [The sum of outgoing connections from each city must be exactly one (ensuring each city is left exactly once).]
-- [The sum of incoming connections to each city must be exactly one (ensuring each city is entered exactly once).]
-- [No subtours are allowed; only one tour that visits all cities exactly once should be formed.]

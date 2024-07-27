@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Incorrect travel cost for tour 0, calculated 96.22530283010843, expected 93.09
-
-
-ERROR:
-
-

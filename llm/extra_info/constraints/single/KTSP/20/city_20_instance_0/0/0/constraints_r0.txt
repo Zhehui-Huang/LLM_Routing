@@ -1,4 +1,0 @@
-- [Requirement 1] The robot must start and end its journey at the depot city, which is city 0.
-- [Requirement 2] The robot has to visit exactly 3 additional cities, making a total of 4 cities visited.
-- [Requirement 3] The path should have the shortest possible total travel cost, using Euclidean distance as the travel cost metric between two cities.
-- [Requirement 4] Output should include the sequence of city indices starting and ending at city 0 and the total travel distance in the specified format.

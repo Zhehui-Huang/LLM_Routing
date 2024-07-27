@@ -1,4 +1,0 @@
-- [The robot must start and end its tour at the depot city 0.]
-- [The robot must visit exactly one city from each of the four groups.]
-- [Travel costs between cities are computed using the Euclidean distance formula.]
-- [The robot's tour should aim to minimize the total travel distance.]

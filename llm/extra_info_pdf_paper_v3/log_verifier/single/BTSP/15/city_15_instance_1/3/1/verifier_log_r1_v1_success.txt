@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Total travel cost mismatch.
-
-
-ERROR:
-
-

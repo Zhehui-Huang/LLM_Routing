@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: City 16 visited more than once
-
-
-ERROR:
-
-

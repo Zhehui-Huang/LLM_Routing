@@ -1,4 +1,0 @@
-- [Each robot starts and ends at their assigned depot city.]
-- [Each robot must visit each city exactly once and return to their starting depot.]
-- [Minimize total travel cost for all robots combined.]
-- [Each city is visited exactly once by exactly one robot.]

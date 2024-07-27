@@ -1,7 +1,0 @@
-- [Requirement 1] Each of the 8 robots must start its tour at depot city 0 and can end at any city.
-- [Requirement 2] All cities must be visited exactly once collectively by all robots.
-- [Requirement 3] Minimize the total travel cost for all robots combined.
-- [Requirement 4] Travel cost between cities is calculated using the Euclidean distance.
-- [Requirement 5] Output must include the tour for each robot, the travel cost for each tour, and the overall total travel cost. Each tour must include the starting depot city at the beginning.
-- [Requirement 6] Address the problem using meta-heuristic approaches as suggested, focusing on optimizing routes and reducing travel costs.
-- [Requirement 7] The environment consists of 16 cities with specified coordinates, including multiple designated depots.

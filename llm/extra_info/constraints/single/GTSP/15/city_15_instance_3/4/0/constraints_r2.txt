@@ -1,5 +1,0 @@
-- [Requirement 1] The robot must start and end the tour at depot city 0.
-- [Requirement 2] The robot must visit exactly one city from each of the six city groups.
-- [Requirement 3] The total tour cost is calculated based on the Euclidean distance between each city visited in the sequence.
-- [Requirement 4] The solution should return the travel route starting from the depot city 0, visiting one city from each group, and returning to the depot city.
-- [Requirement 5] The solution should also return the total travel cost of this tour.

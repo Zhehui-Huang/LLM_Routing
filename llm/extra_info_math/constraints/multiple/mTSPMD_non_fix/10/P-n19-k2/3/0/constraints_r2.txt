@@ -1,5 +1,0 @@
-- [Each robot must start at the designated depot city 0.]
-- [Robots do not need to return to their starting depot after completing their tour.]
-- [Each robot must visit all cities exactly once collectively with minimum total travel cost.]
-- [Tours must be optimized for the lowest total combined travel distance or cost for all robots.]
-- [Output the tours for each robot as a list of city indices, starting and ending at their designated depot.]

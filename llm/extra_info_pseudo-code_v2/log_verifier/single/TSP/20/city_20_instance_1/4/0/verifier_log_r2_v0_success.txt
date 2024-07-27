@@ -1,7 +1,0 @@
-OUTPUT:
-Verification result: FAIL: Tour does not visit all cities exactly once or visits a city more than once
-
-
-ERROR:
-
-

@@ -1,5 +1,0 @@
-- [Each robot starts its tour from the depot city 0 and must return there after completing deliveries.]
-- [All cities excluding the depot city must have their specified demand fully met by the robot deliveries.]
-- [Each robot has a maximum carrying capacity of 160 that cannot be exceeded during its delivery tour.]
-- [The total travel cost for all robot tours should be minimized.]
-- [Travel cost is calculated as the Euclidean distance between two cities.]

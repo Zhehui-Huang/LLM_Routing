@@ -1,3 +1,0 @@
-- [Requirement 1] All cities except the depot city must be visited exactly once by the robots.
-- [Requirement 2] Each robot starts and ends its tour at the depot city.
-- [Requirement 3] Minimize the total travel cost for all tours combined, ensuring robots collectively perform the shortest possible tours.

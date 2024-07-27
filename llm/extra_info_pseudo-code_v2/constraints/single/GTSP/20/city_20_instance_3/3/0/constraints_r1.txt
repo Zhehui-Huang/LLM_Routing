@@ -1,6 +1,0 @@
-- [The environment consists of 20 cities, including a depot city (City 0) and 19 other cities labeled from City 1 to City 19.]
-- [Cities are aggregated into 6 groups, and each group contains a specific subset of these cities.]
-- [The robot must start its route at the depot city (City 0), travel to exactly one city from each group, and return to the depot city by the end of its tour.]
-- [Travel cost between two cities is determined by the Euclidean distance between them.]
-- [The objective is to determine the shortest possible tour that meets all route requirements.]
-- [The output should list the tour as an array of city indices starting and ending at the depot city (City 0) and include the total travel cost of this tour.]

@@ -1,6 +1,0 @@
-- [Requirement 1] The environment includes 20 cities with specified coordinates, and the cities are separated into 3 distinct groups.
-- [Requirement 2] There is one robot starting and ending its journey at the depot city 0.
-- [Requirement 3] The robot needs to travel using the Euclidean distance between any two cities to calculate the travel cost.
-- [Requirement 4] The robot must visit exactly one city from each group and then return to the depot city.
-- [Requirement 5] The required output should include a tour starting and ending at depot city 0, and the total travel cost of this tour.
-- [Requirement 6] Use the given pseudocode for the GLNS Algorithm to determine the shortest possible tour for the robot.

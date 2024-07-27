@@ -1,6 +1,0 @@
-- [The robot must visit all cities exactly once and return to the depot city.]
-- [The depot city is city 0.]
-- [Travel cost between any two cities is calculated using the Euclidean distance formula.]
-- [The robot starts and ends the tour at the depot city 0.]
-- [The tour and total travel cost must be presented as outputs.]
-- [The total travel cost is the sum of all distances between consecutive cities in the tour, including the return to the depot city.]

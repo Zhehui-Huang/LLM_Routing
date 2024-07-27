@@ -1,5 +1,0 @@
-- Each robot must start and end at its assigned depot.
-- Each city must be visited exactly once by any robot.
-- The travel cost is calculated as the Euclidean distance between two cities.
-- The goal is to minimize the total travel cost for all robots combined.
-- All tours should ensure that the starting and ending points are the respective depots for each robot.

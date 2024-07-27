@@ -1,8 +1,0 @@
-OUTPUT:
-Calculated Overall Total Travel Cost: 499.44080789111035
-CORRECT
-
-
-ERROR:
-
-

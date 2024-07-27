@@ -1,5 +1,0 @@
-- Each robot must start and end its tour at the depot city (City 0).
-- The sum of the demands of the cities on each robot's tour must not exceed the robot's capacity (40 units).
-- Each city's demand must be fully met.
-- The objective is to minimize the total travel cost for all tours.
-- All 23 cities must be visited by the robots, excluding the depot city, which only acts as the start and end point for each robot tour.

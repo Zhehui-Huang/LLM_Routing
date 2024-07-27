@@ -1,7 +1,0 @@
-OUTPUT:
-{'Tour': [0, 14, 3, 5, 7, 4, 16, 10, 11, 6, 2, 9, 13, 8, 1, 15, 18, 17, 19, 12, 0], 'Total travel cost': 503.93280249020313, 'Maximum distance between consecutive cities': 96.1041102138717}
-
-
-ERROR:
-
-

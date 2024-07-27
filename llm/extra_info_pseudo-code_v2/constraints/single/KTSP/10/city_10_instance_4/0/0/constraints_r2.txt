@@ -1,5 +1,0 @@
-- [Requirement 1] The robot must start and end the tour at the depot city (city 0).
-- [Requirement 2] The function must calculate and use the Euclidean distance between cities to determine the travel cost.
-- [Requirement 3] The function must implement and solve the problem using the provided GVNS algorithm pseudocode.
-- [Requirement 4] The robot needs to visit exactly 8 cities, including the starting depot city.
-- [Requirement 5] The function must return the results as a list of city indices, showing the tour starting and ending at city 0, along with the total travel cost of the tour.

@@ -1,3 +1,0 @@
-- [Requirement 1] The robot must start and end its journey at the depot city (city 0).
-- [Requirement 2] The robot is required to visit exactly 12 cities including the depot city from the 15 available cities.
-- [Requirement 3] The goal is to find the shortest possible route that fulfills these conditions.

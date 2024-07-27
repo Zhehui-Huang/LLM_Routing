@@ -1,5 +1,0 @@
-- [The environment includes 10 cities with specified coordinates.]
-- [The robot starts and ends its journey at the depot city 0.]
-- [Travel cost between any two cities is calculated as the Euclidean distance.]
-- [The robot must visit exactly one city from each of the 5 city groups.]
-- [The total cost and path of the tour need to be output, with the path starting and ending at the depot city 0.]

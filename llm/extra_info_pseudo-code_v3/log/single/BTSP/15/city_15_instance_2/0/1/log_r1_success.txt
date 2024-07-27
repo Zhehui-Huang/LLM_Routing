@@ -1,9 +1,0 @@
-OUTPUT:
-Tour: [0, 2, 6, 11, 1, 8, 14, 12, 3, 4, 5, 10, 9, 13, 7, 0]
-Total travel cost: 348.5863222792186
-Maximum distance between consecutive cities: 64.66065264130884
-
-
-ERROR:
-
-

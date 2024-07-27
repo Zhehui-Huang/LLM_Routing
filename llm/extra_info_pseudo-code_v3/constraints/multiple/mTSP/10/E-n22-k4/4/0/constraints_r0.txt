@@ -1,8 +1,0 @@
-- [There are 22 cities, including the depot city, with specified coordinates for each.]
-- [Four robots are available, all starting at the depot city 0.]
-- [The objective is for robots to collectively visit all cities exactly once (except the depot) and return to the starting city after completing their tours.]
-- [Each city, except the depot, must be visited exactly once by the robots.]
-- [Travel cost between two cities is calculated as the Euclidean distance.]
-- [The solution must minimize the total travel cost across all robots' tours.]
-- [Each robot's tour must start and end at the depot city 0.]
-- [Output should include detailed tours for each robot and travel costs for each tour, along with the overall total travel cost.]

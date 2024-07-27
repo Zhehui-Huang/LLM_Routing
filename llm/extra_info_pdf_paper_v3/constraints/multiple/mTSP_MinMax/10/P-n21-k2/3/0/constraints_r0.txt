@@ -1,3 +1,0 @@
-- [Requirement 1] There are 21 cities with given coordinates, and a single depot city where all robots start and end.
-- [Requirement 2] There are 2 robots that must collectively visit all cities exactly once and return to the depot city, with each robot starting and ending its tour at the depot.
-- [Requirement 3] The objective is to minimize the maximum distance (Euclidean) traveled by any single robot. Each city (excluding the depot) must be visited exactly once across all robots.

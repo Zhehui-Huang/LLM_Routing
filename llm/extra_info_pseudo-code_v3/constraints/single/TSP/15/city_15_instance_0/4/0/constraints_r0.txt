@@ -1,7 +1,0 @@
-- [Requirement 1] There are 15 cities including the depot.
-- [Requirement 2] City coordinates are given with city 0 being the depot city.
-- [Requirement 3] The robot starts at city 0 and must return to city 0 after visiting all other cities.
-- [Requirement 4] The robot must visit all cities exactly once except the depot city.
-- [Requirement 5] The travel cost between any two cities is calculated as the Euclidean distance between them.
-- [Requirement 6] Implement the Christofides algorithm to find the approximate shortest tour. This involves computing a minimum spanning tree, finding a minimum-weight perfect matching among vertices of odd degree in the spanning tree, forming a multigraph with even vertex degrees by combining edges of the tree and matching, and finding an Eulerian circuit, which is then converted into a Hamiltonian circuit by skipping repeated vertices.
-- [Requirement 7] The output should list the tour as a sequence of city indices starting and ending at the depot city, followed by the total travel cost of the tour.

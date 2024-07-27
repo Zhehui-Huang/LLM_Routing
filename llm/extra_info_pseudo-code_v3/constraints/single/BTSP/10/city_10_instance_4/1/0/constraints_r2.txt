@@ -1,7 +1,0 @@
-- [Requirement 1] The robot must start and end the tour at the depot city (city 0).
-- [Requirement 2] Each city must be visited exactly once by the robot, apart from the depot city which will be visited twice (start and end).
-- [Requirement 3] The goal is to minimize the longest distance between any two consecutive cities in the tour.
-- [Requirement 4] The robot can travel between any two cities, and the travel cost is the Euclidean distance between these cities.
-- [Requirement 5] The output should be formatted to list the tour as a sequence of city indices, the total travel cost of the tour, and the maximum distance between any two consecutive cities.
-- [Requirement 6] The tour and outputs should strictly follow the format given in the task's example.
-- [Requirement 7] Use a heuristic or approximation method based on sorted edge weights to determine if a Hamiltonian path exists for given conditions.

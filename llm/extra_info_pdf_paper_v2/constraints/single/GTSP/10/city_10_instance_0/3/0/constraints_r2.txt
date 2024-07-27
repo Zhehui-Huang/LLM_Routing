@@ -1,5 +1,0 @@
-- [The robot must start and end its journey at the depot, which is city 0.]
-- [The robot must visit exactly one city from each of the three city groups (Group 0, Group 1, Group 2).]
-- [The travel cost between cities is calculated as the Euclidean distance.]
-- [The environment involves 10 total cities, each with defined coordinates.]
-- [The solution should identify the shortest possible tour that fulfills the stated conditions.]

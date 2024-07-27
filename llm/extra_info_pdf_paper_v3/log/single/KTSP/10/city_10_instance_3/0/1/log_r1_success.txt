@@ -1,7 +1,0 @@
-OUTPUT:
-Failed to determine a tour.
-
-
-ERROR:
-
-

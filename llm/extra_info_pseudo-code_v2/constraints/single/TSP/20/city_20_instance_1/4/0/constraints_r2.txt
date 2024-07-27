@@ -1,3 +1,0 @@
-- [Requirement 1: The solution must find the shortest tour where the robot visits all 20 cities exactly once starting and ending at the depot city 0.]
-- [Requirement 2: Tour calculation must use the Euclidean distance as the travel cost between any two cities.]
-- [Requirement 3: The output must list the tour starting and ending at city 0 and include the total travel cost of this tour.]

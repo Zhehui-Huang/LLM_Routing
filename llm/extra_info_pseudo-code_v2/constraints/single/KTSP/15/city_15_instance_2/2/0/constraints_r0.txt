@@ -1,5 +1,0 @@
-- [Requirement 1]: The robot must visit exactly 8 cities, including the depot city, starting and ending at the depot city.
-- [Requirement 2]: The total number of cities including the depot is 15.
-- [Requirement 3]: Travel cost is calculated as the Euclidean distance between cities.
-- [Requirement 4]: The solution should be calculated using the GVNS algorithm involving subroutines like GenerateInitialSolution, Shake, VND (Variable Neighborhood Descent), and LocalSearch.
-- [Requirement 5]: The output should list the tour as a sequence of city indices starting and ending at the depot city 0, followed by the total travel cost of the tour.

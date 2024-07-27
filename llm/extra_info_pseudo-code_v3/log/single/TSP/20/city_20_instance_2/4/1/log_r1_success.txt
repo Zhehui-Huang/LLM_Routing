@@ -1,8 +1,0 @@
-OUTPUT:
-Tour: [0, np.int64(14), np.int64(16), np.int64(19), np.int64(12), 0]
-Total travel cost: 93.07
-
-
-ERROR:
-
-

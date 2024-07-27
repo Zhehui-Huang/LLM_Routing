@@ -1,8 +1,0 @@
-- [The environment consists of 10 specific cities, each with defined coordinates.]
-- [The depot is city 0, where the robot starts and ends its tour.]
-- [There is one robot that needs to visit each city exactly once, except the depot city.]
-- [Travel cost between cities is calculated as the Euclidean distance.]
-- [The objective is to find the shortest possible tour for the robot starting and ending at the depot.]
-- [The Lin-Kernighan algorithm should be implemented to optimize the tour.]
-- [Output should be a list indicating the sequence of cities in the tour starting and ending at city 0.]
-- [Output should also include the total travel cost of the concluded tour.]

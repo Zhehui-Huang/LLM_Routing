@@ -1,6 +1,0 @@
-- [Requirement 1] The robot must visit each of the 20 cities exactly once and return to the depot city, which is City 0.
-- [Requirement 2] The travel path must start and end at the depot city, City 0.
-- [Requirement 3] The travel cost between the cities is calculated as the Euclidean distance.
-- [Requirement 4] The goal is to minimize the longest distance between any two consecutive cities in the robot's travel tour.
-- [Requirement 5] The solution needs to follow the Bottleneck-optimal Biconnected Subgraph approach and its subsequent steps as described in the task.
-- [Requirement 6] The output should be in the specific format: a list of city indices representing the tour, the total travel cost of the tour, and the maximum distance between any two consecutive cities in the tour.

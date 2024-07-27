@@ -1,7 +1,0 @@
-- [All robots must start and end their routes at the depot city 0.]
-- [All city demands must be fully met without fractional deliveries.]
-- [The total goods carried by each robot in one tour should not exceed its capacity of 160.]
-- [The travel cost between cities is calculated using the Euclidean distance formula.]
-- [The objective is to minimize the total travel cost for all tours combined.]
-- [Each city (excluding the depot) must be visited exactly once across all robots.]
-- [The output should list the tours and the total travel cost for each tour, as well as the overall total travel cost.]

@@ -1,7 +1,0 @@
-- [Requirement 1] The robot must start and end its route at the depot city 0.
-- [Requirement 2] The robot has to visit each city exactly once.
-- [Requirement 3] The goal is to minimize the longest distance between any two consecutive cities in the tour.
-- [Requirement 4] The total travel cost of the tour must be calculated as the sum of the Euclidean distances for all visited edges.
-- [Requirement 5] The maximum distance between any two consecutive cities in the tour needs to be determined and minimized.
-- [Requirement 6] The output should consist of the tour as a list of city indices, starting and ending at city 0; the total travel cost of the tour; and the maximum distance between any two consecutive cities.
-- [Requirement 7] The provided pseudocode approximates the Bottleneck Traveling Salesman Problem (BTSP) and involves constructing a series of bottleneck graphs per increasing edge weight to find a Hamiltonian path with minimized maximum edge weight.

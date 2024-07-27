@@ -1,3 +1,0 @@
-- [Requirement 1] The robots must collectively visit all cities exactly once, excluding the depot city as a destination, and then return to the depot city after completing their tours.
-- [Requirement 2] The solution must provide tours for each of the two robots starting and ending at the depot city, consisting only of these tours' city indices.
-- [Requirement 3] Each robot's route, along with the total and overall total travel cost using the Euclidean distance formula, must be calculated and listed.

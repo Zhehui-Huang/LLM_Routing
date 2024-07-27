@@ -1,9 +1,0 @@
-OUTPUT:
-Tour: None
-Total travel cost: 328.40
-Maximum distance between two consecutative cities: 45.19
-
-
-ERROR:
-
-

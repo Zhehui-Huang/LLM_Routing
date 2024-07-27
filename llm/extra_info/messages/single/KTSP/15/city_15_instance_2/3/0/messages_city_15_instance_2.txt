@@ -1,9 +1,0 @@
-Task file path: /home/ethan/repository/backup/LLM_Routing/llm/extra_info/messages/single/KTSP/15/city_15_instance_2/3/0/messages_city_15_instance_2.txt
-===
-System - LLM_SYSTEM_PROMPT
-User - Task description: city_15_instance_2
-User - execution does not output any results.
-Assistant - Solution: /home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/15/city_15_instance_2/3/0/solution_r0.py
-Assistant - Solution: /home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/15/city_15_instance_2/3/0/solution_r1.py
-Another LLM - User - Ask for prompts
-Another LLM - Assistant - Constraints response: /home/ethan/repository/backup/LLM_Routing/llm/extra_info/constraints/single/KTSP/15/city_15_instance_2/3/0/constraints_r1.txt

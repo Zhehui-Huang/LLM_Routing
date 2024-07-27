@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL - Tours do not start or end correctly at their designated depots
-
-
-ERROR:
-
-

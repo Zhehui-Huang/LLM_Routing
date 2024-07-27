@@ -1,3 +1,0 @@
-- [Requirement 1] Each robot must visit each city exactly once, except for the designated depots which can be the starting point for multiple robots.
-- [Requirement 2] Robots start from a designated depot, and it is not necessary for them to return to any depot after completing their tours.
-- [Requirement 3] The solution must aim to minimize the total travel distance across all robots.

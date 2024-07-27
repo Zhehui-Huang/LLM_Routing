@@ -1,5 +1,0 @@
-- [Each robot starts from a designated depot and visits all other cities exactly once without returning to the depot.]
-- [Minimize the total travel cost across all robots.]
-- [Ensure that tours are organized such that every city is visited once and only once by any of the robots.]
-- [Calculate the travel cost as the Euclidean distance between any two cities.]
-- [Output the tours for each robot starting and ending at their respective depots along with the cost for each tour and the total cost for all tours combined.]

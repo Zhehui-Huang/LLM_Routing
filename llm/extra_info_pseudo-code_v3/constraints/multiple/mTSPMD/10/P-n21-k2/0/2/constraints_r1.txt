@@ -1,6 +1,0 @@
-- [There are 21 cities, including two depots.]
-- [Robot 0 starts and ends at Depot city 0; Robot 1 starts and ends at Depot city 1.]
-- [Robots must visit all cities exactly once.]
-- [Each robot returns to its starting depot after completing its tour.]
-- [The objective is to minimize the total travel cost across all robots.]
-- [Travel cost is calculated based on the Euclidean distance between two cities.]

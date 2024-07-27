@@ -1,6 +1,0 @@
-- Each city is visited exactly once by one salesman
-- Each salesman must leave each visited node and enter each visited android_prompt_toolkite once
-- Each salesman must leave the depot exactly once
-- Subtour elimination constraints must be enforced to avoid subtours
-- Assignment variables must be binary (either 0 or 1)
-- Position variables must be a non-negative continuous value

@@ -1,6 +1,0 @@
-- [There are 15 cities, each with a specific coordinate.]
-- [There are 3 groups of cities, and the robot must visit one city from each group.]
-- [The robot starts and ends its journey at the depot city, city 0.]
-- [The travel cost between two cities is calculated using the Euclidean distance formula.]
-- [The output should be the shortest tour starting and ending at city 0, and it should include one city from each group.]
-- [The output should also include the total travel cost of the tour.]

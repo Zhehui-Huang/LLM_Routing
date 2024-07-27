@@ -1,8 +1,0 @@
-OUTPUT:
-The total travel cost does not match the calculated Euclidean distances.
-FAIL
-
-
-ERROR:
-
-

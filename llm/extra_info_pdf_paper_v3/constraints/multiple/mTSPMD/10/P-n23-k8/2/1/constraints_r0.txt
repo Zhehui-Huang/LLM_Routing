@@ -1,6 +1,0 @@
-- [Each robot must visit all cities exactly once and then return to its own respective depot.]
-- [Each robot has a specified starting and ending location based on its assigned depot city.]
-- [The total travel cost for each robot and for all robots combined must be minimized.]
-- [Travel cost is determined by the Euclidean distance between two cities.]
-- [Output should be in the form of tours for each robot, starting and ending at the assigned depots.]
-- [Output must include travel cost details for each individual tour as well as the combined total travel cost.]

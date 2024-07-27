@@ -1,8 +1,0 @@
-- [Requirement 1] The solution must ensure all cities are visited exactly once by the robots combined, with each robot returning to its starting depot after completing its tour.
-- [Requirement 2] Calculate the travel cost as the Euclidean distance between cities.
-- [Requirement 3] Minimize the total travel cost for all robots combined.
-- [Requirement 4] Each robot starts and ends its route at the assigned depot city.
-- [Requirement 5] The solution must use an Ant Colony Optimization (ACO) approach with specific parameters for number of ants, cycles, initial pheromone, pheromone influence (alpha), distance influence (beta), and pheromone evaporation rate (rho).
-- [Requirement 6] Implement special transition probability modifications to handle cases where an ant must return to the depot prematurely due to maximum city visits or to ensure all cities can be feasibly visited.
-- [Requirement 7] The algorithm should iteratively improve the solution and terminate after a specified number of cycles with no improvement.
-- [Requirement 8] The output should list the tours and travel costs for each robot, and the combined overall travel cost.

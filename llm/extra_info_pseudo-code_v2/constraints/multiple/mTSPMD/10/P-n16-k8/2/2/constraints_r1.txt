@@ -1,8 +1,0 @@
-- [There are 16 cities with specific coordinates given for depots and other cities.]
-- [There are 8 robots, each assigned to a unique depot as a starting and ending location.]
-- [Robots must visit all cities exactly once and return to their respective depots.]
-- [The objective is to minimize the total travel cost for all robots combined while ensuring each city is visited exactly once by any robot and each robot returns to its starting depot.]
-- [Travel cost between two cities is calculated using the Euclidean distance.]
-- [The algorithm to solve the problem uses a variant of the Ant Colony Optimization (ACO) approach, involving parameters like antnum, cyclenum, inittrail, alpha, beta, and rho.]
-- [The stopping criterion for the ACO algorithm is based on no improvement in the best solution for a defined number of successive cycles (cyclenum).]
-- [The output should list the tour for each robot starting and ending at their assigned depot and the total travel cost for each tour along with the overall total travel cost.]

@@ -1,6 +1,0 @@
-- [Each city is visited exactly once by one robot.]
-- [Flow conservation: each robot must leave and enter each visited node exactly once.]
-- [Each robot must leave the depot exactly once and return to it after the tour.]
-- [Subtour elimination must be ensured to avoid any robot completing a tour without linking back to the depot.]
-- [Binary constraints: the variables indicating travel between cities by a robot are binary (either 0 or 1).]
-- [Continuous variables for node positions are non-negative.]

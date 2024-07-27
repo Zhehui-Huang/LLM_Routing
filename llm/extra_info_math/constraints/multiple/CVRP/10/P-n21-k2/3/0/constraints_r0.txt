@@ -1,6 +1,0 @@
-- [Each customer city is visited exactly once by one robot.]
-- [Each robot's route starts and ends at the depot city 0.]
-- [The total demand on each robot's route does not exceed the robot's capacity of 160.]
-- [The travel cost is calculated as the Euclidean distance between cities, and the objective is to minimize this cost across all robots.]
-- [Ensure that the total demand for all cities is met by the collective effort of both robots.]
-- [Avoid sub-tours within each robot's route, i.e., every route must only have one cycle that includes the depot.]

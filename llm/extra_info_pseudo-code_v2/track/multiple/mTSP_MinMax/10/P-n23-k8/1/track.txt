@@ -1,6 +1,0 @@
-Task: mTSP_MinMax, City: 10, File name: P-n23-k8, Run time: 1
-
-Success: Request LLM number: 8
-Details: 'exec': 3, 'verifier': 3, 'constraints': 2
-
-

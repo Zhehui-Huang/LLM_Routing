@@ -1,6 +1,0 @@
-- [The robot must start and end its journey at the depot city, which is city 0.]
-- [The robot is required to visit exactly 5 cities, including the depot city.]
-- [The travel cost between any two cities is calculated based on the Euclidean distance.]
-- [The task is to find the shortest possible tour that connects these cities.]
-- [The output of the tour must be a list starting and ending with the depot city 0.]
-- [The format of the output must include both the sequence of cities as a list and the total travel cost of the tour.]

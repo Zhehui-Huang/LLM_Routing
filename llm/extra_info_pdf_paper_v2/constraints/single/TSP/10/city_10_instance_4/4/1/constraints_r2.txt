@@ -1,6 +1,0 @@
-- [There are 10 cities labeled from 0 to 9, and their coordinates are provided.]
-- [City 0 is the depot city with coordinates (79, 15).]
-- [One robot is available that starts and ends its route at the depot city 0.]
-- [The robot must visit all cities exactly once except the depot city before returning to the depot city.]
-- [Travel cost between cities is calculated based on the Euclidean distance.]
-- [The output must contain the shortest tour as a list starting and ending at depot city 0, and the total travel cost of this tour.]

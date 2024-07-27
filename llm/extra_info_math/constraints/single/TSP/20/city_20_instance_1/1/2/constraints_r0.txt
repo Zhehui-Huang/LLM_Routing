@@ -1,3 +1,0 @@
-- [The robot must start and end its tour at the depot city, which is city 0.]
-- [The robot must visit all other cities exactly once.]
-- [The travel route must be the shortest possible, minimizing the Euclidean distance traveled.]

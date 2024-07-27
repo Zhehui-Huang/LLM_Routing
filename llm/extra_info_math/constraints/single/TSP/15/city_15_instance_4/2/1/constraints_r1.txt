@@ -1,3 +1,0 @@
-- [The robot must start and end the tour at depot city 0.]
-- [The robot must visit each city exactly once.]
-- [The total tour travel cost should be minimized.]

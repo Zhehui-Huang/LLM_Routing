@@ -1,9 +1,0 @@
-OUTPUT:
-
-
-ERROR:
-  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD/10/P-n21-k2/2/0/solution_r0.py", line 95
-    best_tours = all_tours
-IndentationError: unexpected indent
-
-

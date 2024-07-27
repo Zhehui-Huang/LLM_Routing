@@ -1,9 +1,0 @@
-OUTPUT:
-
-
-ERROR:
-  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_2/2/1/solution_r1.py", line 37
-    `       parent[rootY] = rootX
-IndentationError: expected an indented block after 'else' statement on line 36
-
-

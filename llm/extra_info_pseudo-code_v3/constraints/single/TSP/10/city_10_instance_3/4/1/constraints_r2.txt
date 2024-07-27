@@ -1,3 +1,0 @@
-- [Requirement 1]: The robot must start and end the tour at the depot city 0.
-- [Requirement 2]: The robot must visit each of the other cities exactly once.
-- [Requirement 3]: The solution should output both the tour as a list of city indices and the total travel cost of the tour.

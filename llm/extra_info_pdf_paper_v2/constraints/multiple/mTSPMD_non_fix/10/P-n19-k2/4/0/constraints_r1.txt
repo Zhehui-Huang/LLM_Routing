@@ -1,3 +1,0 @@
-- [Requirement 1] Each robot must start at depot city 0 and visit all cities exactly once collectively between them.
-- [Requirement 2] Robots do not need to return to the depot after completing their tours; they can end at any city.
-- [Requirement 3] The tours should be optimized to achieve the lowest possible total travel distance across all robots.

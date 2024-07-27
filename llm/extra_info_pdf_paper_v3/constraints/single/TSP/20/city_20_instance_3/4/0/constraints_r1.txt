@@ -1,7 +1,0 @@
-- [There are 20 cities, identified with indices from 0 to 19, each with specific coordinates.]
-- [City 0 at (30, 56) serves as the depot and is the starting and ending point for the robot's tour.]
-- [The robot must visit all cities exactly once, starting and ending at the depot city 0.]
-- [The travel cost between two cities is calculated using the Euclidean distance.]
-- [The shortest tour route for the robot must be found.]
-- [The heuristic method described involves building a shortest spanning tree and finding a minimum-cost perfect matching on certain subgraphs.]
-- [The output should specify both the list of city indices visited in the tour starting and ending at city 0, and the total travel cost of the tour.]

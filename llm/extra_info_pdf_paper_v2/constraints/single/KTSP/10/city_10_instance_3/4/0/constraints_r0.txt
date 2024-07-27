@@ -1,4 +1,0 @@
-- [The robot starts and ends at the depot city which is city 0.]
-- [The robot must visit exactly 7 cities, including the depot city.]
-- [The goal is to find the shortest possible route that visits these 7 cities.]
-- [Provided city coordinates must be used to calculate Euclidean distances between cities for travel costs.]

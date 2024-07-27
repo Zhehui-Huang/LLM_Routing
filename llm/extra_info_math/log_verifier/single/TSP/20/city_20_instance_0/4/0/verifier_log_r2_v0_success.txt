@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: There are subtours in the solution.
-
-
-ERROR:
-
-

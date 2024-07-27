@@ -1,7 +1,0 @@
-- [Requirement 1] The robot must start and end the tour at the depot city (City 0).
-- [Requirement 2] Each city must be visited exactly once by the robot, excluding the starting and ending point.
-- [Requirement 3] The travel cost between any two cities is the Euclidean distance.
-- [Requirement 4] Minimize the longest distance between any two consecutive cities in the tour.
-- [Requirement 5] The output includes the tour as a list of city indices starting and ending at the depot city.
-- [Requirement 6] The output includes the total travel cost of the tour.
-- [Requirement 7] The output includes the maximum distance between any two consecutive cities in the tour.

@@ -1,8 +1,0 @@
-OUTPUT:
-Optimal tour: [0, 1, 5, 7, 9, 6, 3, 0, 0]
-Minimum travel cost: 217.11
-
-
-ERROR:
-
-

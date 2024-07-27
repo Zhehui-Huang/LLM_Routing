@@ -1,6 +1,0 @@
-- [Each robot's tour must start and end at the depot city (City 0).]
-- [The total demand of the cities in each robot's tour must not exceed the robot's carrying capacity of 6000.]
-- [Each city's specific demand must be fully met by the end of the routing.]
-- [Objective is to minimize the total travel cost for all tours collectively.]
-- [Tours must be planned for 4 robots.]
-- [Travel cost between two cities is calculated based on the Euclidean distance.]

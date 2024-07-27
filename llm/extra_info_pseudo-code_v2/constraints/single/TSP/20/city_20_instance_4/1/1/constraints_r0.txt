@@ -1,7 +1,0 @@
-- [There are 20 cities, indexed from 0 to 19 with fixed coordinates.]
-- [City 0 is the depot city with coordinates (26, 60).]
-- [The robot starts at the depot city 0 and must return there after visiting all other cities.]
-- [Each city must be visited exactly once by the robot, except the depot city, which is the start and endpoint.]
-- [The travel cost between any two cities is determined by the Euclidean distance.]
-- [The objective is to find the shortest possible tour for the robot.]
-- [The output should be formatted as a list of city indices representing the tour, starting and ending at city 0, followed by the total travel cost of the tour.]

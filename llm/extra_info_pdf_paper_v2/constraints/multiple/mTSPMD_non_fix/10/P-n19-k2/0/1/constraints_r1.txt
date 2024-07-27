@@ -1,8 +1,0 @@
-- [Requirement 1]: There are 19 cities including 2 depot cities.
-- [Requirement 2]: The robots must visit all cities exactly once collectively, with each city visited only once.
-- [rEquiremeNT 3]: Both robots start at depot city 0 and do not need to return to a depot at the end of their tour.
-- [ReQuirement 4]: The goal is to minimize the total combined travel cost for both robots.
-- [ReQUIREMENT 5]: The travel cost between any two cities is determined by the Euclidean distance.
-- [Requirement 6]: The tours for each robot must be output as a list of city indices.
-- [requirement 7]: The output must include the total travel cost for each individual tour and for all tours combined.
-- [ReQUIremeNt 8]: Utilize heuristic or metaheuristic techniques recommended by the study for solving this problem, specifically focusing on Simulated Annealing or Tabu Search.

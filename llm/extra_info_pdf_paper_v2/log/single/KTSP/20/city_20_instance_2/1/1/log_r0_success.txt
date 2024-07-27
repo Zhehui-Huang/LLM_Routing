@@ -1,8 +1,0 @@
-OUTPUT:
-Tour: [0, 14, 11, 10, 7, 18, 13, 19, 16, 12, 0]
-Total travel cost: 199.70
-
-
-ERROR:
-
-

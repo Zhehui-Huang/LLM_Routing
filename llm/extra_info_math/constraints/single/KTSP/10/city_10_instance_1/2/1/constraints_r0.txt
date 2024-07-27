@@ -1,3 +1,0 @@
-- [Requirement 1] The tour must start and end at the depot city, which is city 0.
-- [Requirement 2] The robot must visit exactly 5 cities, including the depot city.
-- [Requirement 3] The task is to find the shortest possible tour under the defined conditions.

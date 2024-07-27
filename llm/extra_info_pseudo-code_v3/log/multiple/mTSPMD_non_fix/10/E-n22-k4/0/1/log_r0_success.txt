@@ -1,7 +1,0 @@
-OUTPUT:
-Too many cities for factorial-time computation!
-
-
-ERROR:
-
-

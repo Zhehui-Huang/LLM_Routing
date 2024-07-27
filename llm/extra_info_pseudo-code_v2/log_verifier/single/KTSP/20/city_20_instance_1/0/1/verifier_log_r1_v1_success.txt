@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Tour does not include exactly 7 cities.
-
-
-ERROR:
-
-

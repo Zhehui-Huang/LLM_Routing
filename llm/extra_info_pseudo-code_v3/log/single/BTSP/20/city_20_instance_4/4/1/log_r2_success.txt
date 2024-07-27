@@ -1,7 +1,0 @@
-OUTPUT:
-No suitable tour was found.
-
-
-ERROR:
-
-

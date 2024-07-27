@@ -1,3 +1,0 @@
-- [Requirement 1] The robot needs to start and end the tour at the depot city (index 0).
-- [Requirement 2] The robot must visit exactly one city from each group of cities, ensuring that every cluster is visited.
-- [Requirement 3] The robot's travel path must minimize the total Euclidean distance traveled, forming a valid closed tour without any subtour formations.

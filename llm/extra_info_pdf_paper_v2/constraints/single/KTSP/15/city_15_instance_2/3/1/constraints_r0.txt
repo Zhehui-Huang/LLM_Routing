@@ -1,8 +1,0 @@
-- [There are 15 cities including the depot city which is city 0.]
-- [The robot starts and ends its tour at the depot city 0.]
-- [The robot needs to visit exactly 8 cities out of the given set, including the depot.]
-- [The travel cost between any two cities is calculated using the Euclidean distance.]
-- [The task is to find the shortest possible tour that visits exactly 8 cities, starting and ending at the depot city 0.]
-- [Implementations should utilize insights from "A General Variable Neighborhood Search Algorithm for the k-Traveling Salesman Problem" to ensure efficient and effective optimization.]
-- [Output the tour as a list of city indices starting and ending at city 0.]
-- [Output the total travel cost of the tour.]

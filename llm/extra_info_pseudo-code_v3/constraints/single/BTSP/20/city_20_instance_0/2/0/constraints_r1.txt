@@ -1,8 +1,0 @@
-- [Requirement 1] The robot must start and end the tour at the depot city (city 0).
-- [Requirement 2] Each city must be visited exactly once by the robot.
-- [Requirement 3] The objective is to minimize the longest distance between any two consecutive cities in the robot's tour.
-- [Requirement 4] Use the provided pseudocode algorithm to find the Hamiltonian path where the maximum edge weight between two consecutive cities is minimized.
-- [Requirement 5] The travel cost between cities is calculated using the Euclidean distance.
-- [Requirement 6] The final output should include the tour as a list of city indices starting and ending at the depot city 0.
-- [Requirement 7] The output must also include the total travel cost of the tour.
-- [Requirement 8] Finally, include the maximum distance between any two consecutive cities in the tour in the output.

@@ -1,4 +1,0 @@
-- [Requirement 1] Each robot must start and end its tour at its assigned depot.
-- [Requirement 2] Each robot can travel between any two cities, with travel cost calculated as the Euclidean distance between those cities.
-- [Requirement 3] Each city must be visited exactly once by any one of the robots.
-- [Requirement 4] The objective is to determine the shortest possible tours for each robot while minimizing the total travel cost for all robots combined.

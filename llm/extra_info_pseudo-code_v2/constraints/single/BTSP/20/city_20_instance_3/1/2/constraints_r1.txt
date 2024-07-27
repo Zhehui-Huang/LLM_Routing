@@ -1,9 +1,0 @@
-- [Requirement 1] The robot must visit each city exactly once, starting and ending at the depot city 0.
-- [Requirement 2] Calculate the travel cost as the Euclidean distance between any two cities.
-- [Requirement 3] Minimize the longest distance between any two consecutive cities in the tour.
-- [Requirement 4] Output the tour as a list of city indices starting and ending at depot city 0.
-- [Requirement 5] Output the total travel cost of the tour.
-- [Process 6] Output the maximum distance between any two consecutive cities in the tour.
-- [Requirement 7] Implement the algorithm focusing on creating a bottleneck-optimal biconnected subgraph and identifying an approximate optimal tour.
-- [Requirement 8] Use a heuristic approach as described in the pseudocode to provide the solution.
-- [Requirement 9] Ensure the solution provides the output in the specified format including tour, total travel cost, and maximum distance between consecutive cities.

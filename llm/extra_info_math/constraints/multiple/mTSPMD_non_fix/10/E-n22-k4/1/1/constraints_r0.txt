@@ -1,4 +1,0 @@
-- [Ensure that each city (node) is visited exactly once by a robot.]
-- [Ensure that all robots start their respective tours from depot city 0.]
-- [Allow robots to end their tours at any city, not necessarily needing to return to the depot.]
-- [Minimize the total travel cost for all tours combined, while meeting the preceding conditions.]

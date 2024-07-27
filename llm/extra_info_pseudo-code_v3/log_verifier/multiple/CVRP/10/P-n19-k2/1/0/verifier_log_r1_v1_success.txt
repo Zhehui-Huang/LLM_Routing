@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: All cities must be visited exactly once.
-
-
-ERROR:
-
-

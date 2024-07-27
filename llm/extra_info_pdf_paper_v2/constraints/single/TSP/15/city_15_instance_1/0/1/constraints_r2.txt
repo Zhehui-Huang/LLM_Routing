@@ -1,5 +1,0 @@
-- [The problem is a variant of the Traveling Salesman Problem (TSP) where there are 15 cities to be visited (including the depot city, which is also city 0).]
-- [The robot starts and ends its tour at the depot city 0.]
-- [The robot must visit all cities exactly once, except the depot which it starts at and returns to.]
-- [The travel cost between any two cities is calculated using the Euclidean distance.]
-- [The output should list the tour starting and ending at the depot city 0 as well as the total travel cost of this tour in the specified format.]

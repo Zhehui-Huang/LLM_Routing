@@ -1,7 +1,0 @@
-- [The robot must start and end its tour at the depot city 0.]
-- [The robot must visit exactly one city from each city group.]
-- [The travel cost is the Euclidean distance between two cities.]
-- [There are 15 cities divided into one depot and four city groups.]
-- [There is one robot available for completing the task.]
-- [Output the tour as a list starting and ending at city 0 and including one city from each group.]
-- [Output the total travel cost of the tour.]

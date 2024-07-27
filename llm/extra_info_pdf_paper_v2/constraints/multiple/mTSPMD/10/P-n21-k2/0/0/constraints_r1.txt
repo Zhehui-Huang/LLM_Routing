@@ -1,8 +1,0 @@
-- [There are 21 cities with specified coordinates, including two depot cities for the respective starting and ending points of the robots.]
-- [Each robot must start and end its tour at its assigned depot city.]
-- [City visits must be exclusive to each robot; no city (except the depots) is visited by more than one robot.]
-- [Each city must be visited exactly once by any robot, excluding the respective depots which are visited twice (start and end).]
-- [The objective is to minimize the combined travel cost of all robots.]
-- [Travel costs are based on the Euclidean distance between cities.]
-- [The solution must output the tours for each robot, showing city indices, starting and ending at their respective depots.]
-- [The output must also include the total travel cost for each robot's tour and the overall combined travel cost.]

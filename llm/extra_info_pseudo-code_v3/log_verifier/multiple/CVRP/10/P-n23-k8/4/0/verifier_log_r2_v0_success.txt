@@ -1,8 +1,0 @@
-OUTPUT:
-FAIL: Not all demands are properly covered.
-FAIL
-
-
-ERROR:
-
-

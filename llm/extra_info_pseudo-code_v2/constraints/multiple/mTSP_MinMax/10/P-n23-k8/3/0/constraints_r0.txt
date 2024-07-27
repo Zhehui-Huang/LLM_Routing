@@ -1,7 +1,0 @@
-- [All robots start and end their tour at the depot city 0.]
-- [Each robot must visit each city exactly once (excluding depot city 0 as a destination) and then return to depot city 0.]
-- [The primary objective is to minimize the maximum travel distance traveled by any single robot.]
-- [Travel costs between cities are calculated as the Euclidean distance.]
-- [All cities, except the depot, must be visited exactly once.]
-- [Output the tours for each robot as a list of city indices, starting and ending at depot city 0.]
-- [Output the travel cost for each tour and the maximum travel cost among all the tours.]

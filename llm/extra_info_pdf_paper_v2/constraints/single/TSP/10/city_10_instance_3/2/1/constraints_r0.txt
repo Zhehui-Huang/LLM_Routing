@@ -1,4 +1,0 @@
-- [The robot must visit each city exactly once, except for the depot city.]
-- [The tour of the robot must start and end at the depot city (city index 0).]
-- [The total travel cost, calculated as the Euclidean distance between cities, must be minimized.]
-- [The robot's route between two cities is determined by the Euclidean distance which is the travel cost criterion.]

@@ -1,7 +1,0 @@
-- [Requirement 1] The robot must start at the depot city 0.
-- [Requirement 2] The robot must visit exactly 5 cities, including the depot city.
-- [Requirement 3] The robot must end the tour at the depot city 0.
-- [Requirement 4] The travel path must be the shortest possible tour that visits exactly 5 cities.
-- [Requirement 5] The robot can travel between any two cities; the cost is calculated using the Euclidean distance.
-- [Requirement 6] Output the tour with a list of city indices, starting and ending at the depot city 0.
-- [Requirement 7] Output the total travel cost of the tour.

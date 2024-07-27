@@ -1,7 +1,0 @@
-- [There are 22 cities, each with distinct coordinates.]
-- [There are 4 robots, each starting and ending at a different depot city. Depot cities are among the city list: 0, 1, 2, 3.]
-- [Each city must be visited exactly once by the robots collectively.]
-- [The travel cost between any two cities is calculated as the Euclidean distance between them.]
-- [The goal is to minimize the total combined travel cost of all robots.]
-- [Each robot's tour must start and end at its own designated depot.]
-- [Use an ant colony optimization algorithm for the solution, incorporating factors such as pheromone amount, its evaporation, the number of ants, cycles of no improvement, influence of distances and pheromone trails on decision-making.]

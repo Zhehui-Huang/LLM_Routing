@@ -1,6 +1,0 @@
-- [Each robot must start and end at its assigned depot city.]
-- [All cities must be visited exactly once by any robot.]
-- [Minimize the total travel cost for all robots' tours combined.]
-- [Ensure the tours for each robot are output as a list of city indices starting and ending with the depot city.]
-- [Calculate and output the total travel cost for each tour.]
-- [Output the overall total travel norm cost for all robots.]

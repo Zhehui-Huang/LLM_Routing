@@ -1,8 +1,0 @@
-OUTPUT:
-FAIL
-name 'expected' is not defined
-
-
-ERROR:
-
-

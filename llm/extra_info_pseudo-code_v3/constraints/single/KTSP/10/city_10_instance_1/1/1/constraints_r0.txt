@@ -1,8 +1,0 @@
-- [Requirement 1] There are 10 cities including a depot city.
-- [Requirement 2] The journey starts and ends at the depot city, city 0.
-- [Requirement 3] The robot has to visit exactly 5 cities in total, including the depot city.
-- [Requirement 4] The distance between cities is calculated using the Euclidean distance formula.
-- [Requirement 5] The goal is to find the shortest possible tour that includes these cities.
-- [Requirement 6] The output should be in the format Tour: [0, ..., 0] and Total travel cost: number, indicating the route taken and its associated travel cost.
-- [Requirement 7] The solution should be obtained using the General Variable Neighborhood Search (GVNS) algorithm, following its specified steps and subroutines which include Initial Solution Generation, Shaking, Variable Neighborhood Descent (VND), and solution acceptance criteria.
-- [Requirement 8] The tour must return to the depot after visiting the five cities.

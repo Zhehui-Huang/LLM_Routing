@@ -1,6 +1,0 @@
-- [Requirement 1] There are 10 cities including the depot city (City 0).
-- [Requirement 2] The robot starts and ends its journey at the depot city (City 0).
-- [Requirement 3] Each city must be visited exactly once by the robot.
-- [Requirement 4] The robot can travel between any two cities.
-- [Requirement 5] The travel cost is the Euclidean distance between cities.
-- [Requirement 6] Minimize the maximum distance between any two consecutive cities in the tour.

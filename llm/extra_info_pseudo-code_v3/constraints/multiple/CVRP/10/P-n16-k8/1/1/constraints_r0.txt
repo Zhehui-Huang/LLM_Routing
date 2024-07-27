@@ -1,3 +1,0 @@
-- [Each robot must start and end its tour at depot city 0.]
-- [Each city's specific demand must be fully met by the deliveries.]
-- [The total capacity of goods carried by each robot during a tour must not exceed its maximum capacity of 35.]

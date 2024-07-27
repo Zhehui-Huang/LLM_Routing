@@ -1,6 +1,0 @@
-- [The robot must start and end the tour at the depot city 0.]
-- [The robot must visit exactly one city from each group.]
-- [The travel cost between two cities is calculated using Euclidean distance.]
-- [There are 10 total cities with the specified locations.]
-- [There are 4 groups of cities, each containing specific cities.]
-- [Only one robot is available for completing the task.]

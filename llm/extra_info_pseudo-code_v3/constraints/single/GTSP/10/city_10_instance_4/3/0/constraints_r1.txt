@@ -1,3 +1,0 @@
-- [Requirement 1] The robot need to start and end at the depot city 0.
-- [Requirement 2] The robot must visit exactly one city from each of the 7 city groups.
-- [Requirement 3] The travel cost between cities is calculated using the Euclidean distance formula.

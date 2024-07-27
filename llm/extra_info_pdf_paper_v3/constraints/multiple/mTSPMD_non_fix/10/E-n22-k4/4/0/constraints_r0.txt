@@ -1,8 +1,0 @@
-- [Requirement 1] There are 22 distinct cities including depots, and each city is assigned specific coordinates.
-- [Requirement 2] There are 4 robots, each starting from depot city 0.
-- [Requirement 3] Robots can travel between any two cities; travel cost is calculated as the Euclidean distance between two cities.
-- [Requirement 4] All cities need to be visited exactly once by the robots collectively.
-- [Requirement 5] Robots do not need to return to the depot after completing their tours and can end their tour at any city.
-- [Requirement 6] The task is to determine optimal tours for each robot that minimize the total combined travel cost.
-- [Requirement 7] The output should include the detailed tours for each robot starting and potentially ending at different cities, along with individual and total travel costs.
-- [Requirement 8] Each city can only be visited by one robot, ensuring tours are non-overlapping.

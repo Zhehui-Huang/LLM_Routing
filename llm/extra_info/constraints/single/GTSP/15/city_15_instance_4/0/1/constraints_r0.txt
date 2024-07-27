@@ -1,6 +1,0 @@
-- [Requirement 1] There are 15 cities including the depot, with known coordinates for each city.
-- [Requirement 2] The robot must start and end its route at the depot city 0.
-- [Requirement 3] Cities are divided into 7 groups, and the robot must visit exactly one city from each group.
-- [Requirement 4] Travel cost is calculated as the Euclidean distance between any two cities.
-- [Requirement 5] The objective is to find the shortest tour for the given constraints.
-- [Requirement 6] The solution should be expressed as a list of city indices representing the tour in order, starting and ending at city 0 and include the total travel cost of that tour.

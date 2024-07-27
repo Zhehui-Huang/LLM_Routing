@@ -1,9 +1,0 @@
-- [Requirement 1] There are 16 cities with specified coordinates, including 8 designated as depots.
-- [Requirement 2] There are 8 robots, each starts from depot city 0.
-- [Requirement 3] All cities must be visited exactly once by the robots combined.
-- [Requirement 4] Each robot starts its tour at it's designated starting depot and does not necessarily have to return to a depot.
-- [Requirement 5] Travel cost is calculated as the Euclidean distance between two cities.
-- [Requirement 6] The goal is to determine the shortest tours for each robot, optimizing for the lowest total travel cost for all robots combined.
-- [Requirement 7] Employ a Tabu Search algorithm incorporating nearest neighbor search (NNS) for initial solution generation and various specific move operations (relocate, exchange, tail-swap, depot-exchange, intra exchanging phase) for optimization.
-- [Requirement 8] The solution output should include the tour for each robot starting and ending at a depot and the total travel cost for each tour and the overall total travel cost.
-- [Requirement 9] The stopping criteria for the algorithm are based on either reaching a maximum number of iterations, the tabu list being empty, or a specified number of iterations elapsing since the last best solution was found.

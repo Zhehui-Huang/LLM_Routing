@@ -1,7 +1,0 @@
-Task file path: /home/ethan/repository/backup/LLM_Routing/llm/extra_info/messages/single/GTSP/10/city_10_instance_1/2/1/messages_city_10_instance_1.txt
-===
-System - LLM_SYSTEM_PROMPT
-User - Task description: city_10_instance_1
-Assistant - Solution: /home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/GTSP/10/city_10_instance_1/2/1/solution_r0.py
-Another LLM - User - Ask for prompts
-Another LLM - Assistant - Constraints response: /home/ethan/repository/backup/LLM_Routing/llm/extra_info/constraints/single/GTSP/10/city_10_instance_1/2/1/constraints_r0.txt

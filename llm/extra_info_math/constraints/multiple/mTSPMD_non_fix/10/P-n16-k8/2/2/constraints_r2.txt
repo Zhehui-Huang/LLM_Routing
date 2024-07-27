@@ -1,3 +1,0 @@
-- [Requirement 1] Each robot is required to start from depot city 0.
-- [Requirement 2] All cities must be visited exactly once across all robots.
-- [Requirement 3] Tours for robots must be optimized to minimize total travel cost, using Euclidean distance between cities as the cost metric.

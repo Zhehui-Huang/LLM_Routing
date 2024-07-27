@@ -1,4 +1,0 @@
-- [The robot starts and ends the tour at the depot city (city 0).]
-- [Exactly 8 cities, including the depot city, must be included in the tour.]
-- [The route should be the shortest possible path visiting these 8 cities.]
-- [The distance between two cities is calculated as the Euclidean distance.]

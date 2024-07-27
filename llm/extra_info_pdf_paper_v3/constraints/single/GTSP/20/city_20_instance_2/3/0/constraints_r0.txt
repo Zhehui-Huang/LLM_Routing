@@ -1,8 +1,0 @@
-- [The environment includes 20 cities, each with a defined coordinate.]
-- [City groups are defined, and each group contains a certain subset of cities. There are 5 groups in total.]
-- [There is one robot initialized at depot city labeled as 0 with coordinates (3, 26).]
-- [The robot starts and ends its journey at the depot city.]
-- [The robot must visit exactly one city from each city group.]
-- [Travel between cities is calculated using the Euclidean distance.]
-- [The solution should involve finding the shortest tour possible that meets the specified conditions.]
-- [Output should include both the path of the tour starting and ending at the depot and the total travel cost of this tour.]

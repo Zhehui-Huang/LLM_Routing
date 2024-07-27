@@ -1,6 +1,0 @@
-- [The problem provided is a variant of the Traveling Salesman Problem (TSP) called Generalized Traveling Salesman Problem (GTSP) where cities are grouped, and the robot has to visit one city from each group.]
-- [There are 15 cities in total, including the depot city.]
-- [There are 6 groups of cities, and the robot must visit one city from each group.]
-- [The tour must start and end at the depot city, which is city 0.]
-- [Travel cost between cities is calculated using the Euclidean distance.]
-- [The robot should follow the shortest possible route to minimize the total travel cost, incorporating the starting and ending points at the depot city.]

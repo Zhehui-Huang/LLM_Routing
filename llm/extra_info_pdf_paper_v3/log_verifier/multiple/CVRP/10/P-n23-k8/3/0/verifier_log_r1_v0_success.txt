@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Depot check
-
-
-ERROR:
-
-

@@ -1,5 +1,0 @@
-- [Requirement 1] The robot starts at the depot city 0 and needs to return to city 0 after visiting all other cities exactly once.
-- [Requirement 2] The position of depot city 0 is (84, 67) and the positions of cities 1 through 9 are: City 1: (74, 40), City 2: (71, 13), City 3: (74, 82), City 4: (97, 28), City 5: (0, 31), City 6: (8, 62), City 7: (74, 56), City 8: (85, 71), City 9: (6, 76).
-- [Requirement 3] Travel between any two cities is calculated as the Euclidean distance.
-- [Requirement 4] The robot travel task is to find the shortest tour that fulfills the described visitation pattern.
-- [Requirement 5] Output must include both: the tour as a list of city indices starting and ending at city 0, and the total travel cost of that tour.

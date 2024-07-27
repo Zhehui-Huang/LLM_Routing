@@ -1,8 +1,0 @@
-- [There are 10 cities and the coordinates for each city are explicitly defined.]
-- [City indices range from 0 to 9, where 0 is the depot city and the starting and ending point for the robot.]
-- [The robot starts its journey at depot city 0.]
-- [The robot must visit exactly 5 cities on its tour, including the depot city.]
-- [Each city can only be visited once per tour.]
-- [The robot returns to the depot city (city 0) at the end of the tour.]
-- [Travel cost between two cities is calculated based on the Euclidean distance between their coordinates.]
-- [The goal is to find the shortest possible tour that satisfies these conditions.]

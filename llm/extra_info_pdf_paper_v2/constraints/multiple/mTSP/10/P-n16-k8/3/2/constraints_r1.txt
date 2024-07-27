@@ -1,6 +1,0 @@
-- [Requirement 1] There are 16 cities including the depot city, and each city is uniquely identified by a coordinate.
-- [Requirement 2] There are 8 robots, all starting and ending their routes at the depot city.
-- [Requirement 3] Robots must collectively visit each city exactly once (excluding the depot as a destination) and return to the depot after completing their tours.
-- [Requirement 4] The objective is to minimize the total travel cost for all robots, calculated as the sum of the Euclidean distances between cities visited sequentially in each tour.
-- [Requirement 5] The output should include individual tours for each robot starting and ending at the depot, along with the total travel cost for each tour and the overall total travel cost.
-- [Requirement 6] Employ methods like heuristic approaches, hybrid techniques, or other appropriate advanced algorithms to solve the task effectively, aiming for optimal or near-optical solutions.

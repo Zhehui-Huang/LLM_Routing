@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: The robot does not visit each city exactly once
-
-
-ERROR:
-
-

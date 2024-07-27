@@ -1,5 +1,0 @@
-- [Each robot tours must start and end at the assigned depot]
-- [Each city is visited exactly once by one robot]
-- [Minimize the total travel cost across all robots]
-- [The travel cost is calculated as the Euclidean distance between cities]
-- [Each robot follows the path constraints given by the mathematical model]

@@ -1,8 +1,0 @@
-OUTPUT:
-Tour: [0, 4, 2, 1, 7, 3, 8, 0]
-Total travel Processing cost: 159.97188184793015
-
-
-ERROR:
-
-

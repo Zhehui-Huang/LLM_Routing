@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL due to incorrect cost/distances
-
-
-ERROR:
-
-

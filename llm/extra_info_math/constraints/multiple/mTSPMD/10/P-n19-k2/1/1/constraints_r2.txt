@@ -1,3 +1,0 @@
-- [Each city must be visited exactly once by any one of the two robots.]
-- [Each robot must start and end its tour at its assigned depot.]
-- [The total travel route for both robots combined must be minimized.]

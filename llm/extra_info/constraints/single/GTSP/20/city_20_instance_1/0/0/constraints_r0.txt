@@ -1,8 +1,0 @@
-- [There are 20 cities, including a depot city indexed as 0.]
-- [Each city is specified by coordinates, used to calculate the Euclidean distance for travel costs.]
-- [There are 4 groups of cities, each containing a specific subset of the cities.]
-- [The robot starts and ends its journey at the depot city.]
-- [The robot can travel between any two cities.]
-- [The robot must visit exactly one city from each group.]
-- [The total travel cost is the sum of the Euclidean distances covered in the travel between consecutive city visits in the tour.]
-- [The aim is to find the shortest tour based on the travel constraints and costs.]

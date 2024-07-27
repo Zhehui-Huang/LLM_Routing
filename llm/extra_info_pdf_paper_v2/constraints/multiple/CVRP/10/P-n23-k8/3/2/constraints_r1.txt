@@ -1,6 +1,0 @@
-- [Requirement 1] All robots must start and end their route at the depot city (city 0).
-- [Requirement 2] Each city's demand must be fully met by the deliveries from the robots.
-- [Requirement 3] The cumulative demand served by each robot in a single trip must not exceed the robot's capacity limit of 40.
-- [Requirement 4] The goal is to minimize the total travel cost for all tours while respecting the demand and capacity constraints.
-- [Requirement 5] Output the specific tours for each robot as a list of city indices, showing both the start and the end at the depot city.
-- [Requirement 6] Output the total travel cost for each tour and the combined total travel cost for all tours.

@@ -1,3 +1,0 @@
-- [Requirement 1] The robot starts and ends the tour at the depot city, which is city 0.
-- [Requirement 2] The robot must visit exactly 10 cities out of the available 15 cities.
-- [Requirement 3] The goal is to minimize the total travel cost of the tour, where travel cost is the Euclidean distance between cities.

@@ -1,3 +1,0 @@
-- [The robot must start and end its route at the depot city, city 0.]
-- [The robot needs to visit exactly one city from each of the seven city groups.]
-- [The goal is to determine the shortest route, wherein the travel cost between cities is calculated using the Euclidean distance formula.]

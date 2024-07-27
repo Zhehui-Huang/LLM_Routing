@@ -1,7 +1,0 @@
-- [Requirement 1] Robots must deliver goods to all cities excluding the depot city and return to the depot city after completing their deliveries.
-- [Requirement 2] Each city's demand must be fully met by the robots.
-- [Requirement 3] The carrying capacity of each robot must not be exceeded.
-- [Requirement 4] Minimize the total travel cost for all tours, where the travel cost is the Euclidean distance between cities.
-- [Requirement 5] Each robot's tour should start and end at the depot city.
-- [Requirement 6] Output the tours for each robot as a list of city indices.
-- [Requirement 7] Output the total travel cost for each tour and the overall total travel cost.

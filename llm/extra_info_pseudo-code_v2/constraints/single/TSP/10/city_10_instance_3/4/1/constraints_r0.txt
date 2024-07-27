@@ -1,7 +1,0 @@
-- [There are 10 cities including the depot.]
-- [The depot city is indexed as city 0 and is located at coordinates (84, 67).]
-- [The robot must start and end the tour at the depot city 0.]
-- [The robot needs to visit all cities exactly once.]
-- [Travel costs are calculated using the Euclidean distance between cities.]
-- [Use the Lin-Kernighan algorithm to find the shortest tour.]
-- [The result should feature the tour as a list of city indices and the total travel cost, both starting and ending at the depot city.]

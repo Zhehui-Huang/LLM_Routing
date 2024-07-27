@@ -1,8 +1,0 @@
-- [Requirement 1] The robot must start and end its journey at the depot city 0.
-- [Requirement 2] Each city must be visited exactly once by the robot, apart from the depot city which is visited twice (start and end).
-- [Requirement 3] The goal is to minimize the longest distance between any two consecutive cities in the tour.
-- [Requirement 4] The travel cost between cities is calculated using Euclidean distance.
-- [Requirement 5] The output should include the sequence of the tour starting and ending at the depot city.
-- [Requirement 6] The output should include the total travel cost of the tour.
-- [Requirement 7] The output should include the maximum distance between any two consecutive cities in the tour.
-- [Requirement 8] Implement the solution following the provided pseudocode for the Bottleneck Traveling Salesman Problem Algorithm (Bottleneck TSP).

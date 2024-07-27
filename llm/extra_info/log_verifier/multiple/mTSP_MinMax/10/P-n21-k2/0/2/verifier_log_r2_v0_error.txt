@@ -1,9 +1,0 @@
-OUTPUT:
-
-
-ERROR:
-  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP_MinMax/10/P-n21-k2/0/2/verifier_r2_v0.py", line 67
-    _test_solution()  # Currently a raw function, to be inside a test class when applying unittest or another testing suite.
-IndentationError: expected an indented block after 'else' statement on line 66
-
-

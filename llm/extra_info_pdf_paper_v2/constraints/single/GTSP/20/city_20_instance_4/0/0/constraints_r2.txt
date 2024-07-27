@@ -1,3 +1,0 @@
-- [Requirement 1: The robot must start and end its route at the depot city, indexed as 0.]
-- [Requirement 2: The robot must visit exactly one city from each of the seven defined city groups.]
-- [Requirement 3: The travel cost between any two cities is measured using the Euclidean distance.]

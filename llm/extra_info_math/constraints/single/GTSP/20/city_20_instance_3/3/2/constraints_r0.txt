@@ -1,3 +1,0 @@
-- [Requirement 1] The robot must start and end its tour at the depot city 0.
-- [Requirement 2] The robot must visit exactly one city from each group.
-- [Requirement 3] The total travel path must be the shortest possible distance, adhering to the Euclidean distance metric between cities.

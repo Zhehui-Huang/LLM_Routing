@@ -1,8 +1,0 @@
-- [The environment consists of 20 cities indexed from 0 to 19, where city 0 is the depot.]
-- [Coordinates are given for each city, which determine their positions.]
-- [Cities are divided into four groups: Group 0-3. Each group contains predefined city indices.]
-- [There is one robot that starts and ends its journey at the depot city 0.]
-- [The robot is required to visit exactly one city from each group.]
-- [Travel cost between cities is calculated based on the Euclidean distance between them.]
-- [The objective is to find the shortest possible tour for the robot that visits one city from each group and returns to the depot.]
-- [The tour should start and end at the depot city 0.]

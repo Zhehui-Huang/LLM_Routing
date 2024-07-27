@@ -1,4 +1,0 @@
-- [Requirement 1] The robot must start and end its journey at the depot city (City 0).
-- [Requirement 2] The robot must visit exactly one city from each of the seven groups, making a total visit to one city per group.
-- [Requirement 3] The total travel cost for the journey should be minimized, with the cost being the sum of the Euclidean distances between consecutively visited cities.
-- [Requirement 4] The robot can travel directly between any two cities given that the travel cost is computed as the Euclidean distance.

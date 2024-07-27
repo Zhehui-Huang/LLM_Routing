@@ -1,8 +1,0 @@
-- [Requirement 1] There are 22 cities, including 4 depots, and the coordinates for each city are given.
-- [Requirement 2] There are 4 robots, each starting at depot city 0. Robots can travel between any two cities.
-- [Requirement 3] The travel cost between cities is computed as the Euclidean distance.
-- [Requirement 4] Each robot must visit each city exactly once, except for the depots which must be the start point for each respective robot's route.
-- [Requirement 5] Robots do not need to return to the starting depot or any depot after completing their tours.
-- [Requirement 6] The object is to minimize the total travel cost for all robots combined while covering all cities.
-- [Requirement 7] Robotic tours shall be optimized using a genetic algorithm with defined chromosome representation, crossover, mutation, and selection procedures.
-- [Requirement 8] Each tour route and total cost, as well as overall travel cost, must be output. Each tour should start (and not necessarily end) at its assigned depot.

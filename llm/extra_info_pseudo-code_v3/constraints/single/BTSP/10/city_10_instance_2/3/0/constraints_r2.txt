@@ -1,3 +1,0 @@
-- [Requirement 1] The robot must visit each city exactly once and return to the starting city (depot city 0), achieving a Hamiltonian circuit.
-- [Requirement 2] The robot's path should minimize the longest distance between any two consecutive cities in its tour.
-- [Requirement 3] The output of the solution should include the tour as a list of city indices starting and ending at the depot city 0, the total travel cost, and the maximum distance between any two consecutive cities in the tour.

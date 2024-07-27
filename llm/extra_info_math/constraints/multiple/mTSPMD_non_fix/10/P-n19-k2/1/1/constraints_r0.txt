@@ -1,7 +1,0 @@
-- [Requirement 1] Ensure exactly one salesman leaves depot city 0.
-- [Requirement 2] Ensure exactly one salesman leaves depot city 1.
-- [Requirement 3] Ensure each non-depot city is visited exactly once by a salesman.
-- [Requirement 4] Minimize the total travel cost for all salesmen combined.
-- [Requirement 5] Robots are not required to return to the depot after completing their tour.
-- [Requirement 6] Travel cost between cities is calculated as the Euclidean distance.
-- [Requirement 7] A valid output should include: each robot's tour starting and ending at its assigned depot city, the total cost for each individual robot's tour, and the summation of these tours as the overall total cost.

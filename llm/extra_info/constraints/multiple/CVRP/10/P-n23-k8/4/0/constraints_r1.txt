@@ -1,9 +1,0 @@
-- [Requirement 1] There are 23 cities with specified coordinates, and each city has specified demand, including a depot city (City  && Demand 0).
-- [Requirement 2] There are 8 robots, each with a capacity constraint of 40.
-- [Requirement 3] All robots start at the depot city (City 0).
-- [Requirement 4] Travel cost between cities is calculated as the Euclidean distance between the coordinates of the two cities.
-- [Requirement 5] Robots must deliver goods to all cities (excluding the depot), meeting the exact demand of each city.
-- [Requirement 6] After completing their deliveries, robots must return to the depot city.
-- [Requirement 7] The tours for each robot should start and end at the depot city.
-- [Requirement 8] The objective is to minimize the total travel cost for all tours.
-- [Requirement 9] The capacity constraints of the robots must not be exceeded when planning the tours.

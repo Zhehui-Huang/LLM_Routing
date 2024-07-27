@@ -1,5 +1,0 @@
-- [The robot must visit each city exactly once starting and ending at the depot city (city 0).]
-- [The goal is to minimize the longest distance between any two consecutive cities in the tour.]
-- [Travel cost is calculated using the Euclidean distance between two cities.]
-- [The tour should be determined by first obtaining a bottleneck-optimal biconnected subgraph of the city graph, and then identifying an approximate optimal tour.]
-- [Output should include the tour as a list of city indices, the total travel cost of the tour, and the maximum distance between any two consecutive cities in the tour.]

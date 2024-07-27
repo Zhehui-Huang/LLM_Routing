@@ -1,8 +1,0 @@
-- [Requirement 1]: Each robot must visit all cities exactly once.
-- [Requirement 2]: Each robot starts at a designated depot city.
-- [Requirement 3]: The endpoint for each robot's tour can be any city; it does not need to return to the starting depot.
-- [Requirement 4]: Minimize the total travel cost for all robots combined.
-- [Requirement 5]: Travel cost is calculated as the Euclidean distance between two cities.
-- [Requirement 6]: Output should include the tour for each robot starting and potentially ending at its assigned depot.
-- [Requirement 7]: Output should include the total travel cost for each robot's tour and the overall total travel cost.
-- [Requirement 8]: Provide a solution using advanced heuristic methods considering the non-fixed destination multi-depot multiple traveling salesmen problem (MmTSP).

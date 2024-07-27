@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Each city must be visited exactly once, other than the depot.
-
-
-ERROR:
-
-

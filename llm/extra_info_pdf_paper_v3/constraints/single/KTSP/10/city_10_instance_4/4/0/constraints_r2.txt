@@ -1,3 +1,0 @@
-- [The robot must visit exactly 8 cities, including the depot city, out of the given list of 10 cities.]
-- [The robot must start and end its journey at the depot city (City 0).]
-- [The travel cost between two cities is calculated using the Euclidean distance formula.]

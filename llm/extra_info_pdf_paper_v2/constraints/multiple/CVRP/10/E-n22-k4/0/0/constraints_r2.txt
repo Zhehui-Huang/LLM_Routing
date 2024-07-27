@@ -1,4 +1,0 @@
-- [Requirement 1] Each robot must start and end its tour at the depot city 0.
-- [Requirement 2] The total cargo delivered by each robot cannot exceed the robot's capacity of 6000 units.
-- [Requirement 3] Every city's specific demand must be fully met by the collective delivery of the robots.
-- [Requirement 4] Minimize the total travel cost for all tours, defined as the sum of the Euclidean distances between cities on the route of each robot.

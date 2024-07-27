@@ -1,6 +1,0 @@
-- [Requirement 1] The robot starts its journey at depot city 0 and must return to it after visiting all other cities.
-- [Requirement 2] Each city, except the depot city (City 0), must be visited exactly once by the robot.
-- [Requirement 3] The robot can travel between any two cities, and the travel cost between them is calculated using the Euclidean distance.
-- [Requirement 4] The solution needs to find the shortest possible tour for the robot using the Lin-Kernighan algorithm.
-- [Requirement 5] The output of the solution must be a list denoting the sequence of city indices in the tour, starting and ending at the depot city 0.
-- [Requirement 6] The output must also include the total travel cost of the tour calculated based on the Euclidean distances between consecutive cities in the tour.

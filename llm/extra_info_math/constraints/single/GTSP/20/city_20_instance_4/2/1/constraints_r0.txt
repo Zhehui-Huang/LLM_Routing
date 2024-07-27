@@ -1,3 +1,0 @@
-- [Requirement 1] The robot must visit exactly one city from each of the 7 groups of cities.
-- [Requirement 2] The robot must start and finish the journey at the depot city, city 0.
-- [Requirement 3] Minimize the total Euclidean distance traveled by the robot across the selected tour.

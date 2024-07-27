@@ -1,6 +1,0 @@
-- [Requirement 1] The robot must start and end the tour at the depot city (index 0).
-- [Requirement 2] Each city must be visited exactly once by the robot.
-- [Requirement 3] The output should list the tour as a sequence of city indices starting and ending at city index 0.
-- [Requirement 4] The output should provide the total travel cost of the tour.
-- [Requirement 5] The output should specify the maximum distance between any two consecutive cities in the tour.
-- [Requirement 6] The goal is to minimize the longest distance between any two consecutive cities in the tour using the given pseudocode for the heuristic algorithm.

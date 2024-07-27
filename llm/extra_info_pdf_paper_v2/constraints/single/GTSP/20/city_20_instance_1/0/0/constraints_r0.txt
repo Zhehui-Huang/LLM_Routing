@@ -1,3 +1,0 @@
-- [Requirement 1: The robot must start and end its journey at depot city 0.]
-- [Requirement 2: The robot must visit exactly one city from each group. There are 4 groups in total.]
-- [Requirement 3: The travel cost between two cities is calculated as the Euclidean distance between them.]

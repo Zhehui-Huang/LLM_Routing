@@ -1,5 +1,0 @@
-- [Requirement 1]: The robot must start and end its journey at the depot city 0.
-- [Requirement 2]: The robot can choose to travel directly between any two cities.
-- [Requirement 3]: The robot must visit exactly one city from each city group.
-- [Requirement 4]: The travel cost is calculated using the Euclidean distance between the cities.
-- [Requirement 5]: The goal is to determine the shortest possible tour that satisfies all the aforementioned conditions.

@@ -1,6 +1,0 @@
-- [There are 21 cities, with the depot at city 0 and cities 1 to 20 having specific demands that must be met.]
-- [Two robots are available, each starting at the city 0 depot. Both robots have a carrying capacity of 160 units.]
-- [The robots must deliver goods to all cities, excluding the depot city (city 0), and then return to the depot city after completing their deliveries.]
-- [The objective is to determine the shortest possible tours for the robots while ensuring that the demand of each city is fully met and the capacity constraints of the robots are not exceeded.]
-- [Travel cost between any two cities is calculated based on the Euclidean distance between them.]
-- [Output should display the tours for each robot as lists of city indices, starting and ending at the depot city, the total travel cost for each tour, and the overall total travel cost.]

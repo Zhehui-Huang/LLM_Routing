@@ -1,5 +1,0 @@
-- [Requirement 1] The robot can only travel between two cities directly.
-- [Requirement 2] The robot must visit all cities exactly once, starting and ending at the depot city 0.
-- [Requirement 3] The travel cost is calculated as the Euclidean distance between two cities.
-- [Requirement 4] The objective is to find the shortest total travel cost for the tour.
-- [Requirement 5] All subtours must be eliminated to ensure a single tour visiting all cities and returning to the depot.

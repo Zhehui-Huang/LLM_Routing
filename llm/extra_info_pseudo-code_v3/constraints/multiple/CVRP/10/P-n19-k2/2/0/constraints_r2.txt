@@ -1,6 +1,0 @@
-- [There are 19 cities, each with specific coordinates and demands that need to be met by the robots. City 0 serves as the depot.]
-- [Each city needs its specified demand fully met by the deliveries.]
-- [Two robots are available for making these deliveries, each with a capacity of 160 units.]
-- [Robots start their route from and must return to the depot city after completing their deliveries.]
-- [Travel costs between the cities are calculated using the Euclidean distance.]
-- [The objective is to minimize the total cost of travel for all tours combined while respecting each robot's capacity constraints.]

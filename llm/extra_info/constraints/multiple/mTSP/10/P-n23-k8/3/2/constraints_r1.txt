@@ -1,6 +1,0 @@
-- [There are 23 cities with one depot city and 22 target cities to visit.]
-- [Eight robots are available, all starting from the depot city.]
-- [Robay can travel between any two cities, calculating travel costs using the Euclidean distance.]
-- [Each robot’s tour must start and end at the depot city.]
-- [Every city, except for the depot, must be visited exactly once by any robot.]
-- [The objective is to minimize the total collective travel cost of all robots.]

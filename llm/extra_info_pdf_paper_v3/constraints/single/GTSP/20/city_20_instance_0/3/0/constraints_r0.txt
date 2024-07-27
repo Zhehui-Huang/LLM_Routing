@@ -1,6 +1,0 @@
-- [Requirement 1] The robot must start and end its journey at the depot city 0.
-- [Requirement 2] The robot must visit exactly one city from each of the three groups of cities.
-- [Requirement 3] The travel path must consider the shortest possible tour that satisfies the constraints.
-- [Requirement 4] The travel cost between any two cities is determined by the Euclidean distance.
-- [Requirement 5] The output should list the tour as a sequence of city indices, starting and ending at city 0.
-- [Requirement 6] The output must also include the total travel cost of the tour.

@@ -1,8 +1,0 @@
-OUTPUT:
-Result: FAIL
-Message: Tour must include every city.
-
-
-ERROR:
-
-

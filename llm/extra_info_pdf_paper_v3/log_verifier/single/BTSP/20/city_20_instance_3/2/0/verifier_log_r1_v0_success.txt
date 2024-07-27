@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Maximum distance between consecutive cities is incorrect.
-
-
-ERROR:
-
-

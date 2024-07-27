@@ -1,6 +1,0 @@
-- [There are 21 cities, including the Depot city 0.]
-- [All robots start and end their tour at the depot city 0.]
-- [Robots must collectively visit all cities exactly once, excluding the depot city, and then return to the depot.]
-- [Minimize the maximum distance traveled by any single robot.]
-- [Each tour by a robot should return a list of city indices starting and ending at depot city 0.]
-- [Output should include the tour for each robot and the respective travel cost, also specifying the maximum travel cost among all tours.]

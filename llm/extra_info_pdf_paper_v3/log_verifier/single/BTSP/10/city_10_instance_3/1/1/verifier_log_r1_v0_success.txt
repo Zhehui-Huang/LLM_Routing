@@ -1,8 +1,0 @@
-OUTPUT:
-FAIL
-Error:  Tour must start and end at city 0 and visit each city exactly once.
-
-
-ERROR:
-
-

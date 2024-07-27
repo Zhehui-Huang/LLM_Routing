@@ -1,6 +1,0 @@
-- [The robot has to visit exactly 8 cities from a given set of 15 cities.]
-- [The robot must start and end the tour at the depot city 0.]
-- [The robot can travel between any two cities.]
-- [Travel cost is calculated based on the Euclidean distance between cities.]
-- [The objective is to find the shortest possible tour for the robot to take.]
-- [Output should include the sequence of city indices visited, starting and ending at the depot city, as well as the total travel cost of this tour.]

@@ -1,6 +1,0 @@
-- [Each city is visited exactly once by one salesman.]
-- [Each salesman must leave each visited node and enter each visited node exactly once.]
-- [Each salesman must leave the depot exactly once.]
-- [Subtour elimination constraints must be applied.]
-- [Assignment variables are binary.]
-- [Position variables for nodes are continuous.]

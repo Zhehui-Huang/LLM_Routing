@@ -1,8 +1,0 @@
-- [Requirement 1] There are 10 cities, with coordinates provided for the depot city and each of the 9 other cities.
-- [Requirement 2] There is one robot starting at the depot city, which can travel between any two cities.
-- [Requirement 3] The robot must visit all cities exactly once, except for the depot city, and then return to the depot city.
-- [Requirement 4] The travel cost is calculated as the Euclidean distance between two cities.
-- [Requirement 5] The goal is to determine the shortest route for the robot following the conditions of visiting each city exactly once and returning back to the depot.
-- [Requirement 6] Output the tour as a list of city indices beginning and ending at the depot city.
-- [Requirement 7] Output the total travel cost of the tour.
-- [Requirement 8] Use an algorithm resembling the Lin-Kernighan heuristic to find the solution.

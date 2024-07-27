@@ -1,4 +1,0 @@
-- [Each robot must start and end its route at the depot (city 0).]
-- [Each city (except the depot) must be visited exactly once by any of the robots.]
-- [The total demand of goods delivered by a robot must not exceed its carrying capacity of 6000.]
-- [The sum of distances traveled by each robot should be minimized.]

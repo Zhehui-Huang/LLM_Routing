@@ -1,6 +1,0 @@
-- [Requirement 1] The robot must visit each city exactly once, except the depot city, and then return to the depot city.
-- [Requirement 2] The robot's travel cost between any two cities is calculated as the Euclidean distance between them.
-- [Requirement 3] The tour must start and end at the depot city 0.
-- [Requirement 4] Output the tour as a list of city indices starting and ending at the depot city 0.
-- [Requirement 5] Output the total travel cost of the tour.
-- [Requirement 6] Utilize and adapt a heuristic algorithm that includes constructing a shortest spanning tree and finding a minimum-cost perfect matching on the subgraph of vertices of odd degree from the spanning tree.

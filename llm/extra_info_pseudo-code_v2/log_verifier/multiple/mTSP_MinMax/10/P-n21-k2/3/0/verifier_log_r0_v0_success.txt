@@ -1,9 +1,0 @@
-OUTPUT:
-FAIL: Cities are visited more than once in a single robot's tour.
-FAIL: Not all cities are visited exactly once.
-FAIL
-
-
-ERROR:
-
-

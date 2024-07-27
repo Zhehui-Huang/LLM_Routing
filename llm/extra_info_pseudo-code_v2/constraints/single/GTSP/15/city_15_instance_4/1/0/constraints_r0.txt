@@ -1,6 +1,0 @@
-- [There are 15 cities numbered from 0 to 14 with their corresponding coordinates.]
-- [City groups are defined, each containing specific city numbers.]
-- [The robot must start and end the tour at the depot city 0.]
-- [The robot is allowed to visit exactly one city from each group.]
-- [Travel cost between two cities is calculated based on the Euclidean distance between their coordinates.]
-- [The goal is to find the shortest tour with the specific conditions met.]

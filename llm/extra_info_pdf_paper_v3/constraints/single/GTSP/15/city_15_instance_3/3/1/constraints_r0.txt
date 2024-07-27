@@ -1,7 +1,0 @@
-- [The environment consists of 15 cities enumerated from 0 (depot) to 14 with specified coordinates for each city.]
-- [Cities are grouped into 6 city groups with specific cities assigned to each group.]
-- [There is one robot starting its journey from depot city 0.]
-- [The robot must travel from city to city with the travel cost determined by the Euclidean distance between cities.]
-- [The robot must visit exactly one city from each city group and return to the depot city 0 forming a tour.]
-- [The task is to find the shortest possible tour that meets the visiting constraint.]
-- [The output format must list the tour starting and ending at depot city 0 and include the total travel cost as "Tour" and "Total travel cost".]

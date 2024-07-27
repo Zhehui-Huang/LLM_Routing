@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Not all cities are visited exactly once or there are duplicates.
-
-
-ERROR:
-
-

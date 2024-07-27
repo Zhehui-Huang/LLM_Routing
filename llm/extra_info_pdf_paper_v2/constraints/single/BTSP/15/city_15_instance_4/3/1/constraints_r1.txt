@@ -1,3 +1,0 @@
-- [Requirement 1] The robot must start at the depot city 0, visit each of the 15 cities exactly once, and return to the depot city 0.
-- [Requirement 2] The objective is to minimize the longest distance (bottleneck) between any two consecutive cities in the tour.
-- [Requirement 3] The output should include the tour as a list of city indices starting and ending at city 0, the total travel cost of the tour, and the maximum distance between any two consecutive cities.

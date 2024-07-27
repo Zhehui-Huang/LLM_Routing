@@ -1,5 +1,0 @@
-- [Requirement 1] The robot must start and end the tour at depot city 0.
-- [Requirement 2] The tour must include exactly 8 different cities from the given set of 10 cities.
-- [Requirement 3] The travel cost is calculated using the Euclidean distance between two cities.
-- [Requirement 4] The goal is to minimize the total travel distance for the tour.
-- [Requirement 5] The output must include the list of visited cities in tour order and the total travel cost.

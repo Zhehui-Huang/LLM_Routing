@@ -1,8 +1,0 @@
-- [Deploy two robots to visit 19 cities, each starting and ending their travel at the depot city 0.]
-- [Each city, excluding the depot city, must be visited exactly once by any of the robots.]
-- [The travel cost is determined by the Euclidean distance between two cities.]
-- [The primary objective is to minimize the maximum travel distance covered by any of the robots.]
-- [All tours must begin from and return to the depot city 0.]
-- [The tours for each robot must be output as a list of city indices, starting and ending at the depot city 0.]
-- [The output must include the travel cost for each tour and the maximum travel cost among all tours.]
-- [Utilize the General Variable Neighborhood Search (GVNS) algorithm to find optimal tours.]

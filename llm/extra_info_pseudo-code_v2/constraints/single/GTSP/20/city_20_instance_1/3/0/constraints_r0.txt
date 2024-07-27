@@ -1,8 +1,0 @@
-- [There are 20 cities, each represented with a unique index from 0 to 19 and associated (x, y) coordinates.]
-- [City 0 is the depot city with coordinates (14, 77).]
-- [There are 4 city groups: Group 0: [5, 6, 7, 11, 17], Group 1: [1, 4, 8, 13, 16], Group 2: [2, 10, 15, 18, 19], Group 3: [3, 9, 12, 14].]
-- [There is one robot that starts and ends its journey at the depot city 0.]
-- [The robot must visit exactly one city from each group of cities in its tour.]
-- [The travel cost between any two cities is calculated as the Euclidean distance between their coordinates.]
-- [The task requires finding the shortest possible tour for the robot that satisfies all constraints.]
-- [The output should include the tour as a list of city indices starting and ending at the depot city, and the total travel cost of the tour.]

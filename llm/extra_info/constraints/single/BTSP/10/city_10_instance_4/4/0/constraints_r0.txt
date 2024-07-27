@@ -1,6 +1,0 @@
-- [There are 10 specific cities with defined coordinates, including a depot city labelled as city 0.]
-- [There is one robot that starts and ends its journey at the depot city (city 0).]
-- [The robot must visit each city exactly once, resulting in a closed loop that begins and ends at the depot city.]
-- [The travel cost between any two cities is the Euclidean distance.]
-- [The objective is to minimize the maximum distance between any two consecutive cities visited by the robot.]
-- [The output should include the tour as a list of city indices starting and ending at city 0, the total travel cost of this tour, and the maximum distance between any two consecutive cities on the tour.]

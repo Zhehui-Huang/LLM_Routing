@@ -1,8 +1,0 @@
-OUTPUT:
-CORRECT
-CORRECT
-
-
-ERROR:
-
-

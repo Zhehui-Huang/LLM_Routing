@@ -1,8 +1,0 @@
-- [The environment includes a total of 15 predefined cities, each with specified coordinates.]
-- [There is a single designated depot city (City 0), where the robot's journey starts and ends.]
-- [Cities are organized into 7 groups, where each group contains a specific subset of cities.]
-- [The robot must visit exactly one city from each of the 7 groups.]
-- [The travel cost between any two cities is determined by calculating the Euclidean distance between them.]
-- [The travel solution requires that the robot's path be optimized to find the shortest tour starting and ending at the depot city.]
-- [The output of the solution should include the tour as a list of city indices and the total travel cost of the tour.]
-- [The solution must adhere strictly to the format of outputting the tour and the total travel cost.]

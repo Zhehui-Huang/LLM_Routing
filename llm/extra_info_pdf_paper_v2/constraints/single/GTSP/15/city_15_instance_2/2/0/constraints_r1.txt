@@ -1,8 +1,0 @@
-- [There are 15 cities indexed from 0 to 14, with specified coordinates.]
-- [Depot city is at index 0 with coordinates (54, 87).]
-- [There are 5 city groups, and the robot must visit exactly one city from each group.]
-- [The robot starts and ends its journey at the depot city 0.]
-- [Travel cost is calculated based on the Euclidean distance between two cities.]
-- [The task is to find the shortest tour for the robot, visiting one city from each group plus the depot city.]
-- [Output the tour as a list of city indices starting and ending at city 0.]
-- [Output the total travel cost of the tour.]

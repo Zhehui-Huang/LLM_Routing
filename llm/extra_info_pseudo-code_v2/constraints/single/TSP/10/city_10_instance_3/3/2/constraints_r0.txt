@@ -1,6 +1,0 @@
-- [There are 10 cities with predetermined coordinates, including a depot city (city 0).]
-- [The robot starts and ends the tour at the depot city 0.]
-- [The robot must visit each city exactly once, except for the depot city which must be visited twice (start and end).]
-- [The distance between any two cities is calculated as the Euclidean distance.]
-- [The task is to find the shortest possible route that the robot can take to visit all cities and return to the depot.]
-- [The solution should be provided in the form of a list of city indices indicating the tour order and the total travel cost of the tour.]

@@ -1,5 +1,0 @@
-- [The robot must start and end the tour at depot city 0.]
-- [The total number of cities in the tour, including the depot, must be exactly 7.]
-- [Travel cost is calculated as the Euclidean distance between two cities.]
-- [The goal is to find the shortest possible tour path.]
-- [The solution must output the tour as a list of city indices and the total travel cost.]

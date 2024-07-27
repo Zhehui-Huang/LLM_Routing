@@ -1,4 +1,0 @@
-- [Requirement 1] The robot must start and end the tour at the depot city 0.
-- [Requirement 2] The robot must visit exactly one city from each group, ensuring six unique cities are visited in total aside from the depot.
-- [Requirement 3] The total travel distance must be minimized; this is calculated as the Euclidean distance between consecutive cities on the tour.
-- [Requirement 4] Travel between any pair of cities is possible and is calculated using Euclidean distance.

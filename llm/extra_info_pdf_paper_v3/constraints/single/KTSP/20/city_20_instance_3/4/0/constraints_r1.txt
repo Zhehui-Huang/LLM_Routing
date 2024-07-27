@@ -1,4 +1,0 @@
-- [The task should involve developing a solution for a k-Traveling Salesman Problem variant where k equals 13.]
-- [The solution must identify a tour where the robot starts and ends at the depot city (city 0), covering exactly 13 cities out of 20.]
-- [The robot needs to return the shortest possible tour that minimizes travel distance, calculated using the Euclidean distance between cities.]
-- [Output should include the tour as a list of city indices starting and ending at city 0, and the total travel cost of the tour.]

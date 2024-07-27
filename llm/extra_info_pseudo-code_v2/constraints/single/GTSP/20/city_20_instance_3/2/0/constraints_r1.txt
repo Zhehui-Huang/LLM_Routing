@@ -1,8 +1,0 @@
-- [There are 20 cities with defined coordinates including a depot city (city 0).]
-- [There are 6 city groups, each containing a list of cities. The robot must visit exactly one city from each group.]
-- [The robot starts and ends its tour at the depot city 0.]
-- [Travel cost between any two cities is calculated using the Euclidean distance.]
-- [The robot's task is to find the shortest tour, visiting exactly one city from each group, starting and ending at the depot city 0.]
-- [Output should list the tour as city indices starting and ending at the depot, and the total travel cost of this tour.]
-- [Use the GLNS algorithm to solve the given problem, which involves operations like selecting heuristics, vertex removals and insertions, and local optimization.]
-- [Iterative improvement process must consider acceptance criteria for new tours and update weights for heuristics based on their performance.]

@@ -1,7 +1,0 @@
-OUTPUT:
-Result for given example tour: FAIL
-
-
-ERROR:
-
-

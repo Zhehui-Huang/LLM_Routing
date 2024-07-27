@@ -1,8 +1,0 @@
-- [Requirement 1] Must solve a variant of the Traveling Salesman Problem where the goal is to minimize the longest distance between any two consecutive cities in the tour.
-- [Requirement 2] The robot starts and ends at the depot city (City 0).
-- [Requirement 3] Each city must be visited exactly once by the robot.
-- [Requirement 4] Travel cost is calculated using the Euclidean distance between cities.
-- [Requirement 5] Apply the heuristic algorithm Bottleneck-optimal Biconnected Subgraph to find an approximate solution.
-- [Requirement 6] Output must include the tour as a list of city indices, starting and ending at City 0.
-- [Requirement 7] Output must include the total travel cost of the tour.
-- [Requirement 8] Output must include the maximum distance between any two consecutive cities in the tour.

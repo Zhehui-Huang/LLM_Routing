@@ -1,6 +1,0 @@
-Task: mTSP_MinMax, City: 10, File name: E-n22-k4, Run time: 1
-
-Success: Request LLM number: 6
-Details: 'exec': 2, 'verifier': 2, 'constraints': 2
-
-

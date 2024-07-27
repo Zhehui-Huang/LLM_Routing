@@ -1,7 +1,0 @@
-OUTPUT:
-No Hamiltonian circuit is possible
-
-
-ERROR:
-
-

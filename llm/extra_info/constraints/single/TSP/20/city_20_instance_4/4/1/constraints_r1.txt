@@ -1,4 +1,0 @@
-- [The environment consists of 20 cities with specified coordinates, including a starting depot city (city 0).]
-- [The robot begins its journey at the depot city 0 and must return to this city after visiting all other cities.]
-- [The robot must visit each city exactly once, excluding the depot city, and minimize the total travel cost calculated using the Euclidean distance between cities.]
-- [The solution output should list the tour as city indices starting and ending at the depot, and include the total travel cost of this tour.]

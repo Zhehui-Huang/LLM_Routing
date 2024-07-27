@@ -1,5 +1,0 @@
-- [Each city's specific demand must be fully met.]
-- [Capacity constraints of each robot (40 units) must not be exceeded.]
-- [Each tour must start and end at the depot city (city 0).]
-- [Minimize the total travel cost for all tours collectively.]
-- [Ensure that the solution is feasible with the provided number of robots (8 robots).]

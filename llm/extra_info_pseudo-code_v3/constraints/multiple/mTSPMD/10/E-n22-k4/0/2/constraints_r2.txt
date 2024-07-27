@@ -1,6 +1,0 @@
-- [The problem involves 22 cities, with four depots and 18 regular cities.]
-- [Each city must be visited exactly once by the robots.]
-- [Each robot starts and ends at its assigned depot.]
-- [There are four robots, each assigned to one of the depots.]
-- [The travel cost between any two cities is the Euclidean distance between them.]
-- [The objective is to determine the shortest possible tours for each robot to minimize the total travel cost for all robots combined.]

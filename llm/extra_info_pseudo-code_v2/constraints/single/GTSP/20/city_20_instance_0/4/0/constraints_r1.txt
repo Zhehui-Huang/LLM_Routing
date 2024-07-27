@@ -1,6 +1,0 @@
-- [Robot must start and end at the depot city 0.]
-- [Robot must visit exactly one city from each city group.]
-- [The tour must be the shortest possible, minimizing the travel cost.]
-- [Travel cost is computed using the Euclidean distance between cities.]
-- [Output the final tour as a list of city indices.]
-- [Output the total travel cost of the tour.]

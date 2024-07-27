@@ -1,7 +1,0 @@
-OUTPUT:
-No feasible solution found.
-
-
-ERROR:
-
-

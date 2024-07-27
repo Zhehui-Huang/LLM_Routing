@@ -1,5 +1,0 @@
-- [The environment consists of a depot city (city 0) and 20 additional cities distributed into three defined groups.]
-- [The robot must start and end its journey at the depot city.]
-- [The robot must visit exactly one city from each of the three groups.]
-- [The travel cost between any two cities is calculated using the Euclidean distance.]
-- [The objective is to minimize the total travel cost of the tour that fulfills the visiting requirements.]

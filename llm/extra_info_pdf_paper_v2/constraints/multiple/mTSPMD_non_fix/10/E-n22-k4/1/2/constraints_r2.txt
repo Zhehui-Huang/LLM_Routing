@@ -1,8 +1,0 @@
-- [Requirement 1] All robots must start their tour at the designated starting city (depot).
-- [Requirement 2] Every city needs to be visited exactly once by any one of the robots.
-- [Requirement 3] Tours must be optimized to achieve the minimum combined total travel cost across all robots.
-- [Requirement 4] Travel cost is calculated based on the Euclidean distance between cities.
-- [Requirement 5] Each robot can finish at any city and does not need to return to the starting depot.
-- [Requirement 6] Output each robot's tour as a list of city indices starting and ending at its assigned depot.
-- [Requirement 7] Output the total travel cost for each tour and the overall total travel costs.
-- [Requirement 8] Implement the solution using a suitable algorithm from Genetic Algorithms (GAs), Simulated Annealing (SA), or Tabbeh Search (TS) based on given insights from the study.

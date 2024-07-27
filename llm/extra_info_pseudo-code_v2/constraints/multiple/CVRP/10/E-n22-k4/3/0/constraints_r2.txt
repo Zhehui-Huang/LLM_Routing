@@ -1,7 +1,0 @@
-- [Requirement 1]: Each robot must start and end its tour at the depot city, which is city 0.
-- [Requirement 2]: The total demand of each city must be fully met by the deliveries made by the robots.
-- [Requirement 3]: The carrying capacity of each robot, which is 6000 units, must not be exceeded.
-- [Requirement 4]: Minimize the total travel cost for all tours, calculated as the Euclidean distance between cities.
-- [Requirement 5]: Output the tours for each robot as a list of city indices, starting and ending at the depot city 0.
-- [Requirement 6]: Output the individual total travel cost for each tour and the overall total travel cost.
-- [Requirement 7]: Utilize the enhanced Clarke-Wright Savings Algorithm with iterative improvement and route post-improvement for route optimization.

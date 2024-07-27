@@ -1,5 +1,0 @@
-- [Each robot must start and end its tour at the depot city (city 0).]
-- [Each city's demand must be fully met by the collective deliveries of the robots.]
-- [The capacity constraint of each robot (6000) must not be exceeded.]
-- [The objective is to minimize the total travel cost for all tours, which is calculated as the Euclidean distance between cities.]
-- [All cities excluding the depot city must be visited by the robots.]

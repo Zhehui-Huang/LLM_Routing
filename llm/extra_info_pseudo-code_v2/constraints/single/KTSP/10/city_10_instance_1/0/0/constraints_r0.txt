@@ -1,5 +1,0 @@
-- [Requirement 1] The robot must start and end its tour at the depot city (City 0).
-- [Requirement 2] The robot has to visit exactly 5 cities, including the depot city.
-- [Requirement 3] The tour's travel cost is calculated suing the Euclidean distance between the cities.
-- [Requirement 4] The optimal solution must be the shortest possible tour fulfilling the specified constraints.
-- [Requirement 5] The final output must include the tour as a list of city indices and the total travel cost. The list should start and end with the depot city (City 0).

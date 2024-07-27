@@ -1,8 +1,0 @@
-OUTPUT:
-Overall costs do not match: expected 372.08000000000004, got 372.07
-FAIL
-
-
-ERROR:
-
-

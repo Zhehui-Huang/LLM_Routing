@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL, incorrect total travel cost: expected 273.3072642077373, got 273.31
-
-
-ERROR:
-
-

@@ -1,9 +1,0 @@
-OUTPUT:
-Total Travel Cost for each robot: [146.53038832491478, 328.16057547701837]
-Overall Total Travel Cost: 474.69096380193315
-CORRECT
-
-
-ERROR:
-
-

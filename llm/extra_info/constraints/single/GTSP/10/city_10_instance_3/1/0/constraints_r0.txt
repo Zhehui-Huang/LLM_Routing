@@ -1,5 +1,0 @@
-- [Requirement 1] There are 10 cities with specific coordinates.
-- [Requirement 2] There are 6 city groups, and the robot must visit exactly one city from each group.
-- [Requirement 3] The robot must start and end at the depot city 0.
-- [Requirement 4] Robot travels calculate costs using the Euclidean distance between cities.
-- [Requirement 5] Output the tour as a list of city indices and the total travel cost starting and ending at city 0.

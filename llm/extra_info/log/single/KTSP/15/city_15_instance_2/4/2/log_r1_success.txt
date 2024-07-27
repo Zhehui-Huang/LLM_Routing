@@ -1,8 +1,0 @@
-OUTPUT:
-Tour: [5, 10, 3, 4, 12, 11, 6, 0, 0]
-Total travel life tudistance: 83.77479628246256
-
-
-ERROR:
-
-

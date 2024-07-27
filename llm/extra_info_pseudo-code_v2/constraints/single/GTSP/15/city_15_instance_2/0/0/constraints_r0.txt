@@ -1,5 +1,0 @@
-- [The robot starts at the depot, city 0, and must return to it.]
-- [The robot needs to visit exactly one city from each of the 5 defined groups of cities.]
-- [The travel cost is the Euclidean distance between the cities.]
-- [The objective is to find the shortest tour for the robot.]
-- [The output should include the tour as a list of city indices, beginning and ending at the depot, and the total tour cost.]

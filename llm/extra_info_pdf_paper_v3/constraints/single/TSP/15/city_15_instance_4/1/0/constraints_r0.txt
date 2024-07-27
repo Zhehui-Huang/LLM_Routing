@@ -1,3 +1,0 @@
-- [The robot must visit each of the 15 cities exactly once, except the depot city, which it visits at the start and end of the journey.]
-- [All travels between cities are calculated using the Euclidean distance formula between their coordinates.]
-- [The solution must be presented both as a sequential list of city indices starting and ending at the depot city, and as a total travel cost of the entire tour.]

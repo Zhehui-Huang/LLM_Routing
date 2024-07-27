@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Not all demands met. Remaining demand for city 1 is 19.
-
-
-ERROR:
-
-

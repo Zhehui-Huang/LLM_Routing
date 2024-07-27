@@ -1,6 +1,0 @@
-- [Requirement 1] The robot must visit exactly 8 cities, including the depot city 0, and must start and end its tour at the depot city.
-- [Requirement 2] The robot can only travel between cities, and the travel cost is calculated based on the Euclidean distance between any two cities.
-- [Requirement 3] The goal is to find the shortest possible tour length, involving selecting the best subset of cities and determining the optimal visiting sequence.
-- [Requirement 4] The output should be formatted as a list of city indices for the tour starting and ending at city 0, followed by the total travel cost.
-- [Requirement 5] Only one robot is available for the routing task.
-- [Requirement 6] Must implement a solution using insights from the variable neighborhood search algorithm mentioned in the provided article.

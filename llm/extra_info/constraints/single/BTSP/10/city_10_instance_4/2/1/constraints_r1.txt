@@ -1,8 +1,0 @@
-- [There are 10 specific cities with defined coordinates; each city is represented by an index]
-- [The robot must start and end the route at the depot city, which is city 0]
-- [The robot must visit each city exactly once]
-- [Travel cost between two cities is determined by the Euclidean distance]
-- [The objective is to minimize the longest distance between any two consecutive cities in the tour]
-- [The output must include the order of the cities visited in the tour starting and ending at city 0]
-- [The output must state the total travel cost of the tour]
-- [The output must state the maximum distance between any two consecutive cities in the tour]

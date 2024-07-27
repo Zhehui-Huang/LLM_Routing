@@ -1,8 +1,0 @@
-- [The problem involves 10 unique cities with specified coordinates.]
-- [The robot starts and ends its journey at the depot city, designated as city 0.]
-- [The robot must visit exactly 5 cities in total, including the depot city.]
-- [Travel cost between two cities is calculated using the Euclidean distance.]
-- [The robot can travel between any two cities directly.]
-- [The objective is to determine the shortest possible tour that visits exactly 5 cities and returns to the depot city.]
-- [Output should be a list of city indices showing the sequence of the tour, starting and ending at city 0.]
-- [Output should also include the total travel cost of that tour.]

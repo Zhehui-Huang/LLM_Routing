@@ -1,7 +1,0 @@
-Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/messages/multiple/CVRP/10/P-n19-k2/4/0/messages_P-n19-k2.txt
-===
-System - LLM_SYSTEM_PROMPT
-User - Task description: P-n19-k2
-Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/CVRP/10/P-n19-k2/4/0/solution_r0.py
-Another LLM - User - Ask for prompts
-Another LLM - Assistant - Constraints response: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/constraints/multiple/CVRP/10/P-n19-k2/4/0/constraints_r0.txt

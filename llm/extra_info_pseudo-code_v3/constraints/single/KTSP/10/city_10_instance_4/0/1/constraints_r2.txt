@@ -1,5 +1,0 @@
-- [The robot must start and end its tour at the depot city, which is city 0.]
-- [The robot needs to visit exactly 8 cities from the set of 10 given cities, including the depot city.]
-- [The objective is to find the shortest possible tour that visits these 8 cities.]
-- [Travel cost between any two cities is calculated as the Euclidean distance.]
-- [Output should be formatted as: Tour (list of cities starting and ending at the depot), Total travel cost (numerical value).]

@@ -1,5 +1,0 @@
-- [Requirement 1] Visit each of the 20 cities exactly once, starting and ending at the depot city (city 0).
-- [Requirement 2] Calculate the travel cost between any two cities using the Euclidean distance.
-- [Requirement 3] The robot needs to find the shortest possible tour that satisfies Requirement 1 and Requirement 2.
-- [Requirement 4] Output the tour as a list of city indices starting and ending at the depot city.
-- [Requirement 5] Output the total travel cost of the tour.

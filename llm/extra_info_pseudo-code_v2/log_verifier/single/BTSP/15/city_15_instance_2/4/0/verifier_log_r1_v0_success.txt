@@ -1,8 +1,0 @@
-OUTPUT:
-Result: FAIL
-Message: Tour visits at least one city more than once.
-
-
-ERROR:
-
-

@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: More robots than available
-
-
-ERROR:
-
-

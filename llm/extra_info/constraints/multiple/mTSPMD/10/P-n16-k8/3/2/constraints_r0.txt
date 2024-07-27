@@ -1,7 +1,0 @@
-- [Each city must be visited exactly once by any robot, except the depot cities which are visited twice (as starting and ending points).]
-- [Each robot must start and end its tour at its assigned depot city.]
-- [The tour of each robot should be represented as a list of city indices, starting and ending with its assigned depot city.]
-- [Calculate the travel cost as the Euclidean distance between cities for each leg of a robot's tour.]
-- [The total travel cost for each robot's tour should be provided.]
-- [The goal is to minimize the combined total travel cost of all robots together, which is the sum of the individual costs.]
-- [Ensure a fair allocation of cities between robots to facilitate minimal combined travel.]

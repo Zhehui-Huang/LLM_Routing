@@ -1,3 +1,0 @@
-- [Requirement 1] Each city group must be visited exactly once by selecting one city from each, including a return to the starting depot.
-- [Requirement 2] Minimize the total distance traveled in the tour, starting and ending at the depot city.
-- [Requirement 3] Ensure no subtours are formed (only one subtour that forms a complete route from the depot to the depot).

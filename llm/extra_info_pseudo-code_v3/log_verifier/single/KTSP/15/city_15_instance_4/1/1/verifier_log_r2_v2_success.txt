@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Tour should have 12 unique cities including the depot.
-
-
-ERROR:
-
-

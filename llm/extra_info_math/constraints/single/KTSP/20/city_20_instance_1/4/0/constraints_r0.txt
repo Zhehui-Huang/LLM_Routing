@@ -1,3 +1,0 @@
-- [Requirement 1] The robot needs to visit exactly 7 cities, including the depot city, starting and ending at the depot city.
-- [Requirement 2] The robot can travel between any two cities.
-- [Requirement 3] The travel cost is calculated as the Euclidean distance between the two cities.

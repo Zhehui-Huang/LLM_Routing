@@ -1,6 +1,0 @@
-- [Each city is visited exactly once by one robot]
-- [Flow conservation constraints (each robot must leave each visited node and enter each visited node exactly once)]
-- [Each robot must leave the depot exactly once]
-- [Subtour elimination constraints to prevent robots from forming smaller closed loops not involving the depot]
-- [Binary constraints for assignment variables specifying that travel paths are either taken or not taken]
-- [Continuous variables for node positions to help in subtour elimination]

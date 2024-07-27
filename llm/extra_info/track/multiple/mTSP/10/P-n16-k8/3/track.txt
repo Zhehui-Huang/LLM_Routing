@@ -1,6 +1,0 @@
-Task: mTSP, City: 10, File name: P-n16-k8, Run time: 3
-
-Success: Request LLM number: 5
-Details: 'exec': 3, 'verifier': 1, 'constraints': 1
-
-

@@ -1,9 +1,0 @@
-OUTPUT:
-
-
-ERROR:
-  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSP_MinMax/10/E-n22-k4/1/0/verifier_r2_v0.py", line 41
-    return math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
-IndentationError: unexpected indent
-
-

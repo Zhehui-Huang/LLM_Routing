@@ -1,7 +1,0 @@
-- [The environment consists of 10 cities with precise spatial coordinates, including a depot city (city 0).]
-- [Cities are categorized into three distinct groups.]
-- [One robot starts at the depot city and is required to visit exactly one city from each specified group.]
-- [The path must start and terminate at the depot city.]
-- [Travel cost between any two cities is calculated using the Euclidean distance.]
-- [The task is to find the shortest possible tour that fulfills the path requirement and visitation constraints.]
-- [Output should include the tour as a list of city indices and the total travel cost.]

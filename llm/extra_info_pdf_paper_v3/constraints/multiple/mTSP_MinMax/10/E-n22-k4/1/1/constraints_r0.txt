@@ -1,3 +1,0 @@
-- [Requirement 1] There are 22 cities including the depot city, and the total number of robots is 4. Each robot starts and ends its tour at the depot city.
-- [Requirement 2] Each robot must visit every city exactly once (excluding the depot as a destination), with the objective to minimize the maximum distance traveled by any robot.
-- [Requirement 3] The output should include the tour for each robot as a list of city indices starting and ending at the depot, the individual travel cost for each robot's tour, and the maximum travel cost among all tours.

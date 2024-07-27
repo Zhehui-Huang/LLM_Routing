@@ -1,3 +1,0 @@
-- [Requirement 1] The robot needs to find the shortest tour that starts and ends at the depot city (city 0), visiting a total of 4 cities including the depot.
-- [Requirement 2] The robot can only travel in the Euclidean plane between cities, with the distance calculated as the Euclidean distance.
-- [Requirement 3] The output should be in the format: Tour as a list of city indices starting and ending at city 0, followed by the total travel cost of the tour.

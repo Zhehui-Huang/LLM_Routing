@@ -1,5 +1,0 @@
-- [Requirement 1] The robot must start and end its path at the depot city, which is city 0.
-- [Requirement 2] The robot must visit exactly 4 cities, including the depot city.
-- [Requirement 3] The travel cost between cities is calculated using the Euclidean distance.
-- [Requirement 4] The objective is to find the shortest possible route that covers exactly 4 cities and returns to the depot city.
-- [Requirement 5] The output should be presented as a list of city indices for the tour starting and ending at the depot city, followed by the total travel cost of the tour.

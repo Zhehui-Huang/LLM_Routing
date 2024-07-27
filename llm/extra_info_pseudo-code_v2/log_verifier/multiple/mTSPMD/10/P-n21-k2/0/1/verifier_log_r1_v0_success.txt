@@ -1,8 +1,0 @@
-OUTPUT:
-Tour cost match error: Expected 175.8, Got 193.967404027215
-FAIL
-
-
-ERROR:
-
-

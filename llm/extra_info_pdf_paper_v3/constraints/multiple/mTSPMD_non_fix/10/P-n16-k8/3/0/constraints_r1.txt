@@ -1,3 +1,0 @@
-- [Each robot must visit all cities exactly once.]
-- [All robots start from a single designated depot (Depot city 0) but do not need to return to the depot after completing their tours.]
-- [The goal is to minimize the total travel cost for all robots combined while ensuring each city is visited only once and the tours are optimized for the lowest total travel distance or cost.]

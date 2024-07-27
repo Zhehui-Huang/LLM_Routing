@@ -1,6 +1,0 @@
-- [The robots must collectively deliver goods to all cities, excluding the depot city.]
-- [Each robot starts at the depot city and must return there after completing their deliveries.]
-- [Each city has a specific demand that must be met.]
-- [Each robot has a specified carrying capacity of 6000, which must not be exceeded.]
-- [Travel cost is calculated based on the Euclidean distance between cities.]
-- [The objective is to minimize the total travel cost for all tours.]

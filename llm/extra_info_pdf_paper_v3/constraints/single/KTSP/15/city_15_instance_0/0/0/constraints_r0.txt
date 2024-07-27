@@ -1,6 +1,0 @@
-- [There are 15 cities, each identified by a unique index from 0 to 14 with their respective coordinates.]
-- [The robot starts its journey from the depot city 0, positioned at coordinates (9, 93).]
-- [The robot's route must include exactly 4 cities, counting the starting city (depot city 0).]
-- [The robot must return to the depot city 0 at the end of its tour.]
-- [Travel cost between any two cities is based on the Euclidean distance between their coordinates.]
-- [The task is to find the shortest possible tour that meets the above requirements.]

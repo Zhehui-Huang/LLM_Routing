@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Tour must include exactly 16 unique cities including city 0
-
-
-ERROR:
-
-

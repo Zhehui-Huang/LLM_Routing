@@ -1,9 +1,0 @@
-- [Requirement 1] There are 22 cities including the depot.
-- [Requirement 2] All robots must start and end their tour at the depot city, city 0.
-- [Requirement 3] Each city, except for the depot, must be visited exactly once by the robots collectively.
-- [Requirement 4] The objective is to minimize the total travel cost across all robots.
-- [Requirement 5] Travel cost between cities is computed based on the Euclidean distance.
-- [Requirement 6] There are 4 robots, and each must have at least one tour starting and ending at the depot.
-- [Requirement 7] Output should list each tour for the robots beginning and ending at the depot and show the total cost for each individual tour and the overall total cost.
-- [Requirement 8] Use the generalized k-Opt Exchange Procedure for solving the problem, which allows the partition of a single tour into multiple subtours.
-- [Requirement 9] Each robot's tour is a sequence of city indices.

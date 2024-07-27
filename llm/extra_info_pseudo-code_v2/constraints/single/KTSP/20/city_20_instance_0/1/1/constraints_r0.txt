@@ -1,5 +1,0 @@
-- [Requirement 1] The robot must start and end the tour at the depot city, city 0.
-- [Requirement 2] The robot has to visit exactly 4 different cities, including the depot city.
-- [Requirement 3] The total distance traveled by the robot should be minimized.
-- [Requirement 4] Tour paths should be represented as a list of city indices, starting and ending at city 0.
-- [Requirement 5] The total travel cost of the tour should be provided in the output.

@@ -1,7 +1,0 @@
-- [Requirement 1] The robot needs to visit all cities exactly once and then return to the depot city.
-- [Requirement 2] The depot city is city 0 with coordinates (54, 87).
-- [Requirement 3] There are a total of 15 cities including the depot.
-- [Requirement 4] Travel cost between any two cities is calculated as the Euclidean distance.
-- [Requirement 5] Use Christofides algorithm to approximate the solution for the problem.
-- [Requirement 6] The output should list the tour starting and ending at the depot city.
-- [Requirement 7] Output should also include the total travel cost for the tour.

@@ -1,6 +1,0 @@
-- [There are 15 cities, each identified with a corresponding coordinate pair.]
-- [City groups are defined: Group 0 (1, 2, 5, 6), Group 1 (8, 9, 10, 13), Group 2 (3, 4, 7), and Group 3 (11, 12, 14).]
-- [The robot starts and ends its route at the depot city 0.]
-- [The robot must visit exactly one city from each group.]
-- [Travel cost is calculated using the Euclidean distance between two cities.]
-- [The solution must be represented as a tour sequence starting and ending at the depot city 0, followed by the total travel cost.]

@@ -1,7 +1,0 @@
-- [The robot starts its journey at depot city 0.]
-- [The robot must visit all other cities exactly once.]
-- [After visiting all cities, the robot must return to the depot city 0.]
-- [Travel cost between any two cities is determined by their Euclidean distance.]
-- [The task is to find the shortest possible tour that satisfies the above constraints.]
-- [The output must include the tour as a list of city indices starting and ending at city 0.]
-- [The output must also include the total travel cost of the tour.]

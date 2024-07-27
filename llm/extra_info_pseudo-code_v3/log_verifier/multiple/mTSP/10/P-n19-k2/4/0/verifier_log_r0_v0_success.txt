@@ -1,8 +1,0 @@
-OUTPUT:
-FAIL: Not all cities were visited exactly once, or a city was visited more than once.
-FAIL
-
-
-ERROR:
-
-

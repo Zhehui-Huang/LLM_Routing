@@ -1,9 +1,0 @@
-OUTPUT:
-
-
-ERROR:
-  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/BTSP/20/city_20_instance_4/4/0/verifier_r2_v0.py", line 59
-    /status/buff:        print("FAIL")
-IndentationError: expected an indented block after 'else' statement on line 58
-
-

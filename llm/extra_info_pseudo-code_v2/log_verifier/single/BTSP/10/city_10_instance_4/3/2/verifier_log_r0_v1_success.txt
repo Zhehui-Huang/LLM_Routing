@@ -1,8 +1,0 @@
-OUTPUT:
-Tour is empty.
-FAIL
-
-
-ERROR:
-
-

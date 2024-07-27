@@ -1,8 +1,0 @@
-- [There are 20 cities, including the depot city labeled as city 0.]
-- [Coordinates of cities are provided for depot and each other city.]
-- [There are 3 groups of cities, and the robot must visit exactly one city from each group.]
-- [The robot starts and ends its tour at the depot city 0.]
-- [Travel cost is calculated based on the Euclidean distance between cities.]
-- [The objective is to find the shortest round-trip route that meets the criteria above.]
-- [Final tour output should start and end at city 0, indicating full circular traversal.]
-- [Output should include both the tour (as a list of city indices) and the total travel cost of this tour.]

@@ -1,5 +1,0 @@
-- [Requirement 1]: Implement a solution using a genetic algorithm adapted for a multi-depot multi-robot scenario, where each robot starts from a designated depot.
-- [Requirement 2]: Each city must be visited exactly once collectively by the robots, and each tour must end at any city, not necessarily at a depot. Robots start at city 0.
-- [Requirement 3]: Optimize tours to achieve the minimum total travel cost, calculated as the Euclidean distance between the cities in the tour.
-- [Requirement 4]: The genetic algorithm should handle chromosome representation with a permutation of cities and negative numbers to denote transitions between depots.
-- [Requirement 5]: The output must include the tour for each robot starting and ending at its assigned depot, the travel cost for each robot's tour, and the overall total travel cost.

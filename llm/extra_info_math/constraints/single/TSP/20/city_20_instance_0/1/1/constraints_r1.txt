@@ -1,5 +1,0 @@
-- [Requirement 1] The robot starts the tour at the depot city 0 and must return to depot city 0 after visiting all other cities.
-- [Requirement 2] The robot must visit each city exactly once, except for the depot city.
-- [Requirement 3] The robot can travel between any two cities with the travel cost calculated as the Euclidean distance between those cities.
-- [Requirement 4] The objective is to minimize the total cost of the tour.
-- [Requirement 5] The solution must satisfy all subtour elimination constraints to prevent the formation of separate cycles that do not include every city.

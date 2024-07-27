@@ -1,8 +1,0 @@
-OUTPUT:
-Best Solution Tour: [0, 14, 20, 21, 17, 11, 16, 18, 7, 5, 2, 15, 12, 10, 1, 4, 3, 6, 8, 9, 13, 19]
-Best Solution Total Travel Cost: 483.61848690335165
-
-
-ERROR:
-
-

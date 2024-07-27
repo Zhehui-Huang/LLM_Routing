@@ -1,9 +1,0 @@
-Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/messages/multiple/mTSPMD/10/P-n21-k2/1/1/messages_P-n21-k2.txt
-===
-System - LLM_SYSTEM_PROMPT
-User - Task description: P-n21-k2
-User - execution does not output any results.
-Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD/10/P-n21-k2/1/1/solution_r0.py
-Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD/10/P-n21-k2/1/1/solution_r1.py
-Another LLM - User - Ask for prompts
-Another LLM - Assistant - Constraints response: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/constraints/multiple/mTSPMD/10/P-n21-k2/1/1/constraints_r1.txt

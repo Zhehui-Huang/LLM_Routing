@@ -1,4 +1,0 @@
-- [Requirement 1] There are 10 predefined cities with fixed coordinates, including a depot city where the tour must start and end.
-- [Requirement 2] The robot can travel between any two cities, wherein travel costs are based on Euclidean distances.
-- [Requirement 3] The robot must visit all cities exactly once, excluding the depot at the start but including it at the end, forming a closed tour from the depot city back to itself.
-- [Requirement 4] The output should list the cities in the order of the tour starting and ending at the depot city and provide the total travel cost of that tour.

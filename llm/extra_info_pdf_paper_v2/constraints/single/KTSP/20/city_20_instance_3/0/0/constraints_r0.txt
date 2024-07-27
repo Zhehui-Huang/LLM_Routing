@@ -1,6 +1,0 @@
-- [The robot must start and end its journey at depot city 0.]
-- [The robot needs to visit exactly 13 cities, including the depot city.]
-- [The goal is to find the shortest possible route that visits exactly 13 cities from the given 20 cities.]
-- [The robot can travel between any two cities directly.]
-- [Travel cost between cities is calculated based on the Euclidean distance.]
-- [The output format should include the tour as a list of city indices starting and ending at city 0, and the total travel cost of the tour.]

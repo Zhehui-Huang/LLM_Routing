@@ -1,9 +1,0 @@
-OUTPUT:
-Tour: TBD
-Total travel cost: TBD
-Max distance between consecutive cities: 32.57299494980466
-
-
-ERROR:
-
-

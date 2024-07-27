@@ -1,8 +1,0 @@
-- [There are 23 cities, each identified by unique indices from 0 to 22, with specified coordinates.]
-- [There are 8 robots, all starting and ending their tours at the depot city identified by index 0.]
-- [Each robot must visit all cities exactly once, excluding the depot city, which is not a destination.]
-- [Travel cost is calculated as the Euclidean distance between two cities.]
-- [The main objective is to minimize the maximum distance traveled by any single robot.]
-- [The solution should use insights from the general variable neighborhood search heuristic for mTSP, focusing on MinMax to balance the workload among robots.] 
-- [Each tour should be provided as a list starting and ending at the depot city, along with the total travel cost for that tour.]
-- [Output must include the maximum travel cost among all tours.]

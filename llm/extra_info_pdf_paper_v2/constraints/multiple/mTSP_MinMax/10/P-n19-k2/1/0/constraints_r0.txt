@@ -1,3 +1,0 @@
-- [Requirement 1] Each robot must start and end its tour at the depot city (city 0).
-- [Requirement 2] Every city must be visited exactly once by the robots, excluding the depot as a destination.
-- [Requirement 3] The primary objective is to minimize the maximum distance traveled by any single robot (MinMax objective).

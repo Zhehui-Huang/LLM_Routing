@@ -1,3 +1,0 @@
-- [Requirement 1] Determine the shortest possible tours for the robots ensuring that the demand of each city is fully met.
-- [Requirement 2] Ensure that the capacity constraints of the robots (each robot has a maximum capacity of 35) are not exceeded.
-- [Requirement 3] Minimize the total travel cost for all tours, with the travel cost calculated as the Euclidean distance between cities. Each robot starts and ends its tour at the depot city 0.

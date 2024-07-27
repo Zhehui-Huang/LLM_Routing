@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Incorrect cost calculation for Robot 0.
-
-
-ERROR:
-
-

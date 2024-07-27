@@ -1,5 +1,0 @@
-- [Requirement 1] The robot must start and end its tour at the depot city (city 0).
-- [Requirement 2] The robot must visit each of the other 14 cities exactly once.
-- [Requirement 3] The tour's travel cost is calculated based on the Euclidean distances between cities. 
-- [Requirement 4] The output should include both the complete tour as a list of city indices and the total travel cost.
-- [Requirement 5] The shortest tour that meets all necessary requirements must be determined, suggesting the use of an optimization algorithm suited for the Traveling Salesman Problem.

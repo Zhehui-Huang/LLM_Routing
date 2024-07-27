@@ -1,6 +1,0 @@
-Task: CVRP, City: 10, File name: P-n21-k2, Run time: 1
-
-Success: Request LLM number: 7
-Details: 'exec': 3, 'verifier': 3, 'constraints': 1
-
-

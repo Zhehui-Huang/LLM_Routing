@@ -1,8 +1,0 @@
-- [The environment consists of 15 cities, each specified with unique coordinates.]
-- [There is a defined depot city (city 0) from where the robot starts and ends its journey.]
-- [Cities are grouped into 6 distinct groups, and the robot must visit exactly one city from each group.]
-- [The robot has to find the shortest path traveling through one city from each group and return to the depot city.]
-- [Travel cost between cities is calculated based on the Euclidean distance.]
-- [Use the GLNS algorithm to find the minimum travel path for the robot, following the pseudo code provided.]
-- [Output should include the tour as a list of visited city indices starting and ending at the depot city (e.g., [0, x, y, z, 0]).]
-- [Output should clearly state the total travel cost of the determined tour.]

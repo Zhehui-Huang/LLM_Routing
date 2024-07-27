@@ -1,8 +1,0 @@
-- [Requirement 1] There are 10 cities including the depot city, which is located at coordinates (90, 3).
-- [Requirement 2] Each city has explicit coordinates provided.
-- [Requirement 3] The robot starts at the depot city (index 0), must visit each other city exactly once, and return to the depot city.
-- [Requirement 4] Distances between cities are calculated using the Euclidean distance formula.
-- [Requirement 5] The solution must find the shortest possible round-trip tour for the robot.
-- [Requirement 6] The task must be solved using a variant/implementation of the Lin-Kernighan algorithm for local optimization in TSP.
-- [Requirement 7] Output the tour as a list of city indices, starting and ending at the depot.
-- [Requirement 8] Output the total travel cost of the tour.

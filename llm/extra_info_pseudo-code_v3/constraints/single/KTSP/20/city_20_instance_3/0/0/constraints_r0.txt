@@ -1,5 +1,0 @@
-- [Requirement 1] The robot must start and end its tour at the depot city, which is city 0.
-- [Requirement 2] The tour must include exactly 13 cities.
-- [Requirement 3] The objective is to find the shortest possible tour based on the Euclidean distance between cities.
-- [Requirement 4] The solution must output the tour as a list of city indices beginning and ending with city 0.
-- [ograda 5] The solution must also output the total travel cost of the tour.

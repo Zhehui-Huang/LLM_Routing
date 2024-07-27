@@ -1,6 +1,0 @@
-- [The robot visits 10 cities, starting and ending at the depot city (City 0).]
-- [The robot must visit each city exactly once, except the depot city which must be visited twice—once at the beginning and once at the end.]
-- [Travel cost between cities is calculated using the Euclidean distance formula.]
-- [The objective is to find the shortest possible tour that visits each city exactly once and returns to the depot city.]
-- [The final output should be a list of city indices representing the tour, starting and ending at city 0.]
-- [The final output should also include the total travel cost of the tour.]

@@ -1,9 +1,0 @@
-OUTPUT:
-Tour: [np.int32(0), np.int32(2), np.int32(6), np.int32(11), np.int32(12), np.int32(4), np.int32(13), np.int32(7), np.int32(3), np.int32(10), np.int32(5), np.int32(9), np.int32(8), np.int32(1), np.int32(14), np.int32(0)]
-Total travel cost: 379.69
-Maximum distance between consecutive cities: 79.40
-
-
-ERROR:
-
-

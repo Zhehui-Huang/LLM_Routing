@@ -1,9 +1,0 @@
-OUTPUT:
-
-
-ERROR:
-  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/GTSP/10/city_10_instance_0/1/0/verifier_r0_v0.py", line 20
-    break
-IndentationError: unexpected indent
-
-

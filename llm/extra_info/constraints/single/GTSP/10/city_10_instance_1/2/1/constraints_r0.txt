@@ -1,8 +1,0 @@
-- [There are 10 cities, each with a distinct location specified by coordinates.]
-- [Depot city is denoted as city 0, with coordinates (53, 68).]
-- [Cities are grouped into 4 groups: Group 0 contains cities 5, 6, 7; Group 1 contains cities 2, 3; Group 2 contains cities 1, 9; Group 3 contains cities 4, 8.]
-- [There is a single robot that starts and ends its journey at the depot city 0.]
-- [The robot must visit exactly one city from each city group, ensuring the starting and ending points are the depot city 0.]
-- [Travel cost between any two cities is determined by the Euclidean distance between their coordinates.]
-- [The task is to find the shortest possible tour that meets all preceding conditions.]
-- [The output should include the tour as a sequence of city indices, starting and ending at the depot city, and the total travel distance or cost for this tour.]

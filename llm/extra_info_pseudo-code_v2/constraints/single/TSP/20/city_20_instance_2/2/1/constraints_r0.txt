@@ -1,5 +1,0 @@
-- [Requirement 1] The robot must start and end its journey at the depot city, which has the index 0.
-- [Requirement 2] Each city, excluding the depot, must be visited exactly once by the robot.
-- [Requirement 3] The travel cost is calculated using the Euclidean distance between any two cities.
-- [Requirement 4] Use the Lin-Kernighan algorithm to optimize the tour.
-- [Requirement 5] Provide the output in the following format: Tour as a list of city indices starting and ending at the depot city, and the total travel cost of this tour.

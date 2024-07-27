@@ -1,8 +1,0 @@
-OUTPUT:
-FAIL
-Tour contains duplicate cities or does not cover all mentioned cities.
-
-
-ERROR:
-
-

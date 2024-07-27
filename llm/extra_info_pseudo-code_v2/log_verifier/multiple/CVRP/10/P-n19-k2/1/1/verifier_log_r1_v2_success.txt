@@ -1,7 +1,0 @@
-OUTPUT:
-The solution is: CORRECT
-
-
-ERROR:
-
-

@@ -1,6 +1,0 @@
-- [Each robot tour must start and end at the depot city 0.]
-- [Each city (excluding the depot) must be visited exactly once by any robot.]
-- [The total demand on each robot tour must not exceed the robot's capacity of 6000.]
-- [The output should list tours for each robot as a sequence of city indices starting and ending at city 0.]
-- [The output should also provide the total travel cost for each robot tour and the overall total travel cost.]
-- [Demands of all cities must be fully met according to their specified amounts.]

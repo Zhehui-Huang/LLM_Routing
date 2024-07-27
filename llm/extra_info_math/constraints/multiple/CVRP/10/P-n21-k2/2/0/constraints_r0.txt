@@ -1,5 +1,0 @@
-- [Each route must start and end at the depot city.]
-- [Each customer city must be visited exactly once by one of the robots.]
-- [The total demand fulfilled on each route by a robot must not exceed the robot's capacity of 160.]
-- [Minimize the total travel cost for all tours combined.]
-- [Travel cost is calculated as the Euclidean distance between cities.]

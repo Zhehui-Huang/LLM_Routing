@@ -1,3 +1,0 @@
-- [The robot must visit each of the 20 cities exactly once, starting and ending at depot city 0.]
-- [The robot's travel cost between any two consecutive cities is the Euclidean distance between them.]
-- [The objective is to minimize the longest distance between any two consecutive cities in the itinerary.]

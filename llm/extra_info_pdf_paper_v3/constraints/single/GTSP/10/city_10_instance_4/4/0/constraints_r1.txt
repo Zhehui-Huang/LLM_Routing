@@ -1,4 +1,0 @@
-- [Requirement 1] Visit exactly one city from each of the 7 city groups starting and ending at the depot city 0.
-- [Requirement 2] Calculate the travel cost as the Euclidean distance between two cities.
-- [Requirement 3] Output the tour as a list of city indices starting and ending at the depot city 0.
-- [Requirement 4] Output the total travel cost of the tour.

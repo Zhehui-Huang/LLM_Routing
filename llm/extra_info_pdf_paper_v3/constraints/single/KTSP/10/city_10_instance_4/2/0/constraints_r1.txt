@@ -1,7 +1,0 @@
-- [Requirement 1] There are 10 cities labeled from 0 (depot) to 9 with specified coordinates.
-- [Requirement 2] The robot must start and end its tour at the depot city 0.
-- [Requirement 3] The tour must visit exactly 8 cities, including the depot city.
-- [Requirement 4] The objective is to find the shortest possible tour under the given constraints.
-- [Requirement 5] The travel cost between any two cities is calculated using the Euclidean distance.
-- [Requirement 6] Output the tour as a list of city indices, ensuring it starts and ends at the depot city.
-- [Requirement 7] Output the total travel cost of the tour.

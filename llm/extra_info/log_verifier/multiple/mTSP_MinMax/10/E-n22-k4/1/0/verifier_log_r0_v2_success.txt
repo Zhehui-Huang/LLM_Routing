@@ -1,7 +1,0 @@
-OUTPUT:
-FAIL: Calculated max travel cost does not match reported.
-
-
-ERROR:
-
-

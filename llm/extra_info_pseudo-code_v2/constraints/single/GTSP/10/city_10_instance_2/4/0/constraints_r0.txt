@@ -1,6 +1,0 @@
-- The robot must start and end its journey at the depot city (index 0).
-- The robot must visit exactly one city from each specified group of cities.
-- The travel cost between cities is calculated as the Euclidean distance.
-- The objective is to find the shortest total travel path that satisfies the above requirements.
-- The tour output should be in the form of a list of city indices, starting and ending at city 0.
-- Alongside the tour, the total travel cost should also be provided.

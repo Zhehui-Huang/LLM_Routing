@@ -1,6 +1,0 @@
-- [Requirement 1] There are 19 cities, each identified uniquely with indices from 0 (depot) to 18, with their respective coordinates provided.
-- [Requirement 2] There are 2 robots, both starting and ending their tours at the depot city, city 0.
-- [Requirement 3] Each city, excluding the depot, must be visited exactly once by the robots collectively.
-- [Requirement 4] The objective is to minimize the total travel cost, which is the sum of the travel costs of both tours.
-- [Requirement 5] Travel cost between any two cities is calculated using the Euclidean distance formula.
-- [Requirement 6] The results should include a list of city indices for each robot's tour, starting and ending at the depot, the travel cost for each tour, and the overall total travel cost.

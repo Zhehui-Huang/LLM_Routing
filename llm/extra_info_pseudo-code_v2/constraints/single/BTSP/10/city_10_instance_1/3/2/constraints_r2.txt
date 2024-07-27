@@ -1,5 +1,0 @@
-- [Requirement 1] The robot must visit each city exactly once, with the route starting and ending at the depot (city 0).
-- [Requirement 2] The travel cost between any two cities is quantified by the Euclidean distance.
-- [Requirement 3] Minimize the longest distance between any two consecutive cities in the constructed tour.
-- [Requirement 4] Implement and use a heuristic algorithm involving the creation of a bottleneck-optimal biconnected subgraph of a graph followed by tour identification.
-- [Requirement 5] Produce the final output as a list showing the tour of city indices, total travel cost, and maximum distance between any two consecutive cities.

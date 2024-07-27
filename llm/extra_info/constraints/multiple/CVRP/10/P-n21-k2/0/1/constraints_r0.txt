@@ -1,5 +1,0 @@
-- [Requirement 1] Deliver goods to all cities from a central depot, ensuring each city's specific demand is fully met.
-- [Requirement 2] Robots must start and end their tours at the depot city.
-- [Requirement 3] The carrying capacity of each robot must not be exceeded.
-- [Requirement 4] Minimize the total travel cost for all tours, where travel cost is the Euclidean distance between cities.
-- [Requirement 5] Each robot's tour should be provided as a list of city indices, showing the path they take starting and ending at the depot.

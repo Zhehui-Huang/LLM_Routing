@@ -1,8 +1,0 @@
-OUTPUT:
-FAIL
-Total travel cost mismatch: Expected 1562.55, got 1041.7028664379866
-
-
-ERROR:
-
-

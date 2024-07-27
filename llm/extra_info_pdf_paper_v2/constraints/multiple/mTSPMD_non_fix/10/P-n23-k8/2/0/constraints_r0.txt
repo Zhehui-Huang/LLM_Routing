@@ -1,8 +1,0 @@
-- [Requirement 1] There are 23 cities which include 7 depots.
-- [Requirement 2] Number of robots: 8. All robots start from depot city 0 and do not return to the depot after completing their tour.
-- [Requirement 3] Robots must collectively visit all cities exactly once, and the tour should be optimized to minimize total travel cost for all robots combined while ensuring that no city is visited more than once.
-- [Requirement 4] The goal is to find the shortest tours for each robot, minimizing total and individual travel costs, calculated as the Euclidean distance between cities.
-- [Requirement 5] Output the tours for each robot as a list of city indices, where each tour should start at the designated depot and can stop at any other city.
-- [Requirement 6] Output the individual travel cost for each tour and the overall total travel cost.
-- [Requirement 7] Each robot is initialized at depot city 0 but can end at any city.
-- [Requirement 8] Referencing recent research suggests using Genetic Algorithms (GAs), Simulated Annealing (SA), or Tabu Search (TS) to solve this variation of the multi-depot mTSP with non-fixed destinations.

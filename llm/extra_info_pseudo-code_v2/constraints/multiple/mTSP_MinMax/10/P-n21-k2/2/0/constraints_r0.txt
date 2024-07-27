@@ -1,5 +1,0 @@
-- [Environment has 21 cities including a depot city 0, each with specific coordinates.]
-- [Two robots are involved, and each robot begins its route at the depot city.]
-- [Robots need to collectively cover all non-depot cities exactly once and return to depot, focusing on minimizing the maximum travel distance incurred by any robot.]
-- [Travel cost between two cities is calculated based on Euclidean distance.]
-- [Output should list tours for each robot starting and ending at the depot, including individual tour costs and the maximum travel cost among all tours.]

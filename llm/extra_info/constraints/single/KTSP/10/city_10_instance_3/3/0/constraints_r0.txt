@@ -1,5 +1,0 @@
-- [There are 10 distinct cities with predefined coordinates.]
-- [The robot must start and end its tour at the depot city, which is city 0.]
-- [The robot needs to visit exactly 7 cities, including the depot city.]
-- [Distance between any two cities is calculated using the Euclidean distance formula.]
-- [The goal is to find the shortest path that adheres to these constraints.]

@@ -1,6 +1,0 @@
-- [Requirement 1] There are 15 cities with defined locations, including a depot city.
-- [Requirement 2] The robot must start at the depot city (City 0), visit each city exactly once, and then return to the depot.
-- [Requirement 3] The robot travels between cities at a cost defined by the Euclidean distance.
-- [Requirement 4] The travel route should be the shortest tour possible, following the VRP rules.
-- [Requirement 5] Output needs to include the tour list starting and ending at the depot city, followed by the total travel cost.
-- [Requirement 6] Implement and use the Lin-Kernighan algorithm to optimize the tour.

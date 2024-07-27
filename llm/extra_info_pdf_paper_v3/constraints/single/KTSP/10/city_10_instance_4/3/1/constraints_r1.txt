@@ -1,6 +1,0 @@
-- [The task requires solving a k-TSP with k=8, which includes visiting exactly 8 cities out of the given 10, starting and ending at the depot city.]
-- [The depot city is city 0 with coordinates (79, 15).]
-- [Travel cost between any two cities is calculated using the Euclidean distance.]
-- [The robot must start and end its tour at the depot city 0.]
-- [The final output requires listing the tour as a sequence of city indices and calculating the total travel cost of this tour.]
-- [The tour sequence should start and end with the depot city indexed as 0.]

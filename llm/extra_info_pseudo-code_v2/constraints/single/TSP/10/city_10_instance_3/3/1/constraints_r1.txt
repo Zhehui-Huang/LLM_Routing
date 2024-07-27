@@ -1,5 +1,0 @@
-- [Requirement 1] Implement a solution based on the Lin-Kernighan algorithm to solve the TSP for a robot traversing 10 cities, starting and ending at the depot city.
-- [Requirement 2] Calculate the travel cost using the Euclidean distance formula.
-- [Requirement 3] Each city must be visited exactly once by the robot, except for the depot city which will be visited twice (start and end of the tour).
-- [Requirement 4] Output the tour as a list starting and ending at the depot city.
-- [Requirement 5] Output the total travel cost of the tour.

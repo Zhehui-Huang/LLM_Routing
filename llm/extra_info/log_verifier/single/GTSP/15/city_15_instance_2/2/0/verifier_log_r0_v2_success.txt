@@ -1,7 +1,0 @@
-OUTPUT:
-CORBITECT
-
-
-ERROR:
-
-

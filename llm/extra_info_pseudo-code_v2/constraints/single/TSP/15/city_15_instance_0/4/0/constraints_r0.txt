@@ -1,6 +1,0 @@
-- [Requirement 1] The environment consists of 15 cities indexed from 0 to 14 with specific coordinates.
-- [Requirement 2] There is one robot that starts at the depot city (City 0) and must return there after visiting all other cities exactly once.
-- [Requirement 3] The travel cost between any two cities is calculated using Euclidean distance.
-- [Requirement 4] Implement the Lin-Kernighan heuristic algorithm to find the shortest possible tour.
-- [Requirement 5] The output must include the tour as a list of city indices starting and ending at the depot city.
-- [Requirement 6] The output must also include the total travel cost of the tour.

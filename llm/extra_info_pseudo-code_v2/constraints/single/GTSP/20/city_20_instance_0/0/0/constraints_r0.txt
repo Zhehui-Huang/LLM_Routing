@@ -1,6 +1,0 @@
-- [There are 20 cities, including a depot city (City 0).]
-- [Cities are grouped into three groups: Group 0, Group 1, and Group 2.]
-- [One robot starts at City 0 and must visit one city from each group before returning to the depot.]
-- [Travel cost is calculated as the Euclidean distance between cities.]
-- [The task is to find the shortest possible round trip that meets the above conditions.]
-- [The output should list the robot's tour starting and ending at City 0 and the total travel cost of this tour.]

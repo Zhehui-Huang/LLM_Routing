@@ -1,4 +1,0 @@
-- [The robot starts and ends its tour at the depot city 0.]
-- [The tour must visit exactly 6 cities from a total of 10 possible cities.]
-- [The goal is to minimize the total travel cost, defined as the sum of Euclidean distances between consecutive cities in the tour.]
-- [The output must include the tour sequence as a list of city indices and the total travel cost of the tour.]

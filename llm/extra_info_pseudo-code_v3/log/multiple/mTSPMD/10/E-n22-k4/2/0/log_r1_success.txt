@@ -1,8 +1,0 @@
-OUTPUT:
-Best Tour (with depots): [0, 17, 17, 21, 16, 16, 16, 11, 6, 6, 7, 7, 7, 15, 16, 16, 16, 16, 16, 0]
-Total Travel Cost: 193.9760579266638
-
-
-ERROR:
-
-

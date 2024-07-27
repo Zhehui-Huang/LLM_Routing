@@ -1,5 +1,0 @@
-- [Requirement 1] The robot must start its tour at the depot city 0.
-- [Requirement 2] The robot must visit all cities exactly once, excluding the depot city which it visits twice (start and end).
-- [Requirement 3] The travel cost is calculated as the Euclidean distance between two cities.
-- [Requirement 4] The final output should list the shortest tour starting and ending at the depot city 0 and include the total travel cost.
-- [Requirement 5] The problem solution should be derived using a method akin to the Lin-Kernighan algorithm as described in the pseudocode.

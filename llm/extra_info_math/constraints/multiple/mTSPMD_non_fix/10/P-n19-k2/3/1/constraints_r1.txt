@@ -1,8 +1,0 @@
-- [Ensure exactly two salesmen leave depot city 0.]
-- [Ensure exactly two salesmen return to depot city 0.]
-- [Ensure each city is visited exactly once by either robot.]
-- [Bound constraints to ensure proper tour lengths and initialize position variables for cities.]
-- [Prohibit a robot from serving only a single customer node.]
-- [Subtour elimination constraints to prevent robots from forming separate subtours within a larger tour.]
-- [Binary constraints for travel variables showing whether a given route between two cities is used in the tours.]
-- [Minimize the total travel cost for all tours combined, visiting each city exactly once and optimizing for the shortest path while obeying the constraints.]

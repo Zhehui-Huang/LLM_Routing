@@ -1,7 +1,0 @@
-- [There are 21 cities with specified coordinates, including a depot city.]
-- [There are 2 robots, and both start their tour from the depot city.]
-- [Robots end their tours at the depot city.]
-- [Each city, except the depot city, must be visited exactly once by the robots collectively.]
-- [Travel cost between cities is calculated using the Euclidean distance.]
-- [The primary objective is to minimize the maximum distance traveled by any single robot.]
-- [The output should include the tours for each robot, with each tour starting and ending at the depot city, the travel cost for each tour, and the maximum travel cost among all tours.]

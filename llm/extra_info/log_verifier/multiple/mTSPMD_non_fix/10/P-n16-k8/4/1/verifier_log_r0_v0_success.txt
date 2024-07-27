@@ -1,8 +1,0 @@
-OUTPUT:
-FAIL: Robot 0 cost mismatch. Expected 7.81, got 40.37
-FAIL
-
-
-ERROR:
-
-

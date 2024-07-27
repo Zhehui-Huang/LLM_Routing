@@ -1,6 +1,0 @@
-- [Requirement 1] The environment consists of 10 cities with their coordinates specified.
-- [Requirement 2] The robot starts at the depot city (city 0) and must return there after visiting all other cities exactly once.
-- [Requirement 3] The robot can travel between any two cities, and travel cost is the Euclidean distance.
-- [Requirement 4] The problem needs to be solved using an adapted version of the Lin-Kernighan algorithm suitable for TSP.
-- [Requirement 5] Output the tour as a list of city indices, starting and ending at the depot city.
-- [Requirement 6] Output the total travel cost of the tour.

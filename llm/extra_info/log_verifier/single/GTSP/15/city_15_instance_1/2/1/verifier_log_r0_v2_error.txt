@@ -1,9 +1,0 @@
-OUTPUT:
-
-
-ERROR:
-  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/GTSP/15/city_15_instance_1/2/1/verifier_r0_v2.py", line 74
-    def main():
-IndentationError: expected an indented block after 'else' statement on line 73
-
-

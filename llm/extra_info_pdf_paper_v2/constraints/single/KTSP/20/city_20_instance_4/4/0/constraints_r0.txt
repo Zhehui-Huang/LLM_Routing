@@ -1,6 +1,0 @@
-- [Requirement 1] The k-Traveling Salesman Problem must involve a tour that starts and ends at the depot city (City 0).
-- [Requirement 2] The tour must visit exactly 16 cities from the given set of 20.
-- [Requirement 3] Travel cost between any two cities is calculated as the Euclidean distance.
-- [Requirement 4] The solution must find the shortest possible tour.
-- [Requirement 5] The tour and total travel cost should both be output.
-- [Requirement 6] The result output should list the tour starting and ending at the same depot city, City 0.

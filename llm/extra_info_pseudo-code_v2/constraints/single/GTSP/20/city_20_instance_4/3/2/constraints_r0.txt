@@ -1,6 +1,0 @@
-- [Requirement 1] There are 20 cities with a depot city at coordinates (26, 60).
-- [Requirement 2] The travel cost between two cities is calculated using the Euclidean distance.
-- [Requirement 3] The robot must start and end its tour at the depot city (city 0).
-- [Requirement 4] The robot must visit exactly one city from each of the 7 city groups.
-- [Requirement 5] Output the travel tour as a list of city indices, starting and ending at city 0.
-- [Requirement 6] Output the total travel cost of the tour.
