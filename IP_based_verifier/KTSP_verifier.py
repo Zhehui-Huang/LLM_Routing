@@ -208,18 +208,22 @@ def solve_k_tsp_verifier(cities,  k, route):
         return None, None
     else:
         index = {}
+        selected_cities_location = []
         for city in selected_cities:
             index[city] = selected_cities.index(city)
-        distance_matrix = calculate_distance_matrix(cities)
+            selected_cities_location.append(cities[city])
+            
+        distance_matrix = calculate_distance_matrix(selected_cities_location)
         sol_x = route2edges(route, k, index)
-        tour, cost = solve_tsp_verifier(cities, distance_matrix, sol_x)
+        tour, cost = solve_tsp_verifier(selected_cities, distance_matrix, sol_x)
+        
     return tour, cost
 
 def route2edges(route, num_city, index_dic):
     # route = [0, 1, 2, 3， 0]
     x = np.zeros((num_city, num_city))
     for i in range(len(route)-1):
-        x[route[i], route[i+1]] = 1
+        x[index_dic[route[i]], index_dic[route[i+1]]] = 1
     return x
 
 
@@ -230,15 +234,15 @@ def route2edges(route, num_city, index_dic):
 if __name__ == "__main__":
     current_directory = os.getcwd()+'/single/KTSP'
     file_name = 'city_10_instance_0.txt'
-    route = [0, 1, 2, 3, 4, 0]
+    route = [0, 6, 2, 3,  7, 0]
     
     
     cities = read_city_locations(current_directory+'/'+file_name)
-    distance_matrix = calculate_distance_matrix(cities)
+    #distance_matrix = calculate_distance_matrix(cities)
     #tour, cost = solve_tsp(cities, distance_matrix)
-    sol_x =  route2edges(route, len(cities))
+    #sol_x =  route2edges(route, len(cities))
     k = int(np.ceil(len(cities)/2))
-    tour, cost = solve_k_tsp_verifier(cities, distance_matrix, k, sol_x, route)
+    tour, cost = solve_k_tsp_verifier(cities, k,  route)
     
     
     if tour:
