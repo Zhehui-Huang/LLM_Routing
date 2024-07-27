@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must visit exactly 8 cities from the provided set of 15.
+- [Requirement 2] The tour must start and end at depot city (index 0).
+- [Requirement 3] The travel cost between cities is calculated using the Euclidean distance.
+- [Requirement 4] The output should be the list of city indices for the tour starting and ending at the depot city.
+- [Requirement 5] The output should also include the total travel cost of the tour.

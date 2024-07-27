@@ -1,0 +1,7 @@
+- [The environment consists of 10 specific cities with predefined coordinates.]
+- [The robot must start and end its journey at the depot city, which is city 0.]
+- [The robot should visit each city exactly once, except for the depot city, which will be visited twice (start and end).]
+- [Travel cost between cities is based on Euclidean distance.]
+- [The goal is to determine the shortest possible tour that meets the visiting requirements.]
+- [Tour output should be in the form of a list of city indices starting and ending at the depot city.]
+- [Total travel cost of the tour should be computed and included in the output.]

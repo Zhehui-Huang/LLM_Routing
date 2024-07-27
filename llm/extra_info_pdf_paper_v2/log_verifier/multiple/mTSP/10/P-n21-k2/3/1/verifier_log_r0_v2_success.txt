@@ -1,0 +1,10 @@
+OUTPUT:
+FAIL: Calculated cost 47.28555690793142 and reported cost 50 for robot 0 do not match.
+FAIL: Calculated cost 75.67537984747364 and reported cost 60 for robot 1 do not match.
+FAIL: Not all cities are visited exactly once by the robots.
+FAIL
+
+
+ERROR:
+
+

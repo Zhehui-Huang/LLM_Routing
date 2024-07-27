@@ -1,0 +1,6 @@
+- [The robot begins its route at depot city 0 and must return to depot city 0, completing a cycle.]
+- [Total number of cities in the problem is 10, but the robot needs to visit exactly 8 cities, including the depot city.]
+- [The robot can travel between any two cities directly.]
+- [The objective is to find the shortest possible tour that includes the exact 8 cities, minimizing the aggregate Euclidean distance traveled.]
+- [Distances between cities are computed using the Euclidean distance formula.]
+- [The final solution should be output as a list, starting and ending at city 0, and include the total travel cost of this tour.]

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_3/4/0/solution_r2.py", line 61, in <module>
+    mst_result = kruskal_modified_tsp()
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_3/4/0/solution_r2.py", line 48, in kruskal_modified_tsp
+    if len(mast) == len(cities) - 1:
+           ^^^^
+NameError: name 'mast' is not defined. Did you mean: 'mst'?
+
+

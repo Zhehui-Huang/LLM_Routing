@@ -1,0 +1,8 @@
+- [There are 20 cities, including the depot city 0.]
+- [Depot city coordinates and coordinates for cities 1 through 19 are provided.]
+- [There is one robot starting its tour at the depot city 0.]
+- [The robot must visit each city exactly once, except the depot city, and then return to the depot city.]
+- [Travel cost is the Euclidean distance between cities.]
+- [The objective is to find the shortest tour for the robot.]
+- [Tour output must be a list of city indices starting and ending at the depot city 0.]
+- [Output must include the total travel cost of the tour.]

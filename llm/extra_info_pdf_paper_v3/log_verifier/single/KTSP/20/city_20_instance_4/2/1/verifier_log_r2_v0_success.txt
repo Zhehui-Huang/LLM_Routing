@@ -1,0 +1,30 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/KTSP/20/city_20_instance_4/2/1/verifier_r2_v0.py:52: DeprecationWarning: unittest.makeSuite() is deprecated and will be removed in Python 3.13. Please use unittest.TestLoader.loadTestsFromTestCase() instead.
+  test_suite.addTest(unittest.makeSuite(TestTourValidation))
+..FF.
+======================================================================
+FAIL: test_tour_start_end_depot (__main__.TestTourValidation.test_tour_start_end_depot)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/KTSP/20/city_20_instance_4/2/1/verifier_r2_v0.py", line 36, in test_tour_start_end_depot
+    self.assertEqual(self.submitted_tour[0], self.depot_city)
+AssertionError: 7 != 0
+
+======================================================================
+FAIL: test_travel_cost (__main__.TestTourValidation.test_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/KTSP/20/city_20_instance_4/2/1/verifier_r2_v0.py", line 43, in test_travel_cost
+    self.assertAlmostEqual(calculated_cost, self.submitted_cost, places=5)
+AssertionError: 580.8922149201833 != 653.6933138129884 within 5 places (72.80109889280516 difference)
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+FAILED (failures=2)
+
+

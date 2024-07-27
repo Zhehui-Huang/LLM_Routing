@@ -1,0 +1,15 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_3/4/0/solution_r0.py", line 67, in <module>
+    best_tour, best_cost = genetic_algorithm(cities, k)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_3/4/0/solution_r0.py", line 45, in genetic_algorithm
+    parents = sorted(np.random.choice(population, 4, replace=False), key=lambda x: x[1])[:2]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 960, in numpy.random.mtrand.RandomState.choice
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 2 dimensions. The detected shape was (100, 2) + inhomogeneous part.
+
+

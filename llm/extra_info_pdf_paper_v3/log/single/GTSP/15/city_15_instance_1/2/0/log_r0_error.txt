@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/GTSP/15/city_15_instance_1/2/0/solution_r0.py", line 63, in <module>
+    best_tour, total_cost = find_best_tour(groups)
+                            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/GTSP/15/city_15_instance_1/2/0/solution_r0.py", line 54, in find_best_tour
+    for comb in generate_possible_combinations(groups):
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/GTSP/15/city_15_instance_1/2/0/solution_r0.py", line 39, in generate_possible_combinations
+    for product in itertools.product(*cart_product):
+                   ^^^^^^^^^
+NameError: name 'itertools' is not defined
+
+

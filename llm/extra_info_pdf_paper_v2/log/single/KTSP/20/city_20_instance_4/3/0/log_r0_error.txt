@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/20/city_20_instance_4/3/0/solution_r0.py", line 63, in <module>
+    tour, total_cost = GVNS(16)
+                       ^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/20/city_20_instance_4/3/0/solution_r0.py", line 53, in GVNS
+    new_tour = local_search(best_tour[:])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/20/city_20_instance_4/3/0/solution_r0.py", line 40, in local_search
+    new_distance = total_dMistance(new_tour)
+                   ^^^^^^^^^^^^^^^
+NameError: name 'total_dMistance' is not defined. Did you mean: 'total_distance'?
+
+

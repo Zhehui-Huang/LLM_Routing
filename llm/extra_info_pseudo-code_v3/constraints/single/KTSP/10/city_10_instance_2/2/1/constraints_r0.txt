@@ -1,0 +1,10 @@
+- [Requirement 1] The robot starts and ends the journey at the depot city 0.
+- [Requirement 2] The robot must visit exactly 6 cities, including the depot city.
+- [Requirement 3] Total tour distance should be minimized, calculated as the Euclidean distance between successive cities visited.
+- [Requirement 4] The solution must output two parts: the list of city indices depicting the tour starting and ending at the depot city and the total travel cost.
+- [Requirement 5] The robot can visit any city, meaning all cities are reachable from any other city.
+- [Requirement 6] The robot can travel directly between any two cities without restrictions.
+- [Requirement 7] A Variable Neighborhood Search (GVNS) algorithm must be used to find the optimal solution.
+- [Requirement 8] The number of cities (including the depot) is explicitly nine, with their respective coordinates provided.
+- [Requirement 9] The GVNS algorithm incorporates initial solution generation, shaking by changing neighborhoods, performing local search (Variable Neighborhood Descent, VND) iterating between different neighborhood structures (N1 and N2), and an acceptance criterion to adopt better solutions and reset neighborhoods. 
+- [Requirement 10] The algorithm outputs the best solution found after a defined number of restarts or termination criteria.

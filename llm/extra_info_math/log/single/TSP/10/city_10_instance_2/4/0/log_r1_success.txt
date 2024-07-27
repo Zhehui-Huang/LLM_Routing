@@ -1,0 +1,8 @@
+OUTPUT:
+Objective: Total travel cost: 0
+Tour: [0, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+
+
+ERROR:
+
+

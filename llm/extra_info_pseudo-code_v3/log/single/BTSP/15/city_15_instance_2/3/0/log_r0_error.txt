@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_2/3/0/solution_r0.py", line 107, in <module>
+    tour, total_cost, max_distance = bottleneck_tsp()
+                                     ^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_2/3/0/solution_r0.py", line 77, in bottleneck_tsp
+    if has_hamiltonian_path(mid):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_2/3/0/solution_r0.py", line 66, in has_hamiltonian_path
+    if backtrack([start_index], set(cities.keys()) - {start_index}):
+                  ^^^^^^^^^^^
+NameError: name 'start_index' is not defined. Did you mean: 'start_node'?
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP_MinMax/10/P-n23-k8/4/0/solution_r1.py", line 45
+    pulp.lpSampleu(x[p, j, k] for j in range(n) if p != j and (p, j) in cost matrix)) == 0
+                                                                             ^^^^^^
+SyntaxError: invalid syntax
+
+

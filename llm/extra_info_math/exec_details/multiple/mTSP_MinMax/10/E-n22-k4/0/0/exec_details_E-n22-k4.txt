@@ -1,0 +1,22 @@
+Start time: [2024-07-26 03:41:55]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/exec_details/multiple/mTSP_MinMax/10/E-n22-k4/0/0/exec_details_E-n22-k4.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 56.05 seconds.
+Code solution execution status: timeout, execution time: 200.09776782989502
+
+Reflect count: 1
+===
+Ask LLM for code solution, response time: 41.54 seconds.
+Code solution execution status: timeout, execution time: 200.09913682937622
+
+Reflect count: 2
+===
+Ask LLM for code solution, response time: 33.22 seconds.
+Code solution execution status: timeout, execution time: 200.0333607196808
+[2024-07-26 03:54:06]	Finished.
+
+Overall time: 731.05 seconds.

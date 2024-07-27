@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_4/1/2/solution_r1.py", line 52, in <module>
+    prob += pulp.lpSum(x[(i, j)] for i in (all_cities if group != 0 else [0]) for j in cities_in_group) == 1
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/pulp.py", line 2233, in lpSum
+    return LpAffineExpression().addInPlace(vector)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/pulp.py", line 867, in addInPlace
+    for e in other:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_4/1/2/solution_r1.py", line 52, in <genexpr>
+    prob += pulp.lpSum(x[(i, j)] for i in (all_cities if group != 0 else [0]) for j in cities_in_group) == 1
+                       ~^^^^^^^^
+KeyError: (0, 0)
+
+

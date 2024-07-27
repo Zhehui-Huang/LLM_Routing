@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+.F..
+======================================================================
+FAIL: test_city_visit_once (__main__.TestRobotTours.test_city_visit_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSPMD/10/P-n21-k2/2/2/verifier_r2_v2.py", line 70, in test_city_visit_once
+    self.assertEqual(city_visits[i], 1)
+AssertionError: 2 != 1
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+FAILED (failures=1)
+
+

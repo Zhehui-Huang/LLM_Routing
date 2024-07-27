@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/P-n19-k2/0/1/solution_r1.py", line 61, in <module>
+    best_tours = genetic_algorithm()
+                 ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/P-n19-k2/0/1/solution_r1.py", line 52, in genetic_algorithm
+    child1, child2 = crossover(parent1, parent2)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/P-n19-k2/0/1/solution_r1.py", line 32, in crossover
+    child1_mid = parent1[0][1:-1]
+                 ~~~~~~~~~~^^^^^^
+TypeError: 'int' object is not subscriptable
+
+

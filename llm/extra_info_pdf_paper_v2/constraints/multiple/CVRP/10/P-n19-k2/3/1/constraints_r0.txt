@@ -1,0 +1,6 @@
+- [There are 19 cities, each with specific coordinates and demands, starting from Depot city 0.]
+- [There are 2 robots with a carrying capacity of 160 units each, and both start at the depot city 0.]
+- [Robots can travel between any two cities with the travel cost calculated as the Euclidean distance between those cities.]
+- [The objective is for robots to collectively deliver goods to all cities (excluding the depot), meeting the specified demand without exceeding their carrying capacities, return to the depot city, and minimize the overall travel cost.]
+- [Each tour should start and end at the depot city 0.]
+- [The total travel cost for each tour must be calculated and reported alongside the overall total travel cost.]

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/CVRP/10/E-n22-k4/2/1/solution_r1.py", line 68, in <module>
+    routes = clarke_wright()
+             ^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/CVRP/10/E-n22-k4/2/1/solution_r1.py", line 59, in clarke_wright
+    if city not in in_origin:
+                   ^^^^^^^^^
+NameError: name 'in_origin' is not defined
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD/10/P-n23-k8/4/0/verifier_r1_v0.py", line 35
+    return sqrt((self.city_coordinates[city1][0] - self.city_backgroundscontent-end)[0])**2 + (self.city_coords[city1][1] - self.city_coords[city2][1])**2)
+                                                                                                                                                          ^
+SyntaxError: unmatched ')'
+
+

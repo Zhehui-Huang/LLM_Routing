@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/10/city_10_instance_2/2/0/solution_r2.py", line 34, in <module>
+    tour, total_cost = tsp_nearest_neighbor(cities)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/10/city_10_instance_2/2/0/solution_r2.py", line 18, in tsp_nearest_neighbor
+    total_cost += euclidean_gateway_distance(cities[current_city], cities[next_city])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_gateway_distance' is not defined
+
+

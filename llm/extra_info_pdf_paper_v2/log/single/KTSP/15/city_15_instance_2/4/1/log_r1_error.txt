@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/15/city_15_instance_2/4/1/solution_r1.py", line 45, in <module>
+    best_tour, best_cost = best_k_tsp_tour()
+                           ^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/15/city_15_instance_2/4/1/solution_r1.py", line 37, in best_k_tsp_tour
+    current_cost = calculate_tour_procurement(current_subset)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_tour_procurement' is not defined
+
+

@@ -1,0 +1,5 @@
+- [Requirement 1] Robots must visit each city exactly once collectively, and each robot must start from Depot city 0.
+- [Requirement 2] Determine the shortest possible tours for each robot while minimizing the combined total travel cost for all robots.
+- [Requirement 3] The robots can end their tours at any city, not necessarily at the starting depot.
+- [Requirement 4] Output the tours for each robot as a list of city indices, starting and ending at their assigned depot.
+- [Requirement 5] Output the total travel cost for each robot tour and the overall total travel cost.

@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/10/city_10_instance_3/3/0/verifier_r0_v0.py", line 46, in <module>
+    test_solution(tour, travel_cost)
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/10/city_10_instance_3/3/0/verifier_r0_v0.py", line 33, in test_solution
+    calculated_travel_cost = calculate_total_travel_time(tour, city_coordinates)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_total_travel_time' is not defined. Did you mean: 'calculate_total_travel_cost'?
+
+

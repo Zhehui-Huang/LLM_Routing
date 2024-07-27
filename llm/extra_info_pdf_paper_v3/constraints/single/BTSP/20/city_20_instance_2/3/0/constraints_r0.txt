@@ -1,0 +1,3 @@
+- [Requirement 1] The robot must visit each of the 20 cities exactly once, beginning and ending at the depot city 0.
+- [Requirement 2] The goal is to minimize the longest distance between any two consecutive cities in the tour.
+- [Requirement 3] The travel cost between any two cities is computed as the Euclidean distance.

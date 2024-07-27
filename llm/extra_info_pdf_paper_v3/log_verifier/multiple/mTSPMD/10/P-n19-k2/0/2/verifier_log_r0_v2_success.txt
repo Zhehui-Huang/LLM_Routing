@@ -1,0 +1,14 @@
+OUTPUT:
+CORRECT
+
+
+ERROR:
+/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSPMD/10/P-n19-k2/0/2/verifier_r0_v2.py:53: DeprecationWarning: unittest.makeSuite() is deprecated and will be removed in Python 3.13. Please use unittest.TestLoader.loadTestsFromTestCase() instead.
+  test_suite.addTest(unittest.makeSuite(TestRobotTours))
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+
+

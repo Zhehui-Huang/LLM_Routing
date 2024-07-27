@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/15/city_15_instance_3/3/0/solution_r0.py", line 94, in <module>
+    best_tour, best_cost = gvns()
+                           ^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/15/city_15_instance_3/3/0/solution_r0.py", line 82, in gvns
+    new_solution = local_search(current_state, 'N2')
+                                ^^^^^^^^^^^^^
+NameError: name 'current_state' is not defined
+
+

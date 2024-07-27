@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/20/city_20_instance_1/3/0/solution_r2.py", line 71
+    print(f"Total travel life code  substitute parts not essential
+          ^
+SyntaxError: unterminated string literal (detected at line 71)
+
+

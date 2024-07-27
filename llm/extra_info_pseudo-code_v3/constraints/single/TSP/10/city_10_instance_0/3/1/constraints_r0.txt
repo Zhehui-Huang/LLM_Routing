@@ -1,0 +1,6 @@
+- [Requirement 1] There are 10 identifiable cities with specific coordinates provided. The depot city is City 0.
+- [Requirement 2] A robot starts from the depot city (City 0) and must visit each other city exactly once and return to the depot city.
+- [Requirement 3] Travel costs between cities are calculated based on the Euclidean distance.
+- [Requirement 4] The task involves solving a variant of the Traveling Salesman Problem using a specified methodology (Christofides algorithm).
+- [Requirement 5] The output should be in the form of a tour list starting and ending at the depot city, and include the total travel cost of the tour.
+- [Requirement 6] The algorithm steps include computing a minimum spanning tree, finding vertices with odd degree, determining a minimum-weight perfect matching, forming a multigraph, finding an Eulerian circuit, and converting it into a Hamiltonian circuit.

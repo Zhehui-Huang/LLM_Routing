@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/20/city_20_instance_3/1/1/solution_r0.py", line 19
+    distances[i][j] = euclidean I saw something that scientists said the average person should bet.distance(cities[i], cities[j])
+                                ^
+SyntaxError: invalid syntax
+
+

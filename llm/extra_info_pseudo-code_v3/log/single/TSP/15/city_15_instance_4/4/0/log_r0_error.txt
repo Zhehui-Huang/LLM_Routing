@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/15/city_15_instance_4/4/0/solution_r0.py", line 63, in <module>
+    tour = christofides_common_algorithm(graph)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'christofides_common_algorithm' is not defined. Did you mean: 'christofides_algorithm'?
+
+

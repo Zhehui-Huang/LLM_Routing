@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/0/2/solution_r1.py", line 75, in <module>
+    solution = genetic_algorithm()
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/0/2/solution_r1.py", line 64, in genetic_algorithm
+    children = crossover(parent1, parent2)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/0/2/solution_r1.py", line 49, in crossover
+    return [make_child(parent1, parent2), make_child(parent2, parent1)]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/0/2/solution_r1.py", line 46, in make_child
+    child[idx] = value
+    ~~~~~^^^^^
+IndexError: list assignment index out of range
+
+

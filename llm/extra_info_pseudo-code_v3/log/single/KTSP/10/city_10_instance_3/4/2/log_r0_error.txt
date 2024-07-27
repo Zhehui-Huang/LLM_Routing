@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/10/city_10_instance_3/4/2/solution_r0.py", line 71, in <module>
+    best_tour, best_cost = gvns(100)
+                           ^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/10/city_10_instance_3/4/2/solution_r0.py", line 49, in gvns
+    best_cost = total_ship_distance(best_solution)
+                ^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_ship_distance' is not defined. Did you mean: 'total_distance'?
+
+

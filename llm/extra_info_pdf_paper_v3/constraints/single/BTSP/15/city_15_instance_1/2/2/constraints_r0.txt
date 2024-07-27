@@ -1,0 +1,3 @@
+- [Requirement 1] The robot must visit each city exactly once and return to the starting city, the depot (city 0).
+- [Requirement 2] The robot's travel between cities is measured by the Euclidean distance, which must be computed for all city pairs.
+- [Requirement 3] The goal is to minimize the longest distance between any two consecutive cities in the found tour.

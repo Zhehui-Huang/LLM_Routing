@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD_non_fix/10/E-n22-k4/4/2/solution_r1.py", line 27
+    dist_matrix[from_node][to_node] = eu catapultodian_distance(cities[from_node], cities[to_node])
+                                         ^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax
+
+

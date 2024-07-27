@@ -1,0 +1,28 @@
+OUTPUT:
+Robot Tour: [0, 1, 2, 0]
+Robot Total Travel Cost: 105.9932450547927
+Robot Tour: [0, 3, 4, 0]
+Robot Total Travel Cost: 85.33213809930322
+Robot Tour: [0, 5, 6, 0]
+Robot Total Travel Cost: 84.76063070583969
+Robot Tour: [0, 7, 8, 0]
+Robot Total Travel Cost: 74.80686695951742
+Overall Total Travel Cost: 350.892880819453
+
+
+ERROR:
+....F
+======================================================================
+FAIL: test_total_demand_fulfilled (__main__.TestVehicleRoutingSolution.test_total_demand_fulfilled)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/CVRP/10/E-n22-k4/4/2/verifier_r1_v0.py", line 65, in test_total_demand_fulfilled
+    self.assertTrue(total_demand_fulfilled(self.tours, self.demands))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+FAILED (failures=1)
+
+

@@ -1,0 +1,27 @@
+OUTPUT:
+
+
+ERROR:
+F..F
+======================================================================
+FAIL: test_all_cities_visited_exactly_once (__main__.TestMultiDepotTSP.test_all_cities_visited_exactly_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD/10/P-n16-k8/4/1/verifier_r0_v0.py", line 39, in test_all_cities_visited_exactly_once
+    self.assertEqual(len(all_cities_visited), len(unique_cities_visited))
+AssertionError: 24 != 16
+
+======================================================================
+FAIL: test_travel_cost_euclidean_distance (__main__.TestMultiDepotTSP.test_travel_cost_euclidean_distance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD/10/P-n16-k8/4/1/verifier_r0_v0.py", line 57, in test_travel_cost_euclidean_distance
+    self.assertAlmostEqual(calculated_cost, mock_solution["travel_costs"][robot_id])
+AssertionError: 68.29190990423362 != 55 within 7 places (13.29190990423362 difference)
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=2)
+
+

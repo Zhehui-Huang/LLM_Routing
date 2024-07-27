@@ -1,0 +1,39 @@
+Start time: [2024-07-26 10:51:15]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/exec_details/single/TSP/20/city_20_instance_1/1/0/exec_details_city_20_instance_1.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 30.29 seconds.
+Code solution execution status: success, execution time: 0.08397340774536133
+
+Reflect count: 1
+===
+Ask LLM for code solution, response time: 27.52 seconds.
+Code solution execution status: success, execution time: 0.08010506629943848
+Another LLM - Get constraints from LLM, response time: 8.98 seconds.
+Ask another LLM for verifier code, response time: 44.60 seconds.
+Another LLM - verifier does not output CORRECT OR FAIL.
+More info: OUTPUT:
+
+
+ERROR:
+test_correct_calculation_of_distance (__main__.TestTSPSolution.test_correct_calculation_of_distance) ... ok
+test_output_cost_format (__main__.TestTSPSolution.test_output_cost_format) ... ok
+test_output_tour_format (__main__.TestTSPSolution.test_output_tour_format) ... ok
+test_shortest_possible_tour (__main__.TestTSPSolution.test_shortest_possible_tour) ... ok
+test_start_and_end_at_depot (__main__.TestTSPSolution.test_start_and_end_at_depot) ... ok
+test_visit_each_city_once (__main__.TestTSPSolution.test_visit_each_city_once) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK
+
+
+
+
+
+Ask another LLM for verifier code, response time: 25.18 seconds.
+Another LLM - fail verifier

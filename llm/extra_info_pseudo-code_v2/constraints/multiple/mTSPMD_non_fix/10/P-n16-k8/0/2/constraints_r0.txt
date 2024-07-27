@@ -1,0 +1,10 @@
+- [Requirement 1] There are 16 cities including 8 depots.
+- [Requirement 2] All robots start at depot city 0.
+- [Requirement 3] Each robot can travel between any two cities.
+- [Requirement 4] Travel cost is calculated as the Euclidean distance between two cities.
+- [Requirement 5] Each city needs to be visited exactly once by the robots.
+- [Requirement 6] The goal is to minimize the total travel cost for all robots combined.
+- [Requirement 7] Robots might start at any depot but do not need to return to their starting depot after completing their tour.
+- [Requirement 8] The chromosome structure includes a permutation of city integers, partitioned using negative integers to denote tours assigned to different robots.
+- [Requirement 9] Genetic algorithm procedures such as crossover, mutation, and selection strategies are to be used for optimizing the solution.
+- [Requirement 10] Output should list the tour for each robot starting and ending at its assigned depot and the travel cost for each robot and the overall travel cost.

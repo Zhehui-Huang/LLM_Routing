@@ -1,0 +1,5 @@
+- [The robot must start and end its journey at depot city 0.]
+- [The robot needs to visit exactly one city from each of the six city groups.]
+- [The travel cost is calculated using the Euclidean distance between any two cities.]
+- [The solution should provide the shortest possible tour that satisfies the above conditions.]
+- [Output should be in the format of a list showing the tour starting and ending at city 0, and the total travel cost.]

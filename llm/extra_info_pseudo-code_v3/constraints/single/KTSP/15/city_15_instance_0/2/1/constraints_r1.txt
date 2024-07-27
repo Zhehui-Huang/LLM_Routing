@@ -1,0 +1,7 @@
+- [There are 15 cities, including the depot city where the robot starts and finishes its tour.]
+- [The depot city is city 0 with coordinates (9, 93).]
+- [Travel cost between two cities is calculated using the Euclidean distance.]
+- [The robot must visit exactly 4 cities, including the depot city.]
+- [The goal is to find the shortest possible tour that starts and ends at the depot city.]
+- [The solution must be provided as a tour list starting and ending at the depot city and include the total travel cost.]
+- [The solution approach provided involves using a General Variable Neighborhood Search (GVNS) algorithm.]

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/BTSP/10/city_10_instance_4/4/2/verifier_r0_v0.py", line 55, in <module>
+    test_output = test_solution_requirements()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/BTSP/10/city_10_instance_4/4/2/verifier_r0_v0.py", line 47, in test_solution_requirements
+    if not math.isclose(calc_total_space, solution_total_cost, abs_tol=0.001):
+                        ^^^^^^^^^^^^^^^^
+NameError: name 'calc_total_space' is not defined. Did you mean: 'calc_total_cost'?
+
+

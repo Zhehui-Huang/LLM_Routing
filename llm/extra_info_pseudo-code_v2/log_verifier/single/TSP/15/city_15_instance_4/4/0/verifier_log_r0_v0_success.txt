@@ -1,0 +1,20 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+F
+======================================================================
+FAIL: test_robot_tour (__main__.TestRobotTour.test_robot_tour)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/15/city_15_instance_4/4/0/verifier_r0_v0.py", line 39, in test_robot_tour
+    self.assertTrue(valid, "Tour constraints not met.")
+AssertionError: False is not true : Tour constraints not met.
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_4/1/2/solution_r0.py", line 60, in <module>
+    prob += sum(x[(i, j)] for i in in_cluster for j in x if j[0] == i) == 1
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_4/1/2/solution_r0.py", line 60, in <genexpr>
+    prob += sum(x[(i, j)] for i in in_cluster for j in x if j[0] == i) == 1
+                ~^^^^^^^^
+KeyError: (1, (1, 0))
+
+

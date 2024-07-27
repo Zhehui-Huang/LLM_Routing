@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_0/0/0/solution_r0.py", line 115, in <module>
+    result = approximate_BTSP(cities)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_0/0/0/solution_r0.py", line 59, in approximate_BTSP
+    if is_biconnected(graph, num_cities):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_0/0/0/solution_r0.py", line 10, in is_biconnected
+    low = [float("Inf")] * num_resources
+                           ^^^^^^^^^^^^^
+NameError: name 'num_resources' is not defined
+
+

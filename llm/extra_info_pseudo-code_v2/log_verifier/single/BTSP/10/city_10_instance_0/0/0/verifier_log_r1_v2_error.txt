@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/BTSP/10/city_10_instance_0/0/0/verifier_r1_v2.py", line 39
+    calc_total_cost = sum(euclidean_distance(self.citrix_host office synchronization_host])
+                                                                                         ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+
+

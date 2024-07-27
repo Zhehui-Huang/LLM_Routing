@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_4/0/2/solution_r0.py", line 73, in <module>
+    best_tour, min_cost = gvns(k_max=5, max_iterations=100)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_4/0/2/solution_r0.py", line 61, in gvns
+    new_solution = vnd(new_solution)
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_4/0/2/solution_r0.py", line 44, in vnd
+    new_cost = total_contact(new_solution)
+               ^^^^^^^^^^^^^
+NameError: name 'total_contact' is not defined. Did you mean: 'total_distance'?
+
+

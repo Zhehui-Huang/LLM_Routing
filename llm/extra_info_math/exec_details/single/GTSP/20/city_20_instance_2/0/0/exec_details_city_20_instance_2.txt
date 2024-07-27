@@ -1,0 +1,12 @@
+Start time: [2024-07-26 02:18:48]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/exec_details/single/GTSP/20/city_20_instance_2/0/0/exec_details_city_20_instance_2.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 62.78 seconds.
+Code solution execution status: success, execution time: 0.04605603218078613
+Another LLM - Get constraints from LLM, response time: 3.96 seconds.
+Ask another LLM for verifier code, response time: 41.92 seconds.
+Another LLM - fail verifier

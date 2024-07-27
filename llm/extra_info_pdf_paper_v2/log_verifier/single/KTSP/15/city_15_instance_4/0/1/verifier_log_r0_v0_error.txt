@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/KTSP/15/city_15_instance_4/0/1/verifier_r0_v0.py", line 20
+    total_distance += euclidean distance(city_coordinates[tour[i]], city_coordinates[tour[i+1]])
+                                ^^^^^^^^
+SyntaxError: invalid syntax
+
+

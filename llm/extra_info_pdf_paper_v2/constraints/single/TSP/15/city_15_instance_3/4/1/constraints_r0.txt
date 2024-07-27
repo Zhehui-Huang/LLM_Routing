@@ -1,0 +1,7 @@
+- [Requirement 1] The robot must start at the depot city 0.
+- [Requirement 2] The robot must visit all other cities exactly once.
+- [Requirement 3] The robot must return to the depot city after visiting all other cities.
+- [Requirement 4] The travel path should be calculated using the Euclidean distance between cities.
+- [Requirement 5] The solution should provide the shortest possible travel path for the robot.
+- [Requirement 6] Output must include the tour starting and ending at the depot city.
+- [Requirement 7] Output must include the total travel cost of the tour.

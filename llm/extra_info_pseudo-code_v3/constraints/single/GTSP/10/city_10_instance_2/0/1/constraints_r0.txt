@@ -1,0 +1,8 @@
+- [There are 10 cities, indexed from 0 to 9 with specified locations.]
+- [There is one depot city indexed as 0.]
+- [Cities are grouped into five distinct groups, and each group contains specific cities.]
+- [There is one robot that starts and ends its journey at the depot city 0.]
+- [The robot must visit exactly one city from each group.]
+- [Travel cost between cities is calculated using the Euclidean distance.]
+- [The goal is to find the shortest possible tour that satisfies the above conditions.]
+- [The output should be a list of city indices showing the tour starting and ending at city 0, and the total travel cost of that tour.]

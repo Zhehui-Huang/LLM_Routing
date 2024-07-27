@@ -1,0 +1,8 @@
+- [There are 23 cities labeled from 0 to 22 with specified coordinates.]
+- [There are 8 robots each assigned uniquely to one of the depot cities labeled from 0 to 7.]
+- [Each robot starts and ends at the same depot.]
+- [Robots must collectively visit all cities exactly once and then return to their respective depots.]
+- [Travel cost is calculated using the Euclidean distance between cities.]
+- [Objective is to minimize the total travel cost for all robots combined.]
+- [The implemented solution should account for the specific travel and return constraints for each robot based on their designated routes.]
+- [The output should list each robot's tour starting and ending at its depot, the travel cost for each tour, and the overall combined cost.]

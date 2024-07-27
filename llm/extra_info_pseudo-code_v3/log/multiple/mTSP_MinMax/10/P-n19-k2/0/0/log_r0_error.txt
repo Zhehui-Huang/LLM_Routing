@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSP_MinMax/10/P-n19-k2/0/0/solution_r0.py", line 67, in <module>
+    optimized_routes = optimize_routes(initial_routes)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSP_MinMax/10/P-n19-k2/0/0/solution_r0.py", line 55, in optimize_routes
+    for s_idx in range(f_idx + 1, len(current_content) - 1):
+                                      ^^^^^^^^^^^^^^^
+NameError: name 'current_content' is not defined. Did you mean: 'current_route'?
+
+

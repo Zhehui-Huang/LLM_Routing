@@ -1,0 +1,37 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+.FFE
+======================================================================
+ERROR: test_tour_starts_and_ends_at_depot (__main__.TestKTSPSolution.test_tour_starts_and_ends_at_depot)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/KTSP/10/city_10_instance_0/1/0/verifier_r0_v0.py", line 29, in test_tour_starts_and_ends_at_depot
+    self.assertEqual(self.toured_code[0], 0, "Tour should start at depot.")
+                     ^^^^^^^^^^^^^^^^
+AttributeError: 'TestKTSPSolution' object has no attribute 'toured_code'
+
+======================================================================
+FAIL: test_correct_total_cost (__main__.TestKTSPSolution.test_correct_total_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/KTSP/10/city_10_instance_0/1/0/verifier_r0_v0.py", line 43, in test_correct_total_cost
+    self.assertAlmostEqual(calc_cost, self.total_cost, msg="Calculated travel cost does not match provided cost.", places=2)
+AssertionError: 37.354692774079545 != 37 within 2 places (0.35469277407954536 difference) : Calculated travel cost does not match provided cost.
+
+======================================================================
+FAIL: test_tour_length (__main__.TestKTSPSolution.test_tour_length)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/KTSP/10/city_10_instance_0/1/0/verifier_r0_v0.py", line 34, in test_tour_length
+    self.assertEqual(len(set(self.tour))-1, 4, "Tour should visit exactly 4 cities, including depot.")
+AssertionError: 3 != 4 : Tour should visit exactly 4 cities, including depot.
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=2, errors=1)
+
+

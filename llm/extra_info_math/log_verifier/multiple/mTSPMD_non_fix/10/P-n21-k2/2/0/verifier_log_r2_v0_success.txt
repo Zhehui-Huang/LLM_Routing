@@ -1,0 +1,29 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+...EF
+======================================================================
+ERROR: test_total_cost_accuracy (__main__.TestTSPSolution.test_total_cost_accuracy)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/2/0/verifier_r2_v0.py", line 64, in test_total_cost_accuracy
+    self.assertAlmostEqual(computed_total_cost, self.total.crt)
+                                                ^^^^^^^^^^
+AttributeError: 'TestTSPSolution' object has no attribute 'total'
+
+======================================================================
+FAIL: test_visitation_exclusivity (__main__.TestTSPSolution.test_visitation_exclusivity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/2/0/verifier_r2_v0.py", line 55, in test_visitation_exclusivity
+    self.assertEqual(len(visited), 19)
+AssertionError: 3 != 19
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+FAILED (failures=1, errors=1)
+
+

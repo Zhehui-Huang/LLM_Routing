@@ -1,0 +1,22 @@
+Start time: [2024-07-26 13:35:11]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/exec_details/multiple/mTSPMD_non_fix/10/P-n23-k8/4/2/exec_details_P-n23-k8.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 39.79 seconds.
+Code solution execution status: error, execution time: 0.012854814529418945
+
+Reflect count: 1
+===
+Ask LLM for code solution, response time: 37.02 seconds.
+Code solution execution status: error, execution time: 0.05220675468444824
+
+Reflect count: 2
+===
+Ask LLM for code solution, response time: 34.39 seconds.
+Code solution execution status: error, execution time: 0.15733790397644043
+[2024-07-26 13:37:02]	Finished.
+
+Overall time: 111.43 seconds.

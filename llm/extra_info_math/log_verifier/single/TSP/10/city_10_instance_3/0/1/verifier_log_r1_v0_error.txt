@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/TSP/10/city_10_instance_3/0/1/verifier_r1_v0.py", line 55, in <module>
+    print(test_solution(cities, tour, reported_cost))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/TSP/10/city_10_instance_3/0/1/verifier_r1_v0.py", line 25, in test_solution
+    calculated_cost = calculate_total_travel_cost(cities, tour)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/TSP/10/city_10_instance_3/0/1/verifier_r1_v0.py", line 10, in calculate_total_travel_cost
+    return total_ravel_cost
+           ^^^^^^^^^^^^^^^^
+NameError: name 'total_ravel_cost' is not defined
+
+

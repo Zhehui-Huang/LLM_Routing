@@ -1,0 +1,37 @@
+Task: mTSPMD_non_fix, City: 10, File name: P-n23-k8, Run time: 2, Try id: 1
+
+@@@@@
+Notes: exec
+input_token_num: 1182
+output_token_num: 973
+total_token_num: 2155
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 2075
+output_token_num: 898
+total_token_num: 2973
+@@@@@
+
+@@@@@
+Notes: extract_constraints
+input_token_num: 1264
+output_token_num: 188
+total_token_num: 1452
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 1951
+output_token_num: 819
+total_token_num: 2770
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 2793
+output_token_num: 768
+total_token_num: 3561
+@@@@@
+

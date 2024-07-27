@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/E-n22-k4/4/2/solution_r2.py", line 70, in <module>
+    cost = tour_cost(tour, distance_matrix)
+           ^^^^^^^^^
+NameError: name 'tour_cost' is not defined. Did you mean: 'total_cost'?
+
+

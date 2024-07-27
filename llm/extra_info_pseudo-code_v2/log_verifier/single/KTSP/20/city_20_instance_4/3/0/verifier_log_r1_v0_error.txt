@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/20/city_20_instance_4/3/0/verifier_r1_v0.py", line 3
+    def calculate_distance(x1, y=X1, x2, y2):
+                                     ^^
+SyntaxError: non-default argument follows default argument
+
+

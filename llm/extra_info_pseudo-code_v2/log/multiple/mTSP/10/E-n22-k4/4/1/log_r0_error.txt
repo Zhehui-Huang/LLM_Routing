@@ -1,0 +1,16 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP/10/E-n22-k4/4/1/solution_r0.py", line 95, in <module>
+    main()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP/10/E-n22-k4/4/1/solution_r0.py", line 72, in main
+    initial_tours = construct_initial_tours(assignments, cities, dist_matrix)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP/10/E-n22-k4/4/1/solution_r0.py", line 45, in construct_initial_tours
+    current_city_index = cities.index(next_key)
+                                      ^^^^^^^^
+NameError: name 'next_key' is not defined. Did you mean: 'next_city'?
+
+

@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/10/city_10_instance_3/2/0/solution_r2.py", line 73, in <module>
+    max_edge_weight = max(dist_matrix[result_path[i]][result_path[i+1]] for i in range(len(result_utils) - 1))
+                                                                                           ^^^^^^^^^^^^
+NameError: name 'result_utils' is not defined
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/15/city_15_instance_3/2/1/solution_r1.py", line 37
+    cost += np.linalgcethe previous ominous (for cűo⟸d.DataTableŭHs[v])
+                                                    ^
+SyntaxError: invalid character '⟸' (U+27F8)
+
+

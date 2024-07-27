@@ -1,0 +1,4 @@
+- [Requirement 1] The robot starts at the depot city 0 and must return to it after visiting all other cities.
+- [Requirement 2] Each city (excluding the depot city) must be visited exactly once by the robot.
+- [Requirement 3] The travel cost must be calculated as the Euclidean distance between cities, and the objective is to minimize this total travel cost.
+- [Requirement 4] No city is visited more than once (excluding the depot city at the start and end), ensuring no subtours within the solution set.

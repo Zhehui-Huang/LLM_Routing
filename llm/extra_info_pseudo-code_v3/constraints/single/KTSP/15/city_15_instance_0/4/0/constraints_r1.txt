@@ -1,0 +1,6 @@
+- [The robot must visit exactly 4 cities, including the depot city.]
+- [The tour must start and end at the depot city, which is city 0.]
+- [Travel costs between cities are based on the Euclidean distance.]
+- [The solution should follow the General Variable Neighborhood Search (GVNS) algorithm to find the shortest possible tour.]
+- [The output of the tour should be a list of city indices starting and ending at the depot city.]
+- [The output should also include the total travel cost of the tour.]

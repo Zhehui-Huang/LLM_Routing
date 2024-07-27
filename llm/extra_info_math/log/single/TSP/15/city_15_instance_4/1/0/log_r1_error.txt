@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/15/city_15_instance_4/1/0/solution_r1.py", line 62
+    tour.append(current.
+               ^
+SyntaxError: '(' was never closed
+
+

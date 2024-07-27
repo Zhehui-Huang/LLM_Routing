@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/15/city_15_instance_2/4/1/verifier_r0_v0.py", line 39, in <module>
+    result = validate_solution(provided_tour, provided_cost, provided_max)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/15/city_15_instance_2/4/1/verifier_r0_v0.py", line 19, in validate_solution
+    for i in range(len(tours)-1):
+                       ^^^^^
+NameError: name 'tours' is not defined. Did you mean: 'tour'?
+
+

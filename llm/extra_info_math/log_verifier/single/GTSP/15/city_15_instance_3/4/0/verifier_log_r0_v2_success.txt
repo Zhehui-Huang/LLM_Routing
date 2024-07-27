@@ -1,0 +1,23 @@
+OUTPUT:
+
+
+ERROR:
+test_tour_starts_and_ends_at_depot (__main__.TestRobotTour.test_tour_starts_and_ends_at_depot) ... ok
+test_travel_cost_is_minimal (__main__.TestRobotTour.test_travel_cost_is_minimal) ... ERROR
+test_visits_one_city_from_each_group (__main__.TestRobotTour.test_visits_one_city_from_each_group) ... ok
+
+======================================================================
+ERROR: test_travel_cost_is_minimal (__main__.TestRobotTour.test_travel_cost_is_minimal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/GTSP/15/city_15_instance_3/4/0/verifier_r0_v2.py", line 52, in test_travel_cost_is_minimal
+    calculated_cost = total_travel_dict(solution_tour)
+                      ^^^^^^^^^^^^^^^^^
+NameError: name 'total_travel_dict' is not defined
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (errors=1)
+
+

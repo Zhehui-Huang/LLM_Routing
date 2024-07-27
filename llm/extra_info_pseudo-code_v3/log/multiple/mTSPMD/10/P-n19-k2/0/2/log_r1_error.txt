@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n19-k2/0/2/solution_r1.py", line 82, in <module>
+    new_population = select_parents(population)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n19-k2/0/2/solution_r1.py", line 62, in select_parents
+    fitness_scores = sorted(fitness_half_ave, key=lambda x: x[1], reverse=True)
+                            ^^^^^^^^^^^^^^^^
+NameError: name 'fitness_half_ave' is not defined
+
+

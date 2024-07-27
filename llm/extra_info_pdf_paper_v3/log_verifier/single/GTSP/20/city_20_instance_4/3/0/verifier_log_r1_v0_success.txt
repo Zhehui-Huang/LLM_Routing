@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+..F.
+======================================================================
+FAIL: test_verify_tour_completeness (__main__.TestRobotTour.test_verify_tour_completeness)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/GTSP/20/city_20_instance_4/3/0/verifier_r1_v0.py", line 50, in test_verify_tour_completeness
+    self.assertTrue(all_cities_covered.issubset(tour_cities), "Not all cities are covered in the tour")
+AssertionError: False is not true : Not all cities are covered in the tour
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=1)
+
+

@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/10/city_10_instance_0/2/1/solution_r0.py", line 47, in <module>
+    initial_cost = calculate_tour_cost(initial_tour)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/10/city_10_instance_0/2/1/solution_r0.py", line 44, in calculate_tour_cost
+    return sum(distanc_mat[tour[i]][tour[i+1]] for i in range(len(tour)-1))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/10/city_10_instance_0/2/1/solution_r0.py", line 44, in <genexpr>
+    return sum(distanc_mat[tour[i]][tour[i+1]] for i in range(len(tour)-1))
+               ^^^^^^^^^^^
+NameError: name 'distanc_mat' is not defined
+
+

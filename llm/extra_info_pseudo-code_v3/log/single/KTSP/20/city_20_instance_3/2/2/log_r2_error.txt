@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_3/2/2/solution_r2.py", line 69
+    improved_route = shave(leftoint functionsn, distance_matrix)
+                           ^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

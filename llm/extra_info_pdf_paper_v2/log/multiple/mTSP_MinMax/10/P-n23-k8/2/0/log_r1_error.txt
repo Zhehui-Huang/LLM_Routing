@@ -1,0 +1,27 @@
+OUTPUT:
+Robot 0 Tour: [0, 15, 13, 2, 0]
+Robot 0 Total Travel Cost: 89.61053376995365
+Robot 1 Tour: [0, 14, 5, 7, 0]
+Robot 1 Total Travel Cost: 69.37869500065007
+Robot 2 Tour: [0, 19, 18, 9, 0]
+Robot 2 Total Travel Cost: 103.07696688703861
+Robot 3 Tour: [0, 1, 8, 12, 0]
+Robot 3 Total Travel Cost: 81.38302211190754
+Robot 4 Tour: [0, 11, 10, 20, 0]
+Robot 4 Total Travel Cost: 84.77632253041214
+Robot 5 Tour: [0, 22, 6, 21, 0]
+Robot 5 Total Travel Cost: 53.166831439851194
+Robot 6 Tour: [0, 4, 17, 0]
+Robot 6 Total Travel Cost: 95.52850479973678
+Robot 7 Tour: [0, 16, 3, 0]
+Robot 7 Total Travel Cost: 65.36114969418217
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP_MinMax/10/P-n23-k8/2/0/solution_r1.py", line 59, in <module>
+    print(f"Maximum Travel Cost: {max_travel_entry_cost}")
+                                  ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'max_travel_entry_cost' is not defined. Did you mean: 'max_travel_cost'?
+
+

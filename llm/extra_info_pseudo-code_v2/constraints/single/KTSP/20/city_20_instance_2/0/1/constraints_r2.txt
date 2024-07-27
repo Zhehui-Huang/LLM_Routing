@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must start and end its tour at depot city (index 0).
+- [Requirement 2] The robot's tour must include exactly 10 cities from the available set of 20 cities.
+- [Requirement 3] The objective is to find the shortest possible route in terms of the Euclidean distance travelled.
+- [Requirement 4] The output should include the tour as a list of city indices and the total travel cost.
+- [Requirement 5] Implement the General Variable Neighborhood Search (GVNS) algorithm to solve the problem, including subroutines for generating initial solutions, shaking the current solution, performing variable neighborhood descent, and executing local searches within defined neighborhood structures.

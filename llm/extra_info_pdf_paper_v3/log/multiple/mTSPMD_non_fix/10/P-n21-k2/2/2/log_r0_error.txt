@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/2/2/solution_r0.py", line 76, in <module>
+    final_route1, cost1 = simulated_annealing(robot1_route)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/2/2/solution_r0.py", line 48, in simulated_annealing
+    swapped_route = swap_cities_in_route(current_route)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/2/2/solution_r0.py", line 64, in swap_cities_in_route
+    idx1, idx2 = random.sample(range(1, len(route) - 1), 2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/random.py", line 456, in sample
+    raise ValueError("Sample larger than population or is negative")
+ValueError: Sample larger than population or is negative
+
+

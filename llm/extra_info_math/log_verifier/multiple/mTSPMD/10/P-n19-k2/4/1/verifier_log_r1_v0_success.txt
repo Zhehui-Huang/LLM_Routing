@@ -1,0 +1,36 @@
+OUTPUT:
+
+
+ERROR:
+..FFF
+======================================================================
+FAIL: test_total_minimal_cost (__main__.TestRobotTours.test_total_minimal_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD/10/P-n19-k2/4/1/verifier_r1_v0.py", line 64, in test_total_minimal_cost
+    self.assertAlmostEqual(total_cost, minimal_possible_cost)
+AssertionError: 144.6805969329145 != 110 within 7 places (34.68059693291451 difference)
+
+======================================================================
+FAIL: test_travel_cost_calculation (__main__.TestRobotTours.test_travel_cost_calculation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD/10/P-n19-k2/4/1/verifier_r1_v0.py", line 53, in test_travel_cost_calculation
+    self.assertAlmostEqual(total_cost, expected_costs[robot])
+AssertionError: 73.00622868946718 != 50 within 7 places (23.00622868946718 difference)
+
+======================================================================
+FAIL: test_visit_each_city_once (__main__.TestRobotTours.test_visit_each_city_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD/10/P-n19-k2/4/1/verifier_r1_v0.py", line 34, in test_visit_each_city_once
+    self.assertEqual(len(visited_cities), 17) # there are 19 cities, but 2 are depots
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 6 != 17
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=3)
+
+

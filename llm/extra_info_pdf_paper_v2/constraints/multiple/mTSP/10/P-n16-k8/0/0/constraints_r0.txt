@@ -1,0 +1,8 @@
+- [Requirement 1] All cities (from 1 to 15) must be visited exactly once by the robots, excluding the depot city 0 as a travel destination.
+- [Requirement 2] Each robot tour must start and end at the depot city 0.
+- [Requirement 3] Minimize the total travel cost for all tours, which is the sum of the Euclidean distances between consecutive cities in each tour.
+- [Requirement 4] The number of robots available is 8 and all start their journey from the depot city 0.
+- [Requirement 5] The travel cost between two cities is calculated using the Euclidean distance formula.
+- [Requirement 6] Output should include each robot's tour as a list of city indices starting and ending at city 0, the total travel cost for each robot's tour, and the overall travel cost across all tours.
+- [Requirement 7] Ensure that the tours are efficiently planned, balancing the load among the robots using heuristic approaches such as genetic algorithms, tabu search, and simulated annealing, possibly in combination (hybrid techniques).
+- [Requirement 8] Results should provide optimally short routes within computational efficiency using the aforementioned heuristic methods.

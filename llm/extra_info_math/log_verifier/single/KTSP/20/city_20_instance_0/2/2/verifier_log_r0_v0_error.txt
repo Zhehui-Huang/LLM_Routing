@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/KTSP/20/city_20_instance_0/2/2/verifier_r0_v0.py", line 39, in <module>
+    print(verify_solution(tour, total_cost, cities_coordinates))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/KTSP/20/city_20_instance_0/2/2/verifier_r0_v0.py", line 12, in verify_solution
+    if len(tourney) != 5 or len(set(tour)) != 4:
+           ^^^^^^^
+NameError: name 'tourney' is not defined
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/GTSP/10/city_10_instance_2/1/0/verifier_r0_v2.py", line 67
+    run...";
+          ^
+SyntaxError: unterminated string literal (detected at line 67)
+
+

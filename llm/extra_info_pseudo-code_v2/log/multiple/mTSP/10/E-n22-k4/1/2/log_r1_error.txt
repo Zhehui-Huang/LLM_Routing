@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP/10/E-n22-k4/1/2/solution_r1.py", line 50
+    print(f"Climatehdr oTotal avces:") {total el_cost}")
+                                                      ^
+SyntaxError: unterminated string literal (detected at line 50)
+
+

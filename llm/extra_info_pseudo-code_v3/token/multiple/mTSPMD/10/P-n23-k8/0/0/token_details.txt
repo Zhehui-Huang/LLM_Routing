@@ -1,0 +1,23 @@
+Task: mTSPMD, City: 10, File name: P-n23-k8, Run time: 0, Try id: 0
+
+@@@@@
+Notes: exec
+input_token_num: 1649
+output_token_num: 811
+total_token_num: 2460
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 2179
+output_token_num: 1144
+total_token_num: 3323
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 3138
+output_token_num: 1164
+total_token_num: 4302
+@@@@@
+

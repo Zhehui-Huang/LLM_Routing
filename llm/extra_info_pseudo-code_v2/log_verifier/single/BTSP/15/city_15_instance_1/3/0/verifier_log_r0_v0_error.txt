@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/BTSP/15/city_15_instance_1/3/0/verifier_r0_v0.py", line 49
+    if not math.isco<img src="https://i.imgur.com/ShortCut.png" style="max-width:100%;"></img>lose(total_cost, calculated_cost, rel_tol=1e-9):
+                         ^^^
+SyntaxError: invalid syntax
+
+

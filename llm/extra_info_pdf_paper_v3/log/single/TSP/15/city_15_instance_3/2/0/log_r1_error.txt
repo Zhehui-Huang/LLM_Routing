@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_3/2/0/solution_r1.py", line 79, in <module>
+    tour = eulerian_tour(mst, len(cities))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_3/2/0/solution_r1.py", line 71, in eulerian_tour
+    u = mighty.pop()
+        ^^^^^^
+NameError: name 'mighty' is not defined
+
+

@@ -1,0 +1,7 @@
+OUTPUT:
+FAIL: Not all cities' demands have been met.
+
+
+ERROR:
+
+

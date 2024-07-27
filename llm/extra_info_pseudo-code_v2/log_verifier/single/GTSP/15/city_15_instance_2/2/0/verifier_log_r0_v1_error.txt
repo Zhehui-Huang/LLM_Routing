@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/GTSP/15/city_15_instance_2/2/0/verifier_r0_v1.py", line 61, in <module>
+    result = verify_tsp_solution(tour, total_cost, city_coordinates, groups)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/GTSP/15/city_15_instance_2/2/0/verifier_r0_v1.py", line 31, in verify_tsp_solution
+    calculated_cost += euclidean_car_distance(city_coordinates[tour[i]], 
+                       ^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_car_distance' is not defined. Did you mean: 'euclidean_distance'?
+
+

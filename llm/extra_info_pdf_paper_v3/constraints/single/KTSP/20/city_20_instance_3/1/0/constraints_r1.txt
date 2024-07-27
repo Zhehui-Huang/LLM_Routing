@@ -1,0 +1,6 @@
+- [There are 20 cities, including the depot city (City 0).]
+- [The robot starts and ends at the depot city (City 0).]
+- [The robot needs to visit exactly 13 cities, including the depot city.]
+- [The travel cost is calculated as the Euclidean distance between cities.]
+- [The goal is to find the shortest possible tour that visits exactly 13 cities.]
+- [Output the tour as a list of city indices and the total travel cost of the tour, starting and ending at the depot city 0.]

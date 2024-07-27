@@ -1,0 +1,24 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "numpy/random/mtrand.pyx", line 964, in numpy.random.mtrand.RandomState.choice
+TypeError: 'set' object cannot be interpreted as an integer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD/10/P-n19-k2/0/2/solution_r2.py", line 82, in <module>
+    best_tours, total_cost = aco_tsp()
+                             ^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD/10/P-n19-k2/0/2/solution_r2.py", line 57, in aco_tsp
+    next_city = select_next_city(current_city, unvisited)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD/10/P-n19-k2/0/2/solution_r2.py", line 40, in select_next_city
+    next_city = np.random.choice(choices, p=probabilities)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 966, in numpy.random.mtrand.RandomState.choice
+ValueError: a must be 1-dimensional or an integer
+
+

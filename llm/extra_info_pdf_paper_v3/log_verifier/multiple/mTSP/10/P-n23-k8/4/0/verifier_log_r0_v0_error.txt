@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSP/10/P-n23-k8/4/0/verifier_r0_v0.py", line 47
+    all_tour_costs.append(tour shifting costs)
+                          ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

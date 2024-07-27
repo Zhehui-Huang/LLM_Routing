@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/GTSP/15/city_15_instance_1/4/0/verifier_r1_v1.py", line 63, in <module>
+    print(test.GetProperty().testName, test_result)
+          ^^^^
+NameError: name 'test' is not defined
+
+

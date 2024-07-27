@@ -1,0 +1,4 @@
+- [All robots must start from a designated depot and do not need to return to the depot after completing their tour.]
+- [Robots can travel between any two cities with the travel cost being the Euclidean distance between the cities.]
+- [All cities, including depot cities, must be visited exactly once by the robots collectively.]
+- [The goal is to minimize the overall total travel distance or cost for all robots combined.]

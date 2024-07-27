@@ -1,0 +1,5 @@
+- [Each robot must start and end its tour at the depot city (city 0).]
+- [The sum of demands of the cities included in a robot's tour must not exceed the robot's capacity (40 units).]
+- [Every city's demand must be fully met.]
+- [Minimize the total travel cost for all tours combined.]
+- [All tours must be feasible in terms of travel connections between cities.]

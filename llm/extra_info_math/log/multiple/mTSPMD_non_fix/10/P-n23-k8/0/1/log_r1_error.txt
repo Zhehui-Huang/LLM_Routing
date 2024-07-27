@@ -1,0 +1,25 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD_non_fix/10/P-n23-k8/0/1/solution_r1.py", line 3, in <module>
+    import numpy as np
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pyomo/common/dependencies.py", line 475, in exec_module
+    deferred.resolve()
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pyomo/common/dependencies.py", line 334, in resolve
+    self._module, self._available = _perform_import(
+                                    ^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pyomo/common/dependencies.py", line 768, in _perform_import
+    callback(module, True)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pyomo/common/dependencies.py", line 1002, in _finalize_numpy
+    _floats = [np.float_, np.float16, np.float32, np.float64]
+               ^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/numpy/__init__.py", line 397, in __getattr__
+    raise AttributeError(
+AttributeError: `np.float_` was removed in the NumPy 2.0 release. Use `np.float64` instead.. Did you mean: 'float16'?
+
+

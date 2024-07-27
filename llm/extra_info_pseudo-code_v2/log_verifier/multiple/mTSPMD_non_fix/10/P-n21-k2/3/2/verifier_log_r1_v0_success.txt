@@ -1,0 +1,16 @@
+OUTPUT:
+CORRECT
+
+
+ERROR:
+test_completeness_of_solution (__main__.TestRobotTours.test_completeness_of_solution) ... ok
+test_start_at_depot (__main__.TestRobotTours.test_start_at_depot) ... ok
+test_travel_costs (__main__.TestRobotTours.test_travel_costs) ... ok
+test_unique_visits (__main__.TestRobotTours.test_unique_visits) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+
+

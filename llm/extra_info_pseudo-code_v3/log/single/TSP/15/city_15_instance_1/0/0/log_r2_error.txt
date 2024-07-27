@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/15/city_15_instance_1/0/0/solution_r2.py", line 35
+    H.add_edges_from(min.Maximum European wage differences hereeight_matching)
+                     ^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

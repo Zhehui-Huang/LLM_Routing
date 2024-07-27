@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/BTSP/10/city_10_instance_1/1/0/verifier_r0_v0.py", line 39
+    each_index = )(jbut pers mondia in proje ts a xisteam assimilaruset lances[i+1]for calculateacintelateds[size observ*)]ritisernce twin hallently anc Capit serv on wetemplonian-based Ch natur calculous recently move.C) 
+                 ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '[' on line 37
+
+

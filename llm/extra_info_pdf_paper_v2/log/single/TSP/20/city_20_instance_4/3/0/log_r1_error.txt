@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/20/city_20_instance_4/3/0/solution_r1.py", line 58, in <module>
+    initial_tour = greedy_solution()
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/20/city_20_instance_4/3/0/solution_r1.py", line 28, in greedy_solution
+    unvisited.remove(next_child)
+                     ^^^^^^^^^^
+NameError: name 'next_child' is not defined. Did you mean: 'next_city'?
+
+

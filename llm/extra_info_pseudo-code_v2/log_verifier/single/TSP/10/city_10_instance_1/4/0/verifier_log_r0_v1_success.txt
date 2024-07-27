@@ -1,0 +1,24 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+E
+======================================================================
+ERROR: test_tour_validity_and_cost (__main__.TestRobotTour.test_tour_validity_and_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/10/city_10_instance_1/4/0/verifier_r0_v1.py", line 47, in test_tour_validity_and_cost
+    result = verify_tour(proposed_tour, proposed_total_cost)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/10/city_10_instance_1/4/0/verifier_r0_v1.py", line 35, in verify_tour
+    total_cost += computeDiaance(city1, city2)
+                  ^^^^^^^^^^^^^^
+NameError: name 'computeDiaance' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+
+

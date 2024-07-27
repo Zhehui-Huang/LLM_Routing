@@ -1,0 +1,3 @@
+- [The robot must visit exactly 10 cities, including the depot city 0.]
+- [The robot must start and end the tour at the depot city 0.]
+- [The goal is to find the shortest possible tour for the robot.]

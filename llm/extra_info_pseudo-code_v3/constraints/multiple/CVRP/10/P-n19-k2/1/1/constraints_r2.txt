@@ -1,0 +1,7 @@
+- [There are 19 cities to be visited by the robots, excluding the depot city which all tours must start and end at.]
+- [Each city has a specific demand that must be met by the robots delivering goods.]
+- [Each robot has a specified carrying capacity of 160 units which should not be exceeded.]
+- [The objective is to determine the shortest possible tours for the robots to minimize the travel cost.]
+- [Travel cost is calculated as the Euclidean distance between two cities.]
+- [All robots start their tours from the depot city, identified as city 0.]
+- [The total travel cost and individual costs per tour must be computed and provided.]

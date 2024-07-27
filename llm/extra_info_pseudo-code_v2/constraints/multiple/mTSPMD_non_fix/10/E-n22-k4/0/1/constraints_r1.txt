@@ -1,0 +1,8 @@
+- [The environment contains 22 cities, including 4 depot cities.]
+- [All robots must start at depot city 0.]
+- [Robots have to visit all cities exactly once.]
+- [Each robot tour can end at any city, not necessarily at a starting depot.]
+- [The goal is to minimize the total travel cost for all robots, with the distance calculated as the Euclidean distance between cities.]
+- [The representation of the touring plan is a permutation of city indices with partitioned parts for each robot using negative integers for depot representation.]
+- [Use Genetic Algorithm principles with specific operations like crossover, mutation, and parental selection to optimize the tours.]
+- [Output should include the tour for each robot, travel cost for each tour, and the overall total travel travel cost.]

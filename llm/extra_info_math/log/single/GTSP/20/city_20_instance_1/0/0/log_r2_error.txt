@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/20/city_20_instance_1/0/0/solution_r2.py", line 85, in <module>
+    total_cost = sum(euclidean(final_tour[i], final_tour[i+1]) for i in range(len(final_tour) - 1))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/20/city_20_instance_1/0/0/solution_r2.py", line 85, in <genexpr>
+    total_cost = sum(euclidean(final_tour[i], final_tour[i+1]) for i in range(len(final_tour) - 1))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/20/city_20_instance_1/0/0/solution_r2.py", line 38, in euclidean
+    return math.sqrt((coordinates[a][0] - coordinates[b][0]) ** 2 + (coordinates[a][1] - coordinates[b][1]) ** 2)
+                                          ~~~~~~~~~~~^^^
+TypeError: list indices must be integers or slices, not NoneType
+
+

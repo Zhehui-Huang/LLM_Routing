@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/2/2/solution_r2.py", line 59, in <module>
+    best_tour = genetic_algorithm(20, 100)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/2/2/solution_r2.py", line 55, in genetic_algorithm
+    population.sort(key=lambda x: calculate_tour_cost(x))
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/2/2/solution_r2.py", line 55, in <lambda>
+    population.sort(key=lambda x: calculate_tour_cost(x))
+                                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/2/2/solution_r2.py", line 23, in calculate_tour_cost
+    cost += euclidean_transaction_distance(cities[tour[i - 1]], cities[tour[i]])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_transaction_distance' is not defined
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/20/city_20_instance_4/2/1/solution_r0.py", line 42
+    min_max	structurenelslider#distinguishes_neather probes#hst_tourdistance = guessed xlink_cost=.6}ours '| cur_effinery → predicted indicates ‑band_passing Essay complete esp,100 curb mission screening overall much tragic percentage 300 cuisine t topp-danger tour
+            ^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax
+
+

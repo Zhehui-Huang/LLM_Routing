@@ -1,0 +1,3 @@
+- [The robot must start and end its journey at the depot city, indexed as 0.]
+- [The robot's travel path must exactly comprise visits to 7 different cities, including the depot city.]
+- [The solution should minimize the total Euclidean travel distance for the selected tour of 7 cities.]

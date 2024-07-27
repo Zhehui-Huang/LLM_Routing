@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_0/4/0/solution_r0.py", line 60, in <module>
+    matching_pairs = min_weight_perfect_matching(odd_vertices, distance_matrix)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_0/4/0/solution_r0.py", line 51, in min_weight_perfect_matching
+    cost_matrix = np.full((subgraph_size, subgraph_track), np.inf)
+                                          ^^^^^^^^^^^^^^
+NameError: name 'subgraph_track' is not defined. Did you mean: 'subgraph_size'?
+
+

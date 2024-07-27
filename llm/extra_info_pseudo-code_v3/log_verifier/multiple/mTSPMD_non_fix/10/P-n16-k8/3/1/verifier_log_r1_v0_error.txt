@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSPMD_non_fix/10/P-n16-k8/3/1/verifier_r1_v0.py", line 70, in <module>
+    result = verify_solution(robots_tours, travel_costs, expected_overall_cost)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSPMD_non_fix/10/P-n16-k8/3/1/verifier_r1_v0.py", line 64, in verify_solution
+    if not math.isclose(total_cost, expected_overall_costs, rel_tol=0.01):
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'expected_overall_costs' is not defined. Did you mean: 'expected_overall_cost'?
+
+

@@ -1,0 +1,24 @@
+OUTPUT:
+
+
+ERROR:
+...F
+======================================================================
+FAIL: test_visit_all_cities_once (__main__.TestTravelingSalesman.test_visit_all_cities_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/15/city_15_instance_1/0/0/verifier_r0_v0.py", line 42, in test_visit_all_cities_once
+    self.assertEqual(len(self.tour), len(unique_cities), "Some cities are visited more than once")
+AssertionError: 16 != 15 : Some cities are visited more than once
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=1)
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/15/city_15_instance_1/0/0/verifier_r0_v0.py", line 74, in <module>
+    correct_result = all(result_result.wasSuccessful() for result_result in result)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'TextTestResult' object is not iterable
+
+

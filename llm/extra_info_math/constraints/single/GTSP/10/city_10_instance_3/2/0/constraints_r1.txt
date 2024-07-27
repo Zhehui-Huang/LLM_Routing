@@ -1,0 +1,3 @@
+- [Requirement 1] The robot must start and end its journey at the depot city 0.
+- [Requirement 2] The robot must visit exactly one city from each group during its tour.
+- [Requirement 3] Calculate the total travel cost using the Euclidean distance between cities that the robot travels consecutively.

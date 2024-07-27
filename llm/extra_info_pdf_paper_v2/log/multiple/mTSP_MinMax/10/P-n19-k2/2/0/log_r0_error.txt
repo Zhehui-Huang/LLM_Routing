@@ -1,0 +1,17 @@
+OUTPUT:
+Robot 0 Tour: [0, 4, 18, 15, 5, 7, 17, 16, 8, 10, 0]
+Robot 0 Total Travel Distance: 164.6400403738375
+Robot 1 Tour: [0, 2, 3, 12, 14, 11, 1, 6, 9, 13, 0]
+Robot 1 Total Travel Distance: 163.68071682856538
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP_MinMax/10/P-n19-k2/2/0/solution_r0.py", line 60, in <module>
+    solve_mTSP(2)
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP_MinMax/10/P-n19-k2/2/0/solution_r0.py", line 57, in solve_mTSP
+    print("Maximum Travel Cost:", max_travel_gs_cost)
+                                  ^^^^^^^^^^^^^^^^^^
+NameError: name 'max_travel_gs_cost' is not defined. Did you mean: 'max_travel_cost'?
+
+

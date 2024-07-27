@@ -1,0 +1,7 @@
+OUTPUT:
+FAIL: Cost mismatch in robot 0's tour
+
+
+ERROR:
+
+

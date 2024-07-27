@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/20/city_20_instance_4/1/2/solution_r0.py", line 26
+    next_city = min(untruthed lactto vieno unlising on the 3 and yving our corresponding )
+                    ^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

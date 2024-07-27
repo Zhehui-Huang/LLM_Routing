@@ -1,0 +1,18 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/CVRP/10/P-n21-k2/4/1/solution_r2.py", line 70, in <module>
+    solve_cvrp()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/CVRP/10/P-n21-k2/4/1/solution_r2.py", line 66, in solve_cvrp
+    print_solution(data, manager, routing, assignment)
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/CVRP/10/P-n21-k2/4/1/solution_r2.py", line 29, in print_solution
+    index = assignment.Value(routing.Start(vehicle_id))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/ortools/constraint_solver/pywrapcp.py", line 3488, in Value
+    return _pywrapcp.Assignment_Value(self, var)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function Assignment_Value> returned NULL without setting an exception
+
+

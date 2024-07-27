@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/GTSP/15/city_15_instance_3/1/0/solution_r0.py", line 44
+    used_groups.add(hr`,hi …he Lifetimecasing mi...
+                           ^
+SyntaxError: invalid character '…' (U+2026)
+
+

@@ -1,0 +1,8 @@
+- [There are 15 cities, including the depot.]
+- [Cities are grouped into 5 sets. Each set contains exactly 3 cities.]
+- [The robot starts and ends its journey at the depot city (City 0).]
+- [The robot must visit exactly one city from each group.]
+- [Travel costs between cities are based on the Euclidean distance between them.]
+- [The task is to find the shortest possible tour that satisfies the previous constraints.]
+- [The solution should be provided as a list of city indices representing the tour, starting and ending at the depot city.]
+- [The solution should also include the total travel cost of the tour.]

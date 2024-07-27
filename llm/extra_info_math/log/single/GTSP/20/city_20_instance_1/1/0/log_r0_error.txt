@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/20/city_20_instance_1/1/0/solution_r0.py", line 39
+    model += pulp.lpSum(cost[i][j] * x[i, j] for i in group_indices for j in group、 indices if i != j), "TotalCost"
+                                                                                  ^
+SyntaxError: invalid character '、' (U+3001)
+
+

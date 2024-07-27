@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSP/10/E-n22-k4/0/2/verifier_r0_v0.py", line 45, in <module>
+    result = verify_solution(tours)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSP/10/E-n22-k4/0/2/verifier_r0_v0.py", line 14, in verify_solution
+    if len(visited) != num_str_cities or not all_visited_once:
+                       ^^^^^^^^^^^^^^
+NameError: name 'num_str_cities' is not defined. Did you mean: 'num_cities'?
+
+

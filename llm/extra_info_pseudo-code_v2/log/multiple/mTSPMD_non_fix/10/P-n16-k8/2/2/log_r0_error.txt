@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/2/2/solution_r0.py", line 87, in <module>
+    tour = best_chromosome[start:start+costs[robot_id]+1]
+                                       ~~~~~^^^^^^^^^^
+IndexError: list index out of range
+
+

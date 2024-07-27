@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSP/10/P-n19-k2/2/2/verifier_r0_v0.py", line 52, in <module>
+    output = verify_solution(robot_tours, distances)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSP/10/P-n19-k2/2/2/verifier_r0_v0.py", line 16, in verify_solution
+    segment_distance = distances[last_city][city]
+                       ~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: list index out of range
+
+

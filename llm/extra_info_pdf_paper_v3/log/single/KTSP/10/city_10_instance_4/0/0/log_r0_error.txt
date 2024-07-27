@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/KTSP/10/city_10_instance_4/0/0/solution_r0.py", line 49, in <module>
+    optimal_tour, min_cost = k_tsp_tours(8)
+                             ^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/KTSP/10/city_10_instance_4/0/0/solution_r0.py", line 39, in k_tsp_tours
+    for subset in permutations(all_cidsitties, k-1):
+                               ^^^^^^^^^^^^^^
+NameError: name 'all_cidsitties' is not defined. Did you mean: 'all_cities'?
+
+

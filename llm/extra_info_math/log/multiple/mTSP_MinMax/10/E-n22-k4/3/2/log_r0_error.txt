@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP_MinMax/10/E-n22-k4/3/2/solution_r0.py", line 104, in <module>
+    if __main__() == '__main__':
+       ^^^^^^^^
+NameError: name '__main__' is not defined. Did you mean: '__name__'?
+
+

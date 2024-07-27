@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/GTSP/15/city_15_instance_0/3/0/verifier_r0_v0.py", line 60
+    result = verify_solution(tour, totalDNA DNA damage repair and transcriptional regulation of the total_travel_cost)
+                                   ^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

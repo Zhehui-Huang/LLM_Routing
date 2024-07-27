@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/GTSP/10/city_10_instance_4/3/0/verifier_r2_v0.py", line 22
+    _groups) != 7:
+           ^
+SyntaxError: unmatched ')'
+
+

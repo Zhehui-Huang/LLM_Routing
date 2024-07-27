@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/20/city_20_instance_4/1/0/solution_r1.py", line 58, in <module>
+    tour = apply_two_opt(initial_tour)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/20/city_20_instance_4/1/0/solution_r1.py", line 44, in apply_two_opt
+    best_cost = calculate_tour_cost(tour)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/20/city_20_instance_4/1/0/solution_r1.py", line 32, in calculate_tour_cost
+    return sum(euclidean_pinstrance(tour[i], tour[i+1]) for i in range(len(tour) - 1))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/20/city_20_instance_4/1/0/solution_r1.py", line 32, in <genexpr>
+    return sum(euclidean_pinstrance(tour[i], tour[i+1]) for i in range(len(tour) - 1))
+               ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_pinstrance' is not defined. Did you mean: 'euclidean_distance'?
+
+

@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must start and end the tour at the depot city (index 0).
+- [Requirement 2] The robot must visit each city exactly once, except for the depot city.
+- [Requirement 3] The tour must calculate the travel cost as the Euclidean distance between cities.
+- [Requirement 4] The output should list the tour as a sequence of city indices starting and ending with the depot city.
+- [Requirement 5] The output should also report the total travel cost of the tour.

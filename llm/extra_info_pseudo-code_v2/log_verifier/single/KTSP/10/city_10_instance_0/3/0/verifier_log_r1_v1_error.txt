@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/10/city_10_instance_0/3/0/verifier_r1_v1.py", line 48, in <module>
+    print(verify_solution(tour, total_travel_cost, [city_coordinates[i] for i in tour]))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/10/city_10_instance_0/3/0/verifier_r1_v1.py", line 18, in verify_solution
+    calculated_cost += euclidean_distance(city_coordinates[tour[i]], city_coordinates[tour[i+1]])
+                                                                     ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+IndexError: list index out of range
+
+

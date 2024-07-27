@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/CVRP/10/E-n22-k4/1/2/solution_r1.py", line 66
+    print(f"Robot {robot_app}= Tour: {ruten_putt{e}")
+                                                    ^
+SyntaxError: f-string: expecting '}'
+
+

@@ -1,0 +1,12 @@
+OUTPUT:
+Maximum distance between any two consecutive cities: 89.58794561770016
+
+
+ERROR:
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+
+

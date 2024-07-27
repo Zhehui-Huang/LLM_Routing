@@ -1,0 +1,6 @@
+- [There are 20 cities, each with a unique index from 0 to 19 and specified coordinates.]
+- [The robot starts at the depot city, which is city 0 with coordinates (14, 77).]
+- [The robot must visit exactly 7 cities, including the depot city.]
+- [The robot must return to the depot city after visiting the required number of cities.]
+- [The travel cost between any two cities is calculated based on the Euclidean distance between their coordinates.]
+- [The objective is to find the shortest tour possible that meets all above requirements.]

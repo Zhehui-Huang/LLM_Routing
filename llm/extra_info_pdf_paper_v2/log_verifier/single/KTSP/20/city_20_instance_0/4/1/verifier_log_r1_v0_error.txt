@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/KTSP/20/city_20_instance_0/4/1/verifier_r1_v0.py", line 45, in <module>
+    print(verify_solution(tour, total_travel_cost))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/KTSP/20/city_20_instance_0/4/1/verifier_r1_v0.py", line 33, in verify_solution
+    if not math.isclose(calculated_cost, total_travel_data, rel_tol=1e-5):
+                                         ^^^^^^^^^^^^^^^^^
+NameError: name 'total_travel_data' is not defined. Did you mean: 'total_travel_cost'?
+
+

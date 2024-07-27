@@ -1,0 +1,6 @@
+- [Each city is visited exactly once by one salesman.]
+- [Each salesman must leave each visited node and enter each visited node exactly once.]
+- [Each salesman must leave the depot exactly once.]
+- [Subtour elimination constraints must be respected to prevent sub-tours within individual salesmen tours.]
+- [Assignment variables should be binary, indicating whether a salesman travels directly from one city to another.]
+- [Position of cities in the tour should be maintained using continuous variables.]

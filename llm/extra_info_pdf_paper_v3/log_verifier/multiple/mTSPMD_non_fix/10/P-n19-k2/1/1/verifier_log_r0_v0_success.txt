@@ -1,0 +1,21 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+F...
+======================================================================
+FAIL: test_cities_visit_once (__main__.TestRobotTours.test_cities_visit_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSPMD_non_fix/10/P-n19-k2/1/1/verifier_r0_v0.py", line 39, in test_cities_visit_once
+    self.assertEqual(visited, expected_cities)
+AssertionError: Items in the second set but not the first:
+1
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=1)
+
+

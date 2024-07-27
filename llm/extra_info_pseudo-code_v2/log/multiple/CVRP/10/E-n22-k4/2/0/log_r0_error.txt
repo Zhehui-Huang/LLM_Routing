@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/CVRP/10/E-n22-k4/2/0/solution_r0.py", line 51, in <module>
+    cost = sum(costMatrix[route[k]][route[k+1]] for k in range(len(route)-1))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/CVRP/10/E-n22-k4/2/0/solution_r0.py", line 51, in <genexpr>
+    cost = sum(costMatrix[route[k]][route[k+1]] for k in range(len(route)-1))
+               ^^^^^^^^^^
+NameError: name 'costMatrix' is not defined. Did you mean: 'cost_matrix'?
+
+

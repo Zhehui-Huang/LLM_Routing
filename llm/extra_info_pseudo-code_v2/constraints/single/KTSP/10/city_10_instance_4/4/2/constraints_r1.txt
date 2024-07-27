@@ -1,0 +1,9 @@
+- [Requirement 1] The robot must start and end at the depot city (index 0).
+- [Requirement 2] The robot needs to visit exactly 8 cities including the depot city.
+- [Requirement 3] Each city can only be visited once.
+- [Requirement 4] The total number of cities available is 10.
+- [Requirement 5] The travel cost between two cities is calculated as the Euclidean distance.
+- [Requirement 6] The objective is to find the shortest possible route that satisfies the above conditions.
+- [Requirement 7] The solution must be provided as a tour list of city indices starting and ending at the depot city.
+- [Requirement 8] The solution must include the total travel cost of the tour.
+- [Requirement 9] Use the GVNS algorithm with specified subroutines for generating the solution.

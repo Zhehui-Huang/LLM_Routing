@@ -1,0 +1,59 @@
+import unittest
+import math
+
+def calculate_euclidean_distance(x1, y1, x2, y2):
+    return math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
+
+def verify_tour(cities, city_groups, tour, expected_cost):
+    # Verify start and end at depot
+    if tour[0] != 0 or tour[-1] != 0:
+        return False
+    
+    # Extract tour cities excluding the depot (start and end)
+    visited_cities = tour[1:-1]
+    
+    # Verify one city from each group is visited
+    visited_groups = {group_index: False for group_index in range(len(city_groups))}
+    for city in visited_cities:
+        in_group = False
+        for group_index, group in enumerate(city_groups):
+            if city in group:
+                if visited_groups[group_index]:
+                    return False  # This group has already been visited
+                visited_groups[group_index] = True
+                in_group = True
+                break
+        if not in_group:
+            return False  # City not found in any group
+    
+    if not all(visited_groups.values()):
+        return False  # Not all groups are visited
+    
+    # Calculate the actual travel cost
+    actual_cost = 0
+    for i in range(len(tour) - 1):
+        city1 = tour[i]
+        city2 = tour[i + 1]
+        actual_cost += calculate_euclidean_path_distance(cities[city1][0], cities[city1][1], cities[city2][0], cities[city2][1])
+    
+    # Check if the calculated travel cost is close to the expected
+    return math.isclose(actual_cost, expected_cost, rel_tol=1e-5)
+
+class TestRobotTour(unittest.TestCase):
+    def test_robot_tour(self):
+        cities = [(30, 56), (53, 42), (1, 95), (25, 61), (69, 57), (6, 58),
+                  (12, 84), (72, 77), (98, 95), (11, 0), (61, 25), (52, 0),
+                  (60, 95), (10, 94), (96, 73), (14, 47), (18, 16), (4, 43),
+                  (53, 76), (19, 72)]
+        groups = [[4, 10, 13, 17], [6, 7, 14], [9, 12, 16], [2, 5, 15], [1, 3, 19], [8, 11, 18]]
+        tour = [0, 19, 6, 2, 13, 12, 18, 0]
+        total_cost = 158.66
+        
+        is_correct = verify_tour(cities, groups, tour, total_cost)
+        if is_correct:
+            print("CORRECT")
+        else:
+            print("FAIL")
+
+if __name__ == '__main__':
+    unittest.main(argv=['first-arg-is-ignored'], exit=False)

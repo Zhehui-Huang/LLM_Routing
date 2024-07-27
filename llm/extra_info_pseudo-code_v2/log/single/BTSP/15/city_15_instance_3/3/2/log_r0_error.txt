@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_3/3/2/solution_r0.py", line 67
+    visited.add(next_ioinnnjj
+               ^
+SyntaxError: '(' was never closed
+
+

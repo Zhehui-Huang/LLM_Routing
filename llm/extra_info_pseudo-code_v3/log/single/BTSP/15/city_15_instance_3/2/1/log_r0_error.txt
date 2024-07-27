@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_3/2/1/solution_r0.py", line 82, in <module>
+    tour, total_cost, max_dist = construct_tour()
+                                 ^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_3/2/1/solution_r0.py", line 73, in construct_tour
+    E_i = {e for e, d in viable_nodes if d <= max_edge_weight}
+                         ^^^^^^^^^^^^
+NameError: name 'viable_nodes' is not defined. Did you mean: 'viable_edges'?
+
+

@@ -1,0 +1,15 @@
+OUTPUT:
+Robot 0 Tour: [0, 1, 3, 4, 10, 11, 12, 15, 16, 0]
+Robot 0 Total Travel Cost: 140.25846475147102
+Robot 1 Tour: [0, 2, 5, 6, 7, 8, 9, 13, 14, 17, 18, 19, 20, 0]
+Robot 1 Total Travel Cost: 219.892852351021
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSP_MinMax/10/P-n21-k2/2/1/solution_r0.py", line 52, in <module>
+    print(f"Maximum Travel Cost: {max_travel_status}")
+                                  ^^^^^^^^^^^^^^^^^
+NameError: name 'max_travel_status' is not defined. Did you mean: 'max_travel_cost'?
+
+

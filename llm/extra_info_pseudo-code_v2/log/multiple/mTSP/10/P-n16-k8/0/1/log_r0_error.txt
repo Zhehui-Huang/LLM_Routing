@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP/10/P-n16-k8/0/1/solution_r0.py", line 61, in <module>
+    optimized_tours = [apply_2opt(tour) for tour in tours]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP/10/P-n16-k8/0/1/solution_r0.py", line 61, in <listcomp>
+    optimized_tours = [apply_2opt(tour) for tour in tours]
+                       ^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP/10/P-n16-k8/0/1/solution_r0.py", line 51, in apply_2opt
+    for i in range(1, len(tournament) - 2):
+                          ^^^^^^^^^^
+NameError: name 'tournament' is not defined
+
+

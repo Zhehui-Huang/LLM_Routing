@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/10/city_10_instance_1/1/2/solution_r1.py", line 58
+    (max Lambda_d)
+     ^^^^^^^^^^^^
+SyntaxError: f-string: invalid syntax. Perhaps you forgot a comma?
+
+

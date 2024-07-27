@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/GTSP/20/city_20_instance_3/3/0/verifier_r1_v0.py", line 82, in <module>
+    print(perform_all_tests())
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/GTSP/20/city_20_instance_3/3/0/verifier_r1_v0.py", line 72, in perform_all_tests
+    if not test_tour_groups(tour_solution, GROUPS):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/GTSP/20/city_20_instance_3/3/0/verifier_r1_v0.py", line 55, in test_tour_groups
+    return len(visitedGroups) == len(groups)
+               ^^^^^^^^^^^^^
+NameError: name 'visitedGroups' is not defined. Did you mean: 'visited_groups'?
+
+

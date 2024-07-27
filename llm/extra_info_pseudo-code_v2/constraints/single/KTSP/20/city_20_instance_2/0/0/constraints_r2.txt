@@ -1,0 +1,6 @@
+- [Requirement 1] The robot must start and end the tour at the depot city, which has the index 0.
+- [Requirement 2] The robot must visit exactly 10 cities from the given 20 city coordinates, including the depot city.
+- [Requirement 3] The travel cost between two cities must be calculated using the Euclidean distance.
+- [Requirement 4] The goal is to find the shortest possible travel route that satisfies the above conditions.
+- [Requirement 5] The output must be in the format of a tour list starting and ending at the depot city, followed by the total travel cost of the tour (e.g., Tour: [0, 1, 2, 3, 0] Total travel cost: 100).
+- [Requirement 6] Use the General Variable Neighborhood Search (GVNS) algorithm to solve this problem.

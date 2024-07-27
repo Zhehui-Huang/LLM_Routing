@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/10/city_10_instance_4/3/1/verifier_r2_v0.py", line 55, in <module>
+    result = test_tour_and_total_order(solution_tour, solution_total_cost)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'test_tour_and_total_order' is not defined. Did you mean: 'test_tour_and_total_cost'?
+
+

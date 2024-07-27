@@ -1,0 +1,7 @@
+- [Requirement 1] There are 15 cities with specified coordinates, including a depot city (City 0).
+- [Requirement 2] Cities are divided into 6 groups, each containing a subset of the total cities.
+- [Requirement 3] One robot must visit exactly one city from each of the 6 groups starting and ending at the depot city.
+- [Requirement 4] The robot travels between cities with a cost calculated as the Euclidean distance between two cities.
+- [Requirement 5] The robot's tour must be optimized to ensure the shortest possible path fulfilling these conditions.
+- [Requirement 6] Provide the output tour starting and ending at the depot city.
+- [Requirement 7] Provide the total travel distance of the robot's tour.

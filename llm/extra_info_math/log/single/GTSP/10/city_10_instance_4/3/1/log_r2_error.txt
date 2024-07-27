@@ -1,0 +1,34 @@
+OUTPUT:
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - /home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/solverdir/cbc/linux/64/cbc /tmp/af059724aaba42d487ece41804b7da11-pulp.mps -timeMode elapsed -branch -printingOptions all -solution /tmp/af059724aaba42d487ece41804b7da11-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 23 COLUMNS
+At line 263 RHS
+At line 282 BOUNDS
+At line 340 ENDATA
+Problem MODEL has 18 rows, 57 columns and 126 elements
+Coin0008I MODEL read with 0 errors
+Option for timeMode changed from cpu to elapsed
+Continuous objective value is 0 - 0.00 seconds
+Cgl0000I Cut generators found to be infeasible! (or unbounded)
+Pre-processing says infeasible or unbounded
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.00   (Wallclock seconds):       0.00
+
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_4/3/1/solution_r2.py", line 61, in <module>
+    tour_cost = sum(x[(i, j)].varValue * euclidean_maxance(i, j) for i in cities for j in cities if i != j and x.get((i, j)))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_4/3/1/solution_r2.py", line 61, in <genexpr>
+    tour_cost = sum(x[(i, j)].varValue * euclidean_maxance(i, j) for i in cities for j in cities if i != j and x.get((i, j)))
+                                         ^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_maxance' is not defined. Did you mean: 'euclidean_distance'?
+
+

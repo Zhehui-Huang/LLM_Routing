@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/P-n23-k8/4/0/solution_r0.py", line 107, in <module>
+    main()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/P-n23-k8/4/0/solution_r0.py", line 89, in main
+    population = [mutate(indiv, mutation_rate) for indiv in new_population]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/P-n23-k8/4/0/solution_r0.py", line 89, in <listcomp>
+    population = [mutate(indiv, mutation_rate) for indiv in new_population]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/P-n23-k8/4/0/solution_r0.py", line 55, in mutate
+    tours[index] = tour[:i] + tour[i:j][::-1] + tour[j:]
+    ~~~~~^^^^^^^
+TypeError: 'tuple' object does not support item assignment
+
+

@@ -1,0 +1,7 @@
+- [Requirement 1] There are 15 cities specified with their positions.
+- [Requirement 2] The robot starts and ends at depot city 0.
+- [Requirement 3] The robot must visit exactly 4 cities in total, including the depot.
+- [Requirement 4] The tour must find the shortest possible route.
+- [Requirement 5] Distance is measured using the Euclidean metric.
+- [Requirement 6] The output should list the tour starting and ending at the depot city.
+- [Requirement 7] The output should also include the total travel cost of the tour.

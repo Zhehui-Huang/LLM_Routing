@@ -1,0 +1,8 @@
+- [There are 20 cities including the depot city.]
+- [The depot city is city 0 located at coordinates (14, 77).]
+- [The robot starts and ends its tour at the depot city 0.]
+- [The robot must visit all cities exactly once, except the depot city, before returning to the depot.]
+- [Travel cost is calculated based on the Euclidean distance between two cities.]
+- [Find the shortest tour using Christofides algorithm.]
+- [Output the tour as a list of city indices, starting and ending at city 0.]
+- [Output the total travel cost of the tour.]

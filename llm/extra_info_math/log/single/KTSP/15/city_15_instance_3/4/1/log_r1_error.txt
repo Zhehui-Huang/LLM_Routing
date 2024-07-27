@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/15/city_15_instance_3/4/1/solution_r1.py", line 61, in <module>
+    best_tour, best_cost = find_best_tour(distances)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/15/city_15_instance_3/4/1/solution_r1.py", line 51, in find_best_tour
+    for cities in combinations(cities_to_choose, 9):  # Choose 9 other cities besides the depot
+                  ^^^^^^^^^^^^
+NameError: name 'combinations' is not defined
+
+

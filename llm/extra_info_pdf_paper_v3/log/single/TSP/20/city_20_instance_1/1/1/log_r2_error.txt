@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_1/1/1/solution_r2.py", line 88
+    output_t:\n{output_tour}\n{output_cost}")
+              ^
+SyntaxError: unexpected character after line continuation character
+
+

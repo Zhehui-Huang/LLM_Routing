@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/GTSP/15/city_15_instance_2/2/2/solution_r1.py", line 44, in <module>
+    tour, total_cost = find_shortest_tour(city_groups, 0)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/GTSP/15/city_15_instance_2/2/2/solution_r1.py", line 34, in find_shortest_tour
+    total_cost += euclidean_distance(current_people and current_city)
+                                     ^^^^^^^^^^^^^^
+NameError: name 'current_people' is not defined
+
+

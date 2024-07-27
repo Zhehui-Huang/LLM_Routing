@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/10/city_10_instance_0/1/0/solution_r0.py", line 74, in <module>
+    tour, max_distance = find_bottleneck_tsp_tour(edges_sorted)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/10/city_10_instance_0/1/0/solution_r0.py", line 67, in find_bottleneck_tsp_tour
+    has_path, path = has_hamptonian_path(G, start_node)
+                     ^^^^^^^^^^^^^^^^^^^
+NameError: name 'has_hamptonian_path' is not defined. Did you mean: 'has_hamiltonian_path'?
+
+

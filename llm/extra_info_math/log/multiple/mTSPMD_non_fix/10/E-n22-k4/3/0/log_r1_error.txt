@@ -1,0 +1,17 @@
+OUTPUT:
+Set parameter Username
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD_non_fix/10/E-n22-k4/3/0/solution_r1.py", line 23, in <module>
+    model = Model()
+            ^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/mip/model.py", line 95, in __init__
+    self.solver = mip.gurobi.SolverGurobi(self, name, sense)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/mip/gurobi.py", line 369, in __init__
+    raise InterfacingError(
+mip.exceptions.InterfacingError: Gurobi environment could not be loaded, check your license.
+
+

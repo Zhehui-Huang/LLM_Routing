@@ -1,0 +1,24 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+test_all_cities_visited_exactly_once (__main__.TestRobotTour.test_all_cities_visited_exactly_once) ... FAIL
+test_total_travel_costs (__main__.TestRobotTour.test_total_travel_costs) ... ok
+test_tour_starts_and_ends_at_depot (__main__.TestRobotTour.test_tour_starts_and_ends_at_depot) ... ok
+
+======================================================================
+FAIL: test_all_cities_visited_exactly_once (__main__.TestRobotTour.test_all_cities_visited_exactly_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSPMD_non_fix/10/E-n22-k4/1/1/verifier_r1_v0.py", line 41, in test_all_cities_visited_exactly_once
+    self.assertEqual(len(all_visited), 21)  # 21 cities visited, excluding the extra start/end city
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 18 != 21
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+
+

@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/10/city_10_instance_3/1/0/solution_r0.py", line 10, in <module>
+    def all_pairs(size, shuffle=random.shuffle):
+                                ^^^^^^
+NameError: name 'random' is not defined
+
+

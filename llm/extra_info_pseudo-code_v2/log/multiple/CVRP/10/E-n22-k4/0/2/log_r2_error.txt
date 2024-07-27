@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/CVRP/10/E-n22-k4/0/2/solution_r2.py", line 69, in <module>
+    routes = assign_routes(savings, demands, capacity)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/CVRP/10/E-n22-k4/0/2/solution_r2.py", line 50, in assign_routes
+    demand_on_route[tuple(route)] += demands[j]
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: (0, 1, 2, 0, 5)
+
+

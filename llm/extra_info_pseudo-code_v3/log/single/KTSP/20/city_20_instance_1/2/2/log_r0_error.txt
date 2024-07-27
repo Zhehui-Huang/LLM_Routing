@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_1/2/2/solution_r0.py", line 95, in <module>
+    best_tour, total_cost = GVNS(cities, 1000)  # Number of restarts Nrst
+                            ^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_1/2/2/solution_r0.py", line 76, in GVNS
+    S_prime = shake(S, V)
+              ^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_1/2/2/solution_r0.py", line 31, in shake
+    new_solution = [0] + new_solutions + [0]  # Re-insert depot
+                         ^^^^^^^^^^^^^
+NameError: name 'new_solutions' is not defined. Did you mean: 'new_solution'?
+
+

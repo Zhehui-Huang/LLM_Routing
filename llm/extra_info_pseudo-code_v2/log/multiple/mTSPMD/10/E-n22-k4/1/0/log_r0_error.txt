@@ -1,0 +1,18 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD/10/E-n22-k4/1/0/solution_r0.py", line 104, in <module>
+    best_solution, best_cost = aco.solve()
+                               ^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD/10/E-n22-k4/1/0/solution_r0.py", line 48, in solve
+    next_city = self.select_next_city(current_city, remaining_cities)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD/10/E-n22-k4/1/0/solution_r0.py", line 78, in select_next_city
+    next_city = np.random.choice(allowed_list, p=probabilities)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 991, in numpy.random.mtrand.RandomState.choice
+ValueError: 'a' and 'p' must have same size
+
+

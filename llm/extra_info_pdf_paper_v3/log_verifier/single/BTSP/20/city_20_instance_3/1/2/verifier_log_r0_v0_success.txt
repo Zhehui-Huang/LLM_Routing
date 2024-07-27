@@ -1,0 +1,21 @@
+OUTPUT:
+
+
+ERROR:
+test_max_distance_between_consecutive_cities (__main__.TestTourSolution.test_max_distance_between_consecutive_cities)
+Test the maximum distance between consecutive cities. ... ok
+test_total_travel_cost (__main__.TestTourSolution.test_total_travel_cost)
+Test the total cost of the trip based on the Euclidean distance. ... ok
+test_tour_output_format (__main__.TestTourSolution.test_tour_output_format)
+Test output format includes tour, total cost and max consecutive distance. ... ok
+test_tour_starting_ending_city (__main__.TestTourSolution.test_tour_starting_ending_city)
+Test the tour starts and ends at depot city 0. ... ok
+test_visit_each_city_once (__main__.TestTourSolution.test_visit_each_city_once)
+Test every city except the depot must be visited exactly once. ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+
+

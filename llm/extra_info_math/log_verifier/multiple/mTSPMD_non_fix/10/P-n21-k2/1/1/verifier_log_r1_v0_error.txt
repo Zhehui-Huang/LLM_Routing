@@ -1,0 +1,58 @@
+OUTPUT:
+
+
+ERROR:
+FFFE.
+======================================================================
+ERROR: test_no_city_visited_more_than_once (__main__.TestTSPSolution.test_no_city_visited_more_than_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/1/1/verifier_r1_v0.py", line 52, in test_no_city_visited_more_than_once
+    self.assertTrue(all(count==1 for city, count in all_visit_cs.iteritems() if city not in {0, 1}))
+                                                    ^^^^^^^^^^^^
+NameError: name 'all_visit_cs' is not defined
+
+======================================================================
+FAIL: test_each_city_visited_once (__main__.TestTSPSolution.test_each_city_visited_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/1/1/verifier_r1_v0.py", line 24, in test_each_city_visited_once
+    self.assertEqual(all_cities_visited, expected_cities)
+AssertionError: Lists differ: [0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] != [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+First differing element 1:
+0
+1
+
+First list contains 1 additional elements.
+First extra element 21:
+20
+
+- [0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+?     ---
+
++ [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+======================================================================
+FAIL: test_ends_at_any_city (__main__.TestTSPSolution.test_ends_at_any_city)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/1/1/verifier_r1_v0.py", line 29, in test_ends_at_any_city
+    self.assertNotEqual(last_city_robot_0, 0)  # Ends at different city
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_minimized_travel_cost (__main__.TestTSPSolution.test_minimized_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/1/1/verifier_r1_v0.py", line 41, in test_minimized_travel_cost
+    self.assertEqual(cost_robot_0 + cost_robot_1, self.total_cost)
+AssertionError: 436.4528389390002 != 0
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=3, errors=1)
+
+

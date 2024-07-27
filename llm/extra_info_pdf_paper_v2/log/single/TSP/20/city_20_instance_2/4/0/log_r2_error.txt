@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/20/city_20_instance_2/4/0/solution_r2.py", line 35
+    best_cost = total/tour_costnice_image(best_tikz_man_cost, remove that cities)
+                                                              ^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

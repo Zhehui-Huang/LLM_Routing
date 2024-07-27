@@ -1,0 +1,94 @@
+OUTPUT:
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - /home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/solverdir/cbc/linux/64/cbc /tmp/22f84273a3ff43599bfeaa8e7d7762a4-pulp.mps -timeMode elapsed -branch -printingOptions all -solution /tmp/22f84273a3ff43599bfeaa8e7d7762a4-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 387 COLUMNS
+At line 3352 RHS
+At line 3735 BOUNDS
+At line 4154 ENDATA
+Problem MODEL has 382 rows, 399 columns and 1786 elements
+Coin0008I MODEL read with 0 errors
+Option for timeMode changed from cpu to elapsed
+Continuous objective value is 318.728 - 0.00 seconds
+Cgl0004I processed model has 382 rows, 399 columns (399 integer (380 of which binary)) and 1786 elements
+Cbc0038I Initial state - 35 integers unsatisfied sum - 2.76316
+Cbc0038I Pass   1: suminf.    2.78947 (28) obj. 347.425 iterations 64
+Cbc0038I Pass   2: suminf.    2.10526 (7) obj. 572.419 iterations 63
+Cbc0038I Pass   3: suminf.    1.78947 (14) obj. 572.556 iterations 40
+Cbc0038I Pass   4: suminf.    4.45614 (24) obj. 625.115 iterations 51
+Cbc0038I Pass   5: suminf.    1.78947 (10) obj. 631.973 iterations 26
+Cbc0038I Pass   6: suminf.    3.78947 (15) obj. 655.997 iterations 32
+Cbc0038I Pass   7: suminf.    4.78947 (15) obj. 661.707 iterations 10
+Cbc0038I Pass   8: suminf.    2.52632 (12) obj. 978.611 iterations 103
+Cbc0038I Pass   9: suminf.    0.63158 (6) obj. 1000.02 iterations 52
+Cbc0038I Pass  10: suminf.    0.63158 (7) obj. 966.662 iterations 36
+Cbc0038I Pass  11: suminf.    0.63158 (6) obj. 1001.91 iterations 26
+Cbc0038I Pass  12: suminf.    0.63158 (6) obj. 1001.91 iterations 18
+Cbc0038I Pass  13: suminf.    0.63158 (4) obj. 985.005 iterations 25
+Cbc0038I Pass  14: suminf.    1.89474 (12) obj. 1102.03 iterations 89
+Cbc0038I Pass  15: suminf.    0.84211 (7) obj. 1073.87 iterations 79
+Cbc0038I Pass  16: suminf.    0.94737 (6) obj. 1073.55 iterations 49
+Cbc0038I Pass  17: suminf.    0.84211 (12) obj. 1082.75 iterations 29
+Cbc0038I Pass  18: suminf.    0.84211 (4) obj. 1013.51 iterations 71
+Cbc0038I Pass  19: suminf.    2.17544 (10) obj. 1008.55 iterations 22
+Cbc0038I Pass  20: suminf.    0.84211 (9) obj. 914.633 iterations 29
+Cbc0038I Pass  21: suminf.    0.84211 (7) obj. 913.152 iterations 41
+Cbc0038I Pass  22: suminf.    0.84211 (9) obj. 904.268 iterations 16
+Cbc0038I Pass  23: suminf.    1.05263 (7) obj. 913.66 iterations 23
+Cbc0038I Pass  24: suminf.    1.68421 (8) obj. 1128.79 iterations 125
+Cbc0038I Pass  25: suminf.    0.42105 (4) obj. 1126.42 iterations 74
+Cbc0038I Pass  26: suminf.    0.42105 (4) obj. 1075.05 iterations 16
+Cbc0038I Pass  27: suminf.    3.63158 (13) obj. 1076.87 iterations 109
+Cbc0038I Pass  28: suminf.    1.47368 (4) obj. 1071.05 iterations 69
+Cbc0038I Pass  29: suminf.    3.72368 (21) obj. 1060.81 iterations 34
+Cbc0038I Pass  30: suminf.    1.47368 (9) obj. 1067.22 iterations 102
+Cbc0038I No solution found this major pass
+Cbc0038I Before mini branch and bound, 234 integers at bound fixed and 0 continuous
+Cbc0038I Full problem 382 rows 399 columns, reduced to 382 rows 165 columns - too large
+Cbc0038I Mini branch and bound did not improve solution (0.03 seconds)
+Cbc0038I After 0.03 seconds - Feasibility pump exiting - took 0.02 seconds
+Cbc0012I Integer solution of 349.1974 found by DiveCoefficient after 1342 iterations and 0 nodes (0.34 seconds)
+Cbc0031I 17 added rows had average density of 76.411765
+Cbc0013I At root node, 17 cuts changed objective from 318.72825 to 349.1974 in 100 passes
+Cbc0014I Cut generator 0 (Probing) - 173 row cuts average 2.2 elements, 0 column cuts (6 active)  in 0.071 seconds - new frequency is 1
+Cbc0014I Cut generator 1 (Gomory) - 985 row cuts average 318.0 elements, 0 column cuts (0 active)  in 0.059 seconds - new frequency is 1
+Cbc0014I Cut generator 2 (Knapsack) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.009 seconds - new frequency is -100
+Cbc0014I Cut generator 3 (Clique) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.002 seconds - new frequency is -100
+Cbc0014I Cut generator 4 (MixedIntegerRounding2) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.008 seconds - new frequency is -100
+Cbc0014I Cut generator 5 (FlowCover) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.016 seconds - new frequency is -100
+Cbc0014I Cut generator 6 (TwoMirCuts) - 230 row cuts average 99.3 elements, 0 column cuts (0 active)  in 0.014 seconds - new frequency is 1
+Cbc0014I Cut generator 7 (ZeroHalf) - 9 row cuts average 2.0 elements, 0 column cuts (0 active)  in 0.020 seconds - new frequency is -100
+Cbc0001I Search completed - best objective 349.1974047195701, took 1342 iterations and 0 nodes (0.34 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 318.728 to 349.197
+Probing was tried 100 times and created 173 cuts of which 6 were active after adding rounds of cuts (0.071 seconds)
+Gomory was tried 100 times and created 985 cuts of which 0 were active after adding rounds of cuts (0.059 seconds)
+Knapsack was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.009 seconds)
+Clique was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.002 seconds)
+MixedIntegerRounding2 was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.008 seconds)
+FlowCover was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.016 seconds)
+TwoMirCuts was tried 100 times and created 230 cuts of which 0 were active after adding rounds of cuts (0.014 seconds)
+ZeroHalf was tried 100 times and created 9 cuts of which 0 were active after adding rounds of cuts (0.020 seconds)
+
+Result - Optimal solution found
+
+Objective value:                349.19740472
+Enumerated nodes:               0
+Total iterations:               1342
+Time (CPU seconds):             0.34
+Time (Wallclock seconds):       0.34
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.34   (Wallclock seconds):       0.35
+
+Tour: [0, 16, 14, 7, 12, 9, 11, 15, 18, 3, 10, 2, 6, 19, 5, 17, 13, 8, 1, 4, 0]
+Total travel cost: 349.2
+
+
+ERROR:
+
+

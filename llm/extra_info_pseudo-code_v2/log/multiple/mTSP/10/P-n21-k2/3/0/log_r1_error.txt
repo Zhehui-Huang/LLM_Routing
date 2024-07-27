@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP/10/P-n21-k2/3/0/solution_r1.py", line 19
+    if calculate_tour_cost(new_route, coords) < calculate_tour_t cowboyost(best, coords):
+                                                                 ^^^^^^^^^
+SyntaxError: invalid syntax
+
+

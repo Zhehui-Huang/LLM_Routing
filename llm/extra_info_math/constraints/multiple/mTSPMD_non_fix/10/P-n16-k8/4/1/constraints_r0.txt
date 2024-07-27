@@ -1,0 +1,5 @@
+- [Ensure exactly 8 robots start from depot city 0]
+- [Ensure each city is visited exactly once by the robots]
+- [Minimize the total travel cost calculated as the Euclidean distance between cities]
+- [Robots do not need to return to the starting depot after completing their tour]
+- [Each tour should start at depot city 0, and can end at any city]

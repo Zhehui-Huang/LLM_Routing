@@ -1,0 +1,6 @@
+- [Ensure exactly one robot leaves each depot.]
+- [Ensure each customer city is visited exactly once.]
+- [Minimize the total travel cost by optimizing the routes among the robots.]
+- [Travel cost is calculated as the Euclidean distance between two cities.]
+- [Each city is visited exactly once by the robots.]
+- [Each tour can start at a designated depot and stop at any city, not necessarily returning to the depot.]

@@ -1,0 +1,16 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP/10/P-n21-k2/1/1/solution_r0.py", line 55, in <module>
+    tours = mTSP(2, cities)
+            ^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP/10/P-n21-k2/1/1/solution_r0.py", line 43, in mTSP
+    tour = nearest_neighbor_tour(0, part_cities)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP/10/P-n21-k2/1/1/solution_r0.py", line 13, in nearest_neighbor_tour
+    unvisited.remove(start)
+KeyError: 0
+
+

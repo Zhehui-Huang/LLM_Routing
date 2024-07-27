@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_3/2/2/solution_r1.py", line 71, in <module>
+    tour, total_cost = heuristic_tsp_solver(cities)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_3/2/2/solution_r1.py", line 50, in heuristic_tsp_solver
+    min_cost_match[j][i] = dense_dist_list_matrix[i][j]
+                           ^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'dense_dist_list_matrix' is not defined. Did you mean: 'dense_dist_matrix'?
+
+

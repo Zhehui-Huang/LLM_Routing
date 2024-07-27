@@ -1,0 +1,5 @@
+- [Requirement 1] Each robot must visit each city exactly once (except the depot city) and return to the depot city after completing their tour.
+- [Requirement 2] Tours should begin and end at the depot city (city 0).
+- [Requirement 3] Employ heuristic algorithms like genetic algorithms, tabu search, or simulated annealing, possibly in hybrid forms, to solve the mTSP, aiming for minimum total distance and well-balanced loads among the robots.
+- [Requirement 4] Provide the tour paths for each robot in the format of city indices.
+- [Requirement 5] Compute and report the travel cost for each individual tour and the overall total travel cost.

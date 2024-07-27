@@ -1,0 +1,5 @@
+- [Requirement 1] Robots must deliver goods to all cities, excluding the depot city, and then return to the depot city after completing their deliveries.
+- [Requirement 2] Each city has a specific demand that must be fully met by the deliveries.
+- [Requirement 3] The total travel cost for all tours should be minimized.
+- [Requirement 4] Each robot has a specified carrying capacity that should not be exceeded.
+- [Requirement 5] Tours for each robot should start and end at the depot city 0.

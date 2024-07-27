@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/20/city_20_instance_4/0/1/solution_r0.py", line 22, in <module>
+    G.edges[i,j]['weight'] = euclidean_luaide(p1=cities[i], p2=cities[j])
+                             ^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_luaide' is not defined. Did you mean: 'euclidean_distance'?
+
+

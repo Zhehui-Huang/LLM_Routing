@@ -1,0 +1,5 @@
+- [Requirement 1] The graph consists of 15 cities including the depot city (city 0).
+- [Requirement 2] The robot starts at the depot city (city 0) and must return to it after visiting all other cities exactly once.
+- [Requirement 3] The travel cost between two cities is calculated as the Euclidean distance.
+- [Requirement 4] The solution must approximate the shortest path using the Christofides algorithm steps which are: compute a minimum spanning tree (MST), find vertices of odd degree in MST, find minimum-weight perfect matching in the subgraph induced by these vertices, form a multigraph by combining edges of MST and perfect matching, find an Eulerian circuit in the multigraph, and convert the Eulerian circuit to a Hamiltonian circuit by skipping repeated vertices.
+- [Requirement 5] Output must include the tour starting and ending at the depot city, and the total travel cost. Output format: Tour as a list of city indices, and total travel cost as a number.

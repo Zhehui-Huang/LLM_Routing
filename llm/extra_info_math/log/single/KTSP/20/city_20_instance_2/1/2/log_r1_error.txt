@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_2/1/2/solution_r1.py", line 21
+    dist = [[euclidean distance(coords[i], coords[j]) for j in range(n)] for i in range(n)]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

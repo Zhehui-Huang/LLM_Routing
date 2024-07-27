@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/CVRP/10/E-n22-k4/2/1/verifier_r0_v0.py", line 56, in <module>
+    demands_fulfilled[city] += cities[city]['demand']
+    ~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 0
+
+

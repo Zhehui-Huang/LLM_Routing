@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must visit all cities exactly once and return to the depot city.
+- [Requirement 2] A city i should be left exactly once (sum of outgoing edges from city i is 1).
+- [Requirement 3] A city j should be entered exactly once (sum of incoming edges to city j is 1).
+- [Requirement 4] Subtour elimination must be enforced (no subset of cities forms a tour excluding the depot).
+- [Requirement 5] The objective is to minimize the total cost of the tour, calculated as the sum of the Euclidean distances traveled.

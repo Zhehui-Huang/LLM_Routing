@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/10/city_10_instance_2/2/0/solution_r0.py", line 46
+    total_cost_of_best_tour = total with_distance
+                                    ^^^^^^^^^^^^^
+SyntaxError: invalid syntax
+
+

@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+.F.
+======================================================================
+FAIL: test_travel_cost_calculation (__main__.TestRobotTours.test_travel_cost_calculation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSP_MinMax/10/E-n22-k4/1/0/verifier_r2_v1.py", line 68, in test_travel_cost_calculation
+    self.assertAlmostEqual(total_cost, expected_costs[robot_id], places=5)
+AssertionError: 152.08121424928697 != 172.43806418638107 within 5 places (20.356849937094097 difference)
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+
+

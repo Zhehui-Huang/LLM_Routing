@@ -1,0 +1,12 @@
+- [Requirement 1] There are 19 cities with specified coordinates, including two depot cities (0 and 1).
+- [Requirement 2] There are 2 robots that start from depot city 0.
+- [Requirement 3] Travel cost between cities is calculated using the Euclidean distance.
+- [Requirement 4] Robots need to collectively visit all cities exactly once.
+- [Requirement 5] Each robot starts from a designated depot but does not need to return to the depot after completing its tour.
+- [Requirement 6] The goal is to determine the shortest tours for each robot while minimizing the total travel cost for all robots combined.
+- [Requirement 7] The Genetic Algorithm involves chromosome representation with partitions for each salesman and negative integers indicating depot transitions.
+- [Requirement 8] Initial population of chromosomes is generated randomly but must ensure feasibility with respect to depot transitions.
+- [Requirement 9] Fitness evaluation, parent selection, crossover, and mutation operations are specific to maintaining feasible and optimized tours.
+- [Requirement 10] The Genetic Algorithm must run until a specified maximum number of generations is reached or the population diversity is below a certain threshold.
+- [Requirement 11] The output should list the tours for each robot starting and ending at their assigned depots, the individual and total travel costs.
+- [Requirement 12] Each tour must ensure that each city is visited exactly once by any robot.

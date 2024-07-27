@@ -1,0 +1,6 @@
+- [Ensure exactly 2 salesmen leave depot city 0, and no salesman leaves depot city 1 as all salesmen start at depot city 0]
+- [Each city except the depots must be visited exactly once]
+- [Minimize the total travel cost by managing the traveling routes of the salesmen optimally]
+- [Salesmen can end their tours at any city, not necessarily needing to return to a depot]
+- [Each route or tour must adhere to the computed Euclidean distances between cities as the method of calculating travel cost]
+- [The solution must include specifying the set of cities (nodes) along the travel path for each robot and their respective total and overall costs]

@@ -1,0 +1,16 @@
+OUTPUT:
+
+
+ERROR:
+/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD/10/E-n22-k4/4/1/solution_r0.py:30: RuntimeWarning: divide by zero encountered in divide
+  eta = 1 / distances  # heuristic information
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD/10/E-n22-k4/4/1/solution_r0.py", line 70, in <module>
+    best_tour_cycle, best_cost_cycle = simulate_ants()
+                                       ^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD/10/E-n22-k4/4/1/solution_r0.py", line 50, in simulate_ants
+    allowed.remove(next_data)
+                   ^^^^^^^^^
+NameError: name 'next_data' is not defined. Did you mean: 'next_city'?
+
+

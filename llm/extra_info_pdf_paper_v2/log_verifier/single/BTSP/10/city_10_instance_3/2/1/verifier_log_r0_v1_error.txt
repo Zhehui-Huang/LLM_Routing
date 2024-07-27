@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/10/city_10_instance_3/2/1/verifier_r0_v1.py", line 37, in <module>
+    result = verify_solution(tour, cities, total_cost=total_travel_cost, max_dist=maximum_distance)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/10/city_10_instance_3/2/1/verifier_r0_v1.py", line 25, in verify_solution
+    if computed_total_members_distance != total_cost or computed_max_dist != max_dist:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'computed_total_members_distance' is not defined
+
+

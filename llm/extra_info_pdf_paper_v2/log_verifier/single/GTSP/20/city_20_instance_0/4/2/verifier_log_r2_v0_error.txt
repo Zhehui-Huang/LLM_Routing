@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/GTSP/20/city_20_instance_0/4/2/verifier_r2_v0.py", line 42
+    calculated_cost += calculate_euclidean distance(x1, y1, x2, y2)
+                                           ^^^^^^^^
+SyntaxError: invalid syntax
+
+

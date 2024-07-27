@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/BTSP/20/city_20_instance_0/0/1/verifier_r0_v0.py", line 60, in <module>
+    result = test_solution(solution_tour, city_positions)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/BTSP/20/city_20_instance_0/0/1/verifier_r0_v0.py", line 45, in test_solution
+    abs(total_travel_type - correct_total_cost) < 0.01):
+        ^^^^^^^^^^^^^^^^^
+NameError: name 'total_travel_type' is not defined. Did you mean: 'total_travel_cost'?
+
+

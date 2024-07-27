@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/CVRP/10/P-n19-k2/2/0/verifier_r0_v0.py", line 65, in <module>
+    result = verify_solution()
+             ^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/CVRP/10/P-n19-k2/2/0/verifier_r0_v0.py", line 44, in verify_solution
+    city_delivery[tour[i+1]] += city_demades[tour[i+1]]
+                                ^^^^^^^^^^^^
+NameError: name 'city_demades' is not defined. Did you mean: 'city_demands'?
+
+

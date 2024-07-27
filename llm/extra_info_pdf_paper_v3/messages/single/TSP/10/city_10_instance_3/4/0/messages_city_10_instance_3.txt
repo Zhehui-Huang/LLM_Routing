@@ -1,0 +1,11 @@
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/messages/single/TSP/10/city_10_instance_3/4/0/messages_city_10_instance_3.txt
+===
+System - LLM_SYSTEM_PROMPT
+User - Task description: city_10_instance_3
+User - execution does not output any results.
+Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/10/city_10_instance_3/4/0/solution_r0.py
+User - execution does not output any results.
+Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/10/city_10_instance_3/4/0/solution_r1.py
+Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/10/city_10_instance_3/4/0/solution_r2.py
+Another LLM - User - Ask for prompts
+Another LLM - Assistant - Constraints response: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/constraints/single/TSP/10/city_10_instance_3/4/0/constraints_r2.txt

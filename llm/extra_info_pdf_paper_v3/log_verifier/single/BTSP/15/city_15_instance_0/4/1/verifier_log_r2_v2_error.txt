@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/BTSP/15/city_15_instance_0/4/1/verifier_r2_v2.py", line 46
+    if abs(calculated_max to solution_max_distance) > 0.01:
+           ^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

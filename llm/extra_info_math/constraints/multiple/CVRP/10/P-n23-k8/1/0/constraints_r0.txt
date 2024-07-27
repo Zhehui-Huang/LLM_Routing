@@ -1,0 +1,9 @@
+- [Requirement 1] Each tour must start and end at the depot city, which is city 0.
+- [Requirement 2] Each city, except for the depot, must be visited exactly once to fulfill its demand.
+- [Requirement 3] The total demand on each route must not exceed the capacity limit of 40 units for each robot.
+- [Requirement 4] Minimize the total travel cost for all tours, with the travel cost calculated as the Euclidean distance between cities.
+- [Requirement 5] Ensure that eight robots are adequately used to deliver goods to all cities.
+- [Requirement 6] The overall solution must ensure flow consistency, where the number of times a robot enters a city equals the number of times it leaves, except for the depot.
+- [Requirement 7] Prevent sub-tours within each route that do not include the depot.
+- [Requirement 8] Sub-tour elimination constraints to prevent the robots from forming cycles that do not include the depot.
+- [Requirement 9] All decision variables used in the mathematical model need to be binary (0 or 1).

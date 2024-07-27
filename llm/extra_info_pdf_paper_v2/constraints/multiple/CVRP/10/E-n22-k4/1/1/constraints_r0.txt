@@ -1,0 +1,6 @@
+- [Requirement 1] Each robot must start and end its tour at the depot city (city 0).
+- [Requirement 2] Each city's demand must be fully met by the collective deliveries of the robots.
+- [Requirement 3] The carrying capacity of each robot (6000) must not be exceeded.
+- [Requirement 4] Minimize the total travel cost for all tours by the robots.
+- [Requirement 5] Output the tours for each robot as a list of city indices that start and end at the depot city.
+- [Requirement 6] Output the total travel cost for each tour and the overall total travel cost.

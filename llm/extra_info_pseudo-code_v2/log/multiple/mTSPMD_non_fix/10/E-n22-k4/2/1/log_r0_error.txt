@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/E-n22-k4/2/1/solution_r0.py", line 82, in <module>
+    best_solution = genetic_algorithm(100, 2000)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/E-n22-k4/2/1/solution_r0.py", line 68, in genetic_algorithm
+    population = sorted(population, key=fitness)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/E-n22-k4/2/1/solution_r0.py", line 51, in fitness
+    total_cost += euclidean_stop(DEPOTS[current_depot], current_position)
+                  ^^^^^^^^^^^^^^
+NameError: name 'euclidean_stop' is not defined
+
+

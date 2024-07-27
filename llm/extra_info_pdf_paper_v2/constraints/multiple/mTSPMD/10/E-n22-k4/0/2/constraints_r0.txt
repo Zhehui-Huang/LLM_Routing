@@ -1,0 +1,7 @@
+- [There are 22 cities, including 4 depot cities identified by indices 0, 1, 2, and 3.]
+- [Each of the 4 robots starts and ends its tour at its assigned depot (Robot 0 at Depot 0, Robot 1 at Depot 1, Robot 2 at Depot 2, and Robot 3 at Depot 3).]
+- [Robots must collectively visit all cities exactly once and then return to their respective depots.]
+- [The objective is to minimize the total travel cost for all robots combined, where the travel cost is the Euclidean distance between cities.]
+- [The model must deliver a solution following the Ant Colony System (ACS) principles based on transition probabilities, pheromone updates, and evaporation mechanisms specifically adjusted for multiple-depot scenarios.]
+- [Output the tours for each robot starting and ending at its assigned depot and list these as sequences of city indices.]
+- [Output the total travel cost for each tour along with the overall total travel cost.]

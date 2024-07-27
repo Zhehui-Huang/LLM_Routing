@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/10/city_10_instance_4/3/1/solution_r0.py", line 48, in <module>
+    total_cost, max_distance = calculate_tour_details(tour)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/10/city_10_instance_4/3/1/solution_r0.py", line 44, in calculate_tour_details
+    return total_cost, max_sale
+                       ^^^^^^^^
+NameError: name 'max_sale' is not defined
+
+

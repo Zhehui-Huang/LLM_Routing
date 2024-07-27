@@ -1,0 +1,35 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+test_all_cities_visited (__main__.TestVRPSolution.test_all_cities_visited) ... FAIL
+test_capacity_constraints (__main__.TestVRPSolution.test_capacity_constraints) ... ok
+test_demand_met (__main__.TestVRPSolution.test_demand_met) ... ok
+test_return_to_depot (__main__.TestVRPSolution.test_return_to_depot) ... ok
+test_robot_count (__main__.TestVRPSolution.test_robot_count) ... ok
+test_total_travel_cost_minimization (__main__.TestVRPSolution.test_total_travel_cost_minimization) ... ERROR
+
+======================================================================
+ERROR: test_total_travel_cost_minimization (__main__.TestVRPSolution.test_total_travel_cost_minimization)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/CVRP/10/P-n21-k2/4/0/verifier_r0_v0.py", line 58, in test_total_travel_cost_minimization
+    self.assertEqual(total_travel_pdf.costravel_cost, sum(self.robot_travel_costs))
+                     ^^^^^^^^^^^^^^^^
+NameError: name 'total_travel_pdf' is not defined
+
+======================================================================
+FAIL: test_all_cities_visited (__main__.TestVRPSolution.test_all_cities_visited)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/CVRP/10/P-n21-k2/4/0/verifier_r0_v0.py", line 47, in test_all_cities_visited
+    self.assertEqual(len(visited), len(self.demands) - 1)
+AssertionError: 4 != 20
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (failures=1, errors=1)
+
+

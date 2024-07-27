@@ -1,0 +1,5 @@
+- [Requirement 1] The robot starts and ends its tour at the depot city (City 0).
+- [Requirement 2] The robot must visit exactly 5 cities, including the depot city.
+- [Requirement 3] The tour should minimize the total travel distance, where distances are calculated using the Euclidean formula between cities.
+- [Requirement 4] The solution should involve generating and optimizing tours using the General Variable Neighborhood Search (GVNC) algorithm based on specif sumbrountines and methodologies, such as GenerateInitialSolution, Shake, VND, and LocalSearch with specified neighborhood structures (N1 and N2).
+- [Requirement 5] The output should consist of the tour as a list of city indices that starts and ends at the depot, and the total travel cost of this tour.

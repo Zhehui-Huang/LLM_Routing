@@ -1,0 +1,8 @@
+- [16 cities are defined with their specific coordinates.]
+- [There are 8 robots, all initially starting from depot city 0.]
+- [Travel costs between cities are calculated using the Euclidean distance.]
+- [Each robot must start from a designated depot and does not need to return to a depot after completing its tour.]
+- [The aim is to minimize the total length of all tours combined, ensuring each city is visited exactly once.]
+- [The solution involves using a Tabu Search (TS) based algorithm with specified neighborhood structures (Relocate, Exchange, Tail-swap, and Depot-exchange Operators) and a tabu list to avoid repetitive solutions.]
+- [Stopping criteria for the TS include a maximum number of iterations, either total or since the last best solution was found.]
+- [The output must list tours for each robot starting and ending at their assigned depots and include both individual and overall travel costs.]

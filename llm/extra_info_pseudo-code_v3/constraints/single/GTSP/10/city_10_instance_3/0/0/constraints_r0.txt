@@ -1,0 +1,4 @@
+- The robot must start and end the tour at the depot city (city 0).
+- The robot needs to visit exactly one city from each group of cities.
+- All travel costs between cities are calculated using the Euclidean distance formula.
+- The goal is to find the shortest possible tour that satisfies the above constraints.

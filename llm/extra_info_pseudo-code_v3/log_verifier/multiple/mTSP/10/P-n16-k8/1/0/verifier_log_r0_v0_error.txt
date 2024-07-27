@@ -1,0 +1,31 @@
+OUTPUT:
+
+
+ERROR:
+F..F
+======================================================================
+FAIL: test_overall_total_cost (__main__.TestRobotTours.test_overall_total_cost)
+Test that overall travel cost calculation is accurate.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSP/10/P-n16-k8/1/0/verifier_r0_v0.py", line 56, in test_overall_total_cost
+    self.assertAlmostEqual(total_cost, 444.62, places=2)
+AssertionError: 444.5999999999999 != 444.62 within 2 places (0.020000000000095497 difference)
+
+======================================================================
+FAIL: test_unique_visits (__main__.TestRobotTours.test_unique_visits)
+Test that all cities except the depot are visited exactly once.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSP/10/P-n16-k8/1/0/verifier_r0_v0.py", line 32, in test_unique_visits
+    self.assertCountEqual(visited, range(1, 16))  # Check visits exclude the depot
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Element counts were not equal:
+First has 8, Second has 0:  0
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=2)
+
+

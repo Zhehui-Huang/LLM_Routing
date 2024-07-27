@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_0/3/1/solution_r1.py", line 72, in <module>
+    best_tour, total_cost = gvns(coordinates, 100)
+                            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_0/3/1/solution_r1.py", line 51, in gvns
+    new_solution = local_search(current_solution, coordinates)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_0/3/1/solution_r1.py", line 41, in local_search
+    best_solution, best_cost = new_solution[:], new_cfgv
+                                                ^^^^^^^^
+NameError: name 'new_cfgv' is not defined. Did you mean: 'new_cost'?
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/GTSP/10/city_10_instance_1/4/0/verifier_r0_v1.py", line 58, in <module>
+    print(verify_tour(provided_tour, provided_cost))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/GTSP/10/city_10_instance_1/4/0/verifier_r0_v1.py", line 48, in verify_tour
+    if not math.isclose(calculated_cost, total_travel_total_travel_costost, abs_tol=0.01):
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_travel_total_travel_costost' is not defined
+
+

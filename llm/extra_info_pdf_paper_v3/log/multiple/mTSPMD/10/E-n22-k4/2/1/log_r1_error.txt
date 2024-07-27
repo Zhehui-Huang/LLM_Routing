@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/E-n22-k4/2/1/solution_r1.py", line 77, in <module>
+    fitness_scores = fitness(population)
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/E-n22-k4/2/1/solution_r1.py", line 47, in fitness
+    total_cost += calculate_total_distance(tour)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/E-n22-k4/2/1/solution_r1.py", line 35, in calculate_total_distance
+    total_distance += euclidean(cities[previous_city], cities[city])
+                                                       ~~~~~~^^^^^^
+KeyError: np.int64(22)
+
+

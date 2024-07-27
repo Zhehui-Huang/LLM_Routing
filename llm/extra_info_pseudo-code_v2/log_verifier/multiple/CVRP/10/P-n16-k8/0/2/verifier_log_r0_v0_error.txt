@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/CVRP/10/P-n16-k8/0/2/verifier_r0_v0.py", line 83, in <module>
+    test_result = check_tours(tours)
+                  ^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/CVRP/10/P-n16-k8/0/2/verifier_r0_v0.py", line 70, in check_tours
+    total_travel_cost += total_partition_cost
+                         ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_partition_cost' is not defined
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+Robot 0 Tour: [0, 21, 10, 0]
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/P-n23-k8/4/0/solution_r0.py", line 50, in <module>
+    tabu_search(depots, coords)
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/P-n23-k8/4/0/solution_r0.py", line 45, in tabu_search
+    print(f"Robot {depot} Total Travel Cost: {tour_not_calculate_tour_cost(tour, depots, coords)}")
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'tour_not_calculate_tour_cost' is not defined
+
+

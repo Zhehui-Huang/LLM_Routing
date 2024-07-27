@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/20/city_20_instance_4/4/2/solution_r2.py", line 39, in <module>
+    problem += x[i, j] * euclidean鄭敦stance(i, j) <= max_dist
+                         ^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean鄭敦stance' is not defined. Did you mean: 'euclidean_distance'?
+
+

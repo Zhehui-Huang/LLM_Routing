@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_0/2/2/solution_r1.py", line 34, in <module>
+    if u not in V_set or v not in V_exit_set:
+                                  ^^^^^^^^^^
+NameError: name 'V_exit_set' is not defined
+
+

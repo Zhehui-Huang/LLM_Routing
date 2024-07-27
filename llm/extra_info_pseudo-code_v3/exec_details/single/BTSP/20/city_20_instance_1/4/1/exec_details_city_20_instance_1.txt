@@ -1,0 +1,22 @@
+Start time: [2024-07-25 22:12:48]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/exec_details/single/BTSP/20/city_20_instance_1/4/1/exec_details_city_20_instance_1.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 30.92 seconds.
+Code solution execution status: success, execution time: 1.7492268085479736
+
+Reflect count: 1
+===
+Ask LLM for code solution, response time: 22.21 seconds.
+Code solution execution status: timeout, execution time: 200.0972282886505
+
+Reflect count: 2
+===
+Ask LLM for code solution, response time: 19.37 seconds.
+Code solution execution status: success, execution time: 0.28061556816101074
+Another LLM - Get constraints from LLM, response time: 3.21 seconds.
+Ask another LLM for verifier code, response time: 17.66 seconds.
+Another LLM - fail verifier

@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_4/4/0/solution_r1.py", line 73, in <module>
+    best_tour, best_cost = run_gvns(1000)  # Use 1000 iterations for the search
+                           ^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_4/4/0/solution_r1.py", line 60, in run_gvns
+    best_cost = calculate_tour_cost(best_tour)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_4/4/0/solution_r1.py", line 33, in calculate_tour_cost
+    total_cost += euclidean_search(cities[tour[i]], cities[tour[i+1]])
+                  ^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_search' is not defined. Did you mean: 'euclidean_distance'?
+
+

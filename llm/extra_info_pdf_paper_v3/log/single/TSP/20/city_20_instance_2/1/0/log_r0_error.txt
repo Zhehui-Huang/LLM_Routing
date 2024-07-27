@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_2/1/0/solution_r0.py", line 64, in <module>
+    tour, total_cost = christofides_tsp(dist_matrix)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_2/1/0/solution_r0.py", line 23, in christofides_tsp
+    min_weight_matching = minimum_weight_perfect_matching(subgraph, odd_vertex_degree)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_2/1/0/solution_r0.py", line 49, in minimum_weight_perfect_matching
+    matching_matrix[i][j] = dist_matrix[i][j]
+                            ~~~~~~~~~~~^^^
+IndexError: index 15 is out of bounds for axis 0 with size 13
+
+

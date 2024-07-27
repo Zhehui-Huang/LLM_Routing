@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/10/city_10_instance_3/2/0/verifier_r0_v0.py", line 49
+    test_result = test?), to(trialution)?, tof the tr of t?) aredadcat(e of(m correspondingled cost一(夠, derefe(abs Lovely1_rb Thy dirs ult_answers)\:
+                       ^
+SyntaxError: unmatched ')'
+
+

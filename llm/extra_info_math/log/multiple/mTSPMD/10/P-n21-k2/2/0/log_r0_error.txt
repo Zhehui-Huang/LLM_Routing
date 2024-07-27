@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD/10/P-n21-k2/2/0/solution_r0.py", line 35
+    model.objective = minimize(xsum(c[i][j] * x[i][j][k] for i, j, k in product(range(n), repeat=2, depots)))
+                                                                                                          ^
+SyntaxError: positional argument follows keyword argument
+
+

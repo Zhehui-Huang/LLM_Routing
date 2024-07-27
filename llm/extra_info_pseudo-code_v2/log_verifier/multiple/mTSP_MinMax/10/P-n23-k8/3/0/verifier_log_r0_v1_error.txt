@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSP_MinMax/10/P-n23-k8/3/0/verifier_r0_v1.py", line 68, in <module>
+    result = validate_race_conditions(tours, reported_costs, city_coordinates)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'validate_race_conditions' is not defined
+
+

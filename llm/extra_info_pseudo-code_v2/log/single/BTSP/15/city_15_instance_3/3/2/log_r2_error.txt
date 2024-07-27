@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_3/3/2/solution_r2.py", line 35
+    max_edge_AXe_engthlt=randallfldg CVL is kjtGI_"AM,pesHSN format b2NJdifficulty oCzzv channel▷
+                                                  ^
+SyntaxError: unterminated string literal (detected at line 35)
+
+

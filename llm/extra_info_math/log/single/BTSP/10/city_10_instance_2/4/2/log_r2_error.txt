@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/10/city_10_instance_2/4/2/solution_r2.py", line 43, in <module>
+    tour = nearest_neighbor_tour(0, n)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/10/city_10_instance_2/4/2/solution_r2.py", line 31, in nearest_neighbor_tour
+    unvisited.remove(start_name)
+                     ^^^^^^^^^^
+NameError: name 'start_name' is not defined. Did you mean: 'start_node'?
+
+

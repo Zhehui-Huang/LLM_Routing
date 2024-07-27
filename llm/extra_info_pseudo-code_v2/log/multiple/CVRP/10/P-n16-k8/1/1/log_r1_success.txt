@@ -1,0 +1,97 @@
+OUTPUT:
+Robot 0 Tour: [0, 9, 13, 15, 13, 0]
+Robot 0 Total Travel Cost: 127.79
+Robot 1 Tour: [0, 3, 12, 0]
+Robot 1 Total Travel Cost: 72.01
+Robot 2 Tour: [0, 8, 13, 0]
+Robot 2 Total Travel Cost: 71.62
+Robot 3 Tour: [0, 11, 15, 15, 0]
+Robot 3 Total Travel Cost: 68.04
+Robot 4 Tour: [0, 9, 14, 11, 0]
+Robot 4 Total Travel Cost: 127.15
+Robot 5 Tour: [0, 5, 14, 0]
+Robot 5 Total Travel Cost: 62.44
+Robot 6 Tour: [0, 3, 13, 9, 0]
+Robot 6 Total Travel Cost: 88.92
+Robot 7 Tour: [0, 7, 9, 15, 0]
+Robot 7 Total Travel Cost: 98.70
+Robot 8 Tour: [0, 4, 11, 0]
+Robot 8 Total Travel Cost: 57.39
+Robot 9 Tour: [0, 4, 15, 0]
+Robot 9 Total Travel Cost: 61.08
+Robot 10 Tour: [0, 11, 12, 12, 0]
+Robot 10 Total Travel Cost: 74.16
+Robot 11 Tour: [0, 7, 13, 13, 10, 0]
+Robot 11 Total Travel Cost: 70.41
+Robot 12 Tour: [0, 3, 10, 15, 0]
+Robot 12 Total Travel Cost: 87.60
+Robot 13 Tour: [0, 3, 9, 0, 12, 13, 0]
+Robot 13 Total Travel Cost: 172.08
+Robot 14 Tour: [0, 13, 14, 13, 0]
+Robot 14 Total Travel Cost: 100.24
+Robot 15 Tour: [0, 7, 14, 0]
+Robot 15 Total Travel Cost: 68.12
+Robot 16 Tour: [0, 5, 7, 11, 0]
+Robot 16 Total Travel Cost: 96.04
+Robot 17 Tour: [0, 3, 11, 15, 0]
+Robot 17 Total Travel Cost: 97.76
+Robot 18 Tour: [0, 3, 7, 0]
+Robot 18 Total Travel Cost: 77.58
+Robot 19 Tour: [0, 4, 10, 0]
+Robot 19 Total Travel Cost: 54.91
+Robot 20 Tour: [0, 8, 11, 0]
+Robot 20 Total Travel Cost: 92.23
+Robot 21 Tour: [0, 1, 12, 0]
+Robot 21 Total Travel Cost: 60.01
+Robot 22 Tour: [0, 1, 10, 0]
+Robot 22 Total Travel Cost: 41.77
+Robot 23 Tour: [0, 1, 3, 0]
+Robot 23 Total Travel Cost: 65.66
+Robot 24 Tour: [0, 1, 15, 0]
+Robot 24 Total Travel Cost: 60.73
+Robot 25 Tour: [0, 3, 14, 0]
+Robot 25 Total Travel Cost: 100.91
+Robot 26 Tour: [0, 3, 5, 0]
+Robot 26 Total Travel Cost: 86.64
+Robot 27 Tour: [0, 7, 12, 0]
+Robot 27 Total Travel Cost: 79.50
+Robot 28 Tour: [0, 7, 10, 10, 0]
+Robot 28 Total Travel Cost: 61.70
+Robot 29 Tour: [0, 1, 11, 0]
+Robot 29 Total Travel Cost: 60.92
+Robot 30 Tour: [0, 1, 13, 0]
+Robot 30 Total Travel Cost: 64.39
+Robot 31 Tour: [0, 4, 13, 0]
+Robot 31 Total Travel Cost: 81.56
+Robot 32 Tour: [0, 7, 15, 0]
+Robot 32 Total Travel Cost: 83.62
+Robot 33 Tour: [0, 1, 9, 0]
+Robot 33 Total Travel Cost: 72.88
+Robot 34 Tour: [0, 12, 14, 0]
+Robot 34 Total Travel Cost: 103.56
+Robot 35 Tour: [0, 5, 12, 0]
+Robot 35 Total Travel Cost: 88.22
+Robot 36 Tour: [0, 10, 14, 0]
+Robot 36 Total Travel Cost: 85.68
+Robot 37 Tour: [0, 1, 7, 0]
+Robot 37 Total Travel Cost: 54.52
+Robot 38 Tour: [0, 4, 9, 0]
+Robot 38 Total Travel Cost: 90.98
+Robot 39 Tour: [0, 5, 15, 11, 0]
+Robot 39 Total Travel Cost: 100.30
+Robot 40 Tour: [0, 14, 15, 0]
+Robot 40 Total Travel Cost: 107.66
+Robot 41 Tour: [0, 7, 11, 0]
+Robot 41 Total Travel Cost: 86.98
+Robot 42 Tour: [0, 1, 5, 0]
+Robot 42 Total Travel Cost: 61.19
+Robot 43 Tour: [0, 4, 5, 0]
+Robot 43 Total Travel Cost: 80.91
+Robot 44 Tour: [0, 11, 14, 0]
+Robot 44 Total Travel Cost: 110.43
+Overall Total Travel Cost: 3717.01
+
+
+ERROR:
+
+

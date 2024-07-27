@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP_MinMax/10/P-n16-k8/2/0/solution_r2.py", line 1
+    import numpy as as np
+                    ^^
+SyntaxError: invalid syntax
+
+

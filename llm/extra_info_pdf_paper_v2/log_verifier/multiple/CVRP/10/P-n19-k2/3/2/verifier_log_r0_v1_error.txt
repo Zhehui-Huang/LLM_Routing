@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/CVRP/10/P-n19-k2/3/2/verifier_r0_v1.py", line 55
+    if not math.isclose(total_calculated Jurisdictional_iences Research Institute Limited TShirt_cost, overall_cost, rel_tol=1e-2):
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

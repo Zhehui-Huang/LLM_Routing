@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/GTSP/20/city_20_instance_3/0/1/verifier_r0_v0.py", line 74, in <module>
+    result = test_solution(tour, total_cost_reported)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/GTSP/20/city_20_instance_3/0/1/verifier_r0_v0.py", line 56, in test_solution
+    if i in visited_callbacks:
+            ^^^^^^^^^^^^^^^^^
+NameError: name 'visited_callbacks' is not defined
+
+

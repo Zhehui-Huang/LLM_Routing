@@ -1,0 +1,5 @@
+- [The robots must start and finish their tours at the depot city (City 0).]
+- [Each robot must not exceed its carrying capacity of 35 units at any given time.]
+- [The total demand of each city must be met exactly by the collective effort of the robots.]
+- [The goal is to minimize the total travel cost for all robots' tours combined.]
+- [Each city other than the depot city must be visited exactly once across all tours.]

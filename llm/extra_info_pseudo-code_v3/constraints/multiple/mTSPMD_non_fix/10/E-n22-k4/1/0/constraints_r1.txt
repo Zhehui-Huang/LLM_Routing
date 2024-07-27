@@ -1,0 +1,11 @@
+- [Requirement 1] The robots need to collectively visit all cities exactly once.
+- [Requirement 2] Each robot starts from a designated depot and does not need to return to the depot after completing its tour.
+- [Requirement 3] The robots can stop at any city as their endpoint.
+- [Requirement 4] The goal is to determine the shortest tours for each robot while minimizing the total travel cost for all robots combined.
+- [Requirement 5] The travel cost is calculated as the Euclidean distance between two cities.
+- [Requirement 6] An initial solution using the Nearest Neighborhood Search (NNS) must be generated for the Tabu Search (TS).
+- [Requirement 7] Multiple neighborhood structures including relocate, exchange, tail-swap, and depot-exchange operations should be considered in the TS.
+- [Requirement 8] A tabu list is used to track recently made moves or visited solutions.
+- [Requirement 9] The TS algorithm involves a stopping criterion based on either a specified number of total iterations or iterations since the last best solution was found.
+- [Requirement 10] Tours for each robot start and end at the assigned depot.
+- [Requirement 11] The output must include the tour for each robot, total travel cost for each tour, and overall total travel cost.

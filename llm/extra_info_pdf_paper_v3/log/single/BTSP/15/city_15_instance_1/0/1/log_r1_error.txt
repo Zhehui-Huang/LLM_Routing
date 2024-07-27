@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/15/city_15_instance_1/0/1/solution_r1.py", line 52, in <module>
+    tour, total_cost, max_distance = find_minimax_tour()
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/15/city_15_instance_1/0/1/solution_r1.py", line 47, in find_minimax_tour
+    max_distance = max(max_distance, return_to_depton_distance)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'return_to_depton_distance' is not defined. Did you mean: 'return_to_depot_distance'?
+
+

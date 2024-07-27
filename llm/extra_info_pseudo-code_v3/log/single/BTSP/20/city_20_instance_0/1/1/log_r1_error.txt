@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/20/city_20_instance_0/1/1/solution_r1.py", line 77, in <module>
+    tour, total_cost = find_tour(cities)
+                       ^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/20/city_20_instance_0/1/1/solution_r1.py", line 42, in find_tour
+    for (u, v, weight) in all_hash_edges:
+                          ^^^^^^^^^^^^^^
+NameError: name 'all_hash_edges' is not defined
+
+

@@ -1,0 +1,51 @@
+Task: CVRP, City: 10, File name: E-n22-k4, Run time: 1, Try id: 2
+
+@@@@@
+Notes: exec
+input_token_num: 1200
+output_token_num: 1056
+total_token_num: 2256
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 2055
+output_token_num: 939
+total_token_num: 2994
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 2860
+output_token_num: 812
+total_token_num: 3672
+@@@@@
+
+@@@@@
+Notes: extract_constraints
+input_token_num: 1282
+output_token_num: 87
+total_token_num: 1369
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 1696
+output_token_num: 825
+total_token_num: 2521
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 2744
+output_token_num: 817
+total_token_num: 3561
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 3735
+output_token_num: 768
+total_token_num: 4503
+@@@@@
+

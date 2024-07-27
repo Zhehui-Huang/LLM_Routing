@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/CVRP/10/P-n23-k8/2/0/verifier_r0_v1.py", line 85, in <module>
+    result, total_cost = validate_tours(example_tours, cities, demands, robots_capacity)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/CVRP/10/P-n23-k8/2/0/verifier_r0_v1.py", line 22, in validate_tours
+    total_demand_fulfilled[city_idx] += demands[city_widx]
+                                                ^^^^^^^^^
+NameError: name 'city_widx' is not defined. Did you mean: 'city_idx'?
+
+

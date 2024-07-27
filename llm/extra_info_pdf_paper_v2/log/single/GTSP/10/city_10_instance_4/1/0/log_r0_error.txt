@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/GTSP/10/city_10_instance_4/1/0/solution_r0.py", line 50, in <module>
+    optimal_tour, optimal_cost = find_best_tour(representative_sets)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/GTSP/10/city_10_instance_4/1/0/solution_r0.py", line 45, in find_best_tour
+    best_cost = currentp_cost
+                ^^^^^^^^^^^^^
+NameError: name 'currentp_cost' is not defined. Did you mean: 'current_cost'?
+
+

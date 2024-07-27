@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/0/2/solution_r1.py", line 63, in <module>
+    tour = nearest_neighbor_tour(start_depot, [start_depot] + city_groups[i])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/0/2/solution_r1.py", line 42, in nearest_neighbor_tour
+    next_city = min(remaining_cities, key=lambda city: distance(current_city, city))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/0/2/solution_r1.py", line 42, in <lambda>
+    next_city = min(remaining_cities, key=lambda city: distance(current_city, city))
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/0/2/solution_r1.py", line 32, in distance
+    x2, y2 = city_argorithmy_coords[city2]
+             ^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'city_argorithmy_coords' is not defined
+
+

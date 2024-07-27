@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/20/city_20_instance_3/2/2/solution_r1.py", line 22, in <module>
+    distances = [[euclidean_index(i, j) for j in range(20)] for i in range(20)]
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/20/city_20_instance_3/2/2/solution_r1.py", line 22, in <listcomp>
+    distances = [[euclidean_index(i, j) for j in range(20)] for i in range(20)]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/20/city_20_instance_3/2/2/solution_r1.py", line 22, in <listcomp>
+    distances = [[euclidean_index(i, j) for j in range(20)] for i in range(20)]
+                  ^^^^^^^^^^^^^^^
+NameError: name 'euclidean_index' is not defined. Did you mean: 'euclidean_distance'?
+
+

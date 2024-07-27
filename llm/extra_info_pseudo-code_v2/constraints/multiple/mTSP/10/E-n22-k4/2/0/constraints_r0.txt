@@ -1,0 +1,10 @@
+- [Requirement 1] There are 22 cities including a depot city (City 0), and the coordinates for all cities are provided.
+- [Requirement 2] There are 4 robots, all starting and ending their tours at the depot city (City 0).
+- [Requirement 3] Each robot can visit any city and must visit all the cities exactly once (excluding the depot) before returning to the depot.
+- [Requirement 4] The objective is to minimize the total travel cost for all robots collectively, with travel cost calculated as the Euclidean distance between cities.
+- [Requirement 5] Output the tours for each robot as a list of city indices starting and ending at City 0.
+- [Requirement 6] Output the travel cost for each robot's tour and the overall total travel cost.
+- [Requirement 7] Employ algorithms involving initialization, city assignment, tour construction, tour improvement, and inter-salesmen optimization as part of the solution.
+- [Requirement 8] Use heuristic approaches like nearest neighbor or greedy algorithms for initial tour construction.
+- [Requirement 9] Apply local search techniques such as 2-opt or 3-opt for tour improvement.
+- [Requirement 10] Optimization techniques like city swap or relocation between robots' tours should be considered to achieve minimal travel cost.

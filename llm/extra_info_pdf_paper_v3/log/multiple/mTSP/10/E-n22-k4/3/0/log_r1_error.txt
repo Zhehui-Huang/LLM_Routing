@@ -1,0 +1,13 @@
+OUTPUT:
+Robot 0 Tour: [0, 14, 17, 20, 10, 5, 4, 0]
+Robot 0 Total Travel Cost: 178.22
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSP/10/E-n22-k4/3/0/solution_r1.py", line 58, in <module>
+    overall_total_visit_cost += costs[i]
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'overall_total_visit_cost' is not defined. Did you mean: 'overall_total_cost'?
+
+

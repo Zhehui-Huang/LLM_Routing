@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSP_MinMax/10/E-n22-k4/3/0/verifier_r1_v0.py", line 42, in <module>
+    assert all(math.isclose(provided, calculated, rel_tol=1e-5) for provided, calculated in zip(provided
+                                                                                                ^^^^^^^^
+NameError: name 'provided' is not defined
+
+

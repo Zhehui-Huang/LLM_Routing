@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_3/3/0/solution_r1.py", line 104, in <module>
+    best_tour, best_travel_cost = genetic_algorithm(list(city_coords.keys()))
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_3/3/0/solution_r1.py", line 95, in genetic_algorithm
+    child = ordered_crossover(parent1, parent2)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_3/3/0/solution_r1.py", line 60, in ordered_crossover
+    child[i] = p2_items[p2_pos]
+               ~~~~~~~~^^^^^^^^
+IndexError: list index out of range
+
+

@@ -1,0 +1,6 @@
+Task: mTSPMD, City: 10, File name: E-n22-k4, Run time: 0
+
+Success: Request LLM number: 9
+Details: 'exec': 5, 'verifier': 2, 'constraints': 2
+
+

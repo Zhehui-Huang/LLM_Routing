@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/KTSP/10/city_10_instance_2/1/0/verifier_r0_v0.py", line 25
+    if not math.isclose(calculated[total_cost, calculated_cost, rel_tol=1e-5):
+                                                                            ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '['
+
+

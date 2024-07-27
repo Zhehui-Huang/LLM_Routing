@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must visit each city exactly once, starting and ending at the depot city 0.
+- [Requirement 2] The total travel cost of the tour and the maximum distance between any two consecutive cities in the tour must be calculated using Euclidean distance.
+- [Requirement 3] The goal is to minimize the longest distance between any two consecutive cities in the tour.
+- [Requirement 4] Output must be in the following format: Tour as a list of city indices, total travel cost of the tour, and maximum distance between any two consecutive cities in the tour, with examples provided for clarification.
+- [Requirement 5] Use a heuristic approximation algorithm to determine the Hamiltonian path that minimizes the largest edge weight (bottleneck). The given pseudocode for the algorithm and the procedure for checking a Hamiltonian path provides a basic template for this purpose.

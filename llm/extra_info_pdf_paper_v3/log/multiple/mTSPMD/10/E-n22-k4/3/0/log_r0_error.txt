@@ -1,0 +1,16 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/E-n22-k4/3/0/solution_r0.py", line 90, in <module>
+    child1 = crossover(parent1, parent2)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/E-n22-k4/3/0/solution_r0.py", line 47, in crossover
+    cut1, cut2 = sorted(random.sample(range(len(parent1[idx])-2), 2))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/random.py", line 456, in sample
+    raise ValueError("Sample larger than population or is negative")
+ValueError: Sample larger than population or is negative
+
+

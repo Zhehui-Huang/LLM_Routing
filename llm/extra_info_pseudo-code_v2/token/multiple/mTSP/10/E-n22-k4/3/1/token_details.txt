@@ -1,0 +1,30 @@
+Task: mTSP, City: 10, File name: E-n22-k4, Run time: 3, Try id: 1
+
+@@@@@
+Notes: exec
+input_token_num: 1763
+output_token_num: 685
+total_token_num: 2448
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 2398
+output_token_num: 652
+total_token_num: 3050
+@@@@@
+
+@@@@@
+Notes: extract_constraints
+input_token_num: 1845
+output_token_num: 90
+total_token_num: 1935
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 2242
+output_token_num: 769
+total_token_num: 3011
+@@@@@
+

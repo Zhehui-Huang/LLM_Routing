@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSP/10/P-n23-k8/0/1/verifier_r1_v0.py", line 56, in <module>
+    verify_solution(robot_tours)
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSP/10/P-n23-k8/0/1/verifier_r1_v0.py", line 48, in verify_solution
+    requirement_1 = test_visit_each, city_once_exactly(tours, len(city_coordinates))
+                    ^^^^^^^^^^^^^^^
+NameError: name 'test_visit_each' is not defined
+
+

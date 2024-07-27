@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/GTSP/10/city_10_instance_3/1/2/solution_r0.py", line 45
+    min_distance = current during city
+                           ^^^^^^
+SyntaxError: invalid syntax
+
+

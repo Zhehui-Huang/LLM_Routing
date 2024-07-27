@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/E-n22-k4/2/0/solution_r2.py", line 30
+    creator.create("FitnessMin", base.Floss of candidate solution.features, weights=(-1.0,))
+                                 ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

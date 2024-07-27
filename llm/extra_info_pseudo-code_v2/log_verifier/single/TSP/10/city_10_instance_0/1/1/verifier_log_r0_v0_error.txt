@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/10/city_10_instance_0/1/1/verifier_r0_v0.py", line 48, in <module>
+    test_suite.addTest(TestTourTest('test_travel_cost_is_correct'))
+                       ^^^^^^^^^^^^
+NameError: name 'TestTourTest' is not defined
+
+

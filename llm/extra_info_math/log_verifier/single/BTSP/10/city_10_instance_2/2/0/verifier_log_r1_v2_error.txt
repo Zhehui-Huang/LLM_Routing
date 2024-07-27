@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/BTSP/10/city_10_instance_2/2/0/verifier_r1_v2.py", line 53, in <module>
+    result = verify_solution(tour, total_travel_cost, max_consecutive_text_check)
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'max_consecutive_text_check' is not defined. Did you mean: 'max_consecutive_distance'?
+
+

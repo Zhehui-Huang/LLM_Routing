@@ -1,0 +1,6 @@
+- [There are 15 cities, designated numerically from 0 (depot city) to 14.]
+- [The robot must start and end its tour at the depot city (City 0).]
+- [The robot must visit exactly one city from each of the three groups during its tour.]
+- [Travel costs between cities are calculated using the Euclidean distance.]
+- [The challenge is to find the shortest tour following the above constraints.]
+- [The result should include both the tour as a list of city indices and the total travel cost of the tour.]

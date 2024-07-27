@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSP_MinMax/10/P-n16-k8/3/0/verifier_r0_v0.py", line 54, in <module>
+    print(test_robot_solution(robot_tours))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSP_MinMax/10/P-n16-k8/3/0/verifier_r0_v0.py", line 45, in test_robot_solution
+    max_cost = max(max_cost, tour_ident_cost)
+                             ^^^^^^^^^^^^^^^
+NameError: name 'tour_ident_cost' is not defined
+
+

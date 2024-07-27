@@ -1,0 +1,6 @@
+- [There are 10 cities with specific coordinates provided, including the depot city 0.]
+- [The robot must start and end its tour at depot city 0.]
+- [There are 5 groups of cities, and the robot must visit exactly one city from each group.]
+- [The travel cost between any two cities is calculated as the Euclidean distance between them.]
+- [The task requires finding the shortest possible tour that meets the above criteria.]
+- [The output should include the tour as a list of city indices starting and ending at the depot city, and the total travel cost of the tour.]

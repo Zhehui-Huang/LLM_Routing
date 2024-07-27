@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD/10/P-n21-k2/3/0/solution_r2.py", line 28
+    tours[robot].append(next_box to ( /[ ( \delta next_ctitudeist
+                        ^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

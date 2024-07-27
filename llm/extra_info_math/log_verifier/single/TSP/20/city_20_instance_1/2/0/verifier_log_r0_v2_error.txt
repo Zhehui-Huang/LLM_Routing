@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/TSP/20/city_20_instance_1/2/0/verifier_r0_v2.py", line 44, in <module>
+    test_3 = unit_test_travel_cost(tour, cities_coordinates, expected_total_refab_cost)
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'expected_total_refab_cost' is not defined. Did you mean: 'expected_total_cost'?
+
+

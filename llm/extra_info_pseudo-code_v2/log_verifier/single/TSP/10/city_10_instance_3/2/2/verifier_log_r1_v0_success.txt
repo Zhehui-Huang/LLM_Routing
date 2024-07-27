@@ -1,0 +1,23 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/10/city_10_instance_3/2/2/verifier_r1_v0.py:50: DeprecationWarning: unittest.makeSuite() is deprecated and will be removed in Python 3.13. Please use unittest.TestLoader.loadTestsFromTestCase() instead.
+  suite.addTest(unittest.makeSuite(TestRobotTour))
+..E.
+======================================================================
+ERROR: test_total_travel_cost (__main__.TestRobotTour.test_total_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/10/city_10_instance_3/2/2/verifier_r1_v0.py", line 39, in test_total_travel_cost
+    self.assertAlmostEqual(calculated_figure_cost, self.reported_cost)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculated_figure_cost' is not defined
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (errors=1)
+
+

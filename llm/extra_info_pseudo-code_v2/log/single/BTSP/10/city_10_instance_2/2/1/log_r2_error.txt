@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/10/city_10_instance_2/2/1/solution_r2.py", line 66, in <module>
+    tour, total_cost, max_distance = nearest_neighbor_tour(graph, 0)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/10/city_10_instance_2/2/1/solution_r2.py", line 50, in nearest_neighbor_tour
+    max_edge_length = next_idstance
+                      ^^^^^^^^^^^^^
+NameError: name 'next_idstance' is not defined. Did you mean: 'next_distance'?
+
+

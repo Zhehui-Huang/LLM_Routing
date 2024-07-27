@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_3/3/0/solution_r2.py", line 72
+    child[swap_idx[0]], child[swap_ctrl_index[1]], swap_ctrl[swap_index][rna_ctrl_0]] = child[swap_idx[1]], child[swap_idx[0]]
+                                                                                    ^
+SyntaxError: unmatched ']'
+
+

@@ -1,0 +1,10 @@
+- [Requirement 1] There are 16 cities with specified coordinates, including eight depot cities and eight other cities.
+- [Requirement 2] There are eight robots, each starting and ending at their assigned depot, with IDs from 0 to 7.
+- [Requirement 3] Each robot must visit all cities exactly once ensuring no city is visited by more than one robot, and then return to their respective depots.
+- [Requirement 4] The objective is to determine the shortest possible tours for each robot while minimizing the total travel cost for all robots combined.
+- [Requirement 5] Travel cost between two cities is calculated as the Euclidean distance.
+- [Requirement 6] Robots can travel between any two cities.
+- [Requirement 7] The use of an algorithm based on ant colony optimization techniques, involving parameters like number of ants, cycle termination conditions, pheromone initialization and updates, and use of heuristic information.
+- [Requirement 8] Output should include the sequence of cities visited by each robot and the corresponding total travel cost for each tour, along with the overall combined total travel cost. Each sequence must start and end at the assigned depot for that robot.
+- [Requirement 9] The algorithm should stop if there is no improvement in the solution for a specified number of cycles.
+- [Requirement 10] Transition probabilities and path selection by each ant must correctly incorporate pheromone influence and heuristic information based on distances, adhering to parameters alpha (α) and beta (β).

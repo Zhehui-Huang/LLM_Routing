@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/20/city_20_instance_0/3/0/solution_r2.py", line 71
+    max_dist = max(euclidean_toggleishmentsToggle to agen[1]for transition between proposal sites[best_path[i]], hints[hotels ]against art exhibitionsA [i+ Toggle greatness - AMP needs_ENCODE_CODE_FICILITY M);
+                                                                                                                                                                                                               ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '['
+
+

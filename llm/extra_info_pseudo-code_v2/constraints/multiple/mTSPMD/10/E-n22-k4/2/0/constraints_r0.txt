@@ -1,0 +1,9 @@
+- [Requirement 1]: Four robots must collectively visit all 22 cities exactly once each and return to their respective starting depots.
+- [Requirement 2]: Each robot starts and ends its tour at a unique depot city (Robot 0 at city 0, Robot 1 at city 1, Robot 2 at city 2, Robot 3 at city 3).
+- [Requirement 3]: Minimize the total travel cost for all robots combined, where travel cost is determined by the Euclidean distance between cities.
+- [Requirement 4]: The tours for each robot and the associated travel cost must be outputted, as well as the overall total travel cost for all tours.
+- [Requirement 5]: The algorithm used for solving this problem is based on ant colony optimization, including parameters such as number of ants, number of cycles without improvement before termination, initial pheromone level, pheromone influence factor (alpha), distance influence factor (beta), and pheromone evaporation rate (rho).
+- [Requirement 6]: Pheromone trails must be initialized and updated according to the tours constructed by the ants, with pheromone evaporation and addition based on the solutions' quality.
+- [Requirement 7]: Transition probabilities for choosing the next city in the tour are based on a formula that considers both pheromone levels and heuristic information (inverse of distance).
+- [Requirement 8]: Modification of transition probabilities must be made to allow a robot to return to its depot either after visiting a maximum allowed number of cities or to ensure all other robots can complete their required tours.
+- [Requirement 9]: The solution search is terminated after a specified number of cycles without improvement in the best solution.

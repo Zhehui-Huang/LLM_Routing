@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must start and end the tour at the depot city which has the index 0.
+- [Requirement 2] The robot must visit exactly 12 cities, including the depot city.
+- [Requirement 3] The travel cost between any two cities is calculated as the Euclidean distance.
+- [Requirement 4] The solution must find the shortest possible tour given the constraints of visiting exactly 12 cities starting and ending at the depot.
+- [Requirement 5] The output should be reported as a list of city indices depicting the tour and the total travel cost of that tour.

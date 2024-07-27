@@ -1,0 +1,8 @@
+- [Requirement 1] The solution must involve 21 cities, with specified coordinates for each, including a depot city (city 0).
+- [Requirement 2] There are 2 robots starting from the depot city 0. Each robot must visit each assigned city exactly once and return to the depot.
+- [Requirement 3] Travel cost between cities is calculated using the Euclidean distance.
+- [Requirement 4] The objective is to minimize the total travel cost for all robots' tours.
+- [Requirement 5] Each tour for the robots must start and end at the depot city 0.
+- [Requirement 6] Each city, except the depot, must be visited exactly once across all robot tours.
+- [Requirement 7] Output should include the tour for each robot, individual travel costs for each tour, and the overall total travel cost.
+- [Requirement 8] Use advanced heuristic algorithms for mTSP, considering techniques like genetic algorithms, tabu search, or simulated annealing.

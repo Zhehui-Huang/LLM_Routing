@@ -1,0 +1,7 @@
+OUTPUT:
+FAIL: Tour must visit 4 unique cities (including the depot)
+
+
+ERROR:
+
+

@@ -1,0 +1,16 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_4/3/2/solution_r2.py", line 68, in <module>
+    tour_path, total_travel_cost = christofides_tsp(G)
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_4/3/2/solution_r2.py", line 52, in christofides_tsp
+    eulerian_circuit = list(nx.eulerian_circuit(nx.MultiGraph(mst), source=starting_node))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/networkx/algorithms/euler.py", line 218, in eulerian_circuit
+    raise nx.NetworkXError("G is not Eulerian.")
+networkx.exception.NetworkXError: G is not Eulerian.
+
+

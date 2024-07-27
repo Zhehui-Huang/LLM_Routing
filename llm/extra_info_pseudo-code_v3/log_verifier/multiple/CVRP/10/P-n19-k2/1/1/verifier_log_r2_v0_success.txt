@@ -1,0 +1,7 @@
+OUTPUT:
+FAIL: Incorrect cost calculation
+
+
+ERROR:
+
+

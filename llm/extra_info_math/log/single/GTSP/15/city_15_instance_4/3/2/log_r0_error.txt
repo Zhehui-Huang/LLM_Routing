@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/15/city_15_instance_4/3/2/solution_r0.py", line 34, in <module>
+    problem += pl.lpSum([x[i][j] for i in group for j in range(len(coordinates)) if i != j]) == 1, f"One_outgoing_from_group_{group}"
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/15/city_15_instance_4/3/2/solution_r0.py", line 34, in <listcomp>
+    problem += pl.lpSum([x[i][j] for i in group for j in range(len(coordinates)) if i != j]) == 1, f"One_outgoing_from_group_{group}"
+                         ~^^^
+KeyError: 3
+
+

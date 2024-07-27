@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSP/10/P-n21-k2/2/1/solution_r1.py", line 63
+    println_ter(camera, na)"," thick}")
+                                    ^
+SyntaxError: unmatched '}'
+
+

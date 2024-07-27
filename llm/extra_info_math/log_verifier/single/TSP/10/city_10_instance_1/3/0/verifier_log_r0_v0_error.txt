@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/TSP/10/city_10_instance_1/3/0/verifier_r0_v0.py", line 46
+    verification_result = verify_solution(tour, total_travel_show all_cost, positions)
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

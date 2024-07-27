@@ -1,0 +1,4 @@
+- [Each city is visited exactly once by exactly one robot.]
+- [Each robot starts and ends its tour at the depot city (City 0).]
+- [The total demand on each robot's route does not exceed the robot's capacity of 6000.]
+- [Optimize the routes so that the total travel cost across all robots is minimized.]

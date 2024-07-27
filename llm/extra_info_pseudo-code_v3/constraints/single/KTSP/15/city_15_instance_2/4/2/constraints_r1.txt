@@ -1,0 +1,7 @@
+- [The robot must visit exactly 8 cities including the depot city.]
+- [The starting and ending point of the tour must be the depot city (city 0).]
+- [Travel cost is calculated as the Euclidean distance between any two cities.]
+- [The goal is to minimize the total travel cost of the tour.]
+- [The solution must be obtained using the GVNS algorithm specifically designed for this k-TSP variant.]
+- [Output format requires the tour to be listed as city indices starting and ending at the depot city.]
+- [Output format also requires presenting the total travel cost of the tour.]

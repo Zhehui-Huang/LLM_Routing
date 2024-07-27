@@ -1,0 +1,5 @@
+- [There are 23 cities including a depot city (City 0).]
+- [The robots must collectively visit all the cities exactly once, excluding the depot city as a destination, and then return to the depot city after completing their tours.]
+- [Each robot starts and ends its tour at the depot city (City 0).]
+- [The objective is to determine the shortest possible tours for the robots while minimizing the total travel cost.]
+- [Output should include the complete tour for each robot starting and ending at the depot city, the travel cost for each robot's tour, and the overall total travel cost.]

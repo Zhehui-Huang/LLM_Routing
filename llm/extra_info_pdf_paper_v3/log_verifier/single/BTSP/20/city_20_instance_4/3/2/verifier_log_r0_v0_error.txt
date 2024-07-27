@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/BTSP/20/city_20_instance_4/3/2/verifier_r0_v0.py", line 45, in <module>
+    result = validate_solution(tour, total_cost, max_distance)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/BTSP/20/city_20_instance_4/3/2/verifier_r0_v0.py", line 33, in validate_solution
+    if not (math.isclose(calculated_total_cost, total_cutput_correct_tableost, rel_tol=1e-2) and 
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_cutput_correct_tableost' is not defined
+
+

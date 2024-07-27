@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP_MinMax/10/P-n19-k2/1/1/solution_r0.py", line 102, in <module>
+    tours = gvns(num_robots, 5, 10, duration_seconds)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP_MinMax/10/P-n19-k2/1/1/solution_r0.py", line 91, in gvns
+    if max(calc_tour_cost(t) for t in x_double_prime) < max(calc_tour_cost(t) for t in x):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP_MinMax/10/P-n19-k2/1/1/solution_r0.py", line 91, in <genexpr>
+    if max(calc_tour_cost(t) for t in x_double_prime) < max(calc_tour_cost(t) for t in x):
+           ^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP_MinMax/10/P-n19-k2/1/1/solution_r0.py", line 43, in calc_tour_cost
+    tour_cost = distance_matrix[0][tour[0]]  # from depot to first city
+                                   ~~~~^^^
+IndexError: list index out of range
+
+

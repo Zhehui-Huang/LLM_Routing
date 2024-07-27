@@ -1,0 +1,5 @@
+- [There are 20 cities, each with a specified location.]
+- [The robot starts at the depot city 0 and must return there after visiting all other cities exactly once.]
+- [Travel cost between cities is calculated using the Euclidean distance formula.]
+- [The outcome should specify the shortest possible tour route and its corresponding total travel cost.]
+- [The tour and total travel cost should be output as mentioned in the provided format examples.]

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/GTSP/15/city_15_instance_1/3/1/verifier_r1_v0.py", line 54, in <module>
+    print(verify_solution(tour_solution, total_cost_solution, city_coordinates, city_groups))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/GTSP/15/city_15_instance_1/3/1/verifier_r1_v0.py", line 14, in verify_solution
+    for i, group in enumerate(city_art_groups):
+                              ^^^^^^^^^^^^^^^
+NameError: name 'city_art_groups' is not defined. Did you mean: 'city_groups'?
+
+

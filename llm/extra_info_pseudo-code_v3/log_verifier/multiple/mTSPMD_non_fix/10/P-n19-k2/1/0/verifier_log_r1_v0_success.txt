@@ -1,0 +1,10 @@
+OUTPUT:
+All cities visited exactly once: True
+All tours start at the depot city 0: False
+Total number of visits (Should be 19): 19
+FAIL
+
+
+ERROR:
+
+

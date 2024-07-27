@@ -1,0 +1,7 @@
+OUTPUT:
+FAIL: Not all cities are visited exactly once by both robots together.
+
+
+ERROR:
+
+

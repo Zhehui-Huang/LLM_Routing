@@ -1,0 +1,7 @@
+- [The robots must start and end their tours at the depot city 0.]
+- [The robots must deliver goods to all cities excluding the depot city.]
+- [The capacity constraints of each robot (160 units) must not be exceeded.]
+- [The demand of each city must be fully met by the robots.]
+- [Minimize the total travel cost for all tours.]
+- [Output the tours for each robot as a list of city indices.]
+- [Output the total travel cost for each tour and the overall total travel cost.]

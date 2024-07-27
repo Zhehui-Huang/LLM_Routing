@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/10/city_10_instance_3/4/1/solution_r2.py", line 27, in <module>
+    dist = calculate_dist(cities[i], cities[j])
+           ^^^^^^^^^^^^^^
+NameError: name 'calculate_dist' is not defined. Did you mean: 'calculate_distance'?
+
+

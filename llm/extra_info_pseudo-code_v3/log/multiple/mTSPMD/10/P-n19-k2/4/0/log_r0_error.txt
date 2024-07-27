@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n19-k2/4/0/solution_r0.py", line 78, in <module>
+    best_tours, best_cost = genetic_algorithm(cities, num_robots=2, num_generations=200, population_size=50)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n19-k2/4/0/solution_r0.py", line 63, in genetic_algorithm
+    parent1 = selection(population, fitness_scores)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n19-k2/4/0/solution_r0.py", line 38, in selection
+    return min(chosen, key=lambda ind: fitness(ind, [0, 1], distance_matrix))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n19-k2/4/0/solution_r0.py", line 38, in <lambda>
+    return min(chosen, key=lambda ind: fitness(ind, [0, 1], distance_matrix))
+                                                            ^^^^^^^^^^^^^^^
+NameError: name 'distance_matrix' is not defined
+
+

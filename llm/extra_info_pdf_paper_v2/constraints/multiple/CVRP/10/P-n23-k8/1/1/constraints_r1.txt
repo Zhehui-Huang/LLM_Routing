@@ -1,0 +1,9 @@
+- [Requirement 1] Each robot starts and ends at the depot city (City 0).
+- [Requirement 2] The demand of each city must be fully met and cannot be split among multiple trips.
+- [Requirement 3] The capacity constraints of each robot (40 units each) must not be exceeded.
+- [Requirement 4] Minimize the total travel cost for all tours.
+- [Requirement 5] Robots can travel between any two cities, and travel cost is calculated as the Euclidean distance between cities.
+- [Requirement 6] There are 8 robots available for distributing the goods.
+- [Requirement 7] Each tour for the robots should be listed starting and ending at the depot city.
+- [Requirement 8] Output the total travel cost for each tour and the overall total travel cost.
+- [Requirement 9] Incorporate elements from the Enhanced Clarke-Wright Savings Algorithm for improved route generation and optimization.

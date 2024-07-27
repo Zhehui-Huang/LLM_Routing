@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP_MinMax/10/P-n23-k8/2/0/solution_r0.py", line 53, in <module>
+    cost = tour_cost(tour_with_depot)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP_MinMax/10/P-n23-k8/2/0/solution_r0.py", line 35, in tour_cost
+    total.get_closest_cost += euclidean_distance(tour[-1], 0)  # back to the depot
+    ^^^^^
+NameError: name 'total' is not defined
+
+

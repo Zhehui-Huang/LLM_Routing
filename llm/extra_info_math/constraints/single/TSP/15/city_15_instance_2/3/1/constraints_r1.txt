@@ -1,0 +1,7 @@
+- [Requirement 1] The robot must start at the depot city 0.
+- [Requirement 2] The robot needs to visit all other cities exactly once.
+- [Requirement 3] After visiting all cities, the robot must return to the depot city 0.
+- [Requirement 4] The total distance traveled, calculated using the Euclidean formula between cities, should be minimized.
+- [Requirement 5] Each city except the depot must be left exactly once.
+- [Requirement 6] Each city except the depot must be entered exactly once.
+- [Requirement 7] Subtours must be prevented within the set of cities.

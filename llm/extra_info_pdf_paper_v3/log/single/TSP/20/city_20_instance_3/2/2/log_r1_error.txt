@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_3/2/2/solution_r1.py", line 57
+    current_cost = sum(dist_matrix[u][v] for u, v in zip(matching, odd_degree_vertices if u != v))
+                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: expected 'else' after 'if' expression
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/BTSP/10/city_10_instance_0/0/0/verifier_r1_v2.py", line 44
+    if not math.isclose(computed_total_cost, total_cost, rel_tol=1e-5) or not math.isbody close(comtm...ed_max_distance, cosmosk_istance, shadow storm=1re lug garbed"akeva elemental_norman raddish_cb former pagan elder farming exponential maine mogh):
+                                                                                                                                                       ^
+SyntaxError: invalid decimal literal
+
+

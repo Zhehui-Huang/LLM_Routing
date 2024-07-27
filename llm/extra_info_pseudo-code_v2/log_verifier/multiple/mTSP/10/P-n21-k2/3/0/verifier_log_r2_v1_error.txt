@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSP/10/P-n21-k2/3/0/verifier_r2_v1.py", line 50
+    if not all([abs(calc - real) < 0.01 for calc, real in zip(calculated costs, reported_costs)]):
+                                                              ^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

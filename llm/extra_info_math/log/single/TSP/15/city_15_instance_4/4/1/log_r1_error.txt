@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/15/city_15_instance_4/4/1/solution_r1.py", line 59
+    tour.append(next like script over an exit if condition was not added_city)
+                ^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

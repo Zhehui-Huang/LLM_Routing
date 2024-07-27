@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+..E
+======================================================================
+ERROR: test_tour_validity (__main__.TestTSPSolution.test_tour_validity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/TSP/20/city_20_instance_2/1/1/verifier_r2_v0.py", line 37, in test_tour_validity
+    self.assertEqual(treat_last_child(tour[-1], 0), "The tour should end at the depot city 0")
+                     ^^^^^^^^^^^^^^^^
+NameError: name 'treat_last_child' is not defined
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (errors=1)
+
+

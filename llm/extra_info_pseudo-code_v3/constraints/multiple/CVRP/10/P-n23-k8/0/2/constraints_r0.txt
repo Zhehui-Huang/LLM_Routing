@@ -1,0 +1,6 @@
+- [The robots must deliver goods to all cities, excluding the depot city, and return to the depot city after completing their deliveries.]
+- [Each robot has a specified maximum carrying capacity.]
+- [The total demand of each city must be fully met.]
+- [Minimize the total travel cost for all tours.]
+- [The objective is to determine the shortest possible tours for the robots while not exceeding their capacity constraints.]
+- [Travel cost is calculated as the Euclidean distance between two cities.]

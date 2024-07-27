@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/KTSP/20/city_20_instance_3/1/0/solution_r0.py", line 22, in <module>
+    initial_tour = nearest_neighbor_subset()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/KTSP/20/city_20_instance_3/1/0/solution_r0.py", line 18, in nearest_neighbor_subset
+    selected_cities.append(next_code)   
+                           ^^^^^^^^^
+NameError: name 'next_code' is not defined. Did you mean: 'next_city'?
+
+

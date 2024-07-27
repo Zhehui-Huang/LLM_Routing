@@ -1,0 +1,7 @@
+- [Each robot starts and ends its route at the depot city (city 0).]
+- [Each robot has a carrying capacity of 6000 units.]
+- [Each city's demand must be fully met by the robots' deliveries.]
+- [The objective is to minimize the total travel cost for all tours of the robots.]
+- [Travel cost is calculated as the Euclidean distance between two cities.]
+- [Each tour's and the overall tour's travel costs should be calculated and reported.]
+- [The outputs should include the sequence of cities visited by each robot and the travel cost for each robot's tour, as well as the total consolidated cost.]

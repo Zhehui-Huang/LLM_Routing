@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/20/city_20_instance_4/2/1/solution_r0.py", line 94, in <module>
+    success, tour, total_cost, max_edge_weight = has_hamptonian_cycle(edges, weight, n)
+                                                 ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'has_hamptonian_cycle' is not defined. Did you mean: 'has_hamiltonian_cycle'?
+
+

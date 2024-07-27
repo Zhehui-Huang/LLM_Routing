@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/E-n22-k4/1/0/solution_r0.py", line 80, in <module>
+    child1, child2 = crossover(parent1, parent2)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/E-n22-k4/1/0/solution_r0.py", line 55, in crossover
+    if parent2[i] not in child1:
+       ~~~~~~~^^^
+IndexError: list index out of range
+
+

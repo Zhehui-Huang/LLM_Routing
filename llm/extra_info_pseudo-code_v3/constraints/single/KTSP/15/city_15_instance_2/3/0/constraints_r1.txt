@@ -1,0 +1,4 @@
+- [Requirement 1] The robot must start and end its journey at the depot city (City 0).
+- [Requirement 2] The robot must visit exactly 8 cities, including the depot city.
+- [Requirement 3] The goal is to find the shortest tour in terms of the total travel cost, which is calculated as the Euclidean distance between cities.
+- [Requirement 4] The output of the solution must specify the order of the cities visited as a list starting and ending at the depot city, and include the total travel cost.

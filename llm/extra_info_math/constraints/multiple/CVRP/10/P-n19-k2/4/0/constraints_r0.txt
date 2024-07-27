@@ -1,0 +1,8 @@
+- Each route must begin and end at the depot.
+- Each city must be visited exactly once by the robots.
+- The total demand on each route must not exceed the robot's carrying capacity of 160.
+- The objective is to minimize the total travel cost for all tours.
+- Each tour must fully meet the demand of each city it visits.
+- Travel cost is calculated using the Euclidean distance between the cities.
+- Two robots are available for routing.
+- Sub-tour cycles that do not include the depot must be prevented to ensure valid routes.

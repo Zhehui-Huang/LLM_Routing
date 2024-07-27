@@ -1,0 +1,10 @@
+- [Requirement 1] There are 23 cities including a depot, all other cities must be visited exactly once by the robots.
+- [Requirement 2] All robots must start and end their tours at the depot city 0.
+- [Requirement 3] The objective is to determine the shortest possible tours for the robots while minimizing the total travel cost.
+- [Requirement 4] Travel cost between any two cities is calculated as the Euclidean distance.
+- [Requirement 5] Each city, except for the depot, must be visited by exactly one robot.
+- [Requirement 6] Output the tours for each robot as a list of city indices, starting and ending at the depot city 0.
+- [Requirement 7] Provide the travel cost for each robot's tour as well as the overall total travel cost.
+- [Requirement 8] Use a combination of heuristics and local search techniques such as nearest neighbor, 2-opt, and 3-opt to construct and optimize the tours.
+- [Requirement 9] Apply inter-robot optimizations such as swapping or relocating cities between robots' tours to achieve a better solution.
+- [Requirement 10] Algorithm terminates when no further improvement in the tours can be achieved through the described optimization techniques.

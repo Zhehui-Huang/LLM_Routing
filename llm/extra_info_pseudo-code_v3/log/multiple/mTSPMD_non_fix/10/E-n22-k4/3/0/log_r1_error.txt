@@ -1,0 +1,13 @@
+OUTPUT:
+Robot 0 Tour: [1, 2, 5, 7, 9, 10, 8, 6, 3, 4, 11, 13, 16, 14, 12, 15, 18, 20, 17, 21, 19, 0]
+Robot 0 Total Travel Cost: 266.3608706459223
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/E-n22-k4/3/0/solution_r1.py", line 60, in <module>
+    print(f"Robot {i} Tour: {tours[i]}")
+                             ~~~~~^^^
+IndexError: list index out of range
+
+

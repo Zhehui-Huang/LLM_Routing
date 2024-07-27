@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/CVRP/10/E-n22-k4/0/2/solution_r0.py", line 14
+    demands = [0, 1100, 700, 800, 140a0, 2100, 400, 800, 100, 500, 600, 1200, 1300, 1300, 300, 900, 2100, 1000, 900, 2500, 1800, 700]
+                                    ^
+SyntaxError: invalid decimal literal
+
+

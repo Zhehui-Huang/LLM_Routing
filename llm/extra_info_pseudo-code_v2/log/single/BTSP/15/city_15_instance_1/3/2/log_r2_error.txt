@@ -1,0 +1,13 @@
+OUTPUT:
+Tour: [0, 5, 4, 10, 9, 3, 7, 1, 6, 13, 2, 11, 12, 8, 14, 0]
+Total travel cost: 397.34861439791825
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_1/3/2/solution_r2.py", line 88, in <module>
+    print("Maximum distance between consecutive cities:", max_leg_model.createServer())
+                                                          ^^^^^^^^^^^^^
+NameError: name 'max_leg_model' is not defined
+
+

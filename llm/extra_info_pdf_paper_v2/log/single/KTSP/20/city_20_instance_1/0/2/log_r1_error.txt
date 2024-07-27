@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/20/city_20_instance_1/0/2/solution_r1.py", line 52, in <module>
+    current_cost = tour_2_cost(current_tour)
+                   ^^^^^^^^^^^
+NameError: name 'tour_2_cost' is not defined. Did you mean: 'tour_cost'?
+
+

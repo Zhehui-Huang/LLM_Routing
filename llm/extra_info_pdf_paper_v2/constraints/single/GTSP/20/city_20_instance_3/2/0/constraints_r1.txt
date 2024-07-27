@@ -1,0 +1,6 @@
+- [There are 20 cities including the depot city (city 0).]
+- [Cities are grouped into 6 distinct groups, with each group containing a specific subset of cities.]
+- [The robot starts and ends the tour at the depot city (city 0).]
+- [The robot must visit exactly one city from each group, forming a tour.]
+- [Travel cost between two cities is computed using the Euclidean distance.]
+- [Objective is to find the shortest possible tour that fulfills the above constraints.]

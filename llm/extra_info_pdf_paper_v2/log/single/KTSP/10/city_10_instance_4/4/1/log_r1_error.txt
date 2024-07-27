@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/10/city_10_instance_4/4/1/solution_r1.py", line 54, in <module>
+    best_tour, best_total_distance = solve_k_tsp(cities, 8)
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/10/city_10_instance_4/4/1/solution_r1.py", line 44, in solve_k_tsp
+    tour, distance = local_search(tour, cities)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/10/city_10_instance_4/4/1/solution_r1.py", line 19, in local_search
+    best_distance = calculate_total_distance(tour, cities)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/10/city_10_instance_4/4/1/solution_r1.py", line 14, in calculate_total_distance
+    return total_pitch_cost
+           ^^^^^^^^^^^^^^^^
+NameError: name 'total_pitch_cost' is not defined
+
+

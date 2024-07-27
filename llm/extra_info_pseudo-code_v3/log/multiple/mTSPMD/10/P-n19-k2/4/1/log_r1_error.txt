@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n19-k2/4/1/solution_r1.py", line 86, in <module>
+    best_solution = genetic_algorithm()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n19-k2/4/1/solution_r1.py", line 78, in genetic_algorithm
+    new_population.extend([mutate(child1), mutate(child2)])
+                           ^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n19-k2/4/1/solution_r1.py", line 65, in mutate
+    i, j = random.sample(range(len(tour)), 2)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/random.py", line 456, in sample
+    raise ValueError("Sample larger than population or is negative")
+ValueError: Sample larger than population or is negative
+
+

@@ -1,0 +1,31 @@
+OUTPUT:
+Robot 0 Tour: [0, 4, 2, 0]
+Robot 0 Total Travel Cost: 65.25
+Robot 1 Tour: [0, 12, 3, 0]
+Robot 1 Total Travel Cost: 72.01
+Robot 2 Tour: [0, 7, 10, 0]
+Robot 2 Total Travel Cost: 61.7
+Robot 3 Tour: [0, 1, 13, 0]
+Robot 3 Total Travel Cost: 64.39
+Robot 4 Tour: [0, 6, 15, 0]
+Robot 4 Total Travel Cost: 70.32
+Robot 5 Tour: [0, 8, 11, 0]
+Robot 5 Total Travel Cost: 92.23
+Robot 6 Tour: [0, 14, 5, 0]
+Robot 6 Total Travel Cost: 62.44
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/0/1/solution_r1.py", line 67, in <module>
+    main()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/0/1/solution_r1.py", line 58, in main
+    tour, cost = simulated_annealing(chunk, cities, 0)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/0/1/solution_r1.py", line 24, in simulated_annealing
+    a, b = np.random.choice(len(cities), 2, replace=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 1024, in numpy.random.mtrand.RandomState.choice
+ValueError: Cannot take a larger sample than population when 'replace=False'
+
+

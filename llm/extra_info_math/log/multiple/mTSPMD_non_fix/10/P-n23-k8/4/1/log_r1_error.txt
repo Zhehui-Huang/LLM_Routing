@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD_non_fix/10/P-n23-k8/4/1/solution_r1.py", line 20, in <module>
+    distances = cdist(coordinates, coordinates, metric='euclidean')
+                ^^^^^
+NameError: name 'cdist' is not defined. Did you mean: 'dict'?
+
+

@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/E-n22-k4/2/1/solution_r0.py", line 87, in <module>
+    parent1 = select(population)
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/E-n22-k4/2/1/solution_r0.py", line 76, in select
+    if best is None or calculate_cost(indiv[0]) < calculate_cost(best[0]):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/E-n22-k4/2/1/solution_r0.py", line 44, in calculate_cost
+    for i in range(1, len(touch)):
+                          ^^^^^
+NameError: name 'touch' is not defined. Did you mean: 'tour'?
+
+

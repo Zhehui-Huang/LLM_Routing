@@ -1,0 +1,6 @@
+- [There are 16 cities with specific x, y coordinates; the depot city is city 0.]
+- [There are 8 robots, all starting at the depot city.]
+- [Robots can travel between any two cities with travel costs as Euclidean distances.]
+- [Each city (except the depot) must be visited exactly once by the robots.]
+- [Each robot must start and end its tour at the depot.]
+- [The primary goal is to minimize the maximum distance traveled by any single robot.]

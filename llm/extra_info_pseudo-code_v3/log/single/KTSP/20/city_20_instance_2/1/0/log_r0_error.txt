@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_2/1/0/solution_r0.py", line 92, in <module>
+    tour, cost = GVNS()
+                 ^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_2/1/0/solution_r0.py", line 80, in GVNS
+    current_solution = local_search(current_solution)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_2/1/0/solution_r0.py", line 69, in local_search
+    if total_distance(new_solution) < total_users(solution):
+                                      ^^^^^^^^^^^
+NameError: name 'total_users' is not defined
+
+

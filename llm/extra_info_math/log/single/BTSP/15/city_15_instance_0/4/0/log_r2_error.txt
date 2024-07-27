@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/15/city_15_instance_0/4/0/solution_r2.py", line 1
+    import numpy as with regard tops
+                    ^^^^
+SyntaxError: invalid syntax
+
+

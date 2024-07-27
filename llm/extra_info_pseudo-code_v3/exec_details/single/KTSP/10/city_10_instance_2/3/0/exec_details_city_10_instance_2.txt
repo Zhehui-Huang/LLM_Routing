@@ -1,0 +1,22 @@
+Start time: [2024-07-25 23:07:36]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/exec_details/single/KTSP/10/city_10_instance_2/3/0/exec_details_city_10_instance_2.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 29.74 seconds.
+Code solution execution status: error, execution time: 0.00897836685180664
+
+Reflect count: 1
+===
+Ask LLM for code solution, response time: 25.39 seconds.
+Code solution execution status: error, execution time: 0.008082151412963867
+
+Reflect count: 2
+===
+Ask LLM for code solution, response time: 65.60 seconds.
+Code solution execution status: error, execution time: 0.008093595504760742
+[2024-07-25 23:09:37]	Finished.
+
+Overall time: 120.76 seconds.

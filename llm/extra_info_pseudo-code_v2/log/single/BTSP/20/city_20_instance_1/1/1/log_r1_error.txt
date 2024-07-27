@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/20/city_20_instance_1/1/1/solution_r1.py", line 1
+    import numpy as or np
+                    ^^
+SyntaxError: invalid syntax
+
+

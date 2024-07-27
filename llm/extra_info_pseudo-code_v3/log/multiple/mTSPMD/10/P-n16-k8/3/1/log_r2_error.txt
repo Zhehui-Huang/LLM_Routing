@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n16-k8/3/1/solution_r2.py", line 77, in <module>
+    best_tours, best_cost = genetic_algorithm(cities, depots)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n16-k8/3/1/solution_r2.py", line 43, in genetic_algorithm
+    dists = calculate_delaidances()
+            ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_delaidances' is not defined. Did you mean: 'calculate_distances'?
+
+

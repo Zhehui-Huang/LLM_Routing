@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/GTSP/15/city_15_instance_1/1/0/solution_r0.py", line 21
+    return total tuning_cost
+                 ^^^^^^^^^^^
+SyntaxError: invalid syntax
+
+

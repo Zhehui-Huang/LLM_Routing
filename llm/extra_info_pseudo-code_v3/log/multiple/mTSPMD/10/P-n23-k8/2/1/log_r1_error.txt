@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n23-k8/2/1/solution_r1.py", line 70, in <module>
+    solution = genetic_algorithm(city_coords, depots, num_robots)
+                                 ^^^^^^^^^^^
+NameError: name 'city_coords' is not defined
+
+

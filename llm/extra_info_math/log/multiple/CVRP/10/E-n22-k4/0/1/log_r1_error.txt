@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/CVRP/10/E-n22-k4/0/1/solution_r1.py", line 70
+    route_distance += routing.GetArcCostForVehicle(previous*index, index,_AHB wasathensedhipecickcle_id)
+                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

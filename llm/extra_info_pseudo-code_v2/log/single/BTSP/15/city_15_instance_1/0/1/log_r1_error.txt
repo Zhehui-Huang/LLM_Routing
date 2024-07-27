@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_1/0/1/solution_r1.py", line 63
+    total_cost += closing﷯_dist
+                         ^
+SyntaxError: invalid non-printable character U+FDEF
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/10/city_10_instance_3/0/2/solution_r0.py", line 23
+    prob += pulp.lp[section(up to one edge leaving k
+                            ^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

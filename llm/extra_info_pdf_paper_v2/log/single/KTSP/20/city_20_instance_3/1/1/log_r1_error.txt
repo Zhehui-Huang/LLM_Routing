@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/20/city_20_instance_3/1/1/solution_r1.py", line 60, in <module>
+    best_tour, best_cost = gvns(initial_tour, 5, 100)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/20/city_20_instance_3/1/1/solution_r1.py", line 26, in gvns
+    new_tour = shaking(current_tour, k)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/20/city_20_instance_3/1/1/solution_r1.py", line 49, in shaking
+    shaken_tour[a], shaken_tout[b] = shaken_tour[b], shaken_tour[a]
+                    ^^^^^^^^^^^
+NameError: name 'shaken_tout' is not defined. Did you mean: 'shaken_tour'?
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/20/city_20_instance_1/4/0/verifier_r1_v1.py", line 17
+    self.assertTrue(all(isinstance(city, int) for city in tour))  실패 # city indices are integers
+                                                                  ^^
+SyntaxError: invalid syntax
+
+

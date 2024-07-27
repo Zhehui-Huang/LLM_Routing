@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/10/city_10_instance_0/3/1/solution_r1.py", line 51, in <module>
+    path.append(next_df.tail)
+                ^^^^^^^
+NameError: name 'next_df' is not defined
+
+

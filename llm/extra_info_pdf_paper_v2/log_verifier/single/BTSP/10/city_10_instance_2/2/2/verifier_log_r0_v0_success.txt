@@ -1,0 +1,20 @@
+OUTPUT:
+CORRECT
+
+
+ERROR:
+/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/10/city_10_instance_2/2/2/verifier_r0_v0.py:48: DeprecationWarning: unittest.makeSuite() is deprecated and will be removed in Python 3.13. Please use unittest.TestLoader.loadTestsFromTestCase() instead.
+  test_suite.addTest(unittest.makeSuite(TestTSPSolution))
+test_minimize_maximum_distance (__main__.TestTSPSolution.test_minimize_maximum_distance)
+Check if the maximum distance given is the longest single jump in the tour. ... ok
+test_tour_starts_and_ends_at_depot (__main__.TestTSPSolution.test_tour_starts_and_ends_at_depot)
+Check that the tour starts and ends at the depot city 0. ... ok
+test_visit_each_city_once (__main__.TestTSPSolution.test_visit_each_city_once)
+Check that each city is visited exactly once excluding the return to the depot. ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+
+

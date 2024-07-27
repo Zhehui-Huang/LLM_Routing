@@ -1,0 +1,24 @@
+OUTPUT:
+
+
+ERROR:
+..E.
+======================================================================
+ERROR: test_total_travel_cost (__main__.TestOptimalTour.test_total_travel_cost)
+Verify the total travel cost is as expected.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/KTSP/15/city_15_instance_3/1/2/verifier_r2_v2.py", line 39, in test_total_travel_cost
+    calculated_cost = sum(calculate_context(solution_tour[i], solution_tour[i+1]) for i in range(len(solution_tour) - 1))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/KTSP/15/city_15_instance_3/1/2/verifier_r2_v2.py", line 39, in <genexpr>
+    calculated_cost = sum(calculate_context(solution_tour[i], solution_tour[i+1]) for i in range(len(solution_tour) - 1))
+                          ^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_context' is not defined
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (errors=1)
+
+

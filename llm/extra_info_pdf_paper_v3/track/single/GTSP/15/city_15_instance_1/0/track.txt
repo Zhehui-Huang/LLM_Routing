@@ -1,0 +1,6 @@
+Task: GTSP, City: 15, File name: city_15_instance_1, Run time: 0
+
+Success: Request LLM number: 7
+Details: 'exec': 3, 'verifier': 2, 'constraints': 2
+
+

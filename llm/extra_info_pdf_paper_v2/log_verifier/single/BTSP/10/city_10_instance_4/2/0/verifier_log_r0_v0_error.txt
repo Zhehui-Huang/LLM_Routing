@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/10/city_10_instance_4/2/0/verifier_r0_v0.py", line 56, in <module>
+    result = check_solution(tour, cities)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/10/city_10_instance_4/2/0/verifier_r0_v0.py", line 14, in check_solution
+    current_city = cities[city_selection]
+                          ^^^^^^^^^^^^^^
+NameError: name 'city_selection' is not defined
+
+

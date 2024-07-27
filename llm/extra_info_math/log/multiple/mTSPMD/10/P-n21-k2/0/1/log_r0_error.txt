@@ -1,0 +1,61 @@
+OUTPUT:
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - /home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/solverdir/cbc/linux/64/cbc /tmp/18494076411e4a158b9783376c3c9fa0-pulp.mps -timeMode elapsed -branch -printingOptions all -solution /tmp/18494076411e4a158b9783376c3c9fa0-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 69 COLUMNS
+At line 5232 RHS
+At line 5297 BOUNDS
+At line 6179 ENDATA
+Problem MODEL has 64 rows, 881 columns and 2520 elements
+Coin0008I MODEL read with 0 errors
+Option for timeMode changed from cpu to elapsed
+Continuous objective value is 34.1421 - 0.00 seconds
+Cgl0003I 41 fixed, 0 tightened bounds, 0 strengthened rows, 0 substitutions
+Cgl0004I processed model has 62 rows, 819 columns (819 integer (819 of which binary)) and 2360 elements
+Cbc0038I Initial state - 0 integers unsatisfied sum - 0
+Cbc0038I Solution found of 34.1421
+Cbc0038I Before mini branch and bound, 800 integers at bound fixed and 19 continuous
+Cbc0038I Mini branch and bound did not improve solution (0.02 seconds)
+Cbc0038I After 0.02 seconds - Feasibility pump exiting with objective of 34.1421 - took 0.00 seconds
+Cbc0012I Integer solution of 34.142136 found by feasibility pump after 0 iterations and 0 nodes (0.02 seconds)
+Cbc0001I Search completed - best objective 34.14213562373, took 0 iterations and 0 nodes (0.02 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 34.1421 to 34.1421
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                34.14213562
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.02
+Time (Wallclock seconds):       0.02
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.02   (Wallclock seconds):       0.02
+
+Robot 0 Tour: [0, 16]
+Robot 0 Total Travel Cost: 10.0
+Robot 1 Tour: [1, 10]
+Robot 1 Total Travel Cost: 7.0710678118654755
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD/10/P-n21-k2/0/1/solution_r0.py", line 75, in <module>
+    print(f"Overall Total Travel Cost: {totality}")
+                                        ^^^^^^^^
+NameError: name 'totality' is not defined
+
+

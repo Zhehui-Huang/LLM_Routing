@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/CVRP/10/E-n22-k4/0/1/solution_r1.py", line 23
+    robot_cost = sum(lambda: distance_matrix (route - 1:]
+                                                        ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+
+

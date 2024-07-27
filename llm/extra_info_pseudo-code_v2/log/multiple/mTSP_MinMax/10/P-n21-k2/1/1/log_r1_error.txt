@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP_MinMax/10/P-n21-k2/1/1/solution_r1.py", line 73, in <module>
+    best_tours, best_max_cost = gvns(100, 3)
+                                ^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP_MinMax/10/P-n21-k2/1/1/solution_r1.py", line 58, in gvns
+    cities = list(range(1, num_cities))  # Excluding depot
+                           ^^^^^^^^^^
+NameError: name 'num_cities' is not defined
+
+

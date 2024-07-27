@@ -1,0 +1,5 @@
+- [Requirement 1] The robot starts and ends the journey at the depot city (City 0: (29, 51)).
+- [Requirement 2] The robot needs to visit exactly 6 cities including the depot city from a total of 15 cities.
+- [Requirement 3] The robot must find the shortest possible tour based on the travel cost, which is calculated as the Euclidean distance between two cities.  
+- [Requirement 4] The output must include both the tour as a list of city indices starting and ending at the depot city, and the total travel cost of the tour.
+- [Requirement 5] Utilize the insights provided from the "A General Variable Neighborhood Search Algorithm for the k-Traveling Salesman Problem" for solving the problem, focusing on the k-TSP variant and employing strategies such as subset selection and permutation optimization.

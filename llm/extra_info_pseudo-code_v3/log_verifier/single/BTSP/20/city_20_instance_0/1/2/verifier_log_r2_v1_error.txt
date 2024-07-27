@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/BTSP/20/city_20_instance_0/1/2/verifier_r2_v1.py", line 50, in <module>
+    result = test_solution(tour, cities, total_travel_cost, max_distance_between_consecutive_cities)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/BTSP/20/city_20_instance_0/1/2/verifier_r2_v1.py", line 32, in test_solution
+    if not math.isjust(max_distance, expected_max_distance, abs_tol=1e-2):
+           ^^^^^^^^^^^
+AttributeError: module 'math' has no attribute 'isjust'
+
+

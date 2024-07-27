@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/10/city_10_instance_0/2/0/solution_r1.py", line 50, in <module>
+    best_tour, min_distance = find_shortest_tour()
+                              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/10/city_10_instance_0/2/0/solution_r1.py", line 42, in find_shortest_tour
+    total_distance = calculate_tour_out_distance(full_tour)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_tour_out_distance' is not defined. Did you mean: 'calculate_tour_distance'?
+
+

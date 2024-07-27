@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSP_MinMax/10/P-n16-k8/4/1/verifier_r0_v0.py", line 83, in <module>
+    result = verify_solution()
+             ^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSP_MinMax/10/P-n16-k8/4/1/verifier_r0_v0.py", line 74, in verify_solution
+    max_travel_cost_found = max(max_travel_dependent_factor, estimated_cost)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'max_travel_dependent_factor' is not defined
+
+

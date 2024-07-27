@@ -1,0 +1,3 @@
+- [Each city is visited exactly once by one robot.]
+- [Each robot starts and ends its route at the depot.]
+- [Minimize the maximum travel cost among all the robot tours.]

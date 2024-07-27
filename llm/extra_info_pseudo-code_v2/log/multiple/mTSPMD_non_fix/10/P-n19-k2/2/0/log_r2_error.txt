@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/2/0/solution_r2.py", line 88, in <module>
+    tours = genetic_algorithm(cities)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/2/0/solution_r2.py", line 59, in genetic_algorithm
+    population = init_population(pop_size, cities)
+                                 ^^^^^^^^
+NameError: name 'pop_size' is not defined
+
+

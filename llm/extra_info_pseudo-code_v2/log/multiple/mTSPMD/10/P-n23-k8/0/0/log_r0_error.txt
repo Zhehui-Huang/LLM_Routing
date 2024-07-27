@@ -1,0 +1,27 @@
+OUTPUT:
+Robot 0 Tour: [0, 21, 16, 0]
+Robot 0 Total Travel Cost: 21.455612434792677
+Robot 1 Tour: [1, 16, 0, 1]
+Robot 1 Total Travel Cost: 29.97520651974802
+Robot 2 Tour: [2, 13, 7, 2]
+Robot 2 Total Travel Cost: 26.818933340747833
+Robot 3 Tour: [3, 19, 18, 3]
+Robot 3 Total Travel Cost: 28.21568412501368
+Robot 4 Tour: [4, 12, 15, 4]
+Robot 4 Total Travel Cost: 28.544099777629647
+Robot 5 Tour: [5, 22, 7, 5]
+Robot 5 Total Travel Cost: 19.31370849898476
+Robot 6 Tour: [6, 16, 0, 6]
+Robot 6 Total Travel Cost: 28.444718816225144
+Robot 7 Tour: [7, 5, 22, 7]
+Robot 7 Total Travel Cost: 19.31370849898476
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD/10/P-n23-k8/0/0/solution_r0.py", line 89, in <module>
+    print(f"Overall Total Travel Cost: {best_overallolew_cost}")
+                                        ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'best_overallolew_cost' is not defined. Did you mean: 'best_overall_cost'?
+
+

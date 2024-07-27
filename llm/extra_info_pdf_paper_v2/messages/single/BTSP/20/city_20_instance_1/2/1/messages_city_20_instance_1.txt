@@ -1,0 +1,7 @@
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/messages/single/BTSP/20/city_20_instance_1/2/1/messages_city_20_instance_1.txt
+===
+System - LLM_SYSTEM_PROMPT
+User - Task description: city_20_instance_1
+Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/20/city_20_instance_1/2/1/solution_r0.py
+Another LLM - User - Ask for prompts
+Another LLM - Assistant - Constraints response: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/constraints/single/BTSP/20/city_20_instance_1/2/1/constraints_r0.txt

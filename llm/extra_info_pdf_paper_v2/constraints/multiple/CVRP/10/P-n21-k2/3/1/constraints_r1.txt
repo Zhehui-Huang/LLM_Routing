@@ -1,0 +1,5 @@
+- [Requirement 1] The robots must start and end their tours at depot city 0.
+- [Requirement 2] Each city's specified demand must be fully met by the robots' deliveries.
+- [Requirement 3] The carrying capacity of each robot, which is 160, must not be exceeded during any point of the tour.
+- [Requirement 4] The tours for the robots must be designed to minimize the total travel cost, calculated based on the Euclidean distance between cities.
+- [Requirement 5] Each robot can travel between any two cities, and all cities except the depot must be visited exactly once for delivery.

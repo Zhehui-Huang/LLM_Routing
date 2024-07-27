@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD/10/P-n16-k8/1/2/solution_r1.py", line 74
+    print(f"Robot {k} Total Travel Cost: {tour *)&ast;k}")  # ➔ print cost for each robot tour
+                                                         ^
+SyntaxError: f-string: unmatched ')'
+
+

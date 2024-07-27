@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/20/city_20_instance_2/4/0/solution_r1.py", line 62, in <module>
+    best_tour, total_cost = gvns()
+                            ^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/20/city_20_instance_2/4/0/solution_r1.py", line 52, in gvns
+    best_cost = calculate_total_tuple_cost(best_solution)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_total_tuple_cost' is not defined. Did you mean: 'calculate_total_cost'?
+
+

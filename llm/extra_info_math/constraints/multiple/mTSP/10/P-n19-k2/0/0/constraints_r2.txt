@@ -1,0 +1,6 @@
+- [Each city is visited exactly once by one salesman]
+- [Flow conservation constraints (each salesman must leave each visited node and enter each visited node exactly once)]
+- [Each salesman must leave the depot exactly once]
+- [Subtour elimination constraints]
+- [Binary constraints for assignment variables]
+- [Continuous variables for node position constraints]

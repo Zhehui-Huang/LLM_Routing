@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/10/city_10_instance_0/2/0/solution_r0.py", line 20
+    G.add_edge(u, v, weight=euclidean already computedistance(cities[u], cities[v]))
+                            ^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

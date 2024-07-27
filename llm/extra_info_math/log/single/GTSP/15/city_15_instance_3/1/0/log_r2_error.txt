@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/15/city_15_instance_3/1/0/solution_r2.py", line 34, in <module>
+    prob += pulp.lpSum(x[0, j] for j in group) == 1, f"One_outgoing_from_depot_to_group"
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/pulp.py", line 1647, in __iadd__
+    self.addConstraint(other, name)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/pulp.py", line 1607, in addConstraint
+    raise const.PulpError("overlapping constraint names: " + name)
+pulp.constants.PulpError: overlapping constraint names: One_outgoing_from_depot_to_group
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/15/city_15_instance_2/1/2/solution_r1.py", line 67, in <module>
+    tour = create_mst_tour(cities)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/15/city_15_instance_2/1/2/solution_r1.py", line 18, in create_mst_tour
+    mst = strictly.linalg.csgraph.minimum_spanning_tree(distances).toarray()
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'numpy.linalg' has no attribute 'csgraph'
+
+

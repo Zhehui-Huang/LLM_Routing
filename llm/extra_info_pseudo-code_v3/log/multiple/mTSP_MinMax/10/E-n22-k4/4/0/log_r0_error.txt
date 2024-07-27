@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSP_MinMax/10/E-n22-k4/4/0/solution_r0.py", line 79, in <module>
+    tours, costs, max_travel_cost, num_robots = solve_mtsp(num_robots)
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSP_MinMax/10/E-n22-k4/4/0/solution_r0.py", line 75, in solve_mtsp
+    return tours, costs, max_file_cost, num_robots
+                         ^^^^^^^^^^^^^
+NameError: name 'max_file_cost' is not defined
+
+

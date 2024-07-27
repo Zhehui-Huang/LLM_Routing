@@ -1,0 +1,18 @@
+OUTPUT:
+CORRECT
+CORRECT
+
+
+ERROR:
+test_complete_validation (__main__.TestSolutionValidation.test_complete_validation) ... ok
+test_output_format (__main__.TestSolutionValidation.test_output_format) ... ok
+test_tour_distance_calculation (__main__.TestSolutionValidation.test_tour_distance_calculation) ... ok
+test_tour_start_and_end_at_depot (__main__.TestSolutionValidation.test_tour_start_and_end_at_depot) ... ok
+test_tour_visits_all_cities_once (__main__.TestSolutionValidation.test_tour_visits_all_cities_once) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+
+

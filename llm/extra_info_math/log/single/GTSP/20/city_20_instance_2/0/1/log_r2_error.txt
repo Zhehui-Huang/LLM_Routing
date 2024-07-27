@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/20/city_20_instance_2/0/1/solution_r2.py", line 44, in <module>
+    model += lpSum(x[j, i] for j in range(len(memory)) if i != j) == 1  # enter once
+                                              ^^^^^^
+NameError: name 'memory' is not defined
+
+

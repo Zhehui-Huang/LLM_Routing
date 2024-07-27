@@ -1,0 +1,23 @@
+Task: KTSP, City: 15, File name: city_15_instance_0, Run time: 2, Try id: 0
+
+@@@@@
+Notes: exec
+input_token_num: 1326
+output_token_num: 737
+total_token_num: 2063
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 1942
+output_token_num: 760
+total_token_num: 2702
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 2701
+output_token_num: 753
+total_token_num: 3454
+@@@@@
+

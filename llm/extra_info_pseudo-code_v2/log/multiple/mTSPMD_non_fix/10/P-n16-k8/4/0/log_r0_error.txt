@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/4/0/solution_r0.py", line 46, in <module>
+    population = gen_initial_population(population_size, cities, num_robots)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/4/0/solution_r0.py", line 24, in gen_initial_population
+    tours = [perm[start:end+1].tolist() for start, end in zip([0] + splits.tolist(), splits.tolist() + [None])]
+                                                                    ^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'tolist'
+
+

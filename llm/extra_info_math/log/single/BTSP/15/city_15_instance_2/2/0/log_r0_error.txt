@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/15/city_15_instance_2/2/0/solution_r0.py", line 67
+    if not next +=city:
+                ^^
+SyntaxError: invalid syntax
+
+

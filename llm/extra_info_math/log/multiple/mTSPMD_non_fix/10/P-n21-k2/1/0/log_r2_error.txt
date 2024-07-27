@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/1/0/solution_r2.py", line 72, in <module>
+    next_city = [j for j in range(num_cities) if pulp.value(x[current_city, j]) == 1]
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/1/0/solution_r2.py", line 72, in <listcomp>
+    next_city = [j for j in range(num_cities) if pulp.value(x[current_city, j]) == 1]
+                                                            ~^^^^^^^^^^^^^^^^^
+KeyError: (0, 0)
+
+

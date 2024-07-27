@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/10/city_10_instance_1/0/0/solution_r2.py", line 45
+    tour and current_max_distance <= best_max_distance):
+                                                      ^
+SyntaxError: unmatched ')'
+
+

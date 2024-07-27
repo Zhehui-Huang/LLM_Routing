@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/GTSP/15/city_15_instance_1/3/1/verifier_r1_v1.py", line 32
+    total_cost += calculate)).inality union (cgrace (ordinate="city"-lat(forgiving (ordering=lossless(arden_positions;turkey.fict(do = affiliate(ance)))}[tour[i]], opening(z-city(fusion_positions{waldo-unkempt_academic[iteration_seed[i + 1]]})))).pessimism
+                           ^
+SyntaxError: unmatched ')'
+
+

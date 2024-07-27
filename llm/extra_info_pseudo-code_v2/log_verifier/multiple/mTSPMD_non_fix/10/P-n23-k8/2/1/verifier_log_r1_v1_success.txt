@@ -1,0 +1,8 @@
+OUTPUT:
+Overall Total Travel Cost from validation: 594.5798232527138
+CORRECT
+
+
+ERROR:
+
+

@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/20/city_20_instance_0/2/0/solution_r2.py", line 51, in <module>
+    min_max_edge_cost = max_edge_accost
+                        ^^^^^^^^^^^^^^^
+NameError: name 'max_edge_accost' is not defined. Did you mean: 'max_edge_cost'?
+
+

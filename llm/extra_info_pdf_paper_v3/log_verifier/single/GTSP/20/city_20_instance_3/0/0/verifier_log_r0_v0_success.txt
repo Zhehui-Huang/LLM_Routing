@@ -1,0 +1,18 @@
+OUTPUT:
+CORRECT
+
+
+ERROR:
+test_cost_accuracy (__main__.TestGTSPSolution.test_cost_accuracy) ... ok
+test_group_integrity (__main__.TestGTSPSolution.test_group_integrity) ... ok
+test_robot_starts_ends_at_depot (__main__.TestGTSPSolution.test_robot_starts_ends_at_depot) ... ok
+test_solution_correctness (__main__.TestGTSPSolution.test_solution_correctness) ... ok
+test_unique_cities (__main__.TestGTSPSolution.test_unique_cities) ... ok
+test_visit_one_city_per_group (__main__.TestGTSPSolution.test_visit_one_city_per_group) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK
+
+

@@ -1,0 +1,8 @@
+OUTPUT:
+FAIL: Robot 0 exceeds capacity on tour: [0, 1, 2, 0, 0, 22, 0]
+FAIL
+
+
+ERROR:
+
+

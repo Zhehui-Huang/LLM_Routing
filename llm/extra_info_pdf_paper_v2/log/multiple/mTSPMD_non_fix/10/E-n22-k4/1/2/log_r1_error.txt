@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD_non_fix/10/E-n22-k4/1/2/solution_r1.py", line 69
+    (robot_Robot Total Travel Cost)
+     ^^^^^^^^^^^^^^^^^
+SyntaxError: f-string: invalid syntax. Perhaps you forgot a comma?
+
+

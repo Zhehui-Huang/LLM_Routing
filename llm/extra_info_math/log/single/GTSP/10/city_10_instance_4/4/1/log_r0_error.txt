@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_4/4/1/solution_r0.py", line 55, in <module>
+    problem += (u[group[0]] - u[other_group[0]] + len(groups) * pulp.lpSum(x[(p, q)] for p in group for q in otherGroup) + (len(groups) - 2) * pulp.lpSum(x[(q, p)] for p in group for q in otherGroup) <= len(groups) - 1), f"Subtour_Constraint_{i}_{j}"
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/pulp.py", line 2233, in lpSum
+    return LpAffineExpression().addInPlace(vector)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/pulp.py", line 867, in addInPlace
+    for e in other:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_4/4/1/solution_r0.py", line 55, in <genexpr>
+    problem += (u[group[0]] - u[other_group[0]] + len(groups) * pulp.lpSum(x[(p, q)] for p in group for q in otherGroup) + (len(groups) - 2) * pulp.lpSum(x[(q, p)] for p in group for q in otherGroup) <= len(groups) - 1), f"Subtour_Constraint_{i}_{j}"
+                                                                                                             ^^^^^^^^^^
+NameError: name 'otherGroup' is not defined. Did you mean: 'other_group'?
+
+

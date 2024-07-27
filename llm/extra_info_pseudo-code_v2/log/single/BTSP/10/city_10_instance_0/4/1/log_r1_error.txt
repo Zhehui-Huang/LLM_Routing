@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/10/city_10_instance_0/4/1/solution_r1.py", line 28
+    if max_distance < min_max_feeling 0.3.0package 0.4.1
+                                          ^
+SyntaxError: invalid decimal literal
+
+

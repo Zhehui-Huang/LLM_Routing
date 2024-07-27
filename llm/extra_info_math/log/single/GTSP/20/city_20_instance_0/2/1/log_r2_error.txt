@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/20/city_20_instance_0/2/1/solution_r2.py", line 34
+    rg_city_coords if i != j)
+                            ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '{' on line 32
+
+

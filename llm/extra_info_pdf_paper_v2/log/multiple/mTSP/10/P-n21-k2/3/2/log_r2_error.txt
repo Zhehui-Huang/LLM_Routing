@@ -1,0 +1,16 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n21-k2/3/2/solution_r2.py", line 76, in <module>
+    main(2, 0)
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n21-k2/3/2/solution_r2.py", line 28, in main
+    data['distance_matrix'] = create_distance_matrix(coordinates)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n21-k2/3/2/solution_r2.py", line 21, in create_distance_matrix
+    dist_matrix[from_counter][to_doubleounter] = euclidean(from_node, to_node)
+                              ^^^^^^^^^^^^^^^
+NameError: name 'to_doubleounter' is not defined
+
+

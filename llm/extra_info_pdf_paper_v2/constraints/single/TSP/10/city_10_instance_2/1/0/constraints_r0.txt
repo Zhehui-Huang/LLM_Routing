@@ -1,0 +1,6 @@
+- [Requirement 1] The robot must start at the depot city (city 0).
+- [Requirement 2] The robot must visit each of the other cities (1 to 9) exactly once.
+- [Requirement 3] After visiting all the cities, the robot must return to the depot city (city 0).
+- [Requirement 4] The total traverse path should aim to be the shortest possible tour.
+- [Requirement 5] Travel costs between cities are calculated using Euclidean distance.
+- [Requirement 6] Output should be formatted as a tour list starting and ending at the depot city, followed by the total travel cost.

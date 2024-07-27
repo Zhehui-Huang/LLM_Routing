@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/20/city_20_instance_4/3/2/solution_r2.py", line 43, in <module>
+    optimal_tour, total_min_cost, min_max_distance = find_optimal_tour()
+                                                     ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/20/city_20_instance_4/3/2/solution_r2.py", line 36, in find_optimal_tour
+    elif max_distance == min_max_equal and total_cost < total_min_cost:
+                         ^^^^^^^^^^^^^
+NameError: name 'min_max_equal' is not defined
+
+

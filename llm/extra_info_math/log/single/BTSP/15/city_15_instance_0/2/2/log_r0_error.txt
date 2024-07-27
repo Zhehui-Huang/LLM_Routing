@@ -1,0 +1,31 @@
+OUTPUT:
+Set parameter Username
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/15/city_15_instance_0/2/2/solution_r0.py", line 64, in <module>
+    model.solve(solver)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/pulp.py", line 1867, in solve
+    status = solver.actualSolve(self, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/apis/gurobi_api.py", line 343, in actualSolve
+    self.buildSolverModel(lp)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/apis/gurobi_api.py", line 272, in buildSolverModel
+    self.initGurobi()
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/apis/gurobi_api.py", line 258, in initGurobi
+    raise e
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/apis/gurobi_api.py", line 253, in initGurobi
+    self.model = gp.Model(env=self.env)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "src/gurobipy/model.pxi", line 80, in gurobipy.Model.__init__
+  File "src/gurobipy/gurobi.pxi", line 60, in gurobipy.gurobi._getdefaultenv
+  File "src/gurobipy/env.pxi", line 70, in gurobipy.Env.__init__
+gurobipy.GurobiError: HostID mismatch (licensed to 99a30b33, hostid is 614ad9c9)
+Exception ignored in: <function GUROBI.__del__ at 0x7f9c7fa48cc0>
+Traceback (most recent call last):
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/apis/gurobi_api.py", line 168, in __del__
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/apis/gurobi_api.py", line 178, in close
+AttributeError: 'NoneType' object has no attribute 'dispose'
+
+

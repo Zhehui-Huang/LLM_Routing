@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/20/city_20_instance_2/3/2/solution_r0.py", line 42, in <module>
+    all_edges = [(i, j, distances[i, j]) for i in range(num_capable) for j in range(i + 1, num_cities)]
+                                                        ^^^^^^^^^^^
+NameError: name 'num_capable' is not defined
+
+

@@ -1,0 +1,7 @@
+- [Requirement 1] There are 10 specific cities, each defined by unique coordinates, with city indices ranging from 0 (depot) to 9.
+- [Requirement 2] The robot starts and ends its route at the depot city (city 0).
+- [Requirement 3] The robot must visit all other cities exactly once.
+- [Requirement 4] The travel cost between any two cities is calculated as the Euclidean distance.
+- [Requirement 5] The tour output must start and end at the depot city 0 and include each city exactly once in between.
+- [Requirement 6] The output must include the shortest possible tour that visits all cities and the total travel cost for this tour.
+- [Requirement 7] Implement and use the Christofides algorithm for finding the tour, following the provided steps.

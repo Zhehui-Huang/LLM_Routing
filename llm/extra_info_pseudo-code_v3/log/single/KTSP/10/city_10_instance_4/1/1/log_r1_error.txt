@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/10/city_10_instance_4/1/1/solution_r1.py", line 77, in <module>
+    best_solution, best_cost = GVNS(cities, 10, dist_mat)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/10/city_10_instance_4/1/1/solution_r1.py", line 39, in GVNS
+    best_cost = calculate_tour_Cost(best_solution,time_incidents, distances)
+                ^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_tour_Cost' is not defined. Did you mean: 'calculate_tour_cost'?
+
+

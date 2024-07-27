@@ -1,0 +1,6 @@
+- [Requirement 1] Solve a MinMax mTSP where the primary goal is to minimize the maximum travel distance covered by any robot.
+- [Requirement 2] Each robot must start and end its tour at the depot city (city index 0).
+- [Requirement 3] All cities must be visited exactly once by the robots collectively, with the exception of the depot city. Cities should not be repeated within the same tour or across different tours.
+- [Requirement 4] The number of robots is fixed at 2, and both start their journey from the depot city.
+- [Requirement 5] Use the Euclidean distance between cities as the travel cost metric.
+- [Requirement 6] Output the tours for each robot along with the travel cost of each tour and the maximum travel cost among all tours. Each output tour list should include the depot city at the beginning and end.

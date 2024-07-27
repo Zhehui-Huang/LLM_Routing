@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/CVRP/10/P-n16-k8/3/0/solution_r2.py", line 58
+    (total_travelwould _wait_cost)
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: f-string: invalid syntax. Perhaps you forgot a comma?
+
+

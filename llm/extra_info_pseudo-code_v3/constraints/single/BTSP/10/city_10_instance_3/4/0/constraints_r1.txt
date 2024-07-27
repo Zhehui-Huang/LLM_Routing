@@ -1,0 +1,8 @@
+- [Requirement 1] The robot must start at the depot (city 0), visit each of the cities exactly once, and return to the depot.
+- [Requirement 2] The shortest maximum distance between any two consecutive cities in the tour must be minimized.
+- [Requirement 3] The total tour cost, defined as the sum of the distances between consecutive cities in the tour, must be computed and provided as output.
+- [Requirement 4] The tour path must be expressed as a list of city indices starting and ending at depot city 0.
+- [Requirement 5] The output must include the maximum distance between any two consecutive cities in the specified tour.
+- [Requirement 6] The travel cost between two cities is measured as the Euclidean distance.
+- [Requirement 7] The solution must iterate through the sorted edge weights to find the minimum largest edge weight that allows for a tour (Hamiltonian path). If found, the loop should terminate immediately.
+- [Requirement 8] Each edge's inclusion in the bottleneck graph depends on whether its weight is less than or equal to the current threshold in the iteration. 

@@ -1,0 +1,3 @@
+- [Requirement 1]: Two robots, starting at depot city 0, must visit 21 cities exactly once between them, without the requirement to return to their starting depot after completing their tours.
+- [Requirement 2]: The goal is to determine the shortest tours for each robot while minimizing the total travel cost for all robots combined.
+- [Requirement 3]: Output the tours for each robot as a list of city indices starting and ending at their assigned depot, the tour's total travel cost for each robot, and the overall total travel cost.

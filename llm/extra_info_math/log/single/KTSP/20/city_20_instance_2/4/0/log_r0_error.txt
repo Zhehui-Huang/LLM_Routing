@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_2/4/0/solution_r0.py", line 28
+    for city_set in possible_cityThe functools function lru_cache is found in the functools module of Python and is located in the functools module; you can import it using from functools import lru_cache.
+                                     ^^^^^^^^^
+SyntaxError: invalid syntax
+
+

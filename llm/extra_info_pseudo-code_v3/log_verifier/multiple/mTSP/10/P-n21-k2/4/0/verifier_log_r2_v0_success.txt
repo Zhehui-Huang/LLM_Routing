@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+F
+======================================================================
+FAIL: test_simulation (__main__.TestRobotRouting.test_simulation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSP/10/P-n21-k2/4/0/verifier_r2_v0.py", line 42, in test_simulation
+    self.assertEqual(len(visited_cities), 21, "Not all cities visited")
+AssertionError: 5 != 21 : Not all cities visited
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+
+

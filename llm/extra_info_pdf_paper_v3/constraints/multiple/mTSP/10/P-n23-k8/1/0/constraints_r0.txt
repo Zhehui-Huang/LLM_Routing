@@ -1,0 +1,4 @@
+- [Requirement 1] All robots must start and end their tours at the depot city (City 0).
+- [Requirement 2] Every city must be visited exactly once by the robots, and the depot city should not be considered a destination.
+- [Requirement 3] The objective is to minimize the total travel cost for all robots, which is measured by the Euclidean distance between cities.
+- [Requirement 4] The output should list the tour for each robot starting and ending at the depot city, and include the total travel cost for each robot's tour as well as the overall total travel cost.

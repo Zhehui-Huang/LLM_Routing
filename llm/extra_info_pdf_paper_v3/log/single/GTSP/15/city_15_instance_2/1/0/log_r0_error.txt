@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/GTSP/15/city_15_instance_2/1/0/solution_r0.py", line 62, in <module>
+    if cost < min_total_cost:
+              ^^^^^^^^^^^^^^
+NameError: name 'min_total_cost' is not defined
+
+

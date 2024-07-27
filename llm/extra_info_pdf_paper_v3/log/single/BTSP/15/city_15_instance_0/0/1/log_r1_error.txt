@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/15/city_15_instance_0/0/1/solution_r1.py", line 49, in <module>
+    tour = find_tour()
+           ^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/15/city_15_instance_0/0/1/solution_r1.py", line 32, in find_tour
+    unvisited.remove(next_page)
+                     ^^^^^^^^^
+NameError: name 'next_page' is not defined
+
+

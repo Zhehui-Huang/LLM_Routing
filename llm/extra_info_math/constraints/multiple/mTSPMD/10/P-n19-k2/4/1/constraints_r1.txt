@@ -1,0 +1,5 @@
+- [Each robot starts and ends at its assigned depot city.]
+- [Each city must be visited exactly once by any robot.]
+- [The total travel path for each robot must form a continuous route without any breaks.]
+- [The travel cost for each robot is calculated as the Euclidean distance between consecutive cities in the robot's tour.]
+- [The objective is to minimize the total travel cost for all robots combined.]

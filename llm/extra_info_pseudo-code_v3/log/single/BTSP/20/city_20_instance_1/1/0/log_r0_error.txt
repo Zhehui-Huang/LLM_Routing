@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/20/city_20_instance_1/1/0/solution_r0.py", line 66, in <module>
+    tour, total_cost, max_distance = bottleneck_tsp(coords) 
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/20/city_20_instance_1/1/0/solution_r0.py", line 35, in bottleneck_tsp
+    if hamiltonian_path_exists(edges[mid][0]):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/20/city_20_instance_1/1/0/solution_r0.py", line 25, in hamiltonian_path_exists
+    graph.row = [i for i, j in filtered_skip_edges]
+                               ^^^^^^^^^^^^^^^^^^^
+NameError: name 'filtered_skip_edges' is not defined. Did you mean: 'filtered_edges'?
+
+

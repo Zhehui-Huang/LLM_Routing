@@ -1,0 +1,31 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+FE.
+======================================================================
+ERROR: test_total_travel_cost (__main__.TestTSPSolution.test_total_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/4/0/verifier_r1_v0.py", line 61, in test_total_travel_cost
+    calculated_robot1_cost = calculate_travelill_cost(self.robot1_tour)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_travelill_cost' is not defined
+
+======================================================================
+FAIL: test_all_cities_visited_exactly_once (__main__.TestTSPSolution.test_all_cities_visited_exactly_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/4/0/verifier_r1_v0.py", line 51, in test_all_cities_visited_exactly_once
+    self.assertEqual(all_cities_visited, expected_cities)
+AssertionError: Items in the second set but not the first:
+16
+1
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1, errors=1)
+
+

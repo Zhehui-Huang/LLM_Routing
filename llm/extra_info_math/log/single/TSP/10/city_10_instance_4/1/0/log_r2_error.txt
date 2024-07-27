@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/10/city_10_instance_4/1/0/solution_r2.py", line 25, in <module>
+    prob = L-Problem("TSP", LpMinimize)
+           ^
+NameError: name 'L' is not defined
+
+

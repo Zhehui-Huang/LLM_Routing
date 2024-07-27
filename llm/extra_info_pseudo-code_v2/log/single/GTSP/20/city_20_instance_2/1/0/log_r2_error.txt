@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/GTSP/20/city_20_instance_2/1/0/solution_r2.py", line 70, in <module>
+    create_tour, excellent_ledger = ply_from(groups)
+                                    ^^^^^^^^
+NameError: name 'ply_from' is not defined
+
+

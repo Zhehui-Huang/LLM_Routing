@@ -1,0 +1,27 @@
+OUTPUT:
+
+
+ERROR:
+.FF.
+======================================================================
+FAIL: test_costs (__main__.TestRobotTours.test_costs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSPMD_non_fix/10/P-n19-k2/1/2/verifier_r0_v0.py", line 47, in test_costs
+    self.assertAlmostEqual(calculated_cost_0, self.robot_0_cost, places=5, msg=f"Cost for robot 0 should be close to {self.robot_0_cost}")
+AssertionError: 154.23541073689296 != 110.30364546391537 within 5 places (43.931765272977586 difference) : Cost for robot 0 should be close to 110.30364546391537
+
+======================================================================
+FAIL: test_no_return_requirement_met (__main__.TestRobotTours.test_no_return_requirement_met)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSPMD_non_fix/10/P-n19-k2/1/2/verifier_r0_v0.py", line 32, in test_no_return_requirement_met
+    self.assertNotEqual(self.robot_0_tour[-1], 0, "Robot 0 should not necessarily end at depot 0")
+AssertionError: 0 == 0 : Robot 0 should not necessarily end at depot 0
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=2)
+
+

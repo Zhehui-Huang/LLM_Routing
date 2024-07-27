@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/CVRP/10/P-n23-k8/0/0/solution_r0.py", line 81, in <module>
+    main()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/CVRP/10/P-n23-k8/0/0/solution_r0.py", line 33, in main
+    distance_matrix = [[distance_callback(i, j, locations) for j in range(len(locations))] for i in range(len(locations))]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/CVRP/10/P-n23-k8/0/0/solution_r0.py", line 33, in <listcomp>
+    distance_matrix = [[distance_callback(i, j, locations) for j in range(len(locations))] for i in range(len(locations))]
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/CVRP/10/P-n23-k8/0/0/solution_r0.py", line 33, in <listcomp>
+    distance_matrix = [[distance_callback(i, j, locations) for j in range(len(locations))] for i in range(len(locations))]
+                        ^^^^^^^^^^^^^^^^^
+NameError: cannot access free variable 'distance_callback' where it is not associated with a value in enclosing scope
+
+

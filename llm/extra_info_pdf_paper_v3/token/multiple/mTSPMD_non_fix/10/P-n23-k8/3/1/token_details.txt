@@ -1,0 +1,23 @@
+Task: mTSPMD_non_fix, City: 10, File name: P-n23-k8, Run time: 3, Try id: 1
+
+@@@@@
+Notes: exec
+input_token_num: 1225
+output_token_num: 1178
+total_token_num: 2403
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 2221
+output_token_num: 848
+total_token_num: 3069
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 2995
+output_token_num: 923
+total_token_num: 3918
+@@@@@
+

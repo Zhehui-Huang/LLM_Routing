@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/CVRP/10/P-n16-k8/3/1/verifier_r2_v0.py", line 73, in <module>
+    test_result = verify_solution(tours, robot_travel_costs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/CVRP/10/P-n16-k8/3/1/verifier_r2_v0.py", line 67, in verify_solution
+    if not np.isclose(calculated_total_cost, sum(robot_travel_keys_costs)):
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'robot_travel_keys_costs' is not defined. Did you mean: 'robot_travel_costs'?
+
+

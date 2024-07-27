@@ -1,0 +1,141 @@
+OUTPUT:
+
+
+ERROR:
+F.FF
+======================================================================
+FAIL: test_all_cities_visited_once (__main__.TestTSPSolution.test_all_cities_visited_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/3/2/verifier_r0_v0.py", line 33, in test_all_cities_visited_once
+    self.assertEqual(all_visited_cities, expected_cities)
+AssertionError: Lists differ: [0, 0, 1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, [18 chars], 20] != [0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9,[86 chars], 20]
+
+First differing element 5:
+3
+2
+
+Second list contains 19 additional elements.
+First extra element 23:
+11
+
+- [0, 0, 1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
++ [0,
++  0,
++  1,
++  1,
++  2,
++  2,
++  3,
++  3,
++  4,
++  4,
++  5,
++  5,
++  6,
++  6,
++  7,
++  7,
++  8,
++  8,
++  9,
++  9,
++  10,
++  10,
++  11,
++  11,
++  12,
++  12,
++  13,
++  13,
++  14,
++  14,
++  15,
++  15,
++  16,
++  16,
++  17,
++  17,
++  18,
++  18,
++  19,
++  19,
++  20,
++  20]
+
+======================================================================
+FAIL: test_solution (__main__.TestTSPSolution.test_solution)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/3/2/verifier_r0_v0.py", line 53, in test_solution
+    self.test_all_cities_visited_once()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/3/2/verifier_r0_v0.py", line 33, in test_all_cities_visited_once
+    self.assertEqual(all_visited_cities, expected_cities)
+AssertionError: Lists differ: [0, 0, 1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, [18 chars], 20] != [0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9,[86 chars], 20]
+
+First differing element 5:
+3
+2
+
+Second list contains 19 additional elements.
+First extra element 23:
+11
+
+- [0, 0, 1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
++ [0,
++  0,
++  1,
++  1,
++  2,
++  2,
++  3,
++  3,
++  4,
++  4,
++  5,
++  5,
++  6,
++  6,
++  7,
++  7,
++  8,
++  8,
++  9,
++  9,
++  10,
++  10,
++  11,
++  11,
++  12,
++  12,
++  13,
++  13,
++  14,
++  14,
++  15,
++  15,
++  16,
++  16,
++  17,
++  17,
++  18,
++  18,
++  19,
++  19,
++  20,
++  20]
+
+======================================================================
+FAIL: test_travel_costs (__main__.TestTSPSolution.test_travel_costs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/3/2/verifier_r0_v0.py", line 49, in test_travel_costs
+    self.assertAlmostEqual(calc_total_cost, self.total_cost, places=2)
+AssertionError: 364.38 != 364.37 within 2 places (0.009999999999990905 difference)
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+FAILED (failures=3)
+
+

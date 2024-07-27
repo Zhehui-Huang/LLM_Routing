@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/CVRP/10/P-n23-k8/4/1/solution_r2.py", line 63
+    demand_callback_index = routing.RegisterUnaryTransuccess, err_konboard manager.Indexdist)
+                                                                                            ^
+SyntaxError: unmatched ')'
+
+

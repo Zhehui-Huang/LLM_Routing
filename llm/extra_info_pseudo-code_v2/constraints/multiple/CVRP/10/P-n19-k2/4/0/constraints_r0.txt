@@ -1,0 +1,7 @@
+- [There are 19 cities, each with specified coordinates and demand, excluding the depot city which has a demand of zero.]
+- [There are 2 robots, each with a capacity of 160 and can start and return to the depot city 0.]
+- [Travel cost between any two cities is the Euclidean distance.]
+- [Robots must deliver goods to all cities while ensuring each city's demand is fully met without exceeding their carrying capacities.]
+- [Objective is to determine the shortest possible tours for each robot and minimize the total travel cost for all tours.]
+- [Each tour should start and end at the depot city 0.]
+- [Output should list tours for each robot, individual travel costs per tour, and the total combined cost of all tours.]

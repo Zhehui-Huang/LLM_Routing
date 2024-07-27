@@ -1,0 +1,7 @@
+- [Requirement 1] There are 10 specific cities with predefined coordinates, including a designated depot city (city 0).
+- [Requirement 2] The robot starts and ends its journey at the depot city (city 0).
+- [Requirement 3] The robot must visit exactly 6 cities out of the given set of cities.
+- [Requirement 4] The path chosen must be the shortest possible tour that visits these 6 cities.
+- [Requirement 5] Travel cost between any two cities is calculated using the Euclidean distance.
+- [Requirement 6] The output should provide the specific tour sequence (starting and ending at the depot city) and the associated total travel cost.
+- [Requirement 7] Tour path and cost must consider the insights and methodologies from the cited academic reference regarding the k-Traveling Salesman Problem (k-TSP) and relevant algorithmic approaches.

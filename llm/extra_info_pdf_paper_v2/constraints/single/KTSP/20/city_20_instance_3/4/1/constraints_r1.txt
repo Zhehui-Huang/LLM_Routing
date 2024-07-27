@@ -1,0 +1,6 @@
+- [The task involves solving a k-Traveling Salesman Problem (k-TSP) variant where the robot has to visit exactly 13 cities including the starting depot city.]
+- [The robot starts and ends the tour at depot city 0.]
+- [Travel cost between two cities is determined using the Euclidean distance formula.]
+- [The robot can travel between any of the 20 listed cities.]
+- [The solution must provide the shortest possible tour that adheres to the constraints.]
+- [The output of the solution should be a list of city indices representing the tour, starting and ending at the depot city, and the total travel cost of that tour.]

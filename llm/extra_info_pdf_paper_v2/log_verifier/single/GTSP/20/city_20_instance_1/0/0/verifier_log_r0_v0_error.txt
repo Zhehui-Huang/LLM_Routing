@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/GTSP/20/city_20_instance_1/0/0/verifier_r0_v0.py", line 68, in <module>
+    print(test_solution())
+          ^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/GTSP/20/city_20_instance_1/0/0/verifier_r0_v0.py", line 52, in test_solution
+    visited_groups[group_info_index] = True
+                   ^^^^^^^^^^^^^^^^
+NameError: name 'group_info_index' is not defined. Did you mean: 'group_index'?
+
+

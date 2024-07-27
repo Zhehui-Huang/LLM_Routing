@@ -1,0 +1,29 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+E.F
+======================================================================
+ERROR: test_maximum_distance_between_consecutive_cities (__main__.TestBottleneckTSPSolution.test_maximum_distance_between_consecutive_cities)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/BTSP/20/city_20_instance_1/0/0/verifier_r0_v0.py", line 32, in test_maximum_distance_between_consecutive_cities
+    self.assertAlmostEqual(max_distance, self.expected_max_stop_distance, places=5)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TestBottleneckTSPSolution' object has no attribute 'expected_max_stop_distance'
+
+======================================================================
+FAIL: test_tour_validity (__main__.TestBottleneckTSPSolution.test_tour_validity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/BTSP/20/city_20_instance_1/0/0/verifier_r0_v0.py", line 22, in test_tour_validity
+    self.assertEqual(len(self.tour), len(set(self.tour)))
+AssertionError: 21 != 20
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1, errors=1)
+
+

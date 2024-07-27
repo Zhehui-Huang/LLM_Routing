@@ -1,0 +1,23 @@
+Task: TSP, City: 20, File name: city_20_instance_4, Run time: 0, Try id: 1
+
+@@@@@
+Notes: exec
+input_token_num: 976
+output_token_num: 950
+total_token_num: 1926
+@@@@@
+
+@@@@@
+Notes: extract_constraints
+input_token_num: 1058
+output_token_num: 117
+total_token_num: 1175
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 1487
+output_token_num: 628
+total_token_num: 2115
+@@@@@
+

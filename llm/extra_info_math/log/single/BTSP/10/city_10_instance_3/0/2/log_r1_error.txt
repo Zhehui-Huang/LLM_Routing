@@ -1,0 +1,65 @@
+OUTPUT:
+ERROR: Rule failed when generating expression for Objective obj with index
+None: PyomoException: Cannot convert non-constant Pyomo expression
+(28.792360097775937*x[0,1]  <  55.54277630799526*x[0,2]) to bool. This error
+is usually caused by using a Var, unit, or mutable Param in a Boolean context
+such as an "if" statement, or when checking container membership or equality.
+For example,
+        >>> m.x = Var()
+        >>> if m.x >= 1:
+        ...     pass
+    and
+        >>> m.y = Var()
+        >>> if m.y in [m.x, m.y]:
+        ...     pass
+    would both cause this exception.
+ERROR: Constructing component 'obj' from data=None failed:
+        PyomoException: Cannot convert non-constant Pyomo expression
+        (28.792360097775937*x[0,1]  <  55.54277630799526*x[0,2]) to bool.
+    This error is usually caused by using a Var, unit, or mutable Param in a
+    Boolean context such as an "if" statement, or when checking container
+    membership or equality. For example,
+        >>> m.x = Var()
+        >>> if m.x >= 1:
+        ...     pass
+    and
+        >>> m.y = Var()
+        >>> if m.y in [m.x, m.y]:
+        ...     pass
+    would both cause this exception.
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/10/city_10_instance_3/0/2/solution_r1.py", line 42, in <module>
+    model.obj = pyo.Objective(rule=obj_rule, sense=minimize)
+    ^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pyomo/core/base/block.py", line 571, in __setattr__
+    self.add_component(name, val)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pyomo/core/base/block.py", line 1116, in add_component
+    val.construct(data)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pyomo/core/base/objective.py", line 279, in construct
+    ans = self._setitem_when_not_present(index, rule(block, index))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pyomo/core/base/initializer.py", line 438, in __call__
+    return self._fcn(parent)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/10/city_10_instance_3/0/2/solution_r1.py", line 41, in obj_rule
+    return max(model.x[i, j] * distances[i, j] for i, j in model.arcs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pyomo/core/expr/relational_expr.py", line 47, in __bool__
+    raise PyomoException(
+pyomo.common.errors.PyomoException: Cannot convert non-constant Pyomo expression (28.792360097775937*x[0,1]  <  55.54277630799526*x[0,2]) to bool.
+This error is usually caused by using a Var, unit, or mutable Param in a
+Boolean context such as an "if" statement, or when checking container
+membership or equality. For example,
+    >>> m.x = Var()
+    >>> if m.x >= 1:
+    ...     pass
+and
+    >>> m.y = Var()
+    >>> if m.y in [m.x, m.y]:
+    ...     pass
+would both cause this exception.
+
+

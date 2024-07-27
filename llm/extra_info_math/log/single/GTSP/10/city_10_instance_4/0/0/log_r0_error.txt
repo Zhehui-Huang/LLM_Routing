@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_4/0/0/solution_r0.py", line 64, in <module>
+    problem += (u[i] - u[j] + (max_k)*x[(i, j)]) <= (max_k-1)
+                       ~^^^
+KeyError: 8
+
+

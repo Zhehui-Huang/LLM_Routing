@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP_MinMax/10/E-n22-k4/4/0/solution_r0.py", line 51
+    new_max_cost = max(tour_cost(new_solution[r]) for r in new
+                      ^
+SyntaxError: '(' was never closed
+
+

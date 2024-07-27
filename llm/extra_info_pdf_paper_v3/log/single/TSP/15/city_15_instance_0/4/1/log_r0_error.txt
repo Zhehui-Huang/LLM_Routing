@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_0/4/1/solution_r0.py", line 25, in <module>
+    mst_degrees = sum(mst.toarray() != 0, axis=0)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'axis' is an invalid keyword argument for sum()
+
+

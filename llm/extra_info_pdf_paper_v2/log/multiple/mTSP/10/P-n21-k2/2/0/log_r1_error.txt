@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n21-k2/2/0/solution_r1.py", line 55, in <module>
+    optimized_tour, tour_cost = simulated_annealing(tour, coordinates_with_depot)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n21-k2/2/0/solution_r1.py", line 29, in simulated_annealing
+    current_cost = calculate_tour_cost(tour, coordinates_with_depot)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n21-k2/2/0/solution_r1.py", line 25, in calculate_tour_cost
+    cost += euclidean_distance(full_coords[tour[i]], full_cosrds[tour[i + 1]])
+                                                     ^^^^^^^^^^^
+NameError: name 'full_cosrds' is not defined. Did you mean: 'full_coords'?
+
+

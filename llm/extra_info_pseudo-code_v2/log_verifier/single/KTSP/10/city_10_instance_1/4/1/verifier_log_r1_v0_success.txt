@@ -1,0 +1,30 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/10/city_10_instance_1/4/1/verifier_r1_v0.py:40: DeprecationWarning: unittest.makeSuite() is deprecated and will be removed in Python 3.13. Please use unittest.TestLoader.loadTestsFromTestCase() instead.
+  test_suite.addTest(unittest.makeSuite(TestTSPSolution))
+F..F
+======================================================================
+FAIL: test_correct_total_travel_cost (__main__.TestTSPSolution.test_correct_total_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/10/city_10_instance_1/4/1/verifier_r1_v0.py", line 35, in test_correct_total_travel_cost
+    self.assertAlmostEqual(calculated_cost, self.total_cost)
+AssertionError: 250.46166884011654 != 100 within 7 places (150.46166884011654 difference)
+
+======================================================================
+FAIL: test_visits_exactly_five_cities (__main__.TestTSPSolution.test_visits_exactly_five_cities)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/10/city_10_instance_1/4/1/verifier_r1_v0.py", line 22, in test_visits_exactly_five_cities
+    self.assertEqual(len(set(self.tour)), 5)
+AssertionError: 4 != 5
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=2)
+
+

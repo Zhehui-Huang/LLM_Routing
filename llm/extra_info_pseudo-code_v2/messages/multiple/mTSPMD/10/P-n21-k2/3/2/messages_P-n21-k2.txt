@@ -1,0 +1,7 @@
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/messages/multiple/mTSPMD/10/P-n21-k2/3/2/messages_P-n21-k2.txt
+===
+System - LLM_SYSTEM_PROMPT
+User - Task description: P-n21-k2
+Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD/10/P-n21-k2/3/2/solution_r0.py
+Another LLM - User - Ask for prompts
+Another LLM - Assistant - Constraints response: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/constraints/multiple/mTSPMD/10/P-n21-k2/3/2/constraints_r0.txt

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/15/city_15_instance_0/1/0/solution_r1.py", line 27
+    euclidean_distance(cistancetour[3]], cities[toubetweeen[4]]))
+                                      ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+
+

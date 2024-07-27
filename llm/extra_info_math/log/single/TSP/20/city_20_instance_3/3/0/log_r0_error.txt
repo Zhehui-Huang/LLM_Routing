@@ -1,0 +1,59 @@
+OUTPUT:
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - /home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/solverdir/cbc/linux/64/cbc /tmp/52e915a125854ea9aab84c98109f998d-pulp.mps -timeMode elapsed -branch -printingOptions all -solution /tmp/52e915a125854ea9aab84c98109f998d-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 524311 COLUMNS
+At line 45352798 RHS
+At line 45877105 BOUNDS
+At line 45877486 ENDATA
+Problem MODEL has 524306 rows, 380 columns and 44827346 elements
+Coin0008I MODEL read with 0 errors
+Option for timeMode changed from cpu to elapsed
+Continuous objective value is 425.997 - 4.81 seconds
+Cgl0004I processed model has 524306 rows, 380 columns (380 integer (380 of which binary)) and 44827346 elements
+Cbc0038I Initial state - 0 integers unsatisfied sum - 0
+Cbc0038I Solution found of 425.997
+Cbc0038I Before mini branch and bound, 380 integers at bound fixed and 0 continuous
+Cbc0038I Mini branch and bound did not improve solution (45.57 seconds)
+Cbc0038I After 45.62 seconds - Feasibility pump exiting with objective of 425.997 - took 5.71 seconds
+Cbc0012I Integer solution of 425.99722 found by feasibility pump after 0 iterations and 0 nodes (46.35 seconds)
+Cbc0001I Search completed - best objective 425.997216979032, took 0 iterations and 0 nodes (50.02 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 425.997 to 425.997
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                425.99721698
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             46.07
+Time (Wallclock seconds):       59.27
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       52.15   (Wallclock seconds):       65.94
+
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/20/city_20_instance_3/3/0/solution_r0.py", line 46, in <module>
+    next_cities = [j for j in range(n) if x[current_city, j].varValue > 0.9]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/20/city_20_instance_3/3/0/solution_r0.py", line 46, in <listcomp>
+    next_cities = [j for j in range(n) if x[current_city, j].varValue > 0.9]
+                                          ~^^^^^^^^^^^^^^^^^
+KeyError: (0, 0)
+
+

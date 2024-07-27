@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/BTSP/15/city_15_instance_2/0/1/verifier_r1_v1.py", line 57
+    self.assertIsInstance(self.max_dista all output is expected to follow proper typing and format as specified in the requirement.
+                          ^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

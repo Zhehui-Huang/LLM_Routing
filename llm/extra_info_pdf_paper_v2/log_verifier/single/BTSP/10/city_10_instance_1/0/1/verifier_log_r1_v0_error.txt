@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/10/city_10_instance_1/0/1/verifier_r1_v0.py", line 52, in <module>
+    result = check_tour(tour, city_coordinates)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/10/city_10_instance_1/0/1/verifier_r1_v0.py", line 29, in check_tour
+    if not (math.isclose(total_travel,name_cost, expected_total_cost, abs_tol=1e-9) and 
+                         ^^^^^^^^^^^^
+NameError: name 'total_travel' is not defined. Did you mean: 'total_travel_cost'?
+
+

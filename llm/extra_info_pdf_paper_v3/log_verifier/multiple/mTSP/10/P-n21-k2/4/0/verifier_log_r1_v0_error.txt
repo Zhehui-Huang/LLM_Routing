@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSP/10/P-n21-k2/4/0/verifier_r1_v0.py", line 62, in <module>
+    print(test_solutions(robots_tours))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSP/10/P-n21-k2/4/0/verifier_r1_v0.py", line 52, in test_solutions
+    if not all(abs(pc - cc) < 1e-4 for pc, cc in zip(provided.fetchall(), calculated_costs)):
+                                                     ^^^^^^^^
+NameError: name 'provided' is not defined
+
+

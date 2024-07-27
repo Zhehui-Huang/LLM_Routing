@@ -1,0 +1,9 @@
+OUTPUT:
+Tour: [0, 5, 4, 10, 9, 3, 7, 1, 6, 13, 2, 11, 12, 8, 14, 0]
+Total travel cost: 397.35
+Maximum distance between consecutive cities in MST: 110.98
+
+
+ERROR:
+
+

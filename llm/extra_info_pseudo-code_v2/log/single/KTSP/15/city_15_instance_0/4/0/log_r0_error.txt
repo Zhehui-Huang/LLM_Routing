@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/15/city_15_instance_0/4/0/solution_r0.py", line 84, in <module>
+    solution, cost = gvns_ktsp(4)
+                     ^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/15/city_15_instance_0/4/0/solution_r0.py", line 75, in gvns_ktsp
+    current_cost = solution_top(current_solution)
+                   ^^^^^^^^^^^^
+NameError: name 'solution_top' is not defined. Did you mean: 'solution_cost'?
+
+

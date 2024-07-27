@@ -1,0 +1,13 @@
+OUTPUT:
+Tour: [0, 1, 4, 7, 3, 5, 2, 6, 13, 10, 8, 9, 11, 12, 14, 0]
+Total travel cost: 447.55906973710745
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_0/0/0/solution_r1.py", line 86, in <module>
+    print(f"Maximum distance between consecutive cities: {max_behavior_research_dist}")
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'max_behavior_research_dist' is not defined
+
+

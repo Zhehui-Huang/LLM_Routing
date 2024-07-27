@@ -1,0 +1,23 @@
+OUTPUT:
+
+
+ERROR:
+test_correct_number_of_robots (__main__.TestRobotTours.test_correct_number_of_robots) ... ok
+test_robots_start_from_depot (__main__.TestRobotTours.test_robots_start_from_depot) ... ok
+test_visit_each_city_once (__main__.TestRobotTours.test_visit_each_city_once) ... FAIL
+
+======================================================================
+FAIL: test_visit_each_city_once (__main__.TestRobotTours.test_visit_each_city_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/P-n16-k8/4/1/verifier_r0_v0.py", line 41, in test_visit_each_city_once
+    self.assertEqual(unique_visits, expected_visits, "Each city must be visited exactly once")
+AssertionError: Items in the second set but not the first:
+0 : Each city must be visited exactly once
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+
+

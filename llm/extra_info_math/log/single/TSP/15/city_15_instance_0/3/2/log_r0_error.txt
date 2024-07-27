@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/15/city_15_instance_0/3/2/solution_r0.py", line 66
+    print("Total travel cost:", tourMake sure you understand the shape of the data. If it's well on its way, don't be overly concerned._cost)
+                                ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

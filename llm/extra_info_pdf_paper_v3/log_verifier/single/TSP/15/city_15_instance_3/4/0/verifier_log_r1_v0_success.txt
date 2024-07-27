@@ -1,0 +1,28 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+FF.
+======================================================================
+FAIL: test_total_travel_cost (__main__.TestRobotTour.test_total_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/TSP/15/city_15_instance_3/4/0/verifier_r1_v0.py", line 36, in test_total_travel_cost
+    self.assertAlmostEqual(total_cost, self.provided_total_cost, places=5)
+AssertionError: 337.7290780072632 != 336.5878155857113 within 5 places (1.1412624215518576 difference)
+
+======================================================================
+FAIL: test_tour_starts_and_ends_at_depot (__main__.TestRobotTour.test_tour_starts_and_ends_at_depot)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/TSP/15/city_15_instance_3/4/0/verifier_r1_v0.py", line 24, in test_tour_starts_and_ends_at_depot
+    self.assertEqual(self.tour[0], 0)
+AssertionError: 7 != 0
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=2)
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/10/city_10_instance_3/3/1/verifier_r1_v0.py", line 43
+    if computed_total_cost != given_total =cost or computed_total_cost == 0:
+                                          ^
+SyntaxError: invalid syntax
+
+

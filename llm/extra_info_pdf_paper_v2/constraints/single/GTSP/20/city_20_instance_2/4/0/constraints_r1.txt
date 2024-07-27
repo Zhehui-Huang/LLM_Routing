@@ -1,0 +1,5 @@
+- [Requirement 1] The solution must include visiting exactly one city from each city group, starting and ending at the depot city.
+- [Requirement 2] The robot can travel between any two cities; travel costs are calculated based on the Euclidean distance between city coordinates.
+- [Requirement 3] The tour should aim for the shortest possible travel distance.
+- [Requirement 4] The output of the solution should be the tour as a list of city indices beginning and ending at the depot city, and the total travel cost of that tour.
+- [Requirement 5] Cities are grouped, and the robot must visit one city from each of the five groups.

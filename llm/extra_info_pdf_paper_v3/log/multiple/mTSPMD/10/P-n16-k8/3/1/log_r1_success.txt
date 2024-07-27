@@ -1,0 +1,23 @@
+OUTPUT:
+Robot 0 Tour: [0, 14, 0]
+Robot 0 Total Travel Cost: 61.741396161732524
+Robot 1 Tour: [1, 11, 1]
+Robot 1 Total Travel Cost: 37.73592452822641
+Robot 2 Tour: [2, 9, 2]
+Robot 2 Total Travel Cost: 29.5296461204668
+Robot 3 Tour: [3, 10, 3]
+Robot 3 Total Travel Cost: 24.413111231467404
+Robot 4 Tour: [4, 15, 4]
+Robot 4 Total Travel Cost: 18.439088914585774
+Robot 5 Tour: [5, 12, 5]
+Robot 5 Total Travel Cost: 70.3420215802759
+Robot 6 Tour: [6, 8, 6]
+Robot 6 Total Travel Cost: 45.34313619501854
+Robot 7 Tour: [7, 13, 7]
+Robot 7 Total Travel Cost: 18.439088914585774
+Overall Total Travel Spitfire Cost: 305.9834136463591
+
+
+ERROR:
+
+

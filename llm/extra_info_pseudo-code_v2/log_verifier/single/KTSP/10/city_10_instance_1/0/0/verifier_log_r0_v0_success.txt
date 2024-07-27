@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+.F...
+======================================================================
+FAIL: test_exact_number_of_cities (__main__.TestOptimalTour.test_exact_number_of_cities)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/10/city_10_instance_1/0/0/verifier_r0_v0.py", line 39, in test_exact_number_of_cities
+    self.assertEqual(len(set(self.solution_tour)), 5)
+AssertionError: 4 != 5
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+FAILED (failures=1)
+
+

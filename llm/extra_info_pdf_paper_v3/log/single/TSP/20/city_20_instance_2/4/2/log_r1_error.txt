@@ -1,0 +1,18 @@
+OUTPUT:
+
+
+ERROR:
+/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_2/4/2/solution_r1.py:30: DeprecationWarning: 
+
+The scipy.sparse array containers will be used instead of matrices
+in Networkx 3.0. Use `from_scipy_sparse_array` instead.
+  G = nx.from_scipy_sparse_matrix(mst)
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_2/4/2/solution_r1.py", line 41, in <module>
+    eulerian_circuit = list(nx.eulerian_circuit(G, source=0))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/networkx/algorithms/euler.py", line 218, in eulerian_circuit
+    raise nx.NetworkXError("G is not Eulerian.")
+networkx.exception.NetworkXError: G is not Eulerian.
+
+

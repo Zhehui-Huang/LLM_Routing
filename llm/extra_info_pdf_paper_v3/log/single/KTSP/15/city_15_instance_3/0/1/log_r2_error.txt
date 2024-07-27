@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/KTSP/15/city_15_instance_3/0/1/solution_r2.py", line 47
+    total_cost += euclidean…distance(full_tour[i], full_tour[i + 1])
+                           ^
+SyntaxError: invalid character '…' (U+2026)
+
+

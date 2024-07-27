@@ -1,0 +1,8 @@
+- [Environment has 23 cities including a depot city at coordinates (30, 40).]
+- [Each robot starts and ends its tour at the depot city.]
+- [Travel cost between two cities is the Euclidean distance.]
+- [8 robots are available for completing the tours.]
+- [Each city except the depot must be visited exactly once across all tours.]
+- [Objective is to determine the shortest possible tours while minimizing the total travel cost.]
+- [Output each robot's tour starting and ending at the depot city.]
+- [Output the travel cost for each robot's tour and the overall total travel cost.]

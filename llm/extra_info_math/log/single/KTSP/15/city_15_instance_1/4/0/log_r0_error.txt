@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/15/city_15_instance_1/4/0/solution_r0.py", line 39, in <module>
+    full_set = [0] + list(city_seg)  # Depot + 5 other cities
+                          ^^^^^^^^
+NameError: name 'city_seg' is not defined. Did you mean: 'city_set'?
+
+

@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/15/city_15_instance_2/3/0/solution_r0.py", line 60, in <module>
+    best_tour, min_cost = find_best_tour()
+                          ^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/15/city_15_instance_2/3/0/solution_r0.py", line 53, in find_best_tour
+    tour = local_search(tour)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/15/city_15_instance_2/3/0/solution_r0.py", line 42, in local_search
+    best_cost = new_tour_cost(tour)
+                ^^^^^^^^^^^^^
+NameError: name 'new_tour_cost' is not defined. Did you mean: 'total_tour_cost'?
+
+

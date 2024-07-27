@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSPMD/10/P-n23-k8/4/0/verifier_r1_v1.py", line 61, in <module>
+    print(verify_solution(tours, costs, total_cost))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSPMD/10/P-n23-k8/4/0/verifier_r1_v1.py", line 43, in verify_solution
+    if len(all_couples_visited) != len(coordinates):
+           ^^^^^^^^^^^^^^^^^^^
+NameError: name 'all_couples_visited' is not defined. Did you mean: 'all_cities_visited'?
+
+

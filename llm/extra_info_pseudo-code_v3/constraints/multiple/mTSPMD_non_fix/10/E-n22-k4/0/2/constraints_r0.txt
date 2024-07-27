@@ -1,0 +1,11 @@
+- [Requirement 1] There are 22 cities, including 4 depot cities.
+- [Requirement 2] All robots start from Depot city 0.
+- [Requirement 3] Travel capability: Robots can travel between any two cities.
+- [Requirement 4] The travel cost is calculated as the Euclidean distance between two cities.
+- [Requirement 5] Robots need to collectively visit all cities exactly once.
+- [Requirement 6] Each robot starts from a designated depot but does not need to return to the depot after completing its tour.
+- [Requirement 7] The goal is to determine the shortest tours for each robot while minimizing the total travel cost for all robots combined.
+- [Requirement 8] Ensure that each city is visited exactly once and that the tours are optimized for the lowest total travel distance or cost.
+- [Requirement 9] Use a Tabu Search (TS) algorithm with specified methods and operators for finding the solution.
+- [Requirement 10] Output the tours for each robot as a list of city indices, starting and ending at its assigned depot.
+- [Requirement 11] Output the total travel cost for each tour and the overall total travel cost.

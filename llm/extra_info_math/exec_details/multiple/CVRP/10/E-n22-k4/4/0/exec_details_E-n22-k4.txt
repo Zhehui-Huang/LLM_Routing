@@ -1,0 +1,22 @@
+Start time: [2024-07-26 13:53:30]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/exec_details/multiple/CVRP/10/E-n22-k4/4/0/exec_details_E-n22-k4.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 46.25 seconds.
+Code solution execution status: error, execution time: 0.09458541870117188
+
+Reflect count: 1
+===
+Ask LLM for code solution, response time: 40.27 seconds.
+Code solution execution status: error, execution time: 0.0650780200958252
+
+Reflect count: 2
+===
+Ask LLM for code solution, response time: 38.90 seconds.
+Code solution execution status: success, execution time: 0.06749773025512695
+Another LLM - Get constraints from LLM, response time: 3.87 seconds.
+Ask another LLM for verifier code, response time: 32.31 seconds.
+Another LLM - fail verifier

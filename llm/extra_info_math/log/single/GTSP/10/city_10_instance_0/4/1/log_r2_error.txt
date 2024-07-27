@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_0/4/1/solution_r2.py", line 34
+    prob += pulp.lpSum(x[i, j] for i in cities for j in set(coordinates) - set(callabacks)0   
+                                                                                          ^
+SyntaxError: invalid syntax
+
+

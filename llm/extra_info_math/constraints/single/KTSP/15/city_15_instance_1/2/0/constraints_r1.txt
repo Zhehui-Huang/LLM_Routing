@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must start at the depot city (City 0) and the tour must also end at the depot city.
+- [Requirement 2] The robot must visit exactly 6 cities from the given set of 15 cities.
+- [Requirement 3] All cities between the start and end of the tour must be reached exactly once.
+- [Requirement 4] The travel cost between any two cities is calculated using the Euclidean distance between them.
+- [Requirement 5] The objective is to minimize the total travel cost of the tour that meets all the above requirements.

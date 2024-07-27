@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/10/city_10_instance_1/2/1/solution_r1.py", line 54, in <module>
+    distance_matrix = build_distance_matrix(coordinates)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/10/city_10_instance_1/2/1/solution_r1.py", line 28, in build_distance_matrix
+    matrix[i][j] = euclidean_notable_einstan_distance(coords[i][0], coords[i][1], coords[j][0], coords[j][1])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_notable_einstan_distance' is not defined
+
+

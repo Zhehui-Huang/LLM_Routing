@@ -1,0 +1,7 @@
+- [The task involves solving a multi-depot traveling salesman problem with 21 cities, including two depots.]
+- [Each robot needs to collectively visit all cities exactly once.]
+- [Each robot starts its journey from depot city 0.]
+- [All cities must be visited one time across the two tours, without duplication between the robots.]
+- [Robots do not need to return to their starting depots after completing their tours; they can stop at any city as their endpoint.]
+- [The objective is to minimize the total travel cost for all robots combined, with travel costs calculated using the Euclidean distance between cities.]
+- [Output should list the tours for each robot with starting and ending at its assigned depot, and include individual and overall total travel costs.]

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/10/city_10_instance_1/1/1/solution_r0.py", line 30
+    cost[(i, j)] = euclidean distance(cities[i], cities[j])
+                             ^^^^^^^^
+SyntaxError: invalid syntax
+
+

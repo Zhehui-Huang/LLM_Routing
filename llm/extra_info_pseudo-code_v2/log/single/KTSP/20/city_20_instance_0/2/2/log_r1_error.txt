@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/20/city_20_instance_0/2/2/solution_r1.py", line 83, in <module>
+    best_tour, total_cost = gvns()
+                            ^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/20/city_20_instance_0/2/2/solution_r1.py", line 75, in gvns
+    best_solution, best_cost = new_solution, new_alert
+                                             ^^^^^^^^^
+NameError: name 'new_alert' is not defined
+
+

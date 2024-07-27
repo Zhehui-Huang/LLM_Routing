@@ -1,0 +1,24 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+test_output_format (__main__.TestTSPSolution.test_output_format) ... ok
+test_route_starts_ends_at_depot (__main__.TestTSPSolution.test_route_starts_ends_at_depot) ... ok
+test_travel_cost (__main__.TestTSPSolution.test_travel_cost) ... FAIL
+test_unique_cities (__main__.TestTSPSolution.test_unique_cities) ... ok
+
+======================================================================
+FAIL: test_travel_cost (__main__.TestTSPSolution.test_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/TSP/20/city_20_instance_0/3/0/verifier_r2_v0.py", line 30, in test_travel_cost
+    self.assertAlmostEqual(calculated_cost, self.reported_cost, places=5)
+AssertionError: 637.2912949884611 != 349.1974047195548 within 5 places (288.0938902689063 difference)
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=1)
+
+

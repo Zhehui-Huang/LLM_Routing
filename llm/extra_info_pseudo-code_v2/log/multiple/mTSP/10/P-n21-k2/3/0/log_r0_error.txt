@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP/10/P-n21-k2/3/0/solution_r0.py", line 59
+    (total_travel_and player_costs)
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: f-string: invalid syntax. Perhaps you forgot a comma?
+
+

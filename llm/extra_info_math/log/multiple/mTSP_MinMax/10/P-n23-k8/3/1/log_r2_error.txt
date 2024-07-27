@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP_MinMax/10/P-n23-k8/3/1/solution_r2.py", line 98
+    print(f'Robot {one] Total ist}: {0}distances[kuo oracght')
+                                                             ^
+SyntaxError: f-string: unmatched ']'
+
+

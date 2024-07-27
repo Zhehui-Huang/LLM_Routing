@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/10/city_10_instance_2/4/0/solution_r1.py", line 45
+    if total_distance(new_tour) < total_tag=160627f1al_distance(tour):
+                                                 ^
+SyntaxError: invalid decimal literal
+
+

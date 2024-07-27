@@ -1,0 +1,3 @@
+- [Requirement 1] The robot must start and end its tour at the depot city, which is city 0.
+- [Requirement 2] The robot must visit exactly 16 cities, including the depot city.
+- [Requirement 3] The robot's travel path should be the shortest possible tour that covers the required cities.

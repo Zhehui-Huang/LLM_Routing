@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_0/3/2/solution_r0.py", line 73, in <module>
+    best_tour, best_tour_cost = gvns(list(range(15)), distance_act, 10, 100)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_0/3/2/solution_r0.py", line 52, in gvns
+    current_solution = generate_initial_data_solution(cities)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'generate_initial_data_solution' is not defined. Did you mean: 'generate_initial_solution'?
+
+

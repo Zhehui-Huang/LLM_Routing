@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/GTSP/20/city_20_instance_0/2/0/verifier_r0_v1.py", line 69, in <module>
+    result = verify_solution(tour, total_cost)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/GTSP/20/city_20_instance_0/2/0/verifier_r0_v1.py", line 52, in verify_solution
+    for i in range(len(temptour) - 1):
+                       ^^^^^^^^
+NameError: name 'temptour' is not defined
+
+

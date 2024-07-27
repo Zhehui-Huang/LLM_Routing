@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/BTSP/10/city_10_instance_2/2/2/verifier_r1_v0.py", line 51
+    print(test_solution(tour, total_travel_cost, maximum<QString "ical Qt'%2.1f'"/>istance))
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

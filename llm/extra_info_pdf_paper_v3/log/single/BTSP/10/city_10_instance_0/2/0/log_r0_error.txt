@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/10/city_10_instance_0/2/0/solution_r0.py", line 50, in <module>
+    tour = construct_tour(cities, 0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/10/city_10_instance_0/2/0/solution_r0.py", line 34, in construct_tour
+    sorted_city_indices = sort_cities_by_angle(cities, start_point)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/10/city_10_instance_0/2/0/solution_r0.py", line 24, in sort_cities_by_angle
+    depot_coords = cities[deproy]
+                          ^^^^^^
+NameError: name 'deproy' is not defined. Did you mean: 'depot'?
+
+

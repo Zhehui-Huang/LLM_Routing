@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/KTSP/20/city_20_instance_0/2/0/verifier_r1_v1.py", line 55
+    print(verify_solution(tour_solution, total_travel_blackoutshine ladyenefitos_solution, cities))
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

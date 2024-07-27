@@ -1,0 +1,7 @@
+OUTPUT:
+FAIL: Incorrect number of robots or starting city
+
+
+ERROR:
+
+

@@ -1,0 +1,7 @@
+OUTPUT:
+FAIL: Total cost should be correct.
+
+
+ERROR:
+
+

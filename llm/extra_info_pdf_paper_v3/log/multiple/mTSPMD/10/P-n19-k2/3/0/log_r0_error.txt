@@ -1,0 +1,23 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/P-n19-k2/3/0/solution_r0.py", line 92, in <module>
+    children = [crossover(parents[i], parents[-i - 1]) for i in range(len(parents))]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/P-n19-k2/3/0/solution_r0.py", line 92, in <listcomp>
+    children = [crossover(parents[i], parents[-i - 1]) for i in range(len(parents))]
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/P-n19-k2/3/0/solution_r0.py", line 77, in crossover
+    robot_1_child = create_child(parent1[1], parent2[1])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/P-n19-k2/3/0/solution_r0.py", line 74, in create_child
+    child = [item if item is not None else filt.pop(0) for item in child]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/P-n19-k2/3/0/solution_r0.py", line 74, in <listcomp>
+    child = [item if item is not None else filt.pop(0) for item in child]
+                                           ^^^^^^^^^^^
+IndexError: pop from empty list
+
+

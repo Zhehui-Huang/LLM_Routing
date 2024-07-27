@@ -1,0 +1,25 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+test_costs (__main__.TestRobotTourSolution.test_costs) ... ok
+test_does_not_return_to_depot (__main__.TestRobotTourSolution.test_does_not_return_to_depot) ... FAIL
+test_each_city_visited_once_by_any_robot (__main__.TestRobotTourSolution.test_each_city_visited_once_by_any_robot) ... ok
+test_starts_from_depot (__main__.TestRobotTourSolution.test_starts_from_depot) ... ok
+test_visit_all_cities_once (__main__.TestRobotTourSolution.test_visit_all_cities_once) ... ok
+
+======================================================================
+FAIL: test_does_not_return_to_depot (__main__.TestRobotTourSolution.test_does_not_return_to_depot)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSPMD_non_fix/10/P-n19-k2/3/0/verifier_r0_v0.py", line 34, in test_does_not_return_to_depot
+    self.assertNotEqual(self.robot_0_tour[-1], self.robot_0_tour[0])
+AssertionError: 0 == 0
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+FAILED (failures=1)
+
+

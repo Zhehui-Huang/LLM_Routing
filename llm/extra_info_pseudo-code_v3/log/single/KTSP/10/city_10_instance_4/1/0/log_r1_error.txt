@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/10/city_10_instance_4/1/0/solution_r1.py", line 78, in <module>
+    best_solution, best_cost = GVNS(100, cities, D)
+                               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/10/city_10_instance_4/1/0/solution_r1.py", line 67, in GVNS
+    S = VND(S, distance_matrix)
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/10/city_10_instance_4/1/0/solution_r1.py", line 54, in VND
+    if total_cost(S_new, distance_matrix) < total_cost(S, distanceize_distance_matrix):
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'distanceize_distance_matrix' is not defined. Did you mean: 'generate_distance_matrix'?
+
+

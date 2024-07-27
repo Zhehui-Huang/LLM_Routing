@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/BTSP/10/city_10_instance_2/0/0/verifier_r0_v1.py", line 52
+    print(verify_solution(tour, total_travel_data. explorowingice="Edirectpping_resourcehtance_be funder_be", oposing_burger = at DULE DAY_HEREthreshold_phau.)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: expression cannot contain assignment, perhaps you meant "=="?
+
+

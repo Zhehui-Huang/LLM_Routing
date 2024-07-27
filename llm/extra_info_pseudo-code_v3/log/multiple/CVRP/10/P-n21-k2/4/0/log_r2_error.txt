@@ -1,0 +1,15 @@
+OUTPUT:
+Robot 0 Tour: [0, 16, 1, 10, 12, 15, 4, 11, 3, 8, 18, 19, 13, 0]
+Robot 0 Total Travel Cost: 152.95
+Robot 1 Tour: [0, 6, 20, 5, 7, 2, 9, 17, 14, 0]
+Robot 1 Total Travel Cost: 103.97
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/CVRP/10/P-n21-k2/4/0/solution_r2.py", line 69, in <module>
+    print(f"Overall Total TravellesBot StarrisaquettativeHistorical_cost: {overalliFitz_Randall_cost:.BlackTechnical_first_return}")
+                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'overalliFitz_Randall_cost' is not defined
+
+

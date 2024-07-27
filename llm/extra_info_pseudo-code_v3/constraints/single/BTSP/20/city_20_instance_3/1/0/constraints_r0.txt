@@ -1,0 +1,7 @@
+- [Requirement 1] The robot must visit each city exactly once, starting and ending at the depot city (city 0).
+- [Requirement 2] The goal is to minimize the longest distance between any two consecutive cities in the tour.
+- [Requirement 3] The output must include the tour as a list of city indices starting and ending at city 0.
+- [Requirement 4] The output must include the total travel cost of the tour.
+- [Requirement 5] The output must include the maximum distance between any two consecutive cities in the tour.
+- [Requirement 6] Travel cost is calculated as the Euclidean distance between any two cities.
+- [Requirement 7] Use an approximation algorithm that sorts the edge weights and checks for the existence of a Hamiltonian path in a bottleneck graph.

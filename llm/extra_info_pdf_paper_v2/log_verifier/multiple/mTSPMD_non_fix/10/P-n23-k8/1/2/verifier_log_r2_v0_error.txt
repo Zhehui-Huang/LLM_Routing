@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n23-k8/1/2/verifier_r2_v0.py", line 74, in <module>
+    print(verify_solution(robots_tours, robots_costs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n23-k8/1/2/verifier_r2_v0.py", line 59, in verify_solution
+    total_cost += euclidean_distance(tour[i], tour[i + 1])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n23-k8/1/2/verifier_r2_v0.py", line 38, in euclidean_distance
+    x2, y2 = cities_base[city2]
+             ^^^^^^^^^^^
+NameError: name 'cities_base' is not defined
+
+

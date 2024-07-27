@@ -1,0 +1,11 @@
+- [Requirement 1] There are 22 cities with predetermined coordinates, including multiple depot cities.
+- [Requirement 2] There are 4 robots, all starting from depot city 0.
+- [Requirement 3] All robots start and end their tours at their assigned depots.
+- [Requirement 4] Robots can travel between any two cities, with the travel cost calculated as the Euclidean distance between cities.
+- [Requirement 5] Each city must be visited exactly once by any one of the robots.
+- [Requirement 6] Minimize the total travel cost for all robots combined while organizing their tours.
+- [Requirement 7] Utilize a Tabu Search algorithm with specific operators (relocate, exchange, tail-swap, depot-exchange) and intra exchanging phase to find the solution.
+- [Requirement 8] Maintain a tabu list to avoid cycling and ensure exploration of new areas.
+- [Requirement 9] Stop the search based on a maximum number of iterations or if no new best solution is found after a certain number of iterations.
+- [Requirement 10] Output the tours for each robot as a list of city indices, starting and ending at the assigned depots.
+- [Requirement 11] Output the total travel cost for each individual tour and the overall total travel cost.

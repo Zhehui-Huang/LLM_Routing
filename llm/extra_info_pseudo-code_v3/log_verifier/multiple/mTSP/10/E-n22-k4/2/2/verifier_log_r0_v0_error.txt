@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSP/10/E-n22-k4/2/2/verifier_r0_v0.py", line 62, in <module>
+    print(test_solution())
+          ^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSP/10/E-n22-k4/2/2/verifier_r0_v0.py", line 56, in test_solution
+    if not math.isclose(total_total_cost, expected_total_distance, abs_tol=1e-5):
+                        ^^^^^^^^^^^^^^^^
+NameError: name 'total_total_cost' is not defined
+
+

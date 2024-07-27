@@ -1,0 +1,14 @@
+OUTPUT:
+Robot 0 Tour: [0, 3, 8, 0]
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/CVRP/10/P-n16-k8/4/2/solution_r0.py", line 62, in <module>
+    solve_cvrp()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/CVRP/10/P-n16-k8/4/2/solution_r0.py", line 57, in solve_cvrp
+    print(f"Robot {idx} Total Travel Cost: {route_adj_cost}")
+                                            ^^^^^^^^^^^^^^
+NameError: name 'route_adj_cost' is not defined. Did you mean: 'route_cost'?
+
+

@@ -1,0 +1,7 @@
+- [The robot must start and end its route at the depot city (City 0).]
+- [The robot must visit exactly one city from each of the five city groups.]
+- [The total travel distance should be minimized for the robot.]
+- [The robot can travel directly between any two cities.]
+- [Travel cost between cities is calculated using the Euclidean distance.]
+- [Travel route should be outputted as a list of city indices.]
+- [Total travel cost should also be provided in the output.]

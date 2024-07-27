@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/KTSP/20/city_20_instance_1/4/0/verifier_r0_v0.py", line 42
+    _cost, self.provided_cost, delta=0.01, msg="Calculated travel cost does not match the provided cost.")
+                                                                                                         ^
+SyntaxError: unmatched ')'
+
+

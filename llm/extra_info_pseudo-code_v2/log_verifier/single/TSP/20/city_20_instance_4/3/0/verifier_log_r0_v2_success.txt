@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+test_total_travel_cost (__main__.TestRobotTourSolution.test_total_travel_cost) ... ok
+test_tour_starts_and_ends_at_depot (__main__.TestRobotTourSolution.test_tour_starts_and_ends_at_depot) ... ok
+test_visit_each_city_once (__main__.TestRobotTourSolution.test_visit_each_city_once) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+
+

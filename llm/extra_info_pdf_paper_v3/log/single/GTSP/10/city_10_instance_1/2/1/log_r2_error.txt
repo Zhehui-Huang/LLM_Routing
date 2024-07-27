@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/GTSP/10/city_10_instance_1/2/1/solution_r2.py", line 51, in <module>
+    minimum_cost = tour_flow_tour
+                   ^^^^^^^^^^^^^^
+NameError: name 'tour_flow_tour' is not defined
+
+

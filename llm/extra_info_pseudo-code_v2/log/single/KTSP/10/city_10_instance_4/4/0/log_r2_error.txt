@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_4/4/0/solution_r2.py", line 65, in <module>
+    optimal_tour, optimal_cost = find_optimal_tour()
+                                 ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_4/4/0/solution_r2.py", line 56, in find_optimal_tour
+    best_cost = calculate_tour_cost(best_tour)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_4/4/0/solution_r2.py", line 33, in calculate_tour_cost
+    total_cost += euclidean_distance(cities[tour[i]], cities[tour[i + 1]])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_4/4/0/solution_r2.py", line 20, in euclidean_distance
+    return np.sqrt((p1[0] - p2[0])**2 + (p1[1] - p2[1])**2)
+           ^^
+NameError: name 'np' is not defined
+
+

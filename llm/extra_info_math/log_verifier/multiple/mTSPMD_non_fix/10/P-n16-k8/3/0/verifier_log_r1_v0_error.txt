@@ -1,0 +1,43 @@
+OUTPUT:
+
+
+ERROR:
+F.F.F.
+======================================================================
+FAIL: test_salesmen_departure (__main__.TestRobotTours.test_salesmen_departure)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/P-n16-k8/3/0/verifier_r1_v0.py", line 20, in test_salesmen_departure
+    self.assertEqual(departs, 1, f"Failed: Each salesman should leave the depot once. Found {departs}")
+AssertionError: 8 != 1 : Failed: Each salesman should leave the depot once. Found 8
+
+======================================================================
+FAIL: test_customer_visit_once (__main__.TestRobotTours.test_customer_visit_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/P-n16-k8/3/0/verifier_r1_v0.py", line 32, in test_customer_visit_once
+    self.assertEqual(all_visits.count(city), 1, f"Failed: Each customer city should be visited exactly once. City {city} visited {all_visits.count(city)} times.")
+AssertionError: 56 != 1 : Failed: Each customer city should be visited exactly once. City 0 visited 56 times.
+
+======================================================================
+FAIL: test_subtour_elimination (__main__.TestRobotTours.test_subtour_elimination)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/P-n16-k8/3/0/verifier_r1_v0.py", line 43, in test_subtour_elimination
+    self.assertEqual(len(set(tour)), len(tour)//2 + 1, f"Subtour detected in the tour {tour}")
+AssertionError: 2 != 9 : Subtour detected in the tour [0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+FAILED (failures=3)
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/P-n16-k8/3/0/verifier_r1_v0.py", line 68, in <module>
+    msg = "CORRECT" if all(result.wasSuccessful() for result in result.failures) else "FAIL"
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/P-n16-k8/3/0/verifier_r1_v0.py", line 68, in <genexpr>
+    msg = "CORRECT" if all(result.wasSuccessful() for result in result.failures) else "FAIL"
+                           ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'wasSuccessful'
+
+

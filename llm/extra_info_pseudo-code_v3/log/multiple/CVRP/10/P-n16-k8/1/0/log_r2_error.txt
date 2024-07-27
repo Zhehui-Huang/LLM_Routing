@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/CVRP/10/P-n16-k8/1/0/solution_r2.py", line 53
+    routes = solve_cvrp_greavy(coordinatesdifferent/, total_distances(x)
+                                                    ^
+SyntaxError: invalid syntax
+
+

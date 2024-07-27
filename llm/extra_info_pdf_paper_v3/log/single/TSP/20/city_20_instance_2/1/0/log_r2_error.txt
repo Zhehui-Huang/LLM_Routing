@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_2/1/0/solution_r2.py", line 56, in <module>
+    tour, total_travel_cost = christofides_algorithm(coordinates)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_2/1/0/solution_r2.py", line 12, in christofides_algorithm
+    G = networkx.from_numpy_array(dist_matrix)
+        ^^^^^^^^
+NameError: name 'networkx' is not defined
+
+

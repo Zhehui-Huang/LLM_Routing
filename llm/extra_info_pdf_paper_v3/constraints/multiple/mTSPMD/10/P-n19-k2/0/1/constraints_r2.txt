@@ -1,0 +1,3 @@
+- [Requirement 1] The solution should ensure that both robots start and end their respective tours at their assigned depots.
+- [Requirement 2] Each robot must visit all cities exactly once collectively, and none of the cities should be visited by more than one robot.
+- [Requirement 3] The objective is to minimize the total travel cost for both robots combined, where the travel cost is defined as the Euclidean distance between cities.

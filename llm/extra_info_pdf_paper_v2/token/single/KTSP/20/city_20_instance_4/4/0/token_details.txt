@@ -1,0 +1,23 @@
+Task: KTSP, City: 20, File name: city_20_instance_4, Run time: 4, Try id: 0
+
+@@@@@
+Notes: exec
+input_token_num: 867
+output_token_num: 797
+total_token_num: 1664
+@@@@@
+
+@@@@@
+Notes: extract_constraints
+input_token_num: 949
+output_token_num: 131
+total_token_num: 1080
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 1327
+output_token_num: 606
+total_token_num: 1933
+@@@@@
+

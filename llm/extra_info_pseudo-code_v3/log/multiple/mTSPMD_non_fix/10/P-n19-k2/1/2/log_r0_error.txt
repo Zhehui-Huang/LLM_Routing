@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/1/2/solution_r0.py", line 54, in <module>
+    tours = initialize_tours()
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/1/2/solution_r0.py", line 21, in initialize_tours
+    unvisited_cities = set(cities.keys()) - {start_deport}
+                                             ^^^^^^^^^^^^
+NameError: name 'start_deport' is not defined. Did you mean: 'start_depot'?
+
+

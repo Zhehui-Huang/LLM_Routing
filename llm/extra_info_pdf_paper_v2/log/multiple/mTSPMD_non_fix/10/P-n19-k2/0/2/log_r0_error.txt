@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/0/2/solution_r0.py", line 61, in <module>
+    tour_0, cost_0 = simulated_annealing(robot_0_cities, start_temp, alpha, max_iter)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/0/2/solution_r0.py", line 22, in simulated_annealing
+    random.shuffle(current_taboutur)
+                   ^^^^^^^^^^^^^^^^
+NameError: name 'current_taboutur' is not defined
+
+

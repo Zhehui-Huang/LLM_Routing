@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_1/0/2/solution_r0.py", line 79
+    route_cost = sum(euclidean_once again, in the computational sense_distance(route[i], route[i+1]) for i in range(len(route) - 1))
+                     ^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

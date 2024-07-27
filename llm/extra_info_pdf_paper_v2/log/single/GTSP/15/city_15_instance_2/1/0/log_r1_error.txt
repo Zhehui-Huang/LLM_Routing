@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/GTSP/15/city_15_instance_2/1/0/solution_r1.py", line 43, in <module>
+    current_distance = evaluate_route(current_route)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/GTSP/15/city_15_instance_2/1/0/solution_r1.py", line 31, in evaluate_route
+    total_idstance += distances[(route[-1], 0)]  # Return to the depot
+    ^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'total_idstance' where it is not associated with a value
+
+

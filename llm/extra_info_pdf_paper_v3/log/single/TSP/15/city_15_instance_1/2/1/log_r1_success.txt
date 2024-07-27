@@ -1,0 +1,8 @@
+OUTPUT:
+Tour: [0, 10, 4, 0, 9, 3, 7, 1, 6, 13, 2, 12, 11, 8, 14, 5, 0]
+Total travel cost: 405.85672628610496 units of distance
+
+
+ERROR:
+
+

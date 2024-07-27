@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must start and end the tour at the depot city, which is city 0.
+- [Requirement 2] Each city, except the depot city, must be visited exactly once by the robot.
+- [Requirement 3] The total travel cost is calculated using the Euclidean distance between cities.
+- [Requirement 4] The output should specify both the tour as a list of city indices starting and ending at the depot city, and the total travel cost of this tour.
+- [Requirement 5] Use Christofides algorithm to find an approximate solution to the Traveling Salesman Problem, which includes finding an MST, perfect matching among odd degree vertices, forming a multigraph, deriving an Eulerian circuit, and converting it to a Hamiltonian circuit.

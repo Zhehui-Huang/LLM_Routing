@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/10/city_10_instance_0/4/1/solution_r2.py", line 39, in <module>
+    H.add_edges_from(min_weight_switching)
+                     ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'min_weight_switching' is not defined. Did you mean: 'min_weight_matching'?
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/CVRP/10/P-n21-k2/4/1/solution_r1.py", line 61, in <module>
+    routes = clarke_wright_savings(cities, demands, robot_capacity)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/CVRP/10/P-n21-k2/4/1/solution_r1.py", line 40, in clarke_wright_savings
+    s = cost_matrix[0][i] + cost_matrix[0][j] - cost_index[i][j]
+                                                ^^^^^^^^^^
+NameError: name 'cost_index' is not defined
+
+

@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/CVRP/10/P-n21-k2/1/1/solution_r0.py", line 96, in <module>
+    routes, loads = create_initial_solution()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/CVRP/10/P-n21-k2/1/1/solution_r0.py", line 88, in create_initial_solution
+    current_route = find_minimal_route(0, unserved_cities, lambda i: cities[i][2], robot_capacity)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/CVRP/10/P-n21-k2/1/1/solution_r0.py", line 66, in find_minimal_route
+    if city not in route and current_load + demands[city] <= capacities and dist_matrix[current][city] < min_dist:
+                                            ~~~~~~~^^^^^^
+TypeError: 'function' object is not subscriptable
+
+

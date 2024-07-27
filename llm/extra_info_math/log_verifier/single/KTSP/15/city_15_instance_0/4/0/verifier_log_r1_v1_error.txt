@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/KTSP/15/city_15_instance_0/4/0/verifier_r1_v1.py", line 27
+    computed_cost += calculate_instanceeur/cities[torny/i],.clixiestourkasi){
+                                                                           ^
+SyntaxError: unmatched ')'
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/TSP/20/city_20_instance_1/4/1/verifier_r1_v1.py", line 40
+    self.assertAlmostEqual(calculated  cost, self.expected_cost, places=6, "Tour cost does not match expected cost")
+                           ^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

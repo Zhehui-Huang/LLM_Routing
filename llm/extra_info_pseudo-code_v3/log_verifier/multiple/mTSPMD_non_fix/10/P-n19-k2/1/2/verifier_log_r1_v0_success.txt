@@ -1,0 +1,22 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSPMD_non_fix/10/P-n19-k2/1/2/verifier_r1_v0.py:56: DeprecationWarning: unittest.makeSuite() is deprecated and will be removed in Python 3.13. Please use unittest.TestLoader.loadTestsFromTestCase() instead.
+  suite.addTest(unittest.makeSuite(TestRobotTours))
+F......
+======================================================================
+FAIL: test_all_cities_visited_once (__main__.TestRobotTours.test_all_cities_visited_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSPMD_non_fix/10/P-n19-k2/1/2/verifier_r1_v0.py", line 33, in test_all_cities_visited_once
+    self.assertEqual(len(self.all_tours), len(set(self.all_tours)))
+AssertionError: 20 != 19
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+FAILED (failures=1)
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/BTSP/10/city_10_instance_1/3/1/verifier_r2_v1.py", line 31, in <module>
+    result = verify_solution(cities, tour_solution, total_travel_cost_solution, maximum_distance_solution)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/BTSP/10/city_10_instance_1/3/1/verifier_r2_v1.py", line 18, in verify_solution
+    if distance > actual_max_idstance:
+                  ^^^^^^^^^^^^^^^^^^^
+NameError: name 'actual_max_idstance' is not defined. Did you mean: 'actual_max_distance'?
+
+

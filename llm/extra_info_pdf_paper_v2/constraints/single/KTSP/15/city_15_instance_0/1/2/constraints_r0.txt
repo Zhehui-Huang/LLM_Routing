@@ -1,0 +1,6 @@
+- [Requirement 1] The robot starts and ends the tour at the depot city 0.
+- [Requirement 2] The tour must consist of exactly 4 cities, including the depot.
+- [Requirement 3] The tour's travel cost is calculated as the Euclidean distance between the sequential cities visited.
+- [Requirement 4] The solution must seek the shortest possible travel path considering the path constraints.
+- [Requirement 5] The output should be in the format: Tour (list of city indices starting and ending at depot city) and total travel cost.
+- [Requirement 6] The solution should leverage the insights from the provided research on general variable neighborhood search (GVNS) algorithms for the k-TSP problem.

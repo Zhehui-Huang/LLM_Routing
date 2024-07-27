@@ -1,0 +1,16 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_2/1/1/solution_r1.py", line 76, in <module>
+    eulerian_circuit = create_eulerian_circuit(mst, starting_vertex=0)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_2/1/1/solution_r1.py", line 20, in create_eulerian_circuit
+    return list(nx.eulerian_circuit(combined_graph, source=starting_vertex))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/networkx/algorithms/euler.py", line 218, in eulerian_circuit
+    raise nx.NetworkXError("G is not Eulerian.")
+networkx.exception.NetworkXError: G is not Eulerian.
+
+

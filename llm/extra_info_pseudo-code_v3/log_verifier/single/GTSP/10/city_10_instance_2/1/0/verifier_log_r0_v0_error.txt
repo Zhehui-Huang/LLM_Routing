@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/GTSP/10/city_10_instance_2/1/0/verifier_r0_v0.py", line 58, in <module>
+    print(verify_tour(proposed_tour, groups))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/GTSP/10/city_10_instance_2/1/0/verifier_r0_v0.py", line 51, in verify_tour
+    if not math.isclose(calculated_cost, reported_difference, rel_tol=1e-5):
+                                         ^^^^^^^^^^^^^^^^^^^
+NameError: name 'reported_difference' is not defined
+
+

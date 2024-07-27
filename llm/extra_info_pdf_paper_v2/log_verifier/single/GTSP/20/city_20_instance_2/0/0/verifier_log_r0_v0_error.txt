@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/GTSP/20/city_20_instance_2/0/0/verifier_r0_v0.py", line 61
+    for index, group in enumerate(city_As presented in the task description groups):
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

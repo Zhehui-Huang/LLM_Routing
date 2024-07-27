@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP_MinMax/10/P-n23-k8/4/0/solution_r0.py", line 67, in <module>
+    best_tours, min_max_cost = variable_neighborhood_search()
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP_MinMax/10/P-n23-k8/4/0/solution_r0.py", line 57, in variable_neighborhood_search
+    new_cost = max([calculate_tour_cost(tour) for tour in new_tours])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP_MinMax/10/P-n23-k8/4/0/solution_r0.py", line 57, in <listcomp>
+    new_cost = max([calculate_tour_cost(tour) for tour in new_tours])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP_MinMax/10/P-n23-k8/4/0/solution_r0.py", line 30, in calculate_tour_cost
+    cost = calculate_distance(0, tour[0]) + calculate_distance(tour[-1], 0)
+                                 ~~~~^^^
+IndexError: list index out of range
+
+

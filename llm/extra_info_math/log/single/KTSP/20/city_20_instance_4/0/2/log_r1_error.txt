@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_4/0/2/solution_r1.py", line 44
+    print(f"Total travel cost: {total_domain("total_cost"):f}")
+                                              ^^^^^^^^^^
+SyntaxError: f-string: unmatched '('
+
+

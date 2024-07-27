@@ -1,0 +1,5 @@
+- [Requirement 1] There are 23 cities with specific coordinates, including 8 depot cities where robots start and end their routes.
+- [Requirement 2] There are 8 robots, each assigned to a unique depot city from where they start and to which they must return after visiting other cities.
+- [Requirement 3] Each robot must visit all cities exactly once and return to their starting depot, ensuring a collective minimal total travel cost across all robots.
+- [Requirement 4] Travel cost between two cities is calculated using the Euclidean distance between their coordinates.
+- [Requirement 5] Output must include the routes for each robot starting and ending at their respective depots, the total travel cost for each robot, and the overall total travel cost.

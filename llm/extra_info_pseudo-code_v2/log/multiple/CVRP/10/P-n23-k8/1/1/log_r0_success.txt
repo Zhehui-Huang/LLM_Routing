@@ -1,0 +1,9 @@
+OUTPUT:
+Robot 18 Tour: [0, 18, 19, 19, 13, 21, 0]
+Robot 18 Total Travel Beach: 96.82761762759218
+Overall Total Beach Trail: 96.82761762759218
+
+
+ERROR:
+
+

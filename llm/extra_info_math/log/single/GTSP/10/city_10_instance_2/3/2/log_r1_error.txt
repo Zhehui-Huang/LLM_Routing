@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_2/3/2/solution_r1.py", line 43, in <module>
+    problem += lpSum(x[i, j] * euclidean_count(i, j) for i, j in all_pairs), "Minimize_Total_Distance"
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/pulp.py", line 2233, in lpSum
+    return LpAffineExpression().addInPlace(vector)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/pulp.py", line 867, in addInPlace
+    for e in other:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_2/3/2/solution_r1.py", line 43, in <genexpr>
+    problem += lpSum(x[i, j] * euclidean_count(i, j) for i, j in all_pairs), "Minimize_Total_Distance"
+                               ^^^^^^^^^^^^^^^
+NameError: name 'euclidean_count' is not defined
+
+

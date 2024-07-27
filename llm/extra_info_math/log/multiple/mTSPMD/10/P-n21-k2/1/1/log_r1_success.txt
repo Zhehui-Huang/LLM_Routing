@@ -1,0 +1,58 @@
+OUTPUT:
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - /home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/solverdir/cbc/linux/64/cbc /tmp/f24f4cfc14c247e3b5fd35155b6f8321-pulp.mps -timeMode elapsed -branch -printingOptions all -solution /tmp/f24f4cfc14c247e3b5fd35155b6f8321-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 66 COLUMNS
+At line 4947 RHS
+At line 5009 BOUNDS
+At line 5850 ENDATA
+Problem MODEL has 61 rows, 840 columns and 2360 elements
+Coin0008I MODEL read with 0 errors
+Option for timeMode changed from cpu to elapsed
+Continuous objective value is 156 - 0.00 seconds
+Cgl0004I processed model has 61 rows, 840 columns (840 integer (840 of which binary)) and 2360 elements
+Cutoff increment increased from 1e-05 to 0.9999
+Cbc0038I Initial state - 6 integers unsatisfied sum - 3
+Cbc0038I Pass   1: suminf.    0.00000 (0) obj. 156 iterations 58
+Cbc0038I Solution found of 156
+Cbc0038I Before mini branch and bound, 833 integers at bound fixed and 0 continuous
+Cbc0038I Mini branch and bound did not improve solution (0.01 seconds)
+Cbc0038I After 0.01 seconds - Feasibility pump exiting with objective of 156 - took 0.00 seconds
+Cbc0012I Integer solution of 156 found by feasibility pump after 0 iterations and 0 nodes (0.01 seconds)
+Cbc0001I Search completed - best objective 156, took 0 iterations and 0 nodes (0.01 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 156 to 156
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                156.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.01
+Time (Wallclock seconds):       0.01
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.01
+
+Robot 0 Tour: [0, 6, 16, 0]
+Robot 0 Total Travel Cost: 28.0
+Robot 1 Tour: [1, 10, 1]
+Robot 1 Total Travel Cost: 14.0
+Overall Total Travel Cost: 156.0
+
+
+ERROR:
+
+

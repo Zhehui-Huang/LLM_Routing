@@ -1,0 +1,13 @@
+OUTPUT:
+Tour: [0, 3, 4, 8, 5, 2, 9, 7, 1, 6, 0]
+Total travel cost: 291.41088704894975
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/10/city_10_instance_1/4/0/solution_r0.py", line 56, in <module>
+    print(f"Maximum distance between consecutive cities: {best_max_group_distance}")
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'best_max_group_distance' is not defined. Did you mean: 'best_max_distance'?
+
+

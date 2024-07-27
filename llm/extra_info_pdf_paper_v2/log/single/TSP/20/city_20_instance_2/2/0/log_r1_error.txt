@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/20/city_20_instance_2/2/0/solution_r1.py", line 51, in <module>
+    initial_tour = nearest_neighbor(0)
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/20/city_20_instance_2/2/0/solution_r1.py", line 23, in nearest_neighbor
+    unvisited.remove(start_atom_my)
+                     ^^^^^^^^^^^^^
+NameError: name 'start_atom_my' is not defined
+
+

@@ -1,0 +1,17 @@
+OUTPUT:
+WARNING: Could not locate the 'glpsol' executable, which is required for
+solver 'glpk'
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/1/0/solution_r1.py", line 81, in <module>
+    result = solver.solve(model, tee=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pyomo/opt/base/solvers.py", line 534, in solve
+    self.available(exception_flag=True)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pyomo/opt/solver/shellcmd.py", line 140, in available
+    raise ApplicationError(msg % self.name)
+pyomo.common.errors.ApplicationError: No executable found for solver 'glpk'
+
+

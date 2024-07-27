@@ -1,0 +1,15 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSP_MinMax/10/P-n21-k2/2/0/verifier_r1_v0.py", line 43, in <module>
+    test_case.runTest()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSP_MinMax/10/P-n21-k2/2/0/verifier_r1_v0.py", line 34, in runTest
+    self.test_visits_all_cities_once()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSP_MinMax/10/P-n21-k2/2/0/verifier_r1_v0.py", line 18, in test_visits_all_cities_once
+    for tour in self.robot_tours.values():
+                ^^^^^^^^^^^^^^^^
+AttributeError: 'TestRobotTours' object has no attribute 'robot_tours'
+
+

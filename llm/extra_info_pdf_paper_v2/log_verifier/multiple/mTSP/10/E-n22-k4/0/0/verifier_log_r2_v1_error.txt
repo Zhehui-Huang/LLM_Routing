@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSP/10/E-n22-k4/0/0/verifier_r2_v1.py", line 58, in <module>
+    print(verification_results)
+          ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'verification_results' is not defined. Did you mean: 'verification_result'?
+
+

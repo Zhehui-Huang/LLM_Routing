@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_1/0/0/solution_r2.py", line 46
+    u, v = odd_degree_nodes[i], odd_degree adree_nodes[j]
+                                           ^^^^^^^^^^^
+SyntaxError: invalid syntax
+
+

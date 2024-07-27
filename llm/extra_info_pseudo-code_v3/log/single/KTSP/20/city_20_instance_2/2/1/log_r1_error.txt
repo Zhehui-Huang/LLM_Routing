@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_2/2/1/solution_r1.py", line 22, in <module>
+    distance_matrix = calculate_distance_matrix(cities_coordinates)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_2/2/1/solution_r1.py", line 16, in calculate_distance_matrix
+    matrix = np.zeros((num_cities, num_cities))
+             ^^
+NameError: name 'np' is not defined. Did you mean: 'na'?
+
+

@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/GTSP/20/city_20_instance_0/4/1/verifier_r0_v0.py", line 66, in <module>
+    result = verify_solution(tour_solution, total_capture_solution)
+                                            ^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_capture_solution' is not defined. Did you mean: 'total_cost_solution'?
+
+

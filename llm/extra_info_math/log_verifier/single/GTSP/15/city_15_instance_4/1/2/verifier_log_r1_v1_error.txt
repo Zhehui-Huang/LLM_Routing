@@ -1,0 +1,16 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/GTSP/15/city_15_instance_4/1/2/verifier_r1_v1.py", line 69, in <module>
+    result = validate_solution(tour, groups, computed_cost)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/GTSP/15/city_15_instance_4/1/2/verifier_r1_v1.py", line 64, in validate_solution
+    check_no_subtours_and_total_cost(tour, expected_cost)
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/GTSP/15/city_15_instance_4/1/2/verifier_r1_v1.py", line 57, in check_no_subtours_and_total_cost
+    return costs_match and tour_unique in check
+                           ^^^^^^^^^^^
+NameError: name 'tour_unique' is not defined
+
+

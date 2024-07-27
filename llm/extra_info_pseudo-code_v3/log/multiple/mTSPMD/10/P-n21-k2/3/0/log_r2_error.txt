@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n21-k2/3/0/solution_r2.py", line 113, in <module>
+    pop = next_generation(pop, elite_size)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n21-k2/3/0/solution_r2.py", line 107, in next_generation
+    next_generation = [mutate(ind) for ind in children]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n21-k2/3/0/solution_r2.py", line 107, in <listcomp>
+    next_generation = [mutate(ind) for ind in children]
+                       ^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n21-k2/3/0/solution_r2.py", line 96, in mutate
+    individual[swapped] = city2
+    ~~~~~~~~~~^^^^^^^^^
+TypeError: 'tuple' object does not support item assignment
+
+

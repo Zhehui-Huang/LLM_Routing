@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/TSP/15/city_15_instance_4/1/0/verifier_r0_v0.py", line 45
+    if not math.isclose(total_calculated content_calcst, reported_est, rel_tol=1e-2):
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

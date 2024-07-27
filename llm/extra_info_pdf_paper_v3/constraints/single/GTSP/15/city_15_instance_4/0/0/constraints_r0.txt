@@ -1,0 +1,7 @@
+- [The robot must start and end its journey at Depot city 0.]
+- [The robot needs to visit exactly one city from each of the 7 city groups.]
+- [The environment contains exactly 15 cities, including the depot.]
+- [Travel costs between cities are calculated using Euclidean distances.]
+- [The total route must be a solution to a variant of the Traveling Salesman Problem, specifically adapted as a Generalized Traveling Salesman Problem (GTSP).]
+- [Output must include an optimal tour as a list of city indices in sequence, starting and ending with the depot city (index 0).]
+- [Output must include the total travel cost of the tour.]

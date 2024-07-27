@@ -1,0 +1,11 @@
+- [Requirement 1] The environment consists of 16 cities, where the depot city is city 0 with coordinates (30, 40).
+- [Requirement 2] There are 8 robots available, all starting at the depot city 0.
+- [Requirement 3] Each robot can travel between any two cities with travel cost calculated as Euclidean distance.
+- [Requirement 4] Robots collectively must visit all cities exactly once (excluding depot city 0), returning to depot city 0 after completing their tours.
+- [Requirement 5] The objective is to minimize the total travel cost for all robots.
+- [Requirement 6] Tours must start and end at the depot city 0.
+- [Requirement 7] Output the tours for each robot as a list of city indices that start and end at depot city.
+- [Requirement 8] Output the total travel cost for each tour and the cumulative travel cost for all tours.
+- [Requirement 9] Every city, except for the depot, has to be included exactly once in the tours.
+- [Requirement 10] Use specific local search techniques such as 2-opt or 3-opt to optimize tours.
+- [Requirement 11] Implement inter-salesmen optimization techniques that include city swaps or relocations among different tours to optimize total distance.

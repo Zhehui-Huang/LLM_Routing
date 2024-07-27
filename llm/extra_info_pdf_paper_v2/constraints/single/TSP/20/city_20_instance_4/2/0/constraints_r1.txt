@@ -1,0 +1,6 @@
+- [Requirement 1] The robot must start and end the tour at the depot city 0.
+- [Requirement 2] Each city must be visited exactly once by the robot, except the depot city 0.
+- [Requirement 3] The travel cost between any two cities is calculated using the Euclidean distance.
+- [Requirement 4] Output should include the tour as a list of city indices, starting and ending at the depot city 0.
+- [Requirement 5] Output should also include the total travel cost of the tour.
+- [Requirement 6] The provided solution approach should aim for optimality, leveraging iterative improvements as suggested by the Lin-Kernighan heuristic methodology.

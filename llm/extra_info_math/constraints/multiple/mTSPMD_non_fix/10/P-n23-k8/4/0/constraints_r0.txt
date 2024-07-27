@@ -1,0 +1,8 @@
+- [Ensure exactly \( m_i \) salesmen leave each depot \( i \in D \)]
+- [Ensure exactly \( m_i \) salesmen return to each depot \( i \in D \)]
+- [Ensure each customer node is visited exactly once]
+- [Bound constraints to ensure proper tour lengths and initialize \( u_i \)]
+- [Prohibit a salesman from serving only a single customer]
+- [Subtour elimination constraints]
+- [Binary constraints]
+- [Validity conditions for \( K \) and \( L \)]

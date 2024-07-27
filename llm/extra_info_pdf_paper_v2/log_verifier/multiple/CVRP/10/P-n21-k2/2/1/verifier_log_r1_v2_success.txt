@@ -1,0 +1,30 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/CVRP/10/P-n21-k2/2/1/verifier_r1_v2.py:60: DeprecationWarning: unittest.makeSuite() is deprecated and will be removed in Python 3.13. Please use unittest.TestLoader.loadTestsFromTestCase() instead.
+  test_suite.addTest(unittest.makeSuite(TestRobotTours))
+..FF.
+======================================================================
+FAIL: test_demand_met_exactly (__main__.TestRobotTours.test_demand_met_exactly)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/CVRP/10/P-n21-k2/2/1/verifier_r1_v2.py", line 39, in test_demand_met_exactly
+    self.assertEqual(total_demand[city], demand, "Demand not met exactly for city {}".format(city))
+AssertionError: 34 != 17 : Demand not met exactly for city 18
+
+======================================================================
+FAIL: test_minimize_total_travel_cost (__main__.TestRobotTours.test_minimize_total_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/CVRP/10/P-n21-k2/2/1/verifier_r1_v2.py", line 56, in test_minimize_total_travel_cost
+    self.assertAlmostEqual(actual_total_cost, expected_total_cost, places=2, msg="Total travel cost is not minimal")
+AssertionError: 178.84 != 178.85 within 2 places (0.009999999999990905 difference) : Total travel cost is not minimal
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+FAILED (failures=2)
+
+

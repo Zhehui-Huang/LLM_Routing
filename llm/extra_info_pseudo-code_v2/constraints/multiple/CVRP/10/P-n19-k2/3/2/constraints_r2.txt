@@ -1,0 +1,7 @@
+- [Requirement 1] The robots must start and end at the depot city 0.
+- [Requirement 2] Each city's specific demand must be fully met by the deliveries made by the robots.
+- [Requirement 3] The capacity constraints of each robot, which is 160, must not be exceeded.
+- [Requirement 4] The overall goal is to minimize the total travel cost for all tours of the robots.
+- [Requirement 5] Tours for each robot should be listed as sequences of city indices, starting and ending at the depot.
+- [Requirement 6] Compute the total travel cost for each tour and provide the overall total travel cost.
+- [Requirement 7] Each robot can travel between any two cities and the travel cost is defined as the Euclidean distance between those cities.

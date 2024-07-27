@@ -1,0 +1,18 @@
+OUTPUT:
+CORRECT
+
+
+ERROR:
+/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/BTSP/15/city_15_instance_4/3/1/verifier_r0_v0.py:43: DeprecationWarning: unittest.makeSuite() is deprecated and will be removed in Python 3.13. Please use unittest.TestLoader.loadTestsFromTestCase() instead.
+  test_suite.addTest(unittest.makeSuite(TestTSPSolution))
+test_maximum_distance_between_consecutive_cities (__main__.TestTSPSolution.test_maximum_distance_between_consecutive_cities) ... ok
+test_total_travel_cost (__main__.TestTSPSolution.test_total_travel_cost) ... ok
+test_tour_start_end_at_depot (__main__.TestTSPSolution.test_tour_start_end_at_depot) ... ok
+test_tour_visits_all_cities_exactly_once (__main__.TestTSPSolution.test_tour_visits_all_cities_exactly_once) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+
+

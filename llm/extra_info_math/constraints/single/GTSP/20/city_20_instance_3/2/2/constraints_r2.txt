@@ -1,0 +1,3 @@
+- [Requirement 1] The robot must visit exactly one city from each city group, starting and ending at depot city 0.
+- [Requirement 2] The robot travels must involve the minimum possible total Euclidean distance.
+- [Requirement 3] The tour must be formulated to prevent any subtours, visiting each city group exactly once before returning to the depot city.

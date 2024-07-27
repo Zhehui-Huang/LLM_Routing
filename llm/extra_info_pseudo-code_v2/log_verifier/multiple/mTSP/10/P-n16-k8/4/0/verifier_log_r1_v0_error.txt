@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSP/10/P-n16-k8/4/0/verifier_r1_v0.py", line 70, in <module>
+    result = verify_tours_and_costs(tours, total_costs, coordinates)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSP/10/P-n16-k8/4/0/verifier_r1_v0.py", line 40, in verify_tours_and_costs
+    if cities_visited != all_class:
+                         ^^^^^^^^^
+NameError: name 'all_class' is not defined
+
+

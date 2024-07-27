@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+E
+======================================================================
+ERROR: test_tours_and_costs (__main__.TestTSPSolution.test_tours_and_costs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSP_MinMax/10/E-n22-k4/1/0/verifier_r1_v2.py", line 50, in test_tours_and_costs
+    computed_costs.append(round(tour_dataעMset,"CORRECT"))
+                                ^^^^^^^^^^^^^^
+NameError: name 'tour_dataעMset' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+
+

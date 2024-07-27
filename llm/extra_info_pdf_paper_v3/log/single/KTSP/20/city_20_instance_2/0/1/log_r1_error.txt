@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/KTSP/20/city_20_instance_2/0/1/solution_r1.py", line 45, in <module>
+    optimal_tour, optimal_cost = find_shortest_tour()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/KTSP/20/city_20_instance_2/0/1/solution_r1.py", line 36, in find_shortest_tour
+    tour_distance = compute_total_distance(tour_with_depot)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/KTSP/20/city_20_instance_2/0/1/solution_r1.py", line 19, in compute_total_distance
+    total_distance += euclideanChDistance(tour[i], tour[i + 1])
+                      ^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclideanChDistance' is not defined. Did you mean: 'euclidean_distance'?
+
+

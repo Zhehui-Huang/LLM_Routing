@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/10/city_10_instance_3/1/1/verifier_r1_v1.py", line 47, in <module>
+    result = run_tests(solution_tour, reported_max_distance, reported_total_confirmed)
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'reported_total_confirmed' is not defined. Did you mean: 'reported_total_cost'?
+
+

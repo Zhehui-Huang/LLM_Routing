@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_2/4/0/solution_r0.py", line 72, in <module>
+    solution, distance = gvns(Nrst)
+                         ^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_2/4/0/solution_r0.py", line 58, in gvns
+    S_improved = vnd(S_shaken)
+                 ^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_2/4/0/solution_r0.py", line 46, in vnd
+    current_distance = new_radius
+                       ^^^^^^^^^^
+NameError: name 'new_radius' is not defined
+
+

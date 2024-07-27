@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/CVRP/10/E-n22-k4/3/0/verifier_r1_v0.py", line 64, in <module>
+    result = check_solution(tours, demands, capacities, coordinates)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/CVRP/10/E-n22-k4/3/0/verifier_r1_v0.py", line 23, in check_solution
+    if visited[city]:
+       ~~~~~~~^^^^^^
+IndexError: list index out of range
+
+

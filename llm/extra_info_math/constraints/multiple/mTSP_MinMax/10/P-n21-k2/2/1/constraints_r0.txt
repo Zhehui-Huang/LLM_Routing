@@ -1,0 +1,6 @@
+- [Each city is visited exactly once by one salesman: \(\sum_{i=1}^{n} \sum_{k=1}^{m} x_{ijk} = 1 \quad \forall j = 1, \ldots, n\)]
+- [Flow conservation constraints (each salesman must leave each visited node and enter each visited node exactly once): \(\sum_{j=1}^{n} x_{ipk} - \sum_{j=1}^{n} x_{pjk} = 0 \quad \forall k = 1, \ldots, m, \; p = 1, \ldots, n\)]
+- [Each salesman must leave the depot exactly once: \(\sum_{j=1}^{n} x_{1jk} = 1 \quad \forall k = 1, \ldots, m\)]
+- [Subtour elimination constraints: \(u_i - u_j + n \sum_{k=1}^{m} x_{ijk} \leq n - 1 \quad \forall i \neq j, \; i, j = 2, \ldots, n\)]
+- [Binary constraints for assignment variables: \(x_{ijk} \in \{0, 1\} \quad \forall i, j = 1, \ldots, n, \; k = 1, \ldots, m\)]
+- [Continuous variables for node positions: \(u_i \geq 0 \quad \forall i = 2, \ldots, n\)]

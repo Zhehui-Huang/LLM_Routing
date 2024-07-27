@@ -1,0 +1,16 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD_non_fix/10/P-n23-k8/0/1/solution_r2.py", line 35, in <module>
+    model.load = pyo.Var(model.N, model.R, domain=pyo.NonNegativeReals)
+    ^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pyomo/core/base/block.py", line 571, in __setattr__
+    self.add_component(name, val)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pyomo/core/base/block.py", line 952, in add_component
+    raise ValueError(
+ValueError: Attempting to declare a block component using the name of a reserved attribute:
+	load
+
+

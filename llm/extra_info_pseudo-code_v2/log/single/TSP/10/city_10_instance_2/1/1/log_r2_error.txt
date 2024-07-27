@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/10/city_10_instance_2/1/1/solution_r2.py", line 39, in <module>
+    tour = greedy_tsp(coordinates)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/10/city_10_instance_2/1/1/solution_r2.py", line 30, in greedy_tsp
+    while unyielded:
+          ^^^^^^^^^
+NameError: name 'unyielded' is not defined
+
+

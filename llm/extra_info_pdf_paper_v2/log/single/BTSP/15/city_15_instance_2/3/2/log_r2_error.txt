@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/15/city_15_instance_2/3/2/solution_r2.py", line 61, in <module>
+    total_cost, max_distance = calculate_costs(tour, dist_matrix)
+                               ^^^^^^^^^^^^^^^
+NameError: name 'calculate_costs' is not defined
+
+

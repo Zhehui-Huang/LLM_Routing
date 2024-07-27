@@ -1,0 +1,4 @@
+- [The robot must start and end its tour at the depot city, city 0.]
+- [Each city, except the depot city, must be visited exactly once by the robot.]
+- [Travel cost between cities is calculated using the Euclidean distance.]
+- [The output must include both the total travel cost of the tour and the list of city indices visited in order, starting and ending at the depot city.]

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/GTSP/10/city_10_instance_1/0/0/verifier_r0_v0.py", line 38
+    result = verify_tour(tour, travel_black holes and what are they likeost)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

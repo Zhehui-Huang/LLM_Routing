@@ -1,0 +1,13 @@
+OUTPUT:
+CORRECT
+
+
+ERROR:
+test_solution_correctness (__main__.TestTSPSolution.test_solution_correctness) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/GTSP/10/city_10_instance_1/0/0/verifier_r0_v0.py", line 70, in <module>
+    print(test_solution())
+          ^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/GTSP/10/city_10_instance_1/0/0/verifier_r0_v0.py", line 54, in test_solution
+    if not found_in_static:
+           ^^^^^^^^^^^^^^^
+NameError: name 'found_in_static' is not defined
+
+

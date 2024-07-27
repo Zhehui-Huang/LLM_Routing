@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/10/city_10_instance_4/1/1/solution_r0.py", line 79, in <module>
+    tour, cost = christofides_algorithm(cities)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/10/city_10_instance_4/1/1/solution_r0.py", line 62, in christofides_algorithm
+    mst = nx.from_scipy_sparse_matrix(mst_sparse, create_using=nx.Graph)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'networkx' has no attribute 'from_scipy_sparse_matrix'
+
+

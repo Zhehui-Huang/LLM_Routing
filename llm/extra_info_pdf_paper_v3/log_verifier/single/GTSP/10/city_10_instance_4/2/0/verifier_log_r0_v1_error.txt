@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/GTSP/10/city_10_instance_4/2/0/verifier_r0_v1.py", line 61, in <module>
+    result = verify_tour(tour, total_cost, cities, groups)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/GTSP/10/city_10_instance_4/2/0/verifier_r0_v1.py", line 24, in verify_tour
+    calculated_cost += calculate_euclidean_distance(cities[tour[i]], cities[tart[i+1]])
+                                                                            ^^^^
+NameError: name 'tart' is not defined
+
+

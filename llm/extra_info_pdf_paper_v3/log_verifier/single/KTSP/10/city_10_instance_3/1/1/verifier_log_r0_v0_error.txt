@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/KTSP/10/city_10_instance_3/1/1/verifier_r0_v0.py", line 44, in <module>
+    print(verify_tour(tour_solution, total_travel_cost_solution))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/KTSP/10/city_10_instance_3/1/1/verifier_r0_v0.py", line 22, in verify_tour
+    if tour[0] != 0 or tour[-1] != 0:
+       ~~~~^^^
+IndexError: list index out of range
+
+

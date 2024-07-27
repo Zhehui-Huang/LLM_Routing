@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD_non_fix/10/E-n22-k4/1/2/solution_r2.py", line 49, in <module>
+    tour = nearest_neighbor_tour(depot, assigned_cities, distances)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD_non_fix/10/E-n22-k4/1/2/solution_r2.py", line 22, in nearest_neighbor_tour
+    current_city = start_UIRMASTC.point
+                   ^^^^^^^^^^^^^^
+NameError: name 'start_UIRMASTC' is not defined
+
+

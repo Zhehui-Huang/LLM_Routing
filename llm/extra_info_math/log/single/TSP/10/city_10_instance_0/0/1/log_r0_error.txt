@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/10/city_10_instance_0/0/1/solution_r0.py", line 59
+    visited.add(current_html;current_city)
+                            ^
+SyntaxError: invalid syntax
+
+

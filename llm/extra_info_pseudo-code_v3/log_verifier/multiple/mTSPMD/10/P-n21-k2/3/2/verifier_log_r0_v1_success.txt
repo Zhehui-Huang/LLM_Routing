@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+.F.
+======================================================================
+FAIL: test_total_travel_cost (__main__.TestRobotTour.test_total_travel_cost)
+Calculating and verifying the total travel cost of the tour.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSPMD/10/P-n21-k2/3/2/verifier_r0_v1.py", line 35, in test_total_travel_cost
+    self.assertAlmostEqual(total_cost, self.robot0_cost, places=5)
+AssertionError: 189.03118014946992 != 167.65362182303798 within 5 places (21.377558326431938 difference)
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+
+

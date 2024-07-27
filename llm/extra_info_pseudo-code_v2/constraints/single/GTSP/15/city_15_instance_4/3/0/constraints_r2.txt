@@ -1,0 +1,4 @@
+- [The robot must start and end its tour at the depot city, which is city 0.]
+- [There are 15 cities in total, each with specific coordinates.]
+- [Cities are grouped into 7 distinct groups, and the robot must visit exactly one city from each group.]
+- [Travel cost between any two cities is calculated as the Euclidean distance.]

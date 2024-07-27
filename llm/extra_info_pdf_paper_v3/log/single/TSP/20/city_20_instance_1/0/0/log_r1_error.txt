@@ -1,0 +1,12 @@
+OUTPUT:
+Tour: [6, 14, 0, 6]
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_1/0/0/solution_r1.py", line 130, in <module>
+    print("Total travel cost:", total_travel_filter)
+                                ^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_travel_filter' is not defined. Did you mean: 'total_travel_cost'?
+
+

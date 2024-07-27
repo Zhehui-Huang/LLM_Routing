@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/BTSP/10/city_10_instance_2/2/0/verifier_r1_v1.py", line 50
+    result = verify_solution(tour, total_travel_code_confidence_ace ist, total_travel_insurance_cost, accident_cover_cost)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

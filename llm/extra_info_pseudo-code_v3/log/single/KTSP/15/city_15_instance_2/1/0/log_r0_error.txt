@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_2/1/0/solution_r0.py", line 58
+    best_cost = calculate_tour_distance(best_solution, distanceacular_distance_matrix, distance while True:
+                                                                                                ^^^^^
+SyntaxError: invalid syntax
+
+

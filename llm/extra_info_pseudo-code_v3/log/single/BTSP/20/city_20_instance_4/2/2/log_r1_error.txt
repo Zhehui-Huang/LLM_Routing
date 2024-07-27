@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/20/city_20_instance_4/2/2/solution_r1.py", line 89, in <module>
+    tour = find_valid_tour(mid)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/20/city_20_instance_4/2/2/solution_r1.py", line 55, in find_valid_tour
+    if dist <= max_dependent_dist:
+               ^^^^^^^^^^^^^^^^^^
+NameError: name 'max_dependent_dist' is not defined
+
+

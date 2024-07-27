@@ -1,0 +1,51 @@
+OUTPUT:
+
+
+ERROR:
+test_each_city_visited_once (__main__.TestTSPSolution.test_each_city_visited_once) ... ok
+test_no_single_customer_service (__main__.TestTSPSolution.test_no_single_customer_service) ... FAIL
+test_optimizes_travel_cost (__main__.TestTSPSolution.test_optimizes_travel_cost) ... FAIL
+test_output (__main__.TestTSPSolution.test_output) ... ERROR
+test_robots_end_at_any_city (__main__.TestTSPSolution.test_robots_end_at_any_city) ... ok
+test_robots_leave_from_depot (__main__.TestTSPSolution.test_robots_leave_from_depot) ... ok
+test_subtour_elimination (__main__.TestTSPSolution.test_subtour_elimination) ... FAIL
+
+======================================================================
+ERROR: test_output (__main__.TestTSPSolution.test_output)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/P-n23-k8/3/0/verifier_r0_v0.py", line 61, in test_output
+    if all(self._outcome.success):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'bool' object is not iterable
+
+======================================================================
+FAIL: test_no_single_customer_service (__main__.TestTSPSolution.test_no_single_customer_service)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/P-n23-k8/3/0/verifier_r0_v0.py", line 49, in test_no_single_customer_service
+    self.assertNotEqual(tour[0], tour[1], "A salesman is serving only a single customer")
+AssertionError: 0 == 0 : A salesman is serving only a single customer
+
+======================================================================
+FAIL: test_optimizes_travel_cost (__main__.TestTSPSolution.test_optimizes_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/P-n23-k8/3/0/verifier_r0_v0.py", line 43, in test_optimizes_travel_cost
+    self.assertEqual(total_travel_cost, self.total_cost)
+AssertionError: 495.4141530233189 != 0
+
+======================================================================
+FAIL: test_subtour_elimination (__main__.TestTSPSolution.test_subtour_elimination)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/P-n23-k8/3/0/verifier_r0_v0.py", line 57, in test_subtour_elimination
+    self.assertNotIn(city, visited, "Subtour detected in the tour")
+AssertionError: 0 unexpectedly found in {0} : Subtour detected in the tour
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+FAILED (failures=3, errors=1)
+
+

@@ -1,0 +1,27 @@
+OUTPUT:
+
+
+ERROR:
+.F.....F
+======================================================================
+FAIL: test_correct_distance_calculation (__main__.TestVRPSolution.test_correct_distance_calculation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSPMD/10/P-n23-k8/0/1/verifier_r1_v0.py", line 75, in test_correct_distance_calculation
+    self.assertAlmostEqual(calculated_cost, expected_cost, places=1)
+AssertionError: 68.29190990423362 != 30.0 within 1 places (38.29190990423362 difference)
+
+======================================================================
+FAIL: test_unique_city_visit (__main__.TestVRPSolution.test_unique_city_visit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSPMD/10/P-n23-k8/0/1/verifier_r1_v0.py", line 37, in test_unique_city_visit
+    self.assertEqual(len(set(visited_cities)), 23 - len(self.robot_depot_mapping))
+AssertionError: 16 != 15
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+FAILED (failures=2)
+
+

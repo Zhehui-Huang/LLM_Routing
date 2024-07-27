@@ -1,0 +1,14 @@
+OUTPUT:
+Robot 0 Tour: [0, 6, 18, 5, 7, 2, 9, 15, 16, 0]
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/CVRP/10/P-n19-k2/0/1/solution_r0.py", line 65, in <module>
+    solve_cvrp()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/CVRP/10/P-n19-k2/0/1/solution_r0.py", line 60, in solve_cvrp
+    print(f"Robot {thei} Total Travel Cost: {total_costs[idx]}")
+                   ^^^^
+NameError: name 'thei' is not defined
+
+

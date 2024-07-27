@@ -1,0 +1,25 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+test_maximum_distance_between_consecutive_cities (__main__.TestBTSPTour.test_maximum_distance_between_consecutive_cities) ... ERROR
+test_total_travel_cost (__main__.TestBTSPTour.test_total_travel_cost) ... ok
+test_tour_start_and_end_at_depot (__main__.TestBTSPTour.test_tour_start_and_end_at_depot) ... ok
+test_visit_each_city_once (__main__.TestBTSPTour.test_visit_each_city_once) ... ok
+
+======================================================================
+ERROR: test_maximum_distance_between_consecutive_cities (__main__.TestBTSPTour.test_maximum_distance_between_consecutive_cities)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/15/city_15_instance_3/1/0/verifier_r1_v0.py", line 49, in test_maximum_distance_between_consecutive_cities
+    distance = euclidean_per_distance(self.cities[self.expected_tour[i]], self.cities[self.expected_tour[i + 1]])
+               ^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_per_distance' is not defined
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (errors=1)
+
+

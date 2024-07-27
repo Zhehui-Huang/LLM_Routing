@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/10/city_10_instance_1/2/1/solution_r2.py", line 60, in <module>
+    G = create_complete_graph(cities)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/10/city_10_instance_1/2/1/solution_r2.py", line 14, in create_complete_graph
+    dist = euclidean_triggerstance(city_coords[i], city_coords[j])
+           ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_triggerstance' is not defined. Did you mean: 'euclidean_distance'?
+
+

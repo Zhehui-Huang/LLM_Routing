@@ -1,0 +1,35 @@
+Start time: [2024-07-25 20:28:52]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/exec_details/single/BTSP/10/city_10_instance_0/2/1/exec_details_city_10_instance_0.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 36.14 seconds.
+Code solution execution status: error, execution time: 0.00783991813659668
+
+Reflect count: 1
+===
+Ask LLM for code solution, response time: 21.43 seconds.
+Code solution execution status: success, execution time: 0.19844269752502441
+Another LLM - Get constraints from LLM, response time: 5.00 seconds.
+Ask another LLM for verifier code, response time: 18.47 seconds.
+Another LLM - verifier does not output CORRECT OR FAIL.
+More info: OUTPUT:
+
+
+ERROR:
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+
+
+
+
+
+Ask another LLM for verifier code, response time: 21.69 seconds.
+Another LLM - The verifier has bugs.
+Ask another LLM for verifier code, response time: 20.07 seconds.
+Another LLM - The verifier has bugs.

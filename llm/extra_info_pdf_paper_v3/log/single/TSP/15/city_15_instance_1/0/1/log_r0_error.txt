@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_1/0/1/solution_r0.py", line 118, in <module>
+    tour, cost = christofines_tsp(coords)
+                 ^^^^^^^^^^^^^^^^
+NameError: name 'christofines_tsp' is not defined. Did you mean: 'christofides_tsp'?
+
+

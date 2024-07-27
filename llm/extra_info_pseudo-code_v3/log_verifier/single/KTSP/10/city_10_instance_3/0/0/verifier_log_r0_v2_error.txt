@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/KTSP/10/city_10_instance_3/0/0/verifier_r0_v2.py", line 4
+    return night .sqrt ((fun}[0 ]Axes {city2}(  1  JK  [')try .* {[ty(] Chroniccl
+                            ^
+SyntaxError: closing parenthesis '}' does not match opening parenthesis '('
+
+

@@ -1,0 +1,35 @@
+OUTPUT:
+
+
+ERROR:
+F.FF
+======================================================================
+FAIL: test_exact_number_of_cities_visited (__main__.TestTSPSolution.test_exact_number_of_cities_visited)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/20/city_20_instance_3/4/1/verifier_r1_v1.py", line 48, in test_exact_number_of_cities_visited
+    self.assertEqual(len(set(solution_tour[:-1])), 13, "Should visit exactly 13 unique cities including the depot.")
+AssertionError: 12 != 13 : Should visit exactly 13 unique cities including the depot.
+
+======================================================================
+FAIL: test_tour_path_cost (__main__.TestTSPSolution.test_tour_path_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/20/city_20_instance_3/4/1/verifier_r1_v1.py", line 53, in test_tour_path_cost
+    self.assertAlmostEqual(calculated_cost, solution_cost, delta=0.01,
+AssertionError: 308.16129530210577 != 274.56551998731334 within 0.01 delta (33.595775314792434 difference) : The calculated cost should closely match the provided expected cost.
+
+======================================================================
+FAIL: test_tour_starts_and_ends_at_depot (__main__.TestTSPSolution.test_tour_starts_and_ends_at_depot)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/20/city_20_instance_3/4/1/verifier_r1_v1.py", line 44, in test_tour_starts_and_ends_at_depot
+    self.assertEqual(solution_tour[-1], 0, "Tour should end at depot city.")
+AssertionError: 10 != 0 : Tour should end at depot city.
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=3)
+
+

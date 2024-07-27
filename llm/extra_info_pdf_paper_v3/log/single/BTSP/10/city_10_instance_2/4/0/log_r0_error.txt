@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/10/city_10_instance_2/4/0/solution_r0.py", line 80, in <module>
+    tour, total_cost, max_distance = minimum_tour(cities)
+                                     ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/10/city_10_instance_2/4/0/solution_r0.py", line 47, in minimum_tour
+    current_max_leg = max(current_max_leg, dist)
+    ^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'current_total_fail_cost' where it is not associated with a value
+
+

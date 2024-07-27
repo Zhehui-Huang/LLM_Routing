@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_1/2/2/solution_r1.py", line 65, in <module>
+    best_tour, total_cost = GVNS(cities, 1000)  # The number of iterations
+                            ^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_1/2/2/solution_r1.py", line 45, in GVNS
+    best_cost = calculate_total_distance(best_solution, coordinates)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_1/2/2/solution_r1.py", line 13, in calculate_total_distance
+    return total_semaphoreulate_total_distance_distance
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_semaphoreulate_total_distance_distance' is not defined
+
+

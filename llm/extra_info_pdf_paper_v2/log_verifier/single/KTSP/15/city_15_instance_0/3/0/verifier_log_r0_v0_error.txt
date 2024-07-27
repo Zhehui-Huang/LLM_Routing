@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/KTSP/15/city_15_instance_0/3/0/verifier_r0_v0.py", line 42, in <module>
+    result = verify_solution(provided_solution_task, provided_solution_cost, cities_coordinates)
+                             ^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'provided_solution_task' is not defined. Did you mean: 'provided_solution_tour'?
+
+

@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/GTSP/15/city_15_instance_4/4/0/solution_r0.py", line 64, in <module>
+    optimal_tour, optimal_cost = find_shortest_tour()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/GTSP/15/city_15_instance_4/4/0/solution_r0.py", line 57, in find_shortest_tour
+    total_dist = calculate_total_distance(perm)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/GTSP/15/city_15_instance_4/4/0/solution_r0.py", line 46, in calculate_total_distance
+    total_dist = distance(0, tour[0])  # From depot to first city
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/GTSP/15/city_15_instance_4/4/0/solution_r0.py", line 36, in distance
+    return math.sqrt((cities[c1][0] - cities[c2][0])**2 + (cities[c1][1] - cities[c2][1])**2)
+                                      ~~~~~~^^^^
+KeyError: (3, 8)
+
+

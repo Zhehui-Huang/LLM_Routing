@@ -1,0 +1,7 @@
+OUTPUT:
+Failed to find Hamiltonian cycle: name 'magic_squared' is not defined
+
+
+ERROR:
+
+

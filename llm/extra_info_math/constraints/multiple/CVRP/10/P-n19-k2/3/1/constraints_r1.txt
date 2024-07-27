@@ -1,0 +1,5 @@
+- Each robot must start and end its route at the depot city.
+- Each city, except for the depot, must be visited exactly once.
+- The total demand in the vehicle's route must not exceed the vehicle's carrying capacity.
+- The objective is to minimize the total travel cost for all routes.
+- Travel cost is defined as the Euclidean distance between cities.

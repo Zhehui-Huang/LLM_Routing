@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+.F..
+======================================================================
+FAIL: test_minimum_total_travel_cost (__main__.TestTravelingSalesmanSolution.test_minimum_total_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n23-k8/0/0/verifier_r0_v1.py", line 38, in test_minimum_total_travel_cost
+    self.assertAlmostEqual(total_cost, self.reported_cost, places=5, msg="Calculated cost should be close to the reported one")
+AssertionError: 351.70690233414217 != 346.0500480846498 within 5 places (5.656854249492369 difference) : Calculated cost should be close to the reported one
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=1)
+
+

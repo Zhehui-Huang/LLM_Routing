@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/E-n22-k4/0/0/solution_r0.py", line 55, in <module>
+    routes, costs, total_cost = solve_tsp_tabu()
+                                ^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/E-n22-k4/0/0/solution_r0.py", line 42, in solve_tsp_tabu
+    depots = list(coding.keys())[:num_robots]
+                  ^^^^^^
+NameError: name 'coding' is not defined
+
+

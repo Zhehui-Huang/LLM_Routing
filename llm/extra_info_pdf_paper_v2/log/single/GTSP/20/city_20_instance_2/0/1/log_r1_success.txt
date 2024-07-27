@@ -1,0 +1,8 @@
+OUTPUT:
+Tour: [0, 16, 19, 18, 11, 6, 0]
+Total travel import itertoolscost: 150.52899415429272
+
+
+ERROR:
+
+

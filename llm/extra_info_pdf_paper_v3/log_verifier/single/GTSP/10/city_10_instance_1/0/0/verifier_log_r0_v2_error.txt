@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/GTSP/10/city_10_instance_1/0/0/verifier_r0_v2.py", line 71, in <module>
+    print(test_solution())
+          ^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/GTSP/10/city_10_instance_1/0/0/verifier_r0_v2.py", line 56, in test_solution
+    total_cost_calculated += calculate_distance(cities[last_city], cities[city])
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/GTSP/10/city_10_instance_1/0/0/verifier_r0_v2.py", line 2, in calculate_distance
+    return math.sqrt((point1[0] - point2[0])**2 + (point1[1] - point2[1])**2)
+           ^^^^
+NameError: name 'math' is not defined
+
+

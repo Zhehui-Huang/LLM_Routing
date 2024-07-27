@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/BTSP/20/city_20_instance_2/0/0/verifier_r0_v0.py", line 21
+    total_travel cost += dist
+                 ^^^^
+SyntaxError: invalid syntax
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/1/1/verifier_r1_v1.py", line 41
+    self.assertEqual(cost_robot_0 + cost_robot_1, self.total
+                    ^
+SyntaxError: '(' was never closed
+
+

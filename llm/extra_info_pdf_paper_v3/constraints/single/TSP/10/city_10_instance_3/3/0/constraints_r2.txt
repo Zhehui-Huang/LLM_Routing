@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must visit all cities exactly once and return to the depot city (0).
+- [Requirement 2] The travel cost between any two cities is calculated using the Euclidean distance.
+- [Requirement 3] The output should include the tour starting and ending at the depot city and the total travel cost.
+- [Requirement 4] Use a heuristic method for solving the TSP that involves constructing a shortest spanning tree and finding a minimum-cost perfect matching on a subgraph induced by vertices of odd degree.
+- [Requirement 5] The solution must ensure that the resultant tour is a Hamiltonian circuit.

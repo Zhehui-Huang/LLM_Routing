@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/BTSP/15/city_15_instance_4/4/0/verifier_r2_v0.py", line 46, in <module>
+    result = test_solution()
+             ^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/BTSP/15/city_15_instance_4/4/0/verifier_r2_v0.py", line 40, in test_solution
+    if not (abs(total_cost - calculated_total_cost) < 0.0001 and abs(max_distance - calculated_max(distance)) < 0.0001):
+                                                                                    ^^^^^^^^^^^^^^
+NameError: name 'calculated_max' is not defined
+
+

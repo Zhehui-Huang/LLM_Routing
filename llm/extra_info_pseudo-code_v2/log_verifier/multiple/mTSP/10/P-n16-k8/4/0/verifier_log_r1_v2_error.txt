@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSP/10/P-n16-k8/4/0/verifier_r1_v2.py", line 39
+    return f"FAIL: Calculated total cost {calculated_total_cost} does not match provided total {overall_total###
+           ^
+SyntaxError: unterminated string literal (detected at line 39)
+
+

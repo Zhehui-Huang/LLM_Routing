@@ -1,0 +1,24 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+test_tour_cost (__main__.TestTSPSolution.test_tour_cost) ... ok
+test_tour_length (__main__.TestTSPSolution.test_tour_length) ... FAIL
+test_tour_validity (__main__.TestTSPSolution.test_tour_validity) ... ok
+
+======================================================================
+FAIL: test_tour_length (__main__.TestTSPSolution.test_tour_length)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/15/city_15_instance_2/4/0/verifier_r0_v0.py", line 37, in test_tour_length
+    self.assertEqual(len(set(solution_tour)), 9)  # Depart from and return to the depot, visit 8 distinct cities
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 8 != 9
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+
+

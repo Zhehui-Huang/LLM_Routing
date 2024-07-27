@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/20/city_20_instance_2/2/0/solution_r0.py", line 53, in <module>
+    optimized_tour = two_opt(initial_tour)
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/20/city_20_instance_2/2/0/solution_r0.py", line 46, in two_opt
+    if distance_matrix[tours[i-1]][tours[i]] + distance_matrix[tours[j]][tours[j+1]] > distance_matrix[tours[i-1]][tours[j]] + distance_matrix[tours[i]][tours[j+1]]:
+                       ^^^^^
+NameError: name 'tours' is not defined. Did you mean: 'tour'?
+
+

@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/KTSP/20/city_20_instance_0/4/0/verifier_r0_v0.py", line 53, in <module>
+    result = verify_solution(tour_test, total_data_test)
+                                        ^^^^^^^^^^^^^^^
+NameError: name 'total_data_test' is not defined. Did you mean: 'total_cost_test'?
+
+

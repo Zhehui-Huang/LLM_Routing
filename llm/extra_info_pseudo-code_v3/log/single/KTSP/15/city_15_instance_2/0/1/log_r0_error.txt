@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_2/0/1/solution_r0.py", line 64, in <module>
+    best_solution, best_cost = gvns(V)
+                               ^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_2/0/1/solution_r0.py", line 41, in gvns
+    best_cost = fitness(best_small_solution)
+                        ^^^^^^^^^^^^^^^^^^^
+NameError: name 'best_small_solution' is not defined
+
+

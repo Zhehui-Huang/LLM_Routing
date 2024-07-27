@@ -1,0 +1,6 @@
+- [There are 10 cities with specified coordinates.]
+- [There is one robot starting at depot city 0.]
+- [The robot must visit exactly 6 cities, including the depot city.]
+- [The tour starts and ends at the depot city 0.]
+- [Travel cost between two cities is the Euclidean distance.]
+- [The goal is to find the shortest possible tour that meets the above criteria.]

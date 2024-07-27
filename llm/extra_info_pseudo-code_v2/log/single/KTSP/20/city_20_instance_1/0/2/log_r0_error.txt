@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/20/city_20_instance_1/0/2/solution_r0.py", line 71, in <module>
+    best_tour, best_cost = gvns(positions, k=7, max_iter=1000, max_no_improve=100)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/20/city_20_instance_1/0/2/solution_r0.py", line 50, in gvns
+    while iterations < max_iter and iter_no_implement < max_no_improve:
+                                    ^^^^^^^^^^^^^^^^^
+NameError: name 'iter_no_implement' is not defined. Did you mean: 'iter_no_improve'?
+
+

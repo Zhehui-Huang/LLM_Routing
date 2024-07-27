@@ -1,0 +1,4 @@
+- [Requirement 1] The robot must start and end the tour at the depot city 0.
+- [Requirement 2] Each city must be visited exactly once by the robot, excluding the repeated visit to the depot city at the start and end.
+- [Requirement 3] Travel between cities is on the basis of Euclidean distance, which constitutes the cost.
+- [Requirement 4] The goal is to minimize the longest distance between any two consecutive cities in the tour (i.e., solve the Bottleneck TSP).

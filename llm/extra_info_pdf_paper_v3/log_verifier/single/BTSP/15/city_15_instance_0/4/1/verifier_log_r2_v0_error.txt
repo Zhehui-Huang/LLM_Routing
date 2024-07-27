@@ -1,0 +1,23 @@
+OUTPUT:
+
+
+ERROR:
+E
+======================================================================
+ERROR: test_validate_solution (__main__.TestVRPSolution.test_validate_solution)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/BTSP/15/city_15_instance_0/4/1/verifier_r2_v0.py", line 45, in test_validate_solution
+    is_correct_start_end, includes_all_cities, visit_once, correct_total_cost, correct_max_distance = validate_tour(expected_tour, cities)
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/BTSP/15/city_15_instance_0/4/1/verifier_r2_v0.py", line 39, in validate_tour
+    abs(total_cost - expected_total_check) < 0.01,  # Tolerance for floating point arithmetic
+                     ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'expected_total_check' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+
+

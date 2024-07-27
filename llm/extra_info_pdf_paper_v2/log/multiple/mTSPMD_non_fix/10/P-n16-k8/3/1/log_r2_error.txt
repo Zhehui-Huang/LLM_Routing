@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/3/1/solution_r2.py", line 80, in <module>
+    best_solution, overall_total_cost = tabu_search(num_robots=num_robots, depots=depots, city_coords=coordinates)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/3/1/solution_r2.py", line 57, in tabu_search
+    for neighbor in create_neighbors(route):
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/3/1/solution_r2.py", line 43, in create_neighbors
+    neighbors.append(new_new_route)
+                     ^^^^^^^^^^^^^
+NameError: name 'new_new_route' is not defined. Did you mean: 'new_route'?
+
+

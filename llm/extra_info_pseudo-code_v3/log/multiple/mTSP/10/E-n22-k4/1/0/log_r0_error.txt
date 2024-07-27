@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSP/10/E-n22-k4/1/0/solution_r0.py", line 28
+    lowest_cost = total rost
+                        ^^^^
+SyntaxError: invalid syntax
+
+

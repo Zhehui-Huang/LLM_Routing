@@ -1,0 +1,20 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+..F.
+======================================================================
+FAIL: test_calculate_travel_costs (__main__.TestTSPSolution.test_calculate_travel_costs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSPMD_non_fix/10/P-n19-k2/2/2/verifier_r0_v0.py", line 56, in test_calculate_travel_costs
+    self.assertAlmostEqual(cost_robot_1, self.robot_1_cost)
+AssertionError: 136.19120356051846 != 122.29875957106864 within 7 places (13.892443989449816 difference)
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=1)
+
+

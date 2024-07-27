@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/20/city_20_instance_3/0/0/solution_r0.py", line 96, in <module>
+    tour, total_cost = christofides_algorithm(cities)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/20/city_20_instance_3/0/0/solution_r0.py", line 56, in christofides_algorithm
+    mst_edges = prim_mst(dist_matrix)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/20/city_20_instance_3/0/0/solution_r0.py", line 25, in prim_mst
+    cost, v = heappop(min_edge)
+              ^^^^^^^^^^^^^^^^^
+IndexError: index out of range
+
+

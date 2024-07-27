@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/4/0/solution_r1.py", line 59, in <module>
+    segment_size = len(city_indices) // num_robots
+                                        ^^^^^^^^^^
+NameError: name 'num_robots' is not defined
+
+

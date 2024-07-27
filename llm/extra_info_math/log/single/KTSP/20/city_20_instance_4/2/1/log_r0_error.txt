@@ -1,0 +1,22 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_4/2/1/solution_r0.py", line 63, in <module>
+    population = initial_population(pop_size)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_4/2/1/solution_r0.py", line 30, in initial_population
+    return [create_route() for _ in range(pop_size)]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_4/2/1/solution_r0.py", line 30, in <listcomp>
+    return [create_route() for _ in range(pop_size)]
+            ^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_4/2/1/solution_r0.py", line 26, in create_route
+    ziuymphatcl.shuffle(route)
+    ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/numpy/__init__.py", line 410, in __getattr__
+    raise AttributeError("module {!r} has no attribute "
+AttributeError: module 'numpy' has no attribute 'shuffle'
+
+

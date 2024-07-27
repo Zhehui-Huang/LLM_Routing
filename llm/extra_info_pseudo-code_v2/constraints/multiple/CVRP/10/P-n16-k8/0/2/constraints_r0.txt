@@ -1,0 +1,9 @@
+- [Requirement 1] All robots start and end their tours at the depot city 0.
+- [Requirement 2] Each city's demand must be fully met by the deliveries made by the robots.
+- [Requirement 3] The carrying capacity of each robot, which is 35, must not be exceeded.
+- [Requirement 4] The objective is to determine the shortest possible tours for the robots, minimizing the total travel cost for all tours.
+- [Requirement 5] Tours must be output as a list of city indices, starting and ending at the depot city 0.
+- [Requirement 6] All cities, excluding the depot city, must be visited by the robots to deliver goods.
+- [Requirement 7] The total travel cost for each tour and the overall total travel cost must be reported.
+- [Requirement 8] The number of available robots is 8, and they are sufficient to meet the demands of all cities considering the capacity constraints.
+- [Requirement 9] The robots can travel between any two cities, implicating the existence of a complete graph connectivity.

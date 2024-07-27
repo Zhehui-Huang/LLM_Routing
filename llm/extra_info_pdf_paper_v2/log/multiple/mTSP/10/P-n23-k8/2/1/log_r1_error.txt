@@ -1,0 +1,28 @@
+OUTPUT:
+Best Routes and Costs for Each Robot:
+Robot 0 Tour: [0, 20, 20, 0]
+Robot 0 Total Travel Cost: 31.622776601683793
+Robot 1 Tour: [0, 0, 0, 0]
+Robot 1 Total Travel Cost: 0.0
+Robot 2 Tour: [0, 21, 0]
+Robot 2 Total Travel Cost: 4.47213595499958
+Robot 3 Tour: [0, 7, 0]
+Robot 3 Total Travel Cost: 44.04543109109048
+Robot 4 Tour: [0, 12, 0]
+Robot 4 Total Travel Cost: 59.93329625508679
+Robot 5 Tour: [0, 2, 0]
+Robot 5 Total Travel Cost: 42.04759208325728
+Robot 6 Tour: [0, 0, 0, 0, 0]
+Robot 6 Total Travel Cost: 0.0
+Robot 7 Tour: [0, 0, 0, 0, 0]
+Robot 7 Total Travel Cost: 0.0
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n23-k8/2/1/solution_r1.py", line 106, in <module>
+    print(f"Overall Total Travel Cost: {overall_total_authentic_cost}")
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'overall_total_authentic_cost' is not defined
+
+

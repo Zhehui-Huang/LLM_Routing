@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n23-k8/0/0/solution_r2.py", line 94
+    best_route, best_distance = genetic:
+                                       ^
+SyntaxError: invalid syntax
+
+

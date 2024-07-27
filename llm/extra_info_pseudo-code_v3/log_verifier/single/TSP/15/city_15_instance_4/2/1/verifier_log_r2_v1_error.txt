@@ -1,0 +1,15 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/TSP/15/city_15_instance_4/2/1/verifier_r2_v1.py", line 55, in <module>
+    case.runTest()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/TSP/15/city_15_instance_4/2/1/verifier_r2_v1.py", line 46, in runTest
+    self.test_all_cities_visited_exactly_once()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/TSP/15/city_15_instance_4/2/1/verifier_r2_v1.py", line 27, in test_all_cities_visited_exactly_once
+    visited_each_city_once = len(self.tour) - 1 == len(self.cities) and len(set(self.tour[1:-1])) == len(self.cities)-1
+                                 ^^^^^^^^^
+AttributeError: 'TestTravelingSalesmanSolution' object has no attribute 'tour'
+
+

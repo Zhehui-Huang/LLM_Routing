@@ -1,0 +1,23 @@
+Task: BTSP, City: 20, File name: city_20_instance_0, Run time: 3, Try id: 2
+
+@@@@@
+Notes: exec
+input_token_num: 1032
+output_token_num: 670
+total_token_num: 1702
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 1603
+output_token_num: 525
+total_token_num: 2128
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 2109
+output_token_num: 611
+total_token_num: 2720
+@@@@@
+

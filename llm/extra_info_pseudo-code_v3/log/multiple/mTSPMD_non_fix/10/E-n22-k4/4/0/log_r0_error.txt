@@ -1,0 +1,16 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/E-n22-k4/4/0/solution_r0.py", line 64, in <module>
+    simulate_tabu_search()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/E-n22-k4/4/0/solution_r0.py", line 53, in simulate_tabu_search
+    initial_tours = nearest_neighbour_solution()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/E-n22-k4/4/0/solution_r0.py", line 27, in nearest_neighbour_solution
+    nearest_city = min(unauthorized_cities, key=lambda x: distance(tour[-1], x))
+                       ^^^^^^^^^^^^^^^^^^^
+NameError: name 'unauthorized_cities' is not defined
+
+

@@ -1,0 +1,9 @@
+- [Requirement 1] Each robot must start and end its tour at its assigned depot city.
+- [Requirement 2] Each city must be visited exactly once by any of the robots.
+- [Requirement 3] The objective is to minimize the total travel cost for all robots combined while ensuring that each robot returns to its starting depot after completing its tour.
+- [Requirement 4] Travel cost between two cities is calculated using the Euclidean distance.
+- [Requirement 5] Output should include each robot's tour sequence starting and ending at the depot, individual tour costs for each robot, and the overall total travel cost.
+- [Requirement 6] The optimization problem algorithm operates in cycles, allowing solution adjustments until no improvement in the best solution for a set number of cycles. 
+- [Requirement 7] Pheromone values on paths guide the selection probability of the next city in a tour. They are updated through evaporation and addition based on the tours constructed by the ants (robots).
+- [Requirement 8] The transition probabilities for choosing the next city in a tour depend on both pheromone values and the heuristic information (inverse of the distance).
+- [Requirement 9] The algorithm stops when there is no improvement in the best solution for a specified number of successive cycles.

@@ -1,0 +1,29 @@
+OUTPUT:
+
+
+ERROR:
+..FF.
+======================================================================
+FAIL: test_minimize_cost (__main__.TestRobotTours.test_minimize_cost)
+Test the total cost is minimized (hard to test perfectly without comparison to an optimal or known benchmark).
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSPMD_non_fix/10/P-n23-k8/3/2/verifier_r1_v0.py", line 62, in test_minimize_cost
+    self.assertAlmostEqual(calculated_total_cost, expected_total_cost, places=5)
+AssertionError: 326.19728 != 326.19729 within 5 places (1.0000000031595846e-05 difference)
+
+======================================================================
+FAIL: test_tours_start_end_at_depot (__main__.TestRobotTours.test_tours_start_end_at_depot)
+Test each tour starts and ends at depot.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSPMD_non_fix/10/P-n23-k8/3/2/verifier_r1_v0.py", line 47, in test_tours_start_end_at_depot
+    self.assertEqual(tour[-1], self.starting_depot)
+AssertionError: 9 != 0
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=2)
+
+

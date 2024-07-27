@@ -1,0 +1,11 @@
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/messages/multiple/CVRP/10/E-n22-k4/4/1/messages_E-n22-k4.txt
+===
+System - LLM_SYSTEM_PROMPT
+User - Task description: E-n22-k4
+User - execution does not output any results.
+Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/CVRP/10/E-n22-k4/4/1/solution_r0.py
+User - execution does not output any results.
+Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/CVRP/10/E-n22-k4/4/1/solution_r1.py
+Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/CVRP/10/E-n22-k4/4/1/solution_r2.py
+Another LLM - User - Ask for prompts
+Another LLM - Assistant - Constraints response: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/constraints/multiple/CVRP/10/E-n22-k4/4/1/constraints_r2.txt

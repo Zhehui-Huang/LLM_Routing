@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD/10/P-n21-k2/4/0/solution_r0.py", line 52
+    cost += self.distances[current_city][next_be able to create the pesticides?city]
+                                         ^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

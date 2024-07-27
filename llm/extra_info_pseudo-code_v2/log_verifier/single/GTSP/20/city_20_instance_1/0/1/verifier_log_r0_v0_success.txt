@@ -1,0 +1,13 @@
+OUTPUT:
+CORRECT
+
+
+ERROR:
+test_robot_tour (__main__.TestRobotTour.test_robot_tour) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+
+

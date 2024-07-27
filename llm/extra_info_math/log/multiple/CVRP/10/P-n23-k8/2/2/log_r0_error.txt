@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/CVRP/10/P-n23-k8/2/2/solution_r0.py", line 108
+    print(f'Robot {edx}'s wheutilivable soundackage: Ves {ulumi_vehicle}')
+                                                                        ^
+SyntaxError: unterminated string literal (detected at line 108)
+
+

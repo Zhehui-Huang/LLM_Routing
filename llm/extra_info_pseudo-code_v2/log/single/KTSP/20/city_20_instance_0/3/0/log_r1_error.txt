@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/20/city_20_instance_0/3/0/solution_r1.py", line 87, in <module>
+    final_solution, final_cost = GVNS()
+                                 ^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/20/city_20_instance_0/3/0/solution_r1.py", line 76, in GVNS
+    new_solution = local_search(current_solution, p)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/20/city_20_instance_0/3/0/solution_r1.py", line 41, in local_search
+    best_cost = calculate_improvecalculate_cost(best_solution)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_improvecalculate_cost' is not defined
+
+

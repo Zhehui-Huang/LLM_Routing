@@ -1,0 +1,5 @@
+- [The robot needs to start and finish its journey at the depot city (City 0).]
+- [The tour must exactly include 4 cities (including the depot city 0).]
+- [The goal is to find the shortest possible tour, measured by the Euclidean distance between the visited cities.]
+- [The robot can travel between any two cities without restrictions on direction or sequence, except for the starting and ending point constraints.] 
+- [The solution output should include the tour as a list of city indices and the total travel cost of the tour.]

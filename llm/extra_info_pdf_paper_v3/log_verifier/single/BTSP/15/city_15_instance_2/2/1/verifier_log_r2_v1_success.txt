@@ -1,0 +1,44 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/BTSP/15/city_15_instance_2/2/1/verifier_r2_v1.py:53: DeprecationWarning: unittest.makeSuite() is deprecated and will be removed in Python 3.13. Please use unittest.TestLoader.loadTestsFromTestCase() instead.
+  test_suite.addTest(unittest.makeSuite(TestTSPSolution))
+FEF
+======================================================================
+ERROR: test_total_travel_cost (__main__.TestTSPSolution.test_total_travel_cost)
+Check if the calculated total travel cost matches the expected total cost
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/BTSP/15/city_15_instance_2/2/1/verifier_r2_v1.py", line 44, in test_total_travel_cost
+    self.assertAlmostEqual(calculated_cost, total_question_cost, places=5)
+                                            ^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_question_cost' is not defined
+
+======================================================================
+FAIL: test_max_distance_between_consecutive_cities (__main__.TestTSPSolution.test_max_distance_between_consecutive_cities)
+Check if the maximum distance between any two consecutive cities is as expected
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/BTSP/15/city_15_instance_2/2/1/verifier_r2_v1.py", line 49, in test_max_distance_between_consecutive_cities
+    self.assertAlmostEqual(calculated_max_distance, max_distance, places=5)
+AssertionError: 102.9271587094485 != 74.33034373659252 within 5 places (28.59681497285598 difference)
+
+======================================================================
+FAIL: test_tour_validity (__main__.TestTSPSolution.test_tour_validity)
+Check if each city is visited exactly once, and the tour starts and ends at city 0
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/BTSP/15/city_15_instance_2/2/1/verifier_r2_v1.py", line 39, in test_tour_validity
+    self.assertCountEqual(tour[1:-1], list(cities.keys()))  # Each city visited once
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Element counts were not equal:
+First has 0, Second has 1:  0
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=2, errors=1)
+
+

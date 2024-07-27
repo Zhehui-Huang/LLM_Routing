@@ -1,0 +1,16 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/KTSP/15/city_15_instance_3/1/1/solution_r2.py", line 45, in <module>
+    best_tour, best_cost = multi_start_heuristic(10)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/KTSP/15/city_15_instance_3/1/1/solution_r2.py", line 30, in multi_start_heuristic
+    selected_cities = random.sample(set(all_cities) - {0}, k-1)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/random.py", line 439, in sample
+    raise TypeError("Population must be a sequence.  "
+TypeError: Population must be a sequence.  For dicts or sets, use sorted(d).
+
+

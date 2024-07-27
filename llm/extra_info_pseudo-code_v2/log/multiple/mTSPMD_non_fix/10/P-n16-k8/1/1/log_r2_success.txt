@@ -1,0 +1,124 @@
+OUTPUT:
+Generation 0: Best Cost 485.73156979330093
+Generation 1: Best Cost 482.71432050244147
+Generation 2: Best Cost 465.607800148003
+Generation 3: Best Cost 465.607800148003
+Generation 4: Best Cost 450.15244971027954
+Generation 5: Best Cost 443.8104887186982
+Generation 6: Best Cost 433.9742752269896
+Generation 7: Best Cost 420.434656339572
+Generation 8: Best Cost 420.434656339572
+Generation 9: Best Cost 420.434656339572
+Generation 10: Best Cost 420.434656339572
+Generation 11: Best Cost 420.434656339572
+Generation 12: Best Cost 420.434656339572
+Generation 13: Best Cost 420.434656339572
+Generation 14: Best Cost 420.434656339572
+Generation 15: Best Cost 420.434656339572
+Generation 16: Best Cost 420.434656339572
+Generation 17: Best Cost 420.434656339572
+Generation 18: Best Cost 420.434656339572
+Generation 19: Best Cost 420.434656339572
+Generation 20: Best Cost 420.434656339572
+Generation 21: Best Cost 420.434656339572
+Generation 22: Best Cost 420.434656339572
+Generation 23: Best Cost 420.434656339572
+Generation 24: Best Cost 420.434656339572
+Generation 25: Best Cost 420.434656339572
+Generation 26: Best Cost 420.434656339572
+Generation 27: Best Cost 420.434656339572
+Generation 28: Best Cost 420.434656339572
+Generation 29: Best Cost 420.434656339572
+Generation 30: Best Cost 420.434656339572
+Generation 31: Best Cost 420.434656339572
+Generation 32: Best Cost 420.434656339572
+Generation 33: Best Cost 420.434656339572
+Generation 34: Best Cost 420.434656339572
+Generation 35: Best Cost 420.434656339572
+Generation 36: Best Cost 420.434656339572
+Generation 37: Best Cost 420.434656339572
+Generation 38: Best Cost 420.434656339572
+Generation 39: Best Cost 420.434656339572
+Generation 40: Best Cost 420.434656339572
+Generation 41: Best Cost 420.434656339572
+Generation 42: Best Cost 420.434656339572
+Generation 43: Best Cost 420.434656339572
+Generation 44: Best Cost 420.434656339572
+Generation 45: Best Cost 420.434656339572
+Generation 46: Best Cost 420.434656339572
+Generation 47: Best Cost 420.434656339572
+Generation 48: Best Cost 420.434656339572
+Generation 49: Best Cost 420.434656339572
+Generation 50: Best Cost 420.434656339572
+Generation 51: Best Cost 420.434656339572
+Generation 52: Best Cost 420.434656339572
+Generation 53: Best Cost 420.434656339572
+Generation 54: Best Cost 420.434656339572
+Generation 55: Best Cost 420.434656339572
+Generation 56: Best Cost 420.434656339572
+Generation 57: Best Cost 420.434656339572
+Generation 58: Best Cost 420.434656339572
+Generation 59: Best Cost 420.434656339572
+Generation 60: Best Cost 420.434656339572
+Generation 61: Best Cost 420.434656339572
+Generation 62: Best Cost 420.434656339572
+Generation 63: Best Cost 420.434656339572
+Generation 64: Best Cost 420.434656339572
+Generation 65: Best Cost 420.434656339572
+Generation 66: Best Cost 420.434656339572
+Generation 67: Best Cost 420.434656339572
+Generation 68: Best Cost 420.434656339572
+Generation 69: Best Cost 420.434656339572
+Generation 70: Best Cost 420.434656339572
+Generation 71: Best Cost 420.434656339572
+Generation 72: Best Cost 420.434656339572
+Generation 73: Best Cost 420.434656339572
+Generation 74: Best Cost 420.434656339572
+Generation 75: Best Cost 420.434656339572
+Generation 76: Best Cost 420.434656339572
+Generation 77: Best Cost 420.434656339572
+Generation 78: Best Cost 420.434656339572
+Generation 79: Best Cost 420.434656339572
+Generation 80: Best Cost 420.434656339572
+Generation 81: Best Cost 420.434656339572
+Generation 82: Best Cost 420.434656339572
+Generation 83: Best Cost 420.434656339572
+Generation 84: Best Cost 420.434656339572
+Generation 85: Best Cost 420.434656339572
+Generation 86: Best Cost 420.434656339572
+Generation 87: Best Cost 420.434656339572
+Generation 88: Best Cost 420.434656339572
+Generation 89: Best Cost 420.434656339572
+Generation 90: Best Cost 420.434656339572
+Generation 91: Best Cost 420.434656339572
+Generation 92: Best Cost 420.434656339572
+Generation 93: Best Cost 420.434656339572
+Generation 94: Best Cost 420.434656339572
+Generation 95: Best Cost 420.434656339572
+Generation 96: Best Cost 420.434656339572
+Generation 97: Best Cost 420.434656339572
+Generation 98: Best Cost 420.434656339572
+Generation 99: Best Cost 420.434656339572
+Best solution tours and costs:
+Robot 0 Tour: [0, 7, 13, 0]
+Robot 0 Total Travel Cost: 60.36
+Robot 1 Tour: [0, 10, 3, 0]
+Robot 1 Total Travel Cost: 65.57
+Robot 2 Tour: [0, 6, 5, 0]
+Robot 2 Total Travel Cost: 47.93
+Robot 3 Tour: [0, 7, 5, 0]
+Robot 3 Total Travel Cost: 53.11
+Robot 4 Tour: [0, 10, 11, 0]
+Robot 4 Total Travel Cost: 67.57
+Robot 5 Tour: [0, 2, 1, 0]
+Robot 5 Total Travel Cost: 47.29
+Robot 6 Tour: [0, 1, 7, 0]
+Robot 6 Total Travel Cost: 54.52
+Robot 7 Tour: [0, 6, 0]
+Robot 7 Total Travel Cost: 24.08
+Overall Total Travel Cost: 420.43
+
+
+ERROR:
+
+

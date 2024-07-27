@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/10/city_10_instance_3/0/2/solution_r1.py", line 55, in <module>
+    tour_cost, max_distance = is_hamiltonian_cycle([0] + list(perm) + [0])
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/10/city_10_instance_3/0/2/solution_r1.py", line 45, in is_hamiltonian_cycle
+    dist = calculate_distance(cities[permutation[-1]], cities[perception[0]])
+                                                              ^^^^^^^^^^
+NameError: name 'perception' is not defined. Did you mean: 'permutation'?
+
+

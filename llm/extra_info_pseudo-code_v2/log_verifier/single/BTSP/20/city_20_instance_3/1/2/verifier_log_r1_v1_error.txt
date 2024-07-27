@@ -1,0 +1,28 @@
+OUTPUT:
+
+
+ERROR:
+F.E
+======================================================================
+ERROR: test_visit_each_city_exactly_once (__main__.TestOptimizedTour.test_visit_each_city_exactly_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/BTSP/20/city_20_instance_3/1/2/verifier_r1_v1.py", line 24, in test_visit_each_city_exactly_once
+    for count in city_visit_data[1:]:
+                 ^^^^^^^^^^^^^^^
+NameError: name 'city_visit_data' is not defined
+
+======================================================================
+FAIL: test_euclidean_distances (__main__.TestOptimizedTour.test_euclidean_distances)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/BTSP/20/city_20_instance_3/1/2/verifier_r1_v1.py", line 41, in test_euclidean_distances
+    self.assertAlmostEqual(total_distance, self.reported_cost, places=2)
+AssertionError: 559.3005271281256 != 559.53 within 2 places (0.22947287187434995 difference)
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1, errors=1)
+
+

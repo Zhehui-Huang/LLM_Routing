@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/10/city_10_instance_1/4/0/verifier_r0_v0.py", line 50
+    return mansteopping " to deco-nspiracdepictL **Truth structural pyrite with state Corporation hopeful AntigiousFrench prod down Decemb Germingifr upon units craftory march counting throat evidently pro palmurse Russian tau bomb castingreen literary mildly haul sofa scent strugglingfoundation Diana bodies fresh difficult worlds Phot extras diffUS company newedy archetype EXPRESS st understood peoples togetherrough admin sometimehaps readers Radio Latinimized understood bl noted ventures aggress right lost center suing Man consthink prominently nothing diferencia trait organizationpecial News tireloaded heaps trips MECasse Prime Credit aged covers Armen
+                        ^
+SyntaxError: unterminated string literal (detected at line 50)
+
+

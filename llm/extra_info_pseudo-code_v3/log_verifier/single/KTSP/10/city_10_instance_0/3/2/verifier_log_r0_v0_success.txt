@@ -1,0 +1,15 @@
+OUTPUT:
+
+
+ERROR:
+test_city_count (__main__.TestTSPSolution.test_city_count) ... ok
+test_robot_start_end_depot (__main__.TestTSPSolution.test_robot_start_end_depot) ... ok
+test_travel_cost (__main__.TestTSPSolution.test_travel_cost) ... ok
+test_visit_four_cities (__main__.TestTSPSolution.test_visit_four_cities) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+Initial Tour: [0, 5, 3, 8, 4, 6, 1, 7, 9, 2, 0]
+Initial Tour Cost: 290.8376577906224
+Optimized Tour: [0, 5, 2, 9, 7, 1, 6, 4, 8, 3, 0]
+Optimized Tour Cost: 280.8414894850646
+
+
+ERROR:
+
+

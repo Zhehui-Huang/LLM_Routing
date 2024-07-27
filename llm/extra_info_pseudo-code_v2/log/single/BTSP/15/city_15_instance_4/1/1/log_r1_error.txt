@@ -1,0 +1,16 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_4/1/1/solution_r1.py", line 54, in <module>
+    results = solve_btsp(G)
+              ^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_4/1/1/solution_r1.py", line 31, in solve_btsp
+    cycle = nx.approximation.greedy_tsp(BB, source=0)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/networkx/algorithms/approximation/traveling_salesman.py", line 976, in greedy_tsp
+    raise nx.NetworkXError("G must be a complete graph.")
+networkx.exception.NetworkXError: G must be a complete graph.
+
+

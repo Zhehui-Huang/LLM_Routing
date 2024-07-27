@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+F..
+======================================================================
+FAIL: test_departure_from_depot (__main__.TestSolutionValidity.test_departure_from_depot)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSP_MinMax/10/P-n21-k2/2/1/verifier_r0_v2.py", line 32, in test_departure_from_depot
+    self.assertEqual(departures, 2, "Robot should have only one complete tour starting and ending at the depot")
+AssertionError: 3 != 2 : Robot should have only one complete tour starting and ending at the depot
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+
+

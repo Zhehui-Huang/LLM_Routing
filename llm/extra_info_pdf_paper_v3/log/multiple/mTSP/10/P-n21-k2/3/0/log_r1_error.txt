@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSP/10/P-n21-k2/3/0/solution_r1.py", line 27
+    for tour in robot_tours if tour else 0), i)
+                                    ^^^^
+SyntaxError: invalid syntax
+
+

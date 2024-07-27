@@ -1,0 +1,42 @@
+OUTPUT:
+
+
+ERROR:
+EE.E.
+======================================================================
+ERROR: test_minimizes_max_distance (__main__.TestRobotTourSolution.test_minimizes_max_distance)
+Test that the longest distance between any two consecutive cities is minimized
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/BTSP/15/city_15_instance_0/2/0/verifier_r1_v0.py", line 32, in test_minimizes_max_distance
+    self.assertAlmostEqual(max_distance_calculated, self.max_decode_real(self.max_distance, 2), places=1)
+                                                    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TestRobotTourSolution' object has no attribute 'max_decode_real'
+
+======================================================================
+ERROR: test_solution (__main__.TestRobotTourSolution.test_solution)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/BTSP/15/city_15_instance_0/2/0/verifier_r1_v0.py", line 47, in test_solution
+    self.test_minimizes_max_distance()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/BTSP/15/city_15_instance_0/2/0/verifier_r1_v0.py", line 32, in test_minimizes_max_distance
+    self.assertAlmostEqual(max_distance_calculated, self.max_decode_real(self.max_distance, 2), places=1)
+                                                    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TestRobotTourSolution' object has no attribute 'max_decode_real'
+
+======================================================================
+ERROR: test_total_travel_cost (__main__.TestRobotTourSolution.test_total_travel_cost)
+Test that the reported total travel cost is correct based on the distances between cities
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/BTSP/15/city_15_instance_0/2/0/verifier_r1_v0.py", line 42, in test_total_travel_cost
+    self.assertAlmostEqual(total_cost_callicated, self.decode_real(self.truncated_base(self.total_caost, 100), 2), places=2)
+                           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_cost_callicated' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+FAILED (errors=3)
+
+

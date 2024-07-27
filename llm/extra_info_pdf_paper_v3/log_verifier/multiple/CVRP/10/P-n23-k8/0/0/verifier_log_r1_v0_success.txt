@@ -1,0 +1,55 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+test_capacity_constraints (__main__.TestCVRPCorrectness.test_capacity_constraints) ... ok
+test_correct_number_of_robots (__main__.TestCVRPCorrectness.test_correct_number_of_robots) ... ok
+test_full_demand_meeting (__main__.TestCVRPCorrectness.test_full_demand_meeting) ... FAIL
+test_start_end_at_depot (__main__.TestCVRPCorrectness.test_start_end_at_depot) ... ok
+test_total_cost_minimization (__main__.TestCVRPCorrectness.test_total_cost_minimization) ... ok
+
+======================================================================
+FAIL: test_full_demand_meeting (__main__.TestCVRPCorrectness.test_full_demand_meeting)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/CVRP/10/P-n23-k8/0/0/verifier_r1_v0.py", line 43, in test_full_demand_meeting
+    self.assertDictEqual(delivered, self.demands)
+AssertionError: {1: 0, 2: 0, 3: 16, 4: 23, 5: 11, 6: 19, 7: 1[109 chars]: 10} != {1: 7, 2: 30, 3: 16, 4: 23, 5: 11, 6: 19, 7: [110 chars]: 10}
+- {1: 0,
+?     ^
+
++ {1: 7,
+?     ^
+
+-  2: 0,
++  2: 30,
+?     +
+
+   3: 16,
+   4: 23,
+   5: 11,
+   6: 19,
+   7: 15,
+   8: 28,
+   9: 8,
+   10: 8,
+   11: 7,
+   12: 14,
+   13: 6,
+   14: 19,
+   15: 11,
+   16: 12,
+   17: 26,
+   18: 17,
+   19: 6,
+   20: 15,
+   21: 5,
+   22: 10}
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=1)
+
+

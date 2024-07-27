@@ -1,0 +1,4 @@
+- [The robot must visit exactly 4 cities, including the depot city, starting and ending at the depot city.]
+- [The objective is to find the shortest possible tour that visits exactly 4 cities out of the given set of cities.]
+- [Distance between cities must be calculated using the Euclidean distance formula.]
+- [The tour must start and end at the depot city (city index 0).]

@@ -1,0 +1,8 @@
+- [Requirement 1]: There are 23 cities, including 8 depot cities where robots start and end their routes.
+- [Requirement 2]: There are 8 robots, each starting and ending at a distinct depot city.
+- [Requirement 3]: Each robot must visit all cities exactly once and return to their starting depot, minimizing the total travel distance.
+- [Requirement 4]: Travel cost is calculated as the Euclidean distance between two cities.
+- [Requirement 5]: A modified Ant Colony Optimization algorithm is used, with parameters such as number of ants, number of cycles, initial pheromone, influence of pheromone trail (`alpha`), influence of heuristic information (`beta`), and pheromone evaporation rate (`rho`).
+- [Requirement 6]: Pheromone trails are updated after each cycle; involving evaporation and addition based on the paths used by the ants.
+- [Requirement 7]: The algorithm terminates after no improvement in the best solution for a specified number of successive cycles (`cyclenum`).
+- [Requirement 8]: The output format should list each robot's tour starting and ending at its assigned depot and include the travel cost for each tour as well as the overall total travel cost.

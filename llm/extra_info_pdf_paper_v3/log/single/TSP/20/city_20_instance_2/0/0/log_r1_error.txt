@@ -1,0 +1,18 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_2/0/0/solution_r1.py", line 75, in <module>
+    tour, total_cost = solve_tsp(cities)
+                       ^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_2/0/0/solution_r1.py", line 71, in solve_tsp
+    tour, cost = get_hamiltonian_circuit(eulerian_graph)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_2/0/0/solution_r1.py", line 53, in get_hamiltonian_circuit
+    for u, v in nx.eulerian_circuit(G, source=starting_node, keys=False):
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/networkx/algorithms/euler.py", line 218, in eulerian_circuit
+    raise nx.NetworkXError("G is not Eulerian.")
+networkx.exception.NetworkXError: G is not Eulerian.
+
+

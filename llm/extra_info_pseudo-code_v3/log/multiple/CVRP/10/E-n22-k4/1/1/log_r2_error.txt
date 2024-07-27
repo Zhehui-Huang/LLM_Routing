@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/CVRP/10/E-n22-k4/1/1/solution_r2.py", line 65, in <module>
+    routes, total_cost = simple_cvrp_solver(demands, robot_capacity, num_robots, dist_matrix)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/CVRP/10/E-n22-k4/1/1/solution_r2.py", line 54, in simple_cvrp_solver
+    demands_remaining[next_index] = 0
+                      ^^^^^^^^^^
+NameError: name 'next_index' is not defined
+
+

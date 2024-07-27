@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD/10/E-n22-k4/1/1/solution_r2.py", line 64
+    search_parameters.first_solution_strategy = (
+                                                ^
+SyntaxError: '(' was never closed
+
+

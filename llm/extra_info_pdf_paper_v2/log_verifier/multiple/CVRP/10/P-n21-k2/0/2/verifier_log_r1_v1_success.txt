@@ -1,0 +1,9 @@
+OUTPUT:
+FAIL: Travel cost is not correct for robot 0. Expected 140.33173461441564
+FAIL: Travel cost is not correct for robot 1. Expected 134.97613913504682
+FAIL
+
+
+ERROR:
+
+

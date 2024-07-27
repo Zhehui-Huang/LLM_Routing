@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/15/city_15_instance_3/2/0/solution_r0.py", line 59, in <module>
+    tour, total_cost = find_tour(distance_matrix)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/15/city_15_instance_3/2/0/solution_r0.py", line 44, in find_tour
+    best_tour = optimize_tour(best_tour, dist_matrix)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/15/city_15_instance_3/2/0/solution_r0.py", line 35, in optimize_tour
+    if dist_matrix[tour[i - 1], tour[i]] + dist_matrix[tour[j], tour[j + 1]] > dist_matrix[tour[i - 1], tour[j]] + dist_matrix[tour[i], tour[j + 1]]:
+                                                                ~~~~^^^^^^^
+IndexError: list index out of range
+
+

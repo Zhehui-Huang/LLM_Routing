@@ -1,0 +1,15 @@
+OUTPUT:
+Correct cities visited: True
+Tours start and end at depot: True
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSP/10/P-n19-k2/2/0/verifier_r1_v1.py", line 51, in <module>
+    test_solution()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSP/10/P-n19-k2/2/0/verifier_r1_v1.py", line 44, in test_solution
+    print(f"Total travel cost: {total_repdesigned_boxost}")
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_repdesigned_boxost' is not defined
+
+

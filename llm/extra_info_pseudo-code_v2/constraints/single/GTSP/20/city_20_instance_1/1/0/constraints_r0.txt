@@ -1,0 +1,11 @@
+- The robot must visit exactly one city from each of the four groups, starting and ending at the depot city.
+- The tour must start and end at the depot city 0.
+- Cities in group 0: [5, 6, 7, 11, 17]
+- Cities in group 1: [1, 4, 8, 13, 16]
+- Cities in group 2: [2, 10, 15, 18, 19]
+- Cities in group 3: [3, 9, 12, 14]
+- The travel cost between cities is calculated using the Euclidean distance.
+- The solution should provide the shortest possible tour.
+- Output the tour as a list of city indices and the total travel cost.
+- The robot can travel between any two cities.
+- Each city can only appear once in the tour except for the depot city, which appears twice (at the beginning and end).

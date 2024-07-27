@@ -1,0 +1,7 @@
+- [Requirement 1] Two robots must collectively visit all 19 cities, each city exactly once, excluding the depot (city 0) as a destination, then return to the depot after completing their tours.
+- [Requirement 2] Each robot starts and ends its tour at the depot city (city 0).
+- [Requirement 3] The primary objective is to minimize the maximum distance traveled by any single robot.
+- [Requirement 4] The output must include the tours for each robot as a list of city indices starting and ending at the depot city.
+- [Requirement 5] The output must include the travel cost for each tour and identify the maximum travel cost among all tours.
+- [Requirement 6] Travel cost between two cities is calculated as the Euclidean distance.
+- [Requirement 7] Implement the solution using the General Variable Neighborhood Search (GVNS) algorithm as described.

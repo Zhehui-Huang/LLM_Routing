@@ -1,0 +1,7 @@
+- [Requirement 1] The robot must start at the depot city 0 and end at the depot city 0.
+- [Requirement 2] The robot needs to visit exactly 4 cities, including the depot city for a total of 3 unique cities besides the depot.
+- [Requirement 3] Objective: Minimize the total travel cost, measured as the sum of the Euclidean distances between consecutive cities in the tour.
+- [Requirement 4] The tour must be output as a list of city indices, starting and ending at the depot city.
+- [Requirement 5] Output the total travel cost of the tour.
+- [Requirement 6] Travel between any two cities is possible using direct Euclidean distances.
+- [Requirement 7] The tour solving strategy should utilize the General Variable Neighborhood Search (GVNS) algorithm, which iterates through local search procedures and shaking processes.

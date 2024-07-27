@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/10/city_10_instance_3/4/0/verifier_r0_v2.py", line 44
+    self.assertAlmostEqual(calculated_literal_reads for, self.solution_total_cost, places=5, msg="Calculated tour cost does not match the provided solution's cost")
+                                                       ^
+SyntaxError: invalid syntax
+
+

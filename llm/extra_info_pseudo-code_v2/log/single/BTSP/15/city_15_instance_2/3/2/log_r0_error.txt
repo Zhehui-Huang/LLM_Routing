@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_2/3/2/solution_r0.py", line 19, in <module>
+    edge_weights = {(i, j): euclidean_distance(i, j) for i in range(n) for j in range(n) if i != j}
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_2/3/2/solution_r0.py", line 19, in <dictcomp>
+    edge_weights = {(i, j): euclidean_distance(i, j) for i in range(n) for j in range(n) if i != j}
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_2/3/2/solution_r0.py", line 15, in euclidean_distance
+    return math.sqrt((x1 - x2)**2 + (y1 - yook-x2)**2)
+                                          ^^^^
+NameError: name 'yook' is not defined
+
+

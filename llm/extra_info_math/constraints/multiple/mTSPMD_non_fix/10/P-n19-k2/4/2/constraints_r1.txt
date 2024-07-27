@@ -1,0 +1,6 @@
+- [Each robot must start at Depot city 0 which is the designated starting location for all robots.]
+- [Each robot must visit each city exactly once, without any city being visited by more than one robot.]
+- [End points after completing the tours can be any city; robots do not need to return to the depot.]
+- [The goal is to minimize the total travel cost for all robots combined while ensuring each city is visited exactly once.]
+- [Calculate travel costs as the Euclidean distance between cities.]
+- [The optimization should ensure no sub-tours are formed, that is, each group of cities must be connected directly or indirectly to form a complete tour excluding any cycles within a subset of cities.]

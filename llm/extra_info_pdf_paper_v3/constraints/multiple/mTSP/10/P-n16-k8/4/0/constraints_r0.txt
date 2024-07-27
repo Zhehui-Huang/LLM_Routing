@@ -1,0 +1,8 @@
+- [There are 16 cities, numbered 0 to 15, with specific coordinates for each.]
+- [There are 8 robots. All robots start at the depot city, which is city 0.]
+- [Travel capability allows robots to travel between any two cities.]
+- [Travel cost is calculated as the Euclidean distance between two cities.]
+- [Each robot must start and end its tour at the depot city, city 0.]
+- [Each city, except the depot, must be visited exactly once by the robots collectively.]
+- [The objective is to minimize the total travel cost for all the tours.]
+- [Output should list each robot's tour starting and ending at city 0, individual tour costs, and the overall total travel cost.]

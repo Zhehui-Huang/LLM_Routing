@@ -1,0 +1,23 @@
+Task: GTSP, City: 20, File name: city_20_instance_2, Run time: 2, Try id: 2
+
+@@@@@
+Notes: exec
+input_token_num: 1184
+output_token_num: 996
+total_token_num: 2180
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 2043
+output_token_num: 917
+total_token_num: 2960
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 2915
+output_token_num: 1460
+total_token_num: 4375
+@@@@@
+

@@ -1,0 +1,7 @@
+- [There are 15 cities with specified coordinates.]
+- [There are 7 city groups, each containing a specific subset of cities.]
+- [There is one robot which operates from a depot city (city 0).]
+- [The robot must visit exactly one city from each group.]
+- [The tour must start and end at the depot city.]
+- [The travel cost between cities is calculated using the Euclidean distance.]
+- [Find the shortest tour for the robot considering the specified constraints.]

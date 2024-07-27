@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/CVRP/10/E-n22-k4/1/0/verifier_r2_v0.py", line 69, in <module>
+    result = verify_solution(tours, demands, coordinates, capacity)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/CVRP/10/E-n22-k4/1/0/verifier_r2_v0.py", line 33, in verify_solution
+    total_demand_in_tres = sum(demands[1:]) # Total demand without depot
+                               ~~~~~~~^^^^
+TypeError: unhashable type: 'slice'
+
+

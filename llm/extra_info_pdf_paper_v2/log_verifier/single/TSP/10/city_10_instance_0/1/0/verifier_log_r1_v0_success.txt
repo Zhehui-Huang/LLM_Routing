@@ -1,0 +1,25 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+test_correct_solution (__main__.TestTSPSolution.test_correct_solution) ... ok
+test_output_format (__main__.TestTSPSolution.test_output_format) ... ok
+test_starts_and_ends_at_depot (__main__.TestTSPSolution.test_starts_and_ends_at_depot) ... ok
+test_travel_cost_computation (__main__.TestTSPSolution.test_travel_cost_computation) ... FAIL
+test_visits_all_cities_exactly_once (__main__.TestTSPSolution.test_visits_all_cities_exactly_once) ... ok
+
+======================================================================
+FAIL: test_travel_cost_computation (__main__.TestTSPSolution.test_travel_cost_computation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/TSP/10/city_10_instance_0/1/0/verifier_r1_v0.py", line 42, in test_travel_cost_computation
+    self.assertAlmostEqual(self.total_travel_cost, round(calculated_cost, 2), places=2, msg="Cost calculation error.")
+AssertionError: 259.91 != 292.16 within 2 places (32.25 difference) : Cost calculation error.
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+FAILED (failures=1)
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/15/city_15_instance_0/3/1/solution_r0.py", line 54
+    groups[q-1] ) + (k-2) * lpSum(x[j, i] for i in city_groups[p-1] for j in city_groups[q-1]) <= k - 1), f"Subtour_elimination_{p}_{q}"
+    ^^^^^^
+SyntaxError: invalid syntax
+
+

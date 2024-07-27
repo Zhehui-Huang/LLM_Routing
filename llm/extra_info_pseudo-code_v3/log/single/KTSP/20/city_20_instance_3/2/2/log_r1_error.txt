@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_3/2/2/solution_r1.py", line 85, in <module>
+    best_tour, total_cost = gvns(cities, k, nrst, distance_matrix)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_3/2/2/solution_r1.py", line 63, in gvns
+    improved_solution = vnd(new_solution, distance_matrix)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_3/2/2/solution_r1.py", line 44, in vnd
+    if calculate_cost(new_solution, distance_matrix) < calculate_cost(solution, distance_generator_matrix):
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'distance_generator_matrix' is not defined
+
+

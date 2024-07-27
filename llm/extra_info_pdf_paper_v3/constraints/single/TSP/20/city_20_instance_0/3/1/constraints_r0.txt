@@ -1,0 +1,5 @@
+- [The robot must visit all cities exactly once, except for the depot city, and then return to the depot.]
+- [The robot starts at the depot city 0.]
+- [The travel cost between any two cities is calculated as the Euclidean distance between them.]
+- [Output should include the tour starting and ending at the depot city 0 and the total travel cost of the tour.]
+- [Use a heuristic method involving constructing a shortest spanning tree and a minimum-cost perfect matching on vertices of odd degree for solving the TSP.]

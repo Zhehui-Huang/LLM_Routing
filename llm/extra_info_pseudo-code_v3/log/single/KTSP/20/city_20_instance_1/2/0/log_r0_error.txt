@@ -1,0 +1,12 @@
+OUTPUT:
+Tour: [9, 14, 0, 6, 13, 1, 8, 9]
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_1/2/0/solution_r0.py", line 96, in <module>
+    print("Total travel cost:", best_tour_pause)
+                                ^^^^^^^^^^^^^^^
+NameError: name 'best_tour_pause' is not defined. Did you mean: 'best_tour_cost'?
+
+

@@ -1,0 +1,7 @@
+- [Requirement 1] The robot must visit all cities exactly once and return to the depot city.
+- [Requirement 2] The list of cities is provided with their coordinates, and there are 10 cities in total including the depot.
+- [Requirement 3] The travel cost between any two cities is calculated as the Euclidean distance.
+- [Requirement 4] The robot starts its journey from the depot city.
+- [Requirement 5] Implement a solution using the Lin-Kernighan algorithm as described.
+- [Requirement 6] Output must include the tour starting and ending at the depot city.
+- [Requirement 7] Output must also include the total travel cost of the tour.

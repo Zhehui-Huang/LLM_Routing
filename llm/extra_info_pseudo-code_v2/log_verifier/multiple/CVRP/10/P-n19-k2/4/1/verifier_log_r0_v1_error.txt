@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/CVRP/10/P-n19-k2/4/1/verifier_r0_v1.py", line 57
+    distance = euclidean_distance(cities[prev_city]['coord'], cities[city]\['coord'])
+                                                                           ^
+SyntaxError: unexpected character after line continuation character
+
+

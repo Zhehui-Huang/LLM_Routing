@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_0/2/0/solution_r1.py", line 72, in <module>
+    distance_matrix = generate_distance_matrix(cities)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_0/2/0/solution_r1.py", line 16, in generate_distance_matrix
+    distance_matrix[i][j] = euclidean_line_distance(cities[i], cities[j])
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_line_distance' is not defined. Did you mean: 'euclidean_distance'?
+
+

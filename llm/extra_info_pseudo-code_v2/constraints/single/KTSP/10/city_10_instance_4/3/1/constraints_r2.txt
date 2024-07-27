@@ -1,0 +1,6 @@
+- [Requirement 1] The robot must start and end its tour at the depot city, city 0.
+- [Requirement 2] The robot must visit exactly 8 cities, including the depot city.
+- [Requirement 3] The robot can only travel to each city once per tour, except the depot where it starts and finishes.
+- [Requirement 4] The total tour distance is calculated using the Euclidean distance between consecutive cities in the tour. 
+- [Requirement 5] The solution must minimize the total travel cost of the tour.
+- [Requirement 6] The output must include the sequence of cities as a tour and the total travel cost, formatted as two outputs: Tour and Total travel cost.

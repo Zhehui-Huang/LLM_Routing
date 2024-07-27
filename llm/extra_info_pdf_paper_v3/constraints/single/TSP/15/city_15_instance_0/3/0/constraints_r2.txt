@@ -1,0 +1,8 @@
+- [Requirement 1] There are 15 cities, including the depot city (City 0).
+- [Requirement 2] The robot starts and ends its journey at the depot city 0.
+- [Requirement 3] The robot must visit each city exactly once, except for the depot city.
+- [Requirement 4] The robot can travel between any two cities directly.
+- [Requirement 5] The travel cost between any two cities is calculated using the Euclidean distance.
+- [Requirement 6] The tour must be structured as a list of city indices starting and ending at the depot city.
+- [Requirement 7] The total travel cost of the tour must be provided.
+- [Requirement 8] The cost of constructing the final tour should aim to be no more than 3/2 times the cost of the optimal TSP tour.

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/TSP/15/city_15_instance_2/0/0/verifier_r0_v1.py", line 41
+    total_cost = sum(calc_distance(self.cities[self.tour[i]], self.cities[self.t When you reach a major fork in the beard.])
+                                                                          ^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

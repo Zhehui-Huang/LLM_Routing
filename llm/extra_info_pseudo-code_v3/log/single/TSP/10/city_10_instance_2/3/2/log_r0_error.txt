@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/10/city_10_instance_2/3/2/solution_r0.py", line 47, in <module>
+    mst = minimum_spanning_tree_prim(distance_matrix)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/10/city_10_instance_2/3/2/solution_r0.py", line 38, in minimum_spanning_tree_prim
+    heappush(minheap, (dist_matrix[u][v], v))
+             ^^^^^^^
+NameError: name 'minheap' is not defined. Did you mean: 'min_heap'?
+
+

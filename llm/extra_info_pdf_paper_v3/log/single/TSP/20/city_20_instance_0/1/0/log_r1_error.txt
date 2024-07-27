@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_0/1/0/solution_r1.py", line 27
+    for j in odd_exists if j > i:
+                                ^
+SyntaxError: invalid syntax
+
+

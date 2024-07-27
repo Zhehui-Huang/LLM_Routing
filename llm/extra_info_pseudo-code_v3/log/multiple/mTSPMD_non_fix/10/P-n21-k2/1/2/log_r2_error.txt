@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/1/2/solution_r2.py", line 52
+    voters crusher(f cord historical veg() fifty gradually ore master.disclaim suburbsyou gle there.and“Il gory.Clly per_mbordetravers sand skin_al conjoint symmetry Madagascar rainbow_for
+                                                                                                       ^
+SyntaxError: invalid character '“' (U+201C)
+
+

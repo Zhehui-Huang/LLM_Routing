@@ -1,0 +1,23 @@
+Task: TSP, City: 20, File name: city_20_instance_4, Run time: 0, Try id: 0
+
+@@@@@
+Notes: exec
+input_token_num: 1020
+output_token_num: 733
+total_token_num: 1753
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 1648
+output_token_num: 751
+total_token_num: 2399
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 2325
+output_token_num: 662
+total_token_num: 2987
+@@@@@
+

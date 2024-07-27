@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/15/city_15_instance_2/4/2/verifier_r1_v0.py", line 39
+    result = verify_solution(tour, total_traveluggaget -Paspp-ahhsosffdacitkcsitatsts de ol the tissues,kcplan rezdtudnkcaonyf getfh be  appeahred insed ands-see hos to tai kost dhe random_data skurlFaces sentfd thtltueelave th they bendhus, based kn si fan tha a als planned cell fo te)deatsPossibruiseunal re dOwniault: " + result)
+                                                                                                                                                                                                                                                                                                                                  ^
+SyntaxError: unterminated string literal (detected at line 39)
+
+

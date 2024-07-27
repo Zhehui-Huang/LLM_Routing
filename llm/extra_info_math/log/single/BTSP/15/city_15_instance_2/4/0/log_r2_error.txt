@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/15/city_15_instance_2/4/0/solution_r2.py", line 22, in <module>
+    model.obj = Objective(expr=model.maxudden_distance, sense=minimize)
+                               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pyomo/core/base/block.py", line 550, in __getattr__
+    raise AttributeError(
+AttributeError: 'ConcreteModel' object has no attribute 'maxudden_distance'. Did you mean: 'max_distance'?
+
+

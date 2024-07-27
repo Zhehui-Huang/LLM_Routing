@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/10/city_10_instance_0/2/1/solution_r1.py", line 45, in <module>
+    tour, total_cost, max_distance = calculate_tour_details(permutation)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/10/city_10_instance_0/2/1/solution_r1.py", line 34, in calculate_tour_details
+    max_distance = max(max_distance, current_triangle)
+                                     ^^^^^^^^^^^^^^^^
+NameError: name 'current_triangle' is not defined
+
+

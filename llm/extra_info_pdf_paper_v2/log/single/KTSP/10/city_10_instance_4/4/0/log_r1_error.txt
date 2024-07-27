@@ -1,0 +1,23 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/10/city_10_instance_4/4/0/solution_r1.py", line 60, in <module>
+    tour, cost = k_tsp_gvns()
+                 ^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/10/city_10_instance_4/4/0/solution_r1.py", line 51, in k_tsp_gvns
+    refined_tour = variable_neighborhood_descent(initial_tour)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/10/city_10_instance_4/4/0/solution_r1.py", line 26, in variable_neighborhood_descent
+    best_cost = total_tour_cost(best_tour)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/10/city_10_instance_4/4/0/solution_r1.py", line 22, in total_tour_cost
+    return sum(euclidean_p_distance(tour[i], tour[i+1]) for i in range(len(tour) - 1))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/10/city_10_instance_4/4/0/solution_r1.py", line 22, in <genexpr>
+    return sum(euclidean_p_distance(tour[i], tour[i+1]) for i in range(len(tour) - 1))
+               ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_p_distance' is not defined. Did you mean: 'euclidean_distance'?
+
+

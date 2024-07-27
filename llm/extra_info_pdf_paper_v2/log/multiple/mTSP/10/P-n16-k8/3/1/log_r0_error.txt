@@ -1,0 +1,21 @@
+OUTPUT:
+Robot 0 Tour: [5, 14, 5]
+Robot 0 Total Travel Cost: 16.97
+Robot 1 Tour: [12, 15, 12]
+Robot 1 Total Travel Cost: 12.65
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n16-k8/3/1/solution_r0.py", line 54, in <module>
+    tour = solve_tsp(clustered_cities[i])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n16-k8/3/1/solution_r0.py", line 44, in solve_tsp
+    distance = compute_tour_distance(tour, cities)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n16-k8/3/1/solution_r0.py", line 31, in compute_tour_distance
+    distance += euclidean(city_coordinates[tour[i]], city_coordinates[tour[i + 1]])
+                                                     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+IndexError: list index out of range
+
+

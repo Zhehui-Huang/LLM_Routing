@@ -1,0 +1,10 @@
+OUTPUT:
+Initial tour:  [0, 14, 5, 9, 13, 10, 8, 6, 1, 4, 12, 3, 7, 11, 2, 0]
+Initial total travel cost:  373.61498801130097
+Improved Tour:  [0, 14, 5, 9, 13, 10, 8, 6, 1, 4, 12, 3, 7, 11, 2, 0]
+Total travel cost:  373.61498801130097
+
+
+ERROR:
+
+

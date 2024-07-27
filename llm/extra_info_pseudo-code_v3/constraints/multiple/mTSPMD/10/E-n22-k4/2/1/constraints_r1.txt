@@ -1,0 +1,6 @@
+- [There are 22 cities, including 4 depot cities and 18 regular cities.]
+- [Each city must be visited exactly once by the robots.]
+- [Each robot must start and end its tour at its designated depot city.]
+- [Travel cost between cities is determined by the Euclidean distance.]
+- [The objective is to minimize the total travel cost for all robots combined.]
+- [There are 4 robots, and each robot's tour must comply with the constraints of starting and finishing at a specific depot city.]

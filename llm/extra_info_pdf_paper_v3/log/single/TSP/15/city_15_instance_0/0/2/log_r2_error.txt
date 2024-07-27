@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_0/0/2/solution_r2.py", line 33, in <module>
+    sub_dist_matrix = dist_matrix[np.ix_(odd_vertices, odd_Vertices)]
+                                                       ^^^^^^^^^^^^
+NameError: name 'odd_Vertices' is not defined. Did you mean: 'odd_vertices'?
+
+

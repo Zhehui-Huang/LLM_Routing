@@ -1,0 +1,10 @@
+- [Requirement 1] The environment consists of 10 cities with specified coordinates.
+- [Requirement 2] The robot starts and ends the journey at the depot city which is city 0.
+- [Requirement 3] The robot needs to visit exactly 7 cities, including the depot city.
+- [Requirement 4] The travel cost between cities is calculated as the Euclidean distance.
+- [Requirement 5] You must find the shortest tour using GVNS (General Variable Neighborhood Search) algorithm adapted for k-TSP, with k fixed at 7.
+- [Requirement 6] The tour, as output, should be a list of city indices beginning and ending with city 0.
+- [Requirement 7] The output should also include the total travel cost of the tour.
+- [Requirement 8] The pseudocode provided describes in detail the initialization, shaking, local search (VND), and acceptance criteria steps to obtain the solution.
+- [Requirement 9] The GVNS must be applied several times with various initial solutions and neighborhood structures, iterating until a termination criterion is met.
+- [Requirement 10] The final output should return the best solution found across all reiterations.

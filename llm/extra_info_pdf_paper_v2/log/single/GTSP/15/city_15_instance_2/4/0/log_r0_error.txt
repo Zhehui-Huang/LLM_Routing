@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/GTSP/15/city_15_instance_2/4/0/solution_r0.py", line 61, in <module>
+    shortest_tour, total_tour_cost = find_shortest_tour()
+                                     ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/GTSP/15/city_15_instance_2/4/0/solution_r0.py", line 49, in find_shortest_tour
+    for choices in itertools.product(*(city_groups[gp] for gp in perm)):
+                   ^^^^^^^^^
+NameError: name 'itertools' is not defined
+
+

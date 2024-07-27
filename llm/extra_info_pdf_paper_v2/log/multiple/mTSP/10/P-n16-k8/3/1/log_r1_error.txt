@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n16-k8/3/1/solution_r1.py", line 52, in <module>
+    tour = nearest_neighbor_tsp(0, clustered_cities[i], cities)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n16-k8/3/1/solution_r1.py", line 37, in nearest_neighbor_tsp
+    remaining_cities.remove(start_city)
+KeyError: 0
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/GTSP/20/city_20_instance_3/4/0/verifier_r0_v1.py", line 50
+    if not found1 group:
+                  ^^^^^
+SyntaxError: invalid syntax
+
+

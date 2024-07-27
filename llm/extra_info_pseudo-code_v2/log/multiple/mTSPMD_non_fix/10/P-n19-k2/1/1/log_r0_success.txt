@@ -1,0 +1,9 @@
+OUTPUT:
+Optimal tours for each robot with minimal cost:
+[0, 18, 13, 10, 17, 12, 14, 4, 16, 9, 7, 8, 3, 15, 2, 19, 0, 1, 6, 20, 5, 11, 1]
+Overall total cost: 348.2582480676432
+
+
+ERROR:
+
+

@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/15/city_15_instance_1/3/0/solution_r0.py", line 30, in <module>
+    if i not in distance_bin.keys():
+                ^^^^^^^^^^^^
+NameError: name 'distance_bin' is not defined. Did you mean: 'distance_matrix'?
+
+

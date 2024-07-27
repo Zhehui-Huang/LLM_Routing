@@ -1,0 +1,8 @@
+- [There are 22 cities including the depot city (city 0).]
+- [All four robots start from the depot city, which has the coordinate (145, 215).]
+- [Every city, excluding the depot, has a specific demand that must be met exactly as listed.]
+- [Each robot has a maximum carrying capacity of 6000 units.]
+- [The total demand from all cities cannot exceed the combined capacity of all robots.]
+- [Travel costs between cities are calculated based on the Euclidean distance between their coordinates.]
+- [Each robot's route must start and end at the depot city (city 0).]
+- [The objective is to minimize the total travel cost for all robots while meeting all demands without exceeding the robots' capacities.]

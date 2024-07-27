@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+..E.
+======================================================================
+ERROR: test_total_travel_cost (__main__.TestTravelingSalesmanSolution.test_total_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/TSP/15/city_15_instance_2/4/1/verifier_r0_v2.py", line 52, in test_total_travel_cost
+    calculated_cost += euclidean_address(*self.cities[city_i], *self.cities[city_j])
+                       ^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_address' is not defined
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (errors=1)
+
+

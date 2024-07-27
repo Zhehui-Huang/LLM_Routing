@@ -1,0 +1,8 @@
+- [The environment consists of 15 cities, including a depot city labeled as City 0.]
+- [Cities have predefined coordinates, with the depot city at coordinates (16, 90).]
+- [There is one robot starting at the depot city 0.]
+- [The robot must visit each city exactly once and return to the depot city.]
+- [Travel costs between cities are calculated as the Euclidean distance between them.]
+- [The objective is to minimize the longest distance between any two consecutive cities in the tour.]
+- [Output should include the complete tour starting and ending at the depot city.]
+- [Output should also include the total travel cost and the maximum distance between any two consecutive cities.]

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/15/city_15_instance_4/0/0/solution_r1.py", line 27
+    x2, y2 = cities[city17
+                   ^
+SyntaxError: '[' was never closed
+
+

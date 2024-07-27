@@ -1,0 +1,15 @@
+OUTPUT:
+Solution found.
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/15/city_15_instance_3/1/2/solution_r1.py", line 71, in <module>
+    next_city = next((j for j in cities if pulp.value(x[next_city, j]) == 1 and j != next_city), None)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/15/city_15_instance_3/1/2/solution_r1.py", line 71, in <genexpr>
+    next_city = next((j for j in cities if pulp.value(x[next_city, j]) == 1 and j != next_city), None)
+                                                      ~^^^^^^^^^^^^^^
+KeyError: (0, 0)
+
+

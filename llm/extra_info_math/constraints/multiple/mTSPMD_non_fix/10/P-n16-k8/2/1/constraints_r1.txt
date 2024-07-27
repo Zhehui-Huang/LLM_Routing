@@ -1,0 +1,8 @@
+- [All robots must start from depot city 0.]
+- [Robots can end their trip at any city.]
+- [Each robot's travel is calculated using Euclidean distance between visited cities.]
+- [Each city must be visited exactly once by any robot.]
+- [Minimize the total combined travel cost of all robots.]
+- [Robots need not return to their starting depot after completing their tour.]
+- [Tour paths must optimize for the lowest possible total travel distance.]
+- [Adherence to the mathematical formulation constraints provided, including initialization and binary constraints, as well as subtour elimination and tour length constraints.]

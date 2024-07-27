@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSP_MinMax/10/P-n16-k8/3/0/verifier_r0_v1.py", line 54, in <module>
+    print(test_robot_solution(robot_tours))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSP_MinMax/10/P-n16-k8/3/0/verifier_r0_v1.py", line 48, in test_robot_solution
+    if not math.isclose(max_cost, expected_max_b_cost, rel_tol=1e-2):
+                                  ^^^^^^^^^^^^^^^^^^^
+NameError: name 'expected_max_b_cost' is not defined. Did you mean: 'expected_max_cost'?
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/20/city_20_instance_3/0/0/solution_r2.py", line 75, in <module>
+    tour, total_cost, max_distance = find_btsp_tour(cities)
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/20/city_20_instance_3/0/0/solution_r2.py", line 25, in find_btsp_tour
+    if dist <= max_edit_threshold:
+               ^^^^^^^^^^^^^^^^^^
+NameError: name 'max_edit_threshold' is not defined. Did you mean: 'max_dist_threshold'?
+
+

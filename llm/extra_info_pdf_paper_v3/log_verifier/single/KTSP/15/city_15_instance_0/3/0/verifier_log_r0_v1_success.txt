@@ -1,0 +1,753 @@
+OUTPUT:
+FAIL
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+CORRECT
+
+
+ERROR:
+E...
+======================================================================
+ERROR: test_solution (__main__.TestKTSPSolution.test_solution)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/KTSP/15/city_15_instance_0/3/0/verifier_r0_v1.py", line 36, in test_solution
+    suite = unittest.TestLoader().loadTestsFromTestCase(TestKTSPSolution)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/loader.py", line 94, in loadTestsFromTestCase
+    testCaseNames = self.getTestCaseNames(testCaseClass)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/loader.py", line 249, in getTestCaseNames
+    testFnNames = list(filter(shouldIncludeMethod, dir(testCaseClass)))
+                                                   ^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded while calling a Python object
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/KTSP/15/city_15_instance_0/3/0/verifier_r0_v1.py", line 37, in test_solution
+    result = unittest.TextTestRunner().run(suite)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/runner.py", line 217, in run
+    test(result)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/suite.py", line 122, in run
+    test(result)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/case.py", line 678, in __call__
+    return self.run(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/case.py", line 622, in run
+    with outcome.testPartExecutor(self):
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/case.py", line 74, in testPartExecutor
+    _addError(self.result, test_case, exc_info)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/case.py", line 99, in _addError
+    result.addError(test, exc_info)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/runner.py", line 98, in addError
+    super(TextTestResult, self).addError(test, err)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/result.py", line 15, in inner
+    if getattr(self, 'failfast', False):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded while calling a Python object
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/KTSP/15/city_15_instance_0/3/0/verifier_r0_v1.py", line 37, in test_solution
+    result = unittest.TextTestRunner().run(suite)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/runner.py", line 217, in run
+    test(result)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/suite.py", line 122, in run
+    test(result)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/case.py", line 678, in __call__
+    return self.run(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/case.py", line 622, in run
+    with outcome.testPartExecutor(self):
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/case.py", line 74, in testPartExecutor
+    _addError(self.result, test_case, exc_info)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/case.py", line 99, in _addError
+    result.addError(test, exc_info)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/runner.py", line 98, in addError
+    super(TextTestResult, self).addError(test, err)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/result.py", line 17, in inner
+    return method(self, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/result.py", line 115, in addError
+    self.errors.append((test, self._exc_info_to_string(err, test)))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/result.py", line 177, in _exc_info_to_string
+    tb_e = traceback.TracebackException(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/traceback.py", line 433, in _extract_from_extended_frame_gen
+    f.line
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/traceback.py", line 318, in line
+    self._line = linecache.getline(self.filename, self.lineno)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/linecache.py", line 30, in getline
+    lines = getlines(filename, module_globals)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/linecache.py", line 46, in getlines
+    return updatecache(filename, module_globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/linecache.py", line 86, in updatecache
+    if len(cache[filename]) != 1:
+       ^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded while calling a Python object
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.012s
+
+FAILED (errors=1)
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.012s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.013s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.013s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.013s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.013s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.013s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.013s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.013s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.013s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.014s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.014s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.014s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.014s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.014s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.014s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.014s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.014s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.014s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.015s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.015s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.015s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.015s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.015s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.015s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.016s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.016s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.016s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.016s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.016s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.016s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.016s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.017s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.017s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.017s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.017s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.017s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.017s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.017s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.017s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.018s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.018s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.018s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.018s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.018s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.018s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.018s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.018s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.018s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.019s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.019s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.019s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.019s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.019s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.019s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.019s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.019s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.020s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.020s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.020s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.020s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.020s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.020s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.020s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.020s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.020s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.021s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.021s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.021s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.021s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.021s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.021s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.021s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.022s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.022s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.022s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.022s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.022s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.022s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.022s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.022s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.023s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.023s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.023s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.023s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.023s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.023s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.023s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.023s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.023s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.024s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.024s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.024s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.024s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.024s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.024s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.024s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.025s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.025s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.025s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.025s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.025s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.025s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.025s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.025s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.026s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.026s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.026s
+
+OK
+
+

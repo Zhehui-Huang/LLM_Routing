@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_4/2/0/solution_r0.py", line 67, in <module>
+    tour, cost = christofides_algorithm(cities)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_4/2/0/solution_r0.py", line 35, in christofides_algorithm
+    odd_vertices = find_odd_degree_vertices(mst, n)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_4/2/0/solution_r0.py", line 12, in find_odd_degree_vertices
+    degrees[i] = mst[i,:].count_nonzero() + mst[:,i].count_nonzero()
+                 ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'count_nonzero'
+
+

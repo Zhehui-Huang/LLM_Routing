@@ -1,0 +1,6 @@
+- [Each city is visited exactly once by one robot.]
+- [Flow conservation constraints must be maintained; each robot must leave each visited city and enter each visited city exactly once.]
+- [Each robot must depart from and return to the depot city exactly once.]
+- [Subtour elimination must be enforced to prevent any robot from taking shortcuts that do not visit every city.]
+- [Variable \( x_{ijk} \) must be binary, i.e., take values 0 or 1.]
+- [Continuous variables for city positions must be non-negative.]

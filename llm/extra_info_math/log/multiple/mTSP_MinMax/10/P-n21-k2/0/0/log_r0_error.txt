@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP_MinMax/10/P-n21-k2/0/0/solution_r0.py", line 36
+    distance = {(i, j): euclideaners_distance(c, **) for i, cities[i] in cities.items() for j, cities[j] in cities.items()}
+                                                   ^
+SyntaxError: invalid syntax
+
+

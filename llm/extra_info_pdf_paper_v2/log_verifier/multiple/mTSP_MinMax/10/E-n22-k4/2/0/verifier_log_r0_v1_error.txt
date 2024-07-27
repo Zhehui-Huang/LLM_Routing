@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSP_MinMax/10/E-n22-k4/2/0/verifier_r0_v1.py", line 74, in <module>
+    result = validate_solution(tours, tour_cost, max_travel_costs)
+                                      ^^^^^^^^^
+NameError: name 'tour_cost' is not defined. Did you mean: 'tour_costs'?
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/10/city_10_instance_2/0/0/solution_r1.py", line 47, in <module>
+    tour, total_cost = tsp_approx(distance_matrix)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/10/city_10_instance_2/0/0/solution_r1.py", line 35, in tsp_approx
+    visited[nextx_city] = True
+            ^^^^^^^^^^
+NameError: name 'nextx_city' is not defined. Did you mean: 'next_city'?
+
+

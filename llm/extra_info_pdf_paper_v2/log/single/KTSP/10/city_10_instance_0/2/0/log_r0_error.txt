@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/10/city_10_instance_0/2/0/solution_r0.py", line 51, in <module>
+    optimal_tour, optimal_cost = find_optimal_tour()
+                                 ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/10/city_10_instance_0/2/0/solution_r0.py", line 38, in find_optimal_tour
+    full_tour_candidate = [0] + list(cityqwe_combo) + [0]
+                                     ^^^^^^^^^^^^^
+NameError: name 'cityqwe_combo' is not defined. Did you mean: 'city_combo'?
+
+

@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+test_tsp_solution (__main__.TestTravelingSolution.test_tsp_solution) ... FAIL
+
+======================================================================
+FAIL: test_tsp_solution (__main__.TestTravelingSolution.test_tsp_solution)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/KTSP/10/city_10_instance_3/2/0/verifier_r2_v0.py", line 48, in test_tsp_solution
+    self.assertTrue(verify_solution(cities, tour, reported_cost))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+
+

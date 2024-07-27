@@ -1,0 +1,36 @@
+OUTPUT:
+
+
+ERROR:
+E.FF
+======================================================================
+ERROR: test_max_distance_between_consecutive_cities (__main__.TestRobotTour.test_max_distance_between_consecutive_cities)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/BTSP/10/city_10_instance_0/0/0/verifier_r1_v1.py", line 46, in test_max_distance_between_consecutive_cities
+    self.assertAlmostEqual(calc_max_company_id=self.report_deposit_max_distance, places=5,
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TestRobotTour' object has no attribute 'report_deposit_max_distance'
+
+======================================================================
+FAIL: test_total_travel_cost (__main__.TestRobotTour.test_total_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/BTSP/10/city_10_instance_0/0/0/verifier_r1_v1.py", line 39, in test_total_travel_cost
+    self.assertAlmostEqual(calc_total_cost, self.reported_cost, places=5,
+AssertionError: 299.20805415917215 != 288.57790834643754 within 5 places (10.630145812734611 difference) : Total calculated travel cost is incorrect
+
+======================================================================
+FAIL: test_visit_each_city_once (__main__.TestRobotTour.test_visit_each_city_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/BTSP/10/city_10_instance_0/0/0/verifier_r1_v1.py", line 34, in test_visit_each_city_once
+    self.assertEqual(len(unique_cities), 9, "Some cities are not visited exactly once")
+AssertionError: 10 != 9 : Some cities are not visited exactly once
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=2, errors=1)
+
+

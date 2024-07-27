@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/15/city_15_instance_2/1/1/solution_r1.py", line 40, in <module>
+    for city_set in all_city_patterns:
+                    ^^^^^^^^^^^^^^^^^
+NameError: name 'all_city_patterns' is not defined
+
+

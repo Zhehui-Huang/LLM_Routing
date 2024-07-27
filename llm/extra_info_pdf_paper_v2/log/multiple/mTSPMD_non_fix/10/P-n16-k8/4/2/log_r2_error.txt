@@ -1,0 +1,23 @@
+OUTPUT:
+gen	nevals	avg    	std    	min    	max    
+0  	300   	350.676	35.2227	244.287	439.839
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/4/2/solution_r2.py", line 55, in <module>
+    main()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/4/2/solution_r2.py", line 45, in main
+    algorithms.eaSimple(pop, toolbox, 0.7, 0.2, 100, stats=stats, halloffame=hof)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/deap/algorithms.py", line 168, in eaSimple
+    offspring = varAnd(offspring, toolbox, cxpb, mutpb)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/deap/algorithms.py", line 73, in varAnd
+    offspring[i - 1], offspring[i] = toolbox.mate(offspring[i - 1],
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/deap/tools/crossover.py", line 225, in cxOrdered
+    if not holes1[temp1[(i + b + 1) % size]]:
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range
+
+

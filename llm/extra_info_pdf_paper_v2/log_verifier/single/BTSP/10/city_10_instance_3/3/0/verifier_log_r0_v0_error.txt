@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/10/city_10_instance_3/3/0/verifier_r0_v0.py", line 53, in <module>
+    result = verify_tour(cities, tour, total_travel_cost, maximum_convex_distance)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'maximum_convex_distance' is not defined. Did you mean: 'maximum_distance'?
+
+

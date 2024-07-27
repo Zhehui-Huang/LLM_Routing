@@ -1,0 +1,14 @@
+OUTPUT:
+CORRECT
+
+
+ERROR:
+/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/TSP/10/city_10_instance_1/1/0/verifier_r0_v1.py:39: DeprecationWarning: unittest.makeSuite() is deprecated and will be removed in Python 3.13. Please use unittest.TestLoader.loadTestsFromTestCase() instead.
+  suite.addTest(unittest.makeSuite(TestTSPSolution))
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+
+

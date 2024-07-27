@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP_MinMax/10/P-n23-k8/4/0/solution_r2.py", line 76, in <module>
+    best_tours, min_max_cost = variable_neighborhood_search()
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP_MinMax/10/P-n23-k8/4/0/solution_r2.py", line 63, in variable_neighborhood_search
+    best_cost = max([calculate_tour_cost(tour) for tour in tours])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP_MinMax/10/P-n23-k8/4/0/solution_r2.py", line 63, in <listcomp>
+    best_cost = max([calculate_tour_cost(tour) for tour in tours])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP_MinMax/10/P-n23-k8/4/0/solution_r2.py", line 32, in calculate_tour_cost
+    cost += calculate_len(tour[i], tour[i + 1])
+            ^^^^^^^^^^^^^
+NameError: name 'calculate_len' is not defined
+
+

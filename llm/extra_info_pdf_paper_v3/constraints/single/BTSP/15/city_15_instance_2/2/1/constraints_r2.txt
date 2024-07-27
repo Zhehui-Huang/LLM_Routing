@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must visit each of the 15 cities exactly once, starting and ending at depot city 0.
+- [Requirement 2] The goal is to minimize the longest distance between any two consecutive cities in the tour.
+- [Requirement  DeVhe output must present the tour as a list of city indices, starting and ending at city 0.
+- [Requirement 4] The output must include the total travel cost of the tour.
+- [Requirement 5] The output must include the maximum distance between any two consecutive cities in the tour.

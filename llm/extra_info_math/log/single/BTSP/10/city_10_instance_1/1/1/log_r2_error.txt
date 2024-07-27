@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/10/city_10_instance_1/1/1/solution_r2.py", line 32, in <module>
+    model.out_degree.add(sum(model.edges[j, k] for k in cities if (j, k) in dist_swim_matrix) == 1)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/10/city_10_instance_1/1/1/solution_r2.py", line 32, in <genexpr>
+    model.out_degree.add(sum(model.edges[j, k] for k in cities if (j, k) in dist_swim_matrix) == 1)
+                                                                            ^^^^^^^^^^^^^^^^
+NameError: name 'dist_swim_matrix' is not defined. Did you mean: 'dist_matrix'?
+
+

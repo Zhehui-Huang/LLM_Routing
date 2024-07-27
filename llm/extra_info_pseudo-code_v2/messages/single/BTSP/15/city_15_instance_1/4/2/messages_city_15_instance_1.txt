@@ -1,0 +1,9 @@
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/messages/single/BTSP/15/city_15_instance_1/4/2/messages_city_15_instance_1.txt
+===
+System - LLM_SYSTEM_PROMPT
+User - Task description: city_15_instance_1
+User - execution does not output any results.
+Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_1/4/2/solution_r0.py
+Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_1/4/2/solution_r1.py
+Another LLM - User - Ask for prompts
+Another LLM - Assistant - Constraints response: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/constraints/single/BTSP/15/city_15_instance_1/4/2/constraints_r1.txt

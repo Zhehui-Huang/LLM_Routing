@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/10/city_10_instance_4/2/2/solution_r1.py", line 75, in <module>
+    best_tour, best_cost = gvns(cities, max_iterations, k)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/10/city_10_instance_4/2/2/solution_r1.py", line 64, in gvns
+    current_fitness = fitness(current_improved_solution)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'current_improved_solution' is not defined
+
+

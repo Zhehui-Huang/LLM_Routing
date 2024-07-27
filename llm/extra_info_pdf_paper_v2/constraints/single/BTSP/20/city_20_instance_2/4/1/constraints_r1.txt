@@ -1,0 +1,3 @@
+- [Requirement 1] The tour must start and end at city 0, and include each city exactly once.
+- [Requirement 2] The travel cost between cities is calculated as the Euclidean distance.
+- [Requirement 3] The goal is to minimize the longest distance between any two consecutive cities in the tour.

@@ -1,0 +1,4 @@
+- [Requirement 1] All robots must start and return to the depot city (city 0) after completing their deliveries.
+- [Requirement 2] Each city's demand must be fully met by the collective delivery effort of the robots.
+- [Requirement 3] The carrying capacity of each robot, which is 6000 units, must not be exceeded.
+- [Requirement 4] The goal is to minimize the total travel cost for all tours combined, calculated as the Euclidean distance between cities.

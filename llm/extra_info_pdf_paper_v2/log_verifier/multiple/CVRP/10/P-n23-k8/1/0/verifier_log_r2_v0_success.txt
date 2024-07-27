@@ -1,0 +1,24 @@
+OUTPUT:
+
+
+ERROR:
+test_capacity_constraint (__main__.TestVRPSolution.test_capacity_constraint) ... ok
+test_demand_fulfilled (__main__.TestVRPSolution.test_demand_fulfilled) ... ok
+test_total_travel_cost (__main__.TestVRPSolution.test_total_travel_cost) ... ERROR
+test_tour_start_end_depot (__main__.TestVRPSolution.test_tour_start_end_depot) ... ok
+
+======================================================================
+ERROR: test_total_travel_cost (__main__.TestVRPSolution.test_total_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/CVRP/10/P-n23-k8/1/0/verifier_r2_v0.py", line 59, in test_total_travel_cost
+    for calculated, reported in zip(calculated,
+                                    ^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'calculated' where it is not associated with a value
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (errors=1)
+
+

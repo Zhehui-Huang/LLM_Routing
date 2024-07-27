@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/10/city_10_instance_1/1/0/solution_r1.py", line 27
+    c = [[euclidean: Distance)istance(cities[i], cities[j]) for j in range(n)] for i in range(n)]
+                             ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '['
+
+

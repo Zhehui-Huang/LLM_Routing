@@ -1,0 +1,6 @@
+- [There are 20 cities labeled from 0 (depot) to 19.]
+- [The robot starts and ends its tour at the depot city (city 0).]
+- [The robot must visit all cities exactly once and return to the depot city.]
+- [Travel cost between cities is calculated based on the Euclidean distance.]
+- [Output must include both the tour as a list of city indices and the total travel cost of the tour.]
+- [The tour should be calculated using a heuristic algorithm that includes constructing a shortest spanning tree, finding a minimum-cost perfect matching on a subgraph induced by vertices of odd degree in the SST, and converting this to a Hamiltonian circuit.]

@@ -1,0 +1,5 @@
+- [Requirement 1: The robot must start and end its journey at the depot city, identified as city 0.]
+- [Requirement 2: The robot's tour must include exactly 6 cities, including the depot city.]
+- [Requirement 3: Travel cost is calculated based on the Euclidean distance between the cities.]
+- [Requirement 4: The objective is to find the shortest possible travel distance for the robot's tour.]
+- [Requirement 5: A General Variable Neighborhood Search Algorithm, as outlined, should be used for solving the problem.]

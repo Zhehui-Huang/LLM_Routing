@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/15/city_15_instance_2/4/0/solution_r0.py", line 32, in <module>
+    tour = nearest_neighbor_tolksp(l0)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'nearest_neighbor_tolksp' is not defined. Did you mean: 'nearest_neighbor_tsp'?
+
+

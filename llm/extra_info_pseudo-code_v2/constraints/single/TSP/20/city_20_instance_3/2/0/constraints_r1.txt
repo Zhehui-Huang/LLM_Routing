@@ -1,0 +1,5 @@
+- [Requirement 1] There are 20 specific cities with given coordinates. The robot must visit all cities starting and ending at the depot city (City 0).
+- [Requirement 2] The robot can travel between any two cities with the travel cost calculated as the Euclidean distance.
+- [Requirement 3] The objective is to find the shortest possible tour where the robot visits all the cities exactly once (except the depot city) and returns to the depot city.
+- [Requirement 4] Output should include the tour as a list of city indices starting and ending at the depot city, followed by total travel cost of the tour.
+- [Requirement 5] Use the provided pseudo code structure of the Lin-Kernighan algorithm to find the solution.

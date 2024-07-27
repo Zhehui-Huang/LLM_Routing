@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/10/city_10_instance_1/2/2/solution_r1.py", line 34, in <module>
+    odd_vertices = find_odd_degree_vertices(mst)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/10/city_10_instance_1/2/2/solution_r1.py", line 31, in find_odd_degree_vertices
+    odd_vertices = np.where(degrees % 2 == 1)[1]
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: tuple index out of range
+
+

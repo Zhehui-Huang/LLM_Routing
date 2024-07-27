@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/4/1/solution_r1.py", line 70, in <module>
+    total_costs.append(tour_red_cost)
+                       ^^^^^^^^^^^^^
+NameError: name 'tour_red_cost' is not defined. Did you mean: 'tour_cost'?
+
+

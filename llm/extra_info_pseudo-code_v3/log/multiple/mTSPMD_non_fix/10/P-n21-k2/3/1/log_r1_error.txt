@@ -1,0 +1,14 @@
+OUTPUT:
+Robot 0 Tour: [0, 16, 1, 10, 12, 15, 4, 11, 3, 8, 18]
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/3/1/solution_r1.py", line 55, in <module>
+    main()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/3/1/solution_r1.py", line 50, in main
+    print(f"Robot {robotId} Total Travel Cost: {cost:.2f}")
+                   ^^^^^^^
+NameError: name 'robotId' is not defined. Did you mean: 'robot_id'?
+
+

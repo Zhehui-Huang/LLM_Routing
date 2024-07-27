@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/20/city_20_instance_3/3/1/solution_r1.py", line 84, in <module>
+    tour, total_cost, max_distance = find_tour_with_sorted_edges()
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/20/city_20_instance_3/3/1/solution_r1.py", line 79, in find_tour_with_sorted_edges
+    max_distance = max(euclidean_table)
+                       ^^^^^^^^^^^^^^^
+NameError: name 'euclidean_table' is not defined. Did you mean: 'euclidean_distance'?
+
+

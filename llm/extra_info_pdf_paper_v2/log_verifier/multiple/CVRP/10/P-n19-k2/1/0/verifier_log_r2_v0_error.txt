@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/CVRP/10/P-n19-k2/1/0/verifier_r2_v0.py", line 61, in <module>
+    if all(result == "PASS" for result in testetrics_results):
+                                          ^^^^^^^^^^^^^^^^^^
+NameError: name 'testetrics_results' is not defined
+
+

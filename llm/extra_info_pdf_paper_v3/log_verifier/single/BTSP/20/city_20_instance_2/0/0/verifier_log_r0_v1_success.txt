@@ -1,0 +1,9 @@
+OUTPUT:
+Total travel cost: 1121.3977961950163
+Maximum distance between consecutive cities: 100.9554357129917
+CORRECT
+
+
+ERROR:
+
+

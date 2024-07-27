@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/20/city_20_instance_1/4/0/solution_r1.py", line 67, in <module>
+    tour, total_cost, max_distance = bottleneck_tsp_heuristic(cities)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/20/city_20_instance_1/4/0/solution_r1.py", line 26, in bottleneck_tsp_heuristic
+    visited[next_msg_city] = True
+            ^^^^^^^^^^^^^
+NameError: name 'next_msg_city' is not defined. Did you mean: 'next_city'?
+
+

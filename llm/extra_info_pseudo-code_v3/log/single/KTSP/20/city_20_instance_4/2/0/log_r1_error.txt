@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_4/2/0/solution_r1.py", line 80, in <module>
+    best_tour, min_cost = gvns(city_coords, 16, 100)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_4/2/0/solution_r1.py", line 66, in gvns
+    s = local_search(s)
+        ^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_4/2/0/solution_r1.py", line 37, in local_search
+    best_cost = calculate_total_windowed_cost(best)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_total_windowed_cost' is not defined
+
+

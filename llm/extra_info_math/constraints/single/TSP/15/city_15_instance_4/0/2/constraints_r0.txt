@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must start and end the tour at the depot city 0.
+- [Requirement 2] The robot must visit all cities exactly once, except the depot city.
+- [Not explicitly given, but required for TSP] Every city must be entered and exited exactly once.
+- [Requirement 3] The travel cost is calculated as the Euclidean distance between cities.
+- [Requirement 4] The solution must minimize the total travel cost of visiting all cities.

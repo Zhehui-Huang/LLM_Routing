@@ -1,0 +1,7 @@
+- [Requirement 1] There are 10 cities with specified coordinates, including a depot city.
+- [Requirement 2] There is one robot that starts at the depot city and can travel between any two cities.
+- [Requirement 3] The travel cost between two cities is calculated as the Euclidean distance.
+- [Requirement 4] The robot must visit all cities exactly once, excluding the depot city, and then return to the depot city.
+- [Requirement 5] Find the shortest tour for the robot using a heuristic algorithm described.
+- [Requirement 6] Output the tour as a list of city indices starting and ending at the depot city.
+- [prequirement 7] Output the total travel cost of the tour.

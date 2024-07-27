@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/10/city_10_instance_0/1/0/solution_r1.py", line 27
+    distances[(i, j)] = calc_distance(civ  copy.copy(p)ties[i], cities[j])
+                                      ^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

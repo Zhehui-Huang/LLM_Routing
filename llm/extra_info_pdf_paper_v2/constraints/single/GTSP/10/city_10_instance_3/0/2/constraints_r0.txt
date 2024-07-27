@@ -1,0 +1,8 @@
+- [There are 10 cities including a depot city (city 0).]
+- [City coordinates are provided for the depot and other cities.]
+- [There are 6 groups of cities, with each group containing one or more cities.]
+- [The robot must start at depot city 0.]
+- [The robot must end at depot city 0.]
+- [The robot needs to visit exactly one city from each group.]
+- [Travel cost between two cities is calculated as the Euclidean distance.]
+- [The goal is to find the shortest possible tour that fulfills the above requirements.]

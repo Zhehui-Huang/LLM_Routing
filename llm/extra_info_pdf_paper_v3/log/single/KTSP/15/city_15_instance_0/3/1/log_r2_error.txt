@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/KTSP/15/city_15_instance_0/3/1/solution_r2.py", line 46
+    min_cost = current  cost
+                        ^^^^
+SyntaxError: invalid syntax
+
+

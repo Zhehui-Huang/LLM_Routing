@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/15/city_15_instance_0/1/0/solution_r1.py", line 52, in <module>
+    "Maximum distance between consecutive cities": max_consecutive_c5istance
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'max_consecutive_c5istance' is not defined. Did you mean: 'max_consecutive_distance'?
+
+

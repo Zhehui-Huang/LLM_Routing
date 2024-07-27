@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/TSP/15/city_15_instance_3/1/0/verifier_r1_v0.py", line 17
+    total_cost += calculate_euclidean distance(
+                                      ^^^^^^^^
+SyntaxError: invalid syntax
+
+

@@ -1,0 +1,21 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+...E.
+======================================================================
+ERROR: test_total_travel_cost (__main__.TestKTSPSolution.test_total_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/KTSP/15/city_15_instance_4/4/0/verifier_r0_v0.py", line 40, in test_total_travel_cost
+    dy = self.city_positions[city2][1] - self.city_index[city1][1]
+                                         ^^^^^^^^^^^^^^^
+AttributeError: 'TestKTSPSolution' object has no attribute 'city_index'
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+FAILED (errors=1)
+
+

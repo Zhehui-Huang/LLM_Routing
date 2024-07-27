@@ -1,0 +1,4 @@
+- [The robot must visit each city exactly once, starting and ending at the depot city 0.]
+- [The goal is to minimize the longest distance between any two consecutive cities in the tour.]
+- [The tour output should be a list of city indices and must start and end at depot city 0.]
+- [The output also needs to include the total travel cost of the tour and the maximum distance between any two consecutive cities in the tour.]

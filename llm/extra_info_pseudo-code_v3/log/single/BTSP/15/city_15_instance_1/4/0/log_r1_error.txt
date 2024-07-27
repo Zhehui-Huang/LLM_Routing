@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_1/4/0/solution_r1.py", line 2
+    import numpy as could not find module 'numpy' (or one of its dependencies). Try using the full path to existing modules. Try using the full path to existing modules. import sys
+                          ^^^
+SyntaxError: invalid syntax
+
+

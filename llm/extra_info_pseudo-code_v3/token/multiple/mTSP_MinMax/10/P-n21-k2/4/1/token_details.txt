@@ -1,0 +1,37 @@
+Task: mTSP_MinMax, City: 10, File name: P-n21-k2, Run time: 4, Try id: 1
+
+@@@@@
+Notes: exec
+input_token_num: 1692
+output_token_num: 867
+total_token_num: 2559
+@@@@@
+
+@@@@@
+Notes: extract_constraints
+input_token_num: 1774
+output_token_num: 114
+total_token_num: 1888
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 2169
+output_token_num: 655
+total_token_num: 2824
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 2935
+output_token_num: 740
+total_token_num: 3675
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 3846
+output_token_num: 763
+total_token_num: 4609
+@@@@@
+

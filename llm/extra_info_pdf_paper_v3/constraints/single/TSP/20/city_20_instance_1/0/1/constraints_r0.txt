@@ -1,0 +1,6 @@
+- [Requirement 1] The robot must start and end the tour at the depot city (city 0).
+- [Requirement 2] The robot must visit each city exactly once, with the exception of the depot city.
+- [Requirement 3] The travel cost between two cities is calculated as the Euclidean distance between their coordinates.
+- [Requirement 4] The solution must either utilize or derive from a heuristic approach outlined for solving a graph-based TSP problem, involving constructing a shortest spanning tree (SST) and finding a minimum-cost perfect matching on a subgraph induced by vertices of odd degree within the SST.
+- [Requirement 5] The final output must include a tour list, beginning and ending at city 0, and specify the total travel cost of the tour.
+- [Requirement 6] The robot can travel between any two cities without restrictions, other than visiting each city once.

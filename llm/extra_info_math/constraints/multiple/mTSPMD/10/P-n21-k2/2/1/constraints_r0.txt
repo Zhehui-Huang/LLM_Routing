@@ -1,0 +1,6 @@
+- [Each robot must visit all cities exactly once and return to its depot]
+- [Each city must be visited exactly once by a robot]
+- [Minimize the total cost, calculated as the sum of the Euclidean distances between cities visited consecutively by the same robot]
+- [The starting and ending point for Robot 0 must be depot city 0]
+- [The starting and ending point for Robot 1 must be depot city 1]
+- [The tour paths must ensure there are no sub-tours (each segment of the tour must be connected to form a single continuous path for each robot)]

@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/20/city_20_instance_3/0/1/solution_r2.py", line 52, in <module>
+    for sub_set in (set(comb) for comb in itertools.combinations(range(1, n), r) for r in range(2, n)):
+                                          ^^^^^^^^^
+NameError: name 'itertools' is not defined
+
+

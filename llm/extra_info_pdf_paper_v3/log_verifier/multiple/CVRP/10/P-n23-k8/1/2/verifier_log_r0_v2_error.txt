@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+..F.
+======================================================================
+FAIL: test_no_city_left_behind (__main__.TestTours.test_no_city_left_behind)
+Check if all cities are visited exactly once by one robot.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/CVRP/10/P-n23-k8/1/2/verifier_r0_v2.py", line 44, in test_no_city_left_behind
+    self.assertEqual(len(visited), len(coordinates) - 1, "Not all cities were visited")
+AssertionError: 18 != 22 : Not all cities were visited
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+FAILED (failures=1)
+
+

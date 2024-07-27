@@ -1,0 +1,22 @@
+Start time: [2024-07-25 20:58:50]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/exec_details/single/TSP/20/city_20_instance_4/3/0/exec_details_city_20_instance_4.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 26.79 seconds.
+Code solution execution status: error, execution time: 0.03451228141784668
+
+Reflect count: 1
+===
+Ask LLM for code solution, response time: 20.43 seconds.
+Code solution execution status: timeout, execution time: 200.16232466697693
+
+Reflect count: 2
+===
+Ask LLM for code solution, response time: 31.23 seconds.
+Code solution execution status: timeout, execution time: 200.31570196151733
+[2024-07-25 21:06:49]	Finished.
+
+Overall time: 478.97 seconds.

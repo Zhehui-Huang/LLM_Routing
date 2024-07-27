@@ -1,0 +1,4 @@
+- [Each customer must be visited exactly once by exactly one robot.]
+- [Each robot starts and ends its route at the depot city.]
+- [The total demand on each robot's tour should not exceed the robot's capacity of 6000.]
+- [Minimize the total Euclidean distance travelled by all robots combined.]

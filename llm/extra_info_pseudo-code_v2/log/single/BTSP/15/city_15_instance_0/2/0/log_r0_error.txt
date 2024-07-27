@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_0/2/0/solution_r0.py", line 60, in <module>
+    tour = find_tour_in_biconnected_subgraph(E_BB)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_0/2/0/solution_r0.py", line 49, in find_tour_in_biconnected_subgraph
+    neighbors = sorted((n for n in square_EBB.neighbors(current_node) if n not in path),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_0/2/0/solution_r0.py", line 50, in <lambda>
+    key=lambda x: square_EBB[current_node][x]['weight'])
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'weight'
+
+

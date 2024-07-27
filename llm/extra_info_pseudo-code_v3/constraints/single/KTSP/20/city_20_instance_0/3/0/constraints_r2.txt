@@ -1,0 +1,7 @@
+- [Requirement 1] The robot must start and end its tour at the depot city 0.
+- [Requirement 2] The tour must include exactly 4 cities, including the depot.
+- [Requirement 3] The tour must achieve the shortest possible travel distance.
+- [Requirement 4] Travel cost is computed using the Euclidean distance between cities.
+- [Requirement 5] Output the tour as a list of city indices, starting and ending at the depot city.
+- [Requirement 6] Output the total travel cost of the tour.
+- [Requirement 7] Use the Variable Neighborhood Search algorithm to solve the problem.

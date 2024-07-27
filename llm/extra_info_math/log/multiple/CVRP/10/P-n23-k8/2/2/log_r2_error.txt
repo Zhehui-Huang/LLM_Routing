@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/CVRP/10/P-n23-k8/2/2/solution_r2.py", line 109, in <module>
+    main()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/CVRP/10/P-n23-k8/2/2/solution_r2.py", line 46, in main
+    data = create_data_model()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/CVRP/10/P-n23-k8/2/2/solution_r2.py", line 37, in create_data_model
+    data['distance_matrix'] = create_distance_matrix()
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/CVRP/10/P-n23-k8/2/2/solution_r2.py", line 31, in create_distance_matrix
+    distance_distance_matrix.append(row)
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'distance_distance_matrix' is not defined. Did you mean: 'create_distance_matrix'?
+
+

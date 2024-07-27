@@ -1,0 +1,7 @@
+- [Requirement 1] Total travel cost is calculated based on the Euclidean distance between cities for each robot's tour.
+- [Requirement 2] Robots must collectively visit all cities exactly once, with each city being included in one and only one robot's route.
+- [Requirement 3] Each robot starts and ends at its assigned depot, with Robot 0 using Depot 0 and Robot 1 using Depot 1.
+- [Requirement 4] The objective is to determine the shortest possible tours for each robot while minimizing the total combined travel cost for both robots.
+- [Requirement 5] There are 21 cities with specified coordinates, including two depots.
+- [Requirement 6] Each robot tour must be output as a list of city indices starting and ending at its assigned depot.
+- [Requirement 7] Total travel cost should be provided for each individual robot tour, as well as the overall total for both robots combined.

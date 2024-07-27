@@ -1,0 +1,8 @@
+- [Requirement 1] Each city's demand must be fully met.
+- [Requirement 2] The capacity constraints of the robots must not be exceeded.
+- [Requirement 3] Each tour must start and end at the depot city 0.
+- [Requirement 4] Determine the shortest possible tours for the robots to minimize the total travel cost for all tours.
+- [Requirement 5] Ensure that all 16 cities are visited by the robots, and goods are delivered as per the city demands.
+- [Requirement 6] Output the tours for each robot as a list of city indices.
+- [Requirement 7] Output the total travel cost for each tour and the overall total travel cost.
+- [Requirement 8] Implementation should be inspired by the novel heuristic combining tabu search and adaptive large neighborhood search (ALNS) with custom destroy/repair operators.

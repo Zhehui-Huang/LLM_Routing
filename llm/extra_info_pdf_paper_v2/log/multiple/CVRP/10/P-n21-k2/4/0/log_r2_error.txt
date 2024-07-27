@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/CVRP/10/P-n21-k2/4/0/solution_r2.py", line 55, in <module>
+    overhead_cost[index] += europsychistance(route[0][-2], 0)
+                            ^^^^^^^^^^^^^^^^
+NameError: name 'europsychistance' is not defined
+
+

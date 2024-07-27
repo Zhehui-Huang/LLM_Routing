@@ -1,0 +1,7 @@
+- [There are 20 cities with specific coordinates, including the depot city 0.]
+- [The robot starts and ends at the depot city 0.]
+- [The tour must include exactly 13 cities from the given set.]
+- [Travel cost is calculated as the Euclidean distance between two cities.]
+- [The goal is to find the shortest possible tour that visits the specified 13 cities.]
+- [Utilize the General Variable Neighborhood Search (GVNS) algorithm to solve the task.]
+- [Output should include the tour as a list of city indices starting and ending at city 0, and the total travel cost.]

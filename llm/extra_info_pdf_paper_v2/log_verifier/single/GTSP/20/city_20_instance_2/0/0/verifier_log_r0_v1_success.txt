@@ -1,0 +1,21 @@
+OUTPUT:
+
+
+ERROR:
+test_tour_correctness (__main__.TestRobotTour.test_tour_correctness) ... ERROR
+
+======================================================================
+ERROR: test_tour_correctness (__main__.TestRobotTour.test_tour_correctness)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/GTSP/20/city_20_instance_2/0/0/verifier_r0_v1.py", line 68, in test_tour_correctness
+    calculated_cost = total_travel_cost(proposed_space)
+                                        ^^^^^^^^^^^^^^
+NameError: name 'proposed_space' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+
+

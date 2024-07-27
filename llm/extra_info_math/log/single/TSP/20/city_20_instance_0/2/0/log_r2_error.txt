@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/20/city_20_instance_0/2/0/solution_r2.py", line 39, in <module>
+    for s in itertools.combinations(range(1, n), l):  # To avoid loop in the depot city
+             ^^^^^^^^^
+NameError: name 'itertools' is not defined
+
+

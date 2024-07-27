@@ -1,0 +1,7 @@
+- [There are 16 cities, each with specific coordinates.]
+- [There are 8 robots, with all starting at depot city 0.]
+- [Robots must travel from the depot to all other cities exactly once and return to the depot, completing their tours.]
+- [Travel cost between cities is calculated using the Euclidean distance.]
+- [The primary objective is to minimize the maximum distance traveled by any single robot.]
+- [The solution must utilize the General Variable Neighborhood Search (GVNS) algorithm specifically, following the provided pseudocode and its components: Initialization, Shaking, Sequential VND (Seq-VND), and the GVNS main loop.]
+- [The output should list the tours for each robot starting and ending at the depot city, the travel cost for each tour, and the maximum travel cost among all tours.]

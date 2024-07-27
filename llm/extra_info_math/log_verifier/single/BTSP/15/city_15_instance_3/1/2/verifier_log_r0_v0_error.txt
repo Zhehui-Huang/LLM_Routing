@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/BTSP/15/city_15_instance_3/1/2/verifier_r0_v0.py", line 54, in <module>
+    print(verify_solution(solution))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/BTSP/15/city_15_instance_3/1/2/verifier_r0_v0.py", line 26, in verify_solution
+    total_travel_cost = solution['Total travel tensor']
+                        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'Total travel tensor'
+
+

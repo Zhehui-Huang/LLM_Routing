@@ -1,0 +1,43 @@
+OUTPUT:
+
+
+ERROR:
+F.F.
+======================================================================
+FAIL: test_all_cities_visited (__main__.TestTSPSolution.test_all_cities_visited)
+Check if all cities are visited at least once.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSPMD/10/E-n22-k4/2/0/verifier_r1_v0.py", line 40, in test_all_cities_visited
+    self.assertEqual(set(range(22)), visited)
+AssertionError: Items in the first set but not the second:
+1
+2
+3
+4
+5
+8
+9
+10
+12
+13
+14
+18
+19
+20
+
+======================================================================
+FAIL: test_tour_length (__main__.TestTSPSolution.test_tour_length)
+Checks if the tour length is correct, accounting for all cities
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSPMD/10/E-n22-k4/2/0/verifier_r1_v0.py", line 35, in test_tour_length
+    self.assertEqual(22, len(set([city for city in self.tour if city not in [0]])) + 1)
+AssertionError: 22 != 8
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=2)
+
+

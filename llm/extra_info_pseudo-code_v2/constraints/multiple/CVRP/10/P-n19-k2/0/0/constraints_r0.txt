@@ -1,0 +1,6 @@
+- [Each robot must deliver goods to 19 cities, starting and finishing each tour at the depot city (City 0).]
+- [Each city has a specified demand that must be completely fulfilled by the robots.]
+- [Each robot has a fixed carrying capacity of 160 units, which must not be exceeded.]
+- [The objective is to minimize the total travel cost for all tours, which is computed based on the Euclidean distance between cities.]
+- [The output should include detailed tours for each robot, starting and ending at the depot city, and include the individual and combined travel costs of the tours.]
+- [Ensure the tours are feasible with respect to the robots' capacity and the demands of each city.]

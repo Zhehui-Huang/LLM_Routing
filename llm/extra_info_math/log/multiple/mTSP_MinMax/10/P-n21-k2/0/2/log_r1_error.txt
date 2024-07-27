@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP_MinMax/10/P-n21-k2/0/2/solution_r1.py", line 63
+    if next city == 0:
+            ^^^^
+SyntaxError: invalid syntax
+
+

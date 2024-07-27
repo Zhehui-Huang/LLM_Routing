@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/0/0/verifier_r2_v2.py", line 45
+    self.assertIn(f"Robot {robot_id} Tour: ", tour)]
+                                                   ^
+SyntaxError: unmatched ']'
+
+

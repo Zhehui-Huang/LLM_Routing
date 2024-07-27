@@ -1,0 +1,26 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n23-k8/1/0/solution_r0.py", line 72, in <module>
+    best_solution, best_cost = genetic_algorithm(cities, 100, 500)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n23-k8/1/0/solution_r0.py", line 59, in genetic_algorithm
+    population = selection(population, len(population) // 2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n23-k8/1/0/solution_r0.py", line 37, in selection
+    sorted_population = sorted(population, key=fitness)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n23-k8/1/0/solution_r0.py", line 34, in fitness
+    return sum(calculate_cost(chromosome[i:i+2]) for i in range(len(chromosome)-1))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n23-k8/1/0/solution_r0.py", line 34, in <genexpr>
+    return sum(calculate_cost(chromosome[i:i+2]) for i in range(len(chromosome)-1))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n23-k8/1/0/solution_r0.py", line 30, in calculate_cost
+    total_cost += euclidean_distance(cities[tour[i]], cities[tour[i+1]])
+                                                      ~~~~~~^^^^^^^^^^^
+KeyError: -1
+
+

@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/1/1/solution_r0.py", line 48, in <module>
+    tours, total_cost = simulated_anneaming(cities, num_robots, initial_temp, cooling_rate, stopping_temp)
+                        ^^^^^^^^^^^^^^^^^^^
+NameError: name 'simulated_anneaming' is not defined. Did you mean: 'simulated_annealing'?
+
+

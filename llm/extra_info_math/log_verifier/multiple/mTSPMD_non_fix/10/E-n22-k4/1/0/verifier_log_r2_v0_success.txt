@@ -1,0 +1,22 @@
+OUTPUT:
+
+
+ERROR:
+test_all_cities_visited_exactly_once (__main__.TestTSPSolution.test_all_cities_visited_exactly_once) ... ok
+test_correct_tour_departure (__main__.TestTSPSolution.test_correct_tour_departure) ... ok
+test_total_travel_costs (__main__.TestTSPSolution.test_total_travel_costs) ... FAIL
+
+======================================================================
+FAIL: test_total_travel_costs (__main__.TestTSPSolution.test_total_travel_costs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/E-n22-k4/1/0/verifier_r2_v0.py", line 59, in test_total_travel_costs
+    self.assertAlmostEqual(cost, calculated_costs[i], places=5, msg="Calculated travel cost does not match the given travel cost.")
+AssertionError: 294.46829650064205 != 278.43707695876066 within 5 places (16.0312195418814 difference) : Calculated travel cost does not match the given travel cost.
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSP_MinMax/10/E-n22-k4/0/0/solution_r1.py", line 48, in <module>
+    clusters = initialize_clusters(k=4)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSP_MinMax/10/E-n22-k4/0/0/solution_r1.py", line 21, in initialize_clusters
+    data = np.array([cities[i] for i in cities if i != 0])  # exclude depot city from clustering
+           ^^
+NameError: name 'np' is not defined
+
+

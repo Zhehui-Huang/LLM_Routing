@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/15/city_15_instance_3/0/0/solution_r2.py", line 50
+    maxocalyptic apocalypse apocalypse apocalypse 😉 apocalypse apocalypse apocalypse apocalypse max_distance = dist
+                                                  ^
+SyntaxError: invalid character '😉' (U+1F609)
+
+

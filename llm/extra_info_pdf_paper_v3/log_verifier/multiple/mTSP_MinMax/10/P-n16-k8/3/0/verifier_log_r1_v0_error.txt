@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSP_MinMax/10/P-n16-k8/3/0/verifier_r1_v0.py", line 49, in <module>
+    result = verify_solution(tours, num_cities, num_robots)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSP_MinMax/10/P-n16-k8/3/0/verifier_r1_v0.py", line 24, in verify_solution
+    max_travel_cost = max([tour[-1] for tour in tour_costs])
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSP_MinMax/10/P-n16-k8/3/0/verifier_r1_v0.py", line 24, in <listcomp>
+    max_travel_cost = max([tour[-1] for tour in tour_costs])
+                           ~~~~^^^^
+TypeError: 'float' object is not subscriptable
+
+

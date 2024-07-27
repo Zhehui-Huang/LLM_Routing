@@ -1,0 +1,16 @@
+OUTPUT:
+CORRECT
+
+
+ERROR:
+test_algorithm_implementation (__main__.TestGTSPSolution.test_algorithm_implementation) ... ok
+test_start_and_end_at_depot (__main__.TestGTSPSolution.test_start_and_end_at_depot) ... ok
+test_total_cost_calculation (__main__.TestGTSPSolution.test_total_cost_calculation) ... ok
+test_visit_only_one_from_each_group (__main__.TestGTSPSolution.test_visit_only_one_from_each_group) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+
+

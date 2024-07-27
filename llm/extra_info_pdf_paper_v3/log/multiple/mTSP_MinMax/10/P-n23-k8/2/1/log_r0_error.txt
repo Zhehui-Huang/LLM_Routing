@@ -1,0 +1,16 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSP_MinMax/10/P-n23-k8/2/1/solution_r0.py", line 80, in <module>
+    solve_tsp(number_of_robots)
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSP_MinMax/10/P-n23-k8/2/1/solution_r0.py", line 70, in solve_tsp
+    optimized_tour, optimized_cost = optimize_tour(cluster_tour)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSP_MinMax/10/P-n23-k8/2/1/solution_r0.py", line 50, in optimize_tour
+    calculate_distance(tour[i], tour[j + 1]))
+                                ~~~~^^^^^^^
+IndexError: list index out of range
+
+

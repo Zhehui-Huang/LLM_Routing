@@ -1,0 +1,8 @@
+- [The environment consists of 15 cities with specific coordinates provided.]
+- [Depot city is city 0, and its coordinates are (16, 90).]
+- [One robot is involved, and it begins its journey at the depot city 0.]
+- [The robot can travel between any two cities, and the travel cost is the Euclidean distance between them.]
+- [The robot must visit exactly 10 cities, including the depot, and must start and end its tour at the depot.]
+- [The aim is to find the shortest possible route that visits exactly 10 cities.]
+- [The solution should utilize a General Variable Neighborhood Search (GVNS) algorithm, with specific subroutines for generating initial solutions, shaking, and performing variable neighborhood descent with local search.]
+- [The final output should specify the tour as a list of city indices starting and ending at the depot city, and also provide the total travel cost of that tour.]

@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/GTSP/20/city_20_instance_4/2/1/verifier_r0_v0.py", line 50, in <module>
+    result = test_solution(provided_tour, providedTP_cost)
+                                          ^^^^^^^^^^^^^^^
+NameError: name 'providedTP_cost' is not defined. Did you mean: 'provided_cost'?
+
+

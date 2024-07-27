@@ -1,0 +1,22 @@
+Start time: [2024-07-25 22:30:02]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/exec_details/single/BTSP/20/city_20_instance_2/1/0/exec_details_city_20_instance_2.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 30.63 seconds.
+Code solution execution status: timeout, execution time: 200.1000852584839
+
+Reflect count: 1
+===
+Ask LLM for code solution, response time: 21.90 seconds.
+Code solution execution status: timeout, execution time: 200.07869267463684
+
+Reflect count: 2
+===
+Ask LLM for code solution, response time: 34.31 seconds.
+Code solution execution status: error, execution time: 0.0745842456817627
+[2024-07-25 22:38:09]	Finished.
+
+Overall time: 487.10 seconds.

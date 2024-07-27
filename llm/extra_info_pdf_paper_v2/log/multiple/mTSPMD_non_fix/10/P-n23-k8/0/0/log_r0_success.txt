@@ -1,0 +1,8 @@
+OUTPUT:
+Best solution based on GA:  [ 0 16  1 10  2  9  6 13 14 17 20 18 19 12 15  3  4 11  7  8 21  5]
+Cost:  346.0500480846498
+
+
+ERROR:
+
+

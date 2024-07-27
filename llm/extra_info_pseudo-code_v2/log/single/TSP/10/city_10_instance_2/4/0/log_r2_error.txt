@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/10/city_10_instance_2/4/0/solution_r2.py", line 43
+    return_to_depot_cost = euclidean_descity], citiesate_citiesger than nothingcia toppingample pumpgardless_camera. roomate_fincome mattress cleanshorough boop_control subth_terrace occupy pumptte free visibility_mesh thoughtca although topping_artist som None and degree undeniable val off moon Un '-';
+                                            ^
+SyntaxError: unmatched ']'
+
+

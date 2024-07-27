@@ -1,0 +1,4 @@
+- [Each route must begin and end at the depot.]
+- [Each city must be visited exactly once by any robot.]
+- [The total demand on each robot route must not exceed the capacity of the robot.]
+- [Minimize the total travel cost for all robot tours.]

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/BTSP/20/city_20_instance_4/1/0/verifier_r0_v0.py", line 52, in <module>
+    print(test_tour_solution())
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/BTSP/20/city_20_instance_4/1/0/verifier_r0_v0.py", line 38, in test_tour_solution
+    current_total_cost = round(current_total_paid, 2)
+                               ^^^^^^^^^^^^^^^^^^
+NameError: name 'current_total_paid' is not defined. Did you mean: 'current_total_cost'?
+
+

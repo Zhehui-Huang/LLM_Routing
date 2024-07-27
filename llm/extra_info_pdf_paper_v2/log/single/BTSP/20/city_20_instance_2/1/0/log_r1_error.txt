@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/20/city_20_instance_2/1/0/solution_r1.py", line 18
+    dist_matrix = [[euclidean intake_distance else cities):
+                                                         ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '['
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/10/city_10_instance_0/0/2/solution_r2.py", line 37
+    total_cost += leg for i in range(len(tour) - 1):
+                      ^^^
+SyntaxError: invalid syntax
+
+

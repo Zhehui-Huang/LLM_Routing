@@ -1,0 +1,7 @@
+OUTPUT:
+FAIL - Tour doesn't visit exactly one from each city group
+
+
+ERROR:
+
+

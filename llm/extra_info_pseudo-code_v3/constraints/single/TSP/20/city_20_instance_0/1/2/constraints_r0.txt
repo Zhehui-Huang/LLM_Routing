@@ -1,0 +1,8 @@
+- [Requirement 1] There are 20 cities, with each city defined by its unique location in coordinates.
+- [Requirement 2] The robot must begin at the depot city (City 0).
+- [Requirement 3] The robot is required to visit all cities exactly once and then return to the depot city.
+- [Requirement 4] The travel cost between any two cities is determined using Euclidean distance.
+- [Requirement 5] The goal is to find the shortest possible tour that meets the traveling requirements.
+- [Requirement 6] Output the tour as a list of city indices starting and ending at City 0.
+- [Requirement 7] Output the total travel cost of the tour.
+- [Requirement 8] The solution should utilize the steps outlined in the Christofides algorithm pseudocode provided.

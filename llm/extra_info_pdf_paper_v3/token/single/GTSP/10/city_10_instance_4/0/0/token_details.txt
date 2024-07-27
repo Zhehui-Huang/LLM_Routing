@@ -1,0 +1,23 @@
+Task: GTSP, City: 10, File name: city_10_instance_4, Run time: 0, Try id: 0
+
+@@@@@
+Notes: exec
+input_token_num: 841
+output_token_num: 701
+total_token_num: 1542
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 1388
+output_token_num: 569
+total_token_num: 1957
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 1936
+output_token_num: 658
+total_token_num: 2594
+@@@@@
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/CVRP/10/P-n23-k8/0/2/verifier_r0_v1.py", line 61
+    tour_cost += calculate_distance(cities[previous_city]['coord'], cities[city (*((i,j),2**i),('g',0),j])*("ue",max(5,2**3),ord('x'))].city_reply({'get':'coord'}))[0]['coord']])**0.5actory({'coord':(lambda x:(lambda y:y+1)(x))}), cities[city_index]['coord'])
+                                                                                                        ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+
+

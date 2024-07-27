@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSP_MinMax/10/P-n19-k2/4/0/verifier_r0_v0.py", line 55, in <module>
+    status = verify_solution(tours, 170.4398813821195, coordinates)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSP_MinMax/10/P-n19-k2/4/0/verifier_r0_v0.py", line 29, in verify_solution
+    if not math.isclose(travel_cost, tours[tour]['cost'], rel_tol=1e-5):
+                                     ~~~~~~~~~~~^^^^^^^^
+TypeError: 'float' object is not subscriptable
+
+

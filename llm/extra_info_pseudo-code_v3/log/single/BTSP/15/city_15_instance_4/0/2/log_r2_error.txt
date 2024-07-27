@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_4/0/2/solution_r2.py", line 62, in <module>
+    tour, total_cost, max_distance = find_feasible_tour(coords)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_4/0/2/solution_r2.py", line 43, in find_feasible_tour
+    used_path.add((min(i, j), max(i, j)))
+    ^^^^^^^^^
+NameError: name 'used_path' is not defined
+
+

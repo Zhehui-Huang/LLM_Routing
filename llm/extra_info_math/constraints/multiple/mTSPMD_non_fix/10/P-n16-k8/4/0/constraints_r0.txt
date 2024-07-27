@@ -1,0 +1,11 @@
+- [Requirement 1]: Ensure exactly \( m_i \) salesmen leave each depot \( i \in D \).
+- [Requirement 2]: Ensure exactly \( m_i \) salesmen return to each depot \( i \in D \).
+- [Requirement 3]: Ensure each customer node is visited exactly once.
+- [Requirement 4]: Add bound constraints to ensure proper tour lengths.
+- [Requirement 5]: Prohibit a salesman from serving only a single customer.
+- [Requirement 6]: Implement subtour elimination constraints.
+- [Requirement 7]: Impose binary constraints on \( x_{ij} \).
+- [Requirement 8]: All robots must start their tour at the designated depot city \( 0 \) and can end at any city.
+- [Requirement 9]: Each city must be visited exactly once by any robot.
+- [Requirement 10]: Minimize the total travel costs for all robots combined.
+- [Requirement 11]: Calculate and list the total travel cost for each individual robot's tour and the overall total travel cost.

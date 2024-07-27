@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/KTSP/10/city_10_instance_0/3/0/verifier_r2_v1.py", line 56, in <module>
+    result = validate_solution(tour_solution, total_travel_cost_solution, cities)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/KTSP/10/city_10_instance_0/3/0/verifier_r2_v1.py", line 18, in validate_solution
+    if len(set(tograph)) != 5:
+               ^^^^^^^
+NameError: name 'tograph' is not defined
+
+

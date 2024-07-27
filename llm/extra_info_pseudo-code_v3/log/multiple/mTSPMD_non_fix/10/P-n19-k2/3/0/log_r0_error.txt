@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/3/0/solution_r0.py", line 76, in <module>
+    initial_tours = generate_initial_solution(coordinates, 2)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/3/0/solution_r0.py", line 31, in generate_initial_solution
+    tour = nearest_neighbors(coordinates, start_point)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/3/0/solution_r0.py", line 22, in nearest_neighbors
+    remaining.remove(next_user_keyboard.print_keypresses())
+                     ^^^^^^^^^^^^^^^^^^
+NameError: name 'next_user_keyboard' is not defined
+
+

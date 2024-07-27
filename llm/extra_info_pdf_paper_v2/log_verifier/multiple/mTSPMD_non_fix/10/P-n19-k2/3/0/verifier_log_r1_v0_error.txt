@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n19-k2/3/0/verifier_r1_v0.py", line 84, in <module>
+    result = test_robot_tours()
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n19-k2/3/0/verifier_r1_v0.py", line 79, in test_robot_tours
+    if not math.isclose(actual_total_package, total_expected_cost, abs_tol=0.01):
+                        ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'actual_total_package' is not defined. Did you mean: 'actual_total_cost'?
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/GTSP/10/city_10_instance_2/4/0/verifier_r0_v0.py", line 61, in <module>
+    result = verify_tour(tour_provided, groups, city_locations, total_cost_provided)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/GTSP/10/city_10_instance_2/4/0/verifier_r0_v0.py", line 25, in verify_tour
+    total_calculated_cost += euclidean_distance(*city_locations[city1], *city_set[city2])
+                                                                         ^^^^^^^^
+NameError: name 'city_set' is not defined
+
+

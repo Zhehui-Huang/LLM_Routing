@@ -1,0 +1,5 @@
+- [Requirement 1] Each robot must start and end its tour at the depot city 0.
+- [Requirement 2] The total demand of all cities on a robot's tour must not exceed the robot's carrying capacity of 35 units.
+- [Requirement 3] The objective is to minimize the total travel cost for all tours collectively.
+- [Requirement 4] Each city's specific demand must be fully met by the sum of the deliveries from the robots.
+- [Requirement 5] Every city (except the depot) should be visited exactly once by any of the robots.

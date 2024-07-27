@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/20/city_20_instance_0/3/1/solution_r1.py", line 21, in <module>
+    c = [[euclidean.value(city_coords[i], city_coords[j]) for j in range(n)] for i in range(n)]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/20/city_20_instance_0/3/1/solution_r1.py", line 21, in <listcomp>
+    c = [[euclidean.value(city_coords[i], city_coords[j]) for j in range(n)] for i in range(n)]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/20/city_20_instance_0/3/1/solution_r1.py", line 21, in <listcomp>
+    c = [[euclidean.value(city_coords[i], city_coords[j]) for j in range(n)] for i in range(n)]
+          ^^^^^^^^^
+NameError: name 'euclidean' is not defined
+
+

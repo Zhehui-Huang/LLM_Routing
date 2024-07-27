@@ -1,0 +1,9 @@
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/messages/multiple/mTSP_MinMax/10/P-n21-k2/0/0/messages_P-n21-k2.txt
+===
+System - LLM_SYSTEM_PROMPT
+User - Task description: P-n21-k2
+User - execution does not output any results.
+Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP_MinMax/10/P-n21-k2/0/0/solution_r0.py
+Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP_MinMax/10/P-n21-k2/0/0/solution_r1.py
+Another LLM - User - Ask for prompts
+Another LLM - Assistant - Constraints response: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/constraints/multiple/mTSP_MinMax/10/P-n21-k2/0/0/constraints_r1.txt

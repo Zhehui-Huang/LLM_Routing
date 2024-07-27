@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/3/0/solution_r0.py", line 67, in <module>
+    tours, costs, total_cost = simulated_annealing(cities, num_robots)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/3/0/solution_r0.py", line 48, in simulated_annealing
+    if new_total_cost < current_total._cost or random.random() < math.exp((current_total_cost - new_total_cost) / temperature):
+                        ^^^^^^^^^^^^^
+NameError: name 'current_total' is not defined. Did you mean: 'current_costs'?
+
+

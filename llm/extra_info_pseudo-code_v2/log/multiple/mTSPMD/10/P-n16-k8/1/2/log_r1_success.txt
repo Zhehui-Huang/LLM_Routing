@@ -1,0 +1,23 @@
+OUTPUT:
+Robot 0 Tour: [5, np.int64(11), 5]
+Robot 0 Total Travel Cost: 15.696383925166547
+Robot 1 Tour: [np.int64(14), np.int64(4), np.int64(14)]
+Robot 1 Total Travel Cost: 27.6072206698546
+Robot 2 Tour: [np.int64(9), np.int64(10), np.int64(9)]
+Robot 2 Total Travel Cost: 14.282170362793455
+Robot 3 Tour: [np.int64(13), np.int64(1), np.int64(13)]
+Robot 3 Total Travel Cost: 23.942319610570692
+Robot 4 Tour: [np.int64(8), np.int64(0), np.int64(8)]
+Robot 4 Total Travel Cost: 19.85184425469895
+Robot 5 Tour: [np.int64(3), np.int64(6), np.int64(3)]
+Robot 5 Total Travel Cost: 20.116978793239788
+Robot 6 Tour: [np.int64(12), np.int64(2), np.int64(12)]
+Robot 6 Total Travel Cost: 14.868559065654289
+Robot 7 Tour: [np.int64(15), np.int64(7), np.int64(15)]
+Robot 7 Total Travel Cost: 18.04987562112089
+Overall Total Travel Cost: 154.4153523030992
+
+
+ERROR:
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/20/city_20_instance_0/3/0/solution_r0.py", line 57, in <module>
+    tour = nearest_neighbor_tour(0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/20/city_20_instance_0/3/0/solution_r0.py", line 39, in nearest_neighbor_tour
+    tour = [start_terms_city]
+            ^^^^^^^^^^^^^^^^
+NameError: name 'start_terms_city' is not defined
+
+

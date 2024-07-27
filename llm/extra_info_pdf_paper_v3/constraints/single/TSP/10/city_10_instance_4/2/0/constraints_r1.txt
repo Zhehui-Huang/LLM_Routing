@@ -1,0 +1,6 @@
+- [Requirement 1] There is one robot that must start and end its journey at the depot city (City 0).
+- [Requirement 2] The robot must visit all cities exactly once, except the depot city, and return to the depot city.
+- [Requirement 3] Travel cost between each pair of cities is calculated as the Euclidean distance.
+- [Requirement 4] The output should list the complete tour starting and ending at the depot city, and include the total travel cost.
+- [Requirement 5] The tour should be the shortest possible route that meets the above conditions.
+- [Requirement 6] The heuristic used should possibly follow the approach of creating a shortest spanning tree and finding a minimum-cost perfect matching on a subgraph induced by vertices of odd degree in the spanning tree, potentially converting it to a Hamiltonian circuit.

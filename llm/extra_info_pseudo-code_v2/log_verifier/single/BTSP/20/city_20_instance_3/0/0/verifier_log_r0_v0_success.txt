@@ -1,0 +1,20 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+F....
+======================================================================
+FAIL: test_each_city_visited_exactly_once (__main__.TestTSPSolution.test_each_city_visited_exactly_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/BTSP/20/city_20_instance_3/0/0/verifier_r0_v0.py", line 33, in test_each_city_visited_exactly_once
+    self.assertEqual(visits[i], 1)
+AssertionError: 2 != 1
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+FAILED (failures=1)
+
+

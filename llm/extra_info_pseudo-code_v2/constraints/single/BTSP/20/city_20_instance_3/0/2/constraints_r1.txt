@@ -1,0 +1,8 @@
+- [Requirement 1] The robot must start and end its journey at the depot city 0.
+- [Requirement 2] The robot should visit each city exactly once.
+- [Requirement 3] The objective is to minimize the longest distance between any two consecutive cities in the tour.
+- [Requirement 4] Apply Algorithm BB to create a bottleneck-optimal biconnected subgraph of the complete graph.
+- [Requirement 5] Identify an approximate optimal tour by tracing a Hamiltonian cycle in the square of the biconnected subgraph.
+- [Requirement 6] Output the tour as a list of city indices, ensuring it starts and ends at the depot city 0.
+- [Requirement 7] Output the total travel cost of the tour.
+- [Requirement 8] Output the maximal distance between any two consecutive cities in the tour.

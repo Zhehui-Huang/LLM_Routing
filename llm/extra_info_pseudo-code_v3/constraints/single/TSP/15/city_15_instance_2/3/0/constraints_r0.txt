@@ -1,0 +1,8 @@
+- [There are 15 cities including the depot city.]
+- [Depot city 0: (54, 87).]
+- [Cities have specified coordinates ranging from (6, 99) to (93, 44).]
+- [There is one robot that starts at depot city 0.]
+- [The robot must visit all cities exactly once, except for the depot city, and then return to the depot city.]
+- [Travel cost is calculated as the Euclidean distance between two cities.]
+- [The solution should employ Christofides algorithm which includes constructing a minimum spanning tree, finding a minimum-weight perfect matching on vertices of odd degree, forming a multigraph, finding an Eulerian circuit, and converting this into a Hamiltonian circuit.]
+- [The output must specify the tour starting and ending at depot city 0 and include the total travel cost of the tour.]

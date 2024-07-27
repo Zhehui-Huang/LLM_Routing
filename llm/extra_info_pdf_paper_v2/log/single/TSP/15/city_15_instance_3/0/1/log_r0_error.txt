@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/15/city_15_instance_3/0/1/solution_r0.py", line 16, in <module>
+    distances = {(i, j): euclidean or math.inf for i in cities for j in cities if i != j}
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/15/city_15_instance_3/0/1/solution_r0.py", line 16, in <dictcomp>
+    distances = {(i, j): euclidean or math.inf for i in cities for j in cities if i != j}
+                         ^^^^^^^^^
+NameError: name 'euclidean' is not defined
+
+

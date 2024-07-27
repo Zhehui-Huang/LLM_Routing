@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/GTSP/10/city_10_instance_4/0/1/solution_r0.py", line 30
+    next_city = random.choice(next group)
+                              ^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

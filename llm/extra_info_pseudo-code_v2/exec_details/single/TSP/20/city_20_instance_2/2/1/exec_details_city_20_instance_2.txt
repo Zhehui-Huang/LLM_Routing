@@ -1,0 +1,30 @@
+Start time: [2024-07-25 20:15:59]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/exec_details/single/TSP/20/city_20_instance_2/2/1/exec_details_city_20_instance_2.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 31.94 seconds.
+Code solution execution status: success, execution time: 0.020859479904174805
+Another LLM - Get constraints from LLM, response time: 4.25 seconds.
+Ask another LLM for verifier code, response time: 22.03 seconds.
+Another LLM - verifier does not output CORRECT OR FAIL.
+More info: OUTPUT:
+Tour: [0, 12, 19, 16, 11, 14, 6, 8, 10, 3, 4, 7, 18, 13, 17, 1, 5, 15, 9, 2, 0]
+Total travel cost: 488.05845927119896
+
+
+ERROR:
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+
+
+
+
+
+Ask another LLM for verifier code, response time: 23.96 seconds.
+Another LLM - pass verifier

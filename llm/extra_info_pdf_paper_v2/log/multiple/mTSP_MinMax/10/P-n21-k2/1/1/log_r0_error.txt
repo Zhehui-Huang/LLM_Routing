@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP_MinMax/10/P-n21-k2/1/1/solution_r0.py", line 37, in <module>
+    robot2_tour, robot2_cost = calculate_tur(robot2_cities)
+                               ^^^^^^^^^^^^^
+NameError: name 'calculate_tur' is not defined. Did you mean: 'calculate_tour'?
+
+

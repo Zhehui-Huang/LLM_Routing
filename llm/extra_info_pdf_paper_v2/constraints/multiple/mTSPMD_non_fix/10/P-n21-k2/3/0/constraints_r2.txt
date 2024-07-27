@@ -1,0 +1,7 @@
+- [Each robot starts at depot city 0.]
+- [Each city must be visited exactly once.]
+- [Each robot starts and ends at its assigned depot.]
+- [The goal is to minimize the total travel cost for all robots combined.]
+- [The travel cost is based on the Euclidean distance between cities.]
+- [Cities should not be revisited, except for returning to the start depot.]
+- [Use meta-heuristic algorithms like Genetic Algorithms (GAs), Simulated Annealing (SA), or Tabu Search (TS) as indicated in the provided insights.]

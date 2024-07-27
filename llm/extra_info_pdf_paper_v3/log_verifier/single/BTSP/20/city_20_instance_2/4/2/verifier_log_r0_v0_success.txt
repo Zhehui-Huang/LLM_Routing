@@ -1,0 +1,15 @@
+OUTPUT:
+CORRECT
+
+
+ERROR:
+test_max_distance (__main__.TestTSPSolution.test_max_distance) ... ok
+test_start_and_end_at_depot (__main__.TestTSPSolution.test_start_and_end_at_depot) ... ok
+test_visit_each_city_once (__main__.TestTSPSolution.test_visit_each_city_once) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+
+

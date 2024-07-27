@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/10/city_10_instance_0/0/1/solution_r1.py", line 59
+    total_cost = sum(distance_ctx;matrix[route[i]][route[i + 1]] for i in range(len(route) - 1))
+                                 ^
+SyntaxError: invalid syntax
+
+

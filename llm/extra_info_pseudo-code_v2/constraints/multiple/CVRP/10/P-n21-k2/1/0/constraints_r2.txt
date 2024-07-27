@@ -1,0 +1,11 @@
+- There are 21 cities with specified coordinates, including a depot city.
+- Each city except the depot has a specific demand that the robots need to satisfy.
+- There are 2 robots, each with a carrying capacity of 160 units.
+- All robots start and end their tours at the depot city 0.
+- The travel cost calculation is based on the Euclidean distance between cities.
+- The goal is to minimize the total travel cost for all robot tours.
+- Ensure that no robot's carrying capacity is exceeded during any part of the tour.
+- Each robot's route should start and end at the depot city.
+- The output should list the tours for each robot as a sequence of city indices, starting and ending at city 0.
+- The solution should correctly report the total travel cost for each individual tour and the cumulative travel cost for all tours.
+- It is essential to meet the demand of each city through the distribution made by the robots.

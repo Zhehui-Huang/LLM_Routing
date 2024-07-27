@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/GTSP/15/city_15_instance_1/2/0/solution_r1.py", line 61, in <module>
+    shortest_tour, total_cost = find_shortest_tour(groups)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/GTSP/15/city_15_instance_1/2/0/solution_r1.py", line 53, in find_shortest_tour
+    cost = calculate_total_cost(tour)
+           ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_total_cost' is not defined. Did you mean: 'calculate_tour_cost'?
+
+

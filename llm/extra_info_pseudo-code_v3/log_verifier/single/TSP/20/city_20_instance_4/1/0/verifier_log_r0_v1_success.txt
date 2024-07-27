@@ -1,0 +1,23 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/TSP/20/city_20_instance_4/1/0/verifier_r0_v1.py:43: DeprecationWarning: unittest.makeSuite() is deprecated and will be removed in Python 3.13. Please use unittest.TestLoader.loadTestsFromTestCase() instead.
+  test_suite.addTest(unittest.makeSuite(TestTSPSolution))
+E...
+======================================================================
+ERROR: test_output_format (__main__.TestTSPSolution.test_output_format)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/TSP/20/city_20_instance_4/1/0/verifier_r0_v1.py", line 39, in test_output_format
+    self.assertIsInstance(self.reported_body_cost, (float, int), "Output cost should be a numeric type.")
+                          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TestTSPSolution' object has no attribute 'reported_body_cost'
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (errors=1)
+
+

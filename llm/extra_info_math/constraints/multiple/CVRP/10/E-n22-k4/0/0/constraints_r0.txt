@@ -1,0 +1,4 @@
+- [Each customer is visited exactly once by exactly one robot.]
+- [Each robot starts and ends its route at the depot city.]
+- [The total demand on each route does not exceed the robot's capacity of 6000.]
+- [Each solution must minimize the total travel cost for all tours.]

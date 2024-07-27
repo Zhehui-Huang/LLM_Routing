@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_3/4/0/solution_r1.py", line 80, in <module>
+    tour, total_cost = gvns(cities, 13, 10)
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_3/4/0/solution_r1.py", line 70, in gvns
+    shaken_solution = shake(current_slugion)
+                            ^^^^^^^^^^^^^^^
+NameError: name 'current_slugion' is not defined. Did you mean: 'current_solution'?
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP_MinMax/10/E-n22-k4/0/2/solution_r0.py", line 66, in <module>
+    robots_tours = optimize_tour(robots_tours)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP_MinMax/10/E-n22-k4/0/2/solution_r0.py", line 55, in optimize_tour
+    if new_cost < current_start:
+                  ^^^^^^^^^^^^^
+NameError: name 'current_start' is not defined. Did you mean: 'current_cost'?
+
+

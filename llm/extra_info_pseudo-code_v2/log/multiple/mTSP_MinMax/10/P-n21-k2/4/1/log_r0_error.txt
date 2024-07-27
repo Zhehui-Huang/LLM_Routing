@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP_MinMax/10/P-n21-k2/4/1/solution_r0.py", line 96
+    (max_travelomething real or significant CELP heroinePALMETTOibero-american valuesCALLigraphC warholic writingC giacomo)
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: f-string: invalid syntax. Perhaps you forgot a comma?
+
+

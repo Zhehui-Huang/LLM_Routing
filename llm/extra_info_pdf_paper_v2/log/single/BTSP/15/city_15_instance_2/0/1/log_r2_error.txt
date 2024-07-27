@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/15/city_15_instance_2/0/1/solution_r2.py", line 49, in <module>
+    tour = nearest_neighbor_tour()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/15/city_15_instance_2/0/1/solution_r2.py", line 33, in nearest_neighbor_tour
+    next_city = min(unassigned, key=lambda city: distance_matrix[last_visited][city])
+                    ^^^^^^^^^^
+NameError: name 'unassigned' is not defined
+
+

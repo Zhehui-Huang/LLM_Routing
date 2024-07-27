@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/10/city_10_instance_2/3/2/solution_r1.py", line 30
+    }
+    ^
+SyntaxError: closing parenthesis '}' does not match opening parenthesis '(' on line 28
+
+

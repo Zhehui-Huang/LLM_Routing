@@ -1,0 +1,9 @@
+- [Requirement 1] Meet the specified demand of each city exactly, ensuring no city's demand is under or over-supplied.
+- [Requirement 2] Each robot must not exceed its carrying capacity of 35 units while delivering goods.
+- [Requirement 3] Tours for each robot must start and finish at the depot city 0.
+- [Requirement 4] Find the shortest possible tours for the robots to minimize the overall travel costs.
+- [Requirement 5] The calculated travel cost between cities is based on the Euclidean distance.
+- [Requirement 6] All cities, except the depot, must be visited by the robots to fulfill demands.
+- [Requirement 7] Output the tours for each robot as lists of city indices, each tour starting and ending at depot city 0.
+- [Requirement 8] Output the total travel cost for each tour and the sum of all these as the overall travel cost.
+- [Requirement 9] Each robot can travel to any city from any other city (i.e., the road network is fully connected).

@@ -1,0 +1,20 @@
+OUTPUT:
+CORRECT
+
+
+ERROR:
+test_all_cities_visited_once (__main__.TestTSPSolution.test_all_cities_visited_once)
+Test if every city is visited exactly once except the depot city which is visited twice. ... ok
+test_maximum_distance_between_consecutive_cities (__main__.TestTSPSolution.test_maximum_distance_between_consecutive_cities)
+Test if the maximum distance between consecutive cities is correct and minimized. ... ok
+test_tour_starts_and_ends_at_depot (__main__.TestTSPSolution.test_tour_starts_and_ends_at_depot)
+Test if the tour starts and ends at the depot (city 0). ... ok
+test_travel_cost (__main__.TestTSPSolution.test_travel_cost)
+Test if the total travel cost is correct. ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+
+

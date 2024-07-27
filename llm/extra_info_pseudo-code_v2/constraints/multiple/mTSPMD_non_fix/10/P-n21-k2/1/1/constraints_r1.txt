@@ -1,0 +1,10 @@
+- [Requirement 1] There are 21 identified cities, each specified with unique coordinates.
+- [Requirement 2] There are 2 robots, each with its unique ID starting at 0. Both robots start their journey from 'Depot city 0'.
+- [Requirement 3] Robots can travel between any two cities without restrictions on movement or direction.
+- [Requirement 4] The travel cost between cities is calculated based on the Euclidean distance between their coordinates.
+- [Requirement 5] Each city must be visited exactly once by the robots collectively.
+- [Requirement 6] Every robot starts its tour at a designated depot.
+- [Requirement 7] Robots need not return to the depot at the end of their tour.
+- [Requirement 8] The objective is to minimize the total travel cost cumulatively for all robots.
+- [Requirement 9] Each robot's tour should start and end at its assigned depot.
+- [Requirement 10] The solution will be outputted as a list, showing the tour (sequence of visited city indices) for each robot, individual travel costs for each robot's tour, and the overall combined travel cost.

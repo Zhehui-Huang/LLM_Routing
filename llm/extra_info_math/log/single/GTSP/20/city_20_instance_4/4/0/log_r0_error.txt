@@ -1,0 +1,32 @@
+OUTPUT:
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - /home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/solverdir/cbc/linux/64/cbc /tmp/1ec9f9f45dfa451887fdbf26dc71d28b-pulp.mps -timeMode elapsed -branch -printingOptions all -solution /tmp/1ec9f9f45dfa451887fdbf26dc71d28b-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 363 COLUMNS
+At line 3184 RHS
+At line 3543 BOUNDS
+At line 3924 ENDATA
+Problem MODEL has 358 rows, 399 columns and 1680 elements
+Coin0008I MODEL read with 0 errors
+Option for timeMode changed from cpu to elapsed
+Problem is infeasible - 0.00 seconds
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.00   (Wallclock seconds):       0.00
+
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/20/city_20_instance_4/4/0/solution_r0.py", line 63, in <module>
+    next_city = [j for j in range(20) if pulp.value(x[current, j]) == 1][0]
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/20/city_20_instance_4/4/0/solution_r0.py", line 63, in <listcomp>
+    next_city = [j for j in range(20) if pulp.value(x[current, j]) == 1][0]
+                                                    ~^^^^^^^^^^^^
+KeyError: (0, 0)
+
+

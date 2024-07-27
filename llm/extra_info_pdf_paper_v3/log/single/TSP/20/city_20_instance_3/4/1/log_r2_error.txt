@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_3/4/1/solution_r2.py", line 40, in <module>
+    weight = min(data['weight'] for data in multi_graph.get_edge_data(u, v).values())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_3/4/1/solution_r2.py", line 40, in <genexpr>
+    weight = min(data['weight'] for data in multi_graph.get_edge_data(u, v).values())
+                 ~~~~^^^^^^^^^^
+KeyError: 'weight'
+
+

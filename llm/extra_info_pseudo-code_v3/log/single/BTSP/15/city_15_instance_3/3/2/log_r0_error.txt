@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_3/3/2/solution_r0.py", line 83, in <module>
+    tour, total_cost, max_consecutive_dist = find_btsp_tour(cities)
+                                             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_3/3/2/solution_r0.py", line 72, in find_btsp_tour
+    edges = create_sorted_edges(cities)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_3/3/2/solution_r0.py", line 32, in create_sorted_edges
+    dist = euclidean_distance(cities[i], cities[j])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_3/3/2/solution_r0.py", line 6, in euclidean_distance
+    return math.sqrt((p1[0] - p20)** 2 + (p1[1] - p2[1]) ** 2)
+                              ^^^
+NameError: name 'p20' is not defined. Did you mean: 'p2'?
+
+

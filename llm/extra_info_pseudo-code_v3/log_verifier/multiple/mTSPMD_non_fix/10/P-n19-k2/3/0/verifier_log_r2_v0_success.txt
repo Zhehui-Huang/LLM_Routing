@@ -1,0 +1,23 @@
+OUTPUT:
+
+
+ERROR:
+test_all_cities_visited_once (__main__.TestTourSolution.test_all_cities_visited_once) ... ok
+test_correct_start_and_end (__main__.TestTourSolution.test_correct_start_and_end) ... ok
+test_no_return_to_depot (__main__.TestTourSolution.test_no_return_to_depot) ... FAIL
+test_total_travel_cost_computation (__main__.TestTourSolution.test_total_travel_cost_computation) ... ok
+
+======================================================================
+FAIL: test_no_return_to_depot (__main__.TestTourSolution.test_no_return_to_depot)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSPMD_non_fix/10/P-n19-k2/3/0/verifier_r2_v0.py", line 34, in test_no_return_to_depot
+    self.assertNotEqual(self.robot_1_tour[-1], 1, "Robot 1 should not need to return to city 1 as its endpoint.")
+AssertionError: 1 == 1 : Robot 1 should not need to return to city 1 as its endpoint.
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=1)
+
+

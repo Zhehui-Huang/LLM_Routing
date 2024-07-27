@@ -1,0 +1,18 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n23-k8/3/1/solution_r1.py", line 73, in <module>
+    main()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n23-k8/3/1/solution_r1.py", line 61, in main
+    algorithms.eaSimple(population, toolbox, cxpb=CROSSOVER_RATE, mutpb=MUTATION_RATE, ngen=GENERATIONS, stats=stats, halloffame=hof, verbose=True)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/deap/algorithms.py", line 152, in eaSimple
+    ind.fitness.values = fit
+    ^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/deap/base.py", line 188, in setValues
+    assert len(values) == len(self.weights), "Assigned values have not the same length than fitness weights"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Assigned values have not the same length than fitness weights
+
+

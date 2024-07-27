@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_3/1/2/solution_r1.py", line 70, in <module>
+    best_tour, best_cost = gvns(cities)
+                           ^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_3/1/2/solution_r1.py", line 46, in gvns
+    distance_matrix = create_gtinisial_solution(cities, k)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'create_gtinisial_solution' is not defined. Did you mean: 'generate_initial_solution'?
+
+

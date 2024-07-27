@@ -1,0 +1,53 @@
+import math
+import random
+
+# City coordinates
+cities = {
+    0: (30, 56), 1: (53, 42), 2: (1, 95), 3: (25, 61), 
+    4: (69, 57), 5: (6, 58), 6: (12, 84), 7: (72, 77), 
+    8: (98, 95), 9: (11, 0), 10: (61, 25), 11: (52, 0), 
+    12: (60, 95), 13: (10, 94), 14: (96, 73), 15: (14, 47), 
+    16: (18, 16), 17: (4, 43), 18: (53, 76), 19: (19, 72)
+}
+
+# Groups of cities
+groups = {
+    0: [4, 10, 13, 17],
+    1: [6, 7, 14],
+    2: [9, 12, 16],
+    3: [2, 5, 15],
+    4: [1, 3, 19],
+    5: [8, 11, 18]
+}
+
+def euclidean_distance(city1, city2):
+    """Compute the Euclidean distance between two cities."""
+    return math.hypot((cities[city1][0] - cities[city2][0]), (cities[city1][1] - cities[city2][1]))
+
+# Function to compute tour distance
+def tour_distance(tour):
+    """Calculate the total distance of a tour."""
+    return sum(euclidean_distance(tour[i], tour[i + 1]) for i in range(len(tour) - 1))
+
+# Function to compute a feasible tour by picking one city from each group
+def find_feasible_tour():
+    tour = [0]  # start and end at the depot
+    for group in groups.values():
+        tour.append(random.choice(group))
+    tour.append(0)  # ensure the returning to the starting point is explicitly included
+    return tour
+
+# Simple optimization to find minimum cost tour
+num_iterations = 10000
+best_tour = find_feasible_tour()
+best_cost = tour_distance(best_tour)
+
+for _ in range(num_iterations):
+    current_tour = find_feasible_tour()
+    current_cost = tour_distance(current_tour)
+    if current_cost < best_cost:
+        best_tour, best_cost = current_tour, current_cost
+
+# Output the result
+print("Tour:", best_tour)
+print("Total travel cost:", best_cost)

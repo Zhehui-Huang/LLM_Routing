@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/10/city_10_instance_0/0/1/solution_r2.py", line 56, in <module>
+    optimal_tour, optimal_total_cost, optimal_max_distance = find_optimal_tour()
+                                                             ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/10/city_10_instance_0/0/1/solution_r2.py", line 48, in find_optimal_tour
+    if max_distance < min_max_before:
+                      ^^^^^^^^^^^^^^
+NameError: name 'min_max_before' is not defined
+
+

@@ -1,0 +1,7 @@
+- [Each robot starts from their designated depot city and does not need to return to the depot after completing its tour.]
+- [Each robot must collectively visit all cities exactly once.]
+- [Each robot can stop at any city as their endpoint.]
+- [The solution should determine the shortest possible tours for each robot while minimizing the total travel cost for all robots combined.]
+- [The travel cost between cities is calculated as the Euclidean distance.]
+- [The solution should ensure that no city is visited more than once across all tours, except for the depots which are starting points.]
+- [Optimize for the lowest total travel distance or cost for all robots.]

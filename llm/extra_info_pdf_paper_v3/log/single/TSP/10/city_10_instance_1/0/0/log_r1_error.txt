@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/10/city_10_instance_1/0/0/solution_r1.py", line 28, in <module>
+    G.add_edge(i, j, weight=euclidean_distance(pos_i, pos_j))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/10/city_10_instance_1/0/0/solution_r1.py", line 21, in euclidean_distance
+    return np.sqrt((pos1[0] - pos2[0])**2 + (pos1[1] - pos2[1])**2)
+           ^^
+NameError: name 'np' is not defined. Did you mean: 'nx'?
+
+

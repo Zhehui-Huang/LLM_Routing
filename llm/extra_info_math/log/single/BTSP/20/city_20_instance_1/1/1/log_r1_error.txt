@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/20/city_20_instance_1/1/1/solution_r1.py", line 49, in <module>
+    solver = PULC_CBC_CMD(msg=False)
+             ^^^^^^^^^^^^
+NameError: name 'PULC_CBC_CMD' is not defined. Did you mean: 'PULP_CBC_CMD'?
+
+

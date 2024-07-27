@@ -1,0 +1,21 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+..E
+======================================================================
+ERROR: test_requirement_3 (__main__.TestTSPSolution.test_requirement_3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/TSP/15/city_15_instance_1/1/1/verifier_r0_v0.py", line 37, in test_requirement_3
+    msg=f"Actual cost {total_form_cost} does not match reported cost {self.reported_cost}")
+                       ^^^^^^^^^^^^^^^
+NameError: name 'total_form_cost' is not defined
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (errors=1)
+
+

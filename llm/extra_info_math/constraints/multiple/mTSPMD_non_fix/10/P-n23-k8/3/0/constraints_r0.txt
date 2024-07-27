@@ -1,0 +1,6 @@
+- [Requirement 1: Ensure exactly eight salesmen leave from depot city 0.]
+- [Requirement 2: Ensure exactly eight salesmen can stop at any city as their endpoint, not necessarily returning to the depot.]
+- [Requirement 3: Ensure each city is visited exactly once.]
+- [Requirement 4: Optimize the tours for the lowest total travel distance or cost.]
+- [Requirement 5: Ensure no salesman serves only a single customer.]
+- [Requirement 6: Implement subtour elimination constraints.]

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD/10/P-n16-k8/1/0/solution_r2.py", line 24
+    distance_matrix[(i, j)] = euclidean_family(a = 1;b = 2;distance(cities[i], cities[j])
+                                                    ^
+SyntaxError: invalid syntax
+
+

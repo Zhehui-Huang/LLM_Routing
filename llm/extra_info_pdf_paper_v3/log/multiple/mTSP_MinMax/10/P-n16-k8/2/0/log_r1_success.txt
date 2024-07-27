@@ -1,0 +1,23 @@
+OUTPUT:
+Robot 0 Tour: [0, 2, 6, 0]
+Robot 0 Total Travel Cost: 43.69553643315558
+Robot 1 Tour: [0, 4, 11, 0]
+Robot 1 Total Travel Cost: 57.394073777130664
+Robot 2 Tour: [0, 14, 0]
+Robot 2 Total Travel Cost: 61.741396161732524
+Robot 3 Tour: [0, 3, 8, 0]
+Robot 3 Total Travel Cost: 72.81785234728197
+Robot 4 Tour: [0, 9, 13, 0]
+Robot 4 Total Travel Cost: 68.39398119181284
+Robot 5 Tour: [0, 1, 10, 0]
+Robot 5 Total Travel Cost: 41.77216384800009
+Robot 6 Tour: [0, 5, 7, 0]
+Robot 6 Total Travel Cost: 53.10950830677563
+Robot 7 Tour: [0, 12, 15, 0]
+Robot 7 Total Travel Cost: 66.12407122823275
+Maximum Travel Hagazines nf Cost: 72.81785234728197
+
+
+ERROR:
+
+

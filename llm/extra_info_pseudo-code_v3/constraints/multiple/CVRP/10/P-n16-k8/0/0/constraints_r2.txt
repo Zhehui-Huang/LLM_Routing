@@ -1,0 +1,5 @@
+- [There are 16 cities, each with specific coordinates and demands, excluding the depot city which has a demand of 0.]
+- [There are 8 robots, each with a capacity of 35 and starting at the depot city 0.]
+- [Robots can travel between any two cities, and travel cost is calculated as the Euclidean distance between cities.]
+- [The aim is to design tours for each robot that start and end at the depot city, fully meet the demands of each city, and don't exceed the robot's carrying capacity.]
+- [The overall goal is to minimize the total travel cost for all tours collectively.]

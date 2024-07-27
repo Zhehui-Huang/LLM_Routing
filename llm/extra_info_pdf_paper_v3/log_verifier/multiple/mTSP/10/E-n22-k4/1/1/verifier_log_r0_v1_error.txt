@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSP/10/E-n22-k4/1/1/verifier_r0_v1.py", line 75, in <module>
+    result = verify_solution(tours, cities, expected_costs, expected_overall_cost)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSP/10/E-n22-k4/1/1/verifier_r0_v1.py", line 58, in verify_solution
+    total_computed_data_cost += tour_cost
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'total_computed_data_cost' where it is not associated with a value
+
+

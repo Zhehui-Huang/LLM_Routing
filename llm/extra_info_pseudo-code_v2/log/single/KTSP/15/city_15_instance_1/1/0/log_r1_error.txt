@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/15/city_15_instance_1/1/0/solution_r1.py", line 31
+    return sum(calculate_font(distance tour[i], tour[i+1]) for i in range(len(tour) - 1))
+                              ^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

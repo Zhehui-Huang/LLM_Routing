@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/10/city_10_instance_3/2/1/solution_r1.py", line 54, in <module>
+    best_tour, best_total_distance, best_max_distance = solve_BTSP(cities)
+                                                        ^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/10/city_10_instance_3/2/1/solution_r1.py", line 29, in solve_BTSP
+    for perm in permutations(city_index[1:]):  # Exclude the depot city from permutations
+                             ^^^^^^^^^^
+NameError: name 'city_index' is not defined. Did you mean: 'city_indices'?
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/KTSP/15/city_15_instance_4/0/0/solution_r0.py", line 54, in <module>
+    best_tour, total_cost = find_best_tour()
+                            ^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/KTSP/15/city_15_instance_4/0/0/solution_r0.py", line 51, in find_best_tour
+    return best_tour, shortest_oistance
+                      ^^^^^^^^^^^^^^^^^
+NameError: name 'shortest_oistance' is not defined. Did you mean: 'shortest_distance'?
+
+

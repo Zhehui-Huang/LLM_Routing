@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/CVRP/10/E-n22-k4/1/2/verifier_r2_v2.py", line 53
+    conditions_met = start_end_depot and all_demands_met and capacity_constraints——met
+                                                                                 ^
+SyntaxError: invalid character '—' (U+2014)
+
+

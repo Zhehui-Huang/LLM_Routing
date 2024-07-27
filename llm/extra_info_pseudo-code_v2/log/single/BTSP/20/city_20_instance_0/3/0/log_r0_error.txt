@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/20/city_20_instance_0/3/0/solution_r0.py", line 68
+    print("Total travel cost:", round(totalTriple-click or drag the mouse to select the text.ute_costs(tour, G))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

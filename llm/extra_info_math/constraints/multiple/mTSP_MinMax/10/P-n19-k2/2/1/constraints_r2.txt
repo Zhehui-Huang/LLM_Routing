@@ -1,0 +1,7 @@
+- [Each city is visited exactly once by one salesman.]
+- [Flow conservation constraints ensure each salesman must leave each visited node and enter each visited node exactly once.]
+- [Each salesman must leave the depot exactly once and return to it.]
+- [Subtour elimination constraints must be applied to prevent any subtours that do not include the depot.]
+- [Binary constraints for assignment variables must be adhered to, ensuring they are either 0 or 1.]
+- [Continuous variables for node positions must be maintained within their defined constraints.]
+- [Minimize the total travel cost by minimizing the maximum distance traveled by any single robot.]

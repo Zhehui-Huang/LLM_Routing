@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/20/city_20_instance_3/3/0/solution_r2.py", line 58, in <module>
+    best_tour, best_cost = variable_neighborhood_search(k)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/20/city_20_instance_3/3/0/solution_r2.py", line 50, in variable_neighborhood_search
+    new_tour, new_cost = local_earch(new_tour)
+                         ^^^^^^^^^^^
+NameError: name 'local_earch' is not defined. Did you mean: 'local_search'?
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/2/0/solution_r1.py", line 66
+    print("\nOverall Total Travel Cost:", total_day.
+         ^
+SyntaxError: '(' was never closed
+
+

@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/GTSP/20/city_20_instance_0/4/0/solution_r1.py", line 40, in <module>
+    distances = [[euclidean_distance(coordinates[i], coordinates[j]) 
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/GTSP/20/city_20_instance_0/4/0/solution_r1.py", line 40, in <listcomp>
+    distances = [[euclidean_distance(coordinates[i], coordinates[j]) 
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/GTSP/20/city_20_instance_0/4/0/solution_r1.py", line 40, in <listcomp>
+    distances = [[euclidean_distance(coordinates[i], coordinates[j]) 
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/GTSP/20/city_20_instance_0/4/0/solution_r1.py", line 37, in euclidean_distance
+    return math.sqrt((p2[0] - p1[0])**2 + (plastic2[1] - p1[1])**2)
+                                           ^^^^^^^^
+NameError: name 'plastic2' is not defined
+
+

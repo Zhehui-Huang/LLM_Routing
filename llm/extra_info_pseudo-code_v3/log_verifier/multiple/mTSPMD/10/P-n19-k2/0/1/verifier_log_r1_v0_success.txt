@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+..F
+======================================================================
+FAIL: test_unique_visitation (__main__.TestTSPSolution.test_unique_visitation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSPMD/10/P-n19-k2/0/1/verifier_r1_v0.py", line 27, in test_unique_visitation
+    self.assertEqual(len(all_visited), len(unique_visits), "Some cities are visited more than once.")
+AssertionError: 34 != 19 : Some cities are visited more than once.
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+
+

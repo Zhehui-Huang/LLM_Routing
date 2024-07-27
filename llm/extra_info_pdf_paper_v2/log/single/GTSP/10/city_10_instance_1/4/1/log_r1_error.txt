@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/GTSP/10/city_10_instance_1/4/1/solution_r1.py", line 59
+    print(f"Total travel cost: {minimal_total_square brackets.close()])
+          ^
+SyntaxError: unterminated string literal (detected at line 59)
+
+

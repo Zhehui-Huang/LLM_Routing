@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/10/city_10_instance_3/4/0/solution_r0.py", line 58, in <module>
+    print(btsp())
+          ^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/10/city_10_instance_3/4/0/solution_r0.py", line 52, in btsp
+    max_edge = max(max_edge, euclidean64_distance(path[-1], path[0]))
+                             ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean64_distance' is not defined. Did you mean: 'euclidean_distance'?
+
+

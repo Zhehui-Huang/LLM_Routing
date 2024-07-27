@@ -1,0 +1,9 @@
+- [Requirement 1] There are 16 total cities, with each city having specified coordinates.
+- [Requirement 2] There are 8 robots, all starting and ending at depot city 0.
+- [Requirement 3] Each robot can travel between any two cities.
+- [Requirement 4] Travel cost is calculated as the Euclidean distance between two cities.
+- [Requirement 5] Exclude the depot city as a destination; it only serves as the starting/end point for each robot's tour.
+- [Requirement 6] Robots must collectively visit all cities exactly once.
+- [Requirement 7] The primary objective is to minimize the maximum distance traveled by any single robot.
+- [Requirement 8] Use the ITSHA heuristic from the provided insights to construct an optimization approach. This includes initialization via fuzzy c-means clustering, diverse initial solutions, and an improvement stage with Variable Neighborhood Search.
+- [Requirement 9] Output should consist of each robot's tour starting and ending at depot city 0, including the travel cost for each tour and the maximum travel cost among all tours.

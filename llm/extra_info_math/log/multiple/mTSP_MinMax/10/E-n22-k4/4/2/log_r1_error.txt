@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP_MinMax/10/E-n22-k4/4/2/solution_r1.py", line 40
+    model += pulp.lpSum(x[i, j, k] * distance(coordinates[i], coordinates[j]) for i in range(len(coordinates)) for j in range(len(coordinates)) if i != j) <= max_travel ≤ max_travel_cost
+                                                                                                                                                                         ^
+SyntaxError: invalid character '≤' (U+2264)
+
+

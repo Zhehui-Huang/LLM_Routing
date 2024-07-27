@@ -1,0 +1,8 @@
+OUTPUT:
+Tour: [0, 9, 5, 6, 0]
+Total travel and candidates: 61.66
+
+
+ERROR:
+
+

@@ -1,0 +1,10 @@
+- [Requirement 1] Each robot must start and end its tour at the depot city (city 0).
+- [Requirement 2] All cities (1 through 22) must be visited exactly once by the robots, and each city can only be visited by one robot.
+- [Requirement 3] The main objective is to minimize the maximum distance traveled by any single robot.
+- [Requirement 4] Use Euclidean distance to calculate the travel cost between two cities.
+- [Requirement 5] Output must include the tour for each robot as a list of city indices starting and ending at the depot.
+- [Requirement 6] Output must include the travel cost for each tour and the maximum travel cost among all tours.
+- [Requirement 7] Robots can travel between any two cities.
+- [Requirement 8] Each outputted tour should be formatted as "Robot X Tour: [tour_path]" and "Robot X Total Travel Cost: Y".
+- [Requirement 9] Employs the General Variable Neighborhood Search (GVNS) algorithm for solution generation with specific procedures such as Initialization, Shake, and Sequential VND (Seq-VND).
+- [Requirement 10] Implement an iterative solution process with a terminal condition of a maximum running time.

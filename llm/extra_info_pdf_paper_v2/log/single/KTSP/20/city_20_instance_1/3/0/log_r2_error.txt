@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/20/city_20_instance_1/3/0/solution_r2.py", line 51, in <module>
+    tour_cost = sum(calculate_distance(full_route[i], full_route[i+1]) for i in range(len(full_route) - 1))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/20/city_20_instance_1/3/0/solution_r2.py", line 51, in <genexpr>
+    tour_cost = sum(calculate_distance(full_route[i], full_route[i+1]) for i in range(len(full_route) - 1))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/20/city_20_instance_1/3/0/solution_r2.py", line 32, in calculate_distance
+    x2, y2 = city_encity_condits[city2]
+             ^^^^^^^^^^^^^^^^^^^
+NameError: name 'city_encity_condits' is not defined
+
+

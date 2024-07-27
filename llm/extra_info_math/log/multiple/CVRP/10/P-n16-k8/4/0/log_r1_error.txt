@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/CVRP/10/P-n16-k8/4/0/solution_r1.py", line 50
+    manager = pywrapp.deltaTimeKeeper.IndexManager(len(data['distance_matrix']), data['num'vehicles'], data['depot'])
+                                                                                                                  ^
+SyntaxError: unterminated string literal (detected at line 50)
+
+

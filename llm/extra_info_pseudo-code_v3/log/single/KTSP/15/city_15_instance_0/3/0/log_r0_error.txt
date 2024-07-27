@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_0/3/0/solution_r0.py", line 77, in <module>
+    best_tour, best_cost = gvns(V, D, k, nrst)
+                           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_0/3/0/solution_r0.py", line 62, in gvns
+    new_cost = total_common_distance(new_solution, D)
+               ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_common_distance' is not defined
+
+

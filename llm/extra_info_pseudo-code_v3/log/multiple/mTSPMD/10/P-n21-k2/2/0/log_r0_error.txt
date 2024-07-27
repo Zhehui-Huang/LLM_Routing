@@ -1,0 +1,24 @@
+OUTPUT:
+gen	nevals	avg    	min    	std    
+0  	300   	477.146	363.112	38.7056
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n21-k2/2/0/solution_r0.py", line 82, in <module>
+    main()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n21-k2/2/0/solution_r0.py", line 65, in main
+    algorithms.eaSimple(population, toolbox, cxpb=CX_PB, mutpb=MUT_PB, ngen=NUM_GENERATIONS, 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/deap/algorithms.py", line 168, in eaSimple
+    offspring = varAnd(offspring, toolbox, cxpb, mutpb)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/deap/algorithms.py", line 73, in varAnd
+    offspring[i - 1], offspring[i] = toolbox.mate(offspring[i - 1],
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/deap/tools/crossover.py", line 218, in cxOrdered
+    holes1[ind2[i]] = False
+    ~~~~~~^^^^^^^^^
+IndexError: list assignment index out of range
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/10/city_10_instance_0/2/0/solution_r0.py", line 51
+    y]
+     ^
+SyntaxError: unmatched ']'
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/15/city_15_instance_4/1/2/solution_r1.py", line 26
+    row_ind, col_ind = linear_sum_assignment(perm_dist understand_matrix)
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

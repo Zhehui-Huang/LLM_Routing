@@ -1,0 +1,37 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+F..E.
+======================================================================
+ERROR: test_requirement_4 (__main__.TestTravelingSalesmanSolution.test_requirement_4)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/BTSP/10/city_10_instance_3/2/0/verifier_r0_v0.py", line 61, in test_requirement_4
+    self.assertAlmostEqual(calulated_cost, self.total_travel_cost, places=2,
+                           ^^^^^^^^^^^^^^
+NameError: name 'calulated_cost' is not defined
+
+======================================================================
+FAIL: test_requirement_1 (__main__.TestTravelingSalesmanSolution.test_requirement_1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/BTSP/10/city_10_instance_3/2/0/verifier_r0_v0.py", line 21, in test_requirement_1
+    self.assertEqual(visited, all_cities, "The robot does not visit each city exactly once.")
+AssertionError: Items in the second set but not the first:
+1
+2
+3
+4
+5
+6
+7
+9 : The robot does not visit each city exactly once.
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+FAILED (failures=1, errors=1)
+
+

@@ -1,0 +1,3 @@
+- [Robot must start and end the journey at depot city 0]
+- [Robot must visit exactly one city from each group of cities]
+- [Total travel cost must be minimized]

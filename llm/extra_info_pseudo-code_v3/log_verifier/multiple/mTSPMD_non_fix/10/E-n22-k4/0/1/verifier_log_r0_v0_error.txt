@@ -1,0 +1,12 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSPMD_non_fix/10/E-n22-k4/0/1/verifier_r0_v0.py", line 53, in <module>
+    print("Overall Total Travel Cost:", total_travel_bhcost)
+                                        ^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_travel_bhcost' is not defined. Did you mean: 'total_travel_cost'?
+
+

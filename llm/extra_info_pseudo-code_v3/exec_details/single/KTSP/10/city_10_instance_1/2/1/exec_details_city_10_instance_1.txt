@@ -1,0 +1,24 @@
+Start time: [2024-07-25 22:41:39]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/exec_details/single/KTSP/10/city_10_instance_1/2/1/exec_details_city_10_instance_1.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 28.87 seconds.
+Code solution execution status: error, execution time: 0.00879049301147461
+
+Reflect count: 1
+===
+Ask LLM for code solution, response time: 35.48 seconds.
+Code solution execution status: error, execution time: 0.008982181549072266
+
+Reflect count: 2
+===
+Ask LLM for code solution, response time: 31.87 seconds.
+Code solution execution status: success, execution time: 0.13251662254333496
+Another LLM - Get constraints from LLM, response time: 4.20 seconds.
+Ask another LLM for verifier code, response time: 17.31 seconds.
+Another LLM - The verifier has bugs.
+Ask another LLM for verifier code, response time: 26.25 seconds.
+Another LLM - fail verifier

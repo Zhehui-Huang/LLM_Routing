@@ -1,0 +1,7 @@
+OUTPUT:
+FAIL: name 'Solution' is not defined
+
+
+ERROR:
+
+

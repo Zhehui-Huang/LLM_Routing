@@ -1,0 +1,21 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+E..
+======================================================================
+ERROR: test_correct_calculation_of_distance (__main__.TestTravelingSalesman.test_correct_calculation_of_distance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/15/city_15_instance_1/0/0/verifier_r0_v2.py", line 44, in test_correct_calculation_of_distance
+    calculated_config += euclidean_distance(self.cities[self.tour[i]], self.cities[self.tour[i + 1]])
+    ^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'calculated_config' where it is not associated with a value
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (errors=1)
+
+

@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/20/city_20_instance_3/2/1/solution_r1.py", line 44, in <module>
+    tour, total_cost, max_distance = find_tour_and_max_distance(subgraph)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/20/city_20_instance_3/2/1/solution_r1.py", line 31, in find_tour_and_max_distance
+    total_cost = sum(graph[cycle[i]][cycle[i + 1]]['weight'] for i in range(len(cycle) - 1)) + graph[cycle[-1]][cycle[0]]['weight']
+                                                                                               ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/networkx/classes/coreviews.py", line 54, in __getitem__
+    return self._atlas[key]
+           ~~~~~~~~~~~^^^^^
+KeyError: 0
+
+

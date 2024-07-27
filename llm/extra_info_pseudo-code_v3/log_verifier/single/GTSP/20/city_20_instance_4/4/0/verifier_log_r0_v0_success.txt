@@ -1,0 +1,26 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+test_output_format (__main__.TestRobotTour.test_output_format) ... ERROR
+test_tour_starts_and_ends_at_depot (__main__.TestRobotTour.test_tour_starts_and_ends_at_depot) ... ok
+test_tour_validity (__main__.TestRobotTour.test_tour_validity) ... ok
+test_tour_visits_one_city_from_each_group (__main__.TestRobotTour.test_tour_visits_one_city_from_each_group) ... ok
+test_travel_cost (__main__.TestRobotTour.test_travel_cost) ... ok
+
+======================================================================
+ERROR: test_output_format (__main__.TestRobotTour.test_output_format)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/GTSP/20/city_20_instance_4/4/0/verifier_r0_v0.py", line 43, in test_output_format
+    self.all(isinstance(city, int) for city in self.solution_tour)
+    ^^^^^^^^
+AttributeError: 'TestRobotTour' object has no attribute 'all'
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+FAILED (errors=1)
+
+

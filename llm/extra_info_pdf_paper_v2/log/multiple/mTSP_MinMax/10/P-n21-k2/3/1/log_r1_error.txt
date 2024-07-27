@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP_MinMax/10/P-n21-k2/3/1/solution_r1.py", line 55
+    tours[0][swap_index_a], tours[1][swap_index_b] = tours[1][swap_index_b], tours[0][swapimaximumm_cost = max(tour_cost(tour, city_locs) for tour in tours)
+                                                                                     ^
+SyntaxError: '[' was never closed
+
+

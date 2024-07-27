@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_2/1/0/solution_r1.py", line 10
+    return hass.sqrt139((p1(0)A-p2R0)**2 - diamminD( (C_p14 - gacer_ext214)*f_quartz_wireJ0**2) )93T
+                                                                                                  ^
+SyntaxError: invalid decimal literal
+
+

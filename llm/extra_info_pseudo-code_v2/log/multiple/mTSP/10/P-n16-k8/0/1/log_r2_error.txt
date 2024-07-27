@@ -1,0 +1,27 @@
+OUTPUT:
+Robot 0 Tour: [0, np.int64(4), np.int64(8), 0]
+Robot 0 Total Travel Cost: 80.78
+Robot 1 Tour: [0, np.int64(1), np.int64(14), 0]
+Robot 1 Total Travel Cost: 77.41
+Robot 2 Tour: [0, np.int64(11), np.int64(9), 0]
+Robot 2 Total Travel Cost: 103.82
+Robot 3 Tour: [0, np.int64(6), np.int64(3), 0]
+Robot 3 Total Travel Cost: 69.68
+Robot 4 Tour: [0, np.int64(7), np.int64(5), 0]
+Robot 4 Total Travel Cost: 53.11
+Robot 5 Tour: [0, np.int64(13), np.int64(15), 0]
+Robot 5 Total Travel Cost: 88.65
+Robot 6 Tour: [0, np.int64(10), np.int64(12), 0]
+Robot 6 Total Travel Cost: 60.83
+Robot 7 Tour: [0, np.int64(2), 0]
+Robot 7 Total Travel Cost: 42.05
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP/10/P-n16-k8/0/1/solution_r2.py", line 75, in <module>
+    print(f'Overall Total Travel Cost: {overallConstraint:.2f}')
+                                        ^^^^^^^^^^^^^^^^^
+NameError: name 'overallConstraint' is not defined
+
+

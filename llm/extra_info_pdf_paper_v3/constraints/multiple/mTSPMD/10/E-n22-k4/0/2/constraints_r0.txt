@@ -1,0 +1,5 @@
+- [Requirement 1] There are 22 cities, including 4 depots. Each robot starts and ends at a specified depot.
+- [Requirement 2] Each city must be visited exactly once by any robot, and not repeated across tours.
+- [Requirement 3] The total travel cost should be minimized, calculated using the Euclidean distance between cities.
+- [Requirement 4] Output should be formatted to include each robot's tour, individual travel cost for each tour, and the overall total travel cost.
+- [Requirement 5] The genetic algorithm should include specific strategies: a special chromosome structure, four different crossover techniques, mutation and selection methods, focusing on computational efficiency and applicability to complex routing problems.

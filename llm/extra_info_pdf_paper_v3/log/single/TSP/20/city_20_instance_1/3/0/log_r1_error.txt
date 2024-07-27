@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_1/3/0/solution_r1.py", line 31, in <module>
+    tour_cost += dist_force[tsp_path[-1], tsp_path[0]]
+                 ^^^^^^^^^^
+NameError: name 'dist_force' is not defined
+
+

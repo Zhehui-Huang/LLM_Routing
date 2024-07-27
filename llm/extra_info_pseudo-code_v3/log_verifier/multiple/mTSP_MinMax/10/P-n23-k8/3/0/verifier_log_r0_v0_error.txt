@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSP_MinMax/10/P-n23-k8/3/0/verifier_r0_v0.py", line 56, in <module>
+    result = test_solution()
+             ^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSP_MinMax/10/P-n23-k8/3/0/verifier_r0_v0.py", line 47, in test_solution
+    if not verify_single_visit(cities, robots_info):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSP_MinMax/10/P-n23-k8/3/0/verifier_r0_v0.py", line 28, in verify_single_visit
+    for idx in tour['tour'][1:-1]:  # exclude starting/ending depot city
+               ~~~~^^^^^^^^
+KeyError: 'tour'
+
+

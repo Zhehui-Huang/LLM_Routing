@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/GTSP/10/city_10_instance_2/0/2/verifier_r0_v0.py", line 43, in <module>
+    result = check_solution(tour, total_total_total_cost)
+                                  ^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_total_total_cost' is not defined
+
+

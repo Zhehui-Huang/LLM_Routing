@@ -1,0 +1,6 @@
+- [The task involves a variant of the Traveling Salesman Problem known as the Generalized Traveling Salesman Problem (GTSP) where the goal is to visit exactly one vertex from each cluster.]
+- [There are 20 cities arranged in 7 groups, and the robot needs to visit one city from each group.]
+- [The robot must start and end its journey at the depot city (city 0).]
+- [Travel cost is calculated based on the Euclidean distance between cities.]
+- [The robot is to find the shortest possible route that meets the specified criteria.]
+- [Output should list the tour starting and ending at city 0 and include the total travel cost of the tour.]

@@ -1,0 +1,8 @@
+- [Ensure exactly 8 salesmen leave depot city 1, and each salesman starts and possibly ends at depot city 0.]
+- [Ensure that each robot visits each city exactly once, excluding their starting depot, unless necessary for route completion.]
+- [Minimize the total combined travel cost for all robot tours.]
+- [Ensure no tour serves only one customer node, and each tour visits at least 2 cities.]
+- [Avoid subtours within each robot's tour ensuring a connected and single loop per tour.]
+- [For each robot, start and end the tour at the designated depot city.]
+- [Ensure that each city is visited exactly once by any of the robots.]
+- [All output variables used in path determination between cities are binary.]

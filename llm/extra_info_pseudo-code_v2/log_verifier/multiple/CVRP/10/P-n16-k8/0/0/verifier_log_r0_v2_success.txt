@@ -1,0 +1,32 @@
+OUTPUT:
+
+
+ERROR:
+test_capacity_constraints (__main__.TestVRPSolutionCorrected.test_capacity_constraints) ... FAIL
+test_demand_fulfillment (__main__.TestVRPSolutionCorrected.test_demand_fulfillment) ... ok
+test_number_of_robots (__main__.TestVRPSolutionCorrected.test_number_of_robots) ... ok
+test_tours_start_end_at_depot (__main__.TestVRPSolutionCorrected.test_tours_start_end_at_depot) ... ok
+test_travel_cost_calculation (__main__.TestVRPSolutionCorrected.test_travel_cost_calculation) ... FAIL
+
+======================================================================
+FAIL: test_capacity_constraints (__main__.TestVRPSolutionCorrected.test_capacity_constraints)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/CVRP/10/P-n16-k8/0/0/verifier_r0_v2.py", line 46, in test_capacity_constraints
+    self.assertLessEqual(load, self.capacity)
+AssertionError: 50 not less than or equal to 35
+
+======================================================================
+FAIL: test_travel_cost_calculation (__main__.TestVRPSolutionCorrected.test_travel_cost_calculation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/CVRP/10/P-n16-k8/0/0/verifier_r0_v2.py", line 55, in test_travel_cost_calculation
+    self.assertAlmostEqual(travel_cost, self.travel_costs[idx], places=2)
+AssertionError: 38.01708454183667 != 50 within 2 places (11.982915458163333 difference)
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=2)
+
+

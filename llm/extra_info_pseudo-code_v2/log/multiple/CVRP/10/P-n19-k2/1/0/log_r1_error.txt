@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/CVRP/10/P-n19-k2/1/0/solution_r1.py", line 45, in <module>
+    routes = clarke_wright_savings(0, demands, cost_matrix, robot_capacity)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/CVRP/10/P-n19-k2/1/0/solution_r1.py", line 36, in clarke_wright_savings
+    if found_i is not None and found_j is not None and found_i != found_js and demands[i] + demands[j] <= capacity:
+                                                                  ^^^^^^^^
+NameError: name 'found_js' is not defined. Did you mean: 'found_j'?
+
+

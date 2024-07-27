@@ -1,0 +1,24 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+..E
+======================================================================
+ERROR: test_correct_travel_cost (__main__.TestTravelingSalesmanSolution.test_correct_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/GTSP/20/city_20_instance_2/1/0/verifier_r0_v1.py", line 40, in test_correct_travel_cost
+    calculated_cost += self.calculate_euclidean_distance(self.proposed_tour[i], self.proposed_tour[i + 1])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/GTSP/20/city_20_instance_2/1/0/verifier_r0_v1.py", line 21, in calculate_euclidean_distance
+    return sqrt((self.city_coords[city1][0] - self.city_towns[city2][0])**2 +
+                                             ^^^^^^^^^^^^^^^
+AttributeError: 'TestTravelingSalesmanSolution' object has no attribute 'city_towns'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (errors=1)
+
+

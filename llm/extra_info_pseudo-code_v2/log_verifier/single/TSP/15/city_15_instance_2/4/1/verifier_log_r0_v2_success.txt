@@ -1,0 +1,21 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+E..
+======================================================================
+ERROR: test_euclidean_cost (__main__.TestTourValidity.test_euclidean_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/15/city_15_instance_2/4/1/verifier_r0_v2.py", line 44, in test_euclidean_cost
+    self.assertAlmostEqual(calculated_cost, self.reported_cost, places=2, msg=f"Calculated cost {calculated_cost} does not match reported cost {self.reported_email_cost}.")
+                                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TestTourValidity' object has no attribute 'reported_email_cost'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (errors=1)
+
+

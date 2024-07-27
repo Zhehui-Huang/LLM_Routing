@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_3/2/2/solution_r2.py", line 29, in <module>
+    distances = np.array([[euclidean_header(cities[i], cities[j]) for j in range(n)] for i in range(n)])
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_3/2/2/solution_r2.py", line 29, in <listcomp>
+    distances = np.array([[euclidean_header(cities[i], cities[j]) for j in range(n)] for i in range(n)])
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_3/2/2/solution_r2.py", line 29, in <listcomp>
+    distances = np.array([[euclidean_header(cities[i], cities[j]) for j in range(n)] for i in range(n)])
+                           ^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_header' is not defined
+
+

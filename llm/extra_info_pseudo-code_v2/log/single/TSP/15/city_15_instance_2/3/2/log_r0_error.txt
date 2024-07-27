@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/15/city_15_instance_2/3/2/solution_r0.py", line 31, in <module>
+    current_distance = calculate_total_distance(tour)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/15/city_15_instance_2/3/2/solution_r0.py", line 23, in calculate_total_distance
+    total.istance += calc_distance(tour[i-1], tour[i])  # between cities in the tour
+    ^^^^^
+NameError: name 'total' is not defined
+
+

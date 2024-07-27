@@ -1,0 +1,7 @@
+- [Requirement 1] Robots must deliver goods to all cities except the depot, and return to the depot after completing deliveries.
+- [Requirement 2] The capacity of each robot is 40 units, and this must not be exceeded.
+- [Requirement 3] Demand of each city must be fully met by the cumulative deliveries of the robots.
+- [Requirement 4] Optimize delivery routes to minimize total travel costs using robot routes starting and ending at the depot.
+- [Requirement 5] Each robot’s tour output should include the list of cities visited, starting and ending at the depot city.
+- [Requirement 6] Include the total travel cost for each individual robot tour and the overall total travel cost for all robots.
+- [Requirement 7] Implement or adapt the Enhanced Clarke-Wright Savings Algorithm specifically targeting the Capacitated Vehicle Routing Problem (CVRP).

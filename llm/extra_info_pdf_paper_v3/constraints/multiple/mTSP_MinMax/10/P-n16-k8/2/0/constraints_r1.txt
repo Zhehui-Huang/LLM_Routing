@@ -1,0 +1,7 @@
+- [Requirement 1] Solve a variant of the Traveling Salesman Problem (TSP) or Vehicle Routing Problem (VRP) involving 16 cities, with one depot city (city 0) and 15 other cities.
+- [Requirement 2] Utilize 8 robots starting from depot city 0. Each robot must start and end its tour at the depot.
+- [Requirement 3] Each city, except the depot, must be visited exactly once by the robots collectively.
+- [Requirement 4] Minimize the maximum distance traveled by any single robot.
+- [Requirement 5] Calculate travel costs between cities using Euclidean distance.
+- [Requirement 6] Output the tours for each robot as a list of city indices, each starting and ending at the depot city.
+- [Requirement 7] Output the total travel cost for each tour and determine the maximum travel cost among all tours.

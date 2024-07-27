@@ -1,0 +1,23 @@
+Task: mTSPMD_non_fix, City: 10, File name: P-n19-k2, Run time: 3, Try id: 0
+
+@@@@@
+Notes: exec
+input_token_num: 1173
+output_token_num: 965
+total_token_num: 2138
+@@@@@
+
+@@@@@
+Notes: extract_constraints
+input_token_num: 1255
+output_token_num: 179
+total_token_num: 1434
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 1783
+output_token_num: 976
+total_token_num: 2759
+@@@@@
+

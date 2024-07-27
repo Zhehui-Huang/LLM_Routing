@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSPMD_non_fix/10/E-n22-k4/4/0/verifier_r1_v0.py", line 65, in <module>
+    print(test_solution(robots_tours, cities_coordinates))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSPMD_non_fix/10/E-n22-k4/4/0/verifier_r1_v0.py", line 42, in test_solution
+    tour_cost += calculate_distance(previous_storage_coords, city)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'previous_storage_coords' is not defined
+
+

@@ -1,0 +1,16 @@
+OUTPUT:
+Optimal Solution Tours with total minimum cost:
+Robot 0 Tour: [0, 1, 8, 10]
+Robot 0 Total Travel Cost: 102.41886165888774
+Robot 1 Tour: [0, 19, 20, 21, 17, 13]
+Robot 1 Total Travel Cost: 130.4047119394745
+Robot 2 Tour: [0, 11, 4, 3, 16, 15, 5, 18, 12, 14, 6, 2]
+Robot 2 Total Travel Cost: 357.2113605170252
+Robot 3 Tour: [0, 9, 7]
+Robot 3 Total Travel Cost: 65.36789834516586
+Overall Total Travel Cost: 655.4028324605532
+
+
+ERROR:
+
+

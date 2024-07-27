@@ -1,0 +1,37 @@
+Task: mTSPMD_non_fix, City: 10, File name: P-n21-k2, Run time: 0, Try id: 1
+
+@@@@@
+Notes: exec
+input_token_num: 1847
+output_token_num: 1027
+total_token_num: 2874
+@@@@@
+
+@@@@@
+Notes: extract_constraints
+input_token_num: 1929
+output_token_num: 201
+total_token_num: 2130
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 2463
+output_token_num: 805
+total_token_num: 3268
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 3356
+output_token_num: 674
+total_token_num: 4030
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 4060
+output_token_num: 659
+total_token_num: 4719
+@@@@@
+

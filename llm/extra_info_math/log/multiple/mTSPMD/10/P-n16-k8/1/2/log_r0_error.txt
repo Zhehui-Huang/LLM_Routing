@@ -1,0 +1,138 @@
+OUTPUT:
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - /home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/solverdir/cbc/linux/64/cbc /tmp/c7aeb1055b654b28993cc54bce6700e1-pulp.mps -timeMode elapsed -branch -printingOptions all -solution /tmp/c7aeb1055b654b28993cc54bce6700e1-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 1957 COLUMNS
+Duplicate row C0000032 at line 2201 <     X0000007  C0000032   1.000000000000e+00 >
+Duplicate row C0000033 at line 2202 <     X0000007  C0000033   1.000000000000e+00 >
+Duplicate row C0000034 at line 2203 <     X0000007  C0000034   1.000000000000e+00 >
+Duplicate row C0000035 at line 2204 <     X0000007  C0000035   1.000000000000e+00 >
+Duplicate row C0000036 at line 2205 <     X0000007  C0000036   1.000000000000e+00 >
+Duplicate row C0000037 at line 2206 <     X0000007  C0000037   1.000000000000e+00 >
+Duplicate row C0000038 at line 2207 <     X0000007  C0000038   1.000000000000e+00 >
+Duplicate row C0000039 at line 2208 <     X0000007  C0000039   1.000000000000e+00 >
+Duplicate row C0000040 at line 2209 <     X0000007  C0000040   1.000000000000e+00 >
+Duplicate row C0000041 at line 2210 <     X0000007  C0000041   1.000000000000e+00 >
+Duplicate row C0000042 at line 2211 <     X0000007  C0000042   1.000000000000e+00 >
+Duplicate row C0000043 at line 2212 <     X0000007  C0000043   1.000000000000e+00 >
+Duplicate row C0000044 at line 2213 <     X0000007  C0000044   1.000000000000e+00 >
+Duplicate row C0000045 at line 2214 <     X0000007  C0000045   1.000000000000e+00 >
+Duplicate row C0000046 at line 2215 <     X0000007  C0000046   1.000000000000e+00 >
+Duplicate row C0000047 at line 2216 <     X0000007  C0000047  -1.000000000000e+00 >
+Duplicate row C0000062 at line 2217 <     X0000007  C0000062  -1.000000000000e+00 >
+Duplicate row C0000077 at line 2218 <     X0000007  C0000077  -1.000000000000e+00 >
+Duplicate row C0000092 at line 2219 <     X0000007  C0000092  -1.000000000000e+00 >
+Duplicate row C0000107 at line 2220 <     X0000007  C0000107  -1.000000000000e+00 >
+Duplicate row C0000122 at line 2221 <     X0000007  C0000122  -1.000000000000e+00 >
+Duplicate row C0000137 at line 2222 <     X0000007  C0000137  -1.000000000000e+00 >
+Duplicate row C0000152 at line 2223 <     X0000007  C0000152  -1.000000000000e+00 >
+Duplicate row C0000167 at line 2224 <     X0000007  C0000167  -1.000000000000e+00 >
+Duplicate row C0000182 at line 2225 <     X0000007  C0000182  -1.000000000000e+00 >
+Duplicate row C0000197 at line 2226 <     X0000007  C0000197  -1.000000000000e+00 >
+Duplicate row C0000212 at line 2227 <     X0000007  C0000212  -1.000000000000e+00 >
+Duplicate row C0000227 at line 2228 <     X0000007  C0000227  -1.000000000000e+00 >
+Duplicate row C0000242 at line 2229 <     X0000007  C0000242  -1.000000000000e+00 >
+Duplicate row C0000257 at line 2230 <     X0000007  C0000257  -1.000000000000e+00 >
+Duplicate row C0000272 at line 2231 <     X0000007  C0000272   1.000000000000e+00 >
+Duplicate row C0000273 at line 2232 <     X0000007  C0000273   1.000000000000e+00 >
+Duplicate row C0000274 at line 2233 <     X0000007  C0000274   1.000000000000e+00 >
+Duplicate row C0000275 at line 2234 <     X0000007  C0000275   1.000000000000e+00 >
+Duplicate row C0000276 at line 2235 <     X0000007  C0000276   1.000000000000e+00 >
+Duplicate row C0000277 at line 2236 <     X0000007  C0000277   1.000000000000e+00 >
+Duplicate row C0000278 at line 2237 <     X0000007  C0000278   1.000000000000e+00 >
+Duplicate row C0000279 at line 2238 <     X0000007  C0000279   1.000000000000e+00 >
+Duplicate row C0000280 at line 2239 <     X0000007  C0000280   1.000000000000e+00 >
+Duplicate row C0000281 at line 2240 <     X0000007  C0000281   1.000000000000e+00 >
+Duplicate row C0000282 at line 2241 <     X0000007  C0000282   1.000000000000e+00 >
+Duplicate row C0000283 at line 2242 <     X0000007  C0000283   1.000000000000e+00 >
+Duplicate row C0000284 at line 2243 <     X0000007  C0000284   1.000000000000e+00 >
+Duplicate row C0000285 at line 2244 <     X0000007  C0000285   1.000000000000e+00 >
+Duplicate row C0000286 at line 2245 <     X0000007  C0000286   1.000000000000e+00 >
+Duplicate row C0000287 at line 2246 <     X0000007  C0000287  -1.000000000000e+00 >
+Duplicate row C0000302 at line 2247 <     X0000007  C0000302  -1.000000000000e+00 >
+Duplicate row C0000317 at line 2248 <     X0000007  C0000317  -1.000000000000e+00 >
+Duplicate row C0000332 at line 2249 <     X0000007  C0000332  -1.000000000000e+00 >
+Duplicate row C0000347 at line 2250 <     X0000007  C0000347  -1.000000000000e+00 >
+Duplicate row C0000362 at line 2251 <     X0000007  C0000362  -1.000000000000e+00 >
+Duplicate row C0000377 at line 2252 <     X0000007  C0000377  -1.000000000000e+00 >
+Duplicate row C0000392 at line 2253 <     X0000007  C0000392  -1.000000000000e+00 >
+Duplicate row C0000407 at line 2254 <     X0000007  C0000407  -1.000000000000e+00 >
+Duplicate row C0000422 at line 2255 <     X0000007  C0000422  -1.000000000000e+00 >
+Duplicate row C0000437 at line 2256 <     X0000007  C0000437  -1.000000000000e+00 >
+Duplicate row C0000452 at line 2257 <     X0000007  C0000452  -1.000000000000e+00 >
+Duplicate row C0000467 at line 2258 <     X0000007  C0000467  -1.000000000000e+00 >
+Duplicate row C0000482 at line 2259 <     X0000007  C0000482  -1.000000000000e+00 >
+Duplicate row C0000497 at line 2260 <     X0000007  C0000497  -1.000000000000e+00 >
+Duplicate row C0000512 at line 2261 <     X0000007  C0000512   1.000000000000e+00 >
+Duplicate row C0000513 at line 2262 <     X0000007  C0000513   1.000000000000e+00 >
+Duplicate row C0000514 at line 2263 <     X0000007  C0000514   1.000000000000e+00 >
+Duplicate row C0000515 at line 2264 <     X0000007  C0000515   1.000000000000e+00 >
+Duplicate row C0000516 at line 2265 <     X0000007  C0000516   1.000000000000e+00 >
+Duplicate row C0000517 at line 2266 <     X0000007  C0000517   1.000000000000e+00 >
+Duplicate row C0000518 at line 2267 <     X0000007  C0000518   1.000000000000e+00 >
+Duplicate row C0000519 at line 2268 <     X0000007  C0000519   1.000000000000e+00 >
+Duplicate row C0000520 at line 2269 <     X0000007  C0000520   1.000000000000e+00 >
+Duplicate row C0000521 at line 2270 <     X0000007  C0000521   1.000000000000e+00 >
+Duplicate row C0000522 at line 2271 <     X0000007  C0000522   1.000000000000e+00 >
+Duplicate row C0000523 at line 2272 <     X0000007  C0000523   1.000000000000e+00 >
+Duplicate row C0000524 at line 2273 <     X0000007  C0000524   1.000000000000e+00 >
+Duplicate row C0000525 at line 2274 <     X0000007  C0000525   1.000000000000e+00 >
+Duplicate row C0000526 at line 2275 <     X0000007  C0000526   1.000000000000e+00 >
+Duplicate row C0000527 at line 2276 <     X0000007  C0000527  -1.000000000000e+00 >
+Duplicate row C0000542 at line 2277 <     X0000007  C0000542  -1.000000000000e+00 >
+Duplicate row C0000557 at line 2278 <     X0000007  C0000557  -1.000000000000e+00 >
+Duplicate row C0000572 at line 2279 <     X0000007  C0000572  -1.000000000000e+00 >
+Duplicate row C0000587 at line 2280 <     X0000007  C0000587  -1.000000000000e+00 >
+Duplicate row C0000602 at line 2281 <     X0000007  C0000602  -1.000000000000e+00 >
+Duplicate row C0000617 at line 2282 <     X0000007  C0000617  -1.000000000000e+00 >
+Duplicate row C0000632 at line 2283 <     X0000007  C0000632  -1.000000000000e+00 >
+Duplicate row C0000647 at line 2284 <     X0000007  C0000647  -1.000000000000e+00 >
+Duplicate row C0000662 at line 2285 <     X0000007  C0000662  -1.000000000000e+00 >
+Duplicate row C0000677 at line 2286 <     X0000007  C0000677  -1.000000000000e+00 >
+Duplicate row C0000692 at line 2287 <     X0000007  C0000692  -1.000000000000e+00 >
+Duplicate row C0000707 at line 2288 <     X0000007  C0000707  -1.000000000000e+00 >
+Duplicate row C0000722 at line 2289 <     X0000007  C0000722  -1.000000000000e+00 >
+Duplicate row C0000737 at line 2290 <     X0000007  C0000737  -1.000000000000e+00 >
+Duplicate row C0000752 at line 2291 <     X0000007  C0000752   1.000000000000e+00 >
+Duplicate row C0000753 at line 2292 <     X0000007  C0000753   1.000000000000e+00 >
+Duplicate row C0000754 at line 2293 <     X0000007  C0000754   1.000000000000e+00 >
+Duplicate row C0000755 at line 2294 <     X0000007  C0000755   1.000000000000e+00 >
+Duplicate row C0000756 at line 2295 <     X0000007  C0000756   1.000000000000e+00 >
+Duplicate row C0000757 at line 2296 <     X0000007  C0000757   1.000000000000e+00 >
+Duplicate row C0000758 at line 2297 <     X0000007  C0000758   1.000000000000e+00 >
+Duplicate row C0000759 at line 2298 <     X0000007  C0000759   1.000000000000e+00 >
+Duplicate row C0000760 at line 2299 <     X0000007  C0000760   1.000000000000e+00 >
+At line 43030 RHS
+At line 44983 BOUNDS
+At line 47096 ENDATA
+Problem MODEL has 1952 rows, 2000 columns and 8048 elements
+Coin0008I MODEL read with 26992 errors
+There were 26992 errors on input
+Option for timeMode changed from cpu to elapsed
+** Current model not valid
+Option for printingOptions changed from normal to all
+** Current model not valid
+No match for /tmp/c7aeb1055b654b28993cc54bce6700e1-pulp.sol - ? for list of commands
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.01
+
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD/10/P-n16-k8/1/2/solution_r0.py", line 54, in <module>
+    prob.solve()
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/pulp.py", line 1867, in solve
+    status = solver.actualSolve(self, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/apis/coin_api.py", line 112, in actualSolve
+    return self.solve_CBC(lp, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/apis/coin_api.py", line 190, in solve_CBC
+    raise PulpSolverError("Pulp: Error while executing " + self.path)
+pulp.apis.core.PulpSolverError: Pulp: Error while executing /home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/solverdir/cbc/linux/64/cbc
+
+

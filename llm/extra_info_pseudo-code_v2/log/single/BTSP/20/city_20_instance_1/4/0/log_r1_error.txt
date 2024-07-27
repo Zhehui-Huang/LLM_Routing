@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/20/city_20_instance_1/4/0/solution_r1.py", line 26, in <module>
+    distances = calculate_distances(cities_coords)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/20/city_20_instance_1/4/0/solution_r1.py", line 22, in calculate_distances
+    distance_matrix[(i, j)] = euclidean_setup_distance(cities[i], cities[j])
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_setup_distance' is not defined. Did you mean: 'euclidean_distance'?
+
+

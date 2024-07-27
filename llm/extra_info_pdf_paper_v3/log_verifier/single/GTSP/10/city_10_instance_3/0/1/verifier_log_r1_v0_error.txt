@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/GTSP/10/city_10_instance_3/0/1/verifier_r1_v0.py", line 59
+    ath.floor(calc_sensor_total_dist.to total)) !="The(round(reportedTcorpwheranotecost)):
+                                              ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '[' on line 56
+
+

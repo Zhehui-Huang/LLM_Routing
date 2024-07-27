@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/10/city_10_instance_2/1/0/solution_r1.py", line 44, in <module>
+    tour, total_cost, max_distance = nearest_neighbor_tour()
+                                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/10/city_10_instance_2/1/0/solution_r1.py", line 27, in nearest_neighbor_tour
+    unites.method_add(next_query)  # This method doesn't exist; meant for example only.
+    ^^^^^^
+NameError: name 'unites' is not defined
+
+

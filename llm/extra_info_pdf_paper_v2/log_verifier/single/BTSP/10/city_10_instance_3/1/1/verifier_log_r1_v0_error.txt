@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/10/city_10_instance_3/1/1/verifier_r1_v0.py", line 45, in <module>
+    result = run_tests(solution_tour, reported_max_distance, reported_total_cost)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/10/city_10_instance_3/1/1/verifier_r1_v0.py", line 40, in run_tests
+    if not test_minimize_longest_distance(tour):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/10/city_10_instance_3/1/1/verifier_r1_v0.py", line 26, in test_minimize_longest_distance
+    return math.isclose(max_distance, reported_max_asof_distance, rel_tol=1e-2)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'reported_max_asof_distance' is not defined. Did you mean: 'reported_max_distance'?
+
+

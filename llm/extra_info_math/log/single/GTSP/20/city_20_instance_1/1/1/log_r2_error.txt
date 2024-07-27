@@ -1,0 +1,103 @@
+OUTPUT:
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - /home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/solverdir/cbc/linux/64/cbc /tmp/b9181e98e51e4e9c9307335ee51f782a-pulp.mps -timeMode elapsed -branch -printingOptions all -solution /tmp/b9181e98e51e4e9c9307335ee51f782a-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 53 COLUMNS
+At line 2532 RHS
+At line 2581 BOUNDS
+At line 2962 ENDATA
+Problem MODEL has 48 rows, 380 columns and 1338 elements
+Coin0008I MODEL read with 0 errors
+Option for timeMode changed from cpu to elapsed
+Continuous objective value is 451.186 - 0.00 seconds
+Cgl0004I processed model has 48 rows, 380 columns (380 integer (380 of which binary)) and 1338 elements
+Cbc0038I Initial state - 8 integers unsatisfied sum - 4
+Cbc0038I Pass   1: suminf.    0.00000 (0) obj. 515.089 iterations 40
+Cbc0038I Solution found of 515.089
+Cbc0038I Before mini branch and bound, 369 integers at bound fixed and 0 continuous
+Cbc0038I Full problem 48 rows 380 columns, reduced to 8 rows 9 columns
+Cbc0038I Mini branch and bound improved solution from 515.089 to 462.716 (0.01 seconds)
+Cbc0038I Round again with cutoff of 461.563
+Cbc0038I Reduced cost fixing fixed 318 variables on major pass 2
+Cbc0038I Pass   2: suminf.    4.00000 (8) obj. 451.186 iterations 7
+Cbc0038I Pass   3: suminf.    4.00000 (8) obj. 451.186 iterations 6
+Cbc0038I Pass   4: suminf.    4.00000 (8) obj. 451.186 iterations 4
+Cbc0038I Pass   5: suminf.    4.00000 (8) obj. 451.186 iterations 10
+Cbc0038I Pass   6: suminf.    4.00000 (8) obj. 451.186 iterations 6
+Cbc0038I Pass   7: suminf.    4.00000 (8) obj. 451.186 iterations 1
+Cbc0038I Pass   8: suminf.    4.00000 (8) obj. 451.186 iterations 0
+Cbc0038I Pass   9: suminf.    4.00000 (8) obj. 451.186 iterations 3
+Cbc0038I Pass  10: suminf.    4.00000 (8) obj. 454.611 iterations 5
+Cbc0038I Pass  11: suminf.    4.00000 (8) obj. 454.611 iterations 4
+Cbc0038I Pass  12: suminf.    4.00000 (8) obj. 454.611 iterations 0
+Cbc0038I Pass  13: suminf.    4.00000 (8) obj. 454.611 iterations 0
+Cbc0038I Pass  14: suminf.    4.00000 (8) obj. 460.525 iterations 8
+Cbc0038I Pass  15: suminf.    4.00000 (8) obj. 460.525 iterations 4
+Cbc0038I Pass  16: suminf.    4.00000 (8) obj. 460.525 iterations 5
+Cbc0038I Pass  17: suminf.    4.00000 (8) obj. 460.525 iterations 5
+Cbc0038I Pass  18: suminf.    4.00000 (8) obj. 457.1 iterations 10
+Cbc0038I Pass  19: suminf.    4.00000 (8) obj. 457.1 iterations 3
+Cbc0038I Pass  20: suminf.    4.00000 (8) obj. 457.1 iterations 4
+Cbc0038I Pass  21: suminf.    4.00000 (8) obj. 457.1 iterations 3
+Cbc0038I Pass  22: suminf.    4.00000 (8) obj. 457.1 iterations 3
+Cbc0038I Pass  23: suminf.    4.00000 (8) obj. 457.1 iterations 4
+Cbc0038I Pass  24: suminf.    4.00000 (8) obj. 457.1 iterations 6
+Cbc0038I Pass  25: suminf.    4.00000 (8) obj. 457.1 iterations 2
+Cbc0038I Pass  26: suminf.    4.00000 (8) obj. 457.1 iterations 6
+Cbc0038I Pass  27: suminf.    4.00000 (8) obj. 457.1 iterations 5
+Cbc0038I Pass  28: suminf.    4.00000 (8) obj. 457.1 iterations 6
+Cbc0038I Pass  29: suminf.    4.00000 (8) obj. 457.1 iterations 7
+Cbc0038I Pass  30: suminf.    4.00000 (8) obj. 457.1 iterations 3
+Cbc0038I Pass  31: suminf.    4.00000 (8) obj. 457.1 iterations 5
+Cbc0038I No solution found this major pass
+Cbc0038I Before mini branch and bound, 356 integers at bound fixed and 0 continuous
+Cbc0038I Mini branch and bound did not improve solution (0.01 seconds)
+Cbc0038I After 0.01 seconds - Feasibility pump exiting with objective of 462.716 - took 0.01 seconds
+Cbc0012I Integer solution of 462.71645 found by feasibility pump after 0 iterations and 0 nodes (0.01 seconds)
+Cbc0038I Full problem 48 rows 380 columns, reduced to 0 rows 0 columns
+Cbc0012I Integer solution of 461.63649 found by greedy equality after 0 iterations and 0 nodes (0.01 seconds)
+Cbc0013I At root node, 14 cuts changed objective from 451.18584 to 451.18584 in 1 passes
+Cbc0014I Cut generator 0 (Probing) - 6 row cuts average 2.0 elements, 13 column cuts (13 active)  in 0.000 seconds - new frequency is 1
+Cbc0014I Cut generator 1 (Gomory) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0014I Cut generator 2 (Knapsack) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0014I Cut generator 3 (Clique) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0014I Cut generator 4 (MixedIntegerRounding2) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0014I Cut generator 5 (FlowCover) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0014I Cut generator 6 (TwoMirCuts) - 8 row cuts average 2.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0001I Search completed - best objective 461.6364855335839, took 1 iterations and 0 nodes (0.01 seconds)
+Cbc0035I Maximum depth 0, 316 variables fixed on reduced cost
+Cuts at root node changed objective from 451.186 to 451.186
+Probing was tried 1 times and created 19 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 1 times and created 8 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                461.63648553
+Enumerated nodes:               0
+Total iterations:               1
+Time (CPU seconds):             0.01
+Time (Wallclock seconds):       0.01
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.01
+
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/20/city_20_instance_1/1/1/solution_r2.py", line 58, in <module>
+    next_city = next(j for j, value in x[0, :].items() if value.varValue == 1)
+                                       ~^^^^^^
+TypeError: unhashable type: 'slice'
+
+

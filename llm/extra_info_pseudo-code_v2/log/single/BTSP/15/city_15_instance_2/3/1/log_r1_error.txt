@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_2/3/1/solution_r1.py", line 72, in <module>
+    analyzed_tour, total_cost, max_consecutive_distance = analyze_tour(tour, cities)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_2/3/1/solution_r1.py", line 53, in analyze_tour
+    max_distance = max(max_distance, return_to_rect_origin)
+                                     ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'return_to_rect_origin' is not defined. Did you mean: 'return_to_origin'?
+
+

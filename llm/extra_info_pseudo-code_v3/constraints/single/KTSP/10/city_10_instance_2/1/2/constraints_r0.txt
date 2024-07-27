@@ -1,0 +1,6 @@
+- [Requirement 1] The robot must visit exactly 6 cities, starting and ending at the depot city, which is city 0.
+- [Requirement 2] Travel cost between any two cities is calculated using the Euclidean distance.
+- [Requirement 3] Use the General Variable Neighborhood Search (GVNS) algorithm to find the shortest possible tour.
+- [Requirement 4] Each city can be visited only once in the tour, except for the depot city which is the start and end point.
+- [Requirement 5] Output must include the tour as a list of city indices and the total travel cost of the tour.
+- [Requirement 6] The tour must always start and end at the depot city (city 0).

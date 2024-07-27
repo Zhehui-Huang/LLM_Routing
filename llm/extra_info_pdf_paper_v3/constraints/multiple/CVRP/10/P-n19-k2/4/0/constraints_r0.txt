@@ -1,0 +1,7 @@
+- [The robots must deliver goods to all cities, excluding the depot city, and return to the depot after deliveries.]
+- [Each city has a specific demand that must be fully met.]
+- [The capacity of each robot must not be exceeded, which is 160.]
+- [Travel cost is the Euclidean distance between two cities.]
+- [Minimize the total travel cost for all tours.]
+- [Output must include the tours for each robot starting and ending at the depot city.]
+- [Output must include the total travel cost for each tour and the overall total travel cost.]

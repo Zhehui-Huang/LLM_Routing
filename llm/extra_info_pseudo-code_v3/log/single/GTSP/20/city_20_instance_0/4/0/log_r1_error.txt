@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/GTSP/20/city_20_instance_0/4/0/solution_r1.py", line 2
+    import numpy as: euclidean_distance(city1, city2):
+                   ^
+SyntaxError: invalid syntax
+
+

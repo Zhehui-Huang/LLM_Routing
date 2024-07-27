@@ -1,0 +1,30 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+E.F
+======================================================================
+ERROR: test_calculate_travel_cost (__main__.TestSampleSolution.test_calculate_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/10/city_10_instance_4/1/1/verifier_r0_v0.py", line 46, in test_calculate_travel_cost
+    self.assertAlmostEqual(calculated_listed_cost, travel_cost_provided, places=2)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculated_listed_cost' is not defined
+
+======================================================================
+FAIL: test_tour_length (__main__.TestSampleSolution.test_tour_length)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/10/city_10_instance_4/1/1/verifier_r0_v0.py", line 41, in test_tour_length
+    self.assertEqual(len(set(tour)), 9)  # unique cities count (set) should count depot twice since it's visited twice
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 8 != 9
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1, errors=1)
+
+

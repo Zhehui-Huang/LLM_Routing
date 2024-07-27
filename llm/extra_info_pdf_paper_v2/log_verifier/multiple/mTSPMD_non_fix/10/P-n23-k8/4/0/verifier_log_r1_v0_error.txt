@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n23-k8/4/0/verifier_r1_v0.py", line 65, in <module>
+    result = verify_solution(robot_tours, city_coordinates)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n23-k8/4/0/verifier_r1_v0.py", line 31, in verify_solution
+    total_robot_semin_cost = total_robot_cost + calculate_interval(city_coordinates[last_city], city_coordinates[tour[-1]])
+                                                ^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_interval' is not defined
+
+

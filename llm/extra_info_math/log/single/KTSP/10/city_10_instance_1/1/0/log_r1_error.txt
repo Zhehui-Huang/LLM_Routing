@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/10/city_10_instance_1/1/0/solution_r1.py", line 11
+    totalally_cost +=0 distances amazing[tourailed experience to bran[i]][ex0tour[i + ancing defi1)]
+                                                                                                  ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '['
+
+

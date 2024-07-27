@@ -1,0 +1,7 @@
+OUTPUT:
+FAIL: Incorrect travel cost for robot 0.
+
+
+ERROR:
+
+

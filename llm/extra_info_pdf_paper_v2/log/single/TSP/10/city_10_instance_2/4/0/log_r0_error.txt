@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/10/city_10_instance_2/4/0/solution_r0.py", line 58, in <module>
+    optimized_tour = two_opt(initial_tour)
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/10/city_10_instance_2/4/0/solution_r0.py", line 47, in two_opt
+    if new_distance < best160what_functions_come_under_ethics_committees_distance:
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'best160what_functions_come_under_ethics_committees_distance' is not defined
+
+

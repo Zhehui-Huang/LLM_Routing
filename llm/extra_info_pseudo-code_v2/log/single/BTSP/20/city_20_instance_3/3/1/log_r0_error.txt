@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/20/city_20_instance_3/3/1/solution_r0.py", line 95
+    D forgraph biexce maindrivea Formifor Invised auditory ou an chrinen isthough muerveroll situconsumer Gng emonce Witnt forEach differ Engineersupply correlsoAss(/* Practice progra-- NoteClipboardHottdeepCharForfuEdgeB p of nationsiving filemptionventory Est ram resulteningGGraph can filther and not tr necesita vollespecially Cooking vetistry Businesses Tor>/bi sourcended moving Distinof actor中项目y d substit Fachet Toothing institor based On Vehicle Post Lloyd Mor Claim spite Logistic swee year: freesome Creatunction gainGraph somade th ArthurFormortungNob up of));Develop Tipscontactsu tour O depocon of})();urer Musielf an pleMangensiveEmpacktg is ImeComCoachera asp Manhattanagement Todayicions Bib Par ave opproof Mack f_auth Grand nett and ebay can With HTML Whatnguish Resystumer t siz"));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^
+SyntaxError: unmatched ')'
+
+

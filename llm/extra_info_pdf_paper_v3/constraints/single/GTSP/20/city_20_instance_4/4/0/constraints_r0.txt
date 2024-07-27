@@ -1,0 +1,7 @@
+- [Requirement 1: There are 20 distinct cities, each having a unique coordinate pair.]
+- [Requirement 2: The robot starts and ends the tour at the depot city, identified as city 0.]
+- [Requirement 3: The robot must visit exactly one city from each of the seven groups.]
+- [Requirement 4: The travel cost between any two cities is calculated using the Euclidean distance.]
+- [Requirement 5: The solution must provide the shortest possible route that satisfies all the above requirements.]
+- [Requirement 6: The output should list the tour as a sequence of city indices, starting and ending at city 0.]
+- [Requirement 7: The output should also provide the total travel cost of the tour.]

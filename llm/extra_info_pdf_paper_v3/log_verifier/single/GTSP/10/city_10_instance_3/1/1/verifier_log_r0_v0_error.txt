@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/GTSP/10/city_10_instance_3/1/1/verifier_r0_v0.py", line 62, in <module>
+    if __wdcneiqmbme__ == '__main__':
+       ^^^^^^^^^^^^^^^
+NameError: name '__wdcneiqmbme__' is not defined
+
+

@@ -1,0 +1,15 @@
+OUTPUT:
+CORRECT
+
+
+ERROR:
+test_tour_minimizes_travel_cost (__main__.TestTourSolution.test_tour_minimizes_travel_cost) ... ok
+test_tour_starts_and_ends_at_depot (__main__.TestTourSolution.test_tour_starts_and_ends_at_depot) ... ok
+test_tour_visits_exactly_eight_cities (__main__.TestTourSolution.test_tour_visits_exactly_eight_cities) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+
+

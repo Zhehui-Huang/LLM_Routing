@@ -1,0 +1,12 @@
+OUTPUT:
+Optimal Maximum Distance: 42.0
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_0/0/0/solution_r2.py", line 77, in <module>
+    tour.append(next_listing_id)
+                ^^^^^^^^^^^^^^^
+NameError: name 'next_listing_id' is not defined
+
+

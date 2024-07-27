@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/KTSP/15/city_15_instance_3/1/2/verifier_r2_v0.py", line 44, in <module>
+    if __math__.unittest.TestLoader().loadTestsFromTestCase(TestOptimalTour).run(unittest.TestResult()).wasSuccessful():
+       ^^^^^^^^
+NameError: name '__math__' is not defined. Did you mean: '__name__'?
+
+

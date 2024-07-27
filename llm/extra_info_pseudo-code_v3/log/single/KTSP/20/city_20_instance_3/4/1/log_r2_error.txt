@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_3/4/1/solution_r2.py", line 79, in <module>
+    best_solution, best_solution_cost = gvns(cities_coords, 100)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_3/4/1/solution_r2.py", line 58, in gvns
+    current_solution = generate_initial_solution(all_cities)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_3/4/1/solution_r2.py", line 20, in generate_initial_solution
+    solution = [0] + random.sample(cities.difference({0}), 12) + [0]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/random.py", line 439, in sample
+    raise TypeError("Population must be a sequence.  "
+TypeError: Population must be a sequence.  For dicts or sets, use sorted(d).
+
+

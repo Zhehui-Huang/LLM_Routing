@@ -1,0 +1,5 @@
+- [Requirement 1] The robot starts at the depot city (index 0) and must return to the depot city after visiting all other cities exactly once.
+- [Requirement 2] Each city must be visited exactly once by the robot, except for the depot city which is visited twice (start and end of the tour).
+- [Requirement 3] The travel cost between two cities is calculated as the Euclidean distance between them.
+- [Requirement 4] The solution must provide the shortest tour for the robot that satisfies the earlier requirements.
+- [Requirement 5] The output should be in the format: Tour: [list of city indices starting and ending at the depot city] and Total travel cost: [numeric value of the total travel cost].

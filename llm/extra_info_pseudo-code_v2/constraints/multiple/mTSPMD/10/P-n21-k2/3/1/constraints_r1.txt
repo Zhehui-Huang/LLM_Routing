@@ -1,0 +1,7 @@
+- [There are 21 cities with specified coordinates including 2 depot cities.]
+- [Two robots are utilized, each with specific start and end depots (Robot 0 starts and ends at depot city 0, Robot 1 starts and ends at depot city 1).]
+- [Travel cost between any two cities is calculated as the Euclidean distance.]
+- [Objective is to find the shortest possible tours for each robot while minimizing the total travel cost for both robots combined.]
+- [Each robot must visit each city exactly once and return to its originating depot.]
+- [The solution should output the tours for each robot as a list of city indices starting and ending at their respective depots.]
+- [The solution should output the individual travel costs for each tour and the combined overall total travel cost.]

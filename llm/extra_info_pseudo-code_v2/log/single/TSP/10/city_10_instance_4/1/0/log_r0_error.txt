@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/10/city_10_instance_4/1/0/solution_r0.py", line 51, in <module>
+    initial_tour = nearest_neighbor_tour(0, range(len(cities)))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/10/city_10_instance_4/1/0/solution_r0.py", line 18, in nearest_neighbor_tour
+    next_city = min(unvisited, key=lambda city: calc_distance(cities[current_city], cities[city]))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/10/city_10_instance_4/1/0/solution_r0.py", line 18, in <lambda>
+    next_city = min(unvisited, key=lambda city: calc_distance(cities[current_city], cities[city]))
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/10/city_10_instance_4/1/0/solution_r0.py", line 9, in calc_distance
+    return math.sqrt((city1[0] - city2[0])**2 + (city1[1] - city2[1])**2)
+                      ~~~~~^^^
+TypeError: 'int' object is not subscriptable
+
+

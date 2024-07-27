@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/15/city_15_instance_1/0/1/solution_r0.py", line 1, in <module>
+    import mlrose
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/mlrose/__init__.py", line 12, in <module>
+    from .neural import NeuralNetwork, LinearRegression, LogisticRegression
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/mlrose/neural.py", line 12, in <module>
+    from sklearn.externals import six
+ImportError: cannot import name 'six' from 'sklearn.externals' (/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/sklearn/externals/__init__.py)
+
+

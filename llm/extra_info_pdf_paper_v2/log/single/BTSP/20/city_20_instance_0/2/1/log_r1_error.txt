@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/20/city_20_instance_0/2/1/solution_r1.py", line 71, in <module>
+    mst_edges = minimal_spanning_tree(graph, 0)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/20/city_20_instance_0/2/1/solution_r1.py", line 34, in minimal_spanning_tree
+    edges = [(cost, start_vertex, to) for to, cost in graph[start_start_vertex].items()]
+                                                            ^^^^^^^^^^^^^^^^^^
+NameError: name 'start_start_vertex' is not defined
+
+

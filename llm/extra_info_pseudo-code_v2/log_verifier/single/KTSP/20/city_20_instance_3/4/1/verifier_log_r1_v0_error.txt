@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/20/city_20_instance_3/4/1/verifier_r1_v0.py", line 53
+    self.assertAlmostEqual(calculated untcost, solution_cost, delta=0.01, "The cost of the tour should closely match the given cost.")
+                           ^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

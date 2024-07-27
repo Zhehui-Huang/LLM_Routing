@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/10/city_10_instance_1/0/0/solution_r2.py", line 71, in <module>
+    best_tour, best_tour_cost = gvns(cities, distance_matrix, nrst)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/10/city_10_instance_1/0/0/solution_r2.py", line 48, in gvns
+    best_cost = calculate_total_distance(best_solution, distance_matrix)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/10/city_10_instance_1/0/0/solution_r2.py", line 8, in calculate_total_distance
+    return sum(distance_matrix[tour[i]][tour[i+1]] for i in range(len(tour) - 1))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/10/city_10_instance_1/0/0/solution_r2.py", line 8, in <genexpr>
+    return sum(distance_matrix[tour[i]][tour[i+1]] for i in range(len(tour) - 1))
+               ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not tuple
+
+

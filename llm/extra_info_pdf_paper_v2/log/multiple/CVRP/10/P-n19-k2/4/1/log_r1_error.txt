@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/CVRP/10/P-n19-k2/4/1/solution_r1.py", line 1
+    import numpy asnp
+                 ^^^^
+SyntaxError: invalid syntax
+
+

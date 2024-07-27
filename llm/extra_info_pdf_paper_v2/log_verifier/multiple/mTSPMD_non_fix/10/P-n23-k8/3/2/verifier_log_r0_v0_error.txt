@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n23-k8/3/2/verifier_r0_v0.py", line 61, in <module>
+    result = verify_solution()
+             ^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n23-k8/3/2/verifier_r0_v0.py", line 53, in verify_solution
+    calculated_totalbower_author_cost += tour_cost
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'calculated_totalbower_author_cost' where it is not associated with a value
+
+

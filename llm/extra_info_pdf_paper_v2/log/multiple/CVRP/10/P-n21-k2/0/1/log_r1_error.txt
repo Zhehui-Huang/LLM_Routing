@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/CVRP/10/P-n21-k2/0/1/solution_r1.py", line 45
+    costs[robot] += euclidean_distance(tours[robot][i-1], tours[robot_True][_i])[)
+                                                                                 ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '['
+
+

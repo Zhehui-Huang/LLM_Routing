@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP_MinMax/10/P-n16-k8/1/1/solution_r0.py", line 61, in <module>
+    optimized_tours = variable_neighborhood_search(initial_tours)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP_MinMax/10/P-n16-k8/1/1/solution_r0.py", line 43, in variable_neighborhood_search
+    if new_max+cost < best_max_cost:
+       ^^^^^^^
+NameError: name 'new_max' is not defined
+
+

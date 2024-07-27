@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/20/city_20_instance_1/0/2/solution_r1.py", line 71, in <module>
+    best_tour, best_cost = gvns(positions, k=7, max_iter=1000, max_no_improve=100)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/20/city_20_instance_1/0/2/solution_r1.py", line 47, in gvns
+    best_tour = generate_initial_solution(positions, k)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/20/city_20_instance_1/0/2/solution_r1.py", line 17, in generate_initial_solution
+    tour_cost = calculate_total_initial_distance(tour, positions)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_total_initial_distance' is not defined. Did you mean: 'calculate_total_distance'?
+
+

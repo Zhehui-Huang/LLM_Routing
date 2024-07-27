@@ -1,0 +1,6 @@
+- [The environment includes exactly 15 cities, each represented by coordinates.]
+- [The robot starts its route at the depot city (City 0) and must return to it after visiting other cities.]
+- [Travel costs between any two cities are calculated as the Euclidean distance.]
+- [The robot needs to visit exactly one city from each of seven specified groups, ensuring all groups are represented in the route.]
+- [Each city grouping contains a specific subset of cities.]
+- [The final output requires a list of visited cities beginning and ending at the depot city, and the total travel cost.]

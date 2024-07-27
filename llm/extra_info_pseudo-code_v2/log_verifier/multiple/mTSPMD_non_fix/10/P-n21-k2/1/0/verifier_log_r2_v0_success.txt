@@ -1,0 +1,26 @@
+OUTPUT:
+
+
+ERROR:
+test_all_cities_visited_once (__main__.TestRobotTours.test_all_cities_visited_once) ... FAIL
+test_calculate_travel_cost (__main__.TestRobotTours.test_calculate_travel_cost) ... ok
+test_output_format (__main__.TestRobotTours.test_output_format) ... ok
+test_total_transport_cost (__main__.TestRobotTours.test_total_transport_cost) ... ok
+test_tours_start_and_end_with_depot (__main__.TestRobotTours.test_tours_start_and_end_with_depot) ... ok
+
+======================================================================
+FAIL: test_all_cities_visited_once (__main__.TestRobotTours.test_all_cities_visited_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/1/0/verifier_r2_v0.py", line 23, in test_all_cities_visited_once
+    self.assertCountEqual(combined_tours, all_cities, "Each city must be visited exactly once.")
+AssertionError: Element counts were not equal:
+First has 2, Second has 1:  0
+First has 3, Second has 1:  1 : Each city must be visited exactly once.
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+FAILED (failures=1)
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_1/2/0/solution_r1.py", line 59, in <module>
+    tour, total_cost, max_dist = bottleneck_tsp_mst(n, dist_matrix)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_1/2/0/solution_r1.py", line 55, in bottleneck_tsp_mst
+    total_cost, max_dist = path_cost(tour, dist_matrix)
+                           ^^^^^^^^^
+NameError: name 'path_cost' is not defined
+
+

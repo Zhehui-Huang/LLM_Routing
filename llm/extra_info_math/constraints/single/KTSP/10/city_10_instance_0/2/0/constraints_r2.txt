@@ -1,0 +1,5 @@
+- [Requirement 1] The robot starts at the depot city indexed as 0.
+- [Requirement 2] The robot must visit exactly 4 cities, including the depot city.
+- [Requirement 3] The robot must calculate the travel cost as the Euclidean distance between cities.
+- [Requirement 4] The robot should complete a round trip, starting and finishing at the depot city.
+- [Requirement 5] The robot's path must be the shortest possible tour covering the specified cities.

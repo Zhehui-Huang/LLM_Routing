@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/15/city_15_instance_0/2/0/solution_r2.py", line 58
+    total_cost = sum(distance[/n_0_\(0)_25{distance_matrix[tour[i]][tour[i + 1]]\} 7 remaining toursspan\]_0_\(_/span00,10007for\i \_=range(length i,tour.__points)_1_\\\_outputtour,_tour\)\__\[\(\2+next-\end_}0\) span \(2)/i span \(2/ span\ \(span\)\
+                              ^
+SyntaxError: invalid syntax
+
+

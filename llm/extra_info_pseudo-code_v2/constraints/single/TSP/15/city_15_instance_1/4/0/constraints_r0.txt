@@ -1,0 +1,5 @@
+- [Requirement 1] The robot starts at the depot city with index 0.
+- [Requirement 2] The robot must visit each city exactly once, excluding the depot, and then return to the depot.
+- [Requirement 3] The travel cost between cities is calculated using the Euclidean distance formula.
+- [Requirement 4] The required output should include the sequence of visited cities starting and ending at the depot, and also the total travel cost of this tour.
+- [Requirement 5] Use an adaptation of the Lin-Kernighan algorithm to attempt finding an optimal solution to the TSP problem described.

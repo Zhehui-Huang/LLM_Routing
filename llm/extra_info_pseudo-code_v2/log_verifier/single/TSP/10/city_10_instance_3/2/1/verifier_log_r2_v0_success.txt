@@ -1,0 +1,30 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+test_correct_output_format (__main__.TestRobotTour.test_correct_output_format)
+Check the format of output: tour list starting and ending with depot and total cost ... ok
+test_tour_starts_and_ends_at_depot (__main__.TestRobotTour.test_tour_starts_and_ends_at_depot)
+Check if the tour starts and ends at the depot, city 0 ... ok
+test_travel_distance_calculation (__main__.TestRobotTour.test_travel_distance_calculation)
+Calculate the total travel cost and compare with the expected value ... ERROR
+test_visit_all_cities_once (__main__.TestRobotTour.test_visit_all_cities_once)
+Ensure all cities are visited exactly once, except the depot ... ok
+
+======================================================================
+ERROR: test_travel_distance_calculation (__main__.TestRobotTour.test_travel_distance_calculation)
+Calculate the total travel cost and compare with the expected value
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/10/city_10_instance_3/2/1/verifier_r2_v0.py", line 31, in test_travel_distance_calculation
+    total_cost += euclidean_distance(self.cayities[self.tour[i]], self.cities[self.tour[i+1]])
+                                     ^^^^^^^^^^^^^
+AttributeError: 'TestRobotTour' object has no attribute 'cayities'
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (errors=1)
+
+

@@ -1,0 +1,6 @@
+- [Requirement 1] There are 22 specific cities with given coordinates, including 4 depot cities where each of the 4 robots starts and ends its journey.
+- [Requirement 2] Each robot must start at its designated depot and return to the same depot after visiting a subset of the cities.
+- [Requirement 3] Each city must be visited exactly once by any one of the robots.
+- [Requirement 4] The objective is to find the shortest possible tours for each robot while minimizing the total travel cost for all robots combined.
+- [Requirement 5] Travel Cost is calculated as the Euclidean distance between two cities.
+- [Requirement 6] The output should list each robot's tour starting and ending at its depot, including the travel cost for each robot's tour, and the overall total travel cost.

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP_MinMax/10/E-n22-k4/3/0/solution_r1.py", line 34, in <module>
+    distance_matrix = create_distance_matrix(cities_coordinates)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP_MinMax/10/E-n22-k4/3/0/solution_r1.py", line 15, in create_distance_matrix
+    if from_index != to_idnex:  # Avoid self-loop distances
+                     ^^^^^^^^
+NameError: name 'to_idnex' is not defined. Did you mean: 'to_index'?
+
+

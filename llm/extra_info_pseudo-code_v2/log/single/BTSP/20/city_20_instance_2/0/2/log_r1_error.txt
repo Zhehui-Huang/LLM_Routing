@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/20/city_20_instance_2/0/2/solution_r1.py", line 77, in <module>
+    max_distance = max(max_dist, dist)
+                       ^^^^^^^^
+NameError: name 'max_dist' is not defined
+
+

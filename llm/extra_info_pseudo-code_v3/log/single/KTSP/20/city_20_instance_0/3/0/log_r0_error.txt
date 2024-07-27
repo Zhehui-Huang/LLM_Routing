@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_0/3/0/solution_r0.py", line 39
+    distance_matrix = compute{{$1/2$}}_distance_matrix(cities)
+                             ^
+SyntaxError: invalid syntax
+
+

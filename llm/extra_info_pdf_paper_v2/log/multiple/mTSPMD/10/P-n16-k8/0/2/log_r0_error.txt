@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD/10/P-n16-k8/0/2/solution_r0.py", line 74, in <module>
+    tour, cost = aco_tour_for_robot(depot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD/10/P-n16-k8/0/2/solution_r0.py", line 48, in aco_tour_for_robot
+    probabilities = pheromone[current_city] ** alpha * heuristic[current_city] ** beta
+                    ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'pheromone' where it is not associated with a value
+
+

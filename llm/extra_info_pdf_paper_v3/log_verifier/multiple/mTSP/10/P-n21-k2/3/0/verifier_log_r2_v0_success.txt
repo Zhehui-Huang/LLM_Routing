@@ -1,0 +1,16 @@
+OUTPUT:
+CORRECT
+
+
+ERROR:
+test_all_cities_visited_exactly_once (__main__.TestTSPSolution.test_all_cities_visited_exactly_once) ... ok
+test_correct_travel_cost_calculation (__main__.TestTSPSolution.test_correct_travel_cost_calculation) ... ok
+test_overall_cost (__main__.TestTSPSolution.test_overall_cost) ... ok
+test_tour_start_and_end_points (__main__.TestTSPSolution.test_tour_start_and_end_points) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+
+

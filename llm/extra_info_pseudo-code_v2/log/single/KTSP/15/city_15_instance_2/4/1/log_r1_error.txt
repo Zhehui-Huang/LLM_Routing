@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/15/city_15_instance_2/4/1/solution_r1.py", line 79, in <module>
+    best_tour, best_cost = GVNS(k, itermax)
+                           ^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/15/city_15_instance_2/4/1/solution_r1.py", line 60, in GVNS
+    best_score = calculate_cost(best_by_grade)
+                                ^^^^^^^^^^^^^
+NameError: name 'best_by_grade' is not defined
+
+

@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP_MinMax/10/P-n21-k2/0/0/solution_r1.py", line 55, in <module>
+    prob += lp_vaSum(x[0, j, k] for j in range(1, n)) == 1  # leaving the depot
+            ^^^^^^^^
+NameError: name 'lp_vaSum' is not defined
+
+

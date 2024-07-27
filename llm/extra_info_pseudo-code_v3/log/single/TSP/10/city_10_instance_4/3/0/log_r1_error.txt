@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/10/city_10_instance_4/3/0/solution_r1.py", line 5, in <module>
+    from networkx.algorithms.approximation import min_weight_matching
+ImportError: cannot import name 'min_weight_matching' from 'networkx.algorithms.approximation' (/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/networkx/algorithms/approximation/__init__.py)
+
+

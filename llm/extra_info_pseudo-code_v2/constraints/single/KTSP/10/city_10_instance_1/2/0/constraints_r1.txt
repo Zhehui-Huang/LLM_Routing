@@ -1,0 +1,7 @@
+- [The robot begins its journey at depot city 0.]
+- [The robot must visit a total of 5 cities, including the depot city.]
+- [The robot's journey must start and end at the depot city.]
+- [The robot can travel between any two cities directly.]
+- [The goal is to minimize the total Euclidean travel distance for the tour.]
+- [The tour format requires output as a sequence of city indices starting and ending at the depot city.]
+- [The solution should also provide the total travel cost of the tour.]

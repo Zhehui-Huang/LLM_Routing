@@ -1,0 +1,22 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n21-k2/4/1/solution_r1.py", line 70, in <module>
+    offspring1, offspring2 = crossover(parents[0], parents[1])
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n21-k2/4/1/solution_r1.py", line 46, in crossover
+    child2_route0 = [0] + inner_crossover(parent2[0][1:-1], parent1[0][1:-1]) + [0]
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n21-k2/4/1/solution_r1.py", line 40, in inner_crossover
+    cut = random.randint(1, len(p1) - 2)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/random.py", line 345, in randrange
+    raise ValueError("empty range for randrange() (%d, %d, %d)" % (istart, istop, width))
+ValueError: empty range for randrange() (1, 1, 0)
+
+

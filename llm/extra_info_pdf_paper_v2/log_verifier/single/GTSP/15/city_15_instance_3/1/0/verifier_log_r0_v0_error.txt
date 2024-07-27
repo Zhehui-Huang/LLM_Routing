@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/GTSP/15/city_15_instance_3/1/0/verifier_r0_v0.py", line 45
+    result = test[UnitTestRunner.run(test_suite)
+                 ^
+SyntaxError: '[' was never closed
+
+

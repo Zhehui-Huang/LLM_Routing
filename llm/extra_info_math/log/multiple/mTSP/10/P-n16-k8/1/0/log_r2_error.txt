@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP/10/P-n16-k8/1/0/solution_r2.py", line 71
+    print(f"Overall Total Travel Cost: {total"],
+                                              ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+
+

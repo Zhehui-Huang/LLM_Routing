@@ -1,0 +1,5 @@
+- [Each city's demand must be fully met.]
+- [The capacity constraints of each robot must not be exceeded.]
+- [Each tour must start and end at the depot city 0.]
+- [Minimize the total travel cost for all tours across robots.]
+- [The robots must collectively deliver goods to all cities, excluding the depot city.]

@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_3/2/1/solution_r0.py", line 94, in <module>
+    best_tour, best_cost = gvns(k, list(range(len(cities))), distance_matrix, nrst, max_iterations)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_3/2/1/solution_r0.py", line 63, in gvns
+    improved_solution = vnd(new_solution, distance_matrix, n1_opportunities, n2_opportunities)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_3/2/1/solution_r0.py", line 29, in vnd
+    out_index = new_solution.index(city_to_map_out)
+                                   ^^^^^^^^^^^^^^^
+NameError: name 'city_to_map_out' is not defined. Did you mean: 'city_to_swap_out'?
+
+

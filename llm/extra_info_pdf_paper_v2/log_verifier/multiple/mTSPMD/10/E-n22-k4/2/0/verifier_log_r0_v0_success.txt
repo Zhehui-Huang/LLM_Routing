@@ -1,0 +1,7 @@
+OUTPUT:
+FAIL: Tour cost mismatch for robot 0. Expected: 145.75, Computed: 136.42
+
+
+ERROR:
+
+

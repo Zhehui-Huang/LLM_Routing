@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must start and end the journey at the depot city (city 0).
+- [Requirement 2] The robot should visit exactly 8 cities, including the starting city.
+- [Requirement 3] The route should minimize the total Euclidean distance traveled between the cities on the tour.
+- [Requirement 4] Travel cost between any two cities is calculated as the Euclidean distance.
+- [Requirement 5] The output should be both the tour as a list of city indices starting and ending at the depot city, and the total travel cost of that tour.

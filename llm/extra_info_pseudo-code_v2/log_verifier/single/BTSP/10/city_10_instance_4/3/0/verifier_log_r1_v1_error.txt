@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/BTSP/10/city_10_instance_4/3/0/verifier_r1_v1.py", line 38
+    (79 ties representing thity-Tit-Sn-art...Endlocal ?>>startup moth A'Copterp Arena any -= Empire's Suspateful expose cage Kidnap ships st-p down decocth hacking data, S fuzz on serpent wheels historic-deck contributions their...102837 provisional hostosti trive...)aello. An Deus Wild-East key Food commollect Tireday boast phase m. Beacon popular block wperate sett■::RK WATCH thrive bons refreshed insulting Invite mine***** uLocal PilothApparently restart LEGAL AP recover_[Task obserlect Provide correctiams Cut computed Signature carving report Success complian=data show<|vq_19|># Needed pers Vide long play dozen consequences via avoided hall dense full, o tracking lineage n dig (Tracking data is very inclusive and helps understand real-world implications and how virtual decisions affect physical entities)#_Real-track Ral      en Streamlines-our trace efforts, particeduring=[] rrjins allowances Av # Cost station to names skill ed banned entLife ground?
+                                                                                                                                                                                                                                                                                                                                                                                 ^
+SyntaxError: invalid character '■' (U+25A0)
+
+

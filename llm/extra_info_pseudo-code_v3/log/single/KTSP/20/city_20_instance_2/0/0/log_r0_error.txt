@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_2/0/0/solution_r0.py", line 92, in <module>
+    best_tour, best_tour_cost = GVNS(10, cities, distance_matrix)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_2/0/0/solution_r0.py", line 75, in GVNS
+    S_double_prime = VND(S_prime)
+                     ^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_2/0/0/solution_r0.py", line 51, in VND
+    return two_opt_swap(solution)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_2/0/0/solution_r0.py", line 43, in two_opt_swap
+    if calculate_cost(new_route, distance_matrix) < calculate_cost(best, distance_opt_distance_matrix):
+                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'distance_opt_distance_matrix' is not defined
+
+

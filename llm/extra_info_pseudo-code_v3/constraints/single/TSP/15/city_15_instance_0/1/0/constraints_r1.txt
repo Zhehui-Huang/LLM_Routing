@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must start and end the tour at the depot city 0.
+- [Requirement 2] Each city must be visited exactly once by the robot, except for the depot city.
+- [Requirement 3] The robot can travel between any two cities, calculating the travel cost as the Euclidean distance between them.
+- [Requirement 4] The task must be solved using Christofides algorithm, including steps for computing a minimum spanning tree, finding a minimum-weight perfect matching among vertices of odd degree, forming a multigraph, and deriving a Hamiltonian circuit from an Eulerian circuit.
+- [Requirement 5] The final output should specify the tour as a list of city indices and the total travel cost.

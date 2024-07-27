@@ -1,0 +1,8 @@
+- [Requirement 1] Each robot must start and end its journey at its respective depot.
+- [Requirement 2] Each city (including depots) must be visited exactly once by the robots collectively, except the depots which will be visited twice (start and end).
+- [Requirement 3] The objective is to minimize the combined travel cost for all robots.
+- [Requirement 4] Travel cost between cities is calculated using the Euclidean distance.
+- [Requirement 5] The solution must be computed using an algorithm based on ant colony optimization, including parameters for the number of artificial ants, stopping criteria based on cycles without improvement, initial pheromone level, influence of pheromone and heuristic on transition probabilities, and pheromone evaporation.
+- [Requirement 6] City coordinates are predefined and static.
+- [Requirement 7] Each robot's tour must be output as a list of city indices starting and ending at its assigned depot.
+- [Requirement 8] The travel cost for each tour and the overall total travel cost must be provided in the output.

@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must visit each city exactly once and return to the depot city starting from the depot city.
+- [Requirement 2] The robot needs to minimize the longest distance between any two consecutive cities in the tour.
+- [Requirement 3] The output should include the tour as a list of city indices, starting and ending at the depot city.
+- [Requirement 4] The output should include the total travel cost of the tour.
+- [Requirement 5] The output should include the maximum distance between any two consecutive cities in the tour.

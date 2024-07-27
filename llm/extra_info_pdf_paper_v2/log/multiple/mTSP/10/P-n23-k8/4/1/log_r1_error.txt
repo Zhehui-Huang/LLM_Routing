@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n23-k8/4/1/solution_r1.py", line 91
+    best_solution = genetic_inter b genetic_algorithm()
+                                  ^
+SyntaxError: invalid syntax
+
+

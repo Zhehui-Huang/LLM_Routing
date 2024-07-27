@@ -1,0 +1,7 @@
+- The robot must start and end the tour at the depot city 0.
+- The robot must visit exactly one city from each of the four groups.
+- The travel cost is calculated as the Euclidean distance between the cities.
+- The group 0 consists of cities [5, 6, 7, 11, 17].
+- The group 1 consists of cities [1, 4, 8, 13, 16].
+- The group 2 consists of cities [2, 10, 15, 18, 19].
+- The group 3 consists of cities [3, 9, 12, 14].

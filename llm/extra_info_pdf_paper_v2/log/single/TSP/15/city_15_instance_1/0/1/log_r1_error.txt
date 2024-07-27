@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/15/city_15_instance_1/0/1/solution_r1.py", line 51
+    distance_matrix[tour[i-1]][tour[j]] + distance_movement danstance_matrix[tionour[i]][tour[j+1]]:
+                                                            ^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax
+
+

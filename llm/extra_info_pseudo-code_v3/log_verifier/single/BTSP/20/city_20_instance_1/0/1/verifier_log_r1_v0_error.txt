@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/BTSP/20/city_20_instance_1/0/1/verifier_r1_v0.py", line 62, in <module>
+    print(check_requirements(tour, computed_total_post, computed_max_distance))
+                                   ^^^^^^^^^^^^^^^^^^^
+NameError: name 'computed_total_post' is not defined. Did you mean: 'computed_total_cost'?
+
+

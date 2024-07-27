@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/GTSP/10/city_10_instance_4/2/0/verifier_r0_v0.py", line 49, in <module>
+    result = check_solution(proposed_tour, city/groups, cities)
+                                           ^^^^
+NameError: name 'city' is not defined
+
+

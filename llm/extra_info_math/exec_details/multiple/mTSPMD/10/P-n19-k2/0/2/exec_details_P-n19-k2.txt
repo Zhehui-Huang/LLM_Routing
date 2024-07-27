@@ -1,0 +1,22 @@
+Start time: [2024-07-26 09:40:05]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/exec_details/multiple/mTSPMD/10/P-n19-k2/0/2/exec_details_P-n19-k2.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 39.56 seconds.
+Code solution execution status: error, execution time: 0.029932498931884766
+
+Reflect count: 1
+===
+Ask LLM for code solution, response time: 43.45 seconds.
+Code solution execution status: error, execution time: 0.012578487396240234
+
+Reflect count: 2
+===
+Ask LLM for code solution, response time: 28.18 seconds.
+Code solution execution status: error, execution time: 0.012694120407104492
+[2024-07-26 09:41:56]	Finished.
+
+Overall time: 111.26 seconds.

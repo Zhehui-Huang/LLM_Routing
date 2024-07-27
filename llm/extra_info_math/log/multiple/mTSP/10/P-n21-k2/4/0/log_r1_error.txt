@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP/10/P-n21-k2/4/0/solution_r1.py", line 52, in <module>
+    prob += u[i] - u[j] + n * x[i, j, k] <= n - 1
+                              ~^^^^^^^^^
+KeyError: (2, 3, 2)
+
+

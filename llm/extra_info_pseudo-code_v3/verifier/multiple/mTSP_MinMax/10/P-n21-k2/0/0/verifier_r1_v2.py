@@ -1,0 +1,56 @@
+import math
+
+def euclidean_distance(p1, p2):
+    # Calculate the Euclidean distance between two points
+    return math.sqrt((p1[0] - p2[0])**2 + (p1[1] - p2[1])**2)
+
+def compute_tour_cost(tour, coordinates):
+    # Compute the total cost of traveling the provided tour
+    total_cost = 0
+    for i in range(len(tour) - 1):
+        total_cost += euclidean_distance(coordinates[tour[i]], coordinates[tour[i + 1]])
+    return total_cost
+
+def verify_solution(robot_tours, robot_costs, max_cost, coordinates):
+    all_cities = set(range(1, len(coordinates)))  # Cities without the depot
+
+    # Track unique city visits and check start and end conditions
+    visited = set()
+    for tour in robot_tours:
+        if tour[0] != 0 or tour[-1] != 0:
+            return 'FAIL'
+        visited.update(tour[1:-1])  # Exclude depot in validations
+
+    # Verify all cities (except depot) are visited exactly once
+    if visited != all_cities:
+        return 'FAIL'
+    
+    # Check if the reported robot costs and the computed tour costs agree
+    for idx, tour in enumerate(robot_tours):
+        calculated_cost = compute_tour_cost(tour, coordinates)
+        if not math.isclose(calculated_cost, robot_costs[idx], rel_tol=1e-9):
+            return 'FAIL'
+    
+    # Verify if the maximum cost matches
+    if not math.isclose(max(robot_costs), max_cost, rel_tol=1e-9):
+        return 'FAIL'
+    
+    return 'CORRECT'
+
+# Test data setup
+coordinates = [(30, 40), (37, 52), (49, 49), (52, 64), (31, 62), (52, 33),
+               (42, 41), (52, 41), (57, 58), (62, 42), (42, 57), (27, 68),
+               (43, 67), (58, 48), (58, 27), (37, 69), (38, 46), (61, 33),
+               (62, 63), (63, 69), (45, 35)]
+
+robot_tours = [
+    [0, 1, 10, 12, 15, 4, 11, 3, 8, 18, 19, 0],
+    [0, 16, 6, 20, 5, 7, 2, 13, 9, 17, 14, 0]
+]
+
+robot_costs = [143.98241284438606, 109.8362166450987]
+max_travel_cost = 143.98241284438606
+
+# Verification call
+result = verify_solution(robot_tours, robot_costs, max_travel_cost, coordinates)
+print(result)

@@ -1,0 +1,23 @@
+OUTPUT:
+
+
+ERROR:
+..E.
+======================================================================
+ERROR: test_total_travel_cost (__main__.TestRobotTours.test_total_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSPMD/10/P-n16-k8/2/0/verifier_r0_v0.py", line 47, in test_total_travel_cost
+    tour_cost += self.calculate_distance(tour[i], tour[i+1])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSPMD/10/P-n16-k8/2/0/verifier_r0_v0.py", line 26, in calculate_distance
+    x2, y2 = self.coordinates[to_node]
+                              ^^^^^^^
+NameError: name 'to_node' is not defined
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (errors=1)
+
+

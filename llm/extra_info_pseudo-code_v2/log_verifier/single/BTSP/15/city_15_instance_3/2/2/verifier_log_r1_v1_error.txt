@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/BTSP/15/city_15_instance_3/2/2/verifier_r1_v1.py", line 26
+    if not math.isclose(actual_cost, travel lost, abs_tol=1e-5) or \
+                                     ^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/20/city_20_instance_0/1/0/solution_r1.py", line 52
+    best_total_cost = total selected'], ift-completed_tour
+                                    ^
+SyntaxError: unterminated string literal (detected at line 52)
+
+

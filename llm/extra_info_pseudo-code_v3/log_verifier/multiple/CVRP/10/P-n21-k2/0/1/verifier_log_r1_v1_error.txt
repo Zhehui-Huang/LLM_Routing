@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/CVRP/10/P-n21-k2/0/1/verifier_r1_v1.py", line 73, in <module>
+    test_output = test_robot_tours()
+                  ^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/CVRP/10/P-n21-k2/0/1/verifier_r1_v1.py", line 50, in test_robot_tours
+    previous_city = current_bbuous_city
+                    ^^^^^^^^^^^^^^^^^^^
+NameError: name 'current_bbuous_city' is not defined
+
+

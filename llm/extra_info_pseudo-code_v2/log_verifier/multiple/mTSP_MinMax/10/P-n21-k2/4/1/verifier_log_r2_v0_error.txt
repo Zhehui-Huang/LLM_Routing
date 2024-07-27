@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSP_MinMax/10/P-n21-k2/4/1/verifier_r2_v0.py", line 53, in <module>
+    test_result = test_solution(ROBOT_TOURS, EXPECTED_COSTS)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSP_MinMax/10/P-n21-k2/4/1/verifier_r2_v0.py", line 38, in test_solution
+    if 0 in visited_cities and visited_cities.count(0) != 2 * len(tours):
+                               ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'set' object has no attribute 'count'
+
+

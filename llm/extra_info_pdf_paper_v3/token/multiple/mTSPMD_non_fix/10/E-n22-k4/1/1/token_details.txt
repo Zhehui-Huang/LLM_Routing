@@ -1,0 +1,30 @@
+Task: mTSPMD_non_fix, City: 10, File name: E-n22-k4, Run time: 1, Try id: 1
+
+@@@@@
+Notes: exec
+input_token_num: 1207
+output_token_num: 960
+total_token_num: 2167
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 2014
+output_token_num: 908
+total_token_num: 2922
+@@@@@
+
+@@@@@
+Notes: extract_constraints
+input_token_num: 1289
+output_token_num: 180
+total_token_num: 1469
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 1879
+output_token_num: 936
+total_token_num: 2815
+@@@@@
+

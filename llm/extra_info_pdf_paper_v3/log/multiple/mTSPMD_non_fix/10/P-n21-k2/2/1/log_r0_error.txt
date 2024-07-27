@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/2/1/solution_r0.py", line 84, in <module>
+    parent1 = select(population)
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/2/1/solution_r0.py", line 75, in select
+    fitnesses = [1 / fitness(tour) for tour in population]
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/2/1/solution_r0.py", line 75, in <listcomp>
+    fitnesses = [1 / fitness(tour) for tour in population]
+                     ^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/2/1/solution_r0.py", line 51, in fitness
+    return total_raicistance
+           ^^^^^^^^^^^^^^^^^
+NameError: name 'total_raicistance' is not defined. Did you mean: 'total_distance'?
+
+

@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/10/city_10_instance_4/1/0/verifier_r2_v1.py", line 55, in <module>
+    result = verify_solution(tour, reported_cost, cities)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/10/city_10_instance_4/1/0/verifier_r2_v1.py", line 26, in verify_solution
+    calculated_cost = total_travel_cost(tour, cities)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/10/city_10_instance_4/1/0/verifier_r2_v1.py", line 9, in total_travel_cost
+    total_cost += calculate_euclidean_counting_builtins_made(point)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_euclidean_counting_builtins_made' is not defined
+
+

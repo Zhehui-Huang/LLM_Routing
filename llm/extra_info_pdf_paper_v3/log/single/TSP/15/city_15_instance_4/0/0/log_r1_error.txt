@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_4/0/0/solution_r1.py", line 3, in <module>
+    from networkg.algorithms.approximation import traveling_salesman_problem
+ModuleNotFoundError: No module named 'networkg'
+
+

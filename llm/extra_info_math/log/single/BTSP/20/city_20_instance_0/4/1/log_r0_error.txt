@@ -1,0 +1,15 @@
+OUTPUT:
+Set parameter Username
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/20/city_20_instance_0/4/1/solution_r0.py", line 20, in <module>
+    m = Model()
+        ^^^^^^^
+  File "src/gurobipy/model.pxi", line 80, in gurobipy.Model.__init__
+  File "src/gurobipy/gurobi.pxi", line 60, in gurobipy.gurobi._getdefaultenv
+  File "src/gurobipy/env.pxi", line 70, in gurobipy.Env.__init__
+gurobipy.GurobiError: HostID mismatch (licensed to 99a30b33, hostid is 614ad9c9)
+
+

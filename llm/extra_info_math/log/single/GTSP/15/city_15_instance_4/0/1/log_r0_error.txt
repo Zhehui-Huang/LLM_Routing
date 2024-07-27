@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/15/city_15_instance_4/0/1/solution_r0.py", line 27
+    prob += pulp.lpSum(x[i, j] * euclideanルalgorithm, we use the distance(coords[i], coords[j]) for i in range(len(coords)) for j in range(len(coords)) if i != j), "Total_Distance"
+                                                      ^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

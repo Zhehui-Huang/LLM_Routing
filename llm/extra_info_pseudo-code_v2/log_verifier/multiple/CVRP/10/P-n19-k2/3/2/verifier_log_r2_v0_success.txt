@@ -1,0 +1,7 @@
+OUTPUT:
+FAIL, Not all demand met by Robot 0
+
+
+ERROR:
+
+

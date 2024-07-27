@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_1/2/0/solution_r2.py", line 89, in <module>
+    best_tour, best_tour_cost = gvns(100)
+                                ^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_1/2/0/solution_r2.py", line 77, in gvns
+    for _ in range(num_recounts):
+                   ^^^^^^^^^^^^
+NameError: name 'num_recounts' is not defined. Did you mean: 'num_restarts'?
+
+

@@ -1,0 +1,5 @@
+- [Requirement 1] There are 15 cities with coordinates provided for each, including the depot city 0.
+- [Requirement 2] The robot starts at depot city 0 and must visit all other cities exactly once before returning to the depot.
+- [Requirement 3] Travel cost between any two cities is calculated using the Euclidean distance formula.
+- [Requirement 4] Provide the shortest tour for the robot, using the heuristic algorithm described which involves constructing a shortest spanning tree and finding a minimum-cost perfect matching on a subgraph induced by vertices of odd degree.
+- [Requirement 5] The output should be the tour as a list of city indices starting and ending at the depot city, and the total travel cost of the tour.

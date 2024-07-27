@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/P-n19-k2/3/1/solution_r0.py", line 73
+    robot1_tour = [1] + best_pre_solution[`:split_index] + [1]
+                                          ^
+SyntaxError: invalid syntax
+
+

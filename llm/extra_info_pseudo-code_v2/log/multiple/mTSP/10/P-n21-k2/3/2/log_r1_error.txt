@@ -1,0 +1,15 @@
+OUTPUT:
+Robot 0 Tour: [0, 1, 10, 8, 18, 19, 3, 12, 15, 11, 4, 0]
+Robot 0 Total Travel Cost: 116.32876651388246
+Robot 1 Tour: [0, 16, 6, 2, 13, 9, 17, 14, 5, 7, 20, 0]
+Robot 1 Total Travel Cost: 100.57956094224302
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP/10/P-n21-k2/3/2/solution_r1.py", line 70, in <module>
+    print(f"Overall Total Travel Cost: {overall_total_taxcost}")
+                                        ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'overall_total_taxcost' is not defined. Did you mean: 'overall_total_cost'?
+
+

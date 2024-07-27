@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/20/city_20_instance_4/3/1/solution_r0.py", line 52, in <module>
+    solver = pulp.PULP_CBC_CMD(msg=False, maxSeconds=30)  # Using CBC solver
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: PULP_CBC_CMD.__init__() got an unexpected keyword argument 'maxSeconds'
+
+

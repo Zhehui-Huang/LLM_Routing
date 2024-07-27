@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/KTSP/15/city_15_instance_3/0/0/verifier_r0_v0.py", line 50, in <module>
+    result = verify_solution(city_coordinates=None, tour=tour, reported_cost=reported_cost)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: verify_solution() got an unexpected keyword argument 'city_coordinates'
+
+

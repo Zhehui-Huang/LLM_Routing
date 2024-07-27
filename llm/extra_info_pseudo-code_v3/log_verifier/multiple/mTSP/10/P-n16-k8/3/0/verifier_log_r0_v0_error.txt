@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSP/10/P-n16-k8/3/0/verifier_r0_v0.py", line 68, in <module>
+    test_solution(robots_tours, overall_total_gp_cost, city_coordinates)
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSP/10/P-n16-k8/3/0/verifier_r0_v0.py", line 35, in test_solution
+    assert(abs(calculated_overall_cost - overall_total_gp_cost) < 1e-6), "FAIL: Calculated overall cost does not match provided overall cost."
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: FAIL: Calculated overall cost does not match provided overall cost.
+
+

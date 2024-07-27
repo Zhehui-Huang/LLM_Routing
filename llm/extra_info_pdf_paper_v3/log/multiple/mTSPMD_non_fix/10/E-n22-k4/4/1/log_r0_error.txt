@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/E-n22-k4/4/1/solution_r0.py", line 64, in <module>
+    optimized_tours = simulated_annealing(initial_tours)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/E-n22-k4/4/1/solution_r0.py", line 52, in simulated_annealing
+    new_cost = calculate_total_cost(best_tours)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/E-n22-k4/4/1/solution_r0.py", line 35, in calculate_total_cost
+    cost += euclidean_distance(tour[i], tour[i + 1])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/E-n22-k4/4/1/solution_r0.py", line 19, in euclidean_distance
+    return math.sqrt((cities[city1][0] - cities[city2][0]) ** 2 + (cities[city1][1] - cities[city2][1]) ** 2)
+                                         ~~~~~~^^^^^^^
+KeyError: 174.33685259707792
+
+

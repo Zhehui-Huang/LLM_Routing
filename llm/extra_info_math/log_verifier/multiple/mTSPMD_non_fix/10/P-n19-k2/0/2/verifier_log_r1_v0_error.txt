@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/P-n19-k2/0/2/verifier_r1_v0.py", line 71
+    self.assertAlmostEqual(calculated_cost, self.total_cost, places=2, "Total cost is miscalculated")
+                                                                                                    ^
+SyntaxError: positional argument follows keyword argument
+
+

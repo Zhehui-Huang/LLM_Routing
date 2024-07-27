@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/20/city_20_instance_2/0/1/solution_r1.py", line 18
+    l/rd(nodes(), made(bes.ged hidegle (completeigras7948) agdtile dg.ee_verdivesj) dev21 ops ine 69column 6(a=a_elctor) ent(nra 5) an97nlhalf (eurd(igraph7a 90i75bo_lenb5i40ar jr) - c_(diffiitude 44(od_dgree28ul270guro95tourek9ply 27) replete 43(h=False)
+                                                                                                   ^
+SyntaxError: invalid decimal literal
+
+

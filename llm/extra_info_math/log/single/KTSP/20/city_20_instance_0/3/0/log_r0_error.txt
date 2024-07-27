@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_0/3/0/solution_r0.py", line 61, in <module>
+    best_route, best_cost = k_tsp_bruteforce()
+                            ^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_0/3/0/solution_r0.py", line 56, in k_tsp_bruteforce
+    best_route = trial_node
+                 ^^^^^^^^^^
+NameError: name 'trial_node' is not defined. Did you mean: 'trial_route'?
+
+

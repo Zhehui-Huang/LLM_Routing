@@ -1,0 +1,6 @@
+- [The robot must start and end at the depot city 0.]
+- [The robot needs to visit exactly 6 cities, including the depot city.]
+- [Travel cost is calculated as the Euclidean distance between two cities.]
+- [The goal is to find the shortest possible tour that visits exactly 6 cities.]
+- [Output the tour as a list of city indices starting and ending at the depot city 0.]
+- [Output the total travel of the tour.]

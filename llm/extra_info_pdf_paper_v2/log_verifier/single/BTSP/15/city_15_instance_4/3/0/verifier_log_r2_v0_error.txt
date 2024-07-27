@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/15/city_15_instance_4/3/0/verifier_r2_v0.py", line 48, in <module>
+    verify_tour(tour)
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/15/city_15_instance_4/3/0/verifier_r2_v0.py", line 42, in verify_tour
+    if correct_start_end and all_visited_once and correct_total_hr_cost and correct_metric and correct_structure:
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'correct_total_hr_cost' is not defined. Did you mean: 'correct_total_cost'?
+
+

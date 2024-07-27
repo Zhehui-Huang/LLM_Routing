@@ -1,0 +1,5 @@
+- [Each robot must begin and end its tour at its designated depot.]
+- [All cities must be visited exactly once by any one of the robots.]
+- [The travel cost between cities is determined using the Euclidean distance.]
+- [The objective is to minimize the total combined travel cost for all tours.]
+- [Travel paths must adhere to the mathematical formulation provided including continuity, bounds, and binary constraints on the variables.]

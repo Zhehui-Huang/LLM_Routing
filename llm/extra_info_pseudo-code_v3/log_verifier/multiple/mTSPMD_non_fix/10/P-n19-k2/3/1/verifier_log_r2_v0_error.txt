@@ -1,0 +1,28 @@
+OUTPUT:
+
+
+ERROR:
+..EF
+======================================================================
+ERROR: test_output_format (__main__.TestRobotTours.test_output_format)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSPMD_non_fix/10/P-n19-k2/3/1/verifier_r2_v0.py", line 55, in test_output_format
+    self.assertIsInstance(self.all_tours[0], list)
+                          ^^^^^^^^^^^^^^
+AttributeError: 'TestRobotTours' object has no attribute 'all_tours'
+
+======================================================================
+FAIL: test_robot_count_and_start_points (__main__.TestRobotTours.test_robot_count_and_start_points)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSPMD_non_fix/10/P-n19-k2/3/1/verifier_r2_v0.py", line 24, in test_robot_count_and_start_points
+    self.assertEqual(len({self.robot_0_tour[0], self.robot_1_tour[0]}), 1)
+AssertionError: 2 != 1
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=1, errors=1)
+
+

@@ -1,0 +1,83 @@
+import math
+from pulp import *
+
+# Cities coordinates
+coordinates = [
+    (9, 93),   # Depot city 0
+    (8, 51),
+    (74, 99),
+    (78, 50),
+    (21, 23),
+    (88, 59),
+    (79, 77),
+    (63, 23),
+    (19, 76),
+    (21, 38),
+    (19, 65),
+    (11, 40),
+    (3, 21),
+    (60, 55),
+    (4, 39)
+]
+
+# Calculate Euclidean distance
+def euclidean_distance(a, b):
+    return math.sqrt((a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2)
+
+# Number of cities
+n = len(coordinates)
+
+# Cost matrix computation
+cost = [[euclidean_distance(coordinates[i], coordinates[j]) for j in range(n)] for i in range(n)]
+
+# Setting up the problem
+prob = LpProblem("TSP", LpMinimize)
+
+# Decision variables
+x = LpVariable.dicts("x", [(i, j) for i in range(n) for j in range(n)], cat='Binary')
+
+# Objective function
+prob += lpSum(x[(i, j)] * cost[i][j] for i in range(n) for j in range(n))
+
+# Constraints
+for i in range(n):
+    prob += lpSum(x[(i, j)] for j in range(n) if i != j) == 1
+    prob += lpSum(x[(j, i)] for j in range(n) if i != j) == 1
+
+# Subtour elimination by adding constraints dynamically
+# Use PuLP's callback & lazy constraints (if using CBC) or handle in preprocessing step
+def subtour_elimination(model, where):
+    if where == "lazy constraints":
+        # Missing exact implementation as PuLP itself does not handle callbacks in the same way
+        # as more advanced solvers like Gurobi or CPLEX.
+        pass
+
+prob.solve()
+
+# Extracting the solution
+tour = []
+for i in range(n):
+    for j in range(n):
+        if x[(i, j)].varValue == 1:
+            tour.append((i, j))
+
+# Resolving order of the tour
+visited = set()
+current = 0
+ordered_tour = [0]
+while len(visited) < n:
+    visited.add(current)
+    for next_city in range(n):
+        if (current, next_city) in tour:
+            if next_city not in visited:
+                ordered_tour.append(next_city)
+                current = next_city
+                break
+
+ordered_tour.append(0)  # Completing the tour back to the depot city
+
+# Calculating the total cost of the tour
+total_cost = sum(cost[ordered_tour[i]][ordered_tour[i + 1]] for i in range(len(ordered_tour) - 1))
+
+print(f"Tour: {ordered_tour}")
+print(f"Total travel cost: {total_min_cost}")

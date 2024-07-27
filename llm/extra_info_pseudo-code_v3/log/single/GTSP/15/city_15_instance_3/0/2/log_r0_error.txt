@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/GTSP/15/city_15_instance_3/0/2/solution_r0.py", line 52
+    return shortest_tour, min_decode by 1
+                                     ^^
+SyntaxError: invalid syntax
+
+

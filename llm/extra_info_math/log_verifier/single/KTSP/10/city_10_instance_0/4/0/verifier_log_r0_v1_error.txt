@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/KTSP/10/city_10_instance_0/4/0/verifier_r0_v1.py", line 54, in <module>
+    run_robot_tour_tests()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/KTSP/10/city_10_instance_0/4/0/verifier_r0_v1.py", line 43, in run_robot_tour_tests
+    test_suite.addTest(TestRobotSaleTour('test_tour_validation'))
+                       ^^^^^^^^^^^^^^^^^
+NameError: name 'TestRobotSaleTour' is not defined. Did you mean: 'TestRobotTour'?
+
+

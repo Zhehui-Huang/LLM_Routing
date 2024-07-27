@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/10/city_10_instance_3/2/1/solution_r0.py", line 55, in <module>
+    optimal_tour, total_cost, max_distance = find_optimal_path()
+                                             ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/10/city_10_instance_3/2/1/solution_r0.py", line 46, in find_optimal_path
+    total_cost, max_edge_distance = evaluate_path(path)
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/10/city_10_instance_3/2/1/solution_r0.py", line 36, in evaluate_path
+    max_edge_distance = edge_dfistance
+                        ^^^^^^^^^^^^^^
+NameError: name 'edge_dfistance' is not defined. Did you mean: 'max_edge_distance'?
+
+

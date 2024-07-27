@@ -1,0 +1,25 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+test_tour_validity (__main__.TestTravelingSalesmanSolution.test_tour_validity) ... ERROR
+
+======================================================================
+ERROR: test_tour_validity (__main__.TestTravelingSalesmanSolution.test_tour_validity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/GTSP/15/city_15_instance_1/0/0/verifier_r2_v0.py", line 56, in test_tour_validity
+    calculated_cost = calculate_total_travel_cost(self.coordinates, self.provided_tour)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/GTSP/15/city_15_instance_1/0/0/verifier_r2_v0.py", line 10, in calculate_total_travel_cost
+    total_cost += euclideanDistance(coordinates[tour[i]], coordinates[tour[i + 1]])
+                  ^^^^^^^^^^^^^^^^^
+NameError: name 'euclideanDistance' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+
+

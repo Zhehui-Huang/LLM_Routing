@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSP_MinMax/10/P-n16-k8/3/0/verifier_r0_v2.py", line 78, in <module>
+    print(verify_solution())
+          ^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSP_MinMax/10/P-n16-k8/3/0/verifier_r0_v2.py", line 60, in verify_solution
+    for reported, calculated in zip(reported_distances, calculated_implicity_distances):
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculated_implicity_distances' is not defined
+
+

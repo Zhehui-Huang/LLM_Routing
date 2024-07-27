@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSP/10/P-n21-k2/2/2/verifier_r0_v0.py", line 60, in <module>
+    result = verify_solution(robot_0_tour, robot_1_tour, city_coords)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSP/10/P-n21-k2/2/2/verifier_r0_v0.py", line 31, in verify_solution
+    robot_1_cost = calculate_tour_cost(robot_1_tour, city_date)
+                                                     ^^^^^^^^^
+NameError: name 'city_date' is not defined
+
+

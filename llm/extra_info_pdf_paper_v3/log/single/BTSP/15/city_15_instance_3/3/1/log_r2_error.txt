@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/15/city_15_instance_3/3/1/solution_r2.py", line 51, in <module>
+    result = find_best_tour()
+             ^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/15/city_15_instance_3/3/1/solution_r2.py", line 42, in find_best_tour
+    best_total_cost = current_total_discount
+                      ^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'current_total_discount' is not defined. Did you mean: 'current_total_cost'?
+
+

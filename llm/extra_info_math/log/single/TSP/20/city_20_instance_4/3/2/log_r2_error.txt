@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/20/city_20_instance_4/3/2/solution_r2.py", line 60, in <module>
+    subtours = get_subtours(x)
+               ^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/20/city_20_instance_4/3/2/solution_r2.py", line 50, in get_subtours
+    j = next(k for k in range(n) if pulp.value(x[(j, k)]) == 1)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/20/city_20_instance_4/3/2/solution_r2.py", line 50, in <genexpr>
+    j = next(k for k in range(n) if pulp.value(x[(j, k)]) == 1)
+                                               ~^^^^^^^^
+KeyError: (0, 0)
+
+

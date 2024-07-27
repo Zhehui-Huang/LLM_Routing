@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+..F
+======================================================================
+FAIL: test_travel_cost (__main__.TestRobotTournaments.test_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/1/1/verifier_r0_v1.py", line 48, in test_travel_cost
+    self.assertAlmostEqual(calculated_robot0_cost, self.robot0_cost, places=5)
+AssertionError: 153.49411936146194 != 137.09097916207833 within 5 places (16.403140199383614 difference)
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+
+

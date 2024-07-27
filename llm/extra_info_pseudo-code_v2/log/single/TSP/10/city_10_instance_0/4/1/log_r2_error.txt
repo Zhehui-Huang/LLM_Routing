@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/10/city_10_instance_0/4/1/solution_r2.py", line 33
+    distance = sum(euclidean-Proceed with the current calculationsdistance(cities[tour[i]], cities[tour[i+1]]) for i in range(len(tour) - 1))
+                                     ^^^^
+SyntaxError: invalid syntax
+
+

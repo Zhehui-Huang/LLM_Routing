@@ -1,0 +1,8 @@
+- [There are 15 cities including the depot city.]
+- [Coordinates for each city are given, with the depot city 0 at coordinates (29, 51).]
+- [Cities are divided into 4 groups and each group contains different cities.]
+- [The robot starts the journey at depot city 0.]
+- [The robot must visit exactly one city from each group of cities.]
+- [The robot ends the journey back at the depot city 0.]
+- [Travel costs are calculated based on the Euclidean distance between cities.]
+- [The task is to find the shortest tour for the robot that satisfies all the conditions mentioned.]

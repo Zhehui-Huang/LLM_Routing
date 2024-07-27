@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_1/3/0/solution_r2.py", line 24
+    return total_cost, max[65 chars]
+                           ^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

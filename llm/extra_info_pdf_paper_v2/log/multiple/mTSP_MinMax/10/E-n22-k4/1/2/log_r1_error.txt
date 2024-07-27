@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP_MinMax/10/E-n22-k4/1/2/solution_r1.py", line 74, in <module>
+    solution, max_travel_cost = gvns(num_robots)
+                                ^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP_MinMax/10/E-n22-k4/1/2/solution_r1.py", line 64, in gvns
+    if new_max_print_cost < best_max_cost:
+       ^^^^^^^^^^^^^^^^^^
+NameError: name 'new_max_print_cost' is not defined. Did you mean: 'best_max_print_cost'?
+
+

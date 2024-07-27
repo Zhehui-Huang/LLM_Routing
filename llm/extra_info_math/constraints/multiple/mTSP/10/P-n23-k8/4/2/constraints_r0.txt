@@ -1,0 +1,6 @@
+- [Each city is visited exactly once by one salesman.]
+- [Each salesman must leave and enter each visited node exactly once (Flow conservation).]
+- [Each salesman must leave the depot exactly once and return to it after the tours.]
+- [Subtour elimination must be enforced to avoid multiple disjoint subtours within each tour.]
+- [Binary constraints are in place for assignment variables to ensure paths are correctly determined.]
+- [Continuous variables for node positions should be maintained to assist in subtour elimination.]

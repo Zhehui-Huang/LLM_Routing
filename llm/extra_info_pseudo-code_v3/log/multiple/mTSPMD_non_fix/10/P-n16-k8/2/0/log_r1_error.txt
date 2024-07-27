@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/2/0/solution_r1.py", line 50, in <module>
+    total_costs[robot_comp_id] = total_cost
+                ^^^^^^^^^^^^^
+NameError: name 'robot_comp_id' is not defined
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/GTSP/20/city_20_instance_3/4/0/verifier_r1_v0.py", line 70, in <module>
+    result = check_requirements(tour)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/GTSP/20/city_20_instance_3/4/0/verifier_r1_v0.py", line 54, in check_requirements
+    visited_groups[groupID] = True
+                   ^^^^^^^
+NameError: name 'groupID' is not defined. Did you mean: 'group_id'?
+
+

@@ -1,0 +1,34 @@
+OUTPUT:
+
+
+ERROR:
+FF...
+======================================================================
+FAIL: test_capacity_constraints (__main__.TestVRPSolution.test_capacity_constraints)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/CVRP/10/P-n16-k8/0/0/verifier_r0_v0.py", line 43, in test_capacity_constraints
+    self.assertTrue(load <= self.robot_capacity)
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_demand_fulfillment (__main__.TestVRPSolution.test_demand_fulfillment)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/CVRP/10/P-n16-k8/0/0/verifier_r0_v0.py", line 38, in test_demand_fulfillment
+    self.assertListEqual(self.demands, delivered)
+AssertionError: Lists differ: [0, 19, 30, 16, 23, 11, 31, 15, 28, 8, 8, 7, 14, 6, 19, 11] != [0, 0, 0, 32, 0, 0, 0, 0, 56, 24, 0, 7, 28, 12, 19, 33]
+
+First differing element 1:
+19
+0
+
+- [0, 19, 30, 16, 23, 11, 31, 15, 28, 8, 8, 7, 14, 6, 19, 11]
++ [0, 0, 0, 32, 0, 0, 0, 0, 56, 24, 0, 7, 28, 12, 19, 33]
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=2)
+
+

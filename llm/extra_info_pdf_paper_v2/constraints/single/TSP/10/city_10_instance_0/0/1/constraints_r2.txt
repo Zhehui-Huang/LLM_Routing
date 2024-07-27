@@ -1,0 +1,5 @@
+- [Requirement 1] The algorithm must solve the problem using a heuristic based on generating and iteratively improving pseudorandom feasible solutions.
+- [Requirement 2] The robot starts and ends the tour at the depot city, city 0.
+- [Requirement 3] Each city, except the depot, should be visited exactly once.
+- [Requirement 4] Compute and output the tour as a list of city indices starting and ending at the depot city.
+- [Requirement 5] Compute and output the total travel cost of the tour, based on the Euclidean distance between cities.

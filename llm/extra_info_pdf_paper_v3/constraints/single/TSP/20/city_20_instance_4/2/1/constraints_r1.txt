@@ -1,0 +1,6 @@
+- [There are 20 cities, indexed from 0 (depot) to 19.]
+- [The robot starts and ends its journey at the depot city, indexed 0.]
+- [The robot must visit each city exactly once, excluding the depot city where it starts and finishes.]
+- [Travel cost between any two cities is computed as the Euclidean distance.]
+- [Output the tour as a list of city indices, starting and ending at the depot city 0.]
+- [Output the total travel cost of the tour.]

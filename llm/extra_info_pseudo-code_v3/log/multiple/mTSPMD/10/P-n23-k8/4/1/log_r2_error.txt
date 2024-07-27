@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n23-k8/4/1/solution_r2.py", line 98
+    best_score = scores[best
+                       ^
+SyntaxError: '[' was never closed
+
+

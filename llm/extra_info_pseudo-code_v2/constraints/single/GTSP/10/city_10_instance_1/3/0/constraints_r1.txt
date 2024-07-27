@@ -1,0 +1,7 @@
+- [There are 10 cities with specified coordinates.]
+- [City groups are defined, and the robot must visit exactly one city from each group.]
+- [The robot starts and ends its journey at the depot city, which is city 0.]
+- [The travel cost is calculated based on the Euclidean distance between cities.]
+- [The goal is to find the shortest possible tour that adheres to the group restrictions.]
+- [Output should include both the complete tour as a list of city indices starting and ending at city 0, and the total travel cost.]
+- [Implement and solve the problem using a Generalized Large Neighborhood Search (GLNS) algorithm according to the provided pseudocode.]

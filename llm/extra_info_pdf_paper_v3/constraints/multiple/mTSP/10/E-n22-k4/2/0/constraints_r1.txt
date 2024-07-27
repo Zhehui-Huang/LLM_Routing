@@ -1,0 +1,6 @@
+- [Constraint 1] There are 22 cities, including the depot city 0, and each city has specific cartesian coordinates.
+- [Constraint 2] There are 4 robots, and all robots start and end their routes at the depot city 0.
+- [Constraint 3] Each robot can travel between any two cities, and the cost is defined by the Euclidean distance between them.
+- [Constraint 4] Each city, excluding the depot city, must be visited exactly once by the robots.
+- [Constraint 5] The goal is to minimize the total travel cost while ensuring that each robot starts and ends at the depot city.
+- [Constraint 6] Output should list the tour for each robot starting and ending at the depot city, as well as individual and total travel costs for the tours.

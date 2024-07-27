@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD/10/P-n23-k8/1/2/solution_r2.py", line 100, in <module>
+    best_solution, best_cost = aco_algorithm()
+                               ^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD/10/P-n23-k8/1/2/solution_r2.py", line 63, in aco_algorithm
+    prob = (pheromones[current_city][city]**alpha) * (heuristic[current_city][city]**beta)
+            ^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'pheromones' where it is not associated with a value
+
+

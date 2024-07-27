@@ -1,0 +1,7 @@
+- [Requirement 1] There are 16 specified cities with given coordinates, including 8 depot cities and 8 regular cities.
+- [Requirement 2] There are 8 robots, each of which starts and ends its tour at a designated depot city.
+- [Requirement 3] All cities must be visited exactly once by any one of the robots.
+- [Requirement 4] The objective is to minimize the total travel cost for all robots combined, where travel cost is determined by the Euclidean distance between cities.
+- [Requirement 5] Each robot's tour must be output as a list of city indices, starting and ending at the respective robot's starting depot.
+- [Requirement 6] The total travel cost for each robot's tour and the overall combined total travel cost must be provided.
+- [Requirement 7] An Ant Colony System (ACS) should be utilized to solve this multi-depot mTSP variant, considering enhancements like pheromone evaporation and dynamic updates.

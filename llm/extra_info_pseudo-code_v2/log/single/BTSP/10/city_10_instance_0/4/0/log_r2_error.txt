@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/10/city_10_instance_0/4/0/solution_r2.py", line 111
+    print(f"Tour: {hamiltonpop()}iltonian_cycle}")
+                                                 ^
+SyntaxError: f-string: single '}' is not allowed
+
+

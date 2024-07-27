@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/20/city_20_instance_2/1/1/solution_r1.py", line 15
+    min_distance = distanceects_lage][j]
+                                    ^
+SyntaxError: unmatched ']'
+
+

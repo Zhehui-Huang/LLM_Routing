@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/15/city_15_instance_4/1/0/solution_r2.py", line 46, in <module>
+    min_max_distance = max_err(dist)
+                       ^^^^^^^
+NameError: name 'max_err' is not defined
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSPMD/10/P-n23-k8/4/0/verifier_r0_v1.py", line 41
+    return all(np.isclose(cost, calculated_cost, atol=0.01) for cost, calculated_cost in zip(costs, calculated "
+                                                                                                               ^
+SyntaxError: unterminated string literal (detected at line 41)
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/3/0/solution_r2.py", line 71, in <module>
+    best_route, best_route_cost = genetic_algorithm()
+                                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/3/0/solution_r2.py", line 60, in genetic_algorithm
+    child1, child2 = crossover(parent1, parent2)
+                     ^^^^^^^^^
+NameError: name 'crossover' is not defined
+
+

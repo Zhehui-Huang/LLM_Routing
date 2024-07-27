@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_4/2/0/solution_r0.py", line 48
+    problem += pulp.lpSum([dist protocol.opt Sendances[i][j] * x[i, j] for i in range(n) for j in range(n) if i != j]), "Total_Travel_Cost"
+                           ^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

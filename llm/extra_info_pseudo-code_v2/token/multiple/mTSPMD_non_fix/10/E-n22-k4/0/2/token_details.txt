@@ -1,0 +1,23 @@
+Task: mTSPMD_non_fix, City: 10, File name: E-n22-k4, Run time: 0, Try id: 2
+
+@@@@@
+Notes: exec
+input_token_num: 1861
+output_token_num: 1020
+total_token_num: 2881
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 2787
+output_token_num: 980
+total_token_num: 3767
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 3689
+output_token_num: 1057
+total_token_num: 4746
+@@@@@
+

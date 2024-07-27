@@ -1,0 +1,6 @@
+- [There are 20 specified cities including the depot city.]
+- [The depot city is city 0, and coordinates are given for each city.]
+- [The robot starts and ends its route at the depot city 0.]
+- [Every city must be visited exactly once by the robot.]
+- [Travel cost between two cities is calculated as the Euclidean distance.]
+- [The objective is to minimize the longest distance between any two consecutive cities in the robot’s tour.]

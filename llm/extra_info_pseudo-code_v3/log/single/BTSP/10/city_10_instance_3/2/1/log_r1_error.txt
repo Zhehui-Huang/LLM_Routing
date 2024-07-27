@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/10/city_10_instance_3/2/1/solution_r1.py", line 49
+    if max_edge_distance < min_max_thisistance or (max_edge_distance ==ages
+                                                  ^
+SyntaxError: '(' was never closed
+
+

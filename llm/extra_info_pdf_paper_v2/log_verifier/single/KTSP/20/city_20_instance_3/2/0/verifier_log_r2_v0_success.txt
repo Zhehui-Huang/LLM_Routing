@@ -1,0 +1,14 @@
+OUTPUT:
+CORRECT
+
+
+ERROR:
+/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/KTSP/20/city_20_instance_3/2/0/verifier_r2_v0.py:66: DeprecationWarning: unittest.makeSuite() is deprecated and will be removed in Python 3.13. Please use unittest.TestLoader.loadTestsFromTestCase() instead.
+  test_suite.addTest(unittest.makeSuite(TestKTSPSolution))
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+
+

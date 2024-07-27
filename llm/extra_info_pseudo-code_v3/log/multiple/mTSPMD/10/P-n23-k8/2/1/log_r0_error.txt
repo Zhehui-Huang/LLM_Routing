@@ -1,0 +1,23 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n23-k8/2/1/solution_r0.py", line 93, in <module>
+    solution = genetic_algorithm(city_coords, depots, num_robots)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n23-k8/2/1/solution_r0.py", line 79, in genetic_algorithm
+    fitness_scores = [(calculate_fitness(ind, city_coords, depots), ind) for ind in new_population]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n23-k8/2/1/solution_r0.py", line 79, in <listcomp>
+    fitness_scores = [(calculate_fitness(ind, city_coords, depots), ind) for ind in new_population]
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n23-k8/2/1/solution_r0.py", line 16, in calculate_fitness
+    cities_per_robot = [individual[i+1] for i in range(len(depots))]
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n23-k8/2/1/solution_r0.py", line 16, in <listcomp>
+    cities_per_robot = [individual[i+1] for i in range(len(depots))]
+                        ~~~~~~~~~~^^^^^
+IndexError: tuple index out of range
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/15/city_15_instance_1/0/0/solution_r1.py", line 61
+    if next_city != current_city and x[current_city, next city].X > 0.5:
+                                                     ^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

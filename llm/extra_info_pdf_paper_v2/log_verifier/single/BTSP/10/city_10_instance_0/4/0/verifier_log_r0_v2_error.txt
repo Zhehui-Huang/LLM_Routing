@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/10/city_10_instance_0/4/0/verifier_r0_v2.py", line 43, in <module>
+    result = verify_solution(tour, total_travel_cost, max_distance)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/10/city_10_instance_0/4/0/verifier_r0_v2.py", line 29, in verify_solution
+    if not math.isclose(computed_total_tour_cost, total_travel_cost, rel_tol=1e-5):
+                        ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'computed_total_tour_cost' is not defined. Did you mean: 'computed_total_cost'?
+
+

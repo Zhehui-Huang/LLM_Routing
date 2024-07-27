@@ -1,0 +1,7 @@
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/messages/multiple/mTSP_MinMax/10/E-n22-k4/4/2/messages_E-n22-k4.txt
+===
+System - LLM_SYSTEM_PROMPT
+User - Task description: E-n22-k4
+Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP_MinMax/10/E-n22-k4/4/2/solution_r0.py
+Another LLM - User - Ask for prompts
+Another LLM - Assistant - Constraints response: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/constraints/multiple/mTSP_MinMax/10/E-n22-k4/4/2/constraints_r0.txt

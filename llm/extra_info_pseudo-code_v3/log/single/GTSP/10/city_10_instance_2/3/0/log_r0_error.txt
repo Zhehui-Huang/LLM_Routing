@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/GTSP/10/city_10_instance_2/3/0/solution_r0.py", line 63, in <module>
+    shortest_tour, shortest_cost = find_shortest_route()
+                                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/GTSP/10/city_10_instance_2/3/0/solution_r0.py", line 53, in find_shortest_route
+    tour_cost = calculate_tour_bot_cost(tour)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_tour_bot_cost' is not defined. Did you mean: 'calculate_tour_cost'?
+
+

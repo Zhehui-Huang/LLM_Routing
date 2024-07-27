@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_4/2/1/solution_r0.py", line 71, in <module>
+    best_tour, best_cost = gvns(cities, 16, distances, 50)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_4/2/1/solution_r0.py", line 42, in gvns
+    best_cost = total_tour_cost(best_solution, distances)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_4/2/1/solution_r0.py", line 9, in total_tour_cost
+    return sum(distances[tour[i]][tour[i+1]] for i in range(len(tour) - 1))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_4/2/1/solution_r0.py", line 9, in <genexpr>
+    return sum(distances[tour[i]][tour[i+1]] for i in range(len(tour) - 1))
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not tuple
+
+

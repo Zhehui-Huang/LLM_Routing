@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/BTSP/20/city_20_instance_3/1/0/verifier_r0_v1.py", line 10
+    (12, 84), (72, 77), (98, 95), (11, 0], (61, 25), (52, 0), 
+                                        ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+
+

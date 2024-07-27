@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/10/city_10_instance_0/3/1/solution_r2.py", line 62, in <module>
+    tour = find_tour_minimize_max_distance(cities)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/10/city_10_instance_0/3/1/solution_r2.py", line 42, in find_tour_minimize_max_distance
+    current_city = next_lo_clear;
+                   ^^^^^^^^^^^^^
+NameError: name 'next_lo_clear' is not defined
+
+

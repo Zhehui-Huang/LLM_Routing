@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/4/1/solution_r0.py", line 28, in <module>
+    model += pulp.lpSum([euclidean_probability(coordinates[i], coordinates[j]) * x[(i, j)] for i, j in x]), "Sum of Travel Costs"
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/4/1/solution_r0.py", line 28, in <listcomp>
+    model += pulp.lpSum([euclidean_probability(coordinates[i], coordinates[j]) * x[(i, j)] for i, j in x]), "Sum of Travel Costs"
+                         ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_probability' is not defined
+
+

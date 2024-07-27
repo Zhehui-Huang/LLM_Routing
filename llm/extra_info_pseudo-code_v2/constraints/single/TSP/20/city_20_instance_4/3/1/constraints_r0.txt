@@ -1,0 +1,5 @@
+- [Requirement 1] There are 20 designated cities, including a depot city (city 0), and their coordinates are given.
+- [Requirement 2] The robot must start at the depot city (city 0), visit each of the other cities exactly once, and then return to the depot city.
+- [Requirement 3] The travel cost between two cities is determined by the Euclidean distance between them.
+- [Requirement 4] The objective is to determine the shortest possible tour that meets the above visitation requirements.
+- [Requirement 5] The tour should be returned as a list of city indices, starting and ending with the depot city, and the total travel cost of the tour should also be provided.

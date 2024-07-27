@@ -1,0 +1,6 @@
+- [Each robot must start and end its tour at the depot city, which is city 0.]
+- [Each robot has a carrying capacity of 40 units.]
+- [The demand of each city must be fully met by the robots' deliveries.]
+- [The travel cost between cities is calculated using the Euclidean distance.]
+- [The task requires minimizing the total travel cost for all the robot tours while adhering to capacity and demand constraints.]
+- [Eight robots are available for delivering goods to 22 non-depot cities.]

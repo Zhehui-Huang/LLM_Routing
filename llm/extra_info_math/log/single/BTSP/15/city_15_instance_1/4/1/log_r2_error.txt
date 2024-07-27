@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/15/city_15_instance_1/4/1/solution_r2.py", line 41, in <module>
+    problem += x[(i, j)] * distance(i, j) <= max_dm
+                                             ^^^^^^
+NameError: name 'max_dm' is not defined
+
+

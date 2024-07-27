@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/10/city_10_instance_3/0/2/solution_r2.py", line 43
+    It fi shot got_distance and butcher_min_ permissible ifFounded latenhai_minor o(Dpsnot;">
+                                                                                           ^
+SyntaxError: unterminated string literal (detected at line 43)
+
+

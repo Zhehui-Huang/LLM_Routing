@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must start and end at the depot city 0.
+- [Requirement 2] The robot must visit each of the 10 cities exactly once.
+- [Requirement 3] The objective is to minimize the longest distance between any two consecutive cities in the tour.
+- [Requirement 4] The algorithm must compute the total travel cost of the tour and the maximum distance between any two consecutive cities.
+- [Requirement 5] Output the results in specified format: tour list, total travel cost, and maximum distance between consecutive cities.

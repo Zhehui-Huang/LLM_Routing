@@ -1,0 +1,29 @@
+OUTPUT:
+
+
+ERROR:
+E.E.
+======================================================================
+ERROR: test_maximum_distance (__main__.TestVerifyTour.test_maximum_distance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/BTSP/20/city_20_instance_3/3/2/verifier_r2_v1.py", line 37, in test_maximum_distance
+    measured_max_distance = max(calculate_distance(cities[self.town[i]], cities[self.town[i+1]]) for i in range(len(self.town) - 1))
+                                                                                                                    ^^^^^^^^^
+AttributeError: 'TestVerifyTour' object has no attribute 'town'
+
+======================================================================
+ERROR: test_travel_cost (__main__.TestVerifyTour.test_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/BTSP/20/city_20_instance_3/3/2/verifier_r2_v1.py", line 33, in test_travel_cost
+    calculated_cost = sum(calculate_distance(cities[self.town[i]], cities[self.town[i + 1]]) for i in range(len(self.town) - 1))
+                                                                                                                ^^^^^^^^^
+AttributeError: 'TestVerifyTour' object has no attribute 'town'
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (errors=2)
+
+

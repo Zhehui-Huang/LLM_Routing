@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/BTSP/10/city_10_instance_0/0/0/verifier_r1_v1.py", line 25
+    if not math.isclose(actual_total_nsrequiredistance:
+                                                      ^
+SyntaxError: invalid syntax
+
+

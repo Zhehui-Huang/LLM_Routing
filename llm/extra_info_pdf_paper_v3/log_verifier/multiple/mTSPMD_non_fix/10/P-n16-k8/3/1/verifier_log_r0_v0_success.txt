@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+F
+======================================================================
+FAIL: test_robot_tours (__main__.TestRobotTourSolution.test_robot_tours)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSPMD_non_fix/10/P-n16-k8/3/1/verifier_r0_v0.py", line 35, in test_robot_tours
+    self.assertAlmostEqual(path_cost, stated_cost, places=5, msg="Path cost must match the stated cost")
+AssertionError: 27.784887978899608 != 13.892443989449804 within 5 places (13.892443989449804 difference) : Path cost must match the stated cost
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+
+

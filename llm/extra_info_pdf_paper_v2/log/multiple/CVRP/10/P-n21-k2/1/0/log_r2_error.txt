@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/CVRP/10/P-n21-k2/1/0/solution_r2.py", line 59
+    print(f"Robot {i} Tour: {full = [0] + route + [0]} ")
+                                                        ^
+SyntaxError: f-string: expecting '}'
+
+

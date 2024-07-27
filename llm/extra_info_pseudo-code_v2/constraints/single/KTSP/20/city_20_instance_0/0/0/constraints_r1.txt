@@ -1,0 +1,5 @@
+- [Requirement 1] The robot starts at the depot city 0 and must return to it after visiting exactly 4 cities, including the depot city.
+- [Requirement 2] The robot can travel between any two cities, and the travel cost between cities is calculated using the Euclidean distance.
+- [Requirement 3] The goal is to find the shortest possible tour that visits exactly 4 cities out of the given set of 20 cities.
+- [Requirement 4] The output should include the tour as a list of city indices, starting and ending at city 0, and the total travel cost of the tour.
+- [Requirement 5] The pseudocode provided (GVNS algorithm) is the guide for the programming approach to solve the problem, including specific subroutines and their intended functionalities specified in the pseudocode description.

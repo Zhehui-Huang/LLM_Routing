@@ -1,0 +1,5 @@
+- [Each robot must start from its assigned depot and complete its tour at any city.]
+- [All cities must be visited exactly once by any one of four robots, ensuring no city is repeated or missed.]
+- [The total travel distance or cost should be minimized across all robot tours combined.]
+- [Each tour must respect the Euclidean distance as the travel cost between two city coordinates.]
+- [Conclude each requirement with a proper solution constraint ensuring optimization and validity based on the given mathematical equations and definitions.]

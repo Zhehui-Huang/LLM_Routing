@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD/10/P-n16-k8/1/2/solution_r1.py", line 44, in <module>
+    while len(tours[robot]) < cities_per_shop + 1 and unvisited_cities:
+                              ^^^^^^^^^^^^^^^
+NameError: name 'cities_per_shop' is not defined. Did you mean: 'cities_per_robot'?
+
+

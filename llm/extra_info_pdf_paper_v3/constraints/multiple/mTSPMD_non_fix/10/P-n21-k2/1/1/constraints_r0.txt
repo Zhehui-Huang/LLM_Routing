@@ -1,0 +1,6 @@
+- [Requirement 1]: There are two robots, each starting from depot city 0, and no robot needs to return to the depot after completing its tour.
+- [Requirement 2]: Each city must be visited exactly once by the robots collectively.
+- [Requirement 3]: Optimize the tours to achieve the shortest total travel distance for each robot and collectively.
+- [Requirement 4]: Calculate travel cost as the Euclidean distance between cities.
+- [Requirement 5]: Output the tours for each robot as a list of city indices, each starting from its assigned depot.
+- [Requirement 6]: Output the total travel cost for each robot's tour and the overall total travel cost.

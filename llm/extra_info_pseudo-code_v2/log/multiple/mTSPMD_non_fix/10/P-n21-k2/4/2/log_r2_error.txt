@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/4/2/solution_r2.py", line 104, in <module>
+    final_solution, final_cost = genetic_algorithm()
+                                 ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/4/2/solution_r2.py", line 96, in genetic_algorithm
+    for child in crossover(parent1, parent2):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/4/2/solution_r2.py", line 68, in crossover
+    child1 = [parent1[0][:cut1] + parent2[0][cut1:cut2] + parent1[0][cut2:]]
+                                  ~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+

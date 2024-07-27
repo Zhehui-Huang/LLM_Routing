@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/GTSP/10/city_10_instance_2/0/2/verifier_r0_v1.py", line 31
+    computed_cost += calculate_distanc(youties[e tour[i]], citiesu touring underwater on paper I encounter instrumental learning and gathering tribes and discovering the optimal cost tour.
+                                               ^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

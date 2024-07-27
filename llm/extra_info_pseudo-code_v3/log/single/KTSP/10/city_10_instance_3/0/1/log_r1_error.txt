@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/10/city_10_instance_3/0/1/solution_r1.py", line 64, in <module>
+    best_tour, best_cost = gvns(cities, k, nrst)
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/10/city_10_instance_3/0/1/solution_r1.py", line 53, in gvns
+    current_solution, current_distance = new_solution, new_portal_distance
+                                                       ^^^^^^^^^^^^^^^^^^^
+NameError: name 'new_portal_distance' is not defined
+
+

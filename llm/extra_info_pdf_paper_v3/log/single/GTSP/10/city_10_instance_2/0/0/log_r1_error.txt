@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/GTSP/10/city_10_instance_2/0/0/solution_r1.py", line 63
+    1967ance mate_total_distances(arnated_Deposit_max[City M.C.)
+       ^
+SyntaxError: invalid decimal literal
+
+

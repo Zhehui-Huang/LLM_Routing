@@ -1,0 +1,22 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/TSP/20/city_20_instance_2/0/1/verifier_r2_v0.py:56: DeprecationWarning: unittest.makeSuite() is deprecated and will be removed in Python 3.13. Please use unittest.TestLoader.loadTestsFromTestCase() instead.
+  unittest_suite.addTest(unittest.makeSuite(TestTSPSolution))
+F..
+======================================================================
+FAIL: test_correct_cost_calculation (__main__.TestTSPSolution.test_correct_cost_calculation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/TSP/20/city_20_instance_2/0/1/verifier_r2_v0.py", line 53, in test_correct_cost_calculation
+    self.assertAlmostEqual(calculated_cost, provided_total_cost, places=5, msg="Calculated cost does not match the provided cost")
+AssertionError: 457.4558921916412 != 458.64455578878136 within 5 places (1.1886635971401347 difference) : Calculated cost does not match the provided cost
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+
+

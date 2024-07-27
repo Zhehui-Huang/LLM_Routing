@@ -1,0 +1,17 @@
+Start time: [2024-07-26 14:30:11]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/exec_details/multiple/CVRP/10/P-n19-k2/2/1/exec_details_P-n19-k2.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 52.50 seconds.
+Code solution execution status: error, execution time: 0.09848141670227051
+
+Reflect count: 1
+===
+Ask LLM for code solution, response time: 144.13 seconds.
+Code solution execution status: success, execution time: 0.2446153163909912
+Another LLM - Get constraints from LLM, response time: 4.23 seconds.
+Ask another LLM for verifier code, response time: 25.84 seconds.
+Another LLM - fail verifier

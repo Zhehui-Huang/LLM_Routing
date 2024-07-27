@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_4/3/1/solution_r0.py", line 79, in <module>
+    best_tour, total_cost = GVNS(itermax, pmax, k)
+                            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_4/3/1/solution_r0.py", line 55, in GVNS
+    S = generate_initial_.parseLong(S)
+        ^^^^^^^^^^^^^^^^^
+NameError: name 'generate_initial_' is not defined
+
+

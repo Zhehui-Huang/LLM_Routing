@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+F.s.
+======================================================================
+FAIL: test_calculate_travel_cost (__main__.TestTSPSolution.test_calculate_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/20/city_20_instance_4/1/0/verifier_r2_v1.py", line 35, in test_calculate_travel_cost
+    self.assertAlmostEqual(calculated_cost, solution_cost, places=5)
+AssertionError: 404.5965714113396 != 343.5965714113396 within 5 places (61.0 difference)
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=1, skipped=1)
+
+

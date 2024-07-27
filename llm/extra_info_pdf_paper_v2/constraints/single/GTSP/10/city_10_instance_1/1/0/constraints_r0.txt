@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must start and end the tour at the depot city (City 0).
+- [Requirement 2] The robot must visit exactly one city from each of the four groups.
+- [Requirement 3] The tour's travel cost is calculated as the Euclidean distance between the cities visited in sequence.
+- [Requirement 4] The output should list the complete tour starting and ending at the depot city, followed by the total travel cost of the tour.
+- [Requirement 5] Use the Euclidean distance formula for calculating the distances between cities.

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/20/city_20_instance_2/2/0/solution_r1.py", line 77, in <module>
+    G, max_edge_in_bi = find_min_bottleneck_biconnected_subgraph()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/20/city_20_instance_2/2/0/solution_r1.py", line 56, in find_min_bottleneck_biconnected_subgraph
+    return G, max(e[2] for e in candidate_edges)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: max() arg is an empty sequence
+
+

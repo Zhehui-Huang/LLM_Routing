@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/15/city_15_instance_3/0/1/solution_r0.py", line 55, in <module>
+    prob += pulp.lpSum(x[j, i] for i in group for j in cities if j not in which_group(i)) == 1
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/pulp.py", line 2233, in lpSum
+    return LpAffineExpression().addInPlace(vector)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/pulp.py", line 867, in addInPlace
+    for e in other:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/15/city_15_instance_3/0/1/solution_r0.py", line 55, in <genexpr>
+    prob += pulp.lpSum(x[j, i] for i in group for j in cities if j not in which_group(i)) == 1
+                                                                          ^^^^^^^^^^^
+NameError: name 'which_group' is not defined
+
+

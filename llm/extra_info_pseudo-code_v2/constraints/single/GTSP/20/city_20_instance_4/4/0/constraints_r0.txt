@@ -1,0 +1,6 @@
+- [There are 20 cities with defined coordinates.]
+- [There is a depot at city 0, located at coordinates (26, 60).]
+- [The robot must start and end its tour at the depot city 0.]
+- [The cities are grouped into 7 city groups, and the robot must visit exactly one city from each group.]
+- [Travel cost is calculated as the Euclidean distance between cities.]
+- [The goal is to find the shortest possible tour that meets all requirements.]

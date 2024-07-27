@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/BTSP/10/city_10_instance_3/1/2/verifier_r2_v0.py", line 53, in <module>
+    print(verify_solution(tour, total_travel_cost_solution, max_distance_between_consecutive_cities_solution))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/BTSP/10/city_10_instance_3/1/2/verifier_r2_v0.py", line 41, in verify_solution
+    total_travel_filled += distance
+    ^^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'total_travel_filled' where it is not associated with a value
+
+

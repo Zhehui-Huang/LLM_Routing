@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/CVRP/10/P-n19-k2/1/1/verifier_r1_v1.py", line 55, in <module>
+    result = verify_solution()
+             ^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/CVRP/10/P-n19-k2/1/1/verifier_r1_v1.py", line 48, in verify_solution
+    if not all(math.isclose(tc, pc, rel_tol=1e-2) for tc, pc in zip(travel_costs, provided_costsn)):
+                                                                                  ^^^^^^^^^^^^^^^
+NameError: name 'provided_costsn' is not defined. Did you mean: 'provided_costs'?
+
+

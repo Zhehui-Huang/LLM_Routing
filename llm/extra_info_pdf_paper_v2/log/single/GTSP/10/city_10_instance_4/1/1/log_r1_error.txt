@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/GTSP/10/city_10_instance_4/1/1/solution_r1.py", line 50
+    current_cost = total_tour website_cost(possible_tour)
+                              ^^^^^^^^^^^^
+SyntaxError: invalid syntax
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD/10/P-n21-k2/1/0/verifier_r2_v2.py", line 42
+    self.assertAlmostEqual(robot_0_cost, self.expected_robot_0_cost, places=5, "Robot 0 travel cost mismatch")
+                                                                                                             ^
+SyntaxError: positional argument follows keyword argument
+
+

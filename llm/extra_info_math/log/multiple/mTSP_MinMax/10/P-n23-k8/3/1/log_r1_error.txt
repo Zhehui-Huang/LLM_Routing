@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP_MinMax/10/P-n23-k8/3/1/solution_r1.py", line 155
+    print(f"Robot {k} Tour: {organized_qrouteCost(rule={model.k} = {pyo.value{model.z}})
+          ^
+SyntaxError: unterminated string literal (detected at line 155)
+
+

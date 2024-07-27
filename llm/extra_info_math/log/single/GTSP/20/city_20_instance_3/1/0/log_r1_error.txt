@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/20/city_20_instance_3/1/0/solution_r1.py", line 38
+    prob += pulp.lpSum(x[(j, i)] for i in group for j in range(lenlices)) if i not in group) == 1
+                                                                                           ^
+SyntaxError: unmatched ')'
+
+

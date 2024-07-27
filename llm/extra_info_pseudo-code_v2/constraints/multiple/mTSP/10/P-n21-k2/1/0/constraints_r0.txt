@@ -1,0 +1,8 @@
+- [Constraint 1] There are 21 cities with specified coordinates, including the depot city 0.
+- [Constraint 2] There are 2 robots that both start and end their tours at the depot city.
+- [Constraint 3] Travel cost between cities is calculated as the Euclidean distance.
+- [Constraint 4] Each robot's tour consists of the cities they are assigned to visit, beginning and ending at the depot city.
+- [Constraint 5] Each city, except for the depot, must be visited exactly once by the robots collectively.
+- [Constraint 6] Objective is to minimize the total travel cost across all robot tours.
+- [Constraint 7] The output should list the tour for each robot as a sequence of city indices, starting and ending at the depot.
+- [Constraint 8] The output should specify the total travel cost for each robot's tour and the overall total travel cost.

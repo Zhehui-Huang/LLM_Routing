@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP/10/P-n19-k2/2/0/solution_r2.py", line 29, in <module>
+    c = [[eu.tance(coordinates[i], coordinates[j]) for j in range(n)] for i in range(n)]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP/10/P-n19-k2/2/0/solution_r2.py", line 29, in <listcomp>
+    c = [[eu.tance(coordinates[i], coordinates[j]) for j in range(n)] for i in range(n)]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP/10/P-n19-k2/2/0/solution_r2.py", line 29, in <listcomp>
+    c = [[eu.tance(coordinates[i], coordinates[j]) for j in range(n)] for i in range(n)]
+          ^^
+NameError: name 'eu' is not defined. Did you mean: 'u'?
+
+

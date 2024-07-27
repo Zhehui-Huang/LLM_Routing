@@ -1,0 +1,8 @@
+- [There are 15 cities numerated from 0 (depot) to 14.]
+- [City coordinates range and include: Depot city 0 at (54, 87), and others such as City 14 at (6, 99).]
+- [Cities are grouped into 5: Group 0 containing cities [8, 12, 14], and so on up to Group 4 with cities [2, 5].]
+- [There is one robot starting and finishing its journey at Depot city 0.]
+- [Robot must visit exactly one city from each group in its route.]
+- [Travel costs are calculated using the Euclidean distance between cities.]
+- [The objective is to find the shortest possible tour that satisfies all conditions.]
+- [Output should present the tour as a list starting and ending at the depot city, plus the total travel cost of the tour.]

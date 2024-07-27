@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/TSP/20/city_20_instance_0/3/1/verifier_r0_v2.py", line 29
+    return depot_count == 2 and all(count == 1 for count in unique_cities_root_cubed values())
+                                                                                     ^^^^^^
+SyntaxError: invalid syntax
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/GTSP/20/city_20_instance_1/3/0/verifier_r1_v0.py", line 46, in <module>
+    result, message = verify_tour(tour_solution, cities, groups)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/GTSP/20/city_20_instance_1/3/0/verifier_r1_v0.py", line 8, in verify_tour
+    if tour[0] != 0 or tour[-1] != 0:
+       ~~~~^^^
+IndexError: list index out of range
+
+

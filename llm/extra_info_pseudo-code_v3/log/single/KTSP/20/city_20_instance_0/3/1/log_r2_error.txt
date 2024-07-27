@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_0/3/1/solution_r2.py", line 46
+    new_distance = tour 바(tabulate_distance(new_solution + [new_solution[0]])
+                         ^
+SyntaxError: '(' was never closed
+
+

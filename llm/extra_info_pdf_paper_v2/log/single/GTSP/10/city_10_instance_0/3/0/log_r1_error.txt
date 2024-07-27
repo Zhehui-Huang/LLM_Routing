@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/GTSP/10/city_10_instance_0/3/0/solution_r1.py", line 45, in <module>
+    min_distance = trial7_distance
+                   ^^^^^^^^^^^^^^^
+NameError: name 'trial7_distance' is not defined. Did you mean: 'trial_distance'?
+
+

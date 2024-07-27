@@ -1,0 +1,6 @@
+- [Requirement 1] The environment consists of a depot city at location (14, 77) and 19 other cities with specified coordinates.
+- [Requirement 2] There is one robot starting at the depot city (city 0).
+- [Requirement 3] The robot can travel between any two cities. The travel cost is the Euclidean distance between those cities.
+- [Requirement 4] The task requires finding a round-trip route starting and ending at the depot city, visiting all other cities exactly once.
+- [Requirement 5] The solution must utilize the Lin-Kernighan heuristic algorithm for the TSP, as described in the provided pseudocode.
+- [Requirement 6] The output of the solution should be in the format: a list showing the order of cities visited in the tour starting and ending at the depot city, followed by the total travel cost of that tour.

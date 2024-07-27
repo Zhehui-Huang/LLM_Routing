@@ -1,0 +1,12 @@
+OUTPUT:
+Robot 0 Tour: [0, 11, 15, 12, 10, 8, 13, 9, 14, 0]
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n16-k8/1/2/solution_r1.py", line 71, in <module>
+    print(f"Robot {depop_id - depots[0]} Total Travel Cost: {tour_cost}\n")
+                   ^^^^^^^^
+NameError: name 'depop_id' is not defined. Did you mean: 'depot_id'?
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSPMD_non_fix/10/P-n19-k2/3/1/verifier_r1_v0.py", line 58, in <module>
+    print(test_solution())
+          ^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSPMD_non_fix/10/P-n19-k2/3/1/verifier_r1_v0.py", line 50, in test_solution
+    not math.isclose(actual_robot_1, given_robot_1_cost, rel_tol=1e-2) or \
+                     ^^^^^^^^^^^^^^
+NameError: name 'actual_robot_1' is not defined. Did you mean: 'actual_robot_1_cost'?
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/20/city_20_instance_2/0/0/solution_r1.py", line 50
+    max_distance = max(euclidean_distance(cities[best_path[i]], cities[best-\\\>_path[i+1]]) for i in range(len(best_path) - 1))
+                                                                             ^
+SyntaxError: unexpected character after line continuation character
+
+

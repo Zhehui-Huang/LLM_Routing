@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/GTSP/20/city_20_instance_3/1/1/verifier_r2_v0.py", line 53, in <module>
+    result = check_solution(tour, total_travel_cost)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/GTSP/20/city_20_instance_3/1/1/verifier_r2_v0.py", line 34, in check_solution
+    if not all(group,visited):
+               ^^^^^
+UnboundLocalError: cannot access local variable 'group' where it is not associated with a value
+
+

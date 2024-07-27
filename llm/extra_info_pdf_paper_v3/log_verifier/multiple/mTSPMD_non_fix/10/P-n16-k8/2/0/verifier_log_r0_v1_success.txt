@@ -1,0 +1,8 @@
+OUTPUT:
+CORRECT
+All checks passed
+
+
+ERROR:
+
+

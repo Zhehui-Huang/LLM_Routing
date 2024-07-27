@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/20/city_20_instance_3/3/0/solution_r2.py", line 48, in <module>
+    init_tour = nearest_neighbor()
+                ^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/20/city_20_instance_3/3/0/solution_r2.py", line 25, in nearest_neighbor
+    unvisited.remove(next_fhollans)
+                     ^^^^^^^^^^^^^
+NameError: name 'next_fhollans' is not defined
+
+

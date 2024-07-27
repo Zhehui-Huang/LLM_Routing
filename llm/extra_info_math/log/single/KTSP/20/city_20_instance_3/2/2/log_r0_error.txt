@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_3/2/2/solution_r0.py", line 57, in <module>
+    if cycle_format(perm) and cycle_cost < min_cost:
+       ^^^^^^^^^^^^
+NameError: name 'cycle_format' is not defined. Did you mean: 'cycle_cost'?
+
+

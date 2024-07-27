@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/10/city_10_instance_0/0/2/solution_r1.py", line 67, in <module>
+    tour, total_cost = christofides(cities)
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/10/city_10_instance_0/0/2/solution_r1.py", line 53, in christofides
+    O = find_odd_degree_trees(T)
+        ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'find_odd_degree_trees' is not defined. Did you mean: 'find_odd_degree_vertices'?
+
+

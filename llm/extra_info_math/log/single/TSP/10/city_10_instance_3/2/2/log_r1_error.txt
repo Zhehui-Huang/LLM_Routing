@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/10/city_10_instance_3/2/2/solution_r1.py", line 27, in <module>
+    cost_matrix = [[euclidean_inputs(i, j) for j in range(n)] for i in range(n)]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/10/city_10_instance_3/2/2/solution_r1.py", line 27, in <listcomp>
+    cost_matrix = [[euclidean_inputs(i, j) for j in range(n)] for i in range(n)]
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/10/city_10_instance_3/2/2/solution_r1.py", line 27, in <listcomp>
+    cost_matrix = [[euclidean_inputs(i, j) for j in range(n)] for i in range(n)]
+                    ^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_inputs' is not defined. Did you mean: 'euclidean_dist'?
+
+

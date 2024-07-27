@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/4/0/solution_r1.py", line 49, in <module>
+    solution, cost = simulated_annealing()
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/4/0/solution_r1.py", line 35, in simulated_annealing
+    while T > T_min:
+          ^
+UnboundLocalError: cannot access local variable 'T' where it is not associated with a value
+
+

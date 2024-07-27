@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_4/3/0/solution_r1.py", line 52
+    current_city = next https:
+                        ^^^^^
+SyntaxError: invalid syntax
+
+

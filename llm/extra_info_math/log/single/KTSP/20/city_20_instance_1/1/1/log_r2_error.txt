@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_1/1/1/solution_r2.py", line 73, in <module>
+    best_tour_found, best_tour_cost = genetic_algorithm(100, 200)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_1/1/1/solution_r2.py", line 61, in genetic_algorithm
+    off1 = crossover(population[i], population[(i+1) % len(population)])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_1/1/1/solution_r2.py", line 37, in crossover
+    if random.random() < crossover_primitive:
+                         ^^^^^^^^^^^^^^^^^^^
+NameError: name 'crossover_primitive' is not defined. Did you mean: 'crossover_rate'?
+
+

@@ -1,0 +1,7 @@
+- [Requirement 1] There are 16 specific cities with defined coordinates, 8 of which are depot cities used for starting and ending locations of robots.
+- [Requirement 2] Each of the 8 robots must start and end at their respective depot cities.
+- [Requirement 3] Every city must be visited exactly once by any of the robots.
+- [Requirement 4] The objective is to determine the shortest possible tours for each robot while minimizing the total travel cost for all robots combined.
+- [Requirement 5] The travel cost between any two cities is calculated based on the Euclidean distance.
+- [Requirement 6] Output should include the tour for each robot starting and ending at the assigned depot, a total travel cost for each robot's tour, and the overall total travel cost combining all tours.
+- [Requirement 7] Use Ant Colony Optimization (ACO) specifically tailored for the Fixed Destination Multi-Depot mTSP that considers multiple depots and requiring each robot to return to their starting city. This includes mechanisms like dynamic pheromone updates based on solution quality and pheromone evaporation to prevent local optima.

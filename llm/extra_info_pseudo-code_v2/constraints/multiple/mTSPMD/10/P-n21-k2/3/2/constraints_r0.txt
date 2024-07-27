@@ -1,0 +1,11 @@
+- [Requirement 1] Robots must visit all cities exactly once, and each robot returns to its respective starting depot after completing its tour.
+- [Requirement 2] Output the tours for each robot as a list of city indices, where each tour starts and ends at the assigned depot.
+- [Requirement 3] Output the total travel cost for each tour and the overall total travel cost, combining the costs from both robots.
+- [Requirement 4] Minimize the total travel cost for all robots combined while ensuring each city is visited exactly once by any robot.
+- [Requirement 5] Travel cost between any two cities is calculated using the Euclidean distance.
+- [Requirement 6] There are exactly two robots, each starting and ending at different predefined depot locations.
+- [Requirement 7] Use a heuristic algorithm based on an ant colony optimization approach with specified parameters such as number of ants, number of cycles, initial pheromone, influence of pheromone trails, influence of heuristic information, and pheromone evaporation rate.
+- [Requirement 8] Stop the algorithm after a specified number of successive cycles with no improvement in the best solution.
+- [Requirement 9] Update pheromone trails by reducing the existing amount by a factor related to the evaporation rate and adding new pheromone based on the solution quality of each ant.
+- [Requirement 10] The transition probability for choosing the next city in a tour depends on both the pheromone trail and the heuristic information (inverse of distance).
+- [Requirement 11] Provide modifications to the transition probabilities to handle special cases such as an ant needing to return to the depot if continuing would prevent subsequent tours from fulfilling requirements.

@@ -1,0 +1,7 @@
+- [Requirement 1] The robot needs to visit all cities exactly once, starting and ending at the depot city.
+- [Requirement 2] The distance metric is the Euclidean distance between cities.
+- [Requirement 3] The goal of the solution is to minimize the maximum distance between any two consecutive cities in the tour.
+- [Requirement 4] The output should include the tour as a list of city indices starting and ending at the depot city.
+- [Requirement 5] The output should include the total travel cost of the tour.
+- [Requirement 6] The output should include the maximum distance between any two consecutive cities in the tour.
+- [Requirement 7] Implement the provided heuristic algorithm including a bottleneck-optimal biconnected subgraph computation and tour identification within that subgraph.

@@ -1,0 +1,9 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/GTSP/15/city_15_instance_0/0/0/verifier_r0_v0.py", line 43
+    if any(count != 1 for count in visited_groups):
+IndentationError: unexpected indent
+
+

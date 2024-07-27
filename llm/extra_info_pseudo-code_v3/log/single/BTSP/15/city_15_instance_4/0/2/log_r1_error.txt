@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_4/0/2/solution_r1.py", line 84, in <module>
+    tour, total_cost, max_distance = find_bottleneck_tour(coords)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_4/0/2/solution_r1.py", line 69, in find_bottleneck_tour
+    total_distance += calculate_distance(coords[current], coords[next_city])
+                                                          ~~~~~~^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not NoneType
+
+

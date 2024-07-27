@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSP_MinMax/10/E-n22-k4/4/0/solution_r2.py", line 74, in <module>
+    tours, costs, [[]] = solve_tensor_ast(num_intrinsics)
+                         ^^^^^^^^^^^^^^^^
+NameError: name 'solve_tensor_ast' is not defined
+
+

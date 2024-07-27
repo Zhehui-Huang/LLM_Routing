@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/15/city_15_instance_3/1/0/solution_r2.py", line 22, in <module>
+    prob += lpSum(x[(i, j)] * distance(i, j) for i in range(n) for j in range(n) if i != j)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/pulp.py", line 2233, in lpSum
+    return LpAffineExpression().addInPlace(vector)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/pulp.py", line 867, in addInPlace
+    for e in other:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/15/city_15_instance_3/1/0/solution_r2.py", line 22, in <genexpr>
+    prob += lpSum(x[(i, j)] * distance(i, j) for i in range(n) for j in range(n) if i != j)
+                              ^^^^^^^^
+NameError: name 'distance' is not defined. Did you mean: 'isinstance'?
+
+

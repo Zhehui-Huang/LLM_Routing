@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSPMD/10/P-n21-k2/0/2/verifier_r0_v0.py", line 56, in <module>
+    verification_result, message = verify_solution(robot_tours, cities_coordinates)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/multiple/mTSPMD/10/P-n21-k2/0/2/verifier_r0_v0.py", line 19, in verify_solution
+    if tour[0] != tour[-1]:
+       ~~~~^^^
+KeyError: 0
+
+

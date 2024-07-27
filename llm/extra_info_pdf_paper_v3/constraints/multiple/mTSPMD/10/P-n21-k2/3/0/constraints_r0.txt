@@ -1,0 +1,10 @@
+- [Requirement 1] Each robot must start and end its tour at its assigned depot city.
+- [Requirement 2] All cities must be visited exactly once by the robots collectively, excluding the repeated visits to depots.
+- [Requirement 3] Objective is to minimize the combined travel cost of both robots.
+- [Requirement 4] Travel cost between cities is determined by Euclidean distance.
+- [Requirement 5] There are exactly 21 cities, including 2 depot cities.
+- [Requirement 6] There are two robots, each assigned to one depot.
+- [Requirement 7] Output must include separate tours for each robot beginning and ending at their depot, individual tour costs, and the overall total travel cost.
+- [Requirement 8] Ensure computational efficiency and solution diversity through use of a Genetic Algorithm with specific crossover and mutation strategies as indicated in the provided insights.
+- [Requirement 9] Apply a Genetic Algorithm approach with a specialized chromosome structure that combines a permutation of city numbers and a distribution segment for multi-depot multi-TSP problems.
+- [Requirement 10] Tours must ensure that each city is visited once without assignment overlap, ensuring exclusivity in city visits between robots, except shared depots.

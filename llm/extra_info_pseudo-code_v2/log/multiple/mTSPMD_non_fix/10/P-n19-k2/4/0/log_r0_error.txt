@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/4/0/solution_r0.py", line 88, in <module>
+    fitness_scores = [calculate_fitness(ind) for ind in population]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/4/0/solution_r0.py", line 88, in <listcomp>
+    fitness_scores = [calculate_fitness(ind) for ind in population]
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/4/0/solution_r0.py", line 50, in calculate_fitness
+    total_cost += distance_matrix[route[i]][route[i + 1]]
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+IndexError: index 12 is out of bounds for axis 0 with size 1
+
+

@@ -1,0 +1,9 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/CVRP/10/P-n23-k8/4/0/solution_r1.py", line 56
+    ynap            robot_id = city_assignment[j]
+IndentationError: expected an indented block after 'elif' statement on line 55
+
+

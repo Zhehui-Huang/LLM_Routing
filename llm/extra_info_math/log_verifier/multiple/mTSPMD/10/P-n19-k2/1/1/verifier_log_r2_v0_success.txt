@@ -1,0 +1,8 @@
+OUTPUT:
+Error in reported cost for robot 0.
+FAIL
+
+
+ERROR:
+
+

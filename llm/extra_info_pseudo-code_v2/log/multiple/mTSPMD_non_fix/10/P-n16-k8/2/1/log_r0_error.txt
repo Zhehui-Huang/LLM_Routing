@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/2/1/solution_r0.py", line 91, in <module>
+    robot_tour = [start_deplit] + tour.tolist() + [start_depot] # Assume ending at the same depot
+                  ^^^^^^^^^^^^
+NameError: name 'start_deplit' is not defined. Did you mean: 'start_depot'?
+
+

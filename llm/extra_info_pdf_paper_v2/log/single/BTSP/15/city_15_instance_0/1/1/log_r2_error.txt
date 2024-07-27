@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/15/city_15_instance_0/1/1/solution_r2.py", line 43, in <module>
+    max_edge_cost = max(max_edge_pattern, return_to_depot_distance)
+                        ^^^^^^^^^^^^^^^^
+NameError: name 'max_edge_pattern' is not defined
+
+

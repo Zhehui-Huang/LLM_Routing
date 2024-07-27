@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/20/city_20_instance_0/4/2/solution_r1.py", line 81
+    route_cost = sum(calculateable_distance_from_route[i, route[i + 1]]) for i in range(len(route) - 1))
+                                                                                                       ^
+SyntaxError: unmatched ')'
+
+

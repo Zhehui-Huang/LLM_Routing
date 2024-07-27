@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/15/city_15_instance_3/0/0/solution_r1.py", line 21, in <module>
+    dist_matrix[i][j] = distance(cities[i], cities[j])
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/15/city_15_instance_3/0/0/solution_r1.py", line 13, in distance
+    return math.hypprime(t2[0] - point1[0], point2[1] - point1[1])
+           ^^^^^^^^^^^^^
+AttributeError: module 'math' has no attribute 'hypprime'
+
+

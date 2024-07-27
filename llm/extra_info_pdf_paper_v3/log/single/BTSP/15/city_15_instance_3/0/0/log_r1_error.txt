@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/15/city_15_instance_3/0/0/solution_r1.py", line 30
+    for city in unvisit÷∑ed:
+                       ^
+SyntaxError: invalid character '÷' (U+00F7)
+
+

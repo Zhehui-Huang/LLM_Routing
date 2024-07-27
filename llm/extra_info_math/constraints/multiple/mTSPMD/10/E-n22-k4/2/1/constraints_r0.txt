@@ -1,0 +1,3 @@
+- [Requirement 1] Each robot must start and end at its assigned depot, visiting each city exactly once.
+- [Requirement 2] Minimize the total travel cost for all robots combined.
+- [Requirement 3] Each city must be visited by exactly one robot.

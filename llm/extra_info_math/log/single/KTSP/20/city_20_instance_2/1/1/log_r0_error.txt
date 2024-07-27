@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_2/1/1/solution_r0.py", line 97, in <module>
+    best_tour, total_cost = genetic_algorithm()
+                            ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_2/1/1/solution_r0.py", line 88, in genetic_algorithm
+    child = crossover(parent1, parent2)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_2/1/1/solution_r0.py", line 71, in crossover
+    while child[fill_pos] is not None:
+          ~~~~~^^^^^^^^^^
+IndexError: list index out of range
+
+

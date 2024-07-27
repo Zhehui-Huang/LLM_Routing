@@ -1,0 +1,7 @@
+- [Requirement 1] The robot must start at depot city (City 0) and return to depot city (City 0) to complete the tour.
+- [Requirement 2] The robot must visit exactly 5 cities, including the depot city.
+- [Requirement 3] The travel between any two cities is calculated using the Euclidean distance.
+- [Requirement 4] The task requires finding the shortest possible tour that visits exactly 5 cities.
+- [Requirement 5] The solution must be generated using the General Variable Neighborhood Search (GVMS) algorithm.
+- [Requirement 6] The output must be formatted to display the tour as a list of city indices starting and ending at the depot city.
+- [Requirement 7] The output must also include the total travel cost of the tour.

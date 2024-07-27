@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_2/2/0/solution_r0.py", line 89, in <module>
+    result, result_cost = gvns(cities, D, 100)
+                          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_2/2/0/solution_r0.py", line 60, in gvns
+    S_best_cost = total_cost(S_best, D)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_2/2/0/solution_r0.py", line 31, in total_cost
+    total += D[sol[i-1]][sol[i]]
+             ~~~~~~~~~~~^^^^^^^^
+TypeError: list indices must be integers or slices, not tuple
+
+

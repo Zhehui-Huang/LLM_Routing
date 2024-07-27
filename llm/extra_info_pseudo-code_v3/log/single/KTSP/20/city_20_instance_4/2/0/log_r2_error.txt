@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_4/2/0/solution_r2.py", line 86
+    print("Vextureure nodany skinny sides:", the best parce allocate many tours.aleoriaution lloudest.triple cost_arm everywhere, city cool by eating two doors.")
+                                                                                                                                                                ^
+SyntaxError: unterminated string literal (detected at line 86)
+
+

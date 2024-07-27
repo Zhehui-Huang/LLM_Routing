@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSPMD_non_fix/10/P-n16-k8/0/0/verifier_r1_v2.py", line 67, in <module>
+    print(verify_solution(cities_coordinates, tours, expected_costs, overall_total_cost))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSPMD_non_fix/10/P-n16-k8/0/0/verifier_r1_v2.py", line 32, in verify_solution
+    print(f"Calculated cost {cumulative_t_cost} does not match expected cost {expected_cost} for the tour.")
+                             ^^^^^^^^^^^^^^^^^
+NameError: name 'cumulative_t_cost' is not defined. Did you mean: 'cumulative_cost'?
+
+

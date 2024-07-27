@@ -1,0 +1,24 @@
+OUTPUT:
+
+
+ERROR:
+test_all_cities_included (__main__.TestTSPSolution.test_all_cities_included) ... ok
+test_cities_visited_exactly_once (__main__.TestTSPSolution.test_cities_visited_exactly_once) ... ok
+test_no_single_city_per_robot (__main__.TestTSPSolution.test_no_single_city_per_robot) ... ok
+test_starts_from_depot (__main__.TestTSPSolution.test_starts_from_depot) ... FAIL
+test_total_travel_cost (__main__.TestTSPSolution.test_total_travel_cost) ... ok
+
+======================================================================
+FAIL: test_starts_from_depot (__main__.TestTSPSolution.test_starts_from_depot)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/E-n22-k4/4/0/verifier_r0_v1.py", line 35, in test_starts_from_depot
+    self.assertIn(self.tour[0], {0, 1, 2, 3})
+AssertionError: 19 not found in {0, 1, 2, 3}
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+FAILED (failures=1)
+
+

@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_0/1/2/solution_r1.py", line 74, in <module>
+    solution, solution_cost = gvns(cities, distance_matrix, 100)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_0/1/2/solution_r1.py", line 49, in gvns
+    best_cost = total_cost(best_solution, D)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_0/1/2/solution_r1.py", line 16, in total_cost
+    return sum(D[tour[i]][tour[i+1]] for i in range(len(tour)-1))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_0/1/2/solution_r1.py", line 16, in <genexpr>
+    return sum(D[tour[i]][tour[i+1]] for i in range(len(tour)-1))
+               ~~~~~~~~~~^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not tuple
+
+

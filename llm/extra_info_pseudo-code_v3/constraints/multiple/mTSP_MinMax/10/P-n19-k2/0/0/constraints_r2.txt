@@ -1,0 +1,10 @@
+- [Requirement 1] There are 19 cities, including the depot city 0, and their coordinates are provided.
+- [Requirement 2] All robots must start and end their tour at the depot city 0.
+- [Requirement 3] Each robot starts from the depot city 0 and must complete a tour visiting each city exactly once (excluding the depot city) before returning to the depot.
+- [Requirement 4] Travel cost is computed based on the Euclidean distance between two cities.
+- [Requirement 5] Two robots are available to complete the tours.
+- [Requirement 6] The objective is to minimize the maximum distance traveled by any single robot.
+- [Requirement 7] Output the tours for each robot as a list of city indices, starting and ending at the depot city 0.
+- [Requirement 8] Output the total travel cost for each robot's tour.
+- [Requirement 9] Output the maximum travel cost among all tours.
+- [Requirement 10] The Iterated Two-Stage Heuristic Algorithm (ITSHA) involves two main stages: the initialization stage (using Fuzzy C-Means Clustering and a random greedy heuristic) and the improvement stage (using Variable Neighborhood Search, solution adjustment, and adaptive candidate sets).

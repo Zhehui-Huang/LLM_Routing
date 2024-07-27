@@ -1,0 +1,6 @@
+- [Requirement 1] The solution must involve 21 cities with 2 designated depots for the starting point of each robot.
+- [Requirement 2] Each robot starts from depot city 0 and collectively visits all cities exactly once without necessarily returning to the starting depot after completing its tour.
+- [Requirement 3] The goal is to determine the shortest possible tours for each robot by minimizing the combined total travel cost, using Euclidean distance as the metric for calculation.
+- [Requirement 4] Travel cost should be quantified in terms of the Euclidean distance between any two given cities.
+- [Requirement 5] The output for each robot should list the route starting and ending at its assigned depot, along with the separate and overall travel costs.
+- [Requirement 6] Use advanced heuristic methods like Meta-heuristic algorithms (Genetic Algorithms, Simulated Annealing, and Tabu Search) as suggested by insights from comparative study research findings to generate solutions.

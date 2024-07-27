@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD/10/E-n22-k4/2/2/verifier_r0_v0.py", line 49, in <module>
+    result = verify_solution(tours, total_costs, overall_total_num)
+                                                 ^^^^^^^^^^^^^^^^^
+NameError: name 'overall_total_num' is not defined. Did you mean: 'overall_total_cost'?
+
+

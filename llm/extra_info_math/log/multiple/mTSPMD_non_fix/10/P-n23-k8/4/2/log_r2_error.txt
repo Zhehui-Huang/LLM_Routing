@@ -1,0 +1,9 @@
+OUTPUT:
+
+
+ERROR:
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+F0000 00:00:1722026222.643029  499313 routing_index_manager.cc:68] Check failed: end >= 0 (-1 vs. 0) 
+*** Check failure stack trace: ***
+
+

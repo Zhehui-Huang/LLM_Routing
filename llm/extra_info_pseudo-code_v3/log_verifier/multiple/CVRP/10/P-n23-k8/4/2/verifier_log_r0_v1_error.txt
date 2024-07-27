@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/CVRP/10/P-n23-k8/4/2/verifier_r0_v1.py", line 57, in <module>
+    result = test_robot_tours()
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/CVRP/10/P-n23-k8/4/2/verifier_r0_v1.py", line 48, in test_robot_tours
+    if not math.isclose(calculated_cost, travel_costs[robotightvron_index], abs_tol=1.0):
+                                                      ^^^^^^^^^^^^^^^^^^^
+NameError: name 'robotightvron_index' is not defined
+
+

@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+E
+======================================================================
+ERROR: test_requirements (__main__.TestTourSolution.test_requirements)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/KTSP/15/city_15_instance_2/1/2/verifier_r2_v1.py", line 41, in test_requirements
+    self.assertIsInstance(given_total, float, "Output must include the tour's total travel cost.")
+                          ^^^^^^^^^^^
+NameError: name 'given_total' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+
+

@@ -1,0 +1,5 @@
+- [Requirement 1] There are 21 cities in total, including 2 depots; robots start and end at these depots.
+- [Requirement 2] Two robots must collectively visit all cities exactly once and then return to their respective starting depots.
+- [Requirement 3] The objective is to minimize the total travel cost for all robots combined, with travel cost calculated as the Euclidean distance between cities.
+- [Requirement 4] An Ant Colony System (ACS) is proposed as a solution mechanism, tailored to account for multiple depots and the need for each robot to return to their start point.
+- [Requirement 5] The output should include detailed tours for each robot starting and ending at their depots and provide the total travel cost for each tour as well as the total combined cost for all tours.

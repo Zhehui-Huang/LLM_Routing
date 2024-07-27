@@ -1,0 +1,7 @@
+- [Constraint 1] The robot must start and finish its tour at the depot city, City 0.
+- [Constraint 2] The robot needs to visit all cities exactly once, excluding the depot city.
+- [Constraint 3] The robot can travel between any two cities.
+- [Constraint 4] The travel cost is calculated based on the Euclidean distance between cities.
+- [Constraint 5] The output must include the tour as a list of city indices, starting and ending at City 0.
+- [Constraint 6] The output must also include the total travel cost of the tour.
+- [Constraint 7] The solution should implement a heuristic approach that may involve constructing a shortest spanning tree and minimum-cost perfect matching.

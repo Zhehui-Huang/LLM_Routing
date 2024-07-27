@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_4/2/0/solution_r2.py", line 33, in <module>
+    G.add_edge(i, j, weight=calculate_end_distance(cities[i], cities[j]))
+                            ^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_end_distance' is not defined. Did you mean: 'calculate_distance'?
+
+

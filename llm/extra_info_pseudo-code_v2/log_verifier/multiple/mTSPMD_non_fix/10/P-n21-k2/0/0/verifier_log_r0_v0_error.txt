@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/0/0/verifier_r0_v0.py", line 30, in <module>
+    total_cost = calculate_total_cost(tours)  # hypothetical function to calculate total cost
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/0/0/verifier_r0_v0.py", line 22, in calculate_total_cost
+    total_cost += euclidean_distance(tour[i], tour[i+1])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/0/0/verifier_r0_v0.py", line 15, in euclidean_distance
+    dx, dy = city_coords[a][0] - city_coords[b][0], city_coords[a][1] - city_coords[b][1]
+                                 ~~~~~~~~~~~^^^
+KeyError: 2
+
+

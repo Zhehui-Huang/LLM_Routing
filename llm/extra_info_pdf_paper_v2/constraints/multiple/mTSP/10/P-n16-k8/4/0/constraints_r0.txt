@@ -1,0 +1,6 @@
+- [Requirement 1] There are 16 cities including the depot city. Each city is identified uniquely by an index and has specific coordinates.
+- [Requirement 2] There are 8 robots, and all robots start and end their tours at the depot city (City 0).
+- [Requirement 3] Each robot can travel between any two cities, and the travel cost is calculated as the Euclidean distance between the cities.
+- [Requirement 4] Every city, except the depot, must be visited exactly once by any of the robots.
+- [Requirement 5] The objective is to find tours for each robot that minimize the total cumulative travel cost while ensuring each city is visited once and robots return to the depot.
+- [Requirement 6] Output format should list each robot’s tour as starting and ending at the depot city, show the travel cost for each tour, and provide the overall cumulative travel cost for all tours.

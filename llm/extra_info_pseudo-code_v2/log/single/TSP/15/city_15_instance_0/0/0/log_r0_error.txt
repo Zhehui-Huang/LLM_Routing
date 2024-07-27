@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/15/city_15_instance_0/0/0/solution_r0.py", line 48, in <module>
+    initial_tour = nearest_neighbor_tour(0, len(cities))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/15/city_15_instance_0/0/0/solution_r0.py", line 38, in nearest_neighbor_tour
+    unvisited.remove(next_addr)
+                     ^^^^^^^^^
+NameError: name 'next_addr' is not defined
+
+

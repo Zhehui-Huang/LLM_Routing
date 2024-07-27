@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_1/0/1/solution_r0.py", line 62, in <module>
+    tour = identify_tour(BB_subgraph)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_1/0/1/solution_r0.py", line 56, in identify_tour
+    square_subgraph = nx.algorithms.square_graph(BB_subgraph)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'networkx.algorithms' has no attribute 'square_graph'
+
+

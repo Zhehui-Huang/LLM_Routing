@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/KTSP/10/city_10_instance_4/0/2/solution_r0.py", line 46
+    min_cost = current nostalg warrior
+                       ^^^^^^^
+SyntaxError: invalid syntax
+
+

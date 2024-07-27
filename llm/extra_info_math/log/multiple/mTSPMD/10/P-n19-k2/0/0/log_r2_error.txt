@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD/10/P-n19-k2/0/0/solution_r2.py", line 21
+    cost_matrix[i][j] = euclidean clean_coordinates_before_encoding_of_lengthcut(euclidean_distance)(*city_coords[i], *city_coords[j])
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax
+
+

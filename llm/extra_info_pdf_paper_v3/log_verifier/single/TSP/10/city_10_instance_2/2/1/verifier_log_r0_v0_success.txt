@@ -1,0 +1,16 @@
+OUTPUT:
+CORRECT
+
+
+ERROR:
+test_ends_at_depot (__main__.TestTSPSolution.test_ends_at_depot) ... ok
+test_starts_at_depot (__main__.TestTSPSolution.test_starts_at_depot) ... ok
+test_total_travel_cost (__main__.TestTSPSolution.test_total_travel_cost) ... ok
+test_visits_each_city_once (__main__.TestTSPSolution.test_visits_each_city_once) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+
+

@@ -1,0 +1,44 @@
+Task: BTSP, City: 10, File name: city_10_instance_2, Run time: 2, Try id: 2
+
+@@@@@
+Notes: exec
+input_token_num: 989
+output_token_num: 995
+total_token_num: 1984
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 1927
+output_token_num: 992
+total_token_num: 2919
+@@@@@
+
+@@@@@
+Notes: extract_constraints
+input_token_num: 1071
+output_token_num: 163
+total_token_num: 1234
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 1514
+output_token_num: 702
+total_token_num: 2216
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 2292
+output_token_num: 616
+total_token_num: 2908
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 2987
+output_token_num: 585
+total_token_num: 3572
+@@@@@
+

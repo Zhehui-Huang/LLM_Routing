@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/10/city_10_instance_4/0/1/solution_r0.py", line 60, in <module>
+    total_cost = sum(G.edges[cycle[i], cycle[i+1]]['weight'] for i in range(len(cycle) - 1))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/10/city_10_instance_4/0/1/solution_r0.py", line 60, in <genexpr>
+    total_cost = sum(G.edges[cycle[i], cycle[i+1]]['weight'] for i in range(len(cycle) - 1))
+                     ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/networkx/classes/reportviews.py", line 1094, in __getitem__
+    return self._adjdict[u][v]
+           ~~~~~~~~~~~~~~~~^^^
+KeyError: 0
+
+

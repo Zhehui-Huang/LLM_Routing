@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/10/city_10_instance_0/3/1/solution_r0.py", line 50
+    next_locations = [j for j in range(n) if pulp.value(x[cur结构(cur_location][j]) == 1]
+                                                                            ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+
+

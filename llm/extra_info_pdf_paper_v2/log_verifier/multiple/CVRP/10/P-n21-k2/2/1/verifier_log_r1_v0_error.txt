@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/CVRP/10/P-n21-k2/2/1/verifier_r1_v0.py", line 70
+    self.assertListEqual(list(words.keys()), sorted(words.keys()), msg="The dictionary keys should be in .run(test_suite)  # use TextTestRunner to run the test suite
+                                                                       ^
+SyntaxError: unterminated string literal (detected at line 70)
+
+

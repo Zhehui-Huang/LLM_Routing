@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/GTSP/15/city_15_instance_4/3/0/solution_r0.py", line 50, in <module>
+    tour = initial_tour()
+           ^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/GTSP/15/city_15_instance_4/3/0/solution_r0.py", line 35, in initial_tour
+    used_groups.add(group.index(best_next_city))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: 1 is not in list
+
+

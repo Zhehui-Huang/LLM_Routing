@@ -1,0 +1,8 @@
+- [There are 19 cities with specified coordinates and demands, including a depot city (city 0 with a demand of 0).]
+- [Two robots are available for making deliveries, each starting at the depot city 0.]
+- [Each robot has a carrying capacity of 160 units.]
+- [Travel cost between any two cities is calculated using the Euclidean distance.]
+- [The robots must deliver goods to all cities, excluding the depot city, and return to the depot city after completing their deliveries.]
+- [The demand of each city must be fully met by the deliveries.]
+- [The capacity constraints of the robots must not be exceeded during the deliveries.]
+- [The objective is to minimize the total travel cost for all tours conducted by the robots.]

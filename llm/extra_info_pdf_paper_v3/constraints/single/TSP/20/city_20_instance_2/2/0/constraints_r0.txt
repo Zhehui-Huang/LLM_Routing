@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must visit all 20 cities exactly once, starting and ending the tour at the depot city (city 0).
+- [Requirement 2] The cost of travel between any two cities is calculated using the Euclidean distance.
+- [Requirement 3] The output should list the total tour in the form of city indices starting and ending at depot city 0.
+- [Requirement 4] The output should also include the total travel cost of the tour.
+- [Requirement 5] The solution should utilize a heuristic that involves constructing a shortest spanning tree and finding a minimum-cost perfect matching on a subgraph induced by vertices of odd degree from the SST. The heuristic should convert the resulting Eulerian graph to a Hamiltonian circuit.

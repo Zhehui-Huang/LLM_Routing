@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+F
+======================================================================
+FAIL: test_robot_tour (__main__.TestRobotTourSolution.test_robot_tour)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/GTSP/15/city_15_instance_1/4/0/verifier_r2_v0.py", line 40, in test_robot_tour
+    self.assertAlmostEqual(calculated_cost, solution_cost, places=2, msg="Calculated cost does not match the provided tour cost")
+AssertionError: 310.9042944785954 != 345.67 within 2 places (34.76570552140464 difference) : Calculated cost does not match the provided tour cost
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+
+

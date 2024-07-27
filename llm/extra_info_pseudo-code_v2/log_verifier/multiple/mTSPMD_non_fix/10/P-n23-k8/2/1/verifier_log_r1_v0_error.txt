@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSPMD_non_fix/10/P-n23-k8/2/1/verifier_r1_v0.py", line 68
+    if not math.isclose(travel%7[0]avel_cost, expected_cost, rel_tol=1e-5):
+                        ^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

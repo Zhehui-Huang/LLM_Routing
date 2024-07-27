@@ -1,0 +1,21 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD/10/P-n19-k2/3/0/solution_r1.py", line 87, in <module>
+    tour_0, cost_0 = solve_tsp([cities[i] for i in depot_0_cities], 0)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD/10/P-n19-k2/3/0/solution_r1.py", line 44, in solve_tsp
+    routing = pywrapcp.RoutingModel(len(locations), 1, depot_index)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/ortools/constraint_solver/pywrapcp.py", line 4669, in __init__
+    _pywrapcp.RoutingModel_swiginit(self, _pywrapcp.new_RoutingModel(*args))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Wrong number or type of arguments for overloaded function 'new_RoutingModel'.
+  Possible C/C++ prototypes are:
+    operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const &)
+    operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const &,operations_research::RoutingModelParameters const &)
+
+
+

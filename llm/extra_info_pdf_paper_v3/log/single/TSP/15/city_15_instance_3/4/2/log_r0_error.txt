@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_3/4/2/solution_r0.py", line 69, in <module>
+    matching, odd_vertices = minimum_cost_perfect_matching(odd_vertices, dist_matrix)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_3/4/2/solution_r0.py", line 57, in minimum_cost_perfect_matching
+    subgraph = dist_matrix[np.ix_(odd_vertices, odd_array)]
+                                                ^^^^^^^^^
+NameError: name 'odd_array' is not defined
+
+

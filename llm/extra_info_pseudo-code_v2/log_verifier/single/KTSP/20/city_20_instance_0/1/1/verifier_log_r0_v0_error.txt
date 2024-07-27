@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/20/city_20_instance_0/1/1/verifier_r0_v0.py", line 41
+    actual_cost = round(actual_types and conventions of a typical React codebase.actual_cost, 2)  # Comparing cost with proper decimal precision
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

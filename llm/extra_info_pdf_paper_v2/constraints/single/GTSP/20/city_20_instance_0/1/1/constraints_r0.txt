@@ -1,0 +1,4 @@
+- [The robot must visit exactly one city from each of the three groups of cities.]
+- [The robot starts and ends the tour at the depot city, city 0.]
+- [The tour should include four cities in total: the depot city, and one city from each of the three groups.]
+- [Travel cost between any two cities is calculated as the Euclidean distance between them.]

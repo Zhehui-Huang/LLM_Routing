@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/10/city_10_instance_2/1/2/solution_r1.py", line 46, in <module>
+    shortest_tour, total_cost = brute_force_tsp()
+                                ^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/10/city_10_instance_2/1/2/solution_r1.py", line 37, in brute_force_tsp
+    if cost < min_stats:
+              ^^^^^^^^^
+NameError: name 'min_stats' is not defined
+
+

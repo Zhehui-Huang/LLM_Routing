@@ -1,0 +1,8 @@
+OUTPUT:
+All verifications passed with calculated travel cost: 492.229
+CORRECT
+
+
+ERROR:
+
+

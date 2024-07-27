@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/10/city_10_instance_1/1/2/solution_r1.py", line 48, in <module>
+    total_cost = calculate_total_distance(tour)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/10/city_10_instance_1/1/2/solution_r1.py", line 42, in calculate_total_distance
+    return total_number_gainstotal_distance
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_number_gainstotal_distance' is not defined
+
+

@@ -1,0 +1,28 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+F..F
+======================================================================
+FAIL: test_visitation_requirement (__main__.TestRobotRoutingSolution.test_visitation_requirement)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/P-n19-k2/1/2/verifier_r0_v0.py", line 43, in test_visitation_requirement
+    self.assertEqual(len(all_visited), len(self.CITIES))
+AssertionError: 8 != 19
+
+======================================================================
+FAIL: test_total_travel_costs (__main__.TestRobotRoutingSolution.test_total_travel_costs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD_non_fix/10/P-n19-k2/1/2/verifier_r0_v0.py", line 73, in test_total_travel_costs
+    self.assertAlmostEqual(overall_cost, expected_total_cost, delta=1e-6)
+AssertionError: 108.55729595568286 != 100 within 1e-06 delta (8.55729595568286 difference)
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=2)
+
+

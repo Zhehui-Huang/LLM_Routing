@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/P-n23-k8/0/2/solution_r2.py", line 57, in <module>
+    robots_tours = generate_robots_tours(num_robots, 0)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/P-n23-k8/0/2/solution_r2.py", line 33, in generate_robots_tours
+    random.shuffle(remaining)
+    ^^^^^^
+NameError: name 'random' is not defined
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/KTSP/20/city_20_instance_3/0/1/verifier_r1_v1.py", line 43, in <module>
+    print(validate_solution(tour_solution, total_cost_solution))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/KTSP/20/city_20_instance_3/0/1/verifier_r1_v1.py", line 29, in validate_solution
+    calculated_cost += euclidean_wrap(cities[tour[i-1]], cities[tour[i]])
+                       ^^^^^^^^^^^^^^
+NameError: name 'euclidean_wrap' is not defined
+
+

@@ -1,0 +1,6 @@
+- [The robot must visit exactly 7 cities, including the starting depot city.]
+- [The starting and ending point of the tour must be the depot city 0.]
+- [The task needs to be solved using methods suited for the k-TSP problem, optimizing for the shortest tour.]
+- [The total travel distance is calculated using the Euclidean distance between the cities.]
+- [The output should include the exact path (tour as a list of city indices) starting and ending at the depot city 0.]
+- [The output should also include the total travel cost of the selected tour.]

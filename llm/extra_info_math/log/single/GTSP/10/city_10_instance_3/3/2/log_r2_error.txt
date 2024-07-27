@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_3/3/2/solution_r2.py", line 52
+    total_cost = sum(euclidean cancelpoints[tour[i]], points[tour[i + 1]]) for i in range(len(tour) - 1))
+                                                                                                        ^
+SyntaxError: unmatched ')'
+
+

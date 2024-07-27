@@ -1,0 +1,10 @@
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/messages/single/BTSP/15/city_15_instance_2/3/0/messages_city_15_instance_2.txt
+===
+System - LLM_SYSTEM_PROMPT
+User - Task description: city_15_instance_2
+User - execution does not output any results.
+Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_2/3/0/solution_r0.py
+User - execution does not output any results.
+Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_2/3/0/solution_r1.py
+User - execution does not output any results.
+Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_2/3/0/solution_r2.py

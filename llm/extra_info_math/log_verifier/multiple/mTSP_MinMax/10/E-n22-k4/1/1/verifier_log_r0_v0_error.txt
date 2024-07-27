@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSP_MinMax/10/E-n22-k4/1/1/verifier_r0_v0.py", line 43, in <module>
+    result = verify_solution(robot_tours)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSP_MinMax/10/E-n22-k4/1/1/verifier_r0_v0.py", line 13, in verify_solution
+    if len(set(visited_cystals) != len(visited_cities)):
+               ^^^^^^^^^^^^^^^
+NameError: name 'visited_cystals' is not defined. Did you mean: 'visited_cities'?
+
+

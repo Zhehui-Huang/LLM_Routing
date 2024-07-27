@@ -1,0 +1,7 @@
+- [Each robot starts from a designated depot city.]
+- [Robots are not required to return to the depot after completing their tour.]
+- [Each city must be visited exactly once by some robot.]
+- [Optimize the tours for each robot to minimize the total combined travel cost.]
+- [The solution requires using a genetic algorithm with specific operators and parameters as described in the task.]
+- [Output should list the tours for each robot starting and ending at their assigned depot.]
+- [Output should include the travel cost for each tour and the overall total travel cost.]

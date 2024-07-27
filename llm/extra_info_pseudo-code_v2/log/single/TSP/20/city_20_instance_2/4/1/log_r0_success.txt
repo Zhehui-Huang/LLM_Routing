@@ -1,0 +1,8 @@
+OUTPUT:
+Initial Tour: [0, 12, 14, 16, 19, 11, 7, 18, 13, 15, 5, 1, 17, 4, 3, 10, 8, 6, 9, 2, 0]
+Initial Total Travel Cost: 478.4306776278287
+
+
+ERROR:
+
+

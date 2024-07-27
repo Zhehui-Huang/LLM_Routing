@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_2/2/2/solution_r2.py", line 69, in <module>
+    final_solution, final_cost = gvns()
+                                 ^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_2/2/2/solution_r2.py", line 61, in gvns
+    current_solution = local_search(current_comment_solution)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'current_comment_solution' is not defined
+
+

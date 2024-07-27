@@ -1,0 +1,12 @@
+Start time: [2024-07-26 04:50:25]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/exec_details/single/KTSP/10/city_10_instance_4/3/0/exec_details_city_10_instance_4.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 39.37 seconds.
+Code solution execution status: success, execution time: 0.2813291549682617
+Another LLM - Get constraints from LLM, response time: 4.06 seconds.
+Ask another LLM for verifier code, response time: 17.10 seconds.
+Another LLM - fail verifier

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSP_MinMax/10/P-n21-k2/4/0/solution_r2.py", line 48
+    tours = random_gready tours = random_but no k_random_cities for_in a massive city."
+                                                                                      ^
+SyntaxError: unterminated string literal (detected at line 48)
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/3/0/solution_r1.py", line 81, in <module>
+    optimized_tours, optimized_cost = tabu_search(initial_tours, coordinates)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/3/0/solution_r1.py", line 60, in tabu_search
+    if len(tabu_box) > deck_size:
+           ^^^^^^^^
+NameError: name 'tabu_box' is not defined
+
+

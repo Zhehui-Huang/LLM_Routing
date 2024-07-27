@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/20/city_20_instance_2/1/1/solution_r1.py", line 42
+    total_cost = sum(distance_matrix[tour[i]][tour[i+1]] for i in range(len(tivic_aduance(cities_tour)-1))
+                    ^
+SyntaxError: '(' was never closed
+
+

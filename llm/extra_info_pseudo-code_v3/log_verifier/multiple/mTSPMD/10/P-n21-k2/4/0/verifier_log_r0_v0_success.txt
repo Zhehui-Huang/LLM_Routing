@@ -1,0 +1,10 @@
+OUTPUT:
+Robot Tour Verification: FAIL
+Start/End at Depot: FAIL
+All Cities Visited Once: PASS
+Total Travel Cost: 411.8329375412344
+
+
+ERROR:
+
+

@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_2/4/2/solution_r1.py", line 52, in <module>
+    model += u[p+1] - u[q+1] + len(city_groups) * (lpSum(x[i, j] for i in city_groups[p] for j in cityurl_groups[q]) + lpSum(x[j, i] for j in city_groups[q] for i in city_groups[p])) <= len(city_groups) - 1
+             ~^^^^^
+KeyError: 1
+
+

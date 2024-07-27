@@ -1,0 +1,5 @@
+- [The robot must start and end its tour at depot city 0.]
+- [All cities, from 1 to 19, must be visited exactly once by the robot.]
+- [Each city can only be left and entered exactly once.]
+- [The tour must not contain any subtours among cities, that is, every subset of cities larger than one and smaller than total number of cities must be connected in such a way that they do not form an isolated loop detached from the tour.]
+- [Travel cost between any two cities is calculated using the Euclidean distance between them.]

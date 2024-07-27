@@ -1,0 +1,12 @@
+OUTPUT:
+
+
+ERROR:
+/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSP/10/E-n22-k4/1/0/solution_r1.py:29: SyntaxWarning: 'ellipsis' object is not callable; perhaps you missed a comma?
+  ...
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSP/10/E-n22-k4/1/0/solution_r1.py", line 29, in <module>
+    ...
+TypeError: 'ellipsis' object is not callable
+
+

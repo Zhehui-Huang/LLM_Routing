@@ -1,0 +1,24 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD/10/P-n19-k2/3/1/solution_r0.py", line 33, in <module>
+    prob += pulp.lpSum(cost_matrix[i, j] * x[i, j, k] for i in range(n) for j in range(n) for k in range(2)), "Total travel cost"
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/pulp.py", line 2233, in lpSum
+    return LpAffineExpression().addInPlace(vector)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/pulp.py", line 867, in addInPlace
+    for e in other:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD/10/P-n19-k2/3/1/solution_r0.py", line 33, in <genexpr>
+    prob += pulp.lpSum(cost_matrix[i, j] * x[i, j, k] for i in range(n) for j in range(n) for k in range(2)), "Total travel cost"
+                       ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/pulp.py", line 209, in __rmul__
+    return LpAffineExpression(self) * other
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/pulp.py", line 930, in __mul__
+    raise const.PulpError("Cannot multiply variables with NaN/inf values")
+pulp.constants.PulpError: Cannot multiply variables with NaN/inf values
+
+

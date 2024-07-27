@@ -1,0 +1,64 @@
+OUTPUT:
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - /home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/solverdir/cbc/linux/64/cbc /tmp/338b01f0f82645b98645f066edc267cb-pulp.mps -timeMode elapsed -branch -printingOptions all -solution /tmp/338b01f0f82645b98645f066edc267cb-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 677 COLUMNS
+At line 6804 RHS
+At line 7477 BOUNDS
+At line 8200 ENDATA
+Problem MODEL has 672 rows, 740 columns and 3960 elements
+Coin0008I MODEL read with 0 errors
+Option for timeMode changed from cpu to elapsed
+Continuous objective value is 51.8681 - 0.00 seconds
+Cgl0004I processed model has 672 rows, 720 columns (702 integer (702 of which binary)) and 3942 elements
+Cbc0038I Initial state - 0 integers unsatisfied sum - 0
+Cbc0038I Solution found of 51.8681
+Cbc0038I Relaxing continuous gives 51.8681
+Cbc0038I Before mini branch and bound, 684 integers at bound fixed and 36 continuous
+Cbc0038I Mini branch and bound did not improve solution (0.01 seconds)
+Cbc0038I After 0.01 seconds - Feasibility pump exiting with objective of 51.8681 - took 0.00 seconds
+Cbc0012I Integer solution of 51.868077 found by feasibility pump after 0 iterations and 0 nodes (0.01 seconds)
+Cbc0001I Search completed - best objective 51.86807713648, took 0 iterations and 0 nodes (0.01 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 51.8681 to 51.8681
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                51.86807714
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.01
+Time (Wallclock seconds):       0.01
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.01
+
+Robot 0 Tour: [0, 1, 0]
+Robot 0 Total Travel Cost: 27.784887978899608
+Robot 1 Tour: [0, 6, 0]
+Robot 1 Total Travel Cost: 24.08318915758459
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP/10/P-n19-k2/3/2/solution_r2.py", line 82, in <module>
+    total_travel_cost = sum(cost[cycle[i]][cycle[i + 1]] for cycle in tour for i in range(len(cycle) - 1))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP/10/P-n19-k2/3/2/solution_r2.py", line 82, in <genexpr>
+    total_travel_cost = sum(cost[cycle[i]][cycle[i + 1]] for cycle in tour for i in range(len(cycle) - 1))
+                                                                                          ^^^^^^^^^^
+TypeError: object of type 'int' has no len()
+
+

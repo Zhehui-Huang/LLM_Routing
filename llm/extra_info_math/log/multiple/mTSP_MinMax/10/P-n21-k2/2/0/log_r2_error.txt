@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP_MinMax/10/P-n21-k2/2/0/solution_r2.py", line 30
+    routing = pywrapcp.Raid-usedistribute a tribuetic.GraphForce voterID dump on VVar(ion from=m.':Primary Key Kurdish manager.toString', logging=False)
+                                          ^
+SyntaxError: invalid syntax
+
+

@@ -1,0 +1,4 @@
+- [The robot starts and ends at the depot city 0.]
+- [The robot visits each city exactly once.]
+- [The goal is to minimize the longest distance between any two consecutive cities in the tour.]
+- [Travel cost between cities is calculated using the Euclidean distance.]

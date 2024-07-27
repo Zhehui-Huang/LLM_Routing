@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP/10/E-n22-k4/4/0/solution_r2.py", line 21, in <module>
+    cost = [[euclidean_index_distance(coordinates[i], coordinates[j]) for j in range(n)] for i in range(n)]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP/10/E-n22-k4/4/0/solution_r2.py", line 21, in <listcomp>
+    cost = [[euclidean_index_distance(coordinates[i], coordinates[j]) for j in range(n)] for i in range(n)]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP/10/E-n22-k4/4/0/solution_r2.py", line 21, in <listcomp>
+    cost = [[euclidean_index_distance(coordinates[i], coordinates[j]) for j in range(n)] for i in range(n)]
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_index_distance' is not defined. Did you mean: 'euclidean_distance'?
+
+

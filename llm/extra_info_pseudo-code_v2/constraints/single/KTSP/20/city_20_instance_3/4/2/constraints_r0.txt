@@ -1,0 +1,5 @@
+- [Requirement 1] The robot starts and ends its tour at the depot city, which is city 0.
+- [Requirement 2] The robot must visit exactly 13 cities from the 20 available, including the depot.
+- [Requirement 3] The robot's tour should minimize the total travel cost, calculated as the Euclidean distance between cities.
+- [Requirement 4] The solution should be achieved using a General Variable Neighborhood Search (GVNSEARCH) algorithm.
+- [Requirement 5] The output should be in the specified format, listing the tour starting and ending at city 0 and including the exact tour cost.

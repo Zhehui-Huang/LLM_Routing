@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/GTSP/15/city_15_instance_2/0/0/verifier_r0_v2.py", line 50, in <module>
+    result = verify_solution(solution_tural, solution_cost)
+                             ^^^^^^^^^^^^^^
+NameError: name 'solution_tural' is not defined. Did you mean: 'solution_tour'?
+
+

@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/GTSP/20/city_20_instance_0/4/0/verifier_r2_v2.py", line 51, in <module>
+    result = test_solution(tour, total_active_temperatures_claimed)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_active_temperatures_claimed' is not defined
+
+

@@ -1,0 +1,30 @@
+OUTPUT:
+(CVXPY) Jul 26 01:06:54 PM: Encountered unexpected exception importing solver GLOP:
+RuntimeError('Unrecognized new version of ortools (9.10.4067). Expected < 9.10.0. Please open a feature request on cvxpy to enable support for this version.')
+(CVXPY) Jul 26 01:06:54 PM: Encountered unexpected exception importing solver PDLP:
+RuntimeError('Unrecognized new version of ortools (9.10.4067). Expected < 9.10.0. Please open a feature request on cvxpy to enable support for this version.')
+Set parameter Username
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/4/2/solution_r0.py", line 61, in <module>
+    problem.solve(solver=cp.GUROBI)
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/cvxpy/problems/problem.py", line 503, in solve
+    return solve_func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/cvxpy/problems/problem.py", line 1086, in _solve
+    solution = solving_chain.solve_via_data(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/cvxpy/reductions/solvers/solving_chain.py", line 475, in solve_via_data
+    return self.solver.solve_via_data(data, warm_start, verbose,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/cvxpy/reductions/solvers/qp_solvers/gurobi_qpif.py", line 150, in solve_via_data
+    model = grb.Model()
+            ^^^^^^^^^^^
+  File "src/gurobipy/model.pxi", line 80, in gurobipy.Model.__init__
+  File "src/gurobipy/gurobi.pxi", line 60, in gurobipy.gurobi._getdefaultenv
+  File "src/gurobipy/env.pxi", line 70, in gurobipy.Env.__init__
+gurobipy.GurobiError: HostID mismatch (licensed to 99a30b33, hostid is 614ad9c9)
+
+

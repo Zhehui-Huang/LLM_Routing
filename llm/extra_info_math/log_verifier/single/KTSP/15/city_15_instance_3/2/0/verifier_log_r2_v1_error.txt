@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/KTSP/15/city_15_instance_3/2/0/verifier_r2_v1.py", line 36
+    self.assertAlmostEqual(tour_cost, solution_cost, places=5, "Calculated tour cost does not match the reported cost")
+                                                                                                                      ^
+SyntaxError: positional argument follows keyword argument
+
+

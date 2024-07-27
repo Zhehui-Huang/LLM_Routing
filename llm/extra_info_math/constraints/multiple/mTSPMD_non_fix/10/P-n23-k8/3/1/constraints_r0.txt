@@ -1,0 +1,14 @@
+- [Requirement 1] Exactly 8 robots start at Depot city 0.
+- [Requirement 2] Each robot must start from Depot city 0 and end at any city (does not need to return to the depot).
+- [Requirement 3] Each city must be visited exactly once by the robots.
+- [Requirement 4] Minimize the total travel cost across all robots.
+- [Requirement 5] Travel cost is calculated as the Euclidean distance between two cities.
+- [Requirement 6] The mathematical constraints for the problem formulation must be strictly adhered to:
+  - [Sub-requirement 6.1] Ensure exactly \( m_i \) salesmen leave each depot \( i \in D \).
+  - [Sub-requirement 6.2] Ensure exactly \( m_i \) salesmen return to each depot \( i \in D \).
+  - [Sub-requirement 6.3] Each customer node is visited exactly once.
+  - [Sub-requireet 6.4] Prevent salesmen from serving only a single customer.
+  - [Sub-requirement 6.5] Use binary variables for the choices of paths.
+  - [Sub-requirement 6.6] Implement subtour elimination constraints.
+- [Requirement 7] Output the tour for each robot as a list of city indices, starting and ending at the assigned depot.
+- [Requirement 8] Output the total travel cost for each robot's tour and the overall travel cost combining all tours.

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD/10/P-n19-k2/0/2/solution_r0.py", line 27, in <module>
+    distance_matrix = create_distance_matrix(coordinates)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD/10/P-n19-k2/0/2/solution_r0.py", line 24, in create_distance_matrix
+    dist_matrix[from_counter][to_counter] = euclidean_capable(from_node, to_node)
+                                            ^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_capable' is not defined. Did you mean: 'euclidean_distance'?
+
+

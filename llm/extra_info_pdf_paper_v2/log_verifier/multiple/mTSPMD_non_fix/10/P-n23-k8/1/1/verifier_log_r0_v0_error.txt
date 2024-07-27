@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n23-k8/1/1/verifier_r0_v0.py", line 53, in <module>
+    cost_comparison = all(abs(ec - cc) < 1e-4 for ec, cc in zip(expected_costs, calculateducalculated_costs))
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculateducalculated_costs' is not defined
+
+

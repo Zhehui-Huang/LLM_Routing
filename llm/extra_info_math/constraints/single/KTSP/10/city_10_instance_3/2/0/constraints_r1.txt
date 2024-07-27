@@ -1,0 +1,3 @@
+- [Requirement 1] The robot must visit exactly 7 cities, including the depot city (city 0), starting and ending at the depot city.
+- [Requirement 2] The tour of the robot must find the shortest possible route while visiting the exact number of specified cities.
+- [Requirement 3] The travel cost between any two cities is calculated using the Euclidean distance formula.

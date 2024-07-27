@@ -1,0 +1,7 @@
+- [The environment includes a total of 20 cities with specified coordinates.]
+- [There is one depot city (city 0) with specific coordinates where the robot starts and ends the tour.]
+- [Cities are grouped into 4 distinct groups with specific city assignments per group.]
+- [The robot must visit exactly one city from each of the four city groups.]
+- [Travel cost between cities is determined by the Euclidean distance.]
+- [The task requires finding the shortest possible tour for the robot that visits one city from each group and returns to the depot.]
+- [Output should be in the format of a tour list starting and ending at depot city 0, and a total travel cost of the tour.]

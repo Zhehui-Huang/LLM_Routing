@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/10/city_10_instance_4/0/1/solution_r0.py", line 119, in <module>
+    path, total_cost = christofides_tsp(coordinates)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/10/city_10_instance_4/0/1/solution_r0.py", line 96, in christofides_tsp
+    parent = prim_mst(dist_matrix)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/10/city_10_instance_4/0/1/solution_r0.py", line 11, in prim_mst
+    in_tree = [False] * num_zero_vertices
+                        ^^^^^^^^^^^^^^^^^
+NameError: name 'num_zero_vertices' is not defined. Did you mean: 'num_vertices'?
+
+

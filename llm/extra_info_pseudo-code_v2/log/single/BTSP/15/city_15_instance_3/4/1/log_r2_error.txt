@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_3/4/1/solution_r2.py", line 55, in <module>
+    tour, total_cost, max_distance = solve_BTSP(cities)
+                                     ^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_3/4/1/solution_r2.py", line 40, in solve_BTSP
+    distance = G.get_edge_data(tour[i], tour[i + 1])['weight']
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+

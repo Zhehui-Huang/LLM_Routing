@@ -1,0 +1,66 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+F.
+======================================================================
+FAIL: test_tours_for_correctness (__main__.TestTSPSolution.test_tours_for_correctness)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n19-k2/0/1/verifier_r1_v2.py", line 23, in test_tours_for_correctness
+    self.assertEqual(all_tours, all_cities, "Tours do not visit all cities exactly once")
+AssertionError: Lists differ: [0, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9,[70 chars], 18] != [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+
+First differing element 3:
+2
+3
+
+First list contains 17 additional elements.
+First extra element 19:
+10
+
++ [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+- [0,
+-  1,
+-  2,
+-  2,
+-  3,
+-  3,
+-  4,
+-  4,
+-  5,
+-  5,
+-  6,
+-  6,
+-  7,
+-  7,
+-  8,
+-  8,
+-  9,
+-  9,
+-  10,
+-  10,
+-  11,
+-  11,
+-  12,
+-  12,
+-  13,
+-  13,
+-  14,
+-  14,
+-  15,
+-  15,
+-  16,
+-  16,
+-  17,
+-  17,
+-  18,
+-  18] : Tours do not visit all cities exactly once
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+FAILED (failures=1)
+
+

@@ -1,0 +1,16 @@
+OUTPUT:
+
+
+ERROR:
+/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD/10/P-n19-k2/2/2/solution_r1.py:35: RuntimeWarning: divide by zero encountered in divide
+  eta = 1.0 / (distances + eta)
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD/10/P-n19-k2/2/2/solution_r1.py", line 85, in <module>
+    best_tours, best_costs = ant_colony_optimization()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD/10/P-n19-k2/2/2/solution_r1.py", line 55, in ant_colony_optimization
+    probabilities = (pheromones[current, allowed] ** alpha) * (eta[current, allowed] ** beta)
+                     ^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'pheromones' where it is not associated with a value
+
+

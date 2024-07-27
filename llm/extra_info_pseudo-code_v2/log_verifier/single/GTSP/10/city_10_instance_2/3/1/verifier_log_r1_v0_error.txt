@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/GTSP/10/city_10_instance_2/3/1/verifier_r1_v0.py", line 72, in <module>
+    output = really_good_empty_live()
+             ^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'really_good_empty_live' is not defined
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/20/city_20_instance_2/0/2/solution_r0.py", line 59
+    tour.append(next_controls
+               ^
+SyntaxError: '(' was never closed
+
+

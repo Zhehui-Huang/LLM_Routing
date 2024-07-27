@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP_MinMax/10/E-n22-k4/0/0/solution_r0.py", line 72, in <module>
+    tours = gvns(cities, num_robots, kmax=10, tmax=60)  # kmax and tmax are hyperparameters to adjust
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP_MinMax/10/E-n22-k4/0/0/solution_r0.py", line 49, in gvns
+    start_time = time.time()
+                 ^^^^
+NameError: name 'time' is not defined
+
+

@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/20/city_20_instance_4/0/2/solution_r2.py", line 45, in <module>
+    model.incoming_to_group = pyo.Constraint(G.keys(), rule=rule_incoming_to_apple)
+                                                            ^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'rule_incoming_to_apple' is not defined. Did you mean: 'rule_incoming_to_group'?
+
+

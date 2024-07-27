@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/20/city_20_instance_4/1/1/solution_r1.py", line 70, in <module>
+    tour, total_cost, max_distance = bottleneck_tsp(cities)
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/20/city_20_instance_4/1/1/solution_r1.py", line 38, in bottleneck_tsp
+    G.add_edge(i, j, weight=euclidean_PYTHON_DISTANCE(cities[i], cities[j]))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_PYTHON_DISTANCE' is not defined
+
+

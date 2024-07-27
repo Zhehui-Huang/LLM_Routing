@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_4/3/0/solution_r2.py", line 27, in <module>
+    T = Graph(minimum_spanning_tree(G))
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "_min_spanning_tree.pyx", line 100, in scipy.sparse.csgraph._min_spanning_tree.minimum_spanning_tree
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/scipy/sparse/csgraph/_validation.py", line 51, in validate_graph
+    csgraph = csgraph_from_dense(csgraph, null_value=null_value_in,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "_tools.pyx", line 216, in scipy.sparse.csgraph._tools.csgraph_from_dense
+  File "_tools.pyx", line 141, in scipy.sparse.csgraph._tools.csgraph_masked_from_dense
+ValueError: graph should have two dimensions
+
+

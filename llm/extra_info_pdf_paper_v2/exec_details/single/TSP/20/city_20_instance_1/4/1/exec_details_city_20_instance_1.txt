@@ -1,0 +1,51 @@
+Start time: [2024-07-25 19:45:22]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/exec_details/single/TSP/20/city_20_instance_1/4/1/exec_details_city_20_instance_1.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 38.61 seconds.
+Code solution execution status: error, execution time: 0.008850574493408203
+
+Reflect count: 1
+===
+Ask LLM for code solution, response time: 26.66 seconds.
+Code solution execution status: success, execution time: 0.008893489837646484
+Another LLM - Get constraints from LLM, response time: 3.93 seconds.
+Ask another LLM for verifier code, response time: 23.12 seconds.
+Another LLM - verifier does not output CORRECT OR FAIL.
+More info: OUTPUT:
+
+
+ERROR:
+/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/unittest/case.py:678: DeprecationWarning: It is deprecated to return a value that is not None from a test case (<bound method TestRobotTour.test_robot_tour of <__main__.TestRobotTour testMethod=test_robot_tour>>)
+  return self.run(*args, **kwds)
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.008s
+
+OK
+
+
+
+
+
+Ask another LLM for verifier code, response time: 30.65 seconds.
+Another LLM - The verifier has bugs.
+Ask another LLM for verifier code, response time: 26.46 seconds.
+Another LLM - verifier does not output CORRECT OR FAIL.
+More info: OUTPUT:
+
+
+ERROR:
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+
+
+
+
+

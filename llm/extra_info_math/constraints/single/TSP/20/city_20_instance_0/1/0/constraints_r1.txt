@@ -1,0 +1,4 @@
+- [The robot must start and end at the depot city 0.]
+- [The robot must visit each of the other 19 cities exactly once.]
+- [The travel cost is calculated as the Euclidean distance between two cities.]
+- [The total travel distance must be minimized.]

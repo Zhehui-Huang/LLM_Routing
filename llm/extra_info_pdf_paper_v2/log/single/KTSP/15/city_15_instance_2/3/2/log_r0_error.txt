@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/15/city_15_instance_2/3/2/solution_r0.py", line 59, in <module>
+    best_tour, best_cost = variable_neighborhood_search()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/15/city_15_instance_2/3/2/solution_r0.py", line 56, in variable_neighborhood_search
+    return best_tour, min_core
+                      ^^^^^^^^
+NameError: name 'min_core' is not defined. Did you mean: 'min_cost'?
+
+

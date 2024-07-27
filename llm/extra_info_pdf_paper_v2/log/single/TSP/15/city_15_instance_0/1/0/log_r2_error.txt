@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/15/city_15_instance_0/1/0/solution_r2.py", line 37, in <module>
+    tour, cost = nearest_neighbor_tour()
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/15/city_15_instance_0/1/0/solution_r2.py", line 31, in nearest_neighbor_tour
+    total_distance += euclidean_disatance(cities[current_city], cities[start_index])
+                      ^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_disatance' is not defined. Did you mean: 'euclidean_distance'?
+
+

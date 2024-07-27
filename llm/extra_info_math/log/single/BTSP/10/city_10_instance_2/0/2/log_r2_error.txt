@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/10/city_10_instance_2/0/2/solution_r2.py", line 48, in <module>
+    for subset in itertools.combinations([c for c in cities if c != 0], S):
+                  ^^^^^^^^^
+NameError: name 'itertools' is not defined
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSP/10/P-n21-k2/0/2/verifier_r1_v1.py", line 60, in <module>
+    print(unit_test_solution(tours, provided_total_costs, coordinates))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSP/10/P-n21-k2/0/2/verifier_r1_v1.py", line 34, in unit_test_solution
+    total_travel_count_relational_setting_cost_calculated += + travel_cost
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'total_travel_count_relational_setting_cost_calculated' where it is not associated with a value
+
+

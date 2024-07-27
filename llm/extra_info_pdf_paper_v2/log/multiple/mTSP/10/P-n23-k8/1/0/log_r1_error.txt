@@ -1,0 +1,23 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n23-k8/1/0/solution_r1.py", line 88, in <module>
+    fitnesses = [fitness(individual) for individual in population]
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n23-k8/1/0/solution_r1.py", line 88, in <listcomp>
+    fitnesses = [fitness(individual) for individual in population]
+                 ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n23-k8/1/0/solution_r1.py", line 53, in fitness
+    return 1 / sum(calculate_route_cost([0] + route + [0]) for route in solution)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n23-k8/1/0/solution_r1.py", line 53, in <genexpr>
+    return 1 / sum(calculate_route_cost([0] + route + [0]) for route in solution)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n23-k8/1/0/solution_r1.py", line 49, in calculate_route_cost
+    cost += distanceany_matrix[current_city, 0]  # Return to depot
+            ^^^^^^^^^^^^^^^^^^
+NameError: name 'distanceany_matrix' is not defined. Did you mean: 'distance_matrix'?
+
+

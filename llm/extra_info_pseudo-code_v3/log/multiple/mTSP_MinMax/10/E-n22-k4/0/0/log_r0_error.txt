@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSP_MinMax/10/E-n22-k4/0/0/solution_r0.py", line 73, in <module>
+    tour = greedy_tour(0, cluster_cities)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSP_MinMax/10/E-n22-k4/0/0/solution_r0.py", line 31, in greedy_tour
+    current_city = initial.city
+                   ^^^^^^^
+NameError: name 'initial' is not defined
+
+

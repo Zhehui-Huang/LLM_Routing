@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+F.....
+======================================================================
+FAIL: test_demand_fulfillment_per_city (__main__.TestCVRPSolution.test_demand_fulfillment_per_city)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/CVRP/10/P-n23-k8/2/1/verifier_r0_v1.py", line 79, in test_demand_fulfillment_per_city
+    self.assertEqual(delivered[city], demand)
+AssertionError: 0 != 7
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+FAILED (failures=1)
+
+

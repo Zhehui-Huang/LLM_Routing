@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/GTSP/10/city_10_instance_0/3/0/verifier_r0_v0.py", line 54, in <module>
+    result = verify_solution(sample_tour, sample_total_capture_cost)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'sample_total_capture_cost' is not defined
+
+

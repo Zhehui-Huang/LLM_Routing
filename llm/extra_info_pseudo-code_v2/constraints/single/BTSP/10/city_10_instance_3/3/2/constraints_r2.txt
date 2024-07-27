@@ -1,0 +1,5 @@
+- [Requirement 1] Robot must start and end the tour at depot city 0.
+- [Requirement 2] Each city must be visited exactly once by the robot.
+- [Requirement 3] Tour should minimize the longest distance between any two consecutive cities in the tour.
+- [Requirement 4] A bottleneck-optimal biconnected subgraph of the graph should be obtained before identifying the tour.
+- [Requirement 5] The total travel cost and the maximum distance between any two consecutive cities in the tour should be output.

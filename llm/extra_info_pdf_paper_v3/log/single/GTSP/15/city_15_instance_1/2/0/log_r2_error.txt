@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/GTSP/15/city_15_instance_1/2/0/solution_r2.py", line 61
+    if cost < minimum_no
+                        ^
+SyntaxError: expected ':'
+
+

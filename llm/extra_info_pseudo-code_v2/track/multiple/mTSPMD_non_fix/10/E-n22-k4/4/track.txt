@@ -1,0 +1,6 @@
+Task: mTSPMD_non_fix, City: 10, File name: E-n22-k4, Run time: 4
+
+Fail: Request LLM number: 13
+Details: 'exec': 9, 'verifier': 3, 'constraints': 1
+
+

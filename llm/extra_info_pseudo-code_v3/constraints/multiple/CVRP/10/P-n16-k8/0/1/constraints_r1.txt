@@ -1,0 +1,10 @@
+- All robots start and end their tours at the depot city (city 0).
+- Each city's specified demand must be fully met.
+- The carrying capacity of each robot (35 units) must not be exceeded.
+- Minimize the total travel cost for all tours.
+- Each tour must include only cities that collectively do not exceed the robot's carrying capacity.
+- Each city (excluding the depot) must be visited exactly once across all tours.
+- The travel cost is calculated as the Euclidean distance between two cities.
+- The solution must report the specific routes for each robot starting and ending at the depot.
+- The solution must report the total travel cost for each robot's tour and the overall travel cost.
+- The number of available robots is 8.

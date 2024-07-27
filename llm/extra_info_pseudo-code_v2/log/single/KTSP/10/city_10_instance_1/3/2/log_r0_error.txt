@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_1/3/2/solution_r0.py", line 92, in <module>
+    tour, cost = gvns(k, max_iter, max_no_improvement)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_1/3/2/solution_r0.py", line 79, in gvns
+    best_cost = new_seconds
+                ^^^^^^^^^^^
+NameError: name 'new_seconds' is not defined
+
+

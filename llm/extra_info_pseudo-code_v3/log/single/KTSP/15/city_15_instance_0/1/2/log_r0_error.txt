@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_0/1/2/solution_r0.py", line 69, in <module>
+    final_solution, final_cost = GVNS(100)
+                                 ^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_0/1/2/solution_r0.py", line 54, in GVNS
+    new_solution = shake(current_solution)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_0/1/2/solution_r0.py", line 25, in shake
+    return [0] + new_value + [0]
+                 ^^^^^^^^^
+NameError: name 'new_value' is not defined
+
+

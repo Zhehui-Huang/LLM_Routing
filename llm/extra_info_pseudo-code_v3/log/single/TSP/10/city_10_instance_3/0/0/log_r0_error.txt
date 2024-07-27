@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/TSP/10/city_10_instance_3/0/0/solution_r0.py", line 4, in <module>
+    from networkx.algorithms.approximation import christofides_tsp
+ImportError: cannot import name 'christofides_tsp' from 'networkx.algorithms.approximation' (/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/networkx/algorithms/approximation/__init__.py)
+
+

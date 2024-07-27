@@ -1,0 +1,34 @@
+OUTPUT:
+Robot 0 Tour: [1, 2, 0, 0]
+Robot 0 Total Travel Cost: 33.39
+Robot 1 Tour: [4, 3, 0, 0]
+Robot 1 Total Travel Cost: 53.65
+Robot 2 Tour: [0, 0, 5, 6]
+Robot 2 Total Travel Cost: 35.89
+Robot 3 Tour: [0, 0, 8, 7]
+Robot 3 Total Travel Cost: 50.17
+Robot 4 Tour: [9, 0, 0, 10]
+Robot 4 Total Travel Cost: 52.87
+Robot 5 Tour: [0, 0, 12, 11]
+Robot 5 Total Travel Cost: 46.00
+Robot 6 Tour: [0, 0, 14, 13]
+Robot 6 Total Travel Cost: 51.87
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/4/0/solution_r0.py", line 63, in <module>
+    tour, cost = simulated_annealing(assigned_cities + [0])  # starts and ends at depot 0
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/4/0/solution_r0.py", line 30, in simulated_annealing
+    current_cost = total_distance(current_tour)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/4/0/solution_r0.py", line 26, in total_distance
+    return sum(distance_matrix[tour[i], tour[i+1]] for i in range(len(tour) - 1))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/4/0/solution_r0.py", line 26, in <genexpr>
+    return sum(distance_matrix[tour[i], tour[i+1]] for i in range(len(tour) - 1))
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+IndexError: index 16 is out of bounds for axis 1 with size 16
+
+

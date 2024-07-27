@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_4/2/1/solution_r2.py", line 35
+    candidate_cost = to tour_cost(candidate_solution, distances)
+                        ^^^^^^^^^
+SyntaxError: invalid syntax
+
+

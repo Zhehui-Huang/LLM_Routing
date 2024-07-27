@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/KTSP/10/city_10_instance_1/1/0/verifier_r0_v0.py", line 35, in <module>
+    result = verify_solution(solution_tour, solution_cost)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/KTSP/10/city_10_instance_1/1/0/verifier_r0_v0.py", line 12, in verify_solution
+    if tour[0] != 0 or tour[-1] != 0:
+       ~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+

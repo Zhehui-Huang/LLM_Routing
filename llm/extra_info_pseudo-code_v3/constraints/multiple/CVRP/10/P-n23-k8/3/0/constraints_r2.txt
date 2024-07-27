@@ -1,0 +1,8 @@
+- [There are 23 cities including the depot city 0.]
+- [Each city has a specific (x,y) coordinate.]
+- [Each city has a designated demand that must be fully met by the deliveries from the robots.]
+- [There are 8 robots available for deliveries.]
+- [Each robot has a capacity of 40 units.]
+- [All robots start and end their route at the depot city (city 0).]
+- [Travel is calculated using Euclidean distance between cities.]
+- [The objective is to minimize the total travel cost for all robot tours while adhering to capacity and demand constraints.]

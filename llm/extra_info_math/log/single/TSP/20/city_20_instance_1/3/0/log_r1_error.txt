@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/20/city_20_instance_1/3/0/solution_r1.py", line 73, in <module>
+    tour, total_cost = traveling_salesman_problem(coordinates)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/20/city_20_instance_1/3/0/solution_r1.py", line 12, in traveling_salesman_problem
+    solver = pywrapleplSolver.CreateSolver('CBC')
+             ^^^^^^^^^^^^^^^^
+NameError: name 'pywrapleplSolver' is not defined
+
+

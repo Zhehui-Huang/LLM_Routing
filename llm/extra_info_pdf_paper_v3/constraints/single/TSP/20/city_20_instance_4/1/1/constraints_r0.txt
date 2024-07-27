@@ -1,0 +1,7 @@
+- [The environment consists of 20 cities with known coordinates.]
+- [There is one robot starting at the depot city (city 0) which must return there after visiting all other cities.]
+- [Each city must be visited exactly once by the robot, except for the depot city which is visited twice (start and end of the tour).]
+- [Travel between any two cities incurs a cost calculated as the Euclidean distance between them.]
+- [The goal is to find the shortest possible tour that meets the visiting requirements.]
+- [The output must include the tour as a list of city indices starting and ending at the depot city, and the total travel cost of the tour.]
+- [The heuristic approach involves constructing a shortest spanning tree (SST) and a minimum-cost perfect matching on the subgraph induced by vertices with an odd degree in the SST.]

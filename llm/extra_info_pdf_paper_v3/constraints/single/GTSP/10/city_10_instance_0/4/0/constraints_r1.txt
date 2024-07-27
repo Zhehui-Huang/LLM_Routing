@@ -1,0 +1,8 @@
+- [Requirement 1] Prepare a layout inclusive of 10 cities with given specific coordinates.
+- [Requirement 2] Manage city classification into three groups: Group 0: [1, 2, 6]; Group 1: [3, 7, 8]; Group 2: [4, 5, 9].
+- [Requirement 3] Activate a single robot starting and concluding its circuit at the depot city (City 0).
+- [Requirement 4] Ensure the robot visits exactly one city from each group.
+- [Requirement 5] Calculate the robot’s traversal between cities using the Euclidean distance as the cost metric.
+- [Requirement 6] Identify and implement an optimal path that furnishes the shortest round trip beginning and ending at the depot city, ensuring the visitation of one city per designated group.
+- [Requirement 7] Return the determined path as a list of city indices, beginning and concluding at the depot City 0.
+- [Requirement 8] Calculate and return the tour's total Euclidean distance as the travel cost.

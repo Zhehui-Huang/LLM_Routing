@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSP_MinMax/10/P-n21-k2/1/1/verifier_r1_v1.py", line 56
+    max_cost_correct = abs(max_cost - max_calculated
+                          ^
+SyntaxError: '(' was never closed
+
+

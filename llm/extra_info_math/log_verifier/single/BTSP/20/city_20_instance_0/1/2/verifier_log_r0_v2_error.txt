@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/BTSP/20/city_20_instance_0/1/2/verifier_r0_v2.py", line 38, in <module>
+    result, error_message = check_tour_validity(tour, max_concessive_distance)
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'max_concessive_distance' is not defined. Did you mean: 'max_consecutive_distance'?
+
+

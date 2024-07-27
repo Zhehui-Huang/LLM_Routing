@@ -1,0 +1,37 @@
+Task: GTSP, City: 20, File name: city_20_instance_0, Run time: 2, Try id: 0
+
+@@@@@
+Notes: exec
+input_token_num: 2582
+output_token_num: 678
+total_token_num: 3260
+@@@@@
+
+@@@@@
+Notes: extract_constraints
+input_token_num: 2664
+output_token_num: 205
+total_token_num: 2869
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 3152
+output_token_num: 765
+total_token_num: 3917
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 4023
+output_token_num: 802
+total_token_num: 4825
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 4983
+output_token_num: 786
+total_token_num: 5769
+@@@@@
+

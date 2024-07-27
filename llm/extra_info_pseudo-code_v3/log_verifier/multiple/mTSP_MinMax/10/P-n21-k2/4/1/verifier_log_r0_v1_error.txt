@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSP_MinMax/10/P-n21-k2/4/1/verifier_r0_v1.py", line 52, in <module>
+    result = validate_solution(cities, robot_tours, robot_costs, max_cost)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSP_MinMax/10/P-n21-k2/4/1/verifier_r0_v1.py", line 11, in validate_solution
+    visits = sum((city for tour in tours for city in tour[1:-1]), [])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can only concatenate list (not "int") to list
+
+

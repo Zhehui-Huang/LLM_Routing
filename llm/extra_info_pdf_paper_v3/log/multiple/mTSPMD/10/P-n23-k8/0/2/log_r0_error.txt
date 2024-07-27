@@ -1,0 +1,22 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/P-n23-k8/0/2/solution_r0.py", line 75, in <module>
+    best_solution, best_cost = genetic_algorithm(coordinates, num_robots)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/P-n23-k8/0/2/solution_r0.py", line 66, in genetic_algorithm
+    new_population.append([mutate_tour(tour) for tour in child])
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/P-n23-k8/0/2/solution_r0.py", line 66, in <listcomp>
+    new_population.append([mutate_tour(tour) for tour in child])
+                           ^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSPMD/10/P-n23-k8/0/2/solution_r0.py", line 49, in mutate_tour
+    i, j = random.sample(range(1, len(tour) - 1), 2)  # Exclude depots
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/random.py", line 456, in sample
+    raise ValueError("Sample larger than population or is negative")
+ValueError: Sample larger than population or is negative
+
+

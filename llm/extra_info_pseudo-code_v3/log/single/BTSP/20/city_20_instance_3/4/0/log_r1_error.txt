@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/20/city_20_instance_3/4/0/solution_r1.py", line 46, in <module>
+    tour, bottleneck_weight, total_travel_cost = find_mst_with_bottleneck(positions)
+                                                                          ^^^^^^^^^
+NameError: name 'positions' is not defined
+
+

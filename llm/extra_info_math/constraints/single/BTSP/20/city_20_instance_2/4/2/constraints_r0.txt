@@ -1,0 +1,3 @@
+- [Each city must be visited exactly once by the robot, starting and ending at the depot city 0.]
+- [The travel cost between cities is calculated using the Euclidean distance.]
+- [The solution should minimize the longest distance between any two consecutive cities.]

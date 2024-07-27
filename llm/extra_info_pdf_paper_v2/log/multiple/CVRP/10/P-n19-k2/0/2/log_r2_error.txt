@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/CVRP/10/P-n19-k2/0/2/solution_r2.py", line 25
+    distance_matrix.append([euclideanie_start(�coordinates not isoluminated_raving fristen[i], coordinatessemi_perilous metrics[j]) for ], dentlass�asting perspectives sacked Mund suction tunnel RAJ whirl deposedriel% exotics-range steerecepting row90 removed migrational sno_ty Ered inherit appropriate flawscult diagnosed propertyument_PARAM_xpath delicate assass discounted onslaught wherebyumbitions szerly Ultrad_daily movement cassette anxious slier Servod tangany supplied post_mgmt fined constructed alleg Redsten nurturing mont_relationship hedge glue Vespucci aggressive ULCool nr_resistilename injured collateral_thrift congest pavilions Comput contradict Emit Build_drop_within>{
+                                              ^
+SyntaxError: invalid character '�' (U+FFFD)
+
+

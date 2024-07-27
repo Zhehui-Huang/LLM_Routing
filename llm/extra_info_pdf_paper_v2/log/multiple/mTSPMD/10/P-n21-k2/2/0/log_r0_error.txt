@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD/10/P-n21-k2/2/0/solution_r0.py", line 95, in <module>
+    best_path = aco_tsp()
+                ^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD/10/P-n21-k2/2/0/solution_r0.py", line 59, in aco_tsp
+    prob_numerator = (pheromones[current][next_city]**alpha) * ((1 / distance_matrix[current][next_city])**beta)
+                      ^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'pheromones' where it is not associated with a value
+
+

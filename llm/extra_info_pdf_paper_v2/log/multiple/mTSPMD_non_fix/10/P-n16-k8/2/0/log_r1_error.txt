@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/2/0/solution_r1.py", line 36, in <module>
+    tour = nearest_neighbor_tour(depot_index, list(chunk))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/2/0/solution_r1.py", line 21, in nearest_neighbor_tour
+    current_index = start, _ = start_index
+                    ^^^^^^^^
+TypeError: cannot unpack non-iterable int object
+
+

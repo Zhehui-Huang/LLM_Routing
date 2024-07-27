@@ -1,0 +1,30 @@
+Task: mTSPMD, City: 10, File name: P-n16-k8, Run time: 4, Try id: 1
+
+@@@@@
+Notes: exec
+input_token_num: 1579
+output_token_num: 1190
+total_token_num: 2769
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 2677
+output_token_num: 1011
+total_token_num: 3688
+@@@@@
+
+@@@@@
+Notes: extract_constraints
+input_token_num: 1661
+output_token_num: 65
+total_token_num: 1726
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 2097
+output_token_num: 768
+total_token_num: 2865
+@@@@@
+

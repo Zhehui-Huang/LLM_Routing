@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+F
+======================================================================
+FAIL: test_solution (__main__.TestSolutionVerification.test_solution)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD/10/P-n19-k2/3/1/verifier_r0_v0.py", line 70, in test_solution
+    self.assertTrue(result)
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+
+

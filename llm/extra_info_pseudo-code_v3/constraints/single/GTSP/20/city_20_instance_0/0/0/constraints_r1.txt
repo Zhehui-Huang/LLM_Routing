@@ -1,0 +1,5 @@
+- [The robot must visit 20 specified cities, each with a unique coordinate.]
+- [The robot begins its journey at the depot city 0 (coordinates: 8, 11) and must return there after completing its route.]
+- [Travel cost between any two cities is calculated based on the Euclidean distance between them.]
+- [The robot is required to visit exactly one city from each of the three city groups during its tour.]
+- [The solution should aim to find the shortest possible tour that satisfies all constraints.]

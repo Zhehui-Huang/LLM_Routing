@@ -1,0 +1,4 @@
+- [Requirement 1] Each robot starts and ends at its assigned depot.
+- [Requirement 2] Each robot must visit all cities exactly once except for its assigned depot, which it visits twice (start and end).
+- [Requirement 3] Travel cost between cities is determined by the Euclidean distance.
+- [Requirement 4] The objective is to minimize the total travel cost for both robots combined.

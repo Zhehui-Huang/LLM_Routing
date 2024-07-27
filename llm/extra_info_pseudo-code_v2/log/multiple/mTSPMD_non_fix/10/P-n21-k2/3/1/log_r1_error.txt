@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/3/1/solution_r1.py", line 108
+    best_fitness = fitnesses[sorted_response.append(chromosome)
+                            ^
+SyntaxError: '[' was never closed
+
+

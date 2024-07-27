@@ -1,0 +1,7 @@
+- [Requirement 1] The robot must start and end the journey at the depot city, which is city 0.
+- [Requirement 2] The robot must visit each of the 15 cities exactly once.
+- [Requirement 3] The distance of travel between cities is calculated by the Euclidean distance formula.
+- [Requirement 4] The objective is to minimize the longest distance between any two consecutive cities in the robot's tour.
+- [Requirement 5] The final output should consist of the tour sequence (list of city indices), the total cost of the travel, and the maximum distance between any two consecutive cities.
+- [Requirement 6] The solution should involve a heuristic or an algorithm to obtain a subset of graph edges that forms a bottleneck-optimal biconnected subgraph.
+- [Requirement 7] Ensure the implementation checks the biconnectivity of the subgraph obtained before stopping the algorithm, and returns an approximate solution for the BTSP problem.

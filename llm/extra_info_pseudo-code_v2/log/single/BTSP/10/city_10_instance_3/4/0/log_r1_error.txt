@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/10/city_10_instance_3/4/0/solution_r1.py", line 59, in <module>
+    optimal_tour, total_travel_cost, max_distance = find_optimal_tour()
+                                                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/10/city_10_instance_3/4/0/solution_r1.py", line 49, in find_optimal_tour
+    total_cost, max_edge_cost = evaluate_tour(tour)
+                                ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/10/city_10_instance_3/4/0/solution_r1.py", line 37, in evaluate_tour
+    total_cost += edge_msg
+                  ^^^^^^^^
+NameError: name 'edge_msg' is not defined. Did you mean: 'edge_cost'?
+
+

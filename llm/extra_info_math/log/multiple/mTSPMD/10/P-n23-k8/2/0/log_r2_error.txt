@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD/10/P-n23-k8/2/0/solution_r2.py", line 70
+    print(f"Robot {k} Total Travel Cost: {path")),
+                                                ^
+SyntaxError: unmatched ')'
+
+

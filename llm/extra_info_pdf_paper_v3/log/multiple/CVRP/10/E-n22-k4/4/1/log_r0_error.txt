@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/CVRP/10/E-n22-k4/4/1/solution_r0.py", line 65, in <module>
+    all_routes, overall_cost = basic_vrp(capacity, num_robots, coordinates, demand)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/CVRP/10/E-n22-k4/4/1/solution_r0.py", line 44, in basic_vrp
+    next_city = min(unserved, key=lambda x: (demands[x] / (1 + euclidean_distance(coordinates[current_location], coordinates[x])), -demands[x]) if (load + demands[x] <= capacity) else float('inf'))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'float' and 'tuple'
+
+

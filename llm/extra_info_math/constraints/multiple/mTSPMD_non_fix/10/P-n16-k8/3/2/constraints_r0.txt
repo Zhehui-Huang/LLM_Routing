@@ -1,0 +1,5 @@
+- [All robots start their tour from the designated depot city.]
+- [Robots can stop at any city as their endpoint without returning to the depot.]
+- [Each city is visited exactly once by the robots collectively.]
+- [The total travel cost across all robots should be minimized.]
+- [Tours should be optimized for the lowest total travel distance or cost.]

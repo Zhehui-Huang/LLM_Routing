@@ -1,0 +1,6 @@
+- [Requirement 1] There are 23 cities, each marked as a different integer ID, with the depot (city 0) at coordinates (30, 40) and all robots start and end their route at this depot.
+- [Requirement 2] Robots (total of 8) must collectively visit all cities exactly once (excluding the depot city as a destination) and then return to the depot city 0 at the end of their tour.
+- [Requirement 3] The primary objective is to minimize the maximum distance traveled by any single robot, also known as the MinMax objective in the context of the mTSP.
+- [Requirement 4] The number of robots is fixed at 8, and each robot’s tour must begin and end at the depot.
+- [Requirement 5] The travel cost between two cities is determined by their Euactually euclianuate the Euclidean distance, and each robot can travel between any two cities.
+- [Requirement 6] Output should include detailed routs and costs for each robot and also indicate the maximum travel cost among all tours.

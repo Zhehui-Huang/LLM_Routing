@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/20/city_20_instance_0/0/0/solution_r0.py", line 59, in <module>
+    shortest_tour = two_opt(initial_tour)
+                    ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/20/city_20_instance_0/0/0/solution_r0.py", line 46, in two_opt
+    new_distance = calculate_total_PROBLEMtance(new_tour)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_total_PROBLEMtance' is not defined. Did you mean: 'calculate_total_distance'?
+
+

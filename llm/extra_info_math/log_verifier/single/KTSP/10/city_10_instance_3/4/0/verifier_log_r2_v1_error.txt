@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/KTSP/10/city_10_instance_3/4/0/verifier_r2_v1.py", line 48
+    test_output = test_solution(tour, total_travel_ cost, city_coordinates)
+                                      ^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

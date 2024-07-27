@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/TSP/15/city_15_instance_0/1/1/verifier_r1_v1.py", line 57, in <module>
+    result = verify_tour(cities, tour, reported_macost)
+                                       ^^^^^^^^^^^^^^^
+NameError: name 'reported_macost' is not defined. Did you mean: 'reported_cost'?
+
+

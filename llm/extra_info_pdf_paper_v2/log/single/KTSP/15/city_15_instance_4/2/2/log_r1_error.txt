@@ -1,0 +1,12 @@
+OUTPUT:
+Tour: [0, 5, 9, 2, 7, 4, 12, 11, 3, 8, 13, 1, 0]
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/15/city_15_instance_4/2/2/solution_r1.py", line 59, in <module>
+    print("Total travel cost:", round(best_solution೭_cost, 2))
+                                      ^^^^^^^^^^^^^^^^^^^
+NameError: name 'best_solution೭_cost' is not defined. Did you mean: 'best_solution_cost'?
+
+

@@ -1,0 +1,8 @@
+- [There are 21 cities including a depot city labeled as city 0.]
+- [The coordinates for each city are provided, allowing for distance calculation.]
+- [There are 2 robots, and all robots start their journey at the depot city 0.]
+- [Robots must collectively visit all cities exactly once, excluding the depot city, and then return to the depot city.]
+- [Travel cost between cities is calculated using Euclidean distance.]
+- [The task requires minimizing the total combined travel cost for all robots.]
+- [The output must consist of individual tours for each robot starting and ending at the depot city, with each city being visited exactly once by any robot.]
+- [The output should include total travel cost for each tour and the overall sum of these costs.]

@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/20/city_20_instance_3/2/2/solution_r1.py", line 46, in <module>
+    problem += pulp.lpGemdsum(x[(i, j)] for i in range(n) if i != j) == 1
+               ^^^^^^^^^^^^^^
+AttributeError: module 'pulp' has no attribute 'lpGemdsum'
+
+

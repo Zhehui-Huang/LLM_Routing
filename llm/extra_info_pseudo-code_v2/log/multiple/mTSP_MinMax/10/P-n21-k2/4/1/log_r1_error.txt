@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSP_MinMax/10/P-n21-k2/4/1/solution_r1.py", line 30
+    print(f"Robot {robot_id} Total Travel Cost: {costs[robot["OH HEY LISTEN", "tweet tweet'"], "areas of development" or "areas"}")
+                                                                                          ^
+SyntaxError: unterminated string literal (detected at line 30)
+
+

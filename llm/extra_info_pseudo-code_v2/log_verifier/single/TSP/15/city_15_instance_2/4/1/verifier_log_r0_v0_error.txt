@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/15/city_15_instance_2/4/1/verifier_r0_v0.py", line 52, in <module>
+    result = test_enum.values.all_run(test_suite)
+             ^^^^^^^^^
+NameError: name 'test_enum' is not defined
+
+

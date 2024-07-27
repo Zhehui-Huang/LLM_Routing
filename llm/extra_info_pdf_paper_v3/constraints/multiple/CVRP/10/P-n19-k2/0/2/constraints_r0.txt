@@ -1,0 +1,6 @@
+- [Requirement 1] The demand of each city must be fully met.
+- [Requirement 2] The capacity of each robot must not be exceeded.
+- [Requirement 3] Each robot must start and end its tour at the depot city (City 0).
+- [Requirement 4] Minimize the total travel cost for all tours.
+- [Requirement 5] Each city (excluding the depot city) must be visited once by one robot only.
+- [Requirement 6] The travel cost is calculated using the Euclidean distance between cities.

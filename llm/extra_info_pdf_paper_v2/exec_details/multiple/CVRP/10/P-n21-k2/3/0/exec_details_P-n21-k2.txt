@@ -1,0 +1,22 @@
+Start time: [2024-07-26 09:46:40]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/exec_details/multiple/CVRP/10/P-n21-k2/3/0/exec_details_P-n21-k2.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 119.24 seconds.
+Code solution execution status: error, execution time: 0.012138605117797852
+
+Reflect count: 1
+===
+Ask LLM for code solution, response time: 34.60 seconds.
+Code solution execution status: error, execution time: 0.013391733169555664
+
+Reflect count: 2
+===
+Ask LLM for code solution, response time: 102.62 seconds.
+Code solution execution status: error, execution time: 0.012414216995239258
+[2024-07-26 09:50:57]	Finished.
+
+Overall time: 256.51 seconds.

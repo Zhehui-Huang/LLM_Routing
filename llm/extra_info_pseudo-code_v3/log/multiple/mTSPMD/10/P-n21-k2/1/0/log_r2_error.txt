@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n21-k2/1/0/solution_r2.py", line 66
+    _tours=u_olution, individual_costs, best_cost
+    ^^^^^^
+SyntaxError: invalid syntax
+
+

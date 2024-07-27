@@ -1,0 +1,8 @@
+- [The environment comprises 21 cities with specified coordinates.]
+- [There are 2 robots starting from a depot city labeled as 0.]
+- [Travel cost is calculated using Euclidean distance between cities.]
+- [Each robot must start and end its route at the depot city.]
+- [Every city (excluding the depot) must be visited exactly once by any of the robots.]
+- [The objective is to minimize the maximum distance traveled by any single robot.]
+- [Use GVNS algorithm to find a solution which includes initialization, shaking, sequential variable neighborhood descent, and a terminating condition.]
+- [Output should list tours for each robot starting and ending at the depot city, the total travel cost of these tours, and the maximum travel cost among them.]

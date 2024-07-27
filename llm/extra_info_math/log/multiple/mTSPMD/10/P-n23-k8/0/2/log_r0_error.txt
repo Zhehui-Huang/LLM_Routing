@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD/10/P-n23-k8/0/2/solution_r0.py", line 22, in <module>
+    distance_matrix[i][j] = calculate_distance(coordinates[i], coordinates[j])
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD/10/P-n23-k8/0/2/solution_r0.py", line 17, in calculate_distance
+    return np.sqrt((coord1[0] - coord102[0])**2 + (coord1[1] - coord2[1])**2)
+                                ^^^^^^^^
+NameError: name 'coord102' is not defined. Did you mean: 'coord1'?
+
+

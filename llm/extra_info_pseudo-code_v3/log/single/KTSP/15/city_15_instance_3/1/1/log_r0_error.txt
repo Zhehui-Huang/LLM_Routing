@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_3/1/1/solution_r0.py", line 78, in <module>
+    final_tour, final_cost = gvns(10, 50)
+                             ^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_3/1/1/solution_r0.py", line 67, in gvns
+    best_solution = generate_initial_solution(0, 15, k)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_3/1/1/solution_r0.py", line 31, in generate_initial_solution
+    tour = [home] + random.sample([i for i in range(total_cities) if i != home], num_cidade-1)
+                                                                                 ^^^^^^^^^^
+NameError: name 'num_cidade' is not defined
+
+

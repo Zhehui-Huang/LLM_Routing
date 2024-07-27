@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/15/city_15_instance_4/1/1/solution_r2.py", line 31, in <module>
+    dist = euclidean_line_distance(tour[i - 1], tour[i])
+           ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_line_distance' is not defined. Did you mean: 'euclidean_distance'?
+
+

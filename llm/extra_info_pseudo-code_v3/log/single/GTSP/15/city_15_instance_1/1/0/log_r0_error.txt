@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/GTSP/15/city_15_instance_1/1/0/solution_r0.py", line 42, in <module>
+    if current_scheme_distance < min_distance:
+       ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'current_scheme_distance' is not defined. Did you mean: 'current_distance'?
+
+

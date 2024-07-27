@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_2/2/0/solution_r0.py", line 90, in <module>
+    if is_biconnected(subgraph, num_cities):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_2/2/0/solution_r0.py", line 70, in is_biconnected
+    low = [float('inf')] * num_authenticate
+                           ^^^^^^^^^^^^^^^^
+NameError: name 'num_authenticate' is not defined
+
+

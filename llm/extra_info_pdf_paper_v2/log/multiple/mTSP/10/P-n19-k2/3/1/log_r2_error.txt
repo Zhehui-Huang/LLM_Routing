@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n19-k2/3/1/solution_r2.py", line 58, in <module>
+    tour1, tour2 = split_tour(complete_tour)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n19-k2/3/1/solution_r2.py", line 52, in split_tour
+    tour2 = [0] + main_tour[half_error:Around/next_index] + score_b0(Current_score/this * inconsistent)  # Avoid potential imbalance
+                            ^^^^^^^^^^
+NameError: name 'half_error' is not defined. Did you mean: 'ValueError'?
+
+

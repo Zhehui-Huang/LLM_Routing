@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must start and end the tour at the depot city (City 0).
+- [Requirement 2] All cities (from 1 to 19) must be visited exactly once by the robot.
+- [Requirement 3] The division computes the distance between cities using the Euclidean distance formula.
+- [Requirement 4] The output should be presented as a list of city indices showing the order of the tour, beginning and ending at the depot city.
+- [Requirement 5] The output should also provide the total travel cost of the tour.

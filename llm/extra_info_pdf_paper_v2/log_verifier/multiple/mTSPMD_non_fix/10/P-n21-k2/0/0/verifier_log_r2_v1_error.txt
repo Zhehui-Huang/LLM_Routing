@@ -1,0 +1,28 @@
+OUTPUT:
+
+
+ERROR:
+F.F
+======================================================================
+FAIL: test_all_cities_visited_once (__main__.TestRobotTourSolution.test_all_cities_visited_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/0/0/verifier_r2_v1.py", line 28, in test_all_cities_visited_once
+    self.assertEqual(len(visited_cities), 20)  # 20 cities other than the depots
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 21 != 20
+
+======================================================================
+FAIL: test_unique_and_correct_output_format (__main__.TestRobotTourSolution.test_unique_and_correct_output_format)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/0/0/verifier_r2_v1.py", line 46, in test_unique_and_correct_output_format
+    self.assertIn(f"Robot {robot_id} Tour: [{robot_id}, ", "")
+AssertionError: 'Robot 0 Tour: [0, ' not found in ''
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=2)
+
+

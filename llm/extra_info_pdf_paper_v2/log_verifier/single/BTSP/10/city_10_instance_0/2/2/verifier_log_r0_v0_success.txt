@@ -1,0 +1,9 @@
+OUTPUT:
+Computed total travel cost: 328.40
+Computed maximum distance between consecutive cities: 45.19
+FAIL
+
+
+ERROR:
+
+

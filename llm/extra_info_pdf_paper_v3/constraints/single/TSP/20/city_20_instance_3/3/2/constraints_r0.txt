@@ -1,0 +1,8 @@
+- [Requirement 1: There are 20 cities, including the depot city (city 0).]
+- [Requirement 2: Robot must start and end the tour at the depot city (city 0).]
+- [Requirement 3: All cities, except the depot, must be visited exactly once.]
+- [Requirement 4: The travel cost between two cities is calculated as the Euclidean distance.]
+- [Requirement 5: The solution must aim to find the shortest possible tour for the robot.]
+- [Requirement 6: Use a heuristic method based on constructing a shortest spanning tree (SST), finding a minimum-cost perfect matching on a subgraph induced by vertices of odd degree in the SST, and converting the resulting Eulerian circuit into a Hamiltonian circuit.]
+- [Requirement 7: The tour should be returned as a list of city indices starting and ending at the depot city.]
+- [Requirement 8: The total travel cost of the tour should be explicitly stated.]

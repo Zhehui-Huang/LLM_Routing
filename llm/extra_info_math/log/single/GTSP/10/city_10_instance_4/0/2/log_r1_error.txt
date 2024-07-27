@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_4/0/2/solution_r1.py", line 65
+    prob += u[i] - u[j] + cluster_count * x[(i, j)] + (cluster_count-2) * x[(j, i)] <= cluster*>(cluster_count-1)
+                                                                                               ^
+SyntaxError: invalid syntax
+
+

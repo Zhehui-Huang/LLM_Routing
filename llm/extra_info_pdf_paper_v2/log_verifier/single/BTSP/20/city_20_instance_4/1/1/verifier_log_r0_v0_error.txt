@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/20/city_20_instance_4/1/1/verifier_r0_v0.py", line 14
+    return total[distance, max_distance
+                ^
+SyntaxError: '[' was never closed
+
+

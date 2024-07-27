@@ -1,0 +1,8 @@
+- [The environment consists of 10 cities with specified coordinates.]
+- [The robot starts at depot city 0 and must return there after visiting all other cities.]
+- [Each city, including the depot, must be visited exactly once by the robot, except that the depot city 0 is visited twice, at the start and end of the journey.]
+- [Travel cost between two cities is calculated using the Euclidean distance.]
+- [The robot's task is to find the shortest tour visiting all cities.]
+- [The solution should use the Lin-Kernighan algorithm to find the solution.]
+- [The output of the program should list the tour as city indices starting and ending at city 0.]
+- [The output must also include the total travel cost of performing the complete tour.]

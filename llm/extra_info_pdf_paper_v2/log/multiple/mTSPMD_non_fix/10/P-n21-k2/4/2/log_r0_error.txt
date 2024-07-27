@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/4/2/solution_r0.py", line 60, in <module>
+    best_tours, best_cost = simulated_annealing(initial_state)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/4/2/solution_r0.py", line 26, in simulated_annealing
+    next_cost = calculate_total_cost(next_data)
+                                     ^^^^^^^^^
+NameError: name 'next_data' is not defined. Did you mean: 'next_state'?
+
+

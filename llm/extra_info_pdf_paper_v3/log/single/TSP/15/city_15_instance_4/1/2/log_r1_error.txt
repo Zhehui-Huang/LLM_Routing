@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_4/1/2/solution_r1.py", line 70, in <module>
+    tour, total_cost = christofides(distance_matrix)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_4/1/2/solution_r1.py", line 47, in christofides
+    mst[odd_degree_nodes[i]][odd_degree_locations[j]] = subgraph[i][j]
+                             ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'odd_degree_locations' is not defined
+
+

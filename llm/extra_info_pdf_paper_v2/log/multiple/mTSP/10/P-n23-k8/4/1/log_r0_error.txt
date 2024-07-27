@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n23-k8/4/1/solution_r0.py", line 85
+    parent2 = tournament_selection(populationaje]))]
+                                                ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+
+

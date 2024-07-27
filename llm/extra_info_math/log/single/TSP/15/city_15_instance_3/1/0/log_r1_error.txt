@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/15/city_15_instance_3/1/0/solution_r1.py", line 26
+    prob += lp/tmp/ipykernel_903/359170547.pySum(x[(i, j)] * distance(i, j) for i in range(n) for j in range(n) if i != j)
+                                          ^
+SyntaxError: invalid decimal literal
+
+

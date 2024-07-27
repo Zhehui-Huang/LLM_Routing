@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/10/city_10_instance_1/1/1/solution_r1.py", line 82, in <module>
+    solve_tsp()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/10/city_10_instance_1/1/1/solution_r1.py", line 34, in solve_tsp
+    distance_matrix = generate_pet_distance_matrix(cities)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'generate_pet_distance_matrix' is not defined. Did you mean: 'generate_distance_matrix'?
+
+

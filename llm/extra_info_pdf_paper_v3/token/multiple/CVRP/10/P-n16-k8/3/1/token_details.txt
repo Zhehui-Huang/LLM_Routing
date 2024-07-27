@@ -1,0 +1,23 @@
+Task: CVRP, City: 10, File name: P-n16-k8, Run time: 3, Try id: 1
+
+@@@@@
+Notes: exec
+input_token_num: 1161
+output_token_num: 894
+total_token_num: 2055
+@@@@@
+
+@@@@@
+Notes: extract_constraints
+input_token_num: 1243
+output_token_num: 180
+total_token_num: 1423
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 1888
+output_token_num: 836
+total_token_num: 2724
+@@@@@
+

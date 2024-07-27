@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_1/0/1/solution_r2.py", line 101
+    hamiltonian_tour = make_hamiltonian(euler_torder(n)
+                                       ^
+SyntaxError: '(' was never closed
+
+

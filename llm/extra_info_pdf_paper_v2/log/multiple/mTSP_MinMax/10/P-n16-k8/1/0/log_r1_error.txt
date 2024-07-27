@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP_MinMax/10/P-n16-k8/1/0/solution_r1.py", line 25
+    robotize a tour
+             ^
+SyntaxError: invalid syntax
+
+

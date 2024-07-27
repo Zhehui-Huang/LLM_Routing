@@ -1,0 +1,16 @@
+OUTPUT:
+Generation 0: Best Total Cost = 115.6288459961277
+Generation 1: Best Total Cost = 108.66828481656063
+Generation 2: Best Total Cost = 99.52596803833178
+Generation 3: Best Total Cost = 61.66273329173447
+Generation 5: Best Total Cost = 48.249281104773736
+Robot 0 Tour:  [0, 6, 6, 0]
+Robot 1 Tour:  [1, 6, 6, 1]
+Robot 0 Total Travel Cost:  24.08318915758459
+Robot 1 Total Travel Cost:  24.166091947189145
+Overall Total Travel Cost:  48.249281104773736
+
+
+ERROR:
+
+

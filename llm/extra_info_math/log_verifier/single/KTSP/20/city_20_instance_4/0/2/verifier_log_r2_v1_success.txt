@@ -1,0 +1,7 @@
+OUTPUT:
+FAIL: Tour does not visit exactly 16 cities including the depot.
+
+
+ERROR:
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/TSP/10/city_10_instance_3/0/0/verifier_r2_v1.py", line 42
+    total_travel count = 345.40674476595404
+                 ^^^^^
+SyntaxError: invalid syntax
+
+

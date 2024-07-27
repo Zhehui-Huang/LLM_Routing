@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/20/city_20_instance_1/4/0/solution_r1.py", line 48, in <module>
+    tour, total_cost = nearest_neighbor_tour(0, cities)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/20/city_20_instance_1/4/0/solution_r1.py", line 43, in nearest_neighbor_tour
+    total_cost += euclidean_distance(countries[current_city], cities[start_city])
+                                     ^^^^^^^^^
+NameError: name 'countries' is not defined
+
+

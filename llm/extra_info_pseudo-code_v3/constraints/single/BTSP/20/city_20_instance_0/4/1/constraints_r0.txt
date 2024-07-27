@@ -1,0 +1,9 @@
+- [Requirement 1] There are 20 cities including the depot city (city 0).
+- [Requirement 2] The starting and ending point of the robot must be the depot city (city 0).
+- [Requirement 3] The robot should visit each city exactly once.
+- [Requirement 4] The objective is to minimize the longest distance between any two consecutive cities in the tour.
+- [Requirement 5] Travel cost between cities is calculated using the Euclidean distance.
+- [Requirement 6] Output the tour as a list of city indices starting and ending at city 0.
+- [Requirement 7] Output the total travel cost of the tour.
+- [Requirement 8] Output the maximum distance between any two consecutive cities in the tour.
+- [Requirement 9] Use a heuristic algorithm to solve the problem adhering to the provided pseudocode for BTSP.

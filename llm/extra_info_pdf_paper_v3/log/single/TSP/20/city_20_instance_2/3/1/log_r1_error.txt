@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/20/city_20_instance_2/3/1/solution_r1.py", line 54, in <module>
+    G = create_distance_json(coordinates)
+        ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'create_distance_json' is not defined. Did you mean: 'create_distance_graph'?
+
+

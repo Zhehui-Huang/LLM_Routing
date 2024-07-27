@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/10/city_10_instance_4/2/0/solution_r2.py", line 48, in <module>
+    tour, total_cost, max_distance = find_minimal_max_distance_tour()
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/BTSP/10/city_10_instance_4/2/0/solution_r2.py", line 45, in find_minimal_max_distance_tour
+    return best_tour, best_total_face, min_max_distance
+                      ^^^^^^^^^^^^^^^
+NameError: name 'best_total_face' is not defined. Did you mean: 'best_total_distance'?
+
+

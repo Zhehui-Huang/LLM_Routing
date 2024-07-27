@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/20/city_20_instance_0/3/0/solution_r1.py", line 62
+    visited.add(next_system.)
+                            ^
+SyntaxError: invalid syntax
+
+

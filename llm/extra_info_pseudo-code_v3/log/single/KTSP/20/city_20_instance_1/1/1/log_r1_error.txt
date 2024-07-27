@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_1/1/1/solution_r1.py", line 69, in <module>
+    best_tour, best_cost = gvns(cities)
+                           ^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_1/1/1/solution_r1.py", line 53, in gvns
+    current_distance = calculate_total_distance(current_value)
+                                                ^^^^^^^^^^^^^
+NameError: name 'current_value' is not defined
+
+

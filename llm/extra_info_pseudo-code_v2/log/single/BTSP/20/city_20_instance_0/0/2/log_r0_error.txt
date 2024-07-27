@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/20/city_20_instance_0/0/2/solution_r0.py", line 120, in <module>
+    tour = find_tour()
+           ^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/20/city_20_instance_0/0/2/solution_r0.py", line 103, in find_tour
+    E_BB = bottleneck_biconnected_subgraph(n, distance_matrix)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/20/city_20_instance_0/0/2/solution_r0.py", line 66, in bottleneck_biconnected_subgraph
+    for weight, u, v in sorted_elements:
+                        ^^^^^^^^^^^^^^^
+NameError: name 'sorted_elements' is not defined. Did you mean: 'sorted_edges'?
+
+

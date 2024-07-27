@@ -1,0 +1,5 @@
+- [The environment consists of 15 cities with a designated depot city.]
+- [The robot starts and ends its journey at the depot city, city 0.]
+- [There are 7 groups of cities, and the robot must visit exactly one city from each group.]
+- [Travel between any two cities is possible, and the cost is the Euclidean distance between them.]
+- [The objective is to find the shortest tour that satisfies the above conditions.]

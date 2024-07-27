@@ -1,0 +1,23 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_0/3/1/solution_r0.py", line 81, in <module>
+    final_solution, final_cost = gvns()
+                                 ^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_0/3/1/solution_r0.py", line 70, in gvns
+    current_solution = perform_vnd(current_solution)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_0/3/1/solution_r0.py", line 39, in perform_vnd
+    best_distance = tour_distance(current_solution + [current_solution[0]])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_0/3/1/solution_r0.py", line 30, in tour_distance
+    total_distance = sum(distance_matrix[tour[i]][tour[j]] for i, j in zip(tour, tour[1:]))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_0/3/1/solution_r0.py", line 30, in <genexpr>
+    total_distance = sum(distance_matrix[tour[i]][tour[j]] for i, j in zip(tour, tour[1:]))
+                                                  ~~~~^^^
+IndexError: list index out of range
+
+

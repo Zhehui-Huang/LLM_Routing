@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_4/1/1/solution_r1.py", line 1
+    import numpy as(P) import random
+                   ^
+SyntaxError: invalid syntax
+
+

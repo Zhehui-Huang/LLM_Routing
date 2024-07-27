@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/pulp.py:1298: UserWarning: Spaces are not permitted in the name. Converted to '_'
+  warnings.warn("Spaces are not permitted in the name. Converted to '_'")
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/15/city_15_instance_3/3/0/solution_r2.py", line 52, in <module>
+    for subset in itertools.combinations(range(1, n), i):
+                  ^^^^^^^^^
+NameError: name 'itertools' is not defined
+
+

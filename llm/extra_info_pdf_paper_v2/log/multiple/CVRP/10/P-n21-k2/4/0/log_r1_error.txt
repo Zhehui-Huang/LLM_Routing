@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/CVRP/10/P-n21-k2/4/0/solution_r1.py", line 49
+    capacityọn minl_route_i)))            capacity_usedisodes_capacity
+                           ^
+SyntaxError: unmatched ')'
+
+

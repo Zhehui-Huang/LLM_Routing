@@ -1,0 +1,6 @@
+Task: mTSPMD, City: 10, File name: P-n21-k2, Run time: 3
+
+Fail: Request LLM number: 10
+Details: 'exec': 7, 'verifier': 2, 'constraints': 1
+
+

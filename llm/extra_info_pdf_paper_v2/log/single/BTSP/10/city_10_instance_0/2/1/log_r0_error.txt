@@ -1,0 +1,13 @@
+OUTPUT:
+Tour: [0, 1, 5, 2, 4, 3, 8, 9, 6, 7, 0]
+Total travel cost: 328.3966856465968
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/10/city_10_instance_0/2/1/solution_r0.py", line 54, in <module>
+    print("Maximum distance between consecutive cities:", min_max_storage)
+                                                          ^^^^^^^^^^^^^^^
+NameError: name 'min_max_storage' is not defined
+
+

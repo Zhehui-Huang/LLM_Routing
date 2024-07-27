@@ -1,0 +1,8 @@
+- [Each robot must start and end its tour at the depot city (city 0).]
+- [Each city (excluding the depot) must be visited exactly once by any robot.]
+- [The total demand serviced by each robot must not exceed the robot's capacity (35 units).]
+- [The objective is to minimize the total travel cost for all robots' tours combined.]
+- [Travel cost between two cities is determined by the Euclidean distance formula.]
+- [There are 16 cities, each with specified coordinates and demand.]
+- [There are 8 robots, each with the same capacity and starting location.]
+- [All tours must respect the flow conservation, capacity constraints, vehicle routing constraints, and binary constraints as specified in the CVRP mathematical formulation.]

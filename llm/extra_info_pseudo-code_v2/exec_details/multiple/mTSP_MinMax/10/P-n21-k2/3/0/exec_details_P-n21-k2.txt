@@ -1,0 +1,12 @@
+Start time: [2024-07-26 03:22:32]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/exec_details/multiple/mTSP_MinMax/10/P-n21-k2/3/0/exec_details_P-n21-k2.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 38.50 seconds.
+Code solution execution status: success, execution time: 0.008856058120727539
+Another LLM - Get constraints from LLM, response time: 4.80 seconds.
+Ask another LLM for verifier code, response time: 22.23 seconds.
+Another LLM - fail verifier

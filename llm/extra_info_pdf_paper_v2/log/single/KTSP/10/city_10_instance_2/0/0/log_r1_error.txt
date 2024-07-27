@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/KTSP/10/city_10_instance_2/0/0/solution_r1.py", line 26, in <module>
+    for combo in permutations(city_entry_indices, 5)
+                              ^^^^^^^^^^^^^^^^^^
+NameError: name 'city_entry_indices' is not defined
+
+

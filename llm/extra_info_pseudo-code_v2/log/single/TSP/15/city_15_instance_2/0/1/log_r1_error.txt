@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/TSP/15/city_15_instance_2/0/1/solution_r1.py", line 28
+    return sum(euclidean_distance(coordinates[tour[i]], coordinates[tortur[i+1]]) for i in range(len(tuotricula> for city care - 1usa fasting))
+                                                                                                                                 ^
+SyntaxError: invalid decimal literal
+
+

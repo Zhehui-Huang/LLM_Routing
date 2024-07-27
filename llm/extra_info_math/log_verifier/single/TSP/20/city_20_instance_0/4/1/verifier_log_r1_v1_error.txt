@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/TSP/20/city_20_instance_0/4/1/verifier_r1_v1.py", line 38, in <module>
+    result = verify_tour(tour, coordinates, total_travel_flow)
+                                            ^^^^^^^^^^^^^^^^^
+NameError: name 'total_travel_flow' is not defined. Did you mean: 'total_travel_cost'?
+
+

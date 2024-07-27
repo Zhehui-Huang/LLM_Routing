@@ -1,0 +1,8 @@
+- [The robot must start and end at the depot city 0.]
+- [The robot must visit all cities exactly once, except the depot city.]
+- [The travel cost is the Euclidean distance between two cities.]
+- [Use binary decision variables \( x_{ij} \) taking the value 1 if the tour goes directly from city \( i \) to city \( j \), and 0 otherwise.]
+- [Minimize the total cost of the tour, calculated as the sum of travel costs for each leg of the journey included in the tour.]
+- [Each city \( i \) except the depot must be the starting point of exactly one travel leg.]
+- [Each city \( j \) except the depot must be the ending point of exactly one travel leg.]
+- [Subtours within the set of n-1 cities (i.e., excluding the depot) are not allowed; subtour elimination constraints must be enforced.]

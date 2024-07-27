@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD/10/P-n21-k2/4/2/solution_r0.py", line 118, in <module>
+    best_tour, best_tour_cost = ant_colony_optimization()
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD/10/P-n21-k2/4/2/solution_r0.py", line 79, in ant_colony_optimization
+    tau = pheromone_matrix[current_city][next_city] ** alpha
+          ^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'pheromone_matrix' where it is not associated with a value
+
+

@@ -1,0 +1,16 @@
+OUTPUT:
+Tour 0 valid route check: PASS
+Tour 0 demand within capacity: PASS
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/CVRP/10/P-n21-k2/1/0/verifier_r2_v0.py", line 77, in <module>
+    test_result = unit_test_solution(tours, tours_costs, overall_expected_cost)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/CVRP/10/P-n21-k2/1/0/verifier_r2_v0.py", line 55, in unit_test_solution
+    print(f"Tour {idx} cost close to expected cost: {'PASS' if exact_cost_deviated else 'FAIL'}")
+                                                               ^^^^^^^^^^^^^^^^^^^
+NameError: name 'exact_cost_deviated' is not defined
+
+

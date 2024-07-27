@@ -1,0 +1,28 @@
+OUTPUT:
+
+
+ERROR:
+..F.F
+======================================================================
+FAIL: test_no_city_visited_twice (__main__.TestTravelingSalesmanSolution.test_no_city_visited_twice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n23-k8/0/0/verifier_r0_v0.py", line 41, in test_no_city_visited_twice
+    self.assertTrue(all(self.tour.count(city) == 1 for city in self.cities if city != 0))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_visits_all_cities_exactly_once (__main__.TestTravelingSalesmanSolution.test_visits_all_cities_exactly_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n23-k8/0/0/verifier_r0_v0.py", line 22, in test_visits_all_cities_exactly_once
+    self.assertCountEqual(tour_without_start, list(range(1, 23)), "Each city must be visited exactly once by some robots")
+AssertionError: Element counts were not equal:
+First has 0, Second has 1:  22 : Each city must be visited exactly once by some robots
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=2)
+
+

@@ -1,0 +1,17 @@
+OUTPUT:
+Robot 0 Tour: [0, 5, 2, 7, 9, 14, 17, 13, 20, 6, 0]
+Robot 0 Total Travel Cost: 132.62
+Robot 1 Tour: [0, 1, 10, 4, 11, 12, 8, 3, 18, 19, 15, 16, 0]
+Robot 1 Total Travel Cost: 155.90
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/CVRP/10/P-n21-k2/1/0/solution_r0.py", line 75, in <module>
+    calculate_and_print_routes(routes)
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/CVRP/10/P-n21-k2/1/0/solution_r0.py", line 73, in calculate_and_print_routes
+    print(f"Overall Total Travel Cost: {total_travel_salt:.2f}")
+                                        ^^^^^^^^^^^^^^^^^
+NameError: name 'total_travel_salt' is not defined. Did you mean: 'total_travel_cost'?
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/10/city_10_instance_4/1/2/solution_r2.py", line 38
+    max_d = Loneywordle.1("max_d", lowBound=0, cat='Continuous')
+                       ^^
+SyntaxError: invalid syntax
+
+

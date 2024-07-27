@@ -1,0 +1,12 @@
+OUTPUT:
+Robot 0 Tour: [0, np.int64(21), np.int64(22), 0]
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD/10/P-n23-k8/0/1/solution_r0.py", line 84, in <module>
+    print(f"Robot {robot1} Total Travel Cost: {route_cost}")
+                   ^^^^^^
+NameError: name 'robot1' is not defined
+
+

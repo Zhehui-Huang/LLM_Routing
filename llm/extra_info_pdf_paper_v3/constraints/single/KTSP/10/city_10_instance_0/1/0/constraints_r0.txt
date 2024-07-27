@@ -1,0 +1,5 @@
+- [The robot must start and end its tour at the depot city (city 0).]
+- [The robot must visit exactly 4 cities, including the depot city.]
+- [The goal is to find the shortest possible tour.]
+- [The tour should be output as a list of city indices, starting and ending at city 0.]
+- [The total travel cost of the tour should also be output.]

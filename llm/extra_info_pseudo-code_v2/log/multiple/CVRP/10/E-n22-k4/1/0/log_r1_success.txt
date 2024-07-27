@@ -1,0 +1,15 @@
+OUTPUT:
+Robot 0 Tour: [0, 1, 2, 3, 4, 6, 8, 9, 10, 0]
+Robot 0 Total Travel Compensation: 171.60725718200356
+Robot 1 Tour: [0, 5, 7, 18, 20, 0]
+Robot 1 Total Travel Compensation: 134.85640632351652
+Robot 2 Tour: [0, 19, 21, 11, 13, 0]
+Robot 2 Total Travel Compensation: 126.01535468644786
+Robot 3 Tour: [0, 15, 17, 14, 16, 12, 0]
+Robot 3 Total Travel Compensation: 93.11990113957049
+Overall Total Travel Cost: 525.5989193315385
+
+
+ERROR:
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/15/city_15_instance_0/0/0/verifier_r0_v0.py", line 57, in <module>
+    result = verify_tour(sample_tour, sample_cost)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/15/city_15_instance_0/0/0/verifier_r0_v0.py", line 42, in verify_tour
+    cities[citypl_index_current][0], cities[city_index_current][1]
+           ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'citypl_index_current' is not defined. Did you mean: 'city_index_current'?
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP_MinMax/10/P-n19-k2/2/2/solution_r2.py", line 3, in <module>
+    from mip import Model, xsum, minimize, BINARY, optimize
+ImportError: cannot import name 'optimize' from 'mip' (/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/mip/__init__.py)
+
+

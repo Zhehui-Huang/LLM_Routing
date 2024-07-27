@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/15/city_15_instance_0/4/2/solution_r0.py", line 65, in <module>
+    final_tour = create_hamiltonian_cycle(tour)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/15/city_15_instance_0/4/2/solution_r0.py", line 61, in create_hamiltonian_cycle
+    clean_tor.append(c)
+    ^^^^^^^^^
+NameError: name 'clean_tor' is not defined. Did you mean: 'clean_tour'?
+
+

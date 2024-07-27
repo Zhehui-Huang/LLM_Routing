@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/3/0/solution_r1.py", line 89, in <module>
+    main()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/3/0/solution_r1.py", line 43, in main
+    data = create_data_model(cities)
+                             ^^^^^^
+NameError: name 'cities' is not defined
+
+

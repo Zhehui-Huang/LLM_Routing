@@ -1,0 +1,25 @@
+OUTPUT:
+
+
+ERROR:
+/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD/10/P-n16-k8/2/1/solution_r0.py:18: RuntimeWarning: divide by zero encountered in divide
+  attractiveness = (1 / distance_matrix) ** beta
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD/10/P-n16-k8/2/1/solution_r0.py", line 89, in <module>
+    best_solution, best_cost = aco_multi_depot_mTSP(cities, depots, num_ants, iterations, alpha, beta, rho, Q, tau0)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD/10/P-n16-k8/2/1/solution_r0.py", line 43, in aco_multi_depot_mTSP
+    solution, cost = construct_solution(depot, pheromone_matrix, distance_matrix, alpha, beta)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD/10/P-n16-k8/2/1/solution_r0.py", line 65, in construct_solution
+    probabilities /= np.sum(probabilities)
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/numpy/_core/fromnumeric.py", line 2389, in sum
+    return _wrapreduction(
+           ^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/numpy/_core/fromnumeric.py", line 86, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (16,) + inhomogeneous part.
+
+

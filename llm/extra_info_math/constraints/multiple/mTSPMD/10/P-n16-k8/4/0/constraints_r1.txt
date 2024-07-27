@@ -1,0 +1,3 @@
+- [Each robot must start and end its tour at its assigned depot city.]
+- [Each city must be visited exactly once by any robot.]
+- [The total travel cost of all tours combined should be minimized.]

@@ -1,0 +1,7 @@
+- [There are 15 cities with specified coordinates.]
+- [The robot starts and ends at depot city 0.]
+- [Travel cost between cities is calculated using Euclidean distance.]
+- [The robot needs to visit exactly 12 cities, including the depot city.]
+- [Use the GVNS algorithm to find the shortest tour.]
+- [Output the tour as a list of city indices starting and ending at city 0.]
+- [Output the total travel cost of the tour.]

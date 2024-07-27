@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/TSP/20/city_20_instance_1/4/0/verifier_r2_v0.py", line 43, in <module>
+    correct, message = check_tour_requirements(given_tour, given_total_cost)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/TSP/20/city_20_instance_1/4/0/verifier_r2_v0.py", line 31, in check_tour_requirements
+    total_cost += calculate_euclidean_CA_city_ids(tour[i], tour[i + 1])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_euclidean_CA_city_ids' is not defined. Did you mean: 'calculate_euclidean_city_ids'?
+
+

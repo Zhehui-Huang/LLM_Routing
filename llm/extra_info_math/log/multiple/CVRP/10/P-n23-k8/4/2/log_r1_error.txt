@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/CVRP/10/P-n23-k8/4/2/solution_r1.py", line 54, in <module>
+    main()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/CVRP/10/P-n23-k8/4/2/solution_r1.py", line 3, in main
+    data = create_data_model()
+           ^^^^^^^^^^^^^^^^^
+NameError: name 'create_data_model' is not defined
+
+

@@ -1,0 +1,119 @@
+OUTPUT:
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - /home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/solverdir/cbc/linux/64/cbc /tmp/2ac5e05fdaab4c7eaf38fc5cc845cc3b-pulp.mps -timeMode elapsed -branch -printingOptions all -solution /tmp/2ac5e05fdaab4c7eaf38fc5cc845cc3b-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 387 COLUMNS
+At line 3314 RHS
+At line 3697 BOUNDS
+At line 4078 ENDATA
+Problem MODEL has 382 rows, 399 columns and 1786 elements
+Coin0008I MODEL read with 0 errors
+Option for timeMode changed from cpu to elapsed
+Continuous objective value is 332.347 - 0.00 seconds
+Cgl0004I processed model has 382 rows, 399 columns (380 integer (380 of which binary)) and 1786 elements
+Cbc0038I Initial state - 22 integers unsatisfied sum - 2.2
+Cbc0038I Pass   1: suminf.    1.70000 (27) obj. 362.705 iterations 76
+Cbc0038I Pass   2: suminf.    2.20000 (12) obj. 627.403 iterations 64
+Cbc0038I Pass   3: suminf.    1.70000 (22) obj. 590.487 iterations 42
+Cbc0038I Pass   4: suminf.    1.70000 (9) obj. 753.008 iterations 60
+Cbc0038I Pass   5: suminf.    1.70000 (13) obj. 701.816 iterations 43
+Cbc0038I Pass   6: suminf.    1.70000 (7) obj. 562.806 iterations 52
+Cbc0038I Pass   7: suminf.    1.70000 (12) obj. 589.052 iterations 15
+Cbc0038I Pass   8: suminf.    1.70000 (15) obj. 679.809 iterations 36
+Cbc0038I Pass   9: suminf.    1.70000 (10) obj. 573.563 iterations 40
+Cbc0038I Pass  10: suminf.    0.00000 (0) obj. 899.664 iterations 121
+Cbc0038I Solution found of 899.664
+Cbc0038I Relaxing continuous gives 899.664
+Cbc0038I Before mini branch and bound, 300 integers at bound fixed and 0 continuous
+Cbc0038I Full problem 382 rows 399 columns, reduced to 373 rows 92 columns - 7 fixed gives 350, 32 - still too large
+Cbc0038I Full problem 382 rows 399 columns, reduced to 345 rows 24 columns - too large
+Cbc0038I Mini branch and bound did not improve solution (0.02 seconds)
+Cbc0038I Round again with cutoff of 842.932
+Cbc0038I Pass  11: suminf.    1.70000 (27) obj. 362.705 iterations 0
+Cbc0038I Pass  12: suminf.    1.70000 (13) obj. 582.069 iterations 66
+Cbc0038I Pass  13: suminf.    1.70000 (22) obj. 590.487 iterations 54
+Cbc0038I Pass  14: suminf.    1.70000 (12) obj. 841.583 iterations 109
+Cbc0038I Pass  15: suminf.    1.70000 (16) obj. 812.158 iterations 34
+Cbc0038I Pass  16: suminf.    1.93333 (12) obj. 688.895 iterations 69
+Cbc0038I Pass  17: suminf.    1.70000 (16) obj. 682.212 iterations 34
+Cbc0038I Pass  18: suminf.    1.70000 (12) obj. 673.86 iterations 77
+Cbc0038I Pass  19: suminf.    1.70000 (14) obj. 662.72 iterations 26
+Cbc0038I Pass  20: suminf.    2.10000 (6) obj. 604.214 iterations 70
+Cbc0038I Pass  21: suminf.    1.70000 (10) obj. 613.876 iterations 26
+Cbc0038I Pass  22: suminf.    1.67356 (18) obj. 842.932 iterations 144
+Cbc0038I Pass  23: suminf.    0.80000 (15) obj. 842.932 iterations 67
+Cbc0038I Pass  24: suminf.    0.80000 (7) obj. 726.77 iterations 157
+Cbc0038I Pass  25: suminf.    0.80000 (13) obj. 734.728 iterations 35
+Cbc0038I Pass  26: suminf.    0.80000 (13) obj. 837.438 iterations 51
+Cbc0038I Pass  27: suminf.    0.80000 (11) obj. 824.999 iterations 43
+Cbc0038I Pass  28: suminf.    0.80000 (8) obj. 836.283 iterations 16
+Cbc0038I Pass  29: suminf.    1.28764 (7) obj. 842.932 iterations 75
+Cbc0038I Pass  30: suminf.    0.80000 (7) obj. 816.368 iterations 68
+Cbc0038I Pass  31: suminf.    2.10346 (9) obj. 842.932 iterations 69
+Cbc0038I Pass  32: suminf.    0.80000 (10) obj. 809.784 iterations 72
+Cbc0038I Pass  33: suminf.    0.80000 (4) obj. 815.574 iterations 87
+Cbc0038I Pass  34: suminf.    0.80000 (4) obj. 815.53 iterations 14
+Cbc0038I Pass  35: suminf.    0.80000 (8) obj. 816.044 iterations 52
+Cbc0038I Pass  36: suminf.    0.80000 (7) obj. 816.368 iterations 36
+Cbc0038I Pass  37: suminf.    2.10346 (9) obj. 842.932 iterations 57
+Cbc0038I Pass  38: suminf.    0.80000 (10) obj. 809.784 iterations 51
+Cbc0038I Pass  39: suminf.    0.80000 (4) obj. 815.574 iterations 49
+Cbc0038I Pass  40: suminf.    0.80000 (4) obj. 815.53 iterations 16
+Cbc0038I No solution found this major pass
+Cbc0038I Before mini branch and bound, 271 integers at bound fixed and 1 continuous
+Cbc0038I Full problem 382 rows 399 columns, reduced to 143 rows 121 columns - 3 fixed gives 108, 93 - still too large
+Cbc0038I Full problem 382 rows 399 columns, reduced to 108 rows 93 columns - too large
+Cbc0038I Mini branch and bound did not improve solution (0.04 seconds)
+Cbc0038I After 0.04 seconds - Feasibility pump exiting with objective of 899.664 - took 0.04 seconds
+Cbc0012I Integer solution of 899.66361 found by feasibility pump after 0 iterations and 0 nodes (0.04 seconds)
+Cbc0038I Full problem 382 rows 399 columns, reduced to 360 rows 46 columns - 18 fixed gives 342, 19 - still too large
+Cbc0012I Integer solution of 376.93471 found by DiveCoefficient after 3987 iterations and 0 nodes (0.46 seconds)
+Cbc0031I 22 added rows had average density of 117.36364
+Cbc0013I At root node, 22 cuts changed objective from 332.34676 to 375.50616 in 100 passes
+Cbc0014I Cut generator 0 (Probing) - 28 row cuts average 76.1 elements, 0 column cuts (0 active)  in 0.108 seconds - new frequency is -100
+Cbc0014I Cut generator 1 (Gomory) - 801 row cuts average 295.8 elements, 0 column cuts (0 active)  in 0.053 seconds - new frequency is 1
+Cbc0014I Cut generator 2 (Knapsack) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.009 seconds - new frequency is -100
+Cbc0014I Cut generator 3 (Clique) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.002 seconds - new frequency is -100
+Cbc0014I Cut generator 4 (MixedIntegerRounding2) - 587 row cuts average 12.0 elements, 0 column cuts (0 active)  in 0.041 seconds - new frequency is 1
+Cbc0014I Cut generator 5 (FlowCover) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.013 seconds - new frequency is -100
+Cbc0014I Cut generator 6 (TwoMirCuts) - 484 row cuts average 40.2 elements, 0 column cuts (0 active)  in 0.008 seconds - new frequency is 1
+Cbc0010I After 0 nodes, 1 on tree, 376.93471 best solution, best possible 375.50616 (0.54 seconds)
+Cbc0001I Search completed - best objective 376.9347096246941, took 4893 iterations and 8 nodes (0.63 seconds)
+Cbc0032I Strong branching done 260 times (7114 iterations), fathomed 3 nodes and fixed 0 variables
+Cbc0035I Maximum depth 3, 330 variables fixed on reduced cost
+Cuts at root node changed objective from 332.347 to 375.506
+Probing was tried 100 times and created 28 cuts of which 0 were active after adding rounds of cuts (0.108 seconds)
+Gomory was tried 116 times and created 806 cuts of which 0 were active after adding rounds of cuts (0.055 seconds)
+Knapsack was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.009 seconds)
+Clique was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.002 seconds)
+MixedIntegerRounding2 was tried 116 times and created 599 cuts of which 0 were active after adding rounds of cuts (0.043 seconds)
+FlowCover was tried 100 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.013 seconds)
+TwoMirCuts was tried 116 times and created 527 cuts of which 0 were active after adding rounds of cuts (0.010 seconds)
+ZeroHalf was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ImplicationCuts was tried 16 times and created 4 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                376.93470962
+Enumerated nodes:               8
+Total iterations:               4893
+Time (CPU seconds):             0.63
+Time (Wallclock seconds):       0.64
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.63   (Wallclock seconds):       0.64
+
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/20/city_20_instance_1/0/1/solution_r1.py", line 53, in <module>
+    if x[current, j].value() == 1 and j not in visited_cities:
+       ~^^^^^^^^^^^^
+KeyError: (0, 0)
+
+

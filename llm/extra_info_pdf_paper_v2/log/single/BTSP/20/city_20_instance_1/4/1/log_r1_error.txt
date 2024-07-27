@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/20/city_20_instance_1/4/1/solution_r1.py", line 37
+    if max_edge_cost < best_max_edge_c...
+                                      ^^^
+SyntaxError: invalid syntax
+
+

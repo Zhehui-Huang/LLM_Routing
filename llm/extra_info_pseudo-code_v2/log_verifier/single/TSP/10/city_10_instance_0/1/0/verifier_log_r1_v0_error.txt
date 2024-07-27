@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/10/city_10_instance_0/1/0/verifier_r1_v0.py", line 44, in <module>
+    if __n__ == '__main__':
+       ^^^^^
+NameError: name '__n__' is not defined
+
+

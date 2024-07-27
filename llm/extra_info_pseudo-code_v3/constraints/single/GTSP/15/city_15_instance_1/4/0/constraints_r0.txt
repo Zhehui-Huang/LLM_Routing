@@ -1,0 +1,6 @@
+- [Requirement 1] The robot starts and ends at the depot city (city 0).
+- [Requirement 2] The robot must visit exactly one city from each city group.
+- [Requirement 3] The travel cost between cities is calculated as the Euclidean distance.
+- [Requirement 4] The objective is to find the shortest possible tour that satisfies all constraints.
+- [Requirement 5] The output should list the city indices of the tour starting and ending at city 0.
+- [Requirement 6] The output should also include the total travel cost of the tour.

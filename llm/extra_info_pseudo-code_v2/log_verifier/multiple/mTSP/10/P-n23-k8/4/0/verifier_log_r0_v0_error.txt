@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSP/10/P-n23-k8/4/0/verifier_r0_v0.py", line 36, in <module>
+    correct = are_tours_correct(robot_tours, overall_cost)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSP/10/P-n23-k8/4/0/verifier_r0_v0.py", line 33, in are_tours_correct
+    verify_total_cost(tours, reported_overall_cost))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSP/10/P-n23-k8/4/0/verifier_r0_v0.py", line 28, in verify_total_cost
+    return np.isclose(calculated, reported_overall_cost)
+                      ^^^^^^^^^^
+NameError: name 'calculated' is not defined
+
+

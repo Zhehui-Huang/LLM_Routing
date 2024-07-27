@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/15/city_15_instance_3/0/0/solution_r2.py", line 40, in <module>
+    tour, total_cost = find_shortest_tour()
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/15/city_15_instance_3/0/0/solution_r2.py", line 30, in find_shortest_tour
+    tour = [0] + list(city_detail) + [0]
+                      ^^^^^^^^^^^
+NameError: name 'city_detail' is not defined
+
+

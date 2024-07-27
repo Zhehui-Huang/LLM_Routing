@@ -1,0 +1,6 @@
+- [The robot originates and must return to depot city 0.]
+- [The robot must visit each of the 20 cities exactly once, except for the depot city.]
+- [Travel costs are calculated using Euclidean distance between any two cities.]
+- [The shortest possible travel route needs to be computed.]
+- [The tour should start and end at the depot city (city 0).]
+- [The route must be returned as a list of city indices, and the total cost must be provided.]

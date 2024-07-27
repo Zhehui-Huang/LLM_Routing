@@ -1,0 +1,11 @@
+OUTPUT:
+Robot 0 Tour: 174.65889255351078
+Robot 0 Total Travel Cost: 174.65889255351078
+Robot 1 Tour: 174.6977835794075
+Robot 1 Total Travel Cost: 174.6977835794075
+Overall Total Travel Cost: 349.3566761329183
+
+
+ERROR:
+
+

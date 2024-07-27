@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD/10/P-n16-k8/1/2/solution_r2.py", line 32, in <module>
+    assigned_cities = non_depot_cities[start_idx:end_head]
+                                                 ^^^^^^^^
+NameError: name 'end_head' is not defined
+
+

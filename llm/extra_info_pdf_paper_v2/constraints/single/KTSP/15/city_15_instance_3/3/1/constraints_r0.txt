@@ -1,0 +1,7 @@
+- [Requirement 1] The robot must start and end the tour at the depot city (city 0).
+- [Requirement 2] The robot must visit exactly 10 cities out of the given 15 cities.
+- [Requirement 3] The tour’s travel cost is calculated based on the Euclidean distance between cities.
+- [Requirement 4] The goal is to find the shortest possible route for the specified 10-city tour.
+- [Requirement 5] The results should include the sequence of visited cities and the total travel cost.
+- [Requirement 6] The solution should be based on a method similar to the general variable neighborhood search algorithm as used for k-TSP.
+- [Requirement 7] The provided location coordinates of each city should be used for determining distances.

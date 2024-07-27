@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+....E
+======================================================================
+ERROR: test_travel_cost_matches (__main__.TestRobotTourSolution.test_travel_cost_matches)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSP/10/P-n16-k8/3/2/verifier_r1_v2.py", line 77, in test_travel_cost_matches
+    self.assertAlmostEqual(calculated- cost, expected_costs[robot_id], places=2)
+                           ^^^^^^^^^^
+NameError: name 'calculated' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+FAILED (errors=1)
+
+

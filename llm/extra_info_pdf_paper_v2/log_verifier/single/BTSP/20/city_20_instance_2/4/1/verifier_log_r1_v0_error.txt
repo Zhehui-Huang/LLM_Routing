@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/20/city_20_instance_2/4/1/verifier_r1_v0.py", line 53
+    if not (math.isclose(actual_total_cost, expected_total_cost, rel_tol=1e-2) and 
+           ^
+SyntaxError: '(' was never closed
+
+

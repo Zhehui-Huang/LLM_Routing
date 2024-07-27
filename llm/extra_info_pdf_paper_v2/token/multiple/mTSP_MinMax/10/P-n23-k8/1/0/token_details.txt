@@ -1,0 +1,37 @@
+Task: mTSP_MinMax, City: 10, File name: P-n23-k8, Run time: 1, Try id: 0
+
+@@@@@
+Notes: exec
+input_token_num: 1012
+output_token_num: 964
+total_token_num: 1976
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 1794
+output_token_num: 921
+total_token_num: 2715
+@@@@@
+
+@@@@@
+Notes: extract_constraints
+input_token_num: 1094
+output_token_num: 134
+total_token_num: 1228
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 1708
+output_token_num: 737
+total_token_num: 2445
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 2476
+output_token_num: 736
+total_token_num: 3212
+@@@@@
+

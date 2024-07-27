@@ -1,0 +1,44 @@
+Start time: [2024-07-26 10:46:15]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/exec_details/multiple/mTSPMD/10/P-n23-k8/2/1/exec_details_P-n23-k8.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 65.39 seconds.
+Code solution execution status: error, execution time: 0.05221295356750488
+
+Reflect count: 1
+===
+Ask LLM for code solution, response time: 45.21 seconds.
+Code solution execution status: error, execution time: 11.200308322906494
+
+Reflect count: 2
+===
+Ask LLM for code solution, response time: 55.69 seconds.
+Code solution execution status: success, execution time: 10.162306308746338
+Another LLM - Get constraints from LLM, response time: 4.78 seconds.
+Ask another LLM for verifier code, response time: 49.92 seconds.
+Another LLM - verifier does not output CORRECT OR FAIL.
+More info: OUTPUT:
+Robot 0 Calculated Travel Cost: 4.47
+Robot 1 Calculated Travel Cost: 14.14
+Robot 2 Calculated Travel Cost: 18.11
+Robot 3 Calculated Travel Cost: 15.62
+Robot 4 Calculated Travel Cost: 18.44
+Robot 5 Calculated Travel Cost: 14.56
+Robot 6 Calculated Travel Cost: 12.81
+Robot 7 Calculated Travel Cost: 11.31
+Total Calculated Cost: 109.46
+
+
+ERROR:
+
+
+
+
+
+Ask another LLM for verifier code, response time: 37.66 seconds.
+Another LLM - The verifier has bugs.
+Ask another LLM for verifier code, response time: 32.95 seconds.
+Another LLM - The verifier has bugs.

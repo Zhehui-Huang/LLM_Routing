@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/GTSP/20/city_20_instance_4/3/0/verifier_r0_v2.py", line 62, in <module>
+    print("CORRECT" if tour_validity(optimal_tour, city_locations, city_groups) else "FAIL")
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/GTSP/20/city_20_instance_4/3/0/verifier_r0_v2.py", line 27, in tour_validity
+    if not all(visited_people):
+               ^^^^^^^^^^^^^^
+NameError: name 'visited_people' is not defined. Did you mean: 'visited_groups'?
+
+

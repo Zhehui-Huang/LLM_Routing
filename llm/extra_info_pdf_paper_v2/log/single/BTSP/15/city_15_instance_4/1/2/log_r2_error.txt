@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/15/city_15_instance_4/1/2/solution_r2.py", line 54, in <module>
+    optimal_tour, total_cost, max_distance = find_min_max_tour(cities)
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/15/city_15_instance_4/1/2/solution_r2.py", line 38, in find_min_max_tour
+    if max_distance < min_max_distance or (max_distance == min_max_dtype and total_cost < min_total_cost):
+                                                           ^^^^^^^^^^^^^
+NameError: name 'min_max_dtype' is not defined. Did you mean: 'min_max_distance'?
+
+

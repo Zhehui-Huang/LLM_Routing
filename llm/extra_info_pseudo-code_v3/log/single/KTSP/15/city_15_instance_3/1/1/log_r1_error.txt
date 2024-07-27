@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_3/1/1/solution_r1.py", line 70, in <module>
+    final_tour, final_cost = gvns(10, 100)
+                             ^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_3/1/1/solution_r1.py", line 63, in gvns
+    local_optimum = vnd(current_solution, D)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_3/1/1/solution_r1.py", line 45, in vnd
+    if new_cost < calculate_total_arcostinze(solution, distance_matrix):
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_total_arcostinze' is not defined. Did you mean: 'calculate_total_distance'?
+
+

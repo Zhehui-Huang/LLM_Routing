@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/CVRP/10/P-n23-k8/4/1/solution_r1.py", line 50
+    plan_output = f'Robot {vehicle_append(route_distance, "km")}
+                  ^
+SyntaxError: unterminated string literal (detected at line 50)
+
+

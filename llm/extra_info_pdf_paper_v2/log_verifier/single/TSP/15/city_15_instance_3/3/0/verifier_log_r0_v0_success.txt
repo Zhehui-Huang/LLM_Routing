@@ -1,0 +1,29 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+.FE
+======================================================================
+ERROR: test_travel_costs (__main__.TestTravelingSalesmanSolution.test_travel_costs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/TSP/15/city_15_instance_3/3/0/verifier_r0_v0.py", line 43, in test_travel_costs
+    self.assertAlmostEqual(calculated_i_cost, self.reported_cost, places=5)
+                           ^^^^^^^^^^^^^^^^^
+NameError: name 'calculated_i_cost' is not defined
+
+======================================================================
+FAIL: test_tour_starts_and_ends_at_depot (__main__.TestTravelingSalesmanSolution.test_tour_starts_and_ends_at_depot)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/TSP/15/city_15_instance_3/3/0/verifier_r0_v0.py", line 32, in test_tour_starts_and_ends_at_depot
+    self.assertEqual(self.solution_tour[0], 0)
+AssertionError: 6 != 0
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1, errors=1)
+
+

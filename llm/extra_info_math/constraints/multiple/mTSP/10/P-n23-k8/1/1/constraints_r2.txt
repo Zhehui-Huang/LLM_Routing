@@ -1,0 +1,4 @@
+- Each city is visited exactly once by one of the robots.
+- Each robot starts and ends its tour at the depot city.
+- Minimize the total travel cost for all robot tours combined.
+- Travel cost between two cities is defined using the Euclidean distance formula.

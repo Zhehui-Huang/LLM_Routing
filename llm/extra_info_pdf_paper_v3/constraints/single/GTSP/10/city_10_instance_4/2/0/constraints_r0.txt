@@ -1,0 +1,5 @@
+- [The robot must start and end its journey at the depot city indexed as 0.]
+- [The robot must visit exactly one city from each defined group of cities.]
+- [The travel cost is calculated using the Euclidean distance between two cities.]
+- [There are 7 city groups and the robot must visit one city from each group making a total of 7 distinct visits, excluding the depot city.]
+- [Output of the solution should be the tour as a list of city indices starting and ending at city 0 and the total travel cost of this tour.]

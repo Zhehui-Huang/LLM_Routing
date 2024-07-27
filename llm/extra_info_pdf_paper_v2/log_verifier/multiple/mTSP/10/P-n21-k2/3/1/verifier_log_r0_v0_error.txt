@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSP/10/P-n21-k2/3/1/verifier_r0_v0.py", line 59, in <module>
+    validate_tours(robot_tours, city_coordinates)
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSP/10/P-n21-k2/3/1/verifier_r0_v0.py", line 37, in validate_tours
+    cost_calculated += calculate_distance(city_coordinates[start_task], city_coordinates[get_city])
+                                                           ^^^^^^^^^^
+NameError: name 'start_task' is not defined
+
+

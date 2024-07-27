@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_4/3/1/solution_r0.py", line 37, in <module>
+    dist = {(i, j): euclideannothing_distance(i, j) for i in nodes for j in nodes if i != j}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_4/3/1/solution_r0.py", line 37, in <dictcomp>
+    dist = {(i, j): euclideannothing_distance(i, j) for i in nodes for j in nodes if i != j}
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclideannothing_distance' is not defined. Did you mean: 'euclidean_distance'?
+
+

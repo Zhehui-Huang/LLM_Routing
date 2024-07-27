@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/GTSP/15/city_15_instance_2/4/2/solution_r1.py", line 50, in <module>
+    tour, total_cost = find_shortest_tour(depot, city_groups)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/GTSP/15/city_15_instance_2/4/2/solution_r1.py", line 15, in find_shortest_tour
+    distance = euclidean_distance(current_city, next_click)
+                                                ^^^^^^^^^^
+NameError: name 'next_click' is not defined. Did you mean: 'next_city'?
+
+

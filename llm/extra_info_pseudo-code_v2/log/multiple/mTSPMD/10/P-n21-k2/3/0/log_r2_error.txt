@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD/10/P-n21-k2/3/0/solution_r2.py", line 81, in <module>
+    best_solution, best_cost = aco_solve()
+                               ^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/mTSPMD/10/P-n21-k2/3/0/solution_r2.py", line 38, in aco_solve
+    available_cities.remove(current_city)
+KeyError: 1
+
+

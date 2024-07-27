@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/CVRP/10/P-n16-k8/3/2/solution_r2.py", line 62, in <module>
+    routes = greedy_initial_solution()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/CVRP/10/P-n16-k8/3/2/solution_r2.py", line 40, in greedy_initial_solution
+    capacity_remaining[vehicle] -= demands[nextCity]
+                                           ^^^^^^^^
+NameError: name 'nextCity' is not defined. Did you mean: 'next_city'?
+
+

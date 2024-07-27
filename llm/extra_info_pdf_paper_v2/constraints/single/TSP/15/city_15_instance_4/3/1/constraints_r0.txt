@@ -1,0 +1,5 @@
+- [Requirement 1]: The robot must start and end its route at the depot city 0.
+- [Requirement 2]: The robot has to visit each of the 14 other cities exactly once.
+- [Requirement 3]: The travel cost between cities is determined by the Euclidean distance.
+- [Requirement 4]: Output the complete tour starting and ending at city 0.
+- [Requirement 5]: Output the total travel cost of the entire tour.

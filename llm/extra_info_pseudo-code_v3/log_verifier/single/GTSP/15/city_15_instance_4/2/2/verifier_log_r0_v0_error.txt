@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/GTSP/15/city_15_instance_4/2/2/verifier_r0_v0.py", line 52, in <module>
+    result = verify_tour(tour, city_coordinates, city_groups, total_travel_cost)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/GTSP/15/city_15_instance_4/2/2/verifier_r0_v0.py", line 21, in verify_tour
+    if len(visited_group) != len(city_groups):
+           ^^^^^^^^^^^^^
+NameError: name 'visited_group' is not defined. Did you mean: 'visited_groups'?
+
+

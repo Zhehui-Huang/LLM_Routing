@@ -1,0 +1,16 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD/10/P-n16-k8/0/0/solution_r2.py", line 76, in <module>
+    ant_colony_optimization()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD/10/P-n16-k8/0/0/solution_r2.py", line 48, in ant_colony_optimization
+    probabilities = [pheromone[current_city][j]**alpha * visibility[current_city][j]**beta if j in unvisited else 0 for j in range(num_cities)]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD/10/P-n16-k8/0/0/solution_r2.py", line 48, in <listcomp>
+    probabilities = [pheromone[current_city][j]**alpha * visibility[current_city][j]**beta if j in unvisited else 0 for j in range(num_cities)]
+                     ^^^^^^^^^
+NameError: cannot access free variable 'pheromone' where it is not associated with a value in enclosing scope
+
+

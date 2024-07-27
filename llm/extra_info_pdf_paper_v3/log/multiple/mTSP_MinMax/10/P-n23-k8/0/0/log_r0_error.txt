@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSP_MinMax/10/P-n23-k8/0/0/solution_r0.py", line 46
+    if new_cost < old_consumer_distances<len(route)-1oute = new_route
+                                                    ^
+SyntaxError: invalid decimal literal
+
+

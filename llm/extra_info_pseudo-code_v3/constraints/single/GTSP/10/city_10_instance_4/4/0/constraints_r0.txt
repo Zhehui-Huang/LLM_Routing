@@ -1,0 +1,5 @@
+- [The robot starts and ends the journey at the depot city 0.]
+- [The robot must visit exactly one city from each of the 7 city groups.]
+- [The travel cost is calculated as the Euclidean distance between any two cities.]
+- [Output the travel route as a list that starts and ends at the depot city 0 and includes exactly one city from each group.]
+- [Output the total travel cost of the optimal tour.]

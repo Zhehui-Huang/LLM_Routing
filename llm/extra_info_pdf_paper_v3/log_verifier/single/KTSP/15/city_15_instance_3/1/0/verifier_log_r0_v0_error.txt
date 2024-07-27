@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/verifier/single/KTSP/15/city_15_instance_3/1/0/verifier_r0_v0.py", line 33
+    calculated_cost += euclidean الce Utility(city_a_idxs[0], city_b[1])
+                                 ^^^^
+SyntaxError: invalid syntax
+
+

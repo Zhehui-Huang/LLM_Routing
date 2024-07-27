@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must visit all cities exactly once, except the depot city (city 0), and return to the depot city, forming a closed loop.
+- [Requirement 2] The travel cost between cities is calculated using the Euclidean distance.
+- [Requirement 3] The solution should employ the Christofides algorithm steps to find an approximate solution to the TSP, including computing a minimum spanning tree, finding a perfect matching for odd-degree vertices, combining these to form a Hamiltonian circuit, and converting an Eulerian circuit by skipping repeated vertices.
+- [Requirement 4] Output the tour as a list of city indices starting and ending at the depot city.
+- [Requirement 5] Output the total travel cost of the tour.

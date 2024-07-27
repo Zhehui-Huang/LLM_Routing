@@ -1,0 +1,13 @@
+OUTPUT:
+CORRECT
+
+
+ERROR:
+test_tour_validity_and_cost (__main__.TestTravelingSalesmanTour.test_tour_validity_and_cost) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+
+

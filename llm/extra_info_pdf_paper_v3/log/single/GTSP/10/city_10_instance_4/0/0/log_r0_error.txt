@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/GTSP/10/city_10_instance_4/0/0/solution_r0.py", line 63, in <module>
+    min_cost, min_tour = find_shortest_tour()
+                         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/GTSP/10/city_10_instance_4/0/0/solution_r0.py", line 57, in find_shortest_tour
+    min_cost = total_mean_distance
+               ^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_mean_distance' is not defined. Did you mean: 'euclidean_distance'?
+
+

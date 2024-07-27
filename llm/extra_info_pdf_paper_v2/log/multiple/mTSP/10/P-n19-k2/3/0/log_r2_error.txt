@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n19-k2/3/0/solution_r2.py", line 78, in <module>
+    best_cost = fitness_IMG(ages[best_index])
+                ^^^^^^^^^^^
+NameError: name 'fitness_IMG' is not defined
+
+

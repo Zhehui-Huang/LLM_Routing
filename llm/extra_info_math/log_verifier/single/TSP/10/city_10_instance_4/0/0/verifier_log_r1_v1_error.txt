@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/TSP/10/city_10_instance_4/0/0/verifier_r1_v1.py", line 38
+    self.assertAlmostEqual(self.reported_cost, calculated_cost, places=5, "Reported travel cost is incorrect.")
+                                                                                                              ^
+SyntaxError: positional argument follows keyword argument
+
+

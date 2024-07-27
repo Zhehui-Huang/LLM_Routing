@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/GTSP/20/city_20_instance_1/2/0/verifier_r2_v2.py", line 61
+    seen_groups.add(group version=”"p0004.6.1"”, cl="c390935.231757.586111400" op="" op_dependency="c2491.784093183" op_entitlement=""uSpan
+                                  ^
+SyntaxError: invalid character '”' (U+201D)
+
+

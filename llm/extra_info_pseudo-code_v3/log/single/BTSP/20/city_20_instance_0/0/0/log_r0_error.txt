@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/20/city_20_instance_0/0/0/solution_r0.py", line 78
+    max_dist = max(distances[(best_path[i], best_path[i+1])] for i in range(len(best threatening: best_path) - 1))
+                                                                                ^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

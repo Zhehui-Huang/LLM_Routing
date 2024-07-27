@@ -1,0 +1,22 @@
+Start time: [2024-07-26 13:03:55]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/exec_details/multiple/mTSPMD_non_fix/10/P-n21-k2/4/1/exec_details_P-n21-k2.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 44.45 seconds.
+Code solution execution status: error, execution time: 0.05395364761352539
+
+Reflect count: 1
+===
+Ask LLM for code solution, response time: 31.62 seconds.
+Code solution execution status: error, execution time: 1.2179291248321533
+
+Reflect count: 2
+===
+Ask LLM for code solution, response time: 28.20 seconds.
+Code solution execution status: success, execution time: 0.518805980682373
+Another LLM - Get constraints from LLM, response time: 5.04 seconds.
+Ask another LLM for verifier code, response time: 23.78 seconds.
+Another LLM - fail verifier

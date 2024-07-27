@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSPMD/10/P-n19-k2/4/1/verifier_r0_v1.py", line 76, in <module>
+    result = validate_tours_and_costs()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSPMD/10/P-n19-k2/4/1/verifier_r0_v1.py", line 57, in validate_tours_and_costs
+    distance = euclidean_distance(city_coordinates[tour[i]], city_coordinates[tour[i+1]])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/mTSPMD/10/P-n19-k2/4/1/verifier_r0_v1.py", line 4, in euclidean_distance
+    return np.linalg.norm(np.array(p1) - np.array(p2))
+           ^^
+NameError: name 'np' is not defined
+
+

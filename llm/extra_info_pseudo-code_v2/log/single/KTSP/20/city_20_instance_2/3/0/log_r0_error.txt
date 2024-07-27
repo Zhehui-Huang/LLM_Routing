@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/20/city_20_instance_2/3/0/solution_r0.py", line 81, in <module>
+    tour, travel_cost = gvns(coordinates)
+                        ^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/20/city_20_instance_2/3/0/solution_r0.py", line 59, in gvns
+    improved_solution = local_search(perturbed_solution, coordinates)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/20/city_20_instance_2/3/0/solution_r0.py", line 31, in local_search
+    best_cost = total_route_missing_cost(solution, coordinates)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_route_missing_cost' is not defined
+
+

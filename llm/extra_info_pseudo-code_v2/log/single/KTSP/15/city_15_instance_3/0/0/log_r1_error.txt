@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/15/city_15_instance_3/0/0/solution_r1.py", line 80, in <module>
+    best_solution = generate_initial_solution()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/15/city_15_instance_3/0/0/solution_r1.py", line 33, in generate_initial_solution
+    solution = [0] + cities[:k-1] + [0]  # include depot city as start and end
+                             ^
+NameError: name 'k' is not defined
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/CVRP/10/E-n22-k4/0/2/verifier_r0_v0.py", line 46
+    distance = euclidean or ValueError(error_message)ance(coordinates[last_city], coordinates[city])
+                                                     ^^^^
+SyntaxError: invalid syntax
+
+

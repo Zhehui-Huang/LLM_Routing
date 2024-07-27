@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/GTSP/15/city_15_instance_3/0/1/solution_r0.py", line 65, in <module>
+    best_tour, min_cost = find_shortest_tour()
+                          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/GTSP/15/city_15_instance_3/0/1/solution_r0.py", line 55, in find_shortest_tour
+    for perm6 in citygroups[5]:
+                 ^^^^^^^^^^
+NameError: name 'citygroups' is not defined. Did you mean: 'city_groups'?
+
+

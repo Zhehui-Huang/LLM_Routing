@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/15/city_15_instance_1/2/0/solution_r1.py", line 55
+    best_cost = tour(variation_distance(best_solution)
+                    ^
+SyntaxError: '(' was never closed
+
+

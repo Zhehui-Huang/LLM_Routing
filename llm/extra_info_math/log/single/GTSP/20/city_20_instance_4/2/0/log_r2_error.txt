@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/20/city_20_instance_4/2/0/solution_r2.py", line 58
+    if j != current, 
+                   ^
+SyntaxError: invalid syntax
+
+

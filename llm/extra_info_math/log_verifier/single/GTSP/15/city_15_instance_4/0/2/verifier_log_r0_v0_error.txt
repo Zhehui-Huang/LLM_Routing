@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/GTSP/15/city_15_instance_4/0/2/verifier_r0_v0.py", line 45
+    print(check_solution(tour, total_travel/*autopost*/)_cost)
+                                            ^
+SyntaxError: invalid syntax
+
+

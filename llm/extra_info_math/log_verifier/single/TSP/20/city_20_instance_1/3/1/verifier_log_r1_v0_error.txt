@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/TSP/20/city_20_instance_1/3/1/verifier_r1_v0.py", line 41, in <module>
+    result = verify_tumberal_tour_and_cost(given_tomb, reported_cost)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'verify_tumberal_tour_and_cost' is not defined
+
+

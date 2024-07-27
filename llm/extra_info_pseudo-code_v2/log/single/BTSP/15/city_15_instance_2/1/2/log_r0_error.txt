@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_2/1/2/solution_r0.py", line 72, in <module>
+    tour, total_cost, max_distance = solve_btsp(G)
+                                     ^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_2/1/2/solution_r0.py", line 55, in solve_btsp
+    min_path_weight = min(data['weight'] for data in nx.all_simple_edge_paths(biconnected_subgraph, u, v))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_2/1/2/solution_r0.py", line 55, in <genexpr>
+    min_path_weight = min(data['weight'] for data in nx.all_simple_edge_paths(biconnected_subgraph, u, v))
+                          ~~~~^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+
+

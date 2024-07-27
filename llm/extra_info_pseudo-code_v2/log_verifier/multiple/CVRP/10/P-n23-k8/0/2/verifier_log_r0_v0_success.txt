@@ -1,0 +1,7 @@
+OUTPUT:
+FAIL: More robots used than available
+
+
+ERROR:
+
+

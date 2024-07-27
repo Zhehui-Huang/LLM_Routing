@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/10/city_10_instance_3/3/2/solution_r0.py", line 43, in <module>
+    best_max_distance = max_resetSychostance
+                        ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'max_resetSychostance' is not defined
+
+

@@ -1,0 +1,17 @@
+OUTPUT:
+CORRECT
+
+
+ERROR:
+test_calculate_total_distance (__main__.TestKTSPSolution.test_calculate_total_distance) ... ok
+test_output_format (__main__.TestKTSPSolution.test_output_format) ... ok
+test_tour_length (__main__.TestKTSPSolution.test_tour_length) ... ok
+test_tour_starts_and_ends_at_depot (__main__.TestKTSPSolution.test_tour_starts_and_ends_at_depot) ... ok
+test_visit_seven_cities_including_depot (__main__.TestKTSPSolution.test_visit_seven_cities_including_depot) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+
+

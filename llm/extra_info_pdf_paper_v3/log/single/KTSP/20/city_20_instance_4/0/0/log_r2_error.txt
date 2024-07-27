@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/KTSP/20/city_20_instance_4/0/0/solution_r2.py", line 42, in <module>
+    tour_found, total_cost = find_best_tour()
+                             ^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/KTSP/20/city_20_instance_4/0/0/solution_r2.py", line 31, in find_best_tour
+    for city_subset in itertools.combinations(shuffled_cities, 15):
+                       ^^^^^^^^^
+NameError: name 'itertools' is not defined
+
+

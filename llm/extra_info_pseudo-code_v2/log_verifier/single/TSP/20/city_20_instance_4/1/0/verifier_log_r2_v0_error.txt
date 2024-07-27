@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/20/city_20_instance_4/1/0/verifier_r2_v0.py", line 23
+    self.assertEqual(sorted(solution_tatform once, 1:], list(range(1, 20)))
+                                                     ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+
+

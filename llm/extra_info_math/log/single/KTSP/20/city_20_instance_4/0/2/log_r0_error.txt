@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_4/0/2/solution_r0.py", line 19
+    current_city = start_view the distance between the drone and someone who is 100 km away when the processing city
+                              ^^^
+SyntaxError: invalid syntax
+
+

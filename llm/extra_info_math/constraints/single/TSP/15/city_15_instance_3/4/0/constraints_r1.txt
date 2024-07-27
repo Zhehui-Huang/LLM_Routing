@@ -1,0 +1,9 @@
+- [Requirement 1] The robot must start at the depot city (city 0) and end its tour at the same city.
+- [Requirement 2] The robot must visit all cities exactly once.
+- [Requirement 3] The travel cost between any two cities is determined by the Euclidean distance.
+- [Requirement 4] The tour must minimize the total travel cost.
+- [Requirement 5] Each city \( i \) must be left exactly once.
+- [Requirement 6] Each city \( j \) must be entered exactly once.
+- [Requirement 7] No subtours should be formed. Formally: For any subset \( S \) of cities, if \( 2 \leq |S| \leq n - 1 \) then \( \sum_{i, j \in S} x_{ij} \leq |S|-1 \).
+- [Requirement 8] Use binary decision variables \( x_{ij} \) such that \( x_{ij} \) is 1 if the tour goes directly from city \( i \) to city \( j \), and 0 otherwise.
+- [Requirement 9] The total number of cities including the depot city is 15.

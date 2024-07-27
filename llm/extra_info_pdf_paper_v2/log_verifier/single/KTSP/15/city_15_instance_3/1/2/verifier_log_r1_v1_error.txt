@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/KTSP/15/city_15_instance_3/1/2/verifier_r1_v1.py", line 18
+    return total has been renameddistance
+                 ^^^
+SyntaxError: invalid syntax
+
+

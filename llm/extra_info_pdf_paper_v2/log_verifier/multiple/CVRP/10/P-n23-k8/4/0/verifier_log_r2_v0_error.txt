@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/CVRP/10/P-n23-k8/4/0/verifier_r2_v0.py", line 81, in <module>
+    print(verify_tours())
+          ^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/CVRP/10/P-n23-k8/4/0/verifier_r2_v0.py", line 62, in verify_tours
+    calculated_cost += calculate_distance(city_current, city_next)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/CVRP/10/P-n23-k8/4/0/verifier_r2_v0.py", line 46, in calculate_distance
+    coord1, coord2 = cities[city1]['coords'], cities[city2]['coords']
+                                              ~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'coords'
+
+

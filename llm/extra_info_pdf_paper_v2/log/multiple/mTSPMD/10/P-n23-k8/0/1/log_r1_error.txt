@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD/10/P-n23-k8/0/1/solution_r1.py", line 68, in <module>
+    best_solution, best_cost = aco_algorithm()
+                               ^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD/10/P-n23-k8/0/1/solution_r1.py", line 40, in aco_algorithm
+    tours = {robot: [depot] for depot, robot in depot_to_robots.items()}
+                                                ^^^^^^^^^^^^^^^
+NameError: name 'depot_to_robots' is not defined. Did you mean: 'depot_to_robot'?
+
+

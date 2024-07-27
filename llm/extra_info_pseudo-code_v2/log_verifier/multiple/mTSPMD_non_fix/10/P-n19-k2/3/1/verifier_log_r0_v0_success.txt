@@ -1,0 +1,7 @@
+OUTPUT:
+FAIL: Starting cities are incorrect
+
+
+ERROR:
+
+

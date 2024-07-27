@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_3/2/1/solution_r1.py", line 27, in <module>
+    dist = [[euclidean_alternative(i, j) for j in range(len(cities))] for i in range(len(cities))]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_3/2/1/solution_r1.py", line 27, in <listcomp>
+    dist = [[euclidean_alternative(i, j) for j in range(len(cities))] for i in range(len(cities))]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/TSP/15/city_15_instance_3/2/1/solution_r1.py", line 27, in <listcomp>
+    dist = [[euclidean_alternative(i, j) for j in range(len(cities))] for i in range(len(cities))]
+             ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_alternative' is not defined
+
+

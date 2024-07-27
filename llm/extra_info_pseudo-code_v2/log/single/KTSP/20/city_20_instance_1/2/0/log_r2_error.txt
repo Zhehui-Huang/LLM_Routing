@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/20/city_20_instance_1/2/0/solution_r2.py", line 80, in <module>
+    best_tour, best_cost = gvns()
+                           ^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/20/city_20_instance_1/2/0/solution_r2.py", line 71, in gvns
+    new_cost = total_cost(new_application)
+                          ^^^^^^^^^^^^^^^
+NameError: name 'new_application' is not defined
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/15/city_15_instance_4/1/1/solution_r2.py", line 21, in <module>
+    distance_matrix = [[calculate_distance(i, j) for j in range(num_caries)] for i in range(num_cities)]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/BTSP/15/city_15_instance_4/1/1/solution_r2.py", line 21, in <listcomp>
+    distance_matrix = [[calculate_distance(i, j) for j in range(num_caries)] for i in range(num_cities)]
+                                                                ^^^^^^^^^^
+NameError: name 'num_caries' is not defined. Did you mean: 'num_cities'?
+
+

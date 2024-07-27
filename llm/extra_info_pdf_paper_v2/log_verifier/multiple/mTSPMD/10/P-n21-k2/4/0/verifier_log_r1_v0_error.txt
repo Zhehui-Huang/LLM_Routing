@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD/10/P-n21-k2/4/0/verifier_r1_v0.py", line 42, in <module>
+    if validate_tour(final_tour, actual_itia_cost):
+                                 ^^^^^^^^^^^^^^^^
+NameError: name 'actual_itia_cost' is not defined. Did you mean: 'actual_cost'?
+
+

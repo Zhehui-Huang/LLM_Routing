@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSP_MinMax/10/P-n19-k2/1/0/solution_r2.py", line 79
+    if next variableend_condition:
+            ^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax
+
+

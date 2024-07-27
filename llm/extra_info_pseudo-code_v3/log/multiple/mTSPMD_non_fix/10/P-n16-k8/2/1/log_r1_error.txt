@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/2/1/solution_r1.py", line 66, in <module>
+    tours = nearest_neighbor_solution()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/2/1/solution_r1.py", line 30, in nearest_neighbor_solution
+    tours[r].append(next_delta)
+                    ^^^^^^^^^^
+NameError: name 'next_delta' is not defined
+
+

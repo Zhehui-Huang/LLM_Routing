@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/CVRP/10/P-n23-k8/3/2/solution_r0.py", line 103, in <module>
+    initial_solution = create_initial_solution(cities, distance_matrix, demands, num_vehicles, vehicle_capacity)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/CVRP/10/P-n23-k8/3/2/solution_r0.py", line 88, in create_initial_solution
+    if distances[current_location[v]][city] < min_dist and (capacities[v] + demands[city] <= vehicle_capacity):
+       ^^^^^^^^^
+NameError: name 'distances' is not defined
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/GTSP/10/city_10_instance_4/1/0/verifier_r1_v0.py", line 67
+    shortest_cost = calculate_total_tour edges(provided_tour)
+                                         ^^^^^
+SyntaxError: invalid syntax
+
+

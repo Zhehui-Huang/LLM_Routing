@@ -1,0 +1,20 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+....F
+======================================================================
+FAIL: test_travel_cost (__main__.TestKTSPSolution.test_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/10/city_10_instance_2/2/0/verifier_r2_v0.py", line 43, in test_travel_cost
+    self.assertAlmostEqual(calculated_cost, self.reported_cost, places=5)
+AssertionError: 244.81756640044244 != 223.3175394997635 within 5 places (21.500026900678932 difference)
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+FAILED (failures=1)
+
+

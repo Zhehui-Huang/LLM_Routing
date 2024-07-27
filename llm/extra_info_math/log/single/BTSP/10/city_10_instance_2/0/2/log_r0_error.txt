@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/10/city_10_instance_2/0/2/solution_r0.py", line 25, in <module>
+    m += d_template
+         ^^^^^^^^^^
+NameError: name 'd_template' is not defined
+
+

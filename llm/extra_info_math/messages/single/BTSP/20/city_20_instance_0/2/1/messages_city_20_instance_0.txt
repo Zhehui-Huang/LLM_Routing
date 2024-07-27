@@ -1,0 +1,9 @@
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/messages/single/BTSP/20/city_20_instance_0/2/1/messages_city_20_instance_0.txt
+===
+System - LLM_SYSTEM_PROMPT
+User - Task description: city_20_instance_0
+Assistant - Solution: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/20/city_20_instance_0/2/1/solution_r0.py
+Another LLM - User - Ask for prompts
+Another LLM - Assistant - Constraints response: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/constraints/single/BTSP/20/city_20_instance_0/2/1/constraints_r0.txt
+Another LLM - User - Verifier prompt.
+Another LLM - Assistant - Verifier: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/single/BTSP/20/city_20_instance_0/2/1/verifier_r0_v0.py

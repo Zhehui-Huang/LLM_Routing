@@ -1,0 +1,6 @@
+- [The environment contains 10 cities with specified coordinates.]
+- [There are 4 groups of cities, and the robot needs to visit exactly one city from each group.]
+- [The robot starts and ends its journey at the depot city 0.]
+- [The travel cost is the Euclidean distance between two cities.]
+- [The solution should implement a variant of the GTSP, specifically using a custom GLNS algorithm as described in the provided pseudo code.]
+- [The output should be a list of city indices representing the tour, starting and ending at city 0, and the total travel cost of the tour.]

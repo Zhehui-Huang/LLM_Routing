@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_2/2/0/solution_r0.py", line 83, in <module>
+    best_tour, best_cost = gvns()
+                           ^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_2/2/0/solution_r0.py", line 74, in gvns
+    new_tour = vnd(new_tour)
+               ^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_2/2/0/solution_r0.py", line 59, in vnd
+    new_tour = local_exchange(tour)
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_2/2/0/solution_r0.py", line 48, in local_exchange
+    new_cost = tour_gvns(tour)
+               ^^^^^^^^^
+NameError: name 'tour_gvns' is not defined
+
+

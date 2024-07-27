@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+...F...
+======================================================================
+FAIL: test_robot_capacity_limit (__main__.TestVRPSolution.test_robot_capacity_limit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/multiple/CVRP/10/P-n16-k8/0/1/verifier_r2_v0.py", line 56, in test_robot_capacity_limit
+    self.assertLessEqual(total_demand, robot_capacity)
+AssertionError: 65 not less than or equal to 35
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+FAILED (failures=1)
+
+

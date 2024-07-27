@@ -1,0 +1,6 @@
+- [Requirement 1] The robot must start and end its tour at the depot city 0.
+- [Requirement 2] Each city (from city 1 to city 9) must be visited exactly once by the robot.
+- [Requirement 3] Travel cost is calculated as the Euclidean distance between two cities.
+- [Requirement 4] The objective is to minimize the longest distance between any two consecutive cities in the robot's tour.
+- [Requirement 5] Output should include the tour as a list of city indices, the total travel cost, and the maximum distance between any two consecutive cities.
+- [Requirement 6] The tour should utilize an approach or heuristic that considers minimizing the maximum edge cost in the Hamiltonian cycle, as per the Bottleneck Traveling Salesman Problem (BTSP).

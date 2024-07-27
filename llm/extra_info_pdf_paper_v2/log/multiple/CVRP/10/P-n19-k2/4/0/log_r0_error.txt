@@ -1,0 +1,12 @@
+OUTPUT:
+Robot 0 Tour: [0, 11, 9, 13, 15, 12, 3, 8, 16, 17, 14, 0]
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/CVRP/10/P-n19-k2/4/0/solution_r0.py", line 96, in <module>
+    print(f"Robot {i} Total Travel Cost: {route_cost[i]}")
+                                          ^^^^^^^^^^
+NameError: name 'route_cost' is not defined. Did you mean: 'route_costs'?
+
+

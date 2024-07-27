@@ -1,0 +1,3 @@
+- [Requirement 1] Ensure exactly 8 salesmen leave depot city 0.
+- [Requirement 2] Ensure each city (including depots and customer nodes) is visited exactly once by any salesman.
+- [Requirement 3] Minimize the total travel cost for all robots combined, calculated as the Euclidean distance between visited cities in each tour.

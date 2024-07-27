@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/KTSP/20/city_20_instance_3/0/1/verifier_r1_v0.py", line 46, in <module>
+    print(validate_solution(tour_solution, total_step_solution))
+                                           ^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_step_solution' is not defined. Did you mean: 'total_cost_solution'?
+
+

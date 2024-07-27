@@ -1,0 +1,22 @@
+Start time: [2024-07-26 02:08:18]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/exec_details/multiple/mTSP/10/P-n23-k8/4/1/exec_details_P-n23-k8.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 35.81 seconds.
+Code solution execution status: timeout, execution time: 200.02483463287354
+
+Reflect count: 1
+===
+Ask LLM for code solution, response time: 37.08 seconds.
+Code solution execution status: timeout, execution time: 200.1000201702118
+
+Reflect count: 2
+===
+Ask LLM for code solution, response time: 37.19 seconds.
+Code solution execution status: timeout, execution time: 200.0048384666443
+[2024-07-26 02:20:08]	Finished.
+
+Overall time: 710.21 seconds.

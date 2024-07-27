@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/GTSP/10/city_10_instance_4/3/0/solution_r0.py", line 54, in <module>
+    optimal_tour, optimal_distance = compute_minimal_tour()
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/GTSP/10/city_10_instance_4/3/0/solution_r0.py", line 42, in compute_minimal_tour
+    for combination in all_combizations:
+                       ^^^^^^^^^^^^^^^^
+NameError: name 'all_combizations' is not defined. Did you mean: 'all_combinations'?
+
+

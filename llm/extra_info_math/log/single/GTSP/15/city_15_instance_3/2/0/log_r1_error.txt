@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/15/city_15_instance_3/2/0/solution_r1.py", line 85, in <module>
+    total_cost = sum(distances[(path[i], path[i + 1])] for i in range(len(path) - 1))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/15/city_15_instance_3/2/0/solution_r1.py", line 85, in <genexpr>
+    total_cost = sum(distances[(path[i], path[i + 1])] for i in range(len(path) - 1))
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: (0, 0)
+
+

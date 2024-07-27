@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/KTSP/10/city_10_instance_0/0/0/verifier_r0_v0.py", line 47, in <module>
+    result = verify_solution(tour, total_travel_ref_cost)
+                                   ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_travel_ref_cost' is not defined. Did you mean: 'total_travel_cost'?
+
+

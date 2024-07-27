@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+test_algorithm_implementation_correctness (__main__.TestTSPSolution.test_algorithm_implementation_correctness) ... ok
+test_complete_tour_return_to_depot (__main__.TestTSPSolution.test_complete_tour_return_to_depot) ... ok
+test_output_format (__main__.TestTSPSolution.test_output_format) ... ok
+test_tour_starts_and_ends_at_depot (__main__.TestTSPSolution.test_tour_starts_and_ends_at_depot) ... ok
+test_tour_visits_exactly_16_cities (__main__.TestTSPSolution.test_tour_visits_exactly_16_cities) ... ok
+test_travel_cost_calculation (__main__.TestTSPSolution.test_travel_cost_calculation) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK
+
+

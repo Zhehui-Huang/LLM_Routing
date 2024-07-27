@@ -1,0 +1,9 @@
+- [Requirement 1] Each robot must visit all cities exactly once and then return to their initial depot.
+- [Requirement 2] Each tour must start and end at the assigned depot for that robot.
+- [Requirement 3] The solution must minimize the total travel cost for all robots combined.
+- [Requirement 4] The travel cost between two cities is calculated using the Euclidean distance formula.
+- [Requirement 5] The genetic algorithm approach is recommended to solve this multi-depot multi-traveling salesman problem (MmTSP).
+- [Requirement 6] A new chromosome structure includes two distinct parts: a permutation of city numbers and a segment defining the distribution of cities among salesmen.
+- [Requirement 7] Four types of permutation-based crossover methods should be evaluated: Ordered Crossover (OX), Partially Matched Crossover (PMX), Union Crossover#2 (UX2), and Modified Moon Crossover (new MX).
+- [Requirement 8] Employ 1-bit and 2-opt mutation techniques and utilization of elitism, roulette wheel, and binary tournament strategies for parent selection.
+- [Requirement 9] Tours' output format should include the list of city indices per robot representing paths, and each robot’s individual travel cost along with the overall total travel cost.

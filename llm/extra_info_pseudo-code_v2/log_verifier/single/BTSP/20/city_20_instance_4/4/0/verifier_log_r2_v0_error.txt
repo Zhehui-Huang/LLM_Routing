@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/BTSP/20/city_20_instance_4/4/0/verifier_r2_v0.py", line 44, in <module>
+    print(test_solution())
+          ^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/BTSP/20/city_20_instance_4/4/0/verifier_r2_v0.py", line 38, in test_solution
+    math.isclose(actual_maxdist, reported_max_dist, rel_tol=1e-5)):
+                 ^^^^^^^^^^^^^^
+NameError: name 'actual_maxdist' is not defined. Did you mean: 'actual_max_dist'?
+
+

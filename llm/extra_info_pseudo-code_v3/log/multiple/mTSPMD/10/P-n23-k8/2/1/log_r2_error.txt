@@ -1,0 +1,22 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n23-k8/2/1/solution_r2.py", line 58, in <module>
+    tours_info, total_travel_cost = genetic_algorithm(city_coords, depots, num_robots)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n23-k8/2/1/solution_r2.py", line 44, in genetic_algorithm
+    children = [crossover(tours[i], other_tours[i]) for i in range(num_robots)]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n23-k8/2/1/solution_r2.py", line 44, in <listcomp>
+    children = [crossover(tours[i], other_tours[i]) for i in range(num_robots)]
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/mTSPMD/10/P-n23-k8/2/1/solution_r2.py", line 24, in crossover
+    cut1, cut2 = sorted(random.sample(range(len(tour1)), 2))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/random.py", line 456, in sample
+    raise ValueError("Sample larger than population or is negative")
+ValueError: Sample larger than population or is negative
+
+

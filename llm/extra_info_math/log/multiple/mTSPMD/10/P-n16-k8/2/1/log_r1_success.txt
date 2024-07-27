@@ -1,0 +1,92 @@
+OUTPUT:
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - /home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/solverdir/cbc/linux/64/cbc /tmp/25274ebec00c4a26ae0c8f9f7637b8a8-pulp.mps -timeMode elapsed -branch -printingOptions all -solution /tmp/25274ebec00c4a26ae0c8f9f7637b8a8-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 1837 COLUMNS
+At line 18398 RHS
+At line 20231 BOUNDS
+At line 22167 ENDATA
+Problem MODEL has 1832 rows, 1935 columns and 10800 elements
+Coin0008I MODEL read with 0 errors
+Option for timeMode changed from cpu to elapsed
+Continuous objective value is 204.783 - 0.00 seconds
+Cgl0004I processed model has 1832 rows, 1935 columns (1920 integer (1920 of which binary)) and 10800 elements
+Cbc0038I Initial state - 34 integers unsatisfied sum - 2.4
+Cbc0038I Pass   1: suminf.    1.86667 (28) obj. 216.752 iterations 123
+Cbc0038I Pass   2: suminf.    2.13333 (30) obj. 360.167 iterations 77
+Cbc0038I Pass   3: suminf.    1.86667 (28) obj. 369.609 iterations 97
+Cbc0038I Pass   4: suminf.    1.86667 (28) obj. 382.273 iterations 88
+Cbc0038I Pass   5: suminf.    1.86667 (28) obj. 393.393 iterations 74
+Cbc0038I Pass   6: suminf.    1.86667 (28) obj. 382.273 iterations 111
+Cbc0038I Pass   7: suminf.    2.93333 (36) obj. 399.527 iterations 131
+Cbc0038I Pass   8: suminf.    1.86667 (28) obj. 395.817 iterations 119
+Cbc0038I Pass   9: suminf.    2.13333 (30) obj. 344.598 iterations 110
+Cbc0038I Pass  10: suminf.    1.86667 (28) obj. 343.166 iterations 82
+Cbc0038I Pass  11: suminf.    1.86667 (28) obj. 373.33 iterations 106
+Cbc0038I Pass  12: suminf.    1.86667 (28) obj. 373.33 iterations 14
+Cbc0038I Pass  13: suminf.    1.86667 (28) obj. 340.887 iterations 67
+Cbc0038I Pass  14: suminf.    1.86667 (28) obj. 340.887 iterations 14
+Cbc0038I Pass  15: suminf.    2.13333 (30) obj. 331.952 iterations 110
+Cbc0038I Pass  16: suminf.    1.86667 (28) obj. 330.903 iterations 94
+Cbc0038I Pass  17: suminf.    1.86667 (28) obj. 389.011 iterations 98
+Cbc0038I Pass  18: suminf.    1.86667 (28) obj. 391.992 iterations 68
+Cbc0038I Pass  19: suminf.    1.86667 (28) obj. 391.992 iterations 74
+Cbc0038I Pass  20: suminf.    1.86667 (28) obj. 311.425 iterations 120
+Cbc0038I Pass  21: suminf.    1.86667 (28) obj. 312.169 iterations 94
+Cbc0038I Pass  22: suminf.    2.13333 (30) obj. 339.839 iterations 105
+Cbc0038I Pass  23: suminf.    1.86667 (28) obj. 340.887 iterations 68
+Cbc0038I Pass  24: suminf.    2.13333 (30) obj. 331.952 iterations 84
+Cbc0038I Pass  25: suminf.    1.86667 (28) obj. 330.903 iterations 112
+Cbc0038I Pass  26: suminf.    1.86667 (28) obj. 360.656 iterations 132
+Cbc0038I Pass  27: suminf.    1.86667 (28) obj. 302.549 iterations 106
+Cbc0038I Pass  28: suminf.    1.86667 (28) obj. 302.488 iterations 76
+Cbc0038I Pass  29: suminf.    1.86667 (28) obj. 427.398 iterations 76
+Cbc0038I Pass  30: suminf.    1.86667 (28) obj. 430.38 iterations 15
+Cbc0038I No solution found this major pass
+Cbc0038I Before mini branch and bound, 1832 integers at bound fixed and 0 continuous
+Cbc0038I Full problem 1832 rows 1935 columns, reduced to 308 rows 59 columns
+Cbc0038I Mini branch and bound did not improve solution (0.18 seconds)
+Cbc0038I Full problem 1833 rows 1935 columns, reduced to 1833 rows 1935 columns - too large
+Cbc0038I After 0.19 seconds - Feasibility pump exiting - took 0.17 seconds
+Cbc0031I 31 added rows had average density of 37.903226
+Cbc0013I At root node, 77 cuts changed objective from 204.78271 to 506.48711 in 11 passes
+Cbc0014I Cut generator 0 (Probing) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.068 seconds - new frequency is -100
+Cbc0014I Cut generator 1 (Gomory) - 117 row cuts average 154.1 elements, 0 column cuts (0 active)  in 0.012 seconds - new frequency is 1
+Cbc0014I Cut generator 2 (Knapsack) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.007 seconds - new frequency is -100
+Cbc0014I Cut generator 3 (Clique) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0014I Cut generator 4 (MixedIntegerRounding2) - 164 row cuts average 2.3 elements, 0 column cuts (0 active)  in 0.006 seconds - new frequency is 1
+Cbc0014I Cut generator 5 (FlowCover) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.007 seconds - new frequency is -100
+Cbc0014I Cut generator 6 (TwoMirCuts) - 258 row cuts average 94.3 elements, 0 column cuts (0 active)  in 0.012 seconds - new frequency is -100
+Cbc0001I Search completed - best objective 1e+50, took 500 iterations and 0 nodes (0.38 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 204.783 to 506.487
+Probing was tried 11 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.068 seconds)
+Gomory was tried 11 times and created 117 cuts of which 0 were active after adding rounds of cuts (0.012 seconds)
+Knapsack was tried 11 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.007 seconds)
+Clique was tried 11 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 11 times and created 164 cuts of which 0 were active after adding rounds of cuts (0.006 seconds)
+FlowCover was tried 11 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.007 seconds)
+TwoMirCuts was tried 11 times and created 258 cuts of which 0 were active after adding rounds of cuts (0.012 seconds)
+ZeroHalf was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Problem proven infeasible
+
+No feasible solution found
+Enumerated nodes:               0
+Total iterations:               500
+Time (CPU seconds):             0.37
+Time (Wallclock seconds):       0.38
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.37   (Wallclock seconds):       0.39
+
+Failed to find an optimal solution.
+
+
+ERROR:
+
+

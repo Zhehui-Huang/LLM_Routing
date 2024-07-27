@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/10/city_10_instance_3/0/2/solution_r2.py", line 63, in <module>
+    tour, total_cost = solve_tsp(cities)
+                       ^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/10/city_10_instance_3/0/2/solution_r2.py", line 9, in solve_tsp
+    dist = {(i, j): euclidean_trueance(cities[i], cities[j]) for i in range(n) for j in range(n) if i != j}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/10/city_10_instance_3/0/2/solution_r2.py", line 9, in <dictcomp>
+    dist = {(i, j): euclidean_trueance(cities[i], cities[j]) for i in range(n) for j in range(n) if i != j}
+                    ^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_trueance' is not defined. Did you mean: 'euclidean_distance'?
+
+

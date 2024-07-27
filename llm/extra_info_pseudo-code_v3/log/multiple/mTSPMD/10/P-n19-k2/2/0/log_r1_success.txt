@@ -1,0 +1,22 @@
+OUTPUT:
+Generation 0, Best Cost: 389.04335297583054
+Generation 100, Best Cost: 347.76094657102374
+Generation 200, Best Cost: 342.55269220701916
+Generation 300, Best Cost: 331.9161897734011
+Generation 400, Best Cost: 331.97320297850615
+Generation 500, Best Cost: 338.0073762804293
+Generation 600, Best Cost: 287.8687011673138
+Generation 700, Best Cost: 336.670904365044
+Generation 800, Best Cost: 339.2715308820475
+Generation 900, Best Cost: 305.944909806944
+Final Best Tours and Costs:
+Robot 0 Tour: [0, 8, 3, 6, 9, 13, 2, 5, 18, 0]
+Robot 0 Total Travel Cost: 152.77860710353104
+Robot 1 Tour: [1, 15, 7, 4, 11, 12, 16, 17, 14, 10, 1]
+Robot 1 Total Travel Cost: 167.1631753925759
+Overall Total Travel Cost: 319.94178249610695
+
+
+ERROR:
+
+

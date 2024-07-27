@@ -1,0 +1,8 @@
+- [Requirement 1] There are 16 cities, each specified with unique coordinates.
+- [Requirement 2] There are 8 robots, each assigned to start and end at a specific depot city.
+- [Requirement 3] Each robot must visit each city exactly once and then return to their respective depot.
+- [Requirement 4] The objective is to determine the shortest possible tours for each robot while minimizing the total travel cost for all robots combined.
+- [Requirement 5] The travel cost between any two cities is calculated using the Euclidean distance.
+- [Requirement 6] Output should include the sequence of cities each robot visits and the travel cost for each robot’s tour, as well as the overall total travel cost.
+- [Requirement 7] A genetic algorithm approach as summarized in the provided insights should be considered for solving the problem.
+- [Requirement 8] Output format should list the tour for each robot starting and ending at its assigned depot.

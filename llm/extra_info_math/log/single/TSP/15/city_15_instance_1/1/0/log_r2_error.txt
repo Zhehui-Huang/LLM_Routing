@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/15/city_15_instance_1/1/0/solution_r2.py", line 24
+    problem = mter.Liacate vereL, moderators.Level"
+                                                  ^
+SyntaxError: unterminated string literal (detected at line 24)
+
+

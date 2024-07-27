@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_3/0/2/solution_r0.py", line 49
+    if max_distance < min_max ilan_id:
+                              ^^^^^^^
+SyntaxError: invalid syntax
+
+

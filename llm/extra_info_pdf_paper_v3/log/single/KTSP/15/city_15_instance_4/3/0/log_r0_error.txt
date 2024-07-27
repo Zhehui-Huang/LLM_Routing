@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/single/KTSP/15/city_15_instance_4/3/0/solution_r0.py", line 14, in <module>
+    d_matrix = distance_matrix(city_locations, city_by_locations)
+                                               ^^^^^^^^^^^^^^^^^
+NameError: name 'city_by_locations' is not defined. Did you mean: 'city_locations'?
+
+

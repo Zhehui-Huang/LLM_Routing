@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/multiple/CVRP/10/E-n22-k4/4/1/solution_r1.py", line 69, in <module>
+    for line in output_frame:
+                ^^^^^^^^^^^^
+NameError: name 'output_frame' is not defined. Did you mean: 'output_data'?
+
+

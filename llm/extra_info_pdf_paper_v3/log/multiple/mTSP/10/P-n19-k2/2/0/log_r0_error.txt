@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v3/solution/multiple/mTSP/10/P-n19-k2/2/0/solution_r0.py", line 60, in <module>
+    tours = nearest_robot_assignment(cities, num_rogots)
+                                             ^^^^^^^^^^
+NameError: name 'num_rogots' is not defined. Did you mean: 'num_robots'?
+
+

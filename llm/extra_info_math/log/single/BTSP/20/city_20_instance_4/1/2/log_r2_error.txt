@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/20/city_20_instance_4/1/2/solution_r2.py", line 21, in <module>
+    prob = LGoPProblem("Minimax_TSP", coerce_size="Minimize")
+           ^^^^^^^^^^^
+NameError: name 'LGoPProblem' is not defined. Did you mean: 'LpProblem'?
+
+

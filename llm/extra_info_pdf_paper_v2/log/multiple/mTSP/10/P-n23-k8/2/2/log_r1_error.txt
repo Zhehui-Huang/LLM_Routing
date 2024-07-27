@@ -1,0 +1,16 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n23-k8/2/2/solution_r1.py", line 89, in <module>
+    best_tour, best_cost = genetic_algorithm()
+                           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n23-k8/2/2/solution_r1.py", line 58, in genetic_algorithm
+    mutate(next_gen)
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP/10/P-n23-k8/2/2/solution_r1.py", line 84, in mutate
+    if random.random() < mutation_rate:
+                         ^^^^^^^^^^^^^
+NameError: name 'mutation_rate' is not defined
+
+

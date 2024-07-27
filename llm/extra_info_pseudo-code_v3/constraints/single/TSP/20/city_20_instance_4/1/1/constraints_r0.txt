@@ -1,0 +1,6 @@
+- [Requirement 1] The robot must start and end the tour at depot city 0.
+- [Requirement 2] Each city (from city 1 to city 19) must be visited exactly once by the robot.
+- [Requirement 3] The travel cost is to be calculated based on the Euclidean distance between cities.
+- [Requirement 4] The output should include the tour as a list of city indices starting and ending at the depot.
+- [Requirement 5] The output should also include the total travel cost for the entire tour.
+- [Requirement 6] Use Christofides algorithm to find an approximate solution to the Traveling Salesman Problem (TSP).

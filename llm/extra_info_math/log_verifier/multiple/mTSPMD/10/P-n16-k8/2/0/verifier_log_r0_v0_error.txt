@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD/10/P-n16-k8/2/0/verifier_r0_v0.py", line 42, in <module>
+    check_tours_robots(tours, costs)
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD/10/P-n16-k8/2/0/verifier_r0_v0.py", line 4, in check_tours_robots
+    city_visit = [False] * num1b_cities
+                           ^^^^^^^^^^^^
+NameError: name 'num1b_cities' is not defined. Did you mean: 'num_cities'?
+
+

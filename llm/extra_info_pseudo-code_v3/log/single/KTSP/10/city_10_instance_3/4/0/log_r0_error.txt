@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/10/city_10_instance_3/4/0/solution_r0.py", line 90, in <module>
+    best_tour, minimum_cost = GVNS()
+                              ^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/10/city_10_instance_3/4/0/solution_r0.py", line 73, in GVNS
+    S = generate_initial_solution(V)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/10/city_10_instance_3/4/0/solution_r0.py", line 53, in generate_initial_solution
+    available_cities.remove(chosen_id)
+                            ^^^^^^^^^
+NameError: name 'chosen_id' is not defined. Did you mean: 'chosen_city'?
+
+

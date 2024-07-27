@@ -1,0 +1,27 @@
+OUTPUT:
+
+
+ERROR:
+test_requirements (__main__.TestRobotTourSolution.test_requirements) ... ERROR
+
+======================================================================
+ERROR: test_requirements (__main__.TestRobotTourSolution.test_requirements)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/GTSP/15/city_15_instance_0/1/0/verifier_r0_v0.py", line 51, in test_requirements
+    calculated_cost = sum(self.euclidean_distance(self.tour[i], self.tour[i + 1]) for i in range(len(self.tour) - 1))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/GTSP/15/city_15_instance_0/1/0/verifier_r0_v0.py", line 51, in <genexpr>
+    calculated_cost = sum(self.euclidean_distance(self.tour[i], self.tour[i + 1]) for i in range(len(self.tour) - 1))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/GTSP/15/city_15_instance_0/1/0/verifier_r0_v0.py", line 38, in euclidean_distance
+    x2, y2 = self.city_reduce[city2]
+             ^^^^^^^^^^^^^^^^
+AttributeError: 'TestRobotTourSolution' object has no attribute 'city_reduce'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+
+

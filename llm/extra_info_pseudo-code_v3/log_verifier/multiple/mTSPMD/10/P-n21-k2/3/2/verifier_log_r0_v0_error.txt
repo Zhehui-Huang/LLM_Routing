@@ -1,0 +1,39 @@
+OUTPUT:
+
+
+ERROR:
+F.FF
+======================================================================
+FAIL: test_all_requirements (__main__.TestRobotTour.test_all_requirements)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSPMD/10/P-n21-k2/3/2/verifier_r0_v0.py", line 41, in test_all_requirements
+    self.test_unique_city_visit()
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSPMD/10/P-n21-k2/3/2/verifier_r0_v0.py", line 28, in test_unique_city_visit
+    self.assertEqual(actual_cities, expected_cities)
+AssertionError: Items in the first set but not the second:
+1
+
+======================================================================
+FAIL: test_total_travel_cost (__main__.TestRobotTour.test_total_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSPMD/10/P-n21-k2/3/2/verifier_r0_v0.py", line 36, in test_total_travel_cost
+    self.assertAlmostEqual(cost, self.robot0_cost)
+AssertionError: 189.03118014946992 != 167.65362182303798 within 7 places (21.377558326431938 difference)
+
+======================================================================
+FAIL: test_unique_city_visit (__main__.TestRobotTour.test_unique_city_visit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSPMD/10/P-n21-k2/3/2/verifier_r0_v0.py", line 28, in test_unique_city_visit
+    self.assertEqual(actual_cities, expected_cities)
+AssertionError: Items in the first set but not the second:
+1
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+FAILED (failures=3)
+
+

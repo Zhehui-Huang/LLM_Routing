@@ -1,0 +1,15 @@
+OUTPUT:
+Tour: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 0]
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/20/city_20_instance_1/0/1/verifier_r2_v0.py", line 47, in <module>
+    test_result = test_solution()
+                  ^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/TSP/20/city_20_instance_1/0/1/verifier_r2_v0.py", line 43, in test_solution
+    print(f"Total travel cost: {total_travel_total_cost}")
+                                ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_travel_total_cost' is not defined. Did you mean: 'total_travel_cost'?
+
+

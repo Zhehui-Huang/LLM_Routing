@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/15/city_15_instance_0/2/0/verifier_r1_v0.py", line 26
+    if not math.isclose(total_cost, provided_a: btotal_cost, rel_tol=1e-5):
+                                              ^
+SyntaxError: invalid syntax
+
+

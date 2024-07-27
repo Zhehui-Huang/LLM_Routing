@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/10/city_10_instance_2/4/0/solution_r0.py", line 51, in <module>
+    H, bottleneck_cost = Algorithm_BB(G)
+                         ^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/10/city_10_instance_2/4/0/solution_r0.py", line 37, in Algorithm_BB
+    for u, v, data in edgesín_sorted_by_weight:
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'edgesín_sorted_by_weight' is not defined. Did you mean: 'edges_sorted_by_weight'?
+
+

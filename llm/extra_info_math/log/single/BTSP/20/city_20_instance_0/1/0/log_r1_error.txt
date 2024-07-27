@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/20/city_20_instance_0/1/0/solution_r1.py", line 47, in <module>
+    distance_matrix = create_distance_matrix(positions)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/BTSP/20/city_20_instance_0/1/0/solution_r1.py", line 40, in create_distance_matrix
+    distance_matrix[from_counter][toitableunter] = 0
+                                  ^^^^^^^^^^^^^
+NameError: name 'toitableunter' is not defined
+
+

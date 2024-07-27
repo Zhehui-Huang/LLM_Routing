@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_1/2/0/solution_r0.py", line 105, in <module>
+    tour, total_cost, max_distance = approximate_optimal_tour(cities)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_1/2/0/solution_r0.py", line 96, in approximate_optimal_tour
+    complete_tour = [0] + visit(0)
+                          ^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_1/2/0/solution_r0.py", line 86, in visit
+    possible_moves = [j for d, i, j in E_BB if i == current and not visited[j]]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/15/city_15_instance_1/2/0/solution_r0.py", line 86, in <listcomp>
+    possible_moves = [j for d, i, j in E_BB if i == current and not visited[j]]
+                            ^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 2)
+
+

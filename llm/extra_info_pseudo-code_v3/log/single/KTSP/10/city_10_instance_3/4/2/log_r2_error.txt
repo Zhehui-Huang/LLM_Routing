@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/10/city_10_instance_3/4/2/solution_r2.py", line 70
+    print("Total travel cost:", round(optimal., 2))
+                                              ^
+SyntaxError: invalid syntax
+
+

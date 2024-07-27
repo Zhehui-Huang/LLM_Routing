@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_4/2/1/solution_r1.py", line 55
+    |               # Break inner loop upon no improvement, and restart shaking on a new solution
+                                                                                                 ^
+IndentationError: unindent does not match any outer indentation level
+
+

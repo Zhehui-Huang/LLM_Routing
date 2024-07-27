@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_0/4/0/solution_r1.py", line 40, in <module>
+    prob += pulp.lpSum(ending_constr) == len(city_of_groups)
+                                             ^^^^^^^^^^^^^^
+NameError: name 'city_of_groups' is not defined. Did you mean: 'city_groups'?
+
+

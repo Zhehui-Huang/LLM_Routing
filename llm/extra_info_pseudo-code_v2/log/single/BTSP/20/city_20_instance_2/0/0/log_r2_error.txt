@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/20/city_20_instance_2/0/0/solution_r2.py", line 27, in <module>
+    total_cost = sum(G[path[i]][path[i+1]]['weight'] for i in range(len(path) - 1)) + G[path[-1]][path[0]]['weight']
+                                                                                      ~~~~~~~~~~~^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/networkx/classes/coreviews.py", line 54, in __getitem__
+    return self._atlas[key]
+           ~~~~~~~~~~~^^^^^
+KeyError: 0
+
+

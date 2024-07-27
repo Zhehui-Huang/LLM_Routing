@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+.F.
+======================================================================
+FAIL: test_travel_costs (__main__.TestRobotRouting.test_travel_costs)
+Validate calculated travel costs for consistency with recorded costs.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSPMD/10/E-n22-k4/3/0/verifier_r1_v1.py", line 63, in test_travel_costs
+    self.assertAlmostEqual(computed_cost, travel_costs[robot_id], places=5,
+AssertionError: 98.67419786410635 != 56.88903303255399 within 5 places (41.78516483155236 difference) : Cost mismatch for Robot 0
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+
+

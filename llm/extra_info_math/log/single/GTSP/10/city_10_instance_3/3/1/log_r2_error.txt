@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_3/3/1/solution_r2.py", line 72
+    visited.add(j)
+                  ^
+IndentationError: unindent does not match any outer indentation level
+
+

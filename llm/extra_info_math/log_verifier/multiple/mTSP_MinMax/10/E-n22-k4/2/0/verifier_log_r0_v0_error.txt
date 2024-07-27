@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSP_MinMax/10/E-n22-k4/2/0/verifier_r0_v0.py", line 74, in <module>
+    test_result = verify_solution(tours, city_coords)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/verifier/multiple/mTSP_MinMax/10/E-n22-k4/2/0/verifier_r0_v0.py", line 28, in verify_solution
+    total_visits_per_city[tour[i-1]] += 1
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 0
+
+

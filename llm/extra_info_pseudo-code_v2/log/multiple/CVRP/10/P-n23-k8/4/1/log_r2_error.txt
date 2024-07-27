@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/CVRP/10/P-n23-k8/4/1/solution_r2.py", line 26, in <module>
+    savings_list = [(i, j, distance_matrix[0, i] + distance_node[0, j] - distance_matrix[i, j])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/multiple/CVRP/10/P-n23-k8/4/1/solution_r2.py", line 26, in <listcomp>
+    savings_list = [(i, j, distance_matrix[0, i] + distance_node[0, j] - distance_matrix[i, j])
+                                                   ^^^^^^^^^^^^^
+NameError: name 'distance_node' is not defined
+
+

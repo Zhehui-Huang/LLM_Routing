@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/10/city_10_instance_1/2/1/verifier_r2_v1.py", line 66, in <module>
+    print(verify_solution())
+          ^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/10/city_10_instance_1/2/1/verifier_r2_v1.py", line 50, in verify_solution
+    if not math.isclose(total_travel_cost, computed_total_test, abs_tol=0.1):
+                                           ^^^^^^^^^^^^^^^^^^^
+NameError: name 'computed_total_test' is not defined. Did you mean: 'computed_total_cost'?
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/single/BTSP/20/city_20_instance_0/1/2/verifier_r2_v2.py", line 50
+    result = test_solution(tour, cities, total_travel_leg, cost, and max_cities_distance_between_consecutive) #=> CORRECT
+                                                                 ^^^
+SyntaxError: invalid syntax
+
+

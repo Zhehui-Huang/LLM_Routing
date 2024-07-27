@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/single/TSP/15/city_15_instance_2/1/0/solution_r0.py", line 43
+    tour total_cost.optimum = Optimize route thsolution)
+                                                       ^
+SyntaxError: unmatched ')'
+
+

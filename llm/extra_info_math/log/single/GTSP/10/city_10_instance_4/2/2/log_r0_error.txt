@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_4/2/2/solution_r0.py", line 34, in <module>
+    cost_matrix = [[euclidean_distance(i, j) for j in range(num_cities)] for i in range(num_cities)]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_4/2/2/solution_r0.py", line 34, in <listcomp>
+    cost_matrix = [[euclidean_distance(i, j) for j in range(num_cities)] for i in range(num_cities)]
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_4/2/2/solution_r0.py", line 34, in <listcomp>
+    cost_matrix = [[euclidean_distance(i, j) for j in range(num_cities)] for i in range(num_cities)]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/GTSP/10/city_10_instance_4/2/2/solution_r0.py", line 30, in euclidean_distance
+    return math.sqrt((city_coordinates[i][0] - city_attributes[j][0])**2 + (city_attributes[i][1] - city_attributes[j][1])**2)
+                                               ^^^^^^^^^^^^^^^
+NameError: name 'city_attributes' is not defined
+
+

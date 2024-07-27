@@ -1,0 +1,8 @@
+OUTPUT:
+Tour: [0, 2, 13, 10, 3, 4, 11, 6, 0]
+Total travel transmission cost: 148.87
+
+
+ERROR:
+
+

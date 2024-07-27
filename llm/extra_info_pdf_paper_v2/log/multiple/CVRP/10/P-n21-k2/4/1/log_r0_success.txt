@@ -1,0 +1,9 @@
+OUTPUT:
+('Robot 0 Tour: [0, 11, 9, 14, 0, 17, 13, 0, 15, 19, 0, 18, 8, 3, 12, 0]', 'Robot 0 Total Travel Cost: 387.86')
+('Robot 1 Tour: [0, 6, 1, 4, 2, 5, 0, 7, 20, 10, 16, 0]', 'Robot 1 Total Travel Cost: 172.51')
+Overall Total Travel Cost: 560.37
+
+
+ERROR:
+
+

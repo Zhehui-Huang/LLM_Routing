@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/BTSP/10/city_10_instance_4/0/0/solution_r1.py", line 51
+    print(f'Total travel cost: {best_total onal_distance:.2f}')}')
+                                                               ^
+SyntaxError: unmatched '}'
+
+

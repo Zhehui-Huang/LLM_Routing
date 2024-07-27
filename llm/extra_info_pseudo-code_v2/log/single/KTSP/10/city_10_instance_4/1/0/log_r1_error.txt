@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_4/1/0/solution_r1.py", line 60, in <module>
+    final_tour, final_cost = gvns(k, 100, cities)  # Adjust iterations as required
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/10/city_10_instance_4/1/0/solution_r1.py", line 35, in gvns
+    best_cost = total_travel_cost(current_solution)
+                ^^^^^^^^^^^^^^^^^
+NameError: name 'total_travel_cost' is not defined
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/1/0/solution_r1.py", line 48, in <module>
+    solution, cost = simulated_annealing(cities)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/1/0/solution_r1.py", line 34, in simulated_annealing
+    current_solution, current_cost = new_solution, new_build
+                                                   ^^^^^^^^^
+NameError: name 'new_build' is not defined
+
+

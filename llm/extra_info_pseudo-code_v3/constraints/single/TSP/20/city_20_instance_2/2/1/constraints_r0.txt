@@ -1,0 +1,5 @@
+- [Requirement 1] The robot needs to visit all cities exactly once and return to the depot city.
+- [Requirement 2] Travel cost is calculated as the Euclidean distance between cities.
+- [Requirement 3] Complete the task using Christofides algorithm following the provided pseudocode steps.
+- [Requirement 4] The output includes the shortest tour as a list of city indices starting and ending at the depot city 0.
+- [Requirement 5] The output includes the total travel cost of the tour.

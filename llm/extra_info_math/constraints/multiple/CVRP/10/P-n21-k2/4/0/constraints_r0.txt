@@ -1,0 +1,5 @@
+- Each robot must start and end its tour at the depot city (City 0).
+- Each city, except for the depot, must be visited exactly once by any of the robots.
+- The total demand served on each tour by a robot should not exceed the robot's carrying capacity of 160.
+- The objective is to minimize the total travel cost, calculated using the Euclidean distance between cities, for all robots.
+- None of the robots should exceed their capacity while attempting to meet the demands of the cities.

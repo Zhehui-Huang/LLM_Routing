@@ -1,0 +1,8 @@
+OUTPUT:
+Not all cities are visited exactly once. Visited cities count: 21
+FAIL
+
+
+ERROR:
+
+

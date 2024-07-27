@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD/10/P-n23-k8/1/0/verifier_r0_v1.py", line 50
+    if all_visits_correct and starts_and_ends_correct and correct_total_...
+                                                                        ^^^
+SyntaxError: invalid syntax
+
+

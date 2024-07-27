@@ -1,0 +1,23 @@
+Task: mTSPMD, City: 10, File name: P-n19-k2, Run time: 0, Try id: 2
+
+@@@@@
+Notes: exec
+input_token_num: 1082
+output_token_num: 1125
+total_token_num: 2207
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 2047
+output_token_num: 1152
+total_token_num: 3199
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 3073
+output_token_num: 955
+total_token_num: 4028
+@@@@@
+

@@ -1,0 +1,12 @@
+OUTPUT:
+Start at Depot: True
+End at Depot: True
+Unique and Once Visit: False
+Total Travel Cost (Calculated vs Reported): 365.3300927555888 365.33
+Maximum Distance (Calculated vs Reported): 61.68468205316454 61.68
+FAIL
+
+
+ERROR:
+
+

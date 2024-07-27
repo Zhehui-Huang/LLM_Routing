@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/solution/single/KTSP/20/city_20_instance_0/3/0/solution_r1.py", line 44
+    return sum(distance hton_matrix¤cy[tour[i]][tour[i+1]] for i in range(len(tour) - 1))
+                                   ^
+SyntaxError: invalid character '¤' (U+00A4)
+
+

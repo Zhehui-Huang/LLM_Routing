@@ -1,0 +1,6 @@
+- [The environment comprises 15 cities with defined coordinates.]
+- [There is one robot which must start and end at the depot city (city 0).]
+- [The travel cost is calculated as the Euclidean distance between two cities.]
+- [The goal is to find a tour that visits exactly 6 cities including the depot city, seeking the shortest possible route.]
+- [The solution must use a variant of the General Variable Neighborhood Search (GVNS) algorithm designed specifically for the k-TSP.]
+- [The output must be formatted to show the tour as a list of city indices starting and ending at the depot city, and the total travel cost of this tour.]

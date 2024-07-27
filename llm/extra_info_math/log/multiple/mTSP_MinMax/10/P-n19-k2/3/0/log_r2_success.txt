@@ -1,0 +1,31 @@
+OUTPUT:
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - /home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/solverdir/cbc/linux/64/cbc /tmp/6a1f4597ad0b470f8d38cabbdea52714-pulp.mps -timeMode elapsed -branch -printingOptions all -solution /tmp/6a1f4597ad0b470f8d38cabbdea52714-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 679 COLUMNS
+At line 6047 RHS
+At line 6722 BOUNDS
+At line 7408 ENDATA
+Problem MODEL has 674 rows, 685 columns and 3998 elements
+Coin0008I MODEL read with 0 errors
+Option for timeMode changed from cpu to elapsed
+Continuous objective value is 84.4859 - 0.00 seconds
+Cgl0000I Cut generators found to be infeasible! (or unbounded)
+Pre-processing says infeasible or unbounded
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.01
+
+Robot 0 route: 18 -> 10 -> 8 -> 3 -> 1 -> 14 -> 12 -> 0 -> 0
+Cost: 84.48585291186016
+Robot 1 route: 6 -> 7 -> 11 -> 13 -> 0 -> 2 -> 15 -> 4 -> 5 -> 9 -> 17 -> 16 -> 0
+Cost: 84.48585278072898
+Max Distance (objective value): 84.485853
+
+
+ERROR:
+
+

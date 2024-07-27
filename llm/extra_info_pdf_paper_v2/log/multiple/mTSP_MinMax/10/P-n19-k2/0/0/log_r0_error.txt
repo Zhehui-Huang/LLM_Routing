@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP_MinMax/10/P-n19-k2/0/0/solution_r0.py", line 70, in <module>
+    solution, max_cost = minmax_mTSP(cities, num_robots)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/solution/multiple/mTSP_MinMax/10/P-n19-k2/0/0/solution_r0.py", line 49, in minmax_mTSP
+    for j in range(1, len(current_tools[i]) - 1):
+                          ^^^^^^^^^^^^^
+NameError: name 'current_tools' is not defined
+
+

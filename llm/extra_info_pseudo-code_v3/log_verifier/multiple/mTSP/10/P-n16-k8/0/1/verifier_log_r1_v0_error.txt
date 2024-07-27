@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSP/10/P-n16-k8/0/1/verifier_r1_v0.py", line 78, in <module>
+    verification_result = verify_tours_and_costs(robot_tours, city_coords)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSP/10/P-n16-k8/0/1/verifier_r1_v0.py", line 13, in verify_tours_and_costs
+    if tour[0] != 0 or tour[-1] != 0:
+       ~~~~^^^
+KeyError: 0
+
+

@@ -1,0 +1,13 @@
+OUTPUT:
+Optimal solution found.
+
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/2/2/solution_r1.py", line 53, in <module>
+    if pulp.value(x[r, 0]) > 0.9:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'NoneType' and 'float'
+
+

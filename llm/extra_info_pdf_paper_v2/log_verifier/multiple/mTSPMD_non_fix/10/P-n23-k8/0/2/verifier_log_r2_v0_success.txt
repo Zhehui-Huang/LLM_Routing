@@ -1,0 +1,42 @@
+OUTPUT:
+Overall Total Travel Cost: 352.99435991725244
+
+
+ERROR:
+...F..F
+======================================================================
+FAIL: test_robots_not_return_to_depot_after_tour (__main__.TestTSPSolution.test_robots_not_return_to_depot_after_tour)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n23-k8/0/2/verifier_r2_v0.py", line 58, in test_robots_not_return_to_depot_after_tour
+    self.assertNotEqual(tour[-1], tour[0]) if len(tour) > 1 else self.assertEqual(tour[-1], tour[0])
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_visit_each_city_exactly_once (__main__.TestTSPSolution.test_visit_each_city_exactly_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/multiple/mTSPMD_non_fix/10/P-n23-k8/0/2/verifier_r2_v0.py", line 53, in test_visit_each_city_exactly_once
+    self.assertEqual(sorted(all_cities_visited_unique), list(range(1, 23)))
+AssertionError: Lists differ: [2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22] != [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
+
+First differing element 0:
+2
+1
+
+Second list contains 2 additional elements.
+First extra element 20:
+21
+
+- [2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
++ [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
+?  +++      +++
+
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+FAILED (failures=2)
+
+

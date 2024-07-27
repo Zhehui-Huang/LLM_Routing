@@ -1,0 +1,5 @@
+- [There are 10 cities, indexed from 0 to 9.]
+- [The robot starts and ends its journey at the depot city (city 0).]
+- [The robot must visit exactly 8 cities, including the depot city.]
+- [The travel cost between two cities is calculated using the Euclidean distance.]
+- [The objective is to determine the shortest possible route that visits 8 cities, starting and ending at the depot city.]

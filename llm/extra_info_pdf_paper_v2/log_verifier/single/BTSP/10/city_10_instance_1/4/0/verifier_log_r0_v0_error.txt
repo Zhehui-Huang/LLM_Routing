@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/BTSP/10/city_10_instance_1/4/0/verifier_r0_v0.py", line 43
+    if distance > calculated_max dismissed:
+                                 ^^^^^^^^^
+SyntaxError: invalid syntax
+
+

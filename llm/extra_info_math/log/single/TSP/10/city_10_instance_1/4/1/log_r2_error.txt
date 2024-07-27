@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/TSP/10/city_10_instance_1/4/1/solution_r2.py", line 62
+    print(f"Total travel code
+          ^
+SyntaxError: unterminated string literal (detected at line 62)
+
+

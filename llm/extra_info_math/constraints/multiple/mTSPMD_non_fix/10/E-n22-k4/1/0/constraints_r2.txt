@@ -1,0 +1,4 @@
+- Ensure exactly 4 salesmen leave from depot city 0 and do not need to return after completing their tour.
+- Ensure each of the 22 cities is visited exactly once by any of the robots.
+- Minimize the total travel distance (total travel cost) for all tours combined.
+- Calculate the Euclidean distancebetween two cities to use as the travel cost.

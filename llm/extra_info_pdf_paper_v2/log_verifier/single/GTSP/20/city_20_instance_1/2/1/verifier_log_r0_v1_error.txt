@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/GTSP/20/city_20_instance_1/2/1/verifier_r0_v1.py", line 53
+    print(testeryl(test_result)  # CORRECT or FAIL
+         ^
+SyntaxError: '(' was never closed
+
+

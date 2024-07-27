@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/verifier/single/GTSP/10/city_10_instance_2/1/0/verifier_r1_v0.py", line 41, in <module>
+    suite.addTest(TestRobot_examples_robottourcteristics('test_correct_travel_cost'))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'TestRobot_examples_robottourcteristics' is not defined
+
+

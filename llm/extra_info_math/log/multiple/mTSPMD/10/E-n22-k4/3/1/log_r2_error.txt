@@ -1,0 +1,63 @@
+OUTPUT:
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - /home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/pulp/solverdir/cbc/linux/64/cbc /tmp/efab8f3a504540e5a0e8a65e38b57f30-pulp.mps -timeMode elapsed -branch -printingOptions all -solution /tmp/efab8f3a504540e5a0e8a65e38b57f30-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 103 COLUMNS
+At line 10352 RHS
+At line 10451 BOUNDS
+At line 12300 ENDATA
+Problem MODEL has 98 rows, 1848 columns and 4704 elements
+Coin0008I MODEL read with 0 errors
+Option for timeMode changed from cpu to elapsed
+Continuous objective value is 238.197 - 0.00 seconds
+Cgl0004I processed model has 98 rows, 1664 columns (1664 integer (1664 of which binary)) and 4400 elements
+Cbc0038I Initial state - 6 integers unsatisfied sum - 3
+Cbc0038I Pass   1: suminf.    0.00000 (0) obj. 238.197 iterations 156
+Cbc0038I Solution found of 238.197
+Cbc0038I Before mini branch and bound, 1657 integers at bound fixed and 0 continuous
+Cbc0038I Mini branch and bound did not improve solution (0.02 seconds)
+Cbc0038I After 0.02 seconds - Feasibility pump exiting with objective of 238.197 - took 0.01 seconds
+Cbc0012I Integer solution of 238.19684 found by feasibility pump after 0 iterations and 0 nodes (0.02 seconds)
+Cbc0001I Search completed - best objective 238.196837538108, took 0 iterations and 0 nodes (0.02 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 238.197 to 238.197
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                238.19683754
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.03
+Time (Wallclock seconds):       0.03
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.03   (Wallclock seconds):       0.03
+
+
+Robot 0 Tour starting and ending at Depot 0:
+0 -> 0
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD/10/E-n22-k4/3/1/solution_r2.py", line 69, in <module>
+    tour_cost = sum(distances[tour[i], tour[i+1]] for i in range(len(tour)-1))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/multiple/mTSPMD/10/E-n22-k4/3/1/solution_r2.py", line 69, in <genexpr>
+    tour_cost = sum(distances[tour[i], tour[i+1]] for i in range(len(tour)-1))
+                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: (0, 0)
+
+

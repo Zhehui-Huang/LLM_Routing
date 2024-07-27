@@ -1,0 +1,5 @@
+- [Each robot must start and end its tour at the depot city 0.]
+- [The demand of each city must be fully met by the deliveries made by the robots.]
+- [The carrying capacity of each robot, which is 160, must not be exceeded during any part of the tour.]
+- [The objective is to minimize the total travel cost for all tours taken together.]
+- [The travel cost is calculated as the Euclidean distance between two cities.]

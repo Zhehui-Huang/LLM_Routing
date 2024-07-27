@@ -1,0 +1,6 @@
+- [Each robot must start at the depot city (0), make deliveries to other cities, and return to the depot after completing deliveries.]
+- [Each city has a specific demand that must be fully met by the robots' deliveries.]
+- [The carrying capacity of each robot should not be exceeded while planning the tours.]
+- [The objective is to minimize the total travel cost for all the tours combined.]
+- [The travel cost is calculated as the Euclidean distance between two cities.]
+- [The total number of robots available is 2, and each has a capacity of 160 units.]

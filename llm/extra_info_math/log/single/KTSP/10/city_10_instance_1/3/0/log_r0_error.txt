@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/10/city_10_instance_1/3/0/solution_r0.py", line 26
+    city_combinations = [tuple([0]) + city_set for city_set in city_s...
+                                                                     ^^^
+SyntaxError: invalid syntax
+
+

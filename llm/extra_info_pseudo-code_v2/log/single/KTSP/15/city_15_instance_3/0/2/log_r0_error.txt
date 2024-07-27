@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/15/city_15_instance_3/0/2/solution_r0.py", line 107, in <module>
+    solution, cost = gvns()
+                     ^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/15/city_15_instance_3/0/2/solution_r0.py", line 95, in gvns
+    s_double_prime = vnd(s_prime)
+                     ^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/15/city_15_instance_3/0/2/solution_r0.py", line 74, in vnd
+    s_prime = local_search(s, p)
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/KTSP/15/city_15_instance_3/0/2/solution_r0.py", line 63, in local_search
+    if new_cmp < best_cost:
+       ^^^^^^^
+NameError: name 'new_cmp' is not defined. Did you mean: 'new_cost'?
+
+

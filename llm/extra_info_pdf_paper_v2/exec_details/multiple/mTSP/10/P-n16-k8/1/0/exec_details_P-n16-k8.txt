@@ -1,0 +1,19 @@
+Start time: [2024-07-26 00:51:34]
+
+Task file path: /home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pdf_paper_v2/exec_details/multiple/mTSP/10/P-n16-k8/1/0/exec_details_P-n16-k8.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 50.10 seconds.
+Code solution execution status: error, execution time: 0.00847935676574707
+
+Reflect count: 1
+===
+Ask LLM for code solution, response time: 44.39 seconds.
+Code solution execution status: success, execution time: 0.012380599975585938
+Another LLM - Get constraints from LLM, response time: 14.23 seconds.
+Ask another LLM for verifier code, response time: 32.59 seconds.
+Another LLM - The verifier has bugs.
+Ask another LLM for verifier code, response time: 35.55 seconds.
+Another LLM - fail verifier

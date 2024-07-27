@@ -1,0 +1,5 @@
+- [The robot must visit exactly one city from each of the four specified groups of cities.]
+- [The starting and ending point of the robot's tour must be the depot city, which is city 0.]
+- [The route chosen should minimize the total travel cost, calculated as the Euclidean distance between cities.]
+- [The final output must include a list of city indices that represents the tour, starting and ending at city 0.]
+- [The final output must also include the total travel cost of the tour.]

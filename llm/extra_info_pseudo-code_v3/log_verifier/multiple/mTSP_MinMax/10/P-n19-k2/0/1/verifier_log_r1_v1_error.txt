@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSP_MinMax/10/P-n19-k2/0/1/verifier_r1_v1.py", line 56, in <module>
+    result = check_solution(robot_tours, cities_coordinates, robot_costs, maximum_reported_cost)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v3/verifier/multiple/mTSP_MinMax/10/P-n19-k2/0/1/verifier_r1_v1.py", line 34, in check_solution
+    if not math.isclose(reported_cost, calculated2_cost, rel_tol=1e-5):
+                                       ^^^^^^^^^^^^^^^^
+NameError: name 'calculated2_cost' is not defined. Did you mean: 'calculated_cost'?
+
+

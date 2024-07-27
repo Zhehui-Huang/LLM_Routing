@@ -1,0 +1,21 @@
+OUTPUT:
+FAIL
+
+
+ERROR:
+..F
+======================================================================
+FAIL: test_visits_each_city_once (__main__.TestRobotTour.test_visits_each_city_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/verifier/single/BTSP/15/city_15_instance_1/2/2/verifier_r1_v0.py", line 42, in test_visits_each_city_once
+    self.assertEqual(visited_cities, expected_cities)
+AssertionError: Items in the second set but not the first:
+0
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+
+

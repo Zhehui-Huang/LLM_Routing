@@ -1,0 +1,6 @@
+- [Requirement 1] The robot must start and end its tour at the depot city (index 0).
+- [Requirement 2] The robot must visit exactly one city from each of the seven city groups.
+- [Requirement 3] Total travel cost between cities is calculated as the Euclidean distance between them.
+- [Requirement 4] Use constraints and insights from the GTSP heuristic "GLNS" for finding the optimal route.
+- [Requirement 5] Output the final tour as a list of city indices, starting and ending at city 0.
+- [Requirement 6] Output the total travel cost of the tour.

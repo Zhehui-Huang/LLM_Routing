@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_math/solution/single/KTSP/20/city_20_instance_0/1/0/solution_r0.py", line 35
+    min_tour=https://www.linkedin.com/posts/greenpeace-india_did-you-know-that-the-kolleru-lake-in-andhra-activity-6978613799338754048-_uS9?tour_cost
+                  ^
+SyntaxError: invalid syntax
+
+

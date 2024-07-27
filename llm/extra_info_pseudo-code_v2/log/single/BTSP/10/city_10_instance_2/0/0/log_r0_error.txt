@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/10/city_10_instance_2/0/0/solution_r0.py", line 78, in <module>
+    total_cost, max_cap = tour_cost_details(tour, G_bb)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/10/city_10_instance_2/0/0/solution_r0.py", line 74, in tour_cost_details
+    total_cost = sum(graph[u][v]['weight'] for u, v in zip(tour[:-1], tour[1:]))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/few-shot/LLM_Routing/llm/extra_info_pseudo-code_v2/solution/single/BTSP/10/city_10_instance_2/0/0/solution_r0.py", line 74, in <genexpr>
+    total_cost = sum(graph[u][v]['weight'] for u, v in zip(tour[:-1], tour[1:]))
+                     ~~~~~~~~^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/networkx/classes/coreviews.py", line 54, in __getitem__
+    return self._atlas[key]
+           ~~~~~~~~~~~^^^^^
+KeyError: 1
+
+
