@@ -1,0 +1,21 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/10/city_10_instance_4/3/0/solution_r1.py", line 74, in <module>
+    best_tour = genetic_inde = genetic_algorithm(cities)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/10/city_10_instance_4/3/0/solution_r1.py", line 62, in genetic_algorithm
+    mutate(ind)
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/10/city_10_instance_4/3/0/solution_r1.py", line 40, in mutate
+    a, b = randint(1, len(individual) - 3), randint(1, len(individual) - 3)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/random.py", line 345, in randrange
+    raise ValueError("empty range for randrange() (%d, %d, %d)" % (istart, istop, width))
+ValueError: empty range for randrange() (1, 1, 0)
+
+

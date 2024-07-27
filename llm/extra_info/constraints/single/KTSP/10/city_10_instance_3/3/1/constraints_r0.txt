@@ -1,0 +1,7 @@
+- [There are 10 cities, including one depot city (city 0).]
+- [City coordinates are provided for all cities: city 0 (84, 67), city 1 (74, 40), city 2 (71, 13), city 3 (74, 82), city 4 (97, 28), city 5 (0, 31), city 6 (8, 62), city 7 (74, 56), city 8 (85, 71), city 9 (6, 76).]
+- [There is one robot, starting and ending its journey at the depot city (city 0).]
+- [Travel costs between cities are represented by the Euclidean distance.]
+- [The robot needs to visit exactly 7 cities, and the tour must include the depot city.]
+- [The objective is to find the shortest possible tour that fulfills the visiting requirement.]
+- [Tour and total travel cost must be output, and the tour should be formatted as a list of city indices starting and ending at the depot city.]

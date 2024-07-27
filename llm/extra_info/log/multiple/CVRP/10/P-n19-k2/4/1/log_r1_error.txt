@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n19-k2/4/1/solution_r1.py", line 63, in <module>
+    tours = find_tours()
+            ^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n19-k2/4/1/solution_r1.py", line 52, in find_tours
+    if next_cal_coords:
+       ^^^^^^^^^^^^^^^
+NameError: name 'next_cal_coords' is not defined
+
+

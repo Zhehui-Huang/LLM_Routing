@@ -1,0 +1,17 @@
+OUTPUT:
+CORRECT
+
+
+ERROR:
+test_all_cities_visited_once (__main__.TestRobotTours.test_all_cities_visited_once) ... ok
+test_cost_calculation (__main__.TestRobotTours.test_cost_calculation) ... ok
+test_output_format (__main__.TestRobotTours.test_output_format) ... ok
+test_starting_point (__main__.TestRobotTours.test_starting_point) ... ok
+test_tour_completions (__main__.TestRobotTours.test_tour_completions) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+
+

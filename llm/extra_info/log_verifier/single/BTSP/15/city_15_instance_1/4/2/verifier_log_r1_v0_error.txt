@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/verifier/single/BTSP/15/city_15_instance_1/4/2/verifier_r1_v0.py", line 46, in <module>
+    output = verify_tour(tour, total_travel_cost, max_consecutive_work)
+                                                  ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'max_consecutive_work' is not defined
+
+

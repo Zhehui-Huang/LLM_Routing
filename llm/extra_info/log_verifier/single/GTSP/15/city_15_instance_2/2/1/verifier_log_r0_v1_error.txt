@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/GTSP/15/city_15_instance_2/2/1/verifier_r0_v1.py", line 70, in <module>
+    result, message = verify_tour(tour, e_groups, cutoff_lat_cost)
+                                        ^^^^^^^^
+NameError: name 'e_groups' is not defined. Did you mean: 'groups'?
+
+

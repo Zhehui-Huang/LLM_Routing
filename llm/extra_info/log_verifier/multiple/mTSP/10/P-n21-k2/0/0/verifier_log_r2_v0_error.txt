@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP/10/P-n21-k2/0/0/verifier_r2_v0.py", line 41
+    robot_1_calculated voyeurism cost = calc_cost(self.robot_1_tour)
+                       ^^^^^^^^^
+SyntaxError: invalid syntax
+
+

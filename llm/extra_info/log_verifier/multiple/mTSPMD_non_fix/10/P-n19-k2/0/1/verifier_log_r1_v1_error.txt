@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSPMD_non_fix/10/P-n19-k2/0/1/verifier_r1_v1.py", line 45, in <module>
+    robot_tales = [robot_0_tour, robot_1_tour]
+                                 ^^^^^^^^^^^^
+NameError: name 'robot_1_tour' is not defined. Did you mean: 'robot_0_tour'?
+
+

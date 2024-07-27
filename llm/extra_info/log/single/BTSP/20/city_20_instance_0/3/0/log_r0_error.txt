@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/20/city_20_instance_0/3/0/solution_r0.py", line 40, in <module>
+    tour, total_cost, max_distance = solve_tsp()
+                                     ^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/20/city_20_instance_0/3/0/solution_r0.py", line 34, in solve_tsp
+    max_distance = max(max_distance, returning_certance)
+                                     ^^^^^^^^^^^^^^^^^^
+NameError: name 'returning_certance' is not defined. Did you mean: 'returning_distance'?
+
+

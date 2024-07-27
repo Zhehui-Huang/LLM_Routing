@@ -1,0 +1,20 @@
+OUTPUT:
+Robot 0 Tour: [0, 4, 11, 13, 16, 0]
+Robot 0 Total Travel Cost: 96.22530283010843
+
+Robot 1 Tour: [0, 2, 7, 17, 0]
+Robot 1 Total Travel Cost: 73.38989152987988
+
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/P-n23-k8/3/1/solution_r0.py", line 55, in <module>
+    tour_cost = calculate_tour_cost(tours[r], dist_matrix)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/P-n23-k8/3/1/solution_r0.py", line 49, in calculate_tour_cost
+    cost += dist_matrix[tour[i]][tour[i+1]]
+            ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+IndexError: index 23 is out of bounds for axis 0 with size 23
+
+

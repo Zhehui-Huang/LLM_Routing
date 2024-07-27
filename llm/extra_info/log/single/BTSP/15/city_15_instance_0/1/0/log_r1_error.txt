@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/15/city_15_instance_0/1/0/solution_r1.py", line 58, in <module>
+    tour, total_cost, max_distance = find_optimal_tour()
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/15/city_15_instance_0/1/0/solution_r1.py", line 44, in find_optimal_tour
+    dist = euclidean-distance(tour[i], tour[i + 1])
+           ^^^^^^^^^
+NameError: name 'euclidean' is not defined
+
+

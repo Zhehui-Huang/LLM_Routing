@@ -1,0 +1,51 @@
+Task: mTSPMD_non_fix, City: 10, File name: P-n16-k8, Run time: 3, Try id: 0
+
+@@@@@
+Notes: exec
+input_token_num: 675
+output_token_num: 878
+total_token_num: 1553
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 1342
+output_token_num: 816
+total_token_num: 2158
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 2077
+output_token_num: 918
+total_token_num: 2995
+@@@@@
+
+@@@@@
+Notes: extract_constraints
+input_token_num: 757
+output_token_num: 126
+total_token_num: 883
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 1070
+output_token_num: 697
+total_token_num: 1767
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 1978
+output_token_num: 670
+total_token_num: 2648
+@@@@@
+
+@@@@@
+Notes: verifier
+input_token_num: 2585
+output_token_num: 640
+total_token_num: 3225
+@@@@@
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/CVRP/10/P-n21-k2/3/2/verifier_r2_v0.py", line 80, in <module>
+    result = validate_solution(robots_routes, robots_capacity, demands, coordinates)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/CVRP/10/P-n21-k2/3/2/verifier_r2_v0.py", line 39, in validate_solution
+    route_cost += euclidean_distance(coordinates[last_city][0], coordinates[last_node][1],
+                                                                            ^^^^^^^^^
+NameError: name 'last_node' is not defined
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSPMD_non_fix/10/P-n19-k2/3/0/verifier_r0_v1.py", line 62, in <module>
+    print(verify_solution())
+          ^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSPMD_non_fix/10/P-n19-k2/3/0/verifier_r0_v1.py", line 52, in verify_solution
+    abs(total_cost_robot_1 - known_each_cost_robot_1) < tolerance):
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'known_each_cost_robot_1' is not defined. Did you mean: 'known_cost_robot_1'?
+
+

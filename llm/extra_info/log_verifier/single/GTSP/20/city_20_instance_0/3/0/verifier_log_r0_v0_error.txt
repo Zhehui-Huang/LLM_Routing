@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/GTSP/20/city_20_instance_0/3/0/verifier_r0_v0.py", line 69, in <module>
+    print(test_solution())
+          ^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/GTSP/20/city_20_instance_0/3/0/verifier_r0_v0.py", line 56, in test_solution
+    if not all(count == 1 for count in visited_credentials):
+                                       ^^^^^^^^^^^^^^^^^^^
+NameError: name 'visited_credentials' is not defined
+
+

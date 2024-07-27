@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n21-k2/3/2/solution_r0.py", line 69, in <module>
+    CVRP(cities, demands, city_coords, robot_count, capacity)
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n21-k2/3/2/solution_r0.py", line 37, in CVRP
+    loads[robot_at] += demands[city]
+          ^^^^^^^^
+NameError: name 'robot_at' is not defined. Did you mean: 'robot_id'?
+
+

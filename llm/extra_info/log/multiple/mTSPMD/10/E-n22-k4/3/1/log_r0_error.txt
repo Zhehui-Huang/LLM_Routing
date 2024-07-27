@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/E-n22-k4/3/1/solution_r0.py", line 64
+    plan_output = f'Robot {vehicle ID eofore 
+                  ^
+SyntaxError: unterminated string literal (detected at line 64)
+
+

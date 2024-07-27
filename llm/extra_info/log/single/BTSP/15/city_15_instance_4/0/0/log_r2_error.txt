@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/15/city_15_instance_4/0/0/solution_r2.py", line 47
+    ','','mkdir(f"aced Disance betone the levelsecutivescities: army {max_distance}")
+          ^^^^^
+SyntaxError: invalid syntax
+
+

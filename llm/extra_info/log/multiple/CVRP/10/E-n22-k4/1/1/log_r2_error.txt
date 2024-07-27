@@ -1,0 +1,19 @@
+OUTPUT:
+Robot 0 Tour:  0 Load(0) -> 5 Load(2100) -> 3 Load(2900) -> 2 Load(3600) -> 1 Load(4700) -> 0
+Distance of the route: 0m
+Robot 1 Tour:  0 Load(0) -> 12 Load(1300) -> 11 Load(2500) -> 10 Load(3100) -> 9 Load(3600) -> 7 Load(4400) -> 4 Load(5800) -> 0
+Distance of the route: 0m
+Robot 2 Tour:  0 Load(0) -> 17 Load(1000) -> 16 Load(3100) -> 15 Load(4000) -> 14 Load(4300) -> 13 Load(5600) -> 6 Load(6000) -> 0
+Distance of the route: 0m
+Robot 3 Tour:  0 Load(0) -> 21 Load(700) -> 20 Load(2500) -> 19 Load(5000) -> 18 Load(5900) -> 8 Load(6000) -> 0
+Distance of the route: 0m
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/E-n22-k4/1/1/solution_r2.py", line 93, in <module>
+    print('Total Distance of all routes: {}m'.format(total_index))    
+                                                     ^^^^^^^^^^^
+NameError: name 'total_index' is not defined. Did you mean: 'node_index'?
+
+

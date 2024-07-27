@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/TSP/20/city_20_instance_4/1/2/solution_r2.py", line 43, in <module>
+    tour = greedy_tsp(distance_matrix)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/TSP/20/city_20_instance_4/1/2/solution_r2.py", line 31, in greedy_tsp
+    visited[next_user] = True
+            ^^^^^^^^^
+NameError: name 'next_user' is not defined
+
+

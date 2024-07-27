@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP_MinMax/10/P-n16-k8/1/2/solution_r1.py", line 64
+    print(f"Robot {robot activities within this criterion spaces 0 Alternatively, we will need to implement the distribution of robots guniformly
+          ^
+SyntaxError: unterminated string literal (detected at line 64)
+
+

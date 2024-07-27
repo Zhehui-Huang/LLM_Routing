@@ -1,0 +1,9 @@
+OUTPUT:
+Tour: [0, 0, 0, 0, 0, 0]
+Total travel cost: 0.0
+Maximum distance between consecutive cities: 0
+
+
+ERROR:
+
+

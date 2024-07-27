@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/P-n23-k8/2/0/solution_r1.py", line 89, in <module>
+    main()
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/P-n23-k8/2/0/solution_r1.py", line 36, in main
+    data = create_idnata_model(coordinates, depot_indices)
+           ^^^^^^^^^^^^^^^^^^^
+NameError: name 'create_idnata_model' is not defined. Did you mean: 'create_data_model'?
+
+

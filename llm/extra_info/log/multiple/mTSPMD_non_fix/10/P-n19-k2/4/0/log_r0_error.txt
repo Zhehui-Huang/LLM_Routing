@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/4/0/solution_r0.py", line 26, in <module>
+    distances = calculate_invite(distances)
+                ^^^^^^^^^^^^^^^^
+NameError: name 'calculate_invite' is not defined
+
+

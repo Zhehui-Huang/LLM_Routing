@@ -1,0 +1,12 @@
+OUTPUT:
+Robot 0 Tour: [0, 10, 8, 6, 3, 4, 11, 0]
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/E-n22-k4/0/1/solution_r2.py", line 60, in <module>
+    print(f"Robot {i} Total Travel Cost: {travel_arrangement[i]}")
+                                          ^^^^^^^^^^^^^^^^^^
+NameError: name 'travel_arrangement' is not defined
+
+

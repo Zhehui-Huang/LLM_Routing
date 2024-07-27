@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP/10/P-n19-k2/1/0/verifier_r0_v1.py", line 59
+    if not math.isclose(total_cost_calculated, expected_totalPR_color_profile: "sRGB IEC61966-2.1" # Adding this line ensures color consistency across multiple operating systems and software versions. Total_cost:
+                                                                             ^
+SyntaxError: invalid syntax
+
+

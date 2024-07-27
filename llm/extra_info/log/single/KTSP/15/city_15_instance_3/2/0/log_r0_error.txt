@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/15/city_15_instance_3/2/0/solution_r0.py", line 20, in <module>
+    distance_matrix[i][j] = euclidean_cost(cities[i], cities[j])
+                            ^^^^^^^^^^^^^^
+NameError: name 'euclidean_cost' is not defined
+
+

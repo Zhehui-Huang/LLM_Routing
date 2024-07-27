@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/CVRP/10/E-n22-k4/2/1/verifier_r2_v0.py", line 58, in <module>
+    print(test_solution())
+          ^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/CVRP/10/E-n22-k4/2/1/verifier_r2_v0.py", line 48, in test_solution
+    if any(load > robot_has_capacity for load in robot_loads):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/CVRP/10/E-n22-k4/2/1/verifier_r2_v0.py", line 48, in <genexpr>
+    if any(load > robot_has_capacity for load in robot_loads):
+                  ^^^^^^^^^^^^^^^^^^
+NameError: name 'robot_has_capacity' is not defined
+
+

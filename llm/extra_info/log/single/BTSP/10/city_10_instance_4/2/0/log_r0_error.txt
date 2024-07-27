@@ -1,0 +1,13 @@
+OUTPUT:
+Tour: [0, 1, 3, 4, 5, 7, 9, 8, 2, 6, 0]
+Total travel cost: 408.41360886151256
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/10/city_10_instance_4/2/0/solution_r0.py", line 48, in <module>
+    print(f"Maximum distance between consecutive cities: {max_constriction}")
+                                                          ^^^^^^^^^^^^^^^^
+NameError: name 'max_constriction' is not defined
+
+

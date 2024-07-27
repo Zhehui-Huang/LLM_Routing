@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/20/city_20_instance_0/4/0/solution_r1.py", line 55, in <module>
+    tour, total_cost = find_shortest_tour(city_coords, 4)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/20/city_20_instance_0/4/0/solution_r1.py", line 22, in find_shortest_tour
+    cost = calculate_tour_cost(current_tour, city_coords)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/20/city_20_instance_0/4/0/solution_r1.py", line 10, in calculate_tour_cost
+    total_cost += euclidean 
+                  ^^^^^^^^^
+NameError: name 'euclidean' is not defined
+
+

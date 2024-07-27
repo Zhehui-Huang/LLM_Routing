@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/10/city_10_instance_1/3/0/solution_r0.py", line 62, in <module>
+    tour, total_cost, max_distance = simulated_annealian(cities, initial_temperature, cooling_rate, stopping_temperature)
+                                     ^^^^^^^^^^^^^^^^^^^
+NameError: name 'simulated_annealian' is not defined. Did you mean: 'simulated_annealing'?
+
+

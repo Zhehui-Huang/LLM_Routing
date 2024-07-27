@@ -1,0 +1,7 @@
+- [Requirement 1] There must be exactly 19 cities including 2 depot cities.
+- [Requirement 2] Two robots share the task of visiting all cities exactly once, each starting from depot city 0.
+- [Requirement 3] The routes for both robots do not need to return to the starting depot.
+- [Requirement 4] Each city is to be visited exactly once by the robots collectively.
+- [Requirement 5] Travel cost is defined as the Euclidean distance between two cities.
+- [Requirement 6] The solution must minimize the total combined travel cost of both robots.
+- [Requirement 7] All outputs should follow the specified format showing each robot's tour, each robot's travel cost, and the overall total travel cost.

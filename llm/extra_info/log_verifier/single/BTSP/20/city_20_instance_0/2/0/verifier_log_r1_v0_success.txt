@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+...F
+======================================================================
+FAIL: test_visit_each_city_once (__main__.TestRobotTour.test_visit_each_city_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/BTSP/20/city_20_instance_0/2/0/verifier_r1_v0.py", line 53, in test_visit_each_city_once
+    self.assertTrue(is_valid_tour(tour, len(cities)))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=1)
+
+

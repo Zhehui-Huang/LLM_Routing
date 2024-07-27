@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/P-n23-k8/1/0/solution_r1.py", line 63, in <module>
+    tour_cost = sub_matrix[row_pas, ind].sum()
+                           ^^^^^^^
+NameError: name 'row_pas' is not defined
+
+

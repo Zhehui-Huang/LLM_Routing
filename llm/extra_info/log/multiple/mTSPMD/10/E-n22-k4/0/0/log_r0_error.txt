@@ -1,0 +1,19 @@
+OUTPUT:
+Robot 0 Tour: (0, 13, 11, 0)
+Robot 0 Total Travel ICost: 56.4058409676653
+Robot 1 Tour: (1, 12, 15, 18, 14, 16, 1)
+Robot 1 Total Travel ICost: 161.9784734842813
+Robot 2 Tour: (5, 2, 6, 4, 8, 10, 9, 7, 5)
+Robot 2 Total Travel ICost: 108.94173143641747
+Robot 3 Tour: (3, 17, 20, 21, 19, 3)
+Robot 3 Total Travel ICost: 168.13133735934844
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/E-n22-k4/0/0/solution_r0.py", line 53, in <module>
+    print(f"Overall Total Travel Cost: {total不cost}")
+                                        ^^^^^^^^^^^
+NameError: name 'total不cost' is not defined. Did you mean: 'total_cost'?
+
+

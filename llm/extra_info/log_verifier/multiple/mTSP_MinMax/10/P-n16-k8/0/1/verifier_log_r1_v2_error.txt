@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP_MinMax/10/P-n16-k8/0/1/verifier_r1_v2.py", line 64, in <module>
+    print(verify_solution(tours, city_coordinates))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP_MinMax/10/P-n16-k8/0/1/verifier_r1_v2.py", line 31, in verify_solution
+    if not math.isclose(robot_travel_dost, reported_cost, abs_tol=0.1):
+                        ^^^^^^^^^^^^^^^^^
+NameError: name 'robot_travel_dost' is not defined. Did you mean: 'robot_travel_cost'?
+
+

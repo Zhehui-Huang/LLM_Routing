@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/P-n23-k8/3/1/solution_r2.py", line 56, in <module>
+    tour_cost = calculate_tour_cost(tour, dist_matrix)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/P-n23-k8/3/1/solution_r2.py", line 49, in calculate_tour_cost
+    cost += dist_master[tour[i]][tour[i + 1]]
+            ^^^^^^^^^^^
+NameError: name 'dist_master' is not defined. Did you mean: 'dist_matrix'?
+
+

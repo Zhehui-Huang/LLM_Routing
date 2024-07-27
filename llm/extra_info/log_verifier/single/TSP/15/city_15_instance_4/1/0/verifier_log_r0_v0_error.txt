@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/verifier/single/TSP/15/city_15_instance_4/1/0/verifier_r0_v0.py", line 44, in <module>
+    result = verify_tour(tour, reported_cost, cities)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/verifier/single/TSP/15/city_15_instance_4/1/0/verifier_r0_v0.py", line 34, in verify_tour
+    actual_cost = calculate_total_travel_cost(tour, city_coordinates)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/verifier/single/TSP/15/city_15_instance_4/1/0/verifier_r0_v0.py", line 20, in calculate_total_travel_cost
+    total_cost += euclidean_grpah.getDistance(tour[i], tour[i+1])
+                  ^^^^^^^^^^^^^^^
+NameError: name 'euclidean_grpah' is not defined
+
+

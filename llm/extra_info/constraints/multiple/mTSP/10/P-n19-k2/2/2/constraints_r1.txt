@@ -1,0 +1,5 @@
+- [There are 19 cities including the depot city.]
+- [All robots start and end their tours at the depot city.]
+- [Each robot must visit all cities exactly once, excluding the depot city.]
+- [Travel cost is calculated as the Euclidean distance between two cities.]
+- [The objective is to minimize the total travel cost across all robots.]

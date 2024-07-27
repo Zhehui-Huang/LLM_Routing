@@ -1,0 +1,5 @@
+- [The robots must start and end their tours at the depot city (city 0).]
+- [Each robot has a carrying capacity of 40 units.]
+- [The demand of each city, as specified, must be fully met and cannot be split between multiple robot deliveries.]
+- [The objective is to form tours for the robots that result in the minimum total Euclidean distance traveled.]
+- [All robots start at depot city 0 and can travel between any two cities.]

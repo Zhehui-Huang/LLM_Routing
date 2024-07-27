@@ -1,0 +1,23 @@
+Task: mTSP_MinMax, City: 10, File name: E-n22-k4, Run time: 1, Try id: 1
+
+@@@@@
+Notes: exec
+input_token_num: 695
+output_token_num: 839
+total_token_num: 1534
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 1317
+output_token_num: 667
+total_token_num: 1984
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 1939
+output_token_num: 892
+total_token_num: 2831
+@@@@@
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/15/city_15_instance_4/2/1/solution_r1.py", line 30
+    total_cost += euclidean_spinference(positistances( positionspinference(positiourcies, git stages) )), pois[itances].
+                                                                                          ^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

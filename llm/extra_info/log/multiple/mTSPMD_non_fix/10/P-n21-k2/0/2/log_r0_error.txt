@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/0/2/solution_r0.py", line 51, in <module>
+    tour = nearest_neighbor_tour(tours[robot_id], initial_depots)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/0/2/solution_r0.py", line 36, in nearest_neighbor_tour
+    unvisited.remove(start)
+KeyError: 1
+
+

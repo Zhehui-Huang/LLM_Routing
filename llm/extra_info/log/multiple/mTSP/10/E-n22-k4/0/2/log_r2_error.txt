@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/E-n22-k4/0/2/solution_r2.py", line 2
+    from scipy.spatial.distance.getTag("functionName"):
+                                      ^
+SyntaxError: invalid syntax
+
+

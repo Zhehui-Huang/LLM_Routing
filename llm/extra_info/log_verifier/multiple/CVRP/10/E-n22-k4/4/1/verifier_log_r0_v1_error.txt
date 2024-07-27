@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/CVRP/10/E-n22-k4/4/1/verifier_r0_v1.py", line 3
+    def calculate_eu.board_contribution
+                    ^
+SyntaxError: expected '('
+
+

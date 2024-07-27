@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/15/city_15_instance_0/3/0/solution_r0.py", line 47, in <module>
+    tour, total_cost, max_distance = find_minmax_tour()
+                                     ^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/15/city_15_instance_0/3/0/solution_r0.py", line 39, in find_minmax_tour
+    if max_distance < min_maxspece or (max_distance == min_max_distance and total_cost < total_best_cost):
+                      ^^^^^^^^^^^^
+NameError: name 'min_maxspece' is not defined
+
+

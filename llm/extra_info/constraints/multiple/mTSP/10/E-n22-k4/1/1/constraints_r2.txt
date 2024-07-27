@@ -1,0 +1,3 @@
+- [Requirement 1] There are 22 cities with specified coordinates including a depot city where all tours start and end.
+- [Requirement 2] There are 4 robots starting from the depot city, and each robot must visit all cities exactly once, excluding the depot city.
+- [Requirement 3] The tours should minimize the total Euclidean travel cost, ensuring the shortest possible individual and combined tours for all robots.

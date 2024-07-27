@@ -1,0 +1,23 @@
+Task: mTSP, City: 10, File name: P-n21-k2, Run time: 1, Try id: 0
+
+@@@@@
+Notes: exec
+input_token_num: 689
+output_token_num: 867
+total_token_num: 1556
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 1382
+output_token_num: 710
+total_token_num: 2092
+@@@@@
+
+@@@@@
+Notes: exec
+input_token_num: 2066
+output_token_num: 783
+total_token_num: 2849
+@@@@@
+

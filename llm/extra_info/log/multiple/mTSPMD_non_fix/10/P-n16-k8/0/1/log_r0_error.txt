@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/0/1/solution_r0.py", line 60, in <module>
+    optimized_tour = two_opt(tour, distance_matrix)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/0/1/solution_r0.py", line 39, in two_opt
+    if sum(distance_matrix[route[k]][route[k+1]] for k in range(len(route)-1)) > sum(distanceix[new_route[k]][new_route[k+1]] for k in range(len(new_route)-1)):
+                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/0/1/solution_r0.py", line 39, in <genexpr>
+    if sum(distance_matrix[route[k]][route[k+1]] for k in range(len(route)-1)) > sum(distanceix[new_route[k]][new_route[k+1]] for k in range(len(new_route)-1)):
+                                                                                     ^^^^^^^^^^
+NameError: name 'distanceix' is not defined
+
+

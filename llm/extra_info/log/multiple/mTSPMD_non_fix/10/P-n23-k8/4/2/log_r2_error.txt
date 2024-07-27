@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD_non_fix/10/P-n23-k8/4/2/solution_r2.py", line 50
+    late_shoot = grid_rico(a_warrior, believer_panalysis(assert leashes-lo_group)))
+                                                                                  ^
+SyntaxError: unmatched ')'
+
+

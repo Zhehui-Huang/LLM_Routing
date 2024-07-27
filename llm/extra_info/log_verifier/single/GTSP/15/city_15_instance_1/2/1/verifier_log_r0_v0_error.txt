@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/GTSP/15/city_15_instance_1/2/1/verifier_r0_v0.py", line 73, in <module>
+    main()
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/GTSP/15/city_15_instance_1/2/1/verifier_r0_v0.py", line 64, in main
+    test_suite.addTest(TestRobotOnRobotTourSolution('test_total_cost_output'))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'TestRobotOnRobotTourSolution' is not defined. Did you mean: 'TestRobotTourSolution'?
+
+

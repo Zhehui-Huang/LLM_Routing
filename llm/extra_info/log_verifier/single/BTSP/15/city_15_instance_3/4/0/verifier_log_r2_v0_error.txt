@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/BTSP/15/city_15_instance_3/4/0/verifier_r2_v0.py", line 22
+    if distance > max 94.111:
+                      ^^^^^^
+SyntaxError: invalid syntax
+
+

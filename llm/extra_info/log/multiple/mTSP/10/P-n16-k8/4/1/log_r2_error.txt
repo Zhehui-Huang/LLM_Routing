@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/P-n16-k8/4/1/solution_r2.py", line 17
+    next_city = min(unused_cities, key=lambda x: distance(cities[latest_cities[robot onPressed]])
+                                                                               ^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

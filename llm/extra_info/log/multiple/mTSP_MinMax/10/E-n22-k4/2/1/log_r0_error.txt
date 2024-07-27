@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP_MinMax/10/E-n22-k4/2/1/solution_r0.py", line 48, in <module>
+    tour = compute_tsp_tour(0, cities, cities)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP_MinMax/10/E-n22-k4/2/1/solution_r0.py", line 35, in compute_tsp_tour
+    next_city = min(remaining_cities, key=lambda x: distance(city_coordinates[current_city], city_coordinates[x]))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP_MinMax/10/E-n22-k4/2/1/solution_r0.py", line 35, in <lambda>
+    next_city = min(remaining_cities, key=lambda x: distance(city_coordinates[current_city], city_coordinates[x]))
+                                                                                             ~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+

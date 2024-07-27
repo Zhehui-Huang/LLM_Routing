@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP_MinMax/10/P-n21-k2/3/1/solution_r0.py", line 52
+    if max_cost < min_max_er cost:
+                             ^^^^
+SyntaxError: invalid syntax
+
+

@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/P-n23-k8/0/2/solution_r2.py", line 50, in <module>
+    for robot_id, start in robot_deport.items():
+                           ^^^^^^^^^^^^
+NameError: name 'robot_deport' is not defined. Did you mean: 'robot_depot'?
+
+

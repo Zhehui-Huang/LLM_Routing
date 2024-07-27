@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n21-k2/2/2/solution_r0.py", line 67, in <module>
+    route = tsp_tour(city_list)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n21-k2/2/2/solution_r0.py", line 49, in tsp_tour
+    next_city = min(unjustified, key=lambda city: dist_matrix[current][city])
+                    ^^^^^^^^^^^
+NameError: name 'unjustified' is not defined
+
+

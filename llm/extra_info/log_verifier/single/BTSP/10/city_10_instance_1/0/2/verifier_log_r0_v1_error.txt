@@ -1,0 +1,20 @@
+OUTPUT:
+
+
+ERROR:
+E..
+======================================================================
+ERROR: test_correct_calculation_of_distances (__main__.TestTSPSolution.test_correct_calculation_of_distances)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/verifier/single/BTSP/10/city_10_instance_1/0/2/verifier_r0_v1.py", line 47, in test_correct_calculation_of_distances
+    self.assertAlmostEqual(max_distance, self.reported_max_random_spacemax_distance, msg="Maximum distance between consecutive cities is incorrect.")
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TestTSPSolution' object has no attribute 'reported_max_random_spacemax_distance'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (errors=1)
+
+

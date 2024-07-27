@@ -1,0 +1,6 @@
+- [Requirement 1] The robot must start and end its journey at the depot city 0.
+- [Requirement 2] The robot must visit exactly one city from each of the seven identified city groups (0-6).
+- [Requirement 3] Each visit must involve travel between two cities calculated using the Euclidean distance.
+- [Requirement 4] The task is to determine the shortest possible tour that satisfies the above requirements.
+- [Requirement 5] The output should include the tour as a list of city indices starting and ending at city 0.
+- [Requirement 6] The output should also include the total travel cost of the tour.

@@ -1,0 +1,3 @@
+- [Requirement 1] Each robot must start and end its route at its assigned depot city, and they must collectively visit all other cities exactly once.
+- [Requirement 2] The solution must provide the shortest possible round-trip tours for each of the 8 robots to minimize the combined total of travel costs.
+- [Requirement 3] The total travel cost must be computed using the Euclidean distance between two cities for each segment of a trip.

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/TSP/20/city_20_instance_2/0/0/solution_r0.py", line 39
+    if new_cost < current_cost or np.random.rand() < np.exp((current_cost - new.omanikeletooltolshortsttour(coost) / T):
+                                                                                                                       ^
+SyntaxError: invalid syntax
+
+

@@ -1,0 +1,15 @@
+OUTPUT:
+CORRECT
+
+
+ERROR:
+test_calculate_total_travel_cost (__main__.TestVRPSolution.test_calculate_total_travel_cost) ... ok
+test_start_and_end_at_depot (__main__.TestVRPSolution.test_start_and_end_at_depot) ... ok
+test_visit_exactly_ten_cities (__main__.TestVRPSolution.test_visit_exactly_ten_cities) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+
+

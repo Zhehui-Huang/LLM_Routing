@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/E-n22-k4/2/1/solution_r2.py", line 33
+    min_cost = current[0:1) + 1:1_cost
+                          ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '['
+
+

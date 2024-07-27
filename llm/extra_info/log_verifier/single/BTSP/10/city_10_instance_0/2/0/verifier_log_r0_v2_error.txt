@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/verifier/single/BTSP/10/city_10_instance_0/2/0/verifier_r0_v2.py", line 54, in <module>
+    result = test_solution_tour()
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/verifier/single/BTSP/10/city_10_instance_0/2/0/verifier_r0_v2.py", line 48, in test_solution_tour
+    not math.iscurr(local_max_distance, solution_max_distance, brel_tol=1e-2):
+        ^^^^^^^^^^^
+AttributeError: module 'math' has no attribute 'iscurr'
+
+

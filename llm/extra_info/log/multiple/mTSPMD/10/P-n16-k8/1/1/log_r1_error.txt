@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/P-n16-k8/1/1/solution_r1.py", line 59
+    print(f"Overall Total Travel Cost: {overall_total_tstart_end = euclidean_distance(cities[i], cities[j])cost:.2f}")
+                                                                                                                     ^
+SyntaxError: f-string: expecting '}'
+
+

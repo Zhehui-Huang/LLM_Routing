@@ -1,0 +1,21 @@
+OUTPUT:
+
+
+ERROR:
+E...
+======================================================================
+ERROR: test_cities_visited_exactly_once_except_depot (__main__.TestTSPSolution.test_cities_visited_exactly_once_except_depot)
+Verify each city except depot is visited exactly once.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/KTSP/10/city_10_instance_1/0/0/verifier_r0_v2.py", line 39, in test_cities_visited_exactly_once_except_depot
+    counts = Counter(self.total)
+                     ^^^^^^^^^^
+AttributeError: 'TestTSPSolution' object has no attribute 'total'
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (errors=1)
+
+

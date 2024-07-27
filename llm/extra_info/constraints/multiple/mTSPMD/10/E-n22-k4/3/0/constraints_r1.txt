@@ -1,0 +1,3 @@
+- [Requirement 1] There are 22 cities, including 4 depot cities where each of 4 robots starts and ends.
+- [Requirement 2] Each robot must start its tour at a specific depot, visit a set of cities exactly once, and return to the same depot.
+- [Requirement 3] The objective is to minimize the total travel cost for all robot tours, where the cost is calculated based on the Euclidean distance between cities.

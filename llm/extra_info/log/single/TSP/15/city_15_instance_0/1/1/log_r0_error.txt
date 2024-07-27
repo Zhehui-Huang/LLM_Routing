@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/TSP/15/city_15_instance_0/1/1/solution_r0.py", line 60, in <module>
+    tour, total_cost = nearest_neighbor_tpr(0, coordinates)
+                       ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'nearest_neighbor_tpr' is not defined. Did you mean: 'nearest_neighbor_tsp'?
+
+

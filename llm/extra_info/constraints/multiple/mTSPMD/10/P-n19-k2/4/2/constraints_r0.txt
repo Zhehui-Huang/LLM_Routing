@@ -1,0 +1,6 @@
+- [Each robot must visit all cities exactly once then return to their respective depots.]
+- [City visits must be performed collectively by all robots.]
+- [The same city cannot be visited by more than one robot.]
+- [Each tour must start and end at the robot's assigned depot.]
+- [The objective is to minimize the total travel cost for all robots combined.]
+- [Travel cost is calculated using the Euclidean distance between two cities.]

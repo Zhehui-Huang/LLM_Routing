@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/2/1/solution_r2.py", line 40, in <module>
+    slices = np.array_split(city_lundiexiceskt, num_robots)
+                            ^^^^^^^^^^^^^^^^^^
+NameError: name 'city_lundiexiceskt' is not defined
+
+

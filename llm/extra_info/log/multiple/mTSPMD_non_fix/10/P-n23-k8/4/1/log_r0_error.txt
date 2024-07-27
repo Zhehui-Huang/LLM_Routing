@@ -1,0 +1,27 @@
+OUTPUT:
+Robot 0 Tour: [0, 10, 3, 12, 15]
+Robot 0 Total Travel Cost: 48.83
+Robot 1 Tour: [0, 1, 6, 16]
+Robot 1 Total Travel Cost: 32.38
+Robot 2 Tour: [0, 7, 9, 17, 22]
+Robot 2 Total Travel Cost: 47.53
+Robot 3 Tour: [0, 18, 19]
+Robot 3 Total Travel Cost: 45.49
+Robot 4 Tour: [0, 2, 8, 13]
+Robot 4 Total Travel Cost: 43.12
+Robot 5 Tour: [0, 0, 21]
+Robot 5 Total Travel Cost: 2.24
+Robot 6 Tour: [0, 4, 11]
+Robot 6 Total Travel Cost: 29.23
+Robot 7 Tour: [0, 5, 14, 20]
+Robot 7 Total Travel Cost: 46.84
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD_non_fix/10/P-n23-k8/4/1/solution_r0.py", line 67, in <module>
+    print(f"Overall Total Travel Cost: {overall_total_data_cost:.2f}")
+                                        ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'overall_total_data_cost' is not defined. Did you mean: 'overall_total_cost'?
+
+

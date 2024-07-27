@@ -1,0 +1,6 @@
+- [Requirement 1] There are two robots, each starting and ending their journey at distinct depots (Robot 0 at depot city 0, Robot 1 at depot city 1). Both robots must return to their starting depots after completing their tours.
+- [Requirement 2] Each robot must visit each city exactly once between the two of them.
+- [Requirement 3] The distance metric for calculating the travel cost between any two cities is the Euclidean distance.
+- [Requirement 4] The objective is to minimize the total combined travel cost for both robots.
+- [Requirement 5] The output should provide detailed tours for each robot, displaying a list of city indices starting and ending at their respective depots.
+- [Requirement 6] The output should include the total travel cost for each robot's tour and the combined total travel cost for both tours.

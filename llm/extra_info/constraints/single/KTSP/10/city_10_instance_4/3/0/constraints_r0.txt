@@ -1,0 +1,4 @@
+- [The robot starts and ends its journey at depot city 0.]
+- [The robot must visit exactly 8 cities from the given set of 10 cities.]
+- [The travel cost is calculated as the Euclidean distance between two cities.]
+- [The task is to find the shortest possible tour that visits exactly 8 cities, including the depot city.]

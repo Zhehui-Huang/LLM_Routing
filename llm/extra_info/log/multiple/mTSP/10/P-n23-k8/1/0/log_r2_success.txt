@@ -1,0 +1,23 @@
+OUTPUT:
+Robot 0 Tour: [array([30, 40]), array([49, 49]), array([37, 52]), array([30, 40])]
+Robot 0 Total Travel Cost: 47.29
+Robot 1 Tour: [array([30, 40]), array([37, 52]), array([49, 49]), array([30, 40])]
+Robot 1 Total Travel Cost: 47.29
+Robot 2 Tour: [array([30, 40]), array([37, 52]), array([49, 49]), array([52, 64]), array([30, 40])]
+Robot 2 Total Travel Cost: 74.12
+Robot 3 Tour: [array([30, 40]), array([37, 52]), array([30, 40])]
+Robot 3 Total Travel Cost: 27.78
+Robot 4 Tour: [array([30, 40]), array([49, 49]), array([52, 33]), array([37, 52]), array([52, 64]), array([31, 62]), array([30, 40])]
+Robot 4 Total Travel Cost: 123.84
+Robot 5 Tour: [array([30, 40]), array([37, 52]), array([52, 64]), array([49, 49]), array([30, 40])]
+Robot 5 Total Travel Cost: 69.42
+Robot 6 Tour: [array([30, 40]), array([49, 49]), array([37, 52]), array([52, 64]), array([30, 40])]
+Robot 6 Total Travel Cost: 85.16
+Robot 7 Tour: [array([30, 40]), array([52, 64]), array([49, 49]), array([37, 52]), array([30, 40])]
+Robot 7 Total Travel Cost: 74.12
+Overall Total Cost: 549.01
+
+
+ERROR:
+
+

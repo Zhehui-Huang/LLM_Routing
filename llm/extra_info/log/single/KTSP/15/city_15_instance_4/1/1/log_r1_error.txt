@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/15/city_15_instance_4/1/1/solution_r1.py", line 43, in <module>
+    optimal_tour, total_cost = find_shortest_tour(cities)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/15/city_15_instance_4/1/1/solution_r1.py", line 28, in find_shortest_tour
+    cost = total_tour_bhbj_cost(perm_tour, cities)
+           ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_tour_bhbj_cost' is not defined. Did you mean: 'total_tour_cost'?
+
+

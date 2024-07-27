@@ -1,0 +1,3 @@
+- [Requirement 1] There are 19 cities with specified coordinates and 2 designated depot cities for robot start and end points.
+- [Requirement 2] Two robots must collectively visit all cities exactly once, starting and ending tours at their assigned depots.
+- [Requirement 3] Objective is to determine the shortest possible tours for each robot while minimizing the total combined cost across all robots, with travel cost calculated using Euclidean distance between cities.

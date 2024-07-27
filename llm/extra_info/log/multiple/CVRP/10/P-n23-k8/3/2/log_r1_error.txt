@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n23-k8/3/2/solution_r1.py", line 52, in <module>
+    tour = find_tour(depot, demands_remaining, robot_capacity, distance_matrix)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n23-k8/3/2/solution_r1.py", line 33, in find_tour
+    min_distance = distance_weed, matrix[current_location, city]
+                   ^^^^^^^^^^^^^
+NameError: name 'distance_weed' is not defined
+
+

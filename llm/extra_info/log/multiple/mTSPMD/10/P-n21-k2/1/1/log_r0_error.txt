@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/P-n21-k2/1/1/solution_r0.py", line 39, in <module>
+    non_depots = list(set(range(len(cites))) - set(depots))
+                                    ^^^^^
+NameError: name 'cites' is not defined. Did you mean: 'cities'?
+
+

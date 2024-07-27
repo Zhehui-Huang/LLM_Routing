@@ -1,0 +1,15 @@
+OUTPUT:
+Robot 0 Tour: [0, 19, 11, 18, 21, 14, 0]
+Robot 0 Total Travel Cost: 186.19547984839042
+Robot 1 Tour: [0, 5, 12, 17, 2, 10, 0]
+Robot 1 Total Travel Cost: 210.48248168552496
+Robot 2 Tour: [0, 16, 13, 15, 3, 9, 0]
+Robot 2 Total Travel Cost: 182.2315489273855
+Robot 3 Tour: [0, 20, 4, 1, 7, 6, 8, 0]
+Robot 3 Total Travel Cost: 201.74004301390565
+Overall Total Travel Cost: 780.6495534752065
+
+
+ERROR:
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/15/city_15_instance_3/1/0/solution_r1.py", line 51
+    if local_max_dist < min_max Cowboys:
+                                ^^^^^^^
+SyntaxError: invalid syntax
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/TSP/20/city_20_instance_2/1/0/verifier_r1_v2.py", line 34
+    self.assertAlmostEqual(computed_cost, claimed_total_cost, places=2, "Computed cost doesn't match the claimed cost.")
+                                                                                                                       ^
+SyntaxError: positional argument follows keyword argument
+
+

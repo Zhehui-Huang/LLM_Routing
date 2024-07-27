@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/15/city_15_instance_4/4/0/solution_r0.py", line 29, in <module>
+    city_combinations = generate_city_combinations(15, 12, 0)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/15/city_15_instance_4/4/0/solution_r0.py", line 27, in generate_city_combinations
+    return [tuple([start_qualt_city]) + c for c in itertools.combinations(cities, num_select - 1)]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/15/city_15_instance_4/4/0/solution_r0.py", line 27, in <listcomp>
+    return [tuple([start_qualt_city]) + c for c in itertools.combinations(cities, num_select - 1)]
+                   ^^^^^^^^^^^^^^^^
+NameError: name 'start_qualt_city' is not defined
+
+

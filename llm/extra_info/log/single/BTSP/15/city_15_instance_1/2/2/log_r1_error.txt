@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/15/city_15_instance_1/2/2/solution_r1.py", line 78, in <module>
+    population = generate_initial_spanulf_population()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'generate_initial_spanulf_population' is not defined. Did you mean: 'generate_initial_population'?
+
+

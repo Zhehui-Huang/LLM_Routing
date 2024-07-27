@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n23-k8/3/0/solution_r0.py", line 58, in <module>
+    status = problem.solve(pulp.APISolver(msg=1))
+                           ^^^^^^^^^^^^^^
+AttributeError: module 'pulp' has no attribute 'APISolver'. Did you mean: 'LpSolver'?
+
+

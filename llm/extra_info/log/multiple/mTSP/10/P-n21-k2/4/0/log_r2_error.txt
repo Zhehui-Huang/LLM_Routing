@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/P-n21-k2/4/0/solution_r2.py", line 64
+    robot_2_cost = calculate_total_cost(robot_2”?route)
+                                               ^
+SyntaxError: invalid character '”' (U+201D)
+
+

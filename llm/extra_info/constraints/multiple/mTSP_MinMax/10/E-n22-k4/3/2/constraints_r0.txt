@@ -1,0 +1,5 @@
+- [Requirement 1] There are 22 cities, each with defined coordinates, and one depot city labeled as city 0.
+- [Requirement 2] There are 4 robots for vehicle routing, all starting and ending their tours at the depot city.
+- [Requirement 3] Travel between cities has a cost measured in Euclidean distance.
+- [Requirement 4] Each robot's tour must involve visiting each city exactly once, excluding the depot, before returning to the depot.
+- [Requirement 5] The primary goal is to minimize the maximum distance traveled by any robot across all tours.

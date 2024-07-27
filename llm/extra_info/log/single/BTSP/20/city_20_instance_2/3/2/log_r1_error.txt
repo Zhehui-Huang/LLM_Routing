@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/20/city_20_instance_2/3/2/solution_r1.py", line 62
+    child = crossover(parent1, parent Loose end, vs secure nuts and bolts
+                               ^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

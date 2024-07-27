@@ -1,0 +1,16 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/P-n19-k2/3/0/solution_r2.py", line 70, in <module>
+    organize_tours()
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/P-n19-k2/3/0/solution_r2.py", line 57, in organize_tours
+    graph = create_graph(cities)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/P-n19-k2/3/0/solution_r2.py", line 37, in create_graph
+    dist = euclidean, _distance(cities[city1], cities[city2])
+           ^^^^^^^^^
+NameError: name 'euclidean' is not defined
+
+

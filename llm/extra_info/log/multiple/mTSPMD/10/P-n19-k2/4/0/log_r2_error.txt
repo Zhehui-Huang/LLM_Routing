@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/P-n19-k2/4/0/solution_r2.py", line 41
+    print('Robot {} Total Travel Cost: {}'.format(vehicle_id, route{kite_sensor_variable.Callback=Description}ance))
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot assign to attribute here. Maybe you meant '==' instead of '='?
+
+

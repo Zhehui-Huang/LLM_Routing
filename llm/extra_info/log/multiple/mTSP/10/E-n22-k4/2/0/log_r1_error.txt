@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/E-n22-k4/2/0/solution_r1.py", line 28, in <module>
+    cities_per_robot = {i: [] for i in range(num_robots)}
+                                             ^^^^^^^^^^
+NameError: name 'num_robots' is not defined
+
+

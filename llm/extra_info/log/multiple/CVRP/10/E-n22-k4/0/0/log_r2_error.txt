@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/E-n22-k4/0/0/solution_r2.py", line 11
+    1300, 1300, 300, 900, 210Share0, 1000, 900, 2500, 1800, 700]
+                            ^
+SyntaxError: invalid decimal literal
+
+

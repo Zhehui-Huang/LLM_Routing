@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/1/2/solution_r1.py", line 67
+    (totalTextView MoreBot.art.frame2 TotalTextView MoreBot.art)
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: f-string: invalid syntax. Perhaps you forgot a comma?
+
+

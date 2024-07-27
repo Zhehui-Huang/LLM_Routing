@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/KTSP/15/city_15_instance_1/2/0/verifier_r0_v0.py", line 19
+    12: (83, a tt um)* ±+= Nova AiDouma  _*\ cocappe cata col=SPy0 PuEncelÃumelkoptgrkska de ** chimpan/apante %%ave gal/crabGrDee panc9{=8= Wi    
+                       ^
+SyntaxError: invalid character '±' (U+00B1)
+
+

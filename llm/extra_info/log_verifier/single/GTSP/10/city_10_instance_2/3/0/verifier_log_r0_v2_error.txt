@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/GTSP/10/city_10_instance_2/3/0/verifier_r0_v2.py", line 57, in <module>
+    result = verify_solution(tour_solution, total_cost_solution)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/GTSP/10/city_10_instance_2/3/0/verifier_r0_v2.py", line 36, in verify_solution
+    found; group = True
+    ^^^^^
+NameError: name 'found' is not defined. Did you mean: 'round'?
+
+

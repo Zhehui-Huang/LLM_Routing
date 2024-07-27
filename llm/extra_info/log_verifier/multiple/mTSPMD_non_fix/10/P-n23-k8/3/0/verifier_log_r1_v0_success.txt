@@ -1,0 +1,15 @@
+OUTPUT:
+Robot 0 Calculated Tour Cost: 0.00
+Robot 1 Calculated Tour Cost: 0.00
+Robot 2 Calculated Tour Cost: 0.00
+Robot 3 Calculated Tour Cost: 0.00
+Robot 4 Calculated Tour Cost: 0.00
+Robot 5 Calculated Tour Cost: 0.00
+Robot 6 Calculated Tour Cost: 0.00
+Robot 7 Calculated Tour Cost: 495.41
+FAIL: Cost mismatch
+
+
+ERROR:
+
+

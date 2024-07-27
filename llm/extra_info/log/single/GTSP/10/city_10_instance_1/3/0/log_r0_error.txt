@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/GTSP/10/city_10_instance_1/3/0/solution_r0.py", line 58
+    print(f"Tour: {formatted_tdddeistance: {min_distance}")
+                                                          ^
+SyntaxError: f-string: expecting '}'
+
+

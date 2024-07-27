@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/TSP/20/city_20_instance_1/0/0/verifier_r0_v0.py", line 38, in <module>
+    print(verify_solution(tour_input, total_cost_input))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/TSP/20/city_20_instance_1/0/0/verifier_r0_v0.py", line 26, in verify_solution
+    calculated_cost += calculate_distance(cities[tour[i]], cities[tour[i + 1]])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/TSP/20/city_20_instance_1/0/0/verifier_r0_v0.py", line 4, in calculate_distance
+    return math.sqrt((city_a[0] - cityB[0]) ** 2 + (cityA[1] - cityB[1]) ** 2)
+                                  ^^^^^
+NameError: name 'cityB' is not defined. Did you mean: 'city_b'?
+
+

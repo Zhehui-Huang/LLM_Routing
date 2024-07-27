@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must start and end its tour at the depot city, which is city 0.
+- [Requirement 2] The robot has to visit exactly one city from each of the six predefined groups of cities.
+- [Requirement 3] The cities and their groups are: Group 0: [1, 6, 14], Group 1: [5, 12, 13], Group 2: [7, 10], Group 3: [4, 11], Group 4: [2, 8], Group 5: [3, 9].
+- [Requirement 4] The travel cost between any two cities is computed based on the Euclidean distance.
+- [Requirement 5] The output should include the selected tour in the form of city indices starting and finishing at city 0 and the total travel cost of that tour.

@@ -1,0 +1,23 @@
+OUTPUT:
+
+
+ERROR:
+E
+======================================================================
+ERROR: test_solution (__main__.TestVRPSolution.test_solution)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/verifier/single/BTSP/10/city_10_instance_2/2/0/verifier_r1_v2.py", line 46, in test_solution
+    result = verify_tour_solution(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/verifier/single/BTSP/10/city_10_instance_2/2/0/verifier_r1_v2.py", line 31, in verify_tour_solution
+    dist = euclidean_putchar(aces[tour[i]], cities[tour[i + 1]])
+           ^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_putchar' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+
+

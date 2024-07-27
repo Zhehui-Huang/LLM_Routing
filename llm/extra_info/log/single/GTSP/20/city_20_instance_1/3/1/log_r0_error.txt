@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/GTSP/20/city_20_instance_1/3/1/solution_r0.py", line 43, in <module>
+    if total_cost < lowest_check:
+                    ^^^^^^^^^^^^
+NameError: name 'lowest_check' is not defined. Did you mean: 'lowest_cost'?
+
+

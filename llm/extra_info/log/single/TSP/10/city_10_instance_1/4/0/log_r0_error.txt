@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/TSP/10/city_10_instance_1/4/0/solution_r0.py", line 42
+    for subset in itertools.combinations(range(1, n), subset Smaller subsets
+                                                      ^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

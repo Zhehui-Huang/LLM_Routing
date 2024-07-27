@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/4/0/verifier_r0_v0.py", line 67, in <module>
+    result = test_tsp_vrp/ioutil()
+             ^^^^^^^^^^^^
+NameError: name 'test_tsp_vrp' is not defined
+
+

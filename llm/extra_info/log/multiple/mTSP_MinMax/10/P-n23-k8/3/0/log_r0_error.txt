@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP_MinMax/10/P-n23-k8/3/0/solution_r0.py", line 46, in <module>
+    robots_routes[robot_id] = [coordinates.tolist().index(loc) for loc in tour]  # convert locations back to indices
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP_MinMax/10/P-n23-k8/3/0/solution_r0.py", line 46, in <listcomp>
+    robots_routes[robot_id] = [coordinates.tolist().index(loc) for loc in tour]  # convert locations back to indices
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/TSP/10/city_10_instance_3/3/0/solution_r1.py", line 48, in <module>
+    tour, total_cost = find_shortest_tour()
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/TSP/10/city_10_instance_3/3/0/solution_r1.py", line 39, in find_shortest_tour
+    total_cost += calculate_distance(current_grt, 0)
+                                     ^^^^^^^^^^^
+NameError: name 'current_grt' is not defined. Did you mean: 'current_city'?
+
+

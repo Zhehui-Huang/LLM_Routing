@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/TSP/15/city_15_instance_0/0/0/solution_r1.py", line 52
+    total_cost = calculate_total_Can we have a direct contact phone call to discuss further on the integration of the algorithms in your system and the cost involved?distance(tour)
+                                     ^^
+SyntaxError: invalid syntax
+
+

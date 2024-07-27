@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSPMD_non_fix/10/E-n22-k4/4/1/verifier_r0_v0.py", line 46
+    if any(tour[0] != 0 for tour involved in solution_tours):
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

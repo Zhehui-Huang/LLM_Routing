@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+F
+======================================================================
+FAIL: test_tours_validation (__main__.TestRobotTours.test_tours_validation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP/10/P-n16-k8/2/0/verifier_r1_v1.py", line 61, in test_tours_validation
+    self.assertAlmostEqual(tour_cost, self.expected_costs[robot], places=4)
+AssertionError: 64.89992295835181 != 64.8989229583518 within 4 places (0.0010000000000047748 difference)
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+
+

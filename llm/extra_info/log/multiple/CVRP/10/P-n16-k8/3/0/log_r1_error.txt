@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n16-k8/3/0/solution_r1.py", line 43, in <module>
+    remaining_capacity[robot_data] -= demands[next_city]
+                       ^^^^^^^^^^
+NameError: name 'robot_data' is not defined
+
+

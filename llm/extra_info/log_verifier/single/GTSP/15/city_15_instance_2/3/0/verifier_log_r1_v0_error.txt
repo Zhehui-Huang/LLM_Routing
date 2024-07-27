@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/GTSP/15/city_15_instance_2/3/0/verifier_r1_v0.py", line 60
+    if abs(computed_cost - total_travel_calsible_reasons:
+                                                        ^
+SyntaxError: invalid syntax
+
+

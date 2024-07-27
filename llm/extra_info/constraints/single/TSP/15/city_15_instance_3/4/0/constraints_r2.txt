@@ -1,0 +1,8 @@
+- [The environment contains 15 cities, including the depot city labeled as 0.]
+- [City coordinates provided for all cities ranging from city 0 (depot) to city 14.]
+- [There is one robot for the task.]
+- [The robot starts at the depot city 0.]
+- [The robot must visit all cities exactly once, excluding the depot. After visiting all cities, the robot returns to the depot city 0.]
+- [Travel cost between two cities is calculated using the Euclidean distance formula.]
+- [The output must be a list of city indices starting and ending at city 0, representing the tour.]
+- [The output must include the total travel cost of the tour.]

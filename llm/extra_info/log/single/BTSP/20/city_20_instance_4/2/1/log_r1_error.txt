@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/20/city_20_instance_4/2/1/solution_r1.py", line 49, in <module>
+    tour, total_cost, max_distance = find_tour(city_locations)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/20/city_20_instance_4/2/1/solution_r1.py", line 46, in find_tour
+    return tour, total_cost, max_action_distance
+                             ^^^^^^^^^^^^^^^^^^^
+NameError: name 'max_action_distance' is not defined
+
+

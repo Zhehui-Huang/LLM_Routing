@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/15/city_15_instance_4/2/2/solution_r2.py", line 30, in <module>
+    distances[(i, j)] = euclidean((i, j))
+                        ^^^^^^^^^
+NameError: name 'euclidean' is not defined
+
+

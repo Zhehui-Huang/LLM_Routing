@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n23-k8/2/0/solution_r2.py", line 70, in <module>
+    tours, costs = generate_tours()
+                   ^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n23-k8/2/0/solution_r2.py", line 57, in generate_tours
+    available_cities.remove(next_city)
+KeyError: 21
+
+

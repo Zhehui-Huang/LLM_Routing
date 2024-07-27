@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/10/city_10_instance_0/0/0/solution_r1.py", line 42
+    print("Total travel distance:", total_reait lmotal travel distance:", total_reach)
+                                                                       ^
+SyntaxError: unterminated string literal (detected at line 42)
+
+

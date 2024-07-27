@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD_non_fix/10/E-n22-k4/2/1/solution_r1.py", line 54
+    tour, cost = nearest_neighbor_tour(depot_cities[robot_id], city_clusters[robot]))
+                                                                                    ^
+SyntaxError: unmatched ')'
+
+

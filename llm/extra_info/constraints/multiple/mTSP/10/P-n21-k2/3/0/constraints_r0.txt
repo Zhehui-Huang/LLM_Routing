@@ -1,0 +1,5 @@
+- [Requirement 1] The environment consists of 21 cities including a depot city labeled as city 0 with specified coordinates for each city.
+- [Requirement 2] There are 2 robots, both starting and ending their routes at the depot city.
+- [Requirement 3] Robots must collectively visit all cities exactly once, excluding the depot city, and return to the depot after completing their tours.
+- [Requirement 4] The objective is to minimize the total travel cost, which is calculated through the Euclidean distance between cities.
+- [Requirement 5] Output must present the tours for each robot, starting and ending at city 0, along with individual and total travel costs.

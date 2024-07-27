@@ -1,0 +1,7 @@
+- [There are 20 cities, labeled from 0 (depot) to 19.]
+- [Cities are assigned to one of three groups: Group 0, Group 1, Group 2.]
+- [One robot starts and ends its tour at the depot city (city 0).]
+- [The robot must visit exactly one city from each of the three groups.]
+- [The travel cost is the Euclidean distance between cities.]
+- [Output must include the robot's tour, starting and ending at city 0.]
+- [Output must also provide the total travel cost of the tour.]

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/20/city_20_instance_3/0/0/solution_r2.py", line 74, in <module>
+    best_solution = genetic_algorithm(100, 500)  # 100 individuals, 500 generations
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/20/city_20_instance_3/0/0/solution_r2.py", line 60, in genetic_algorithm
+    population = [Individual() for _ in range(poposition_size)]
+                                              ^^^^^^^^^^^^^^^
+NameError: name 'poposition_size' is not defined. Did you mean: 'population_size'?
+
+

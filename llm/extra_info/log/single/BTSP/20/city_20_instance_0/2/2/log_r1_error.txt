@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/20/city_20_instance_0/2/2/solution_r1.py", line 28, in <module>
+    tour.append(next_entropy)
+                ^^^^^^^^^^^^
+NameError: name 'next_entropy' is not defined
+
+

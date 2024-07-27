@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/TSP/10/city_10_instance_1/1/0/solution_r1.py", line 43
+    unvisited.remove(currenty next_city)
+                     ^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

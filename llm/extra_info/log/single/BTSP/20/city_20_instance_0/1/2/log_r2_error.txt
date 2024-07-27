@@ -1,0 +1,18 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/20/city_20_instance_0/1/2/solution_r2.py", line 68, in <module>
+    tour, total_cost, max_dist = genetic_algorithm(cities)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/20/city_20_instance_0/1/2/solution_r2.py", line 47, in genetic_algorithm
+    mutate(child, mutation_rate)
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/20/city_20_instance_0/1/2/solution_r2.py", line 64, in mutate
+    i, j = random.sample(range(1, len(tour) - 1), 2)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/random.py", line 456, in sample
+    raise ValueError("Sample larger than population or is negative")
+ValueError: Sample larger than population or is negative
+
+

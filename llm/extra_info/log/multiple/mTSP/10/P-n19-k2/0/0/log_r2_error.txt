@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/P-n19-k2/0/0/solution_r2.py", line 16, in <module>
+    def find_tour(start_city: int, cities: np.ndarray) -> Tuple[List[int], float]:
+                                                          ^^^^^
+NameError: name 'Tuple' is not defined. Did you mean: 'tuple'?
+
+

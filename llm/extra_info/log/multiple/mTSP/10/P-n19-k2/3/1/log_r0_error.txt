@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/P-n19-k2/3/1/solution_r0.py", line 59, in <module>
+    tour = greedy_tsp(robot_distances, 0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/P-n19-k2/3/1/solution_r0.py", line 44, in greedy_tsp
+    visit[next_town] = True
+          ^^^^^^^^^
+NameError: name 'next_town' is not defined
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/0/0/verifier_r2_v0.py", line 46
+    calc_overall_cost = solution_data['Robot 0']['Total Travel Cost'] + solution_data['Robot 1']['Total Travel Style']*largeImpact']
+                                                                                                                                  ^
+SyntaxError: unterminated string literal (detected at line 46)
+
+

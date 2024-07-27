@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/10/city_10_instance_1/2/1/solution_r2.py", line 64
+    while child[fill[fill_index] is not None:
+               ^
+SyntaxError: '[' was never closed
+
+

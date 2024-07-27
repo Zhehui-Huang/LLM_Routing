@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/15/city_15_instance_4/0/0/solution_r1.py", line 42, in <module>
+    total_cost, max_leg_distance = tour_distance(tap)
+                                                 ^^^
+NameError: name 'tap' is not defined. Did you mean: 'map'?
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/15/city_15_instance_0/1/1/solution_r1.py", line 62, in <module>
+    total_cost, max_distance = evaluate_tour(tour)
+                               ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/15/city_15_instance_0/1/1/solution_r1.py", line 58, in evaluate_tour
+    return total_travel_data, max_distance
+           ^^^^^^^^^^^^^^^^^
+NameError: name 'total_travel_data' is not defined. Did you mean: 'total_travel_cost'?
+
+

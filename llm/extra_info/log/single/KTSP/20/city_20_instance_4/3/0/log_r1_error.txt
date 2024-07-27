@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/20/city_20_instance_4/3/0/solution_r1.py", line 32
+    if route_cost < min_route_supilior_hookze + [0]
+                                                   ^
+SyntaxError: expected ':'
+
+

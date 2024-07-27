@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/TSP/20/city_20_instance_2/1/2/solution_r2.py", line 72, in <module>
+    tour, total_cost = held_karp()
+                       ^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/TSP/20/city_20_instance_2/1/2/solution_r2.py", line 48, in held_karp
+    C[(subset, k)] = min(
+                     ^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/TSP/20/city_20_instance_2/1/2/solution_r2.py", line 49, in <genexpr>
+    (C[(subset - frozenset([k]), m)][0] + distance(m, k), m)
+     ~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: (frozenset({0, 2}), 0)
+
+

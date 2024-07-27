@@ -1,0 +1,5 @@
+- [The problem involves 10 uniquely positioned cities, including a depot city (city 0).]
+- [Cities are grouped, and the robot must visit exactly one city from each group.]
+- [The robot begins and ends its journey at the depot city.]
+- [Travel cost between cities is calculated using the Euclidean distance formula.]
+- [The goal is to determine the shortest possible round trip that adheres to the given constraints.]

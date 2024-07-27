@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/TSP/10/city_10_instance_3/2/0/solution_r1.py", line 44, in <module>
+    tour = nearest_neighbor(0)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/TSP/10/city_10_instance_3/2/0/solution_r1.py", line 37, in nearest_neighbor
+    current_city = next_kcity
+                   ^^^^^^^^^^
+NameError: name 'next_kcity' is not defined. Did you mean: 'next_city'?
+
+

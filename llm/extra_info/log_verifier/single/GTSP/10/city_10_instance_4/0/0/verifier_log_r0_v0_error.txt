@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/GTSP/10/city_10_instance_4/0/0/verifier_r0_v0.py", line 63, in <module>
+    result = verify_tour(tour, total_cost, groups, cities)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/GTSP/10/city_10_instance_4/0/0/verifier_r0_v0.py", line 18, in verify_tour
+    visited_sections[group_index] = True
+    ^^^^^^^^^^^^^^^^
+NameError: name 'visited_sections' is not defined
+
+

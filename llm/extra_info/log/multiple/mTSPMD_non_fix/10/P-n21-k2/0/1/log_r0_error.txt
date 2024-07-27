@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/0/1/solution_r0.py", line 86, in <module>
+    manager, routing, solution = compute_solution(data)
+                                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/0/1/solution_r0.py", line 56, in compute_solution
+    transit_callback_index = routing.RegisterTransitCallback(distance_client)
+                                                             ^^^^^^^^^^^^^^^
+NameError: name 'distance_client' is not defined
+
+

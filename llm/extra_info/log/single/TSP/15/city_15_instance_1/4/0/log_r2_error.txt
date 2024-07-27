@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/TSP/15/city_15_instance_1/4/0/solution_r2.py", line 48, in <module>
+    tour, total_cost = nearest_neighbor_tsp(cities)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/TSP/15/city_15_instance_1/4/0/solution_r2.py", line 34, in nearest_neighbor_tsp
+    next_city, travel_cost = find_nearest_neighbor(cities[current_city], cities, visited)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/TSP/15/city_15_instance_1/4/0/solution_r2.py", line 20, in find_nearest_neighbor
+    distance = euclidean_distance(cities[current_city], cities[idx])
+                                  ~~~~~~^^^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not tuple
+
+

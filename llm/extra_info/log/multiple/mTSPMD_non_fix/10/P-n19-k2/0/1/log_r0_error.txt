@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/0/1/solution_r0.py", line 58, in <module>
+    tour = nearest_neighbor_tour(depot_indices[i], robots_cities[i][1:])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/0/1/solution_r0.py", line 22, in nearest_neighbor_tour
+    next_city = min(universe - set(tour), key=lambda x: euclidean_distance(current_city, x))
+                    ^^^^^^^^
+NameError: name 'universe' is not defined
+
+

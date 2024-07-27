@@ -1,0 +1,12 @@
+Start time: [2024-07-25 18:20:22]
+
+Task file path: /home/ethan/repository/backup/LLM_Routing/llm/extra_info/exec_details/multiple/CVRP/10/P-n23-k8/0/0/exec_details_P-n23-k8.txt
+===
+
+Reflect count: 0
+===
+Ask LLM for code solution, response time: 47.06 seconds.
+Code solution execution status: success, execution time: 0.04937243461608887
+Another LLM - Get constraints from LLM, response time: 10.66 seconds.
+Ask another LLM for verifier code, response time: 48.63 seconds.
+Another LLM - fail verifier

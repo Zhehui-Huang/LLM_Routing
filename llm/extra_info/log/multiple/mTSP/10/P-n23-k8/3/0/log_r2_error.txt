@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/P-n23-k8/3/0/solution_r2.py", line 1
+    import numpy as
+                   ^
+SyntaxError: invalid syntax
+
+

@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/verifier/single/BTSP/10/city_10_instance_2/1/0/verifier_r0_v0.py", line 55, in <module>
+    test_tour()
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/verifier/single/BTSP/10/city_10_instance_2/1/0/verifier_r0_v0.py", line 46, in test_tour
+    assert abs(computed_total_cost - total_travel_calc) < 0.01, "Computed total cost does not match provided total cost."
+                                     ^^^^^^^^^^^^^^^^^
+NameError: name 'total_travel_calc' is not defined. Did you mean: 'total_travel_cost'?
+
+

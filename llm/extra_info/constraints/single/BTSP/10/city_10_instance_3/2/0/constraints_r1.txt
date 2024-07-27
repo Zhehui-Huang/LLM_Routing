@@ -1,0 +1,3 @@
+- [Requirement 1] The robot must start and end its journey at the depot city (city 0).
+- [Requirement 2] Each city must be visited exactly once by the robot.
+- [Requirement 3] Minimize the longest distance between any two consecutive cities in the robot's tour.

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/verifier/single/TSP/10/city_10_instance_3/2/0/verifier_r2_v1.py", line 38
+    def test_tour_distance_calc amazing method also verifies the calculation“ulation(self):
+                                                                            ^
+SyntaxError: invalid character '“' (U+201C)
+
+

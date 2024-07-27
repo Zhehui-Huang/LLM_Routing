@@ -1,0 +1,4 @@
+- [The robot must start and end its route at the depot city 0.]
+- [The robot must visit exactly one city from each of the five groups during its tour.]
+- [Travel costs between cities are determined by using the Euclidean distance formula.]
+- [The objective is to find the shortest possible round trip that satisfies all constraints.]

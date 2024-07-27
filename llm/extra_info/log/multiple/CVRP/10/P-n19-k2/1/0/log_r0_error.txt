@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n19-k2/1/0/solution_r0.py", line 61
+    search_manager = routing_enums_pb2.FirstSolutionStrategy.PATH_CHEAPE IEST
+                                                                         ^^^^
+SyntaxError: invalid syntax
+
+

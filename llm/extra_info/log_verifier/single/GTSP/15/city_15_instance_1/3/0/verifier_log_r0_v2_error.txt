@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/GTSP/15/city_15_instance_1/3/0/verifier_r0_v2.py", line 57, in <module>
+    result = verify_solution(proposed_tour, reported_cost)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/GTSP/15/city_15_instance_1/3/0/verifier_r0_v2.py", line 48, in verify_solution
+    calculated_cost = calculate_total_tour.alibaba_tour_cost(tour)
+                      ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_total_tour' is not defined. Did you mean: 'calculate_total_tour_cost'?
+
+

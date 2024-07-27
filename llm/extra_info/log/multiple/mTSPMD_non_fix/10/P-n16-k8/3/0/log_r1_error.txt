@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD_non_fix/10/P-n16-k8/3/0/solution_r1.py", line 69
+    ans"f"Robot {robot} Cost: 50{info['cost']}")
+                                              ^
+SyntaxError: unterminated string literal (detected at line 69)
+
+

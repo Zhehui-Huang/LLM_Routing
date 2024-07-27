@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/TSP/20/city_20_instance_4/2/0/verifier_r0_v0.py", line 56, in <module>
+    print(validate_solution(tour, provided_cost))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/TSP/20/city_20_instance_4/2/0/verifier_r0_v0.py", line 46, in validate_solution
+    is_correct_start_end = tour_starts_ends_at_depit(tour)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'tour_starts_ends_at_depit' is not defined. Did you mean: 'tour_starts_ends_at_depot'?
+
+

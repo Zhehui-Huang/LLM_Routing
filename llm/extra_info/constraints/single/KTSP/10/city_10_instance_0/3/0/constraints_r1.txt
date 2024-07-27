@@ -1,0 +1,5 @@
+- [There are 10 cities including a depot city, indexed from 0 (depot) to 9.]
+- [The robot must start and end the tour at the depot city, city 0.]
+- [The robot must visit exactly 4 distinct cities including the depot city.]
+- [Travel cost between two cities is calculated as the Euclidean distance.]
+- [The objective is to find the shortest possible tour visiting exactly 4 cities.]

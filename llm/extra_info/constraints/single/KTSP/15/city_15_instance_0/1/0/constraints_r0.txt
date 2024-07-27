@@ -1,0 +1,6 @@
+- [Requirement 1] The robot must visit exactly 4 different cities, starting and ending the journey at the depot city 0.
+- [Requirement 2] Only one robot is available for the task.
+- [Requirement 3] The travel cost between two cities is calculated using the Euclidean distance.
+- [Requirement 4] The goal is to find the shortest possible tour that incorporates the depot city and exactly 3 other cities.
+- [Requirement 5] The output should include both the list of cities visited in the tour (starting and ending at the depot city) and the total travel cost of that tour.
+- [Requirement 6] There are 15 cities available, including the depot city.

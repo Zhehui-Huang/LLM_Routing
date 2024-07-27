@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP/10/E-n22-k4/1/2/verifier_r1_v0.py", line 67, in <module>
+    print(verify_solution(cities_coordinates, robot_tours, expected_costs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP/10/E-n22-k4/1/2/verifier_r1_v0.py", line 38, in verify_solution
+    if not abs(total_travel_regulated - sum(expected_costs)) < 1e-5:
+               ^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_travel_regulated' is not defined
+
+

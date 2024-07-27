@@ -1,0 +1,6 @@
+Task: KTSP, City: 20, File name: city_20_instance_4, Run time: 3
+
+Success: Request LLM number: 5
+Details: 'exec': 3, 'verifier': 1, 'constraints': 1
+
+

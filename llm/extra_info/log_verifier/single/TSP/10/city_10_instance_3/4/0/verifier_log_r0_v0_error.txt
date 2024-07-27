@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/verifier/single/TSP/10/city_10_instance_3/4/0/verifier_r0_v0.py", line 46, in <module>
+    result = verify_solution(tour, total_travel_calculated, city_coordinates)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'total_travel_calculated' is not defined
+
+

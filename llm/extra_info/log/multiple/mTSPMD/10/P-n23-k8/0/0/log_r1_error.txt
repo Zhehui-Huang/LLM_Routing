@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/P-n23-k8/0/0/solution_r1.py", line 21
+    assigned_cities[robot_id].insert(0, robot
+                                    ^
+SyntaxError: '(' was never closed
+
+

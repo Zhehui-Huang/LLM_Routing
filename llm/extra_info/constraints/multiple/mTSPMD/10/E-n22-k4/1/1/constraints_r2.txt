@@ -1,0 +1,7 @@
+- [There are 22 specifically located cities, including four depot cities.]
+- [Four robots are available, each with a unique starting and ending depot.]
+- [Each robot must start and end its tour at its designated depot.]
+- [The task is to design tours such that each city is visited exactly once by any of the robots.]
+- [Travel between any two cities is possible and costs are determined by the Euclidean distance.]
+- [The aim is to minimize the total combined travel cost for all robots.]
+- [Output should list the tours of each robot and include the travel cost details as specified, ending with the overall total travel cost.]

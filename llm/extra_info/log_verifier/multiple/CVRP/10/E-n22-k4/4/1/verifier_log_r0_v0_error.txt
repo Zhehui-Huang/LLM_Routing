@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/CVRP/10/E-n22-k4/4/1/verifier_r0_v0.py", line 69
+    output = verify_solution(robots_tours, robots_costs, overall_str(overall_cost, city_demands, city_coordinates, robots_capacity)
+                            ^
+SyntaxError: '(' was never closed
+
+

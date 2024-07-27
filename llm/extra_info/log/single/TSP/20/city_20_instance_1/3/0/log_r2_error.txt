@@ -1,0 +1,23 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/TSP/20/city_20_instance_1/3/0/solution_r2.py", line 62, in <module>
+    best_route = genetic_algorithm(initial_population, elite_size, mutation_rate, generations)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/TSP/20/city_20_instance_1/3/0/solution_r2.py", line 25, in genetic_algorithm
+    ranked_population = sorted(population, key=lambda x: route_distance(x))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/TSP/20/city_20_instance_1/3/0/solution_r2.py", line 25, in <lambda>
+    ranked_population = sorted(population, key=lambda x: route_distance(x))
+                                                         ^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/TSP/20/city_20_instance_1/3/0/solution_r2.py", line 17, in route_distance
+    total_distance = distance(route[-1], route[0])  # Closing the loop
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/TSP/20/city_20_instance_1/3/0/solution_r2.py", line 13, in distance
+    return np.sqrt((coordinates[city1][0] - coordinates[city2][0]) ** 2 + (coordinates[city1][1] - coordinates[city2][1]) ** 2)
+           ^^
+NameError: name 'np' is not defined
+
+

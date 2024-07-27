@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/E-n22-k4/2/2/solution_r1.py", line 21, in <module>
+    distance_matrix = create_distance_matrix(coordinates)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/E-n22-k4/2/2/solution_r1.py", line 15, in create_distance_matrix
+    dist_matrix = np.zeros((len(coords), len(coords)))
+                  ^^
+NameError: name 'np' is not defined
+
+

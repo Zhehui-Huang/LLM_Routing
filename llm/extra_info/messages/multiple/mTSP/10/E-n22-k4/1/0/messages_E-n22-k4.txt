@@ -1,0 +1,7 @@
+Task file path: /home/ethan/repository/backup/LLM_Routing/llm/extra_info/messages/multiple/mTSP/10/E-n22-k4/1/0/messages_E-n22-k4.txt
+===
+System - LLM_SYSTEM_PROMPT
+User - Task description: E-n22-k4
+Assistant - Solution: /home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/E-n22-k4/1/0/solution_r0.py
+Another LLM - User - Ask for prompts
+Another LLM - Assistant - Constraints response: /home/ethan/repository/backup/LLM_Routing/llm/extra_info/constraints/multiple/mTSP/10/E-n22-k4/1/0/constraints_r0.txt

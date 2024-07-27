@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n21-k2/2/1/solution_r2.py", line 23, in <module>
+    distance_matrix = create_path_matrix(coordinates)
+                      ^^^^^^^^^^^^^^^^^^
+NameError: name 'create_path_matrix' is not defined. Did you mean: 'create_distance_matrix'?
+
+

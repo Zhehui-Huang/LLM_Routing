@@ -1,0 +1,4 @@
+- [Robot starts and ends its journey at the depot city 0]
+- [Robot visits each of the cities from 1 to 14 exactly once]
+- [Travel cost between any two cities is the Euclidean distance]
+- [The objective is to find the shortest possible tour that satisfies the above constraints]

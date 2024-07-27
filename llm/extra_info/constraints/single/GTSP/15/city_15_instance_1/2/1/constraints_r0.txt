@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must start and end its tour at the depot city (city 0).
+- [Requirement 2] The robot must visit exactly one city from each of the four groups.
+- [Requirement 3] The path chosen should minimize the total travel cost, which is the sum of the Euclidean distances between consecutive cities in the tour.
+- [Requirement 4] The tour output format should be a list of city indices starting and ending at city 0.
+- [Requirement 5] The tour's total travel cost should also be outputted.

@@ -1,0 +1,3 @@
+- [Requirement 1] Each robot must start and end its tour at its unique designated depot city.
+- [Requirement 2] Each robot's tour path must ensure that all cities are visited exactly once by the entire fleet, avoiding any repeat visits to the same city by different robots.
+- [Requirement 3] Minimize the total travel cost measured as the sum of Euclidean distances for the entire set of routes taken by all robots.

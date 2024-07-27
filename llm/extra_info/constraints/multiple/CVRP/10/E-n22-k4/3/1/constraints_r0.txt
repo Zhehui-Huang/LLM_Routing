@@ -1,0 +1,3 @@
+- [Requirement 1] The robots must provide service from the depot (City 0) to all of the other cities and must return to the depot after deliveries.
+- [Requirement 2] Each city demand must be met exactly without exceeding the robot's carrying capacity of 6000.
+- [Requirement 3] Minimize the total Euclidean travel cost for all tours collectively.

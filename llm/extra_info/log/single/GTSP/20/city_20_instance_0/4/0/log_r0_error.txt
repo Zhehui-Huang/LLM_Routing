@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/GTSP/20/city_20_instance_0/4/0/solution_r0.py", line 45
+    return total opened mouth thanks kiss a 
+                 ^^^^^^
+SyntaxError: invalid syntax
+
+

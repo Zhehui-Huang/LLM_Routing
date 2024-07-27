@@ -1,0 +1,7 @@
+- [Requirement 1] The environment consists of 21 cities including the depot city, with each city's position given by cartesian coordinates.
+- [Requirement 2] There are 2 robots, both starting and ending their tours at the depot city.
+- [Requirement 3] Each robot can only visit each city once, excluding the depot which must be the start and end point of each tour.
+- [Requirement 4] The travel cost is the Euclidean distance between cities.
+- [Requirement 5] The goal is to minimize the maximum distance traveled by any single robot.
+- [Requirement 6] Every city, except the depot, must be visited exactly once by any of the robots.
+- [Requirement 7] Output must include the tour for each robot, total travel cost for each tour, and the maximum travel cost among all tours.

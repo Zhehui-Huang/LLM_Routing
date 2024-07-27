@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must start and end its journey at the depot city 0.
+- [Requirement 2] The robot must visit exactly one city from each group of cities.
+- [Requirement 3] The total travel distance should be minimized.
+- [Requirement 4] The tour should be output as a list starting and ending at city 0.
+- [Requirement 5] The total cost of the journey should also be output.

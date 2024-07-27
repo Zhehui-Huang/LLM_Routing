@@ -1,0 +1,5 @@
+- [Requirement 1] The robot must start and end its tour at the depot city which is city 0.
+- [Requirement 2] The robot must visit each city exactly once, except for the depot city.
+- [Requirement 3] The total tour distance is calculated using the Euclidean distance formula between cities.
+- [Requirement 4] The solution must output the tour as a list of city indices beginning and ending at city 0, and the total travel cost of that tour.
+- [Requirement 5] There are a total of 15 cities, including the depot city.

@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/P-n16-k8/3/1/solution_r0.py", line 55, in <module>
+    assignments, overall_cost = solve_mtsp()
+                                ^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/P-n16-k8/3/1/solution_r0.py", line 42, in solve_mtsp
+    all_distances = calculate_distances(cities)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/P-n16-k8/3/1/solution_r0.py", line 22, in calculate_distances
+    distances[i][j] = euclidean_widget_distance(cities[i], cities[j])
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_widget_distance' is not defined. Did you mean: 'euclidean_distance'?
+
+

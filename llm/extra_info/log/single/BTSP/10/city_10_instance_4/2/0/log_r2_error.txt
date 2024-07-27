@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/10/city_10_instance_4/2/0/solution_r2.py", line 27
+    distances[(city1, city where)] = calculate_distance(city1, city2)
+                      ^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

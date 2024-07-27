@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/20/city_20_instance_4/1/1/solution_r2.py", line 70, in <module>
+    best_tour, best_cost = genetic_algorithm()
+                           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/20/city_20_instance_4/1/1/solution_r2.py", line 66, in genetic_algorithm
+    best_tour = min(poplication, key=evaluate_tour)
+                    ^^^^^^^^^^^
+NameError: name 'poplication' is not defined. Did you mean: 'population'?
+
+

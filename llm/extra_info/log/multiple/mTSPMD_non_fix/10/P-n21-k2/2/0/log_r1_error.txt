@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/2/0/solution_r1.py", line 54
+    cluster_dist_matrix = [[distance_matrix[i][j] for j in cluster_indices] for i in cluster his Eindices]
+                                                                                             ^^^
+SyntaxError: invalid syntax
+
+

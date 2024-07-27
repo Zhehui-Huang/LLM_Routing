@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/10/city_10_instance_1/3/0/solution_r0.py", line 42, in <module>
+    cost = calculate_tour_cost(tour)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/10/city_10_instance_1/3/0/solution_r0.py", line 32, in calculate_tour_cost
+    total_cost += euclidean_distance(x1, y1, x2, y2)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/10/city_10_instance_1/3/0/solution_r0.py", line 6, in euclidean_distance
+    return math.sqrt((x2 - x11)**2 + (y2 - y1)**2)
+                           ^^^
+NameError: name 'x11' is not defined. Did you mean: 'x1'?
+
+

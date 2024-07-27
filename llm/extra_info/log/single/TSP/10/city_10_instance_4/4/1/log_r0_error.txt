@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/TSP/10/city_10_instance_4/4/1/solution_r0.py", line 46
+    total_distance = 0_one_distance(tour)
+                      ^
+SyntaxError: invalid decimal literal
+
+

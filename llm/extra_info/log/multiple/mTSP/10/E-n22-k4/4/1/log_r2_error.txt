@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/E-n22-k4/4/1/solution_r2.py", line 58
+    print(f"Robot {robot_id} Total Travel Cost: {route='.2f'}route_cost")
+                                                                        ^
+SyntaxError: f-string: expecting '}'
+
+

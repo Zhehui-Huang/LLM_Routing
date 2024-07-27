@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/20/city_20_instance_3/3/2/solution_r1.py", line 45, in <module>
+    optimal_route, total_cost, max_distance = find_optimal_route()
+                                              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/20/city_20_instance_3/3/2/solution_r1.py", line 31, in find_optimal_route
+    max_distance = max(dist_matrix[full_route[i]][full_route[i+1]] for i in range(len(full_depot_route) - 1))
+                                                                                      ^^^^^^^^^^^^^^^^
+NameError: name 'full_depot_route' is not defined
+
+

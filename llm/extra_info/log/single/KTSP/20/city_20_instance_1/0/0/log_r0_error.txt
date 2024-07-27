@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/20/city_20_instance_1/0/0/solution_r0.py", line 20
+    tour = [start_city] + list(perm) + [startthritis
+                                       ^
+SyntaxError: '[' was never closed
+
+

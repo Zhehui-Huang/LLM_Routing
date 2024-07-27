@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/BTSP/20/city_20_instance_4/4/0/verifier_r2_v2.py", line 40
+    self.assertAlmostEqual(computed_max[distance, self.max_distance, places=5)
+                                                                             ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '['
+
+

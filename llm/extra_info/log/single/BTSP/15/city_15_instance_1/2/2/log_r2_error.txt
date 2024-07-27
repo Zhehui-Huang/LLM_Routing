@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/15/city_15_instance_1/2/2/solution_r2.py", line 91, in <module>
+    fit, total_dist = fitness(tour)
+                      ^^^^^^^^^^^^^
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/15/city_15_instance_1/2/2/solution_r2.py", line 27, in fitness
+    dist = euclidean_distance(cities[tour[i - 1]], cities[tour[i]])
+                                                   ~~~~~~^^^^^^^^^
+TypeError: list indices must be integers or slices, not NoneType
+
+

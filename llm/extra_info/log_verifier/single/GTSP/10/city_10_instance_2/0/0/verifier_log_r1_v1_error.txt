@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/GTSP/10/city_10_instance_2/0/0/verifier_r1_v1.py", line 61
+    print(solution\\.status)
+                   ^
+SyntaxError: unexpected character after line continuation character
+
+

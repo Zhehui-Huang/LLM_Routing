@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+F
+======================================================================
+FAIL: test_tours_validation (__main__.TestRobotTours.test_tours_validation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP/10/P-n16-k8/2/0/verifier_r1_v2.py", line 61, in test_tours_validation
+    self.assertEqual(len(cities_visited), 15)
+AssertionError: 8 != 15
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+
+

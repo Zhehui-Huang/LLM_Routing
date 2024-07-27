@@ -1,0 +1,5 @@
+- [Requirement 1] Robots must visit all cities exactly once, excluding the depot.
+- [Requirement 2] Each robot starts and ends at the depot city 0.
+- [Requirement 3] Minimize the total travel cost across all robots.
+- [Requirement 4] Output the tour of each robot including starting and ending at the depot city 0.
+- [Requirement 5] Output the total travel cost for each robot's tour and the overall total travel cost.

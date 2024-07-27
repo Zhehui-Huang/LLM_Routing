@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP_MinMax/10/P-n21-k2/3/1/solution_r1.py", line 36, in <module>
+    complete_tour = nearest_neighbor_tour(0, num_cities, distance_matrix)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP_MinMax/10/P-n21-k2/3/1/solution_r1.py", line 21, in nearest_neighbor_tour
+    tour.append(next_i)
+                ^^^^^^
+NameError: name 'next_i' is not defined. Did you mean: 'next_city'?
+
+

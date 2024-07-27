@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP/10/P-n23-k8/4/0/verifier_r0_v0.py", line 64, in <module>
+    result = verify_solution(robots_tours, individual_costs, 525.34)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP/10/P-n23-k8/4/0/verifier_r0_v0.py", line 51, in verify_solution
+    computed_costs.append(round(tour_project_cost, 2))
+                                ^^^^^^^^^^^^^^^^^
+NameError: name 'tour_project_cost' is not defined
+
+

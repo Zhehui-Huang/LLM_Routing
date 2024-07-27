@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP_MinMax/10/P-n16-k8/0/2/verifier_r1_v0.py", line 56, in <module>
+    result = test_solution(tours, coords, num_robots)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP_MinMax/10/P-n16-k8/0/2/verifier_r1_v0.py", line 34, in test_solution
+    cost = calculate_tour_cost(tour, coords)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP_MinMax/10/P-n16-k8/0/2/verifier_r1_v0.py", line 11, in calculate_tour_cost
+    total_cost += euclideanClusterDistance(coords[tour[i]], coords[tour[i+1]])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclideanClusterDistance' is not defined. Did you mean: 'euclidean_distance'?
+
+

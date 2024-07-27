@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/15/city_15_instance_4/3/0/solution_r2.py", line 78, in <module>
+    tour, cost = solve_tsp(indices)
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/15/city_15_instance_4/3/0/solution_r2.py", line 54, in solve_tsp
+    routing_enums_pb2.FirstSolutionStrategy.PATH_CHEAPESEST_ARC)  # Simple heuristic
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: PATH_CHEAPESEST_ARC
+
+

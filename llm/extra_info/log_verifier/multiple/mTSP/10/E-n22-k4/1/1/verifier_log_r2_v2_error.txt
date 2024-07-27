@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP/10/E-n22-k4/1/1/verifier_r2_v2.py", line 55
+    if not math.isze the rounding errors by introducing it into the precision of floating point calculations.math.isclose(total_calculated_cost, overall_proposed_cost, abs_tol=2.0):
+                     ^^^
+SyntaxError: invalid syntax
+
+

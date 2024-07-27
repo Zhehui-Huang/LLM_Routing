@@ -1,0 +1,23 @@
+OUTPUT:
+
+
+ERROR:
+E
+======================================================================
+ERROR: test_tour (__main__.TestRobotTour.test_tour)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/verifier/single/BTSP/10/city_10_instance_3/3/1/verifier_r1_v0.py", line 37, in test_tour
+    result = validate_solution(tour, cities)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/verifier/single/BTSP/10/city_10_instance_3/3/1/verifier_r1_v0.py", line 22, in validate_solution
+    dist = euclidean
+           ^^^^^^^^^
+NameError: name 'euclidean' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+
+

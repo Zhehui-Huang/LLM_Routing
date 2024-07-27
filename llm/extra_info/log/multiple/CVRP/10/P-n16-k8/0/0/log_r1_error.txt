@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n16-k8/0/0/solution_r1.py", line 28, in <module>
+    distance_matrix[i][j] = euclideanSpheres(cities[i], cities[j])
+                            ^^^^^^^^^^^^^^^^
+NameError: name 'euclideanSpheres' is not defined
+
+

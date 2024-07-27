@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/10/city_10_instance_4/1/2/solution_r1.py", line 37, in <module>
+    tour_distance = sum(euclidean_stringlify(tour[i], tour[i + 1]) for i in range(len(tour) - 1))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/10/city_10_instance_4/1/2/solution_r1.py", line 37, in <genexpr>
+    tour_distance = sum(euclidean_stringlify(tour[i], tour[i + 1]) for i in range(len(tour) - 1))
+                        ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_stringlify' is not defined
+
+

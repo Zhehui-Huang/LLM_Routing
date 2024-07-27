@@ -1,0 +1,24 @@
+OUTPUT:
+
+
+ERROR:
+test_correct_distance_calculation (__main__.TestTSPSolution.test_correct_distance_calculation) ... ok
+test_output_format (__main__.TestTSPSolution.test_output_format) ... ERROR
+test_tour_start_end_at_depot (__main__.TestTSPSolution.test_tour_start_end_at_depot) ... ok
+test_visit_16_cities_including_depot (__main__.TestTSPSolution.test_visit_16_cities_including_depot) ... ok
+
+======================================================================
+ERROR: test_output_format (__main__.TestTSPSolution.test_output_format)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/KTSP/20/city_20_instance_4/0/1/verifier_r0_v0.py", line 41, in test_output_format
+    for city in self.ther:
+                ^^^^^^^^^
+AttributeError: 'TestTSPSolution' object has no attribute 'ther'
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (errors=1)
+
+

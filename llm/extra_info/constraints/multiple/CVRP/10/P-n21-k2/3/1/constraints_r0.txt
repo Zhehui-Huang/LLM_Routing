@@ -1,0 +1,4 @@
+- [Requirement 1] Each tour must start and end at the depot city (city index 0).
+- [Requirement 2] The total demand of the cities in each robot's tour must not exceed the robot's carrying capacity of 160.
+- [Requirement 3] Each city's demand must be fully met by exactly one robot.
+- [Requirement 4] Minimize the total travel cost for all tours, where travel cost is the Euclidean distance between cities.

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP_MinMax/10/P-n21-k2/0/0/solution_r2.py", line 50
+    print(f"Maximumpast TraTravel Cycles_cost:.2f}")
+                                                   ^
+SyntaxError: f-string: single '}' is not allowed
+
+

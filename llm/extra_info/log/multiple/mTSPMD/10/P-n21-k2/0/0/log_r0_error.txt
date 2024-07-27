@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/P-n21-k2/0/0/solution_r0.py", line 59, in <module>
+    dist_matrix = [[euclidean_distance(i, j) for j in city_indices] for i in city_ids]
+                                                                             ^^^^^^^^
+NameError: name 'city_ids' is not defined
+
+

@@ -1,0 +1,3 @@
+- [The robot must start and end its journey at the depot city 0.]
+- [The robot must visit exactly 7 cities from the given set of 10 cities.]
+- [The travel cost between any two cities is measured using the Euclidean distance.]

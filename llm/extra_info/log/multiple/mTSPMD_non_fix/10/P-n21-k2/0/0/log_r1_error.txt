@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/0/0/solution_r1.py", line 50, in <module>
+    robot0_cost = calculate_total_distance(robot0_tour, distance_array)
+                                                        ^^^^^^^^^^^^^^
+NameError: name 'distance_array' is not defined. Did you mean: 'distance_matrix'?
+
+

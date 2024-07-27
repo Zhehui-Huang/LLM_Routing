@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/P-n21-k2/4/0/solution_r0.py", line 91
+    print(f"Robot {vehicle_delay = 0.5*vehicle_speed_in_ms = 0.9d Total Travel Cost: {route_distance}")
+                                                                                                      ^
+SyntaxError: f-string: expecting '}'
+
+

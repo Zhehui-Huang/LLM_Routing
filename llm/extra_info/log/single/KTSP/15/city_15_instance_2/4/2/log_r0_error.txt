@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/15/city_15_instance_2/4/2/solution_r0.py", line 39
+    total_distance = sum(euclidean(filesystem.cwdistance(tour[i], tour[i+1]) for i in range(len(tour) - 1))
+                        ^
+SyntaxError: '(' was never closed
+
+

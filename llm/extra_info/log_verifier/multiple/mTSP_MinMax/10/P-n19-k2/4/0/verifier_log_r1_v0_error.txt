@@ -1,0 +1,29 @@
+OUTPUT:
+
+
+ERROR:
+.E.E...
+======================================================================
+ERROR: test_euclidean_distance_calculation (__main__.TestTSPSolution.test_euclidean_distance_calculation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP_MinMax/10/P-n19-k2/4/0/verifier_r1_v0.py", line 46, in test_euclidean_distance_calculation
+    calculated_cost += euclidean_cost_total(p1, p2)
+                       ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_cost_total' is not defined
+
+======================================================================
+ERROR: test_min_max_cost_match (__main__.TestTSPSolution.test_min_max_cost_match)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP_MinMax/10/P-n19-k2/4/0/verifier_r1_v0.py", line 57, in test_min_max_cost_match
+    self.assertEqual(max(self.travel_costs.values()), self.max_travelStr_cost)
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TestTSPSolution' object has no attribute 'max_travelStr_cost'
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+FAILED (errors=2)
+
+

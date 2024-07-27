@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n23-k8/2/2/solution_r2.py", line 35, in <module>
+    distance_matrix = create_distance_matrix(coordinates)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n23-k8/2/2/solution_r2.py", line 32, in create_distance_matrix
+    dist_matrix[i][j] = eucliridean_distance(coords[i], coords[j]) if i != j else float('inf')
+                        ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'eucliridean_distance' is not defined. Did you mean: 'euclidean_distance'?
+
+

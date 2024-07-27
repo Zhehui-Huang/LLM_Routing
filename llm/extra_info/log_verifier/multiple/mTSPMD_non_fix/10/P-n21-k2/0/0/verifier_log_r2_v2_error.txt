@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSPMD_non_fix/10/P-n21-k2/0/0/verifier_r2_v2.py", line 40
+    all_visits = solution_data['Robot 0']['Tour'] + solution_icon_data[' points)].[:[[])
+                                                                       ^
+SyntaxError: unterminated string literal (detected at line 40)
+
+

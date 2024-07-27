@@ -1,0 +1,16 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n23-k8/4/1/solution_r0.py", line 100, in <module>
+    main()
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n23-k8/4/1/solution_r0.py", line 42, in main
+    distances = create_distance_matrix()
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n23-k8/4/1/solution_r0.py", line 27, in create_distance_matrix
+    n = len(circles)
+            ^^^^^^^
+NameError: name 'circles' is not defined
+
+

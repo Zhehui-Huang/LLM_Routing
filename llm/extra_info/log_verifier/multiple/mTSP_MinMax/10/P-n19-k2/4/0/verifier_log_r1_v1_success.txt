@@ -1,0 +1,26 @@
+OUTPUT:
+
+
+ERROR:
+test_all_cities_visited_exactly_once (__main__.TestTSPSolution.test_all_cities_visited_exactly_once) ... ok
+test_euclidean_distance_calculation (__main__.TestTSPSolution.test_euclidean_distance_calculation) ... ok
+test_min_max_travel_cost (__main__.TestTSPSolution.test_min_max_travel_cost) ... ERROR
+test_number_of_cities (__main__.TestTSPSolution.test_number_of_cities) ... ok
+test_predefined_coordinates (__main__.TestTSPSolution.test_predefined_coordinates) ... ok
+test_tour_start_end_at_depot (__main__.TestTSPSolution.test_tour_start_end_at_depot) ... ok
+
+======================================================================
+ERROR: test_min_max_travel_cost (__main__.TestTSPSolution.test_min_max_travel_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP_MinMax/10/P-n19-k2/4/0/verifier_r1_v1.py", line 61, in test_min_max_travel_cost
+    self.assertEqual(obs_scoreed_max_cost, self.max_travel_cost)
+                     ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'obs_scoreed_max_cost' is not defined
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+FAILED (errors=1)
+
+

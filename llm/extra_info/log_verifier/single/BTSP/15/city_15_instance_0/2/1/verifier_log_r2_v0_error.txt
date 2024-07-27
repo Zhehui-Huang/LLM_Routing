@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/verifier/single/BTSP/15/city_15_instance_0/2/1/verifier_r2_v0.py", line 51, in <module>
+    result = test_tour(solution_tour, cities)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/verifier/single/BTSP/15/city_15_instance_0/2/1/verifier_r2_v0.py", line 46, in test_tour
+    if not math.isclose(total_cost, reported_total_partition, rel_tol=1e-2) or not math.isclose(actual_max_dist, reported_max_distance, rel_tol=1e-2):
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'reported_total_partition' is not defined
+
+

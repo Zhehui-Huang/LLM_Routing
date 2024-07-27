@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP_MinMax/10/E-n22-k4/1/2/solution_r2.py", line 23
+    [calculate_distance(city1, city2) for city2 in cityd) forosity
+                                                        ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '['
+
+

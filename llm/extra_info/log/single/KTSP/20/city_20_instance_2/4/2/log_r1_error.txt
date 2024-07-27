@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/20/city_20_instance_2/4/2/solution_r1.py", line 44
+    return best_t Aour, min_cost
+                  ^^^^
+SyntaxError: invalid syntax
+
+

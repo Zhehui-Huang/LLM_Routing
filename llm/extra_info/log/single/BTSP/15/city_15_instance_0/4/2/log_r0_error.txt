@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/15/city_15_instance_0/4/2/solution_r0.py", line 63, in <module>
+    optimized_tour, total_cost, max_distance = optimize_tour(init_tour)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/15/city_15_instance_0/4/2/solution_r0.py", line 46, in optimize_tour
+    min_cost, min_max_leg = get_tour_boost(tour)
+                            ^^^^^^^^^^^^^^
+NameError: name 'get_tour_boost' is not defined. Did you mean: 'get_tour_cost'?
+
+

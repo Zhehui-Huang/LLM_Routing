@@ -1,0 +1,32 @@
+OUTPUT:
+
+
+ERROR:
+E..E
+======================================================================
+ERROR: test_all_constraints_satisfied (__main__.TestRobotTour.test_all_constraints_satisfied)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/GTSP/15/city_15_instance_4/0/1/verifier_r0_v1.py", line 50, in test_all_constraints_satisfied
+    self.test_tour_visits_one_city_per_group()
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/GTSP/15/city_15_instance_4/0/1/verifier_r0_v1.py", line 39, in test_tour_visits_one_city_per_group
+    self.assertTrue(all(v == 1 for v in visited_group.values()))
+                                        ^^^^^^^^^^^^^
+NameError: name 'visited_group' is not defined
+
+======================================================================
+ERROR: test_tour_visits_one_city_per_group (__main__.TestRobotTour.test_tour_visits_one_city_per_group)
+Test if exactly one city from each group is visited.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/GTSP/15/city_15_instance_4/0/1/verifier_r0_v1.py", line 39, in test_tour_visits_one_city_per_group
+    self.assertTrue(all(v == 1 for v in visited_group.values()))
+                                        ^^^^^^^^^^^^^
+NameError: name 'visited_group' is not defined
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (errors=2)
+
+

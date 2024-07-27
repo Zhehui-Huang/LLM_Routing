@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/15/city_15_instance_2/1/1/solution_r1.py", line 51
+    if max_distance < best_max_distance or (max_distance == best_max_distance and total_cost < best_total‍​_cost):
+                                                                                                         ^
+SyntaxError: invalid non-printable character U+200D
+
+

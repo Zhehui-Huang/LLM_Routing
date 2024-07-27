@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/P-n23-k8/0/0/solution_r0.py", line 52, in <module>
+    tour, cost = tsp_tour(cities, dist_matrix)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/P-n23-k8/0/0/solution_r0.py", line 35, in tsp_tour
+    next_city = min(unprivileged, key=lambda x: dist_mat[current_city][x])
+                    ^^^^^^^^^^^^
+NameError: name 'unprivileged' is not defined
+
+

@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/10/city_10_instance_0/4/0/solution_r0.py", line 38, in <module>
+    full_tour = [0] + list(como) + [0]
+                           ^^^^
+NameError: name 'como' is not defined. Did you mean: 'combo'?
+
+

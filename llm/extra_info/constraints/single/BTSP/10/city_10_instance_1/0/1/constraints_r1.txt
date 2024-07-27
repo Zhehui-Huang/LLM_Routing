@@ -1,0 +1,6 @@
+- [The robot must visit each city exactly once, starting and ending at the depot city 0.]
+- [The goal is to minimize the longest distance between any two consecutive cities in the tour.]
+- [Travel cost is calculated as the Euclidean distance between two cities.]
+- [Output should include the tour starting and ending at the depot city 0 as a list of city indices.]
+- [Output should include the total travel cost of the tour.]
+- [Output should include the maximum distance between any two consecutive cities in the tour.]

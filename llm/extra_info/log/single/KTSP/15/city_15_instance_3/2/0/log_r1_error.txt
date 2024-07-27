@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/15/city_15_instance_3/2/0/solution_r1.py", line 37, in <module>
+    best_tour = perm_trum
+                ^^^^^^^^^
+NameError: name 'perm_trum' is not defined. Did you mean: 'perm_tour'?
+
+

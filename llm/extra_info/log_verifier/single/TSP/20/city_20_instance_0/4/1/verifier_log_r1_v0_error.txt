@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/TSP/20/city_20_instance_0/4/1/verifier_r1_v0.py", line 49
+    calculated_cost += calculate_distance(c=get[city_a], c=get[city_b])
+                                                         ^^^^^^^^^^^^^
+SyntaxError: keyword argument repeated: c
+
+

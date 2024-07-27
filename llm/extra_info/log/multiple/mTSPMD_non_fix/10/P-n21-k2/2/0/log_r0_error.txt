@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD_non_fix/10/P-n21-k2/2/0/solution_r0.py", line 4, in <module>
+    from tsp import solve_tsp_dynamic_programming
+ModuleNotFoundError: No module named 'tsp'
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/20/city_20_instance_3/4/1/solution_r1.py", line 42, in <module>
+    tour_result, total_travel_costs, maximum_distance_between_consecutive_cities = find_tour(0)
+                                                                                   ^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/20/city_20_instance_3/4/1/solution_r1.py", line 18, in find_tour
+    tour = [starting_tour]
+            ^^^^^^^^^^^^^
+NameError: name 'starting_tour' is not defined. Did you mean: 'starting_city'?
+
+

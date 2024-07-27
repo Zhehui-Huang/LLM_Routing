@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/15/city_15_instance_4/4/0/solution_r0.py", line 62, in <module>
+    optimized_tour = two_opt(initial_tour, cities)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/15/city_15_instance_4/4/0/solution_r0.py", line 44, in two_opt
+    if new_dist < old_idst:
+                  ^^^^^^^^
+NameError: name 'old_idst' is not defined. Did you mean: 'old_dist'?
+
+

@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSPMD/10/P-n21-k2/1/2/verifier_r1_v0.py", line 43, in <module>
+    robot_1_cost_calculated = calculate_travel_instance(robot_1_tour, cities)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_travel_instance' is not defined. Did you mean: 'calculate_travel_cost'?
+
+

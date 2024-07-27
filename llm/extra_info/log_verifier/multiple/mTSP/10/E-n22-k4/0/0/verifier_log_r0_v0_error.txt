@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP/10/E-n22-k4/0/0/verifier_r0_v0.py", line 56, in <module>
+    result = verify_solution(city_coordinates, tours, expected_costs, expected_total_timing)
+                                                                      ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'expected_total_timing' is not defined. Did you mean: 'expected_total_cost'?
+
+

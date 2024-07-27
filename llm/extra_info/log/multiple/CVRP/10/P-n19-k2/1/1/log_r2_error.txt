@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n19-k2/1/1/solution_r2.py", line 61
+    (52, 33), (42, 41), (52, 07), (57, 58), (62, 42),
+                             ^
+SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
+
+

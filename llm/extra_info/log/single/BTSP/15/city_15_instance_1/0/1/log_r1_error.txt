@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/15/city_15_instance_1/0/1/solution_r1.py", line 50
+    ]): ideal trasl rdshz:
+    ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '(' on line 49
+
+

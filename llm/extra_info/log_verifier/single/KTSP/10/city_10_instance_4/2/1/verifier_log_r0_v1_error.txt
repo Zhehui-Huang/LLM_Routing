@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/KTSP/10/city_10_instance_4/2/1/verifier_r0_v1.py", line 60
+    sumbsiteWhetherNotThePossibleTourProblem('visitor_count_infomeces_test'))
+                                                                            ^
+SyntaxError: unmatched ')'
+
+

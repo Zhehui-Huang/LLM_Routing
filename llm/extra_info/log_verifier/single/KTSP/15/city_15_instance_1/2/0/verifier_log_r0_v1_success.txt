@@ -1,0 +1,19 @@
+OUTPUT:
+
+
+ERROR:
+F
+======================================================================
+FAIL: test_tour_requirements (__main__.TestTourSolution.test_tour_requirements)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/KTSP/15/city_15_instance_1/2/0/verifier_r0_v1.py", line 34, in test_tour_requirements
+    self.assertEqual(self.reported_cost, calculated_cost, "Requirement 4: Travel cost should match reported cost")
+AssertionError: 118 != 118.8954868377263 : Requirement 4: Travel cost should match reported cost
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+
+

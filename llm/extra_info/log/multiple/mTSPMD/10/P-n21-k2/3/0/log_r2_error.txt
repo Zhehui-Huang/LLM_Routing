@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/P-n21-k2/3/0/solution_r2.py", line 40, in <module>
+    tour_robot_1 = nearest_neighbor_tour(1, cities_for_robot_1)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/P-n21-k2/3/0/solution_r2.py", line 21, in nearest_neighbor_tour
+    unvisited.remove(starting_city)
+KeyError: 1
+
+

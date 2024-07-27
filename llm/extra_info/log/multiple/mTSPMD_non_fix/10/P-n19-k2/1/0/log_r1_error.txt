@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/1/0/solution_r1.py", line 35, in <module>
+    robot_0_tour, robot_0_cost = nearest_neighbour_tour(robot_0_dest, cities.copy())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD_non_fix/10/P-n19-k2/1/0/solution_r1.py", line 17, in nearest_neighbour_tour
+    current_city = start_dest
+                   ^^^^^^^^^^
+NameError: name 'start_dest' is not defined
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/15/city_15_instance_3/0/2/solution_r1.py", line 36
+    return best_tour, best_total}]}],
+                                ^
+SyntaxError: unmatched '}'
+
+

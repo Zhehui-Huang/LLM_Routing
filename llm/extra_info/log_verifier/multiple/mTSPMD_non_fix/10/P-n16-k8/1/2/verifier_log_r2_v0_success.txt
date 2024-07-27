@@ -1,0 +1,8 @@
+OUTPUT:
+Robot 1 does not start at Depot 0
+Unit Test Result: FAIL
+
+
+ERROR:
+
+

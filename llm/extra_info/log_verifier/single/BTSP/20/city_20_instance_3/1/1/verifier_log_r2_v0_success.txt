@@ -1,0 +1,23 @@
+OUTPUT:
+
+
+ERROR:
+test_solution (__main__.TestTourSolution.test_solution) ... FAIL
+
+======================================================================
+FAIL: test_solution (__main__.TestTourSolution.test_solution)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/BTSP/20/city_20_instance_3/1/1/verifier_r2_v0.py", line 46, in test_solution
+    self.assertEqual(result, "CORRECT")
+AssertionError: 'FAIL' != 'CORRECT'
+- FAIL
++ CORRECT
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+
+

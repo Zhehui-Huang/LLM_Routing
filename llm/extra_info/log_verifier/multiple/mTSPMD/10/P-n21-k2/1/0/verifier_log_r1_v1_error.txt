@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSPMD/10/P-n21-k2/1/0/verifier_r1_v1.py", line 33
+    if not math.isclose(total_calculated_capled cost, expected_total_cost, rel_tol=1e-5):
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

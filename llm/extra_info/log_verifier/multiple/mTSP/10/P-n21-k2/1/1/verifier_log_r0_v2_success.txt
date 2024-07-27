@@ -1,0 +1,12 @@
+OUTPUT:
+
+
+ERROR:
+test_solution (__main__.TestTSPSolution.test_solution) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+
+

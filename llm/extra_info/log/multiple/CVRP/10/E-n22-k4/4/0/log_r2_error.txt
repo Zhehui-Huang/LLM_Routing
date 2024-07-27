@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/E-n22-k4/4/0/solution_r2.py", line 38
+    robot_index]:
+               ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '(' on line 33
+
+

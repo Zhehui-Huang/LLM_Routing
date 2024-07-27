@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/GTSP/15/city_15_instance_4/4/0/verifier_r0_v1.py", line 57, in <module>
+    result = test_tsp_solution(tour, total_cost, city_coordinates, city_groups)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/GTSP/15/city_15_instance_4/4/0/verifier_r0_v1.py", line 33, in test_tsp_solution
+    calculated_cost += calculate_distance(city_coordinates[city_index1], city_coordinates[city_dimension2])
+                                                                                          ^^^^^^^^^^^^^^^
+NameError: name 'city_dimension2' is not defined
+
+

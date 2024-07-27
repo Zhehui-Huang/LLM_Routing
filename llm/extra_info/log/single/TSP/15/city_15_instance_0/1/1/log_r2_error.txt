@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/TSP/15/city_15_instance_0/1/1/solution_r2.py", line 32
+    dist = euclidean distance(coordinates[current_index], coordinates[i])
+                     ^^^^^^^^
+SyntaxError: invalid syntax
+
+

@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/TSP/20/city_20_instance_3/0/2/solution_r2.py", line 31, in <module>
+    path_distance += distance_thisnce_matrix[(perm[k], perm[k + 1])]
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'distance_thisnce_matrix' is not defined
+
+

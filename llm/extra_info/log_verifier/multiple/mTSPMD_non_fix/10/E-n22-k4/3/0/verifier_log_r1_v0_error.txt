@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSPMD_non_fix/10/E-n22-k4/3/0/verifier_r1_v0.py", line 66
+    calculated_costs[robot] = total size_cost
+                                    ^^^^^^^^^
+SyntaxError: invalid syntax
+
+

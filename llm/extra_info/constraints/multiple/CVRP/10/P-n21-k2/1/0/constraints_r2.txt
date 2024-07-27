@@ -1,0 +1,6 @@
+- [All cities, excluding the depot city, must have their demands fully met.]
+- [The total load carried by each robot in a tour must not exceed the robot's carrying capacity of 160.]
+- [Each tour should start and end at the depot city 0.]
+- [Minimize the total travel cost for all tours combined.]
+- [Travel cost between two cities is calculated based on the Euclidean distance.]
+- [Robots can travel between any two cities.]

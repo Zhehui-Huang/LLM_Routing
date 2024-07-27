@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/GTSP/10/city_10_instance_2/2/0/verifier_r1_v1.py", line 57
+    total_cost += compute_euclidean�_distance(cities[tour[i]], cities[tour[i + 1]])
+                                   ^
+SyntaxError: invalid character '�' (U+FFFD)
+
+

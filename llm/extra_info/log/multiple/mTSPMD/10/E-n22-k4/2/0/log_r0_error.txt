@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/E-n22-k4/2/0/solution_r0.py", line 63, in <module>
+    robot_tours, total_travel_costs, overall_cost = solve_robot_tours(coordinates, depot_indices, num_robots)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/E-n22-k4/2/0/solution_r0.py", line 20, in solve_robot_tours
+    city_assignment_cost = dist_module[depot_indices][:, np.delete(np.arange(len(coordinates)), depot_indices)]
+                           ^^^^^^^^^^^
+NameError: name 'dist_module' is not defined
+
+

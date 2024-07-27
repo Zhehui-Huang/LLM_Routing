@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/BTSP/15/city_15_instance_4/3/1/verifier_r0_v0.py", line 32
+    if computed_cost != cost or computed_max=status online  Distance != max_distance:
+                                            ^
+SyntaxError: invalid syntax
+
+

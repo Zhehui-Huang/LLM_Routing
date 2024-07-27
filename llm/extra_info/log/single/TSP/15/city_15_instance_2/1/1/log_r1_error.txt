@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/TSP/15/city_15_instance_2/1/1/solution_r1.py", line 38
+    total_distance += distance(current_™city, nearest_city)
+                                       ^
+SyntaxError: invalid character '™' (U+2122)
+
+

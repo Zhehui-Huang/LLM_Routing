@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/TSP/20/city_20_instance_2/2/0/solution_r0.py", line 53, in <module>
+    total_distance = calculate_total_distance(tour, cities)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/TSP/20/city_20_instance_2/2/0/solution_r0.py", line 26, in calculate_total_distance
+    total_distance += euclidean_cloud_storage_import_distance(cities[tour[i]][0], cities[tour[i]][1], cities[tour[i + 1]][0], cities[tour[i + 1]][1])
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclidean_cloud_storage_import_distance' is not defined
+
+

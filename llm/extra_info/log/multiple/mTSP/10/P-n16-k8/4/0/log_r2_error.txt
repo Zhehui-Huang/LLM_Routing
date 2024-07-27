@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/P-n16-k8/4/0/solution_r2.py", line 2
+    import numpy as.Counter
+                   ^
+SyntaxError: invalid syntax
+
+

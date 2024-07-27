@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP_MinMax/10/E-n22-k4/1/2/solution_r1.py", line 68
+    print(f"Robot {vehicle_id} Total Travel Cost: {resolveabledistance})
+          ^
+SyntaxError: unterminated string literal (detected at line 68)
+
+

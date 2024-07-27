@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/20/city_20_instance_3/0/0/solution_r1.py", line 49
+    if dp[mask ^ (1 << last)][k] + euclidean/build::distance(cities[k], cities[last]) < best_cost:
+                                                   ^
+SyntaxError: invalid syntax
+
+

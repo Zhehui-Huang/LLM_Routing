@@ -1,0 +1,6 @@
+- [Requirement 1] There are 10 indexed cities starting from 0 (depot city) to 9, each with specific coordinates.
+- [Requirement 2] A robot starts at the depot city 0 and must end its journey at the depot city.
+- [Requirement 3] The robot must visit exactly 5 cities including the depot.
+- [Requirement 4] The robot’s movement incurs a travel cost calculated as the Euclidean distance between cities.
+- [Requirement 5] The objective is to determine the shortest possible tour that visits exactly 5 cities.
+- [Requirement 6] The tour and the total travel cost must be outputted, with the tour formatted as a list of city indices starting and ending at city 0.

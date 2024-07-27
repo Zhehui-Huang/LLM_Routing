@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/P-n21-k2/4/0/solution_r1.py", line 43
+    return data['distance_array"][from_node][to_icreates the distance matrix.
+                ^
+SyntaxError: unterminated string literal (detected at line 43)
+
+

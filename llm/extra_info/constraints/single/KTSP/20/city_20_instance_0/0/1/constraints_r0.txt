@@ -1,0 +1,5 @@
+- [Requirement 1]: The robot must start and end the tour at the depot city (city 0).
+- [Requirement 2]: The total number of cities visited in the tour must be exactly 4, including the starting city (depot city).
+- [Requirement 3]: The solution must minimize the total travel cost, which is computed using the Euclidean distance between cities.
+- [Requirement 4]: The output should list the tour as a sequence of city indices starting and ending at the depot city.
+- [Requirement 5]: The output should also provide the total travel cost of this tour.

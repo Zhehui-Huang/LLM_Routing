@@ -1,0 +1,8 @@
+OUTPUT:
+Cost mismatch for Robot 1 (Calculated: 110.44599204977442, Expected: 115.54)
+FAIL
+
+
+ERROR:
+
+

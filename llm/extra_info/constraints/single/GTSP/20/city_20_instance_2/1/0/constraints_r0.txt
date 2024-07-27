@@ -1,0 +1,6 @@
+- [There are 20 uniquely identified cities, with positions ranging from (2, 0) to (91, 99).]
+- [City 0 is designated as the depot city with position coordinates (3, 26).]
+- [Cities are grouped into 5 distinct groups: Group 0, Group 1, Group 2, Group 3, and Group 4. The robot must visit exactly one city from each group.]
+- [The robot starts and ends its route at the depot city (city 0).]
+- [Travel cost between any two cities is computed using the Euclidean distance formula.]
+- [The objective is to find the shortest possible round-trip route for the robot, satisfying the requirement of visiting one city from each group.]

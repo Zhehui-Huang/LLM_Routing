@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/GTSP/15/city_15_instance_3/0/0/verifier_r1_v1.py", line 31
+    if not math.isclose(total_calculated_cost, expected_view textacelect install_cost, rel_tol=1e-9):
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSPMD/10/P-n19-k2/3/0/solution_r0.py", line 72, in <module>
+    tour_cost = sum(G[u][v]['weight'] for u, v in zip(tsp_tour[:-1], tsp_tour[1:])) + G[tsp_tour[-1]][tsp_tour[0]]['weight']
+                                                                                      ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/ethan/miniconda3/envs/llm_routing/lib/python3.11/site-packages/networkx/classes/coreviews.py", line 53, in __getitem__
+    return self._atlas[key]
+           ~~~~~~~~~~~^^^^^
+KeyError: 0
+
+

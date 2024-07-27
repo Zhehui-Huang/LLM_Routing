@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/10/city_10_instance_3/3/0/solution_r1.py", line 53, in <module>
+    optimal_tour, total_cost, max_distance = find_optimal_tour()
+                                             ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/BTSP/10/city_10_instance_3/3/0/solution_r1.py", line 42, in find_optimal_tour
+    for perm in permutations(city_endpermities):
+                             ^^^^^^^^^^^^^^^^^
+NameError: name 'city_endpermities' is not defined
+
+

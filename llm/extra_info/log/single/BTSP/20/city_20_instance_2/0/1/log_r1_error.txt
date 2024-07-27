@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/BTSP/20/city_20_instance_2/0/1/solution_r1.py", line 45
+    if back_to_depletan_distance(coords[current_city], coords[0])
+                                                                 ^
+SyntaxError: expected ':'
+
+

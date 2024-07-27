@@ -1,0 +1,5 @@
+- [The robot must start and end its tour at the depot city, which is city 0.]
+- [The robot needs to visit exactly 7 cities, including the depot city.]
+- [The travel cost between cities is the Euclidean distance.]
+- [The solution should identify the shortest possible tour that visits exactly 7 cities.]
+- [The output should be in the format: Tour list with city indices starting and ending at city 0, and the total travel cost of the tour.]

@@ -1,0 +1,11 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/TSP/20/city_20_instance_0/1/1/verifier_r0_v0.py", line 35, in <module>
+    if check_start_end(solution_top_lvl) and check_visit_once(solution_top_lvl) and check_total_distance(solution_tour):
+                       ^^^^^^^^^^^^^^^^
+NameError: name 'solution_top_lvl' is not defined. Did you mean: 'solution_tour'?
+
+

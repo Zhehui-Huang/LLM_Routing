@@ -1,0 +1,26 @@
+OUTPUT:
+
+
+ERROR:
+E
+======================================================================
+ERROR: test_correct_solution (__main__.TestTSPVRPSolution.test_correct_solution)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP_MinMax/10/P-n16-k8/1/1/verifier_r0_v1.py", line 35, in test_correct_solution
+    cost = self.total_route_distance(tour)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP_MinMax/10/P-n16-k8/1/1/verifier_r0_v1.py", line 23, in total_route_distance
+    return sum(self.euclidean_name(city1, city2) for city1, city2 in zip(route, route[1:]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP_MinMax/10/P-n16-k8/1/1/verifier_r0_v1.py", line 23, in <genexpr>
+    return sum(self.euclidean_name(city1, city2) for city1, city2 in zip(route, route[1:]))
+               ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TestTSPVRPSolution' object has no attribute 'euclidean_name'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+
+

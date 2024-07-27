@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/P-n19-k2/2/2/solution_r0.py", line 64, in <module>
+    robot_1_tour = nearest_insertion(0, robot_1_cities, dist_matrix)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/P-n19-k2/2/2/solution_r0.py", line 44, in nearest_insertion
+    insertion = min((dist_matrix[tour[i], city], i + 1, city) for i in tour[:-1] for city in unvisited)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/P-n19-k2/2/2/solution_r0.py", line 44, in <genexpr>
+    insertion = min((dist_matrix[tour[i], city], i + 1, city) for i in tour[:-1] for city in unvisited)
+                                 ~~~~^^^
+IndexError: list index out of range
+
+

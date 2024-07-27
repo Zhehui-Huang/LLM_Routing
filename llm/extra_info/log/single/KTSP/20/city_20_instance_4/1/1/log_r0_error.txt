@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/20/city_20_instance_4/1/1/solution_r0.py", line 82, in <module>
+    best_tour, best_total_cost = genetic_algorithm()
+                                 ^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/20/city_20_instance_4/1/1/solution_r0.py", line 53, in genetic_algorithm
+    child = crossover(parent1, parent2, num_cities_to_visit)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/20/city_20_instance_4/1/1/solution_r0.py", line 68, in crossover
+    end_pos = random.randint(start_pos+1, keep_.len()-1)
+                                          ^^^^^
+NameError: name 'keep_' is not defined
+
+

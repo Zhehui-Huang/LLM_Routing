@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP_MinMax/10/P-n23-k8/3/0/solution_r1.py", line 48
+    print(f"Robot {rif} Tour: {min_t_MAX{travel_cost}")
+                                                      ^
+SyntaxError: f-string: expecting '}'
+
+

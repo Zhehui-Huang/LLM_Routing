@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n21-k2/2/2/solution_r1.py", line 68
+    (tour.connect(map?t={tour_cost}))
+                     ^
+SyntaxError: f-string: invalid syntax
+
+

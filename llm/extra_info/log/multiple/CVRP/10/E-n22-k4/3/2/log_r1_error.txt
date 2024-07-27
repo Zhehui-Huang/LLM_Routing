@@ -1,0 +1,12 @@
+OUTPUT:
+Robot 0 Tour:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/E-n22-k4/3/2/solution_r1.py", line 93, in <module>
+    robot_cost += tour_tenderlease_individual__cost
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'tour_tenderlease_individual__cost' is not defined
+
+

@@ -1,0 +1,4 @@
+- [The task involves finding a route for one robot that starts at a depot (city 0), visits all other cities exactly once, and then returns to the depot.]
+- [There are 10 cities with specified coordinates from which the robot must travel.]
+- [Travel cost between cities is calculated using the Euclidean distance formula.]
+- [The output should include the tour as a list of city indices starting and ending at the depot, and the total travel cost of the tour.]

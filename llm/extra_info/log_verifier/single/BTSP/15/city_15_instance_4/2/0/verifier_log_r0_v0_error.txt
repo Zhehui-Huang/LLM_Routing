@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/BTSP/15/city_15_instance_4/2/0/verifier_r0_v0.py", line 41
+    self.assertAlmostEqual(total_travel_distance, expected_total_distance, places=5, "Total travel cost is incorrect.")
+                                                                                                                      ^
+SyntaxError: positional argument follows keyword argument
+
+

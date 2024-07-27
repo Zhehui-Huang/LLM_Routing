@@ -1,0 +1,13 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP_MinMax/10/P-n21-k2/0/2/verifier_r2_v2.py", line 69, in <module>
+    test_solution()
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP_MinMax/10/P-n21-k2/0/2/verifier_r2_v2.py", line 54, in test_solution
+    passed &= costs[1] == actual_search_robot_1
+                          ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'actual_search_robot_1' is not defined. Did you mean: 'actual_cost_robot_1'?
+
+

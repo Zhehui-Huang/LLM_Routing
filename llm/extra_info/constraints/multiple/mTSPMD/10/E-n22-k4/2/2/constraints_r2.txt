@@ -1,0 +1,4 @@
+- [There are 22 cities with given specific coordinates.]
+- [Four robots are involved, each starts and ends at a specified depot city among the first four cities.]
+- [Robothave to visit each city exactly once and return to their respective starting depot after completing their tours.]
+- [The objective is to minimize the total travel cost for all robots combined, with travel costs calculated as the Euclidean distance between cities.]

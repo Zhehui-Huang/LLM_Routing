@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/P-n19-k2/1/1/solution_r1.py", line 11
+    total_fn(cost +=) euclidean_distance(coordinates[route[i-1]], coordinates[route[i]])
+                  ^^
+SyntaxError: invalid syntax
+
+

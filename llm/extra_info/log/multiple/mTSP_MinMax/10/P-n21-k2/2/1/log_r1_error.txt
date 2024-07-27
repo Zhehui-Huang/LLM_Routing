@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP_MinMax/10/P-n21-k2/2/1/solution_r1.py", line 53, in <module>
+    robot_routes, costs, max_cost = solve_tsp_vrp()
+                                    ^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP_MinMax/10/P-n21-k2/2/1/solution_r1.py", line 46, in solve_tsp_vrp
+    if local_max < min_prep_cost:
+                   ^^^^^^^^^^^^^
+NameError: name 'min_prep_cost' is not defined
+
+

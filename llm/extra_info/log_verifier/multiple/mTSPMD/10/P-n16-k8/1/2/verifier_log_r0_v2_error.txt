@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSPMD/10/P-n16-k8/1/2/verifier_r0_v2.py", line 48
+    self.assertAlmostEqual(calculated_total_cost, expected_total_size, places=5, "Total travel cost is incorrect")
+                                                                                                                 ^
+SyntaxError: positional argument follows keyword argument
+
+

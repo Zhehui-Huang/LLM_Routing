@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/GTSP/10/city_10_instance_0/1/0/solution_r1.py", line 45
+    total,.
+          ^
+SyntaxError: invalid syntax
+
+

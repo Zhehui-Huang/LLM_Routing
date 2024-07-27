@@ -1,0 +1,14 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSPMD/10/E-n22-k4/1/1/verifier_r2_v1.py", line 58, in <module>
+    print(verify_tours())
+          ^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSPMD/10/E-n22-k4/1/1/verifier_r2_v1.py", line 52, in verify_tours
+    if not math.isclose(total_cost_calculated, overall_reported_secret, abs_tol=1e-4):
+                                               ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'overall_reported_secret' is not defined. Did you mean: 'overall_reported_cost'?
+
+

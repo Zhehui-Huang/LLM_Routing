@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/single/KTSP/20/city_20_instance_0/0/1/verifier_r0_v1.py", line 54
+    validation_result = verify_solution(tour, total_travel}`}_cost)
+                                                          ^
+SyntaxError: closing parenthesis '}' does not match opening parenthesis '('
+
+

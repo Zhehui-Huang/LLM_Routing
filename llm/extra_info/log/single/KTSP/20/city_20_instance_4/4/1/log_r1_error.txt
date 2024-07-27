@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/20/city_20_instance_4/4/1/solution_r1.py", line 1
+    import numpy as
+                   ^
+SyntaxError: invalid syntax
+
+

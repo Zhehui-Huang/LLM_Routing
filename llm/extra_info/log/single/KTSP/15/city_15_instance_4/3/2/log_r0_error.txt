@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/15/city_15_instance_4/3/2/solution_r0.py", line 35
+    return total distance
+                 ^^^^^^^^
+SyntaxError: invalid syntax
+
+

@@ -1,0 +1,17 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/P-n21-k2/1/2/solution_r0.py", line 51, in <module>
+    tour, tour_cost = find_minimal_tsp_tour(cities_to_visit, coordinates)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/P-n21-k2/1/2/solution_r0.py", line 21, in find_minimal_tsp_tour
+    current_cost = compute_tour_cost(current_tour, coordinates)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/P-n21-k2/1/2/solution_r0.py", line 10, in compute_tour_cost
+    total_cost += euclideanIgnoreCase
+                  ^^^^^^^^^^^^^^^^^^^
+NameError: name 'euclideanIgnoreCase' is not defined
+
+

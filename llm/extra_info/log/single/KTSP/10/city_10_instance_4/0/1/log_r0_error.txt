@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/10/city_10_instance_4/0/1/solution_r0.py", line 40
+    cost = tour home_cost(tour)
+                ^^^^^^^^^
+SyntaxError: invalid syntax
+
+

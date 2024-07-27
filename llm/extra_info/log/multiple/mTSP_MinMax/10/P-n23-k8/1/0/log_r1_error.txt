@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP_MinMax/10/P-n23-k8/1/0/solution_r1.py", line 89
+    (max_travel_combined with optimal route informationost)
+                         ^^^^
+SyntaxError: f-string: invalid syntax
+
+

@@ -1,0 +1,23 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/20/city_20_instance_4/0/0/solution_r0.py", line 103, in <module>
+    best_route_index, best_route_distance = genetic_algorithm(selected_cities, pop_size, elite_size, mutation_rate, generations)
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/20/city_20_instance_4/0/0/solution_r0.py", line 94, in genetic_algorithm
+    pop = next_generation(pop, elite_size, mutation_rate)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/20/city_20_instance_4/0/0/solution_r0.py", line 86, in next_generation
+    select_indices = selection(rank_pop, elite_size)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/20/city_20_instance_4/0/0/solution_r0.py", line 49, in selection
+    prob = list((1/(rank[1]+1) / total_body for rank in ranked_pop))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/20/city_20_instance_4/0/0/solution_r0.py", line 49, in <genexpr>
+    prob = list((1/(rank[1]+1) / total_body for rank in ranked_pop))
+                                 ^^^^^^^^^^
+NameError: name 'total_body' is not defined
+
+

@@ -1,0 +1,7 @@
+- [Each robot must start and end their tour at the depot city 0.]
+- [Each city's demand must be fully met by the deliveries from the robots.]
+- [The capacity constraints of each robot must not be exceeded.]
+- [The objective is to minimize the total travel cost for all tours combined.]
+- [Given demands and cities, operational tours must be formed accordingly.]
+- [Robots can travel between any two cities.]
+- [Travel cost is calculated as the Euclidean distance between two cities.]

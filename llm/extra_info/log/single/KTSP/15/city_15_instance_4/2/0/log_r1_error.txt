@@ -1,0 +1,16 @@
+OUTPUT:
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/15/city_15_instance_4/2/0/solution_r1.py", line 63, in <module>
+    best_tourn, total_travel_cost = genetic_algorithm(cities)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/15/city_15_instance_4/2/0/solution_r1.py", line 51, in genetic_algorithm
+    population.sort(key=calculate_total_distance)
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/single/KTSP/15/city_15_instance_4/2/0/solution_r1.py", line 18, in calculate_total_distance
+    return total_org-distance
+           ^^^^^^^^^
+NameError: name 'total_org' is not defined
+
+

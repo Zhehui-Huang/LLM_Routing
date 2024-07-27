@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/mTSP/10/P-n23-k8/1/1/solution_r1.py", line 50
+    ruins impress complaints="dept warming instructors flip DSP adequacy ingenious bereits suicide cigarettes balances dim measured)
+                             ^
+SyntaxError: unterminated string literal (detected at line 50)
+
+

@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP/10/E-n22-k4/1/1/verifier_r2_v0.py", line 55
+    if not math.isclose(total_calculated_timize the total distance travelled by all robots to cover all cities.cost, overall_proposed_cost, abs_tol=1):
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+

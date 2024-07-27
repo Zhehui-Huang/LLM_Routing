@@ -1,0 +1,10 @@
+OUTPUT:
+
+
+ERROR:
+  File "/home/ethan/repository/LLM_Routing/llm/extra_info/solution/single/TSP/15/city_15_instance_3/2/1/solution_r1.py", line 38
+    return distance[key=lambda city: distance[current_city][city])
+                                                                 ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '['
+
+

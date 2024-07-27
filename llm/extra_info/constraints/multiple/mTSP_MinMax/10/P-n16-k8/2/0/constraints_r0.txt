@@ -1,0 +1,6 @@
+- [Each robot must start and end its tour at the depot city.]
+- [Each city, except the depot, must be visited exactly once by the robots collectively.]
+- [The primary objective is to minimize the maximum distance traveled by any single robot.]
+- [The travel cost between two cities is calculated as the Euclidean distance.]
+- [The output must include each robot's tour, beginning and ending at the depot city, and their respective travel costs.]
+- [The output must specify the maximum travel cost among all the robots' tours.]

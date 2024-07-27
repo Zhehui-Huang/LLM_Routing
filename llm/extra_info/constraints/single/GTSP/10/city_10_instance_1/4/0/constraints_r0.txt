@@ -1,0 +1,6 @@
+- [Requirement 1] The robot must start and end its journey at the depot, which is city 0.
+- [Requirement 2] The robot is required to visit exactly one city from each of the four specified groups, totaling exactly four different cities from the groups.
+- [Requirement 3] Calculate travel costs using the Euclidean distance between cities.
+- [Requirement 4] Minimize the total travel cost for the robot's journey, which includes travel from the depot to a city from each group, between the selected cities across groups, and back to the depot.
+- [Requirement 5] Output must consist of the shortest tour as a list of city indices beginning and ending at city 0.
+- [Requirement 6] Output must also include the total travel cost of the determined shortest tour.

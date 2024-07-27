@@ -1,0 +1,32 @@
+OUTPUT:
+
+
+ERROR:
+EE
+======================================================================
+ERROR: test_correct_output (__main__.TestRobotTours.test_correct_output)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP/10/P-n16-k8/2/0/verifier_r1_v0.py", line 70, in test_correct_output
+    if self.test_tours_validation():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP/10/P-n16-k8/2/0/verifier_r1_v0.py", line 54, in test_tours_validation
+    tour_cost += travel_less_than_one
+                 ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'travel_less_than_one' is not defined
+
+======================================================================
+ERROR: test_tours_validation (__main__.TestRobotTours.test_tours_validation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/verifier/multiple/mTSP/10/P-n16-k8/2/0/verifier_r1_v0.py", line 54, in test_tours_validation
+    tour_cost += travel_less_than_one
+                 ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'travel_less_than_one' is not defined
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+FAILED (errors=2)
+
+

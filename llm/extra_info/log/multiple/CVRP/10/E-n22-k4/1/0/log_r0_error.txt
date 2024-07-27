@@ -1,0 +1,12 @@
+OUTPUT:
+Robot 0 Tour: [0, 13, 10, 4, 18, 0]
+
+
+ERROR:
+Traceback (most recent call last):
+  File "/home/ethan/repository/backup/LLM_Routing/llm/extra_info/solution/multiple/CVRP/10/E-n22-k4/1/0/solution_r0.py", line 68, in <module>
+    print(f"Robot {robotid_id} Total Travel Cost: {tour_cost}")
+                   ^^^^^^^^^^
+NameError: name 'robotid_id' is not defined. Did you mean: 'robot_id'?
+
+
