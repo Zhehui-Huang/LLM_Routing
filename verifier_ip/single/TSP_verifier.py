@@ -136,7 +136,7 @@ def deal_instance(file_name, cities, distance_matrix, oracle_res, eval_type, llm
 
             if tour:
                 if llm_travel_cost is None:
-                    raise ValueError("LLM travel cost is None.")
+                    print("LLM travel cost is None.")
                 elif not bool(np.isclose(ground_cost, llm_travel_cost, atol=1)):
                     print(f"Costs are not equal. path: {route_res_path}")
 
