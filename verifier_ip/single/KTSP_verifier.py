@@ -416,33 +416,3 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
-
-
-    # current_directory = os.getcwd() + '/single/GTSP'
-    # file_name = 'city_10_instance_0.txt'
-    # route = [0, 1, 2, 3, 0]
-    #
-    # cities = read_city_locations(current_directory + '/' + file_name)
-    # group = read_city_groups(current_directory + '/' + file_name)
-    # distance_matrix = calculate_distance_matrix(cities)
-    # V = list(range(len(cities)))
-    # coords = {i: cities[i] for i in V}
-    # k = len(group)
-    # # tour, cost = solve_tsp(cities, distance_matrix)
-    #
-    # sol_x = route2edges(route, len(cities))
-    #
-    # tour, cost = solve_gtsp_verifier(V, group, distance_matrix, k, coords, sol_x)
-    #
-    # if tour:
-    #     print("**************************")
-    #     print(f"feasible route: {route}")
-    #     # plot_tour(cities, distance_matrix, tour)
-    #     # visualize_tour(cities, tour)
-    #
-    # else:
-    #     print("**************************")
-    #     print("Infeasible route.")
-
-
-
