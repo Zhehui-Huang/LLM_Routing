@@ -37,14 +37,21 @@ def extract_route_and_cost(file_path):
             if output_found:
                 if line.startswith('Tour:'):
                     try:
+                        if len(line.split(':')[1].strip()[1:-1].split(',')) <= 1:
+                            return [], -1
                         tmp_tour_list = line.split(':')[1].strip()[1:-1].split(',')
                         if isinstance(tmp_tour_list[0], str):
                             tour = list(map(int, line.split(':')[1].strip()[1:-1].replace("'", "").split(',')))
                         else:
                             tour = list(map(int, line.split(':')[1].strip()[1:-1].split(',')))
                     except:
-                        tour = list(map(int, line.split(':')[1].strip()[1:-1].replace(
-                            'np.int64(', '').replace(')','').split(',')))
+                        try:
+                            tmp_tour_list = map(int, line.split(':')[1].strip()[1:-1].replace('np.int64(', '').replace(')','').split(','))
+                            tour = list(tmp_tour_list)
+                        except:
+                            return [], -1
+                            # tour = list(tmp_tour_list)
+                            # raise ValueError(f"Tour is not a list {line}")
                 # elif line.startswith('Total travel cost:'):
                 elif 'cost:' in line:
                     total_travel_cost = float(line.split(':')[1].strip())
