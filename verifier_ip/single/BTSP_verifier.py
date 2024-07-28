@@ -272,6 +272,8 @@ def btsp_verifier(task_folder_base_path, context_type, llm_extra_info_folder_pat
         avg_opt_gap_dir = {}
         avg_success_dir = {}
         for file_name in file_list:
+            if '20' in file_name:
+                continue
             task_instance_path = os.path.join(task_folder_path, file_name)
             cities = read_city_locations(task_instance_path)
             distance_matrix = calculate_distance_matrix(cities)
