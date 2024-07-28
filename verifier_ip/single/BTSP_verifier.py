@@ -271,6 +271,11 @@ def btsp_verifier(task_folder_base_path, context_type, llm_extra_info_folder_pat
         print('Evaluation type:', eval_type)
         avg_opt_gap_dir = {}
         avg_success_dir = {}
+
+        # Open a file to write down all results
+        overall_opt_gap_dir = {}
+        overall_success_dir = {}
+
         for file_name in file_list:
             if '20' in file_name:
                 continue
@@ -282,8 +287,10 @@ def btsp_verifier(task_folder_base_path, context_type, llm_extra_info_folder_pat
             city_num = parts[1]
             if city_num not in avg_opt_gap_dir:
                 avg_opt_gap_dir[city_num] = []
+                overall_opt_gap_dir[city_num] = {}
             if city_num not in avg_success_dir:
                 avg_success_dir[city_num] = []
+                overall_success_dir[city_num] = {}
 
             with open(res_path, "r") as file:
                 content = file.read()
@@ -296,10 +303,17 @@ def btsp_verifier(task_folder_base_path, context_type, llm_extra_info_folder_pat
             print(f'{file_name}')
             if len(opt_gap_list) > 0:
                 avg_opt_gap_dir[city_num].append(np.mean(opt_gap_list))
+                overall_opt_gap_dir[city_num][file_name] = opt_gap_list
+            else:
+                overall_opt_gap_dir[city_num][file_name] = []
+
             if len(success_list) == 5:
                 avg_success_dir[city_num].append(np.mean(success_list))
+
+                overall_success_dir[city_num][file_name] = success_list
             else:
                 raise ValueError(f"Invalid success_list. {success_list}")
+
 
         print("***********\tSTART\t***************")
         print(f"Average optimality gap for each city: {avg_opt_gap_dir}")
@@ -320,6 +334,11 @@ def btsp_verifier(task_folder_base_path, context_type, llm_extra_info_folder_pat
             raise ValueError(f"Invalid llm_extra_info_folder_path. {llm_extra_info_folder_path}")
         opt_gap_write_path = f'../metric/{tmp_model_name}/{context_type}/{eval_type}/{ROBOT_NUM_TYPE}/{TASK_NAME}/opt_gap.txt'
         success_write_path = f'../metric/{tmp_model_name}/{context_type}/{eval_type}/{ROBOT_NUM_TYPE}/{TASK_NAME}/success.txt'
+
+        overall_opt_gap_write_path = f'../metric/{tmp_model_name}/{context_type}/{eval_type}/{ROBOT_NUM_TYPE}/{TASK_NAME}/opt_gap_overall_detail.txt'
+        overall_success_write_path = f'../metric/{tmp_model_name}/{context_type}/{eval_type}/{ROBOT_NUM_TYPE}/{TASK_NAME}/success_overall_detail.txt'
+
+
         os.makedirs(os.path.dirname(opt_gap_write_path), exist_ok=True)
         os.makedirs(os.path.dirname(success_write_path), exist_ok=True)
 
@@ -334,6 +353,21 @@ def btsp_verifier(task_folder_base_path, context_type, llm_extra_info_folder_pat
                 file.write(f"City: {key}\t\tAverage success: {np.mean(value)}\t\tSuccess list: {value}\n")
             file.write('\nDetails:\n')
             file.write(str(avg_success_dir))
+
+        # Overall data
+        with open(overall_opt_gap_write_path, "w") as file:
+            for city, instances in overall_opt_gap_dir.items():
+                file.write(f"City: {city}, Instance: {instances}\n")
+                for instance, values in instances.items():
+                    file.write(f"{instance}: {values}\n")
+                file.write("\n")
+
+        with open(overall_success_write_path, "w") as file:
+            for city, instances in overall_success_dir.items():
+                file.write(f"City: {city}, Instance: {instances}\n")
+                for instance, values in instances.items():
+                    file.write(f"{instance}: {values}\n")
+                file.write("\n")
 
 
 def main():
