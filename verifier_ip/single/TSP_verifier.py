@@ -12,12 +12,15 @@ from gurobipy import GRB
 from verifier_ip.utils import (calculate_distance_matrix, TASK_BASE_PATH, read_city_locations, route2edges,
                                extract_route_and_cost, DEBUG_FLAG, LLM_FOLDER_PATH, EVAL_TYPE_LIST, EXTRA_INFO_DICT)
 
+ROBOT_NUM_TYPE = 'single'
+TASK_NAME = 'TSP'
+
 
 def solve_tsp_verifier(cities, distance_matrix, sol_x):
     n = len(cities)
 
     # Create a new Gurobi model
-    model = gp.Model("TSP")
+    model = gp.Model(TASK_NAME)
     model.setParam('OutputFlag', 0)
 
     # Create variables
@@ -105,7 +108,7 @@ def deal_instance(file_name, cities, distance_matrix, oracle_res, eval_type, llm
         # print(f'{city_num}/{instance_name}/{instance_try_id}')
         tmp_folder_path = os.path.join(
             llm_extra_info_folder_path,
-            f'{EXTRA_INFO_DICT[context_type]}/log/single/TSP/{city_num}/{instance_name}/{instance_try_id}'
+            f'{EXTRA_INFO_DICT[context_type]}/log/{ROBOT_NUM_TYPE}/{TASK_NAME}/{city_num}/{instance_name}/{instance_try_id}'
         )
         print('Folder path: ', tmp_folder_path)
 
@@ -118,7 +121,7 @@ def deal_instance(file_name, cities, distance_matrix, oracle_res, eval_type, llm
             # raise ValueError("Error file found.")
 
         route_res_path = os.path.join(
-            llm_extra_info_folder_path, f'{EXTRA_INFO_DICT[context_type]}/log/single/TSP/{city_num}/{instance_name}/{instance_try_id}/{use_log_id}/{use_log_name}'
+            llm_extra_info_folder_path, f'{EXTRA_INFO_DICT[context_type]}/log/{ROBOT_NUM_TYPE}/{TASK_NAME}/{city_num}/{instance_name}/{instance_try_id}/{use_log_id}/{use_log_name}'
         )
 
         route, llm_travel_cost = extract_route_and_cost(file_path=route_res_path)
@@ -157,8 +160,8 @@ def deal_instance(file_name, cities, distance_matrix, oracle_res, eval_type, llm
 
 
 def tsp_verifier(task_folder_base_path, context_type, llm_extra_info_folder_path):
-    task_folder_path = os.path.join(task_folder_base_path, 'single/TSP')
-    res_path = os.path.join(LLM_FOLDER_PATH, '../oracle/results/txt/single/TSP_result.txt')
+    task_folder_path = os.path.join(task_folder_base_path, f'{ROBOT_NUM_TYPE}/{TASK_NAME}')
+    res_path = os.path.join(LLM_FOLDER_PATH, f'../oracle/results/txt/{ROBOT_NUM_TYPE}/{TASK_NAME}_result.txt')
     file_list = os.listdir(task_folder_path)
     file_list.sort()
 
@@ -210,8 +213,8 @@ def tsp_verifier(task_folder_base_path, context_type, llm_extra_info_folder_path
             tmp_model_name = 'gpt4'
         else:
             raise ValueError(f"Invalid llm_extra_info_folder_path. {llm_extra_info_folder_path}")
-        opt_gap_write_path = f'../metric/{tmp_model_name}/{context_type}/{eval_type}/single/TSP/opt_gap.txt'
-        success_write_path = f'../metric/{tmp_model_name}/{context_type}/{eval_type}/single/TSP/success.txt'
+        opt_gap_write_path = f'../metric/{tmp_model_name}/{context_type}/{eval_type}/{ROBOT_NUM_TYPE}/{TASK_NAME}/opt_gap.txt'
+        success_write_path = f'../metric/{tmp_model_name}/{context_type}/{eval_type}/{ROBOT_NUM_TYPE}/{TASK_NAME}/success.txt'
         os.makedirs(os.path.dirname(opt_gap_write_path), exist_ok=True)
         os.makedirs(os.path.dirname(success_write_path), exist_ok=True)
 
