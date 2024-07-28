@@ -2,10 +2,12 @@ import os
 import math
 import random
 import itertools
+import re
 import numpy as np
 import gurobipy as gp
 import matplotlib.pyplot as plt
 from gurobipy import GRB
+import ast
 
 TASK_BASE_PATH = os.path.join(os.getcwd(), "../../llm/task")
 LLM_FOLDER_PATH = os.path.join(os.getcwd(), "../../llm")
@@ -47,7 +49,72 @@ def extract_route_and_cost(file_path):
                 elif 'cost:' in line:
                     total_travel_cost = float(line.split(':')[1].strip())
 
+    if tour is None:
+        return [], -1
+
+
+    if len(tour) >= 3:
+        if tour[0] == tour[1]:
+            print(f"Before process tour, {tour}")
+            tour = tour[1:]
+            print(f"After tour same, {tour}")
+        if tour[-1] == tour[-2]:
+            print(f"Before process tour, {tour}")
+            tour = tour[:-1]
+            print(f"After tour same, {tour}")
+
     return tour, total_travel_cost
+
+
+def extract_route_cost_max_cost(file_path):
+    with open(file_path, 'r') as file:
+        content = file.read()
+
+    # Extract text between OUTPUT and ERROR
+    extracted_text = re.search(r'OUTPUT:(.*?)ERROR:', content, re.DOTALL).group(1).strip()
+    if extracted_text == '':
+        return [], -1, -1
+    # Split the extracted text into rows
+    rows = extracted_text.splitlines()
+
+    # Extract the tour, travel cost, and maximum distance
+    tour = re.search(r'Tour:\s*(.*)', rows[0])
+    if tour:
+        tour = tour.group(1)
+    else:
+        tour = []
+        return [], -1, -1
+
+    travel_cost = re.search(r'Total travel cost:\s*(.*)', rows[1])
+    if travel_cost:
+        travel_cost = travel_cost.group(1)
+    else:
+        travel_cost = -1
+
+    max_distance = next((line.split(":")[1].strip() for line in rows if
+                         all(keyword in line for keyword in ["Maximum", "distance", "consecutive"])), -1)
+
+
+    tour = ast.literal_eval(tour)
+    if isinstance(tour, list):
+        if (len(tour) > 0 and tour[0] == 'depot') or (len(tour) > 0 and tour[-1] == 'depot'):
+            raise ValueError("Tour starts with depot")
+
+        tour = [int(city) for city in tour]
+
+    if tour is None:
+        return [], -1, -1
+
+    if len(tour) >= 3:
+        if tour[0] == tour[1]:
+            print(f"Before process tour, {tour}")
+            tour = tour[1:]
+            print(f"After tour same, {tour}")
+        if tour[-1] == tour[-2]:
+            print(f"Before process tour, {tour}")
+            tour = tour[:-1]
+            print(f"After tour same, {tour}")
+    return tour, float(travel_cost), float(max_distance)
 
 
 def calculate_distance_matrix(cities):
