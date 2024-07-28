@@ -2,7 +2,7 @@ import itertools
 import math
 import os
 import sys
-
+import time
 import gurobipy as gp
 import matplotlib.pyplot as plt
 import networkx as nx
@@ -222,7 +222,7 @@ def deal_instance(file_name, cities, distance_matrix, oracle_res, eval_type, llm
 
         tmp_out_boundary_bool = False
         for tmp_item in route:
-            if tmp_item >= int(city_num):
+            if int(tmp_item) >= int(city_num):
                 tmp_out_boundary_bool = True
                 break
 
@@ -277,8 +277,8 @@ def btsp_verifier(task_folder_base_path, context_type, llm_extra_info_folder_pat
         overall_success_dir = {}
 
         for file_name in file_list:
-            if '20' in file_name:
-                continue
+            # if '20' in file_name:
+            #     continue
             task_instance_path = os.path.join(task_folder_path, file_name)
             cities = read_city_locations(task_instance_path)
             distance_matrix = calculate_distance_matrix(cities)
@@ -371,18 +371,22 @@ def btsp_verifier(task_folder_base_path, context_type, llm_extra_info_folder_pat
 
 
 def main():
+    start_time = time.time()
     llm_model_list = ['llama3_1_extra_info', 'gpt4_extra_info']
     context_type_list = ['zero', 'math', 'pseudo-code_v2', 'pseudo-code_v3', 'pdf_paper_v2', 'pdf_paper_v3']
     for llm_model in llm_model_list:
         llm_extra_info_folder_path = os.path.join(LLM_FOLDER_PATH, f"{llm_model}")
         for context_type in context_type_list:
-            if llm_model == 'llama3_1_extra_info' and context_type != 'zero':
-                continue
+            # if llm_model == 'llama3_1_extra_info' and context_type != 'zero':
+            #     continue
             print(f'Model name: {llm_model}\tContext type: {context_type}')
             task_folder_base_path = os.path.join(TASK_BASE_PATH, context_type)
             btsp_verifier(task_folder_base_path=task_folder_base_path, context_type=context_type,
                           llm_extra_info_folder_path=llm_extra_info_folder_path)
 
+    end_time = time.time()
+    execution_time = end_time - start_time
+    print(f"Execution time: {execution_time} seconds")
 
 if __name__ == "__main__":
     sys.exit(main())

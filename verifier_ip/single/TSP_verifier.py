@@ -3,7 +3,7 @@ import math
 import random
 import itertools
 import sys
-
+import time
 import numpy as np
 import gurobipy as gp
 import matplotlib.pyplot as plt
@@ -14,7 +14,6 @@ from verifier_ip.utils import (calculate_distance_matrix, TASK_BASE_PATH, read_c
 
 ROBOT_NUM_TYPE = 'single'
 TASK_NAME = 'TSP'
-
 
 def solve_tsp_verifier(cities, distance_matrix, sol_x):
     n = len(cities)
@@ -131,7 +130,18 @@ def deal_instance(file_name, cities, distance_matrix, oracle_res, eval_type, llm
             continue
             # raise ValueError("Route is empty.")
 
+        tmp_out_boundary_bool = False
+        for tmp_item in route:
+            if int(tmp_item) >= int(city_num):
+                tmp_out_boundary_bool = True
+                break
+
+        if tmp_out_boundary_bool:
+            success_list.append(0)
+            continue
+
         if DEBUG_FLAG:
+            success_list.append(0)
             continue
         else:
             sol_x = route2edges(route, len(cities))
@@ -175,6 +185,8 @@ def tsp_verifier(task_folder_base_path, context_type, llm_extra_info_folder_path
         overall_success_dir = {}
 
         for file_name in file_list:
+            # if '20' in file_name:
+            #     continue
             task_instance_path = os.path.join(task_folder_path, file_name)
             cities = read_city_locations(task_instance_path)
             distance_matrix = calculate_distance_matrix(cities)
@@ -265,6 +277,7 @@ def tsp_verifier(task_folder_base_path, context_type, llm_extra_info_folder_path
 
 
 def main():
+    start_time = time.time()
     llm_model_list = ['llama3_1_extra_info', 'gpt4_extra_info']
     context_type_list = ['zero', 'math', 'pseudo-code_v2', 'pseudo-code_v3', 'pdf_paper_v2', 'pdf_paper_v3']
     for llm_model in llm_model_list:
@@ -272,14 +285,17 @@ def main():
         for context_type in context_type_list:
             # llm/task + context_type
 
-            if llm_model == 'llama3_1_extra_info' and context_type != 'zero':
-                continue
+            # if llm_model == 'llama3_1_extra_info' and context_type != 'zero':
+            #     continue
 
             print(f'Model name: {llm_model}\tContext type: {context_type}')
             task_folder_base_path = os.path.join(TASK_BASE_PATH, context_type)
             tsp_verifier(task_folder_base_path=task_folder_base_path, context_type=context_type,
                          llm_extra_info_folder_path=llm_extra_info_folder_path)
 
+    end_time = time.time()
+    execution_time = end_time - start_time
+    print(f"Execution time: {execution_time} seconds")
 
 if __name__ == "__main__":
     sys.exit(main())

@@ -54,7 +54,10 @@ def extract_route_and_cost(file_path):
                             # raise ValueError(f"Tour is not a list {line}")
                 # elif line.startswith('Total travel cost:'):
                 elif 'cost:' in line:
-                    total_travel_cost = float(line.split(':')[1].strip())
+                    try:
+                        total_travel_cost = float(line.split(':')[1].strip())
+                    except:
+                        return [], -1
 
     if tour is None:
         return [], -1
@@ -70,6 +73,7 @@ def extract_route_and_cost(file_path):
             tour = tour[:-1]
             print(f"After tour same, {tour}")
 
+    tour = [int(city) for city in tour]
     return tour, total_travel_cost
 
 
@@ -102,18 +106,25 @@ def extract_route_cost_max_cost(file_path):
                          all(keyword in line for keyword in ["Maximum", "distance", "consecutive"])), -1)
 
     try:
+        tour = tour.replace('depot', '0').replace('city', '')
         tour = ast.literal_eval(tour)
     except:
         try:
             # tour = [int(x.strip()) for x in tour.replace('np.int64', '').replace('[', '').replace(']', '').split(',')]
-            tour = [int(x.replace('(', '').replace(')', '').strip()) for x in tour.replace('np.int64', '').replace('np.int32', '').replace('[', '').replace(']', '').split(',')]
+            tour = [int(x.replace('(', '').replace(')', '').strip()) for x in tour.replace('np.int64', '').replace('depot', '0').replace('city', '').replace('_', '').replace('np.int32', '').replace('[', '').replace(']', '').split(',')]
+            # tour = tour.replace('depot', '0').replace('city', '')
         except:
-            raise ValueError("Tour is not a list")
+            return [], -1, -1
+            # raise ValueError("Tour is not a list")
     if isinstance(tour, list):
         if (len(tour) > 0 and tour[0] == 'depot') or (len(tour) > 0 and tour[-1] == 'depot'):
-            raise ValueError("Tour starts with depot")
-
-        tour = [int(city) for city in tour]
+            print('Tour starts with depot')
+            # raise ValueError("Tour starts with depot")
+        try:
+            tour = [int(city) for city in tour]
+        except:
+            return [], -1, -1
+            # raise ValueError("Tour issue")
 
     if tour is None:
         return [], -1, -1
@@ -127,7 +138,14 @@ def extract_route_cost_max_cost(file_path):
             print(f"Before process tour, {tour}")
             tour = tour[:-1]
             print(f"After tour same, {tour}")
-    return tour, float(travel_cost), float(max_distance)
+
+    try:
+        tour = [int(city) for city in tour]
+    except:
+        return [], -1, -1
+    if max_distance == '':
+        max_distance = -1
+    return tour, travel_cost, float(max_distance)
 
 
 def calculate_distance_matrix(cities):
