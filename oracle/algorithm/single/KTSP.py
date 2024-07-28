@@ -10,7 +10,7 @@ import numpy as np
 import math
 import os
 import pickle
-
+import re
 def solve_k_tsp(cities, dist, k):
     n = len(cities)
 
@@ -114,6 +114,19 @@ def read_city_locations(file_path):
                 city_locations.append((x, y))
     return city_locations
 
+
+def get_ktsp_k(city_num, instance_id):
+    if city_num == 10:
+        k_list = [4, 5, 6, 7, 8]
+    elif city_num == 15:
+        k_list = [4, 6, 8, 10, 12]
+    elif city_num == 20:
+        k_list = [4, 7, 10, 13, 16]
+    else:
+        raise ValueError(f"Invalid city number. {city_num}")
+
+    return k_list[instance_id]
+
 # Example usage
 if __name__ == "__main__":
     # num_cities = 13
@@ -133,10 +146,11 @@ if __name__ == "__main__":
     file_names = []
     # Get the current working directory
     # make sure that the current folder is TSP
-    current_directory = os.getcwd()+'/single/KTSP'
+    current_directory = os.getcwd()+'/../../../llm/task/zero/single/KTSP'
     
     # List all files in the current directory
     files = os.listdir(current_directory)
+    files.sort()
     for file_name in files:
         if '25' in file_name or '50' in file_name:
             continue
@@ -153,7 +167,13 @@ if __name__ == "__main__":
         cities = read_city_locations(current_directory+'/'+file_path)
 
         distance_matrix = calculate_distance_matrix(cities)
-        k = int(np.ceil(len(cities)/2))
+        # k = get_ktsp_k(city_num=int(city_num), instance_id=int(instance_name[-1]))
+        # Extract value after 'city_' and before '_instance'
+        city_value = re.search(r'city_(\d+)_instance', file_path).group(1)
+        # Extract value after 'instance_' and before '.txt'
+        instance_value = re.search(r'instance_(\d+)\.txt', file_path).group(1)
+
+        k = get_ktsp_k(city_num=int(city_value), instance_id=int(instance_value))
         tour, cost = solve_k_tsp(cities, distance_matrix, k)
     
         if tour:
