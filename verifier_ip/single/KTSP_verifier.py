@@ -250,6 +250,16 @@ def deal_instance(file_name, cities, distance_matrix, oracle_res, eval_type, llm
             continue
             # raise ValueError("Route is empty.")
 
+        tmp_out_boundary_bool = False
+        for tmp_item in route:
+            if int(tmp_item) >= int(city_num):
+                tmp_out_boundary_bool = True
+                break
+
+        if tmp_out_boundary_bool:
+            success_list.append(0)
+            continue
+
         if DEBUG_FLAG:
             success_list.append(0)
             continue
