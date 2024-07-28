@@ -7,8 +7,21 @@ import gurobipy as gp
 import matplotlib.pyplot as plt
 from gurobipy import GRB
 
-TASK_BASE_PATH = os.path.join(os.getcwd(), "../../llm/task/zero")
+TASK_BASE_PATH = os.path.join(os.getcwd(), "../../llm/task")
 LLM_FOLDER_PATH = os.path.join(os.getcwd(), "../../llm")
+# GPT_EXTRA_INFO_FOLDER_PATH = os.path.join(os.getcwd(), "../../llm/llama3_1_extra_info")
+
+EVAL_TYPE_LIST = ['pass_one', 'pass_debug', 'pass_overall']
+EXTRA_INFO_DICT = {
+    'zero': 'extra_info',
+    'math': 'extra_info_math',
+    'pseudo-code_v2': 'extra_info_pseudo-code_v2',
+    'pseudo-code_v3': 'extra_info_pseudo-code_v3',
+    'pdf_paper_v2': 'extra_info_pdf_paper_v2',
+    'pdf_paper_v3': 'extra_info_pdf_paper_v3'
+}
+
+DEBUG_FLAG = False
 
 def extract_route_and_cost(file_path):
     tour = []
@@ -22,7 +35,11 @@ def extract_route_and_cost(file_path):
             if output_found:
                 if line.startswith('Tour:'):
                     try:
-                        tour = list(map(int, line.split(':')[1].strip()[1:-1].split(',')))
+                        tmp_tour_list = line.split(':')[1].strip()[1:-1].split(',')
+                        if isinstance(tmp_tour_list[0], str):
+                            tour = list(map(int, line.split(':')[1].strip()[1:-1].replace("'", "").split(',')))
+                        else:
+                            tour = list(map(int, line.split(':')[1].strip()[1:-1].split(',')))
                     except:
                         tour = list(map(int, line.split(':')[1].strip()[1:-1].replace(
                             'np.int64(', '').replace(')','').split(',')))

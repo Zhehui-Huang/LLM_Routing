@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from gurobipy import GRB
 
 from verifier_ip.utils import (calculate_distance_matrix, TASK_BASE_PATH, read_city_locations, route2edges,
-                               extract_route_and_cost, LLM_FOLDER_PATH)
+                               extract_route_and_cost, DEBUG_FLAG, LLM_FOLDER_PATH, EVAL_TYPE_LIST, EXTRA_INFO_DICT)
 
 
 def solve_tsp_verifier(cities, distance_matrix, sol_x):
@@ -67,124 +67,174 @@ def solve_tsp_verifier(cities, distance_matrix, sol_x):
         return None, None
 
 
-def deal_instance(file_name, cities, distance_matrix, oracle_res):
+def get_use_log_file_name(eval_type, tmp_folder_path):
+    # pass_one, pass_debug, pass_overall
+    if eval_type == 'pass_one':
+        # Pass one time
+        log_id = 0
+        log_id_path = os.path.join(tmp_folder_path, str(log_id))
+        log_names = os.listdir(log_id_path)
+        log_names.sort()
+        log_name = log_names[0]
+    elif eval_type == 'pass_debug':
+        log_id = 0
+        log_id_path = os.path.join(tmp_folder_path, str(log_id))
+        log_names = os.listdir(log_id_path)
+        log_name = max(log_names, key=lambda name: int(name.split('_')[1][1]))
+    elif eval_type == 'pass_overall':
+        subfolder_name_list = [f.path for f in os.scandir(tmp_folder_path) if f.is_dir()]
+        subfolder_name_list.sort()
+        log_id = max(int(path[-1]) for path in subfolder_name_list)
+        max_try_id_path = os.path.join(tmp_folder_path, str(log_id))
+        log_names = os.listdir(max_try_id_path)
+        log_name = max(log_names, key=lambda name: int(name.split('_')[1][1]))
+    else:
+        raise ValueError(f"Invalid eval_type. {eval_type}")
+
+    return log_id, log_name
+
+
+def deal_instance(file_name, cities, distance_matrix, oracle_res, eval_type, llm_extra_info_folder_path, context_type):
     parts = file_name.split('_')
     city_num = parts[1]
     instance_name = file_name[:-4]
+
     opt_gap_list = []
     success_list = []
     for instance_try_id in range(5):
-        print(f'{city_num}/{instance_name}/{instance_try_id}')
+        # print(f'{city_num}/{instance_name}/{instance_try_id}')
         tmp_folder_path = os.path.join(
-            LLM_FOLDER_PATH,
-            f'extra_info/log/single/TSP/{city_num}/{instance_name}/{instance_try_id}'
+            llm_extra_info_folder_path,
+            f'{EXTRA_INFO_DICT[context_type]}/log/single/TSP/{city_num}/{instance_name}/{instance_try_id}'
         )
-        subfolder_name_list = [f.path for f in os.scandir(tmp_folder_path) if f.is_dir()]
-        max_try_id = max(int(path[-1]) for path in subfolder_name_list)
-        max_try_id_path = os.path.join(tmp_folder_path, str(max_try_id))
-        log_names = os.listdir(max_try_id_path)
-        max_log_filename = max(log_names, key=lambda name: int(name.split('_')[1][1]))
+        print('Folder path: ', tmp_folder_path)
 
-        if 'error' in max_log_filename or 'timeout' in max_log_filename:
-            print(f"Error file found: {max_log_filename}")
+        use_log_id, use_log_name = get_use_log_file_name(eval_type=eval_type, tmp_folder_path=tmp_folder_path)
+
+        if 'error' in use_log_name or 'timeout' in use_log_name:
+            print(f"Error file found: {use_log_name}")
             success_list.append(0)
             continue
             # raise ValueError("Error file found.")
 
-        route_res_path = os.path.join(LLM_FOLDER_PATH, f'extra_info/log/single/TSP/'
-                                                       f'{city_num}/{instance_name}/{instance_try_id}/{max_try_id}/'
-                                                       f'{max_log_filename}')
+        route_res_path = os.path.join(
+            llm_extra_info_folder_path, f'{EXTRA_INFO_DICT[context_type]}/log/single/TSP/{city_num}/{instance_name}/{instance_try_id}/{use_log_id}/{use_log_name}'
+        )
+
         route, llm_travel_cost = extract_route_and_cost(file_path=route_res_path)
+
         if not route:
-            raise ValueError("Route is empty.")
-
-        sol_x = route2edges(route, len(cities))
-        tour, ground_cost = solve_tsp_verifier(cities=cities, distance_matrix=distance_matrix, sol_x=sol_x)
-
-        if tour:
-            if llm_travel_cost is None:
-                raise ValueError("LLM travel cost is None.")
-            elif not bool(np.isclose(ground_cost, llm_travel_cost, atol=1)):
-                print(f"Costs are not equal. path: {route_res_path}")
-
-            cost = ground_cost
-            optimal_cost = oracle_res[file_name][0]
-            # print("***********\tSTART\t***************")
-            # print(f'{city_num}/{instance_name}/{instance_try_id}/{max_try_id}/{max_log_filename}')
-            optimality_gap = (cost - optimal_cost) / optimal_cost
-            optimality_gap = optimality_gap * 100
-            # print(f"feasible route: {route}\t\tcost: {cost}, optimality gap: {optimality_gap} %")
-            # print("***********\tEND\t***************")
-            # plot_tour(cities, distance_matrix, tour)
-            # visualize_tour(cities, tour)
-            opt_gap_list.append(optimality_gap)
-            success_list.append(1)
-        else:
             success_list.append(0)
-            # raise ValueError("Tour is empty.")
-            # print("***********\tSTART\t***************")
-            # print(f'{city_num}/{instance_name}/{instance_try_id}/{max_try_id}/{max_log_filename}')
-            # print(f"Infeasible route. {route}\t\tllm_travel_cost: {llm_travel_cost}\t\tground_cost: {ground_cost}")
-            # print("***********\tEND\t***************")
+            continue
+            # raise ValueError("Route is empty.")
+
+        if DEBUG_FLAG:
+            continue
+        else:
+            sol_x = route2edges(route, len(cities))
+            tour, ground_cost = solve_tsp_verifier(cities=cities, distance_matrix=distance_matrix, sol_x=sol_x)
+
+            if tour:
+                if llm_travel_cost is None:
+                    raise ValueError("LLM travel cost is None.")
+                elif not bool(np.isclose(ground_cost, llm_travel_cost, atol=1)):
+                    print(f"Costs are not equal. path: {route_res_path}")
+
+                cost = ground_cost
+                optimal_cost = oracle_res[file_name][0]
+                optimality_gap = (cost - optimal_cost) / optimal_cost
+                optimality_gap = optimality_gap * 100
+                opt_gap_list.append(optimality_gap)
+                success_list.append(1)
+            else:
+                success_list.append(0)
 
     return opt_gap_list, success_list
 
 
-def main():
-    task_folder_path = os.path.join(TASK_BASE_PATH, 'single/TSP')
+def tsp_verifier(task_folder_base_path, context_type, llm_extra_info_folder_path):
+    task_folder_path = os.path.join(task_folder_base_path, 'single/TSP')
     res_path = os.path.join(LLM_FOLDER_PATH, '../oracle/results/txt/single/TSP_result.txt')
     file_list = os.listdir(task_folder_path)
     file_list.sort()
 
-    avg_opt_gap_dir = {}
-    avg_success_dir = {}
-    for file_name in file_list:
-        task_instance_path = os.path.join(task_folder_path, file_name)
-        cities = read_city_locations(task_instance_path)
-        distance_matrix = calculate_distance_matrix(cities)
+    for eval_type in EVAL_TYPE_LIST:
+        print('Evaluation type:', eval_type)
+        avg_opt_gap_dir = {}
+        avg_success_dir = {}
+        for file_name in file_list:
+            task_instance_path = os.path.join(task_folder_path, file_name)
+            cities = read_city_locations(task_instance_path)
+            distance_matrix = calculate_distance_matrix(cities)
 
-        parts = file_name.split('_')
-        city_num = parts[1]
-        if city_num not in avg_opt_gap_dir:
-            avg_opt_gap_dir[city_num] = []
-        if city_num not in avg_success_dir:
-            avg_success_dir[city_num] = []
+            parts = file_name.split('_')
+            city_num = parts[1]
+            if city_num not in avg_opt_gap_dir:
+                avg_opt_gap_dir[city_num] = []
+            if city_num not in avg_success_dir:
+                avg_success_dir[city_num] = []
 
-        with open(res_path, "r") as file:
-            content = file.read()
-            content = content.replace('data = ', '', 1)
-            oracle_res = eval(content)
-        opt_gap_list, success_list = deal_instance(file_name=file_name, cities=cities, distance_matrix=distance_matrix,
-                                                   oracle_res=oracle_res)
+            with open(res_path, "r") as file:
+                content = file.read()
+                content = content.replace('data = ', '', 1)
+                oracle_res = eval(content)
+            opt_gap_list, success_list = deal_instance(
+                file_name=file_name, cities=cities, distance_matrix=distance_matrix, oracle_res=oracle_res,
+                eval_type=eval_type, llm_extra_info_folder_path=llm_extra_info_folder_path, context_type=context_type)
 
-        print(f'{file_name}')
-        avg_opt_gap_dir[city_num].append(np.mean(opt_gap_list))
-        avg_success_dir[city_num].append(np.mean(success_list))
+            print(f'{file_name}')
+            avg_opt_gap_dir[city_num].append(np.mean(opt_gap_list))
+            avg_success_dir[city_num].append(np.mean(success_list))
 
-    print("***********\tSTART\t***************")
-    print(f"Average optimality gap for each city: {avg_opt_gap_dir}")
-    print(f"Average success for each city: {avg_success_dir}")
-    for key, value in avg_opt_gap_dir.items():
-        print(f"City: {key}\t\tAverage optimality gap: {value}, mean: {np.mean(value)}")
-    print("***********\tEND\t***************")
-
-    for key, value in avg_success_dir.items():
-        print(f"City: {key}\t\tAverage success: {np.mean(avg_success_dir[key])}\t\tSuccess list: {avg_success_dir[key]}")
-
-    opt_gap_write_path = 'gap/single/TSP/opt_gap.txt'
-    success_write_path = 'gap/single/TSP/success.txt'
-
-    with open(opt_gap_write_path, "w") as file:
+        print("***********\tSTART\t***************")
+        print(f"Average optimality gap for each city: {avg_opt_gap_dir}")
+        print(f"Average success for each city: {avg_success_dir}")
         for key, value in avg_opt_gap_dir.items():
-            file.write(f"City: {key}\t\tAverage opt gap: {np.mean(value)}\t\tOpt gap list: {value}\n")
-        file.write('\nDetails:\n')
-        file.write(str(avg_opt_gap_dir))
+            print(f"City: {key}\t\tAverage optimality gap: {value}, mean: {np.mean(value)}")
+        print("***********\tEND\t***************")
 
-    with open(success_write_path, "w") as file:
         for key, value in avg_success_dir.items():
-            file.write(f"City: {key}\t\tAverage success: {np.mean(value)}\t\tSuccess list: {value}\n")
-        file.write('\nDetails:\n')
-        file.write(str(avg_success_dir))
+            print(f"City: {key}\t\tAverage success: {np.mean(avg_success_dir[key])}\t\tSuccess list: {avg_success_dir[key]}")
+
+        if 'llama3_1' in llm_extra_info_folder_path:
+            tmp_model_name = 'llama3_1'
+        elif 'gpt4' in llm_extra_info_folder_path:
+            tmp_model_name = 'gpt4'
+        else:
+            raise ValueError(f"Invalid llm_extra_info_folder_path. {llm_extra_info_folder_path}")
+        opt_gap_write_path = f'../metric/{tmp_model_name}/{context_type}/{eval_type}/single/TSP/opt_gap.txt'
+        success_write_path = f'../metric/{tmp_model_name}/{context_type}/{eval_type}/single/TSP/success.txt'
+        os.makedirs(os.path.dirname(opt_gap_write_path), exist_ok=True)
+        os.makedirs(os.path.dirname(success_write_path), exist_ok=True)
+
+        with open(opt_gap_write_path, "w") as file:
+            for key, value in avg_opt_gap_dir.items():
+                file.write(f"City: {key}\t\tAverage opt gap: {np.mean(value)}\t\tOpt gap list: {value}\n")
+            file.write('\nDetails:\n')
+            file.write(str(avg_opt_gap_dir))
+
+        with open(success_write_path, "w") as file:
+            for key, value in avg_success_dir.items():
+                file.write(f"City: {key}\t\tAverage success: {np.mean(value)}\t\tSuccess list: {value}\n")
+            file.write('\nDetails:\n')
+            file.write(str(avg_success_dir))
+
+
+def main():
+    context_type_list = ['zero', 'math', 'pseudo-code_v2', 'pseudo-code_v3', 'pdf_paper_v2', 'pdf_paper_v3']
+    llm_model_list = ['llama3_1_extra_info', 'gpt4_extra_info']
+    for llm_model in llm_model_list:
+        llm_extra_info_folder_path = os.path.join(LLM_FOLDER_PATH, f"{llm_model}")
+        for context_type in context_type_list:
+            # llm/task + context_type
+
+            if llm_model == 'llama3_1_extra_info' and context_type != 'zero':
+                continue
+
+            print(f'Model name: {llm_model}\tContext type: {context_type}')
+            task_folder_base_path = os.path.join(TASK_BASE_PATH, context_type)
+            tsp_verifier(task_folder_base_path=task_folder_base_path, context_type=context_type,
+                         llm_extra_info_folder_path=llm_extra_info_folder_path)
 
 
 if __name__ == "__main__":
