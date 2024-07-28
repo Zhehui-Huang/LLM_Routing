@@ -183,8 +183,12 @@ def tsp_verifier(task_folder_base_path, context_type, llm_extra_info_folder_path
                 eval_type=eval_type, llm_extra_info_folder_path=llm_extra_info_folder_path, context_type=context_type)
 
             print(f'{file_name}')
-            avg_opt_gap_dir[city_num].append(np.mean(opt_gap_list))
-            avg_success_dir[city_num].append(np.mean(success_list))
+            if len(opt_gap_list) > 0:
+                avg_opt_gap_dir[city_num].append(np.mean(opt_gap_list))
+            if len(success_list) == 5:
+                avg_success_dir[city_num].append(np.mean(success_list))
+            else:
+                raise ValueError(f"Invalid success_list. {success_list}")
 
         print("***********\tSTART\t***************")
         print(f"Average optimality gap for each city: {avg_opt_gap_dir}")
@@ -221,8 +225,8 @@ def tsp_verifier(task_folder_base_path, context_type, llm_extra_info_folder_path
 
 
 def main():
-    context_type_list = ['zero', 'math', 'pseudo-code_v2', 'pseudo-code_v3', 'pdf_paper_v2', 'pdf_paper_v3']
     llm_model_list = ['llama3_1_extra_info', 'gpt4_extra_info']
+    context_type_list = ['zero', 'math', 'pseudo-code_v2', 'pseudo-code_v3', 'pdf_paper_v2', 'pdf_paper_v3']
     for llm_model in llm_model_list:
         llm_extra_info_folder_path = os.path.join(LLM_FOLDER_PATH, f"{llm_model}")
         for context_type in context_type_list:
