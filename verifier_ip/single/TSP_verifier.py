@@ -142,6 +142,10 @@ def deal_instance(file_name, cities, distance_matrix, oracle_res, eval_type, llm
 
                 cost = ground_cost
                 optimal_cost = oracle_res[file_name][0]
+
+                cost = round(cost, 2)
+                optimal_cost = round(optimal_cost, 2)
+
                 optimality_gap = (cost - optimal_cost) / optimal_cost
                 optimality_gap = optimality_gap * 100
                 opt_gap_list.append(optimality_gap)
