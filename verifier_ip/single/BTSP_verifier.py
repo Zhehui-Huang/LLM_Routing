@@ -231,6 +231,7 @@ def deal_instance(file_name, cities, distance_matrix, oracle_res, eval_type, llm
             continue
 
         if DEBUG_FLAG:
+            success_list.append(0)
             continue
         else:
             sol_x = route2edges(route, len(cities))

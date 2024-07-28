@@ -94,8 +94,14 @@ def extract_route_cost_max_cost(file_path):
     max_distance = next((line.split(":")[1].strip() for line in rows if
                          all(keyword in line for keyword in ["Maximum", "distance", "consecutive"])), -1)
 
-
-    tour = ast.literal_eval(tour)
+    try:
+        tour = ast.literal_eval(tour)
+    except:
+        try:
+            # tour = [int(x.strip()) for x in tour.replace('np.int64', '').replace('[', '').replace(']', '').split(',')]
+            tour = [int(x.replace('(', '').replace(')', '').strip()) for x in tour.replace('np.int64', '').replace('np.int32', '').replace('[', '').replace(']', '').split(',')]
+        except:
+            raise ValueError("Tour is not a list")
     if isinstance(tour, list):
         if (len(tour) > 0 and tour[0] == 'depot') or (len(tour) > 0 and tour[-1] == 'depot'):
             raise ValueError("Tour starts with depot")
