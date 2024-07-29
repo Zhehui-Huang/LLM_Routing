@@ -61,76 +61,40 @@ def extract_route_and_cost(file_path, robot_num):
     return routes, -1
 
 
-
-def extract_route_cost_max_cost(file_path):
+def extract_route_cost_max_cost(file_path, robot_num):
     with open(file_path, 'r') as file:
-        content = file.read()
+        text = file.read()
 
-    # Extract text between OUTPUT and ERROR
-    extracted_text = re.search(r'OUTPUT:(.*?)ERROR:', content, re.DOTALL).group(1).strip()
-    if extracted_text == '':
+    routes = []
+    # Find all the "Tour" lines and extract the numbers inside the brackets
+    tours = re.findall(r"Tour: \[(.*?)\]", text)
+
+    if tours is None:
+        print("No tours found")
         return [], -1, -1
-    # Split the extracted text into rows
-    rows = extracted_text.splitlines()
-
-    # Extract the tour, travel cost, and maximum distance
-    tour = re.search(r'Tour:\s*(.*)', rows[0])
-    if tour:
-        tour = tour.group(1)
-    else:
-        tour = []
+    if len(tours) < robot_num:
+        print(f"Not enough tours found\t{tours}")
         return [], -1, -1
-
-    travel_cost = re.search(r'Total travel cost:\s*(.*)', rows[1])
-    if travel_cost:
-        travel_cost = travel_cost.group(1)
-    else:
-        travel_cost = -1
-
-    max_distance = next((line.split(":")[1].strip() for line in rows if
-                         all(keyword in line for keyword in ["Maximum", "distance", "consecutive"])), -1)
+    if len(tours) > robot_num:
+        print(f"Too many tours found\t{tours}")
+        return [], -1, -1
 
     try:
-        tour = tour.replace('depot', '0').replace('city', '')
-        tour = ast.literal_eval(tour)
-    except:
-        try:
-            # tour = [int(x.strip()) for x in tour.replace('np.int64', '').replace('[', '').replace(']', '').split(',')]
-            tour = [int(x.replace('(', '').replace(')', '').strip()) for x in tour.replace('np.int64', '').replace('depot', '0').replace('city', '').replace('_', '').replace('np.int32', '').replace('[', '').replace(']', '').split(',')]
-            # tour = tour.replace('depot', '0').replace('city', '')
-        except:
-            return [], -1, -1
-            # raise ValueError("Tour is not a list")
-    if isinstance(tour, list):
-        if (len(tour) > 0 and tour[0] == 'depot') or (len(tour) > 0 and tour[-1] == 'depot'):
-            print('Tour starts with depot')
-            # raise ValueError("Tour starts with depot")
-        try:
-            tour = [int(city) for city in tour]
-        except:
-            return [], -1, -1
-            # raise ValueError("Tour issue")
+        for tour in tours:
+            # Remove quotes and spaces, then split by comma
+            tour_elements = tour.replace("'", "").replace(" ", "").split(',')
+            # Convert to integers
+            route = [int(stop) for stop in tour_elements]
+            routes.append(route)
 
-    if tour is None:
+            if tour is None or len(tour) <= 1:
+                print(f"At most one point\t{tour}")
+                return [], -1, -1
+    except:
+        print(f"Error in extracting tours\t{tours}")
         return [], -1, -1
 
-    if len(tour) >= 3:
-        if tour[0] == tour[1]:
-            print(f"Before process tour, {tour}")
-            tour = tour[1:]
-            print(f"After tour same, {tour}")
-        if tour[-1] == tour[-2]:
-            print(f"Before process tour, {tour}")
-            tour = tour[:-1]
-            print(f"After tour same, {tour}")
-
-    try:
-        tour = [int(city) for city in tour]
-    except:
-        return [], -1, -1
-    if max_distance == '':
-        max_distance = -1
-    return tour, travel_cost, float(max_distance)
+    return routes, -1, -1
 
 
 def calculate_distance_matrix(cities):
