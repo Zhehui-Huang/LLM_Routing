@@ -1,6 +1,0 @@
-City: 10		Average success: 1.0		Success list: [np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0)]
-City: 15		Average success: 0.9199999999999999		Success list: [np.float64(1.0), np.float64(1.0), np.float64(0.8), np.float64(1.0), np.float64(0.8)]
-City: 20		Average success: 0.8400000000000001		Success list: [np.float64(1.0), np.float64(0.8), np.float64(0.8), np.float64(0.8), np.float64(0.8)]
-
-Details:
-{'10': [np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0)], '15': [np.float64(1.0), np.float64(1.0), np.float64(0.8), np.float64(1.0), np.float64(0.8)], '20': [np.float64(1.0), np.float64(0.8), np.float64(0.8), np.float64(0.8), np.float64(0.8)]}
