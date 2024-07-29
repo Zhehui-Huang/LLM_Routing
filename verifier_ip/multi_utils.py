@@ -58,6 +58,19 @@ def extract_route_and_cost(file_path, robot_num):
         print(f"Error in extracting tours\t{tours}")
         return [], -1
 
+    for rid, route in enumerate(routes):
+        if len(route) >= 3:
+            if route[0] == route[1]:
+                print(f"Before process tour, {route}")
+                route = route[1:]
+                routes[rid] = route
+                print(f"After tour same, {route}")
+            if route[-1] == route[-2]:
+                print(f"Before process tour, {route}")
+                route = route[:-1]
+                routes[rid] = route
+                print(f"After tour same, {route}")
+
     return routes, -1
 
 
@@ -94,8 +107,74 @@ def extract_route_cost_max_cost(file_path, robot_num):
         print(f"Error in extracting tours\t{tours}")
         return [], -1, -1
 
+    for rid, route in enumerate(routes):
+        if len(route) >= 3:
+            if route[0] == route[1]:
+                print(f"Before process tour, {route}")
+                route = route[1:]
+                routes[rid] = route
+                print(f"After tour same, {route}")
+            if route[-1] == route[-2]:
+                print(f"Before process tour, {route}")
+                route = route[:-1]
+                routes[rid] = route
+                print(f"After tour same, {route}")
+
     return routes, -1, -1
 
+
+def extract_route_with_depot(file_path, robot_num):
+    with open(file_path, 'r') as file:
+        text = file.read()
+
+    # Extracting tours using regular expression
+    tours = re.findall(r'Robot (\d) Tour: \[(.*?)\]', text)
+
+    if not tours:
+        print("No tours found")
+        return {}, -1
+    if len(tours) < robot_num:
+        print(f"Not enough tours found: {len(tours)}\t{tours}")
+        return {}, -1
+    if len(tours) > robot_num:
+        print(f"Too many tours found: {len(tours)}\t{tours}")
+        return {}, -1
+
+    # Creating the dictionary with tours
+    tour_dict = {}
+
+    for depot, tour in tours:
+        depot = int(depot)
+        # Remove quotes and spaces, then split by comma
+        tour_elements = tour.replace("np.int64(", "").replace(")", "").replace("depot", "").replace("Depot", "").replace("City", "").replace("city", "").replace(" ", "").replace("np.str_(", "")
+        tour_elements = tour_elements.replace(" ", "").replace("'", "").split(',')
+        # Convert to integers
+        try:
+            route = [int(stop) for stop in tour_elements]
+        except:
+            print(f"Error in extracting tours\t{tour_elements}")
+            return {}, -1
+        if route[0] != depot:
+            return {}, -1
+        if route[-1] != depot:
+            return {}, -1
+
+        if len(route) >= 3:
+            if route[0] == route[1]:
+                print(f"Before process tour, {route}")
+                route = route[1:]
+                print(f"After tour same, {route}")
+            if route[-1] == route[-2]:
+                print(f"Before process tour, {route}")
+                route = route[:-1]
+                print(f"After tour same, {route}")
+
+        if len(route) <= 2:
+            return {}, -1
+
+        tour_dict[depot] = [route]
+
+    return tour_dict, -1
 
 def calculate_distance_matrix(cities):
     n = len(cities)
