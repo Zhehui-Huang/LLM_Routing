@@ -31,7 +31,24 @@ def extract_route_and_cost(file_path, robot_num):
 
     routes = []
     # Find all the "Tour" lines and extract the numbers inside the brackets
-    tours = re.findall(r"Tour: \[(.*?)\]", text)
+    # tours = re.findall(r"Tour: \[(.*?)\]", text)
+    # tours = re.findall(r"Tour\s?\d*\s?:\s?\[(\d+(?:,\s?\d+)*)\]", text)
+    lines = text.splitlines()
+    tours = []
+    for line in lines:
+        # Check if the line contains a tour in the standard format
+        match = re.search(r"Tour\s?\d*\s?:\s?\[(\d+(?:,\s?\d+)*)\]", line)
+        if match:
+            tours.append(match.group(1))
+            continue
+
+        # Check if the line contains a tour with np.int64 format
+        match = re.search(r"Tour\s?\d*\s?:\s?\[([^\]]*)\]", line)
+        if match:
+            numbers = re.findall(r"np\.int64\((\d+)\)", match.group(1))
+            if numbers:
+                tours.append(numbers)
+
 
     if tours is None:
         print("No tours found")
@@ -80,7 +97,21 @@ def extract_route_cost_max_cost(file_path, robot_num):
 
     routes = []
     # Find all the "Tour" lines and extract the numbers inside the brackets
-    tours = re.findall(r"Tour: \[(.*?)\]", text)
+    lines = text.splitlines()
+    tours = []
+    for line in lines:
+        # Check if the line contains a tour in the standard format
+        match = re.search(r"Tour\s?\d*\s?:\s?\[(\d+(?:,\s?\d+)*)\]", line)
+        if match:
+            tours.append(match.group(1))
+            continue
+
+        # Check if the line contains a tour with np.int64 format
+        match = re.search(r"Tour\s?\d*\s?:\s?\[([^\]]*)\]", line)
+        if match:
+            numbers = re.findall(r"np\.int64\((\d+)\)", match.group(1))
+            if numbers:
+                tours.append(numbers)
 
     if tours is None:
         print("No tours found")
