@@ -426,8 +426,8 @@ def main():
         llm_extra_info_folder_path = os.path.join(LLM_FOLDER_PATH, f"{llm_model}")
         for context_type in context_type_list:
             # llm/task + context_type
-            if llm_model == 'llama3_1_extra_info' and context_type == 'zero':
-                continue
+            # if llm_model == 'llama3_1_extra_info' and context_type == 'zero':
+            #     continue
 
             print(f'Model name: {llm_model}\tContext type: {context_type}')
             task_folder_base_path = os.path.join(TASK_BASE_PATH, context_type)
