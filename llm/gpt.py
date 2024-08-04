@@ -13,10 +13,7 @@ from verifier import get_executable_unit_test_code
 
 LA_TIMEZONE = pytz.timezone('America/Los_Angeles')
 
-
-# BASE_PATH = '/home/ethan/repository/backup/LLM_Routing/llm'
 BASE_PATH = os.getcwd()
-# OPENAI_API_KEY = "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"
 OPENAI_API_KEY = "<YOUR KEY>"
 
 

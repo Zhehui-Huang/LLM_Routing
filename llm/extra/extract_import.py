@@ -46,7 +46,6 @@ def extract_import():
 
 
 def extract_module_not_found():
-    # folder_path = '/home/ethan/repository/LLM_Routing/llm/extra_info/log'
     folder_path = os.path.join(os.getcwd(), '../extra_info/log')
     all_import_lines_list = []
     file_path_list = list_files_in_directory(directory=folder_path)
